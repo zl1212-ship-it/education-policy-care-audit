@@ -1,8 +1,9 @@
 **Transnational Policy Analysis Datasets**
 
-This repository houses the qualitative comparative analytical matrices, transnational policy tracking parameters, and conceptual evaluation engines supporting the manuscript: **"Redistributing Educational Care: A Comparative Policy Audit of Funding, Staffing, and Implementation Rules in the United States and Japan."**
+This repository houses the qualitative comparative analytical matrices, transnational policy tracking parameters, and conceptual evaluation engines supporting the manuscript: "Redistributing Educational Care: A Comparative Policy Audit of Funding, Staffing, and Implementation Rules in the United States and Japan."
 
 **Overview**
+
 This framework provides a dual metric baseline to model algorithmic bureaucracy and institutional precarity within modern STEM pipelines. It evaluates the qualitative policy divergence between the United States CHIPS and Science Act and Japan's Society 5.0 initiatives against UNESCO Global Education Monitoring benchmarks.
 
 **Theoretical Architecture**
