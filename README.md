@@ -19,8 +19,9 @@ The engine operationalizes two primary structural foundations equations:
    Where $T_{s}$ denotes the hours forced into secondary subsistence labor, and $T_{r}$ signifies active hours dedicated to scholarly investigation.
 
 **File Registry**
-* `metrics_engine.py`: Functional core runtime calculator mapping $S_r$ and $R_{ss}$ thresholds.
-* `governance_matrix.csv`: Structured tabular spreadsheet tracking comparative policy variables across national regimes.
+
+`metrics_engine.py`: Functional core runtime calculator mapping $S_r$ and $R_{ss}$ thresholds.
+`governance_matrix.csv`: Structured tabular spreadsheet tracking comparative policy variables across national regimes.
 
 **Usage**
 
