@@ -21,6 +21,7 @@ The engine operationalizes two primary structural foundations equations:
 **File Registry**
 
 `metrics_engine.py`: Functional core runtime calculator mapping $S_r$ and $R_{ss}$ thresholds.
+
 `governance_matrix.csv`: Structured tabular spreadsheet tracking comparative policy variables across national regimes.
 
 **Usage**
