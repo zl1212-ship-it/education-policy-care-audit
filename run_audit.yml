@@ -1,0 +1,26 @@
+name: Execute Education Policy Audit Engine
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  run-policy-calculations:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Access Repository Datasets
+      uses: actions/checkout@v4
+
+    - name: Initialize Python Core Runtime Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Run Analytical Metrics Calculator
+      run: |
+        chmod +x metrics_engine.py
+        python metrics_engine.py
