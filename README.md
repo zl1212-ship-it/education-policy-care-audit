@@ -10,11 +10,11 @@ This framework provides a dual metric baseline to model algorithmic bureaucracy 
 
 The engine operationalizes two primary structural foundations equations:
 
-1. **Sovereignty Ratio ($S_r$):** Evaluates macro fiscal resource extraction boundaries.
+1. Sovereignty Ratio ($S_r$): Evaluates macro fiscal resource extraction boundaries.
    $$S_r = \frac{H_f}{H_s}$$
    Where $H_f$ is institutional infrastructure funding allocations and $H_s$ is direct human capital student subsistence support.
 
-2. **Survival to Study Ratio ($R_{ss}$):** Models temporal precarity thresholds.
+2. Survival to Study Ratio ($R_{ss}$): Models temporal precarity thresholds.
    $$R_{ss} = \frac{T_{s}}{T_{r}}$$
    Where $T_{s}$ denotes the hours forced into secondary subsistence labor, and $T_{r}$ signifies active hours dedicated to scholarly investigation.
 
