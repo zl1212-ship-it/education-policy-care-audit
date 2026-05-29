@@ -1,26 +1,30 @@
-name: Execute Education Policy Audit Engine
+name: Execute Policy Metrics Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main, master ]
-  workflow_dispatch:
+    branches: [ "main" ]
 
 jobs:
-  run-policy-calculations:
+  build_and_run:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Access Repository Datasets
+    - name: Check out repository code
       uses: actions/checkout@v4
 
-    - name: Initialize Python Core Runtime Environment
+    - name: Set up Python Environment
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
+        cache: 'pip'
 
-    - name: Run Analytical Metrics Calculator
+    - name: Install Econometric Dependencies
       run: |
-        chmod +x metrics_engine.py
+        python -m pip install --upgrade pip
+        pip install numpy pandas statsmodels
+
+    - name: Execute Causal Regression Pipeline
+      run: |
         python metrics_engine.py
