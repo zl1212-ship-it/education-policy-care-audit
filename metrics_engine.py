@@ -18,11 +18,11 @@ def execute_policy_audit():
     # time_period > 0 represents the post-CHIPS Act capital regime
     df['post_policy'] = (df['time_period'] >= 0).astype(int)
     
-    # 4. Fit the Causal Regression Model with Clustered Standard Errors
-model = smf.ols(
-    formula="attrition_rate ~ time_period + post_policy + S_r", 
-    data=df
-).fit(cov_type='cluster', cov_kwds={'groups': df['institution']})
+        # 4. Fit the Causal Regression Model with Robust Standard Errors
+    model = smf.ols(
+        formula="attrition_rate ~ time_period + post_policy + S_r",
+        data=df
+    ).fit(cov_type='HC1')
 
     # 5. Output the verification summary for journal review
     print("\n" + "="*70)
