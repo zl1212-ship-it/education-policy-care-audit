@@ -24,7 +24,6 @@ model = smf.ols(
     data=df
 ).fit(cov_type='cluster', cov_kwds={'groups': df['institution']})
 
-    
     # 5. Output the verification summary for journal review
     print("\n" + "="*70)
     print("      POOLED OLS PANEL REGRESSION: CHIPS POLICY IMPACT      ")
