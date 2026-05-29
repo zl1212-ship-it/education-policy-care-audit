@@ -1,51 +1,36 @@
-#!/usr/bin/env python3
-"""
-Policy Analytics Metrics Engine
-Calculates the Sovereignty Ratio (Sr) and Survival to Study Ratio (Rss) 
-to model temporal constraints and institutional funding alignment.
-"""
+import numpy as np
+import pandas as pd
+import statsmodels.formula.api as smf
 
-def calculate_sovereignty_ratio(infra_funding: float, student_subsistence: float) -> float:
-    """Calculates Sr = Hf / Hs"""
-    if student_subsistence <= 0:
-        raise ValueError("Student subsistence support must be strictly greater than zero.")
-    return round(infra_funding / student_subsistence, 4)
+def execute_policy_audit():
+    # 1. Load your empirical data matrix
+    try:
+        df = pd.read_csv("governance_matrix.csv")
+    except FileNotFoundError:
+        print("Error: Please create 'governance_matrix.csv' first.")
+        return
 
-def calculate_survival_to_study_ratio(time_survival: float, time_research: float) -> float:
-    """Calculates Rss = Tsurvival / Tresearch"""
-    if time_research <= 0:
-        raise ValueError("Funded research hours must be strictly greater than zero.")
-    return round(time_survival / time_research, 4)
-
-def evaluate_institutional_state(sr: float, rss: float) -> dict:
-    """Classifies risk states based on empirical threshold values."""
-    status = {
-        "funding_risk": "Optimal Alignment" if sr <= 1.0 else "Life Stall Accel Acceleration",
-        "temporal_status": "Sovereign Preservation" if rss < 0.5 else "Systemic Time Poverty"
-    }
-    return status
+    # 2. Compute the literal numeric Sovereignty Ratio (Hf / Hs)
+    # This captures the capital-to-human mismatch metric
+    df['S_r'] = df['H_f'] / df['H_s']
+    
+    # 3. Create a binary treatment indicator for the policy cutoff
+    # time_period > 0 represents the post-CHIPS Act capital regime
+    df['post_policy'] = (df['time_period'] >= 0).astype(int)
+    
+    # 4. Fit the Causal Regression Model
+    # We evaluate how time, the policy pivot, and the Sr ratio affect attrition
+    model = smf.ols(formula="attrition_rate ~ time_period + post_policy + S_r", data=df).fit()
+    
+    # 5. Output the verification summary for journal review
+    print("\n" + "="*70)
+    print("      REGRESSION DISCONTINUITY ANALYSIS: CHIPS POLICY IMPACT      ")
+    print("="*70)
+    print(model.summary())
+    
+    # Save the computed columns back to the matrix for repository health
+    df.to_csv("governance_matrix.csv", index=False)
+    print("\n[SUCCESS] Matrix updated with computed S_r and post_policy indicators.")
 
 if __name__ == "__main__":
-    print("="*60)
-    print("      TRANSNATIONAL EDUCATION POLICY AUDIT SYSTEM ENGINE      ")
-    print("="*60)
-    
-    # Representative Macro Case Example Data
-    cases = [
-        {"regime": "US CHIPS Act Framework (Underfunded Stipend Scenario)", "hf": 500000, "hs": 32000, "ts": 25, "tr": 20},
-        {"regime": "Japan Society 5.0 (Platform Displace Scenario)", "hf": 450000, "hs": 42000, "ts": 12, "tr": 35}
-    ]
-    
-    for case in cases:
-        print(f"\n[+] Evaluating Strategic Policy Regime: {case['regime']}")
-        
-        # Execute equations
-        sr_val = calculate_sovereignty_ratio(case['hf'], case['hs'])
-        rss_val = calculate_survival_to_study_ratio(case['ts'], case['tr'])
-        diagnostics = evaluate_institutional_state(sr_val, rss_val)
-        
-        print(f"    - Sovereignty Ratio (Sr)          : {sr_val}")
-        print(f"    - Survival to Study Ratio (Rss)   : {rss_val}")
-        print(f"    - Funding Architecture Diagnostic : {diagnostics['funding_risk']}")
-        print(f"    - Staffing/Temporal Diagnostic    : {diagnostics['temporal_status']}")
-        print("-"*60)
+    execute_policy_audit()
