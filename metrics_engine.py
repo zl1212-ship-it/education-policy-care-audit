@@ -24,7 +24,7 @@ def execute_policy_audit():
     
     # 5. Output the verification summary for journal review
     print("\n" + "="*70)
-    print("      REGRESSION DISCONTINUITY ANALYSIS: CHIPS POLICY IMPACT      ")
+    print("      POOLED OLS PANEL REGRESSION: CHIPS POLICY IMPACT      ")
     print("="*70)
     print(model.summary())
     
