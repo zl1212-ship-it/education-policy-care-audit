@@ -1,5 +1,9 @@
 institution,time_period,H_f,H_s,attrition_rate
 Stanford University,-6,0.0,51000,0.045
-Stanford University,6,350000000.0,52294,0.048
-Stanford University,18,510000000.0,52500,0.054
 Stanford University,30,681600000.0,58200,0.062
+University of Washington,-6,0.0,36000,0.041
+University of Washington,30,585700000.0,40400,0.049
+University of California Berkeley,-6,0.0,46000,0.044
+University of California Berkeley,30,485200000.0,52212,0.052
+Harvard University,-6,0.0,42800,0.042
+Harvard University,30,624800000.0,51500,0.048
