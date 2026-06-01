@@ -1,38 +1,41 @@
-import numpy as np
+import requests
+import json
 import pandas as pd
-import statsmodels.formula.api as smf
 
-def execute_policy_audit():
-    # 1. Load your empirical data matrix
-    try:
-        df = pd.read_csv("governance_matrix.csv")
-    except FileNotFoundError:
-        print("Error: Please create 'governance_matrix.csv' first.")
-        return
+# USAspending API Advanced Award Search Endpoint
+url = "https://usaspending.gov
+"
 
-    # 2. Compute the literal numeric Sovereignty Ratio (Hf / Hs)
-    # This captures the capital-to-human mismatch metric
-    df['S_r'] = df['H_f'] / df['H_s']
+# Query payload filtering for the $39B semiconductor infrastructure grants
+payload = {
+    "filters": {
+        "award_ids": [],
+        "award_type_codes": ["02", "03", "04", "05"], # Grants & Cooperative Agreements
+        "agencies": [{"type": "funding", "tier": "toptier", "name": "Department of Commerce"}],
+        "keywords": ["semiconductor", "microelectronics", "cleanroom", "CHIPS Act"],
+        "time_period": [{"start_date": "2022-10-01", "end_date": "2026-01-01"}]
+    },
+    "fields": [
+        "Award ID", "Recipient Name", "Start Date", 
+        "Award Amount", "Awarding Agency", "Description"
+    ],
+    "limit": 100,
+    "page": 1
+}
+
+headers = {"Content-Type": "application/json"}
+
+print("Connecting to USAspending API...")
+response = requests.post(url, data=json.dumps(payload), headers=headers)
+
+if response.status_code == 200:
+    data = response.json()
+    awards = data.get("results", [])
     
-    # 3. Create a binary treatment indicator for the policy cutoff
-    # time_period > 0 represents the post-CHIPS Act capital regime
-    df['post_policy'] = (df['time_period'] >= 0).astype(int)
-    
-        # 4. Fit the Causal Regression Model with Robust Standard Errors
-    model = smf.ols(
-        formula="attrition_rate ~ time_period + post_policy + S_r",
-        data=df
-    ).fit(cov_type='HC1')
-
-    # 5. Output the verification summary for journal review
-    print("\n" + "="*70)
-    print("      POOLED OLS PANEL REGRESSION: CHIPS POLICY IMPACT      ")
-    print("="*70)
-    print(model.summary())
-    
-    # Save the computed columns back to the matrix for repository health
-    df.to_csv("governance_matrix.csv", index=False)
-    print("\n[SUCCESS] Matrix updated with computed S_r and post_policy indicators.")
-
-if __name__ == "__main__":
-    execute_policy_audit()
+    # Convert into a structured pandas DataFrame
+    df = pd.DataFrame(awards)
+    print(f"Successfully pulled {len(df)} live federal awards.")
+    # Show the structured data layout
+    print(df.head())
+else:
+    print(f"API Connection Failed. Status Code: {response.status_code}")
