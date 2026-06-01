@@ -2,31 +2,25 @@ name: Execute Policy Metrics Pipeline
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    branches: [ main ]
 
 jobs:
   build_and_run:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository code
+    - name: Checkout Repository Code
       uses: actions/checkout@v4
 
-    - name: Set up Python Environment
+    - name: Set Up Python Environment
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+          python-version: '3.10'
 
-    - name: Install Econometric Dependencies
+    - name: Install Required Packages
       run: |
         python -m pip install --upgrade pip
-        pip install numpy pandas statsmodels
+        pip install pandas numpy statsmodels requests
 
-    - name: Execute Causal Regression Pipeline
-      run: |
-        python metrics_engine.py
+    - name: Run Econometric Evaluation Engine
+      run: python metrics_engine.py
