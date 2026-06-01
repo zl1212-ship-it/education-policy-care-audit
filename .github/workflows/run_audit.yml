@@ -1,26 +1,39 @@
-name: Execute Policy Metrics Pipeline
+name: Run Policy Metrics Engine
 
 on:
   push:
     branches: [ main ]
+  workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
-  build_and_run:
+  run-audit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Crucial permission to allow pushing back to repo
 
     steps:
-    - name: Checkout Repository Code
+    - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set Up Python Environment
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
-          python-version: '3.10'
+        python-version: '3.10'
+        cache: 'pip'
 
-    - name: Install Required Packages
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas numpy statsmodels requests
+        pip install numpy pandas requests statsmodels
 
-    - name: Run Econometric Evaluation Engine
+    - name: Execute Metrics Engine Pipeline
       run: python metrics_engine.py
+
+    - name: Automatically Commit and Push Updated Data Matrix
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@://github.com"
+        git add governance_matrix.csv
+        # Only commit and push if the file actually changed to avoid pipeline loops
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of governance_matrix.csv with 44 institutions" && git push)
