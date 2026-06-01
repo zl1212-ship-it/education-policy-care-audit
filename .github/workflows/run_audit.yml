@@ -3,13 +3,13 @@ name: Run Policy Metrics Engine
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  workflow_dispatch:
 
 jobs:
   run-audit:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Crucial permission to allow pushing back to repo
+      contents: write
 
     steps:
     - name: Checkout repository
@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        cache: 'pip'
+        # Cache line removed to prevent file mismatch errors
 
     - name: Install dependencies
       run: |
@@ -32,8 +32,6 @@ jobs:
     - name: Automatically Commit and Push Updated Data Matrix
       run: |
         git config --global user.name "github-actions[bot]"
-        git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@://github.com"
         git add governance_matrix.csv
-        # Only commit and push if the file actually changed to avoid pipeline loops
         git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of governance_matrix.csv with 44 institutions" && git push)
