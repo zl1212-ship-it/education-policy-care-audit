@@ -1,38 +1,35 @@
 # Educational Care Audit
 
-This repository contains the replication code, structured panel datasets, and automated verification pipelines for the paper:  
+This repository contains the replication code, structured panel datasets, and automated verification pipelines for the paper:
 *"Redistributing Educational Care: A Comparative Policy Audit of Funding, Staffing, and Implementation Rules in the United States and Japan."*
 
 The codebase models how macro-industrial transformations, specifically the U.S. CHIPS and Science Act and Japan's Society 5.0 framework, alter localized institutional resource allocation profiles and drive doctoral pipeline attrition.
 
 ## Key Metrics
 
-The analytical framework operationalizes two structural indicators to evaluate systemic pipeline strain:
+The analytical framework operationalizes the structural indicator to evaluate systemic pipeline strain:
 
-*   **Logarithmically Scaled Sovereignty Ratio ($S_r$):** Evaluates structural per-capita fiscal divergence across capitalization layers.
-    $$S_r = \ln\left(\frac{H_f}{H_s \cdot N_g}\right)$$
-    Where $H_f$ is total macro-infrastructure asset funding, $H_s$ is individual baseline student subsistence support, and $N_g$ tracks aggregate active graduate enrollment fields.
-    
-*   **Survival-to-Study Ratio ($R_{ss}$):** Models explicit zero-sum weekly individual temporal trade-offs ($T_{\text{total}} = 168 \text{ hours}$) forced by administrative workload automation.
-    $$R_{ss} = \frac{T_s}{T_r + \delta}$$
-    Where $T_s$ captures uncompensated survival gig-labor hours, $T_r$ maps active funded hours dedicated to scientific discovery, and $\delta = 1$ stabilizes the boundary framework during full funding withdrawal intervals.
+* **Funding-to-Stipend Disparity Ratio ($S_{rit}$):** Evaluates structural per-capita fiscal divergence across capitalization layers.
+  $$S_{rit} = \ln \left( \frac{H_{fit} + 1}{\left( \frac{H_{sit}}{C_i} \right) \times N_{git}} \right)$$
+  Where $H_{fit}$ is the total macro-infrastructure asset funding, $H_{sit}$ is individual baseline student subsistence support, $C_i$ represents local cost-of-living adjustments, and $N_{git}$ tracks active graduate enrollment headcounts.
 
 ## Econometric Design
 
-We evaluate the structural "life stall" hypothesis using a Two-Way Fixed Effects (TWFE) panel regression design tracking historical policy cutoffs:
+We evaluate the structural "life stall" hypothesis using a Two-Way Fixed Effects (TWFE) panel regression design tracking historical cross-country policy cutoffs:
 
-$$Y_{it} = \alpha_i + \gamma_t + \beta_1 \text{PostPolicy}_{it} + \beta_2 S_{r, it} + \epsilon_{it}$$
+$$AttritionRate_{it} = \beta_0 + \beta_1 PostPolicy_{it} + \beta_2 S_{rit} + \alpha_i + \delta_t + \varepsilon_{it}$$
 
-*   **$Y_{it}$:** Doctoral pipeline attrition indicator matrix for institution $i$ across temporal window $t$.
-*   **$\alpha_i$ & $\gamma_t$:** Entity and time-trend fixed effects parameters capturing time-invariant institutional factors and global shocks.
-*   **$\text{PostPolicy}_{it}$:** Step-treatment binary indicator tracking post-2022 policy activation windows.
-*   **Variance Corrective:** Standard errors are evaluated using Huber-White robust estimation ($HC1$) to control for small-sample heteroskedasticity.
+* **AttritionRate_{it}**: Localized doctoral pipeline attrition indicator matrix for institution $i$ across calendar year $t$.
+* **$\alpha_i$ & $\delta_t$**: Entity and time-trend fixed effects parameters capturing time-invariant institutional factors and global macroeconomic shocks.
+* **PostPolicy_{it}**: Step-treatment binary indicator tracking policy activation windows ($t \ge 2023$ for the United States; $t \ge 2021$ for Japan).
+* **Variance Corrective**: Standard errors are evaluated using Huber-White robust estimation clustered at the institutional level ($HC1$) to control for heteroskedasticity.
 
 ## Repository Architecture
 
-*   `metrics_engine.py`: Core processing pipeline executing live API audits and estimating the TWFE panel regressions.
-*   `governance_matrix.csv`: Standardized historical panel tracking parameters across target elite research centers ($N=8$).
-*   `.github/workflows/run_audit.yml`: Automated GitHub Actions runner validating script execution environment on push.
+* `metrics_engine.py`: Core processing pipeline executing live API audits and estimating the TWFE panel regressions.
+* `institutions_config.json`: Master lookup profile housing real postsecondary database mappings for the active cohort.
+* `governance_matrix.csv`: Standardized historical panel tracking parameters across target elite research centers ($N = 33$).
+* `.github/workflows/run_audit.yml`: Automated GitHub Actions runner validating script execution environment on push.
 
 ## Setup & Replication
 
