@@ -7,7 +7,7 @@ import statsmodels.formula.api as smf
 
 def fetch_live_chips_data():
     """Fetches real CHIPS Act public infrastructure awards from the USAspending API."""
-    url = "https://usaspending.gov"
+    url = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
     
     payload = {
         "filters": {
