@@ -61,8 +61,11 @@ def execute_policy_audit(df_api):
         
         # Pull real funding if U.S. institution
         if country == "US" and df_api is not None and not df_api.empty:
-            inst_awards = df_api[df_api["Recipient Name"].str.contains(inst_name, case=False, na=False)]
+            # Look up the broad matching alias instead of the strict canonical name
+            alias_string = inst.get("api_alias", inst_name)
+            inst_awards = df_api[df_api["Recipient Name"].str.contains(alias_string, case=False, na=False)]
             real_funding_total = inst_awards["Award Amount"].sum()
+
         # Fallback benchmark for Japanese institutional science funding (MEXT Society 5.0)
         elif country == "JP":
             real_funding_total = 450000000.0  # Approx baseline value in USD equivalent
