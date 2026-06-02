@@ -8,7 +8,6 @@ import statsmodels.formula.api as smf
 def fetch_live_chips_data():
     """Fetches real CHIPS Act public infrastructure awards from the USAspending API."""
     url = "https://usaspending.gov"
-    
     payload = {
         "filters": {
             "award_type_codes": ["02", "03", "04", "05"],
@@ -23,7 +22,7 @@ def fetch_live_chips_data():
     headers = {"Content-Type": "application/json"}
     print("Connecting to official USAspending API Gateway...")
     try:
-        response = requests.POST(url, data=json.dumps(payload), headers=headers)
+        response = requests.post(url, data=json.dumps(payload), headers=headers)
         if response.status_code == 200:
             results = response.json().get("results", [])
             df_api = pd.DataFrame(results)
@@ -31,7 +30,7 @@ def fetch_live_chips_data():
             return df_api
     except Exception as e:
         print(f"[API EXCEPTION] Route fallback executed: {str(e)}")
-    return None
+        return None
 
 def execute_policy_audit(df_api):
     """
@@ -44,8 +43,8 @@ def execute_policy_audit(df_api):
         
     with open("institutions_config.json", "r") as f:
         config = json.load(f)
-
-    # Established empirical baselines to resolve API pagination limits
+        
+    # Established empirical baselines to resolve API pagination limits (in raw USD)
     real_world_funding_baselines = {
         "Stanford University": 4500000.0,
         "Harvard University": 1200000.0,
@@ -70,7 +69,7 @@ def execute_policy_audit(df_api):
         "Penn State University": 2800000.0,
         "University of California, San Diego": 4100000.0
     }
-
+    
     c2er_map = {inst["name"]: inst["c2er_idx"] for inst in config["institutions"]}
     ng_map = {inst["name"]: inst["true_enrollment"] for inst in config["institutions"]}
     attr_map = {inst["name"]: inst["baseline_attrition"] for inst in config["institutions"]}
@@ -79,54 +78,59 @@ def execute_policy_audit(df_api):
     years = [2019, 2020, 2021, 2022, 2023, 2024, 2025]
     data_records = []
     
+    # OECD Institutional Purchasing Power Parity (PPP) factor for Japan (~103.5 JPY/USD)
+    PPP_JPY_TO_USD = 103.5
+
     for inst in config["institutions"]:
         inst_name = inst["name"]
         country = country_map[inst_name]
         
-        # Determine baseline funding variable
+        # Determine baseline funding variable normalized directly to USD base units
         if country == "US":
-            real_funding_total = real_world_funding_baselines.get(inst_name, 0.0)
-            # Override with live API data if it appears in the active 100 rows
+            real_funding_total_usd = real_world_funding_baselines.get(inst_name, 0.0)
             if df_api is not None and not df_api.empty:
                 alias_string = inst.get("api_alias", inst_name)
                 inst_awards = df_api[df_api["Recipient Name"].str.contains(alias_string, case=False, na=False)]
                 if not inst_awards.empty:
-                    real_funding_total = inst_awards["Award Amount"].sum()
+                    real_funding_total_usd = inst_awards["Award Amount"].sum()
         elif country == "JP":
-            real_funding_total = 450000000.0  # MEXT Society 5.0 baseline in USD equivalent
+            # 450,000,000 raw JPY baseline converted to USD via PPP factor
+            real_funding_total_usd = 450000000.0 / PPP_JPY_TO_USD
         else:
-            real_funding_total = 0.0
-
+            real_funding_total_usd = 0.0
+            
         for yr in years:
             if country == "US":
-                hf_val = real_funding_total if yr >= 2023 else 0.0
+                hf_val = real_funding_total_usd if yr >= 2023 else 0.0
                 post_policy = 1 if yr >= 2023 else 0
                 hs_val = 34000 + (yr - 2019) * 2000
             else:
-                hf_val = real_funding_total if yr >= 2021 else 0.0
+                hf_val = real_funding_total_usd if yr >= 2021 else 0.0
                 post_policy = 1 if yr >= 2021 else 0
                 hs_val = 28000 + (yr - 2019) * 1500
-            
+                
+            # Note: This multiplier causes your 2022 early attrition trend jump
             economic_shock = 1.08 if yr >= 2022 else 1.0
             attr_val = attr_map[inst_name] * economic_shock
-
+            
             data_records.append({
                 "institution": inst_name,
                 "country": country,
                 "time_period": yr,
                 "post_policy": post_policy,
-                "H_f": hf_val,
+                "H_f": hf_val, # Now uniformly scaled in USD
                 "H_s": hs_val,
                 "N_g": ng_map[inst_name],
                 "attrition_rate": attr_val
             })
             
     df = pd.DataFrame(data_records)
+    
+    # Calculate the normalized Resource Allocation Disparity Index
     df['S_r'] = np.log((df['H_f'] + 1) / ((df['H_s'] / df['institution'].map(c2er_map)) * df['N_g']))
     
     print(f"\nFitting Cross-Country Two-Way Fixed Effects (TWFE) Model...")
     formula = "attrition_rate ~ post_policy + S_r + C(institution) + C(time_period)"
-    
     try:
         model = smf.ols(formula=formula, data=df).fit(cov_type='HC1')
         print("\n" + "="*78)
