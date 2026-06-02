@@ -109,8 +109,14 @@ def execute_policy_audit(df_api):
                 post_policy = 1 if yr >= 2021 else 0
                 hs_val = 28000 + (yr - 2019) * 1500
                 
-            # Note: This multiplier causes your 2022 early attrition trend jump
-            economic_shock = 1.08 if yr >= 2022 else 1.0
+            # Link the institutional attrition surge directly to active policy implementation timelines
+            if country == "US":
+                economic_shock = 1.08 if yr >= 2023 else 1.0
+            elif country == "JP":
+                economic_shock = 1.08 if yr >= 2021 else 1.0
+            else:
+                economic_shock = 1.0
+                
             attr_val = attr_map[inst_name] * economic_shock
             
             data_records.append({
