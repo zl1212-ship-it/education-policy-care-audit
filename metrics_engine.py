@@ -94,8 +94,20 @@ def execute_policy_audit(df_api):
                 if not inst_awards.empty:
                     real_funding_total_usd = inst_awards["Award Amount"].sum()
         elif country == "JP":
-            # 450,000,000 raw JPY baseline converted to USD via PPP factor
-            real_funding_total_usd = 450000000.0 / PPP_JPY_TO_USD
+            # 1. Dynamically calculate the total graduate student footprint across all Japanese institutions
+            total_jp_students = sum(
+                ng_map[cfg_inst["name"]] 
+                for cfg_inst in config["institutions"] 
+                if country_map[cfg_inst["name"]] == "JP"
+            )
+            
+            # 2. Extract this specific university's enrollment headcount
+            inst_students = ng_map[inst_name]
+            
+            # 3. Scale the baseline 450M Yen fund by the institution's enrollment share 
+            # and divide by the PPP factor to get the clean USD metric
+            raw_jpy_share = 450000000.0 * (inst_students / total_jp_students)
+            real_funding_total_usd = raw_jpy_share / PPP_JPY_TO_USD
         else:
             real_funding_total_usd = 0.0
             
