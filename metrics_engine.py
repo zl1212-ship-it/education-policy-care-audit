@@ -6,14 +6,17 @@ import requests
 import statsmodels.formula.api as smf
 
 def fetch_live_chips_data():
-    """Fetches real CHIPS Act public infrastructure awards from the USAspending API."""
-    url = "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+    """Fetches real CHIPS Act and science infrastructure awards from the USAspending API."""
+    url = "https://usaspending.gov"
     
     payload = {
         "filters": {
             "award_type_codes": ["02", "03", "04", "05"],
-            "agencies": [{"type": "funding", "tier": "toptier", "name": "Department of Commerce"}],
-            "keywords": ["semiconductor", "microelectronics", "cleanroom", "CHIPS Act"],
+            "agencies": [
+                {"type": "funding", "tier": "toptier", "name": "Department of Commerce"},
+                {"type": "funding", "tier": "toptier", "name": "National Science Foundation"}
+            ],
+            "keywords": ["semiconductor", "microelectronics", "cleanroom", "CHIPS Act", "quantum computing", "materials research"],
             "time_period": [{"start_date": "2022-10-01", "end_date": "2026-01-01"}]
         },
         "fields": ["Award ID", "Recipient Name", "Award Amount", "Description"],
