@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education Policy Governance Matrix</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 20px; }
+.header { max-width: 1400px; margin: 0 auto 20px; }
+.header h1 { font-size: 1.6rem; color: #16213e; }
+.header p { color: #666; font-size: 0.9rem; margin-top: 4px; }
+.status-bar { display: flex; gap: 20px; align-items: center; margin-top: 12px; flex-wrap: wrap; }
+.status-item { font-size: 0.85rem; color: #444; background: #fff; padding: 6px 14px; border-radius: 6px; border: 1px solid #e0e0e0; }
+.status-item .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.dot-green { background: #22c55e; }
+.dot-yellow { background: #eab308; }
+.dot-red { background: #ef4444; }
+.controls { max-width: 1400px; margin: 0 auto 16px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.controls input, .controls select { padding: 8px 12px; border: 1px solid #d0d5dd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
+.controls input { width: 260px; }
+.controls button { padding: 8px 16px; border: none; border-radius: 6px; font-size: 0.85rem; cursor: pointer; background: #16213e; color: #fff; }
+.controls button:hover { background: #1a3a5c; }
+.table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+thead th { background: #16213e; color: #fff; padding: 12px 14px; text-align: left; position: sticky; top: 0; cursor: pointer; white-space: nowrap; user-select: none; }
+thead th:hover { background: #1a3a5c; }
+thead th .sort-arrow { margin-left: 4px; font-size: 0.7rem; }
+tbody td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+tbody tr:hover { background: #f8fafc; }
+tbody tr.post-policy { background: #f0fdf4; }
+tbody tr.post-policy:hover { background: #dcfce7; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+.tag-us { background: #dbeafe; color: #1e40af; }
+.tag-jp { background: #fce7f3; color: #9d174d; }
+.tag-pre { background: #fee2e2; color: #991b1b; }
+.tag-post { background: #d1fae5; color: #065f46; }
+.loading { text-align: center; padding: 60px; color: #888; font-size: 1.1rem; }
+.error { text-align: center; padding: 60px; color: #ef4444; font-size: 1rem; }
+.footer { max-width: 1400px; margin: 16px auto 0; font-size: 0.8rem; color: #999; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Education Policy & Care Audit — Governance Matrix</h1>
+  <p>Live data from <a href="https://github.com/zl1212-ship-it/education-policy-care-audit" target="_blank">zl1212-ship-it/education-policy-care-audit</a></p>
+  <div class="status-bar">
+    <span class="status-item" id="status"><span class="dot dot-yellow"></span>Loading...</span>
+    <span class="status-item" id="row-count">—</span>
+    <span class="status-item" id="last-update">—</span>
+    <span class="status-item">Auto-refresh: 1h</span>
+  </div>
+</div>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search institution or country...">
+  <select id="filter-country">
+    <option value="">All Countries</option>
+    <option value="US">US</option>
+    <option value="JP">Japan</option>
+  </select>
+  <select id="filter-year">
+    <option value="">All Years</option>
+  </select>
+  <select id="filter-policy">
+    <option value="">Pre & Post Policy</option>
+    <option value="0">Pre-Policy</option>
+    <option value="1">Post-Policy</option>
+  </select>
+  <button onclick="fetchData()">Refresh Now</button>
+</div>
+
+<div class="table-wrap">
+  <div class="loading" id="loading">Loading data from GitHub...</div>
+  <table id="data-table" style="display:none">
+    <thead>
+      <tr id="header-row"></tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  <div class="error" id="error" style="display:none"></div>
+</div>
+
+<div class="footer" id="footer"></div>
+
+<script>
+const CSV_URL = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/governance_matrix.csv';
+const REFRESH_MS = 60 * 60 * 1000;
+
+let allRows = [];
+let headers = [];
+let sortCol = -1;
+let sortAsc = true;
+
+const COLUMN_CONFIG = {
+  'institution': { label: 'Institution', format: v => v },
+  'country': { label: 'Country', format: v => `<span class="tag ${v === 'US' ? 'tag-us' : 'tag-jp'}">${v}</span>` },
+  'time_period': { label: 'Year', cls: 'num', format: v => v },
+  'post_policy': { label: 'Policy Status', format: v => v === '1' || v === 1 ? '<span class="tag tag-post">Post</span>' : '<span class="tag tag-pre">Pre</span>' },
+  'H_f': { label: 'H_f (Funding)', cls: 'num', format: v => Number(v).toLocaleString('en-US', {maximumFractionDigits: 2}) },
+  'H_s': { label: 'H_s (Spending)', cls: 'num', format: v => Number(v).toLocaleString('en-US') },
+  'N_g': { label: 'N_g (Enrollment)', cls: 'num', format: v => Number(v).toLocaleString('en-US') },
+  'attrition_rate': { label: 'Attrition Rate', cls: 'num', format: v => (Number(v) * 100).toFixed(2) + '%' },
+  'S_r': { label: 'S_r (Score)', cls: 'num', format: v => Number(v).toFixed(4) }
+};
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const hdrs = parseCSVLine(lines[0]);
+  const rows = [];
+  for (let i = 1; i < lines.length; i++) {
+    const vals = parseCSVLine(lines[i]);
+    if (vals.length === hdrs.length) {
+      const row = {};
+      hdrs.forEach((h, j) => row[h] = vals[j]);
+      rows.push(row);
+    }
+  }
+  return { headers: hdrs, rows };
+}
+
+function parseCSVLine(line) {
+  const result = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (inQuotes) {
+      if (ch === '"' && line[i+1] === '"') { current += '"'; i++; }
+      else if (ch === '"') { inQuotes = false; }
+      else { current += ch; }
+    } else {
+      if (ch === '"') { inQuotes = true; }
+      else if (ch === ',') { result.push(current.trim()); current = ''; }
+      else { current += ch; }
+    }
+  }
+  result.push(current.trim());
+  return result;
+}
+
+function getFiltered() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const country = document.getElementById('filter-country').value;
+  const year = document.getElementById('filter-year').value;
+  const policy = document.getElementById('filter-policy').value;
+
+  return allRows.filter(r => {
+    if (search && !r.institution.toLowerCase().includes(search) && !r.country.toLowerCase().includes(search)) return false;
+    if (country && r.country !== country) return false;
+    if (year && r.time_period !== year) return false;
+    if (policy !== '' && String(r.post_policy) !== policy) return false;
+    return true;
+  });
+}
+
+function renderTable(rows) {
+  const headerRow = document.getElementById('header-row');
+  headerRow.innerHTML = '';
+  headers.forEach((h, i) => {
+    const cfg = COLUMN_CONFIG[h] || { label: h };
+    const th = document.createElement('th');
+    let arrow = '';
+    if (sortCol === i) arrow = `<span class="sort-arrow">${sortAsc ? '▲' : '▼'}</span>`;
+    th.innerHTML = cfg.label + arrow;
+    th.className = cfg.cls || '';
+    th.onclick = () => { sortByCol(i); };
+    headerRow.appendChild(th);
+  });
+
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    if (String(row.post_policy) === '1') tr.className = 'post-policy';
+    headers.forEach(h => {
+      const td = document.createElement('td');
+      const cfg = COLUMN_CONFIG[h] || { format: v => v };
+      td.className = cfg.cls || '';
+      td.innerHTML = cfg.format(row[h]);
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('row-count').textContent = `${rows.length} / ${allRows.length} rows`;
+}
+
+function sortByCol(i) {
+  if (sortCol === i) { sortAsc = !sortAsc; }
+  else { sortCol = i; sortAsc = true; }
+  const key = headers[i];
+  allRows.sort((a, b) => {
+    let va = a[key], vb = b[key];
+    const na = Number(va), nb = Number(vb);
+    if (!isNaN(na) && !isNaN(nb)) { return sortAsc ? na - nb : nb - na; }
+    return sortAsc ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va));
+  });
+  renderTable(getFiltered());
+}
+
+function populateYearFilter() {
+  const years = [...new Set(allRows.map(r => r.time_period))].sort();
+  const sel = document.getElementById('filter-year');
+  sel.innerHTML = '<option value="">All Years</option>';
+  years.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y; opt.textContent = y;
+    sel.appendChild(opt);
+  });
+}
+
+async function fetchData() {
+  const loading = document.getElementById('loading');
+  const table = document.getElementById('data-table');
+  const error = document.getElementById('error');
+
+  loading.style.display = 'block';
+  table.style.display = 'none';
+  error.style.display = 'none';
+
+  try {
+    const res = await fetch(CSV_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    const parsed = parseCSV(text);
+    headers = parsed.headers;
+    allRows = parsed.rows;
+
+    populateYearFilter();
+    renderTable(getFiltered());
+
+    loading.style.display = 'none';
+    table.style.display = 'table';
+
+    const now = new Date().toLocaleString();
+    document.getElementById('status').innerHTML = '<span class="dot dot-green"></span>Live';
+    document.getElementById('last-update').textContent = 'Updated: ' + now;
+    document.getElementById('footer').textContent = `Data source: governance_matrix.csv | Last fetch: ${now} | Next refresh in 1 hour`;
+  } catch (e) {
+    loading.style.display = 'none';
+    error.style.display = 'block';
+    error.textContent = 'Failed to load data: ' + e.message;
+    document.getElementById('status').innerHTML = '<span class="dot dot-red"></span>Error';
+  }
+}
+
+document.getElementById('search').addEventListener('input', () => renderTable(getFiltered()));
+document.getElementById('filter-country').addEventListener('change', () => renderTable(getFiltered()));
+document.getElementById('filter-year').addEventListener('change', () => renderTable(getFiltered()));
+document.getElementById('filter-policy').addEventListener('change', () => renderTable(getFiltered()));
+
+fetchData();
+setInterval(fetchData, REFRESH_MS);
+</script>
+</body>
+</html>
