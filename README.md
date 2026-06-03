@@ -1,7 +1,7 @@
 # Educational Care Audit
 
 This repository contains the replication code, structured panel datasets, and automated verification pipelines for the paper:
-*"Redistributing Educational Care: A Comparative Policy Audit of Funding, Staffing, and Implementation Rules in the United States and Japan."*
+*"Funding High-Skill STEM Pipelines: A Comparative Policy Audit of Institutional Infrastructure and Doctoral Labor Support in the United States and Japan."*
 
 The codebase models how macro-industrial transformations, specifically the U.S. CHIPS and Science Act and Japan's Society 5.0 framework, alter localized institutional resource allocation profiles and drive doctoral pipeline attrition.
 
