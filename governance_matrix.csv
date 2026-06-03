@@ -1,155 +1,232 @@
-institution,country,fiscal_year,federal_funding_total,award_count,top_awarding_agency
-Stanford University,US,2019,3760546.27,4,N/A
-Stanford University,US,2020,5957059.9,5,N/A
-Stanford University,US,2021,65542131.21,2,N/A
-Stanford University,US,2022,65866603.43,1,N/A
-Stanford University,US,2023,77929982.12,2,N/A
-Stanford University,US,2024,99648776.17,2,N/A
-Stanford University,US,2025,78343242.32,1,N/A
-Harvard University,US,2019,8058081.49,3,N/A
-Harvard University,US,2020,5179526.0,3,N/A
-Harvard University,US,2021,15265716.67,4,N/A
-Harvard University,US,2022,26762215.2,3,N/A
-Harvard University,US,2023,21385983.5,3,N/A
-Harvard University,US,2024,21817108.83,3,N/A
-Harvard University,US,2025,32006038.67,5,N/A
-Massachusetts Institute of Technology,US,2019,1514974003.91,4,N/A
-Massachusetts Institute of Technology,US,2020,1511686136.55,3,N/A
-Massachusetts Institute of Technology,US,2021,1556611827.47,3,N/A
-Massachusetts Institute of Technology,US,2022,1641356030.23,3,N/A
-Massachusetts Institute of Technology,US,2023,1794466899.58,2,N/A
-Massachusetts Institute of Technology,US,2024,1887299852.78,2,N/A
-Massachusetts Institute of Technology,US,2025,1885485007.63,2,N/A
-California Institute of Technology,US,2019,2848707903.67,4,N/A
-California Institute of Technology,US,2020,2815733185.16,4,N/A
-California Institute of Technology,US,2021,2530275642.76,4,N/A
-California Institute of Technology,US,2022,2827651642.96,4,N/A
-California Institute of Technology,US,2023,2992533235.26,2,N/A
-California Institute of Technology,US,2024,2438269942.61,2,N/A
-California Institute of Technology,US,2025,2590270744.29,2,N/A
-Princeton University,US,2019,312273657.42,2,N/A
-Princeton University,US,2020,341670144.24,5,N/A
-Princeton University,US,2021,378612589.92,3,N/A
-Princeton University,US,2022,346067854.04,2,N/A
-Princeton University,US,2023,348535137.4,1,N/A
-Princeton University,US,2024,314832856.81,1,N/A
-Princeton University,US,2025,409551684.0,1,N/A
-Yale University,US,2019,10876785.22,3,N/A
-Yale University,US,2020,11425130.24,4,N/A
-Yale University,US,2021,30825860.44,3,N/A
-Yale University,US,2022,55929272.29,3,N/A
-Yale University,US,2023,45864673.29,2,N/A
-Yale University,US,2024,33144751.46,2,N/A
-Yale University,US,2025,45656267.28,2,N/A
-Columbia University,US,2019,906489561.45,7,N/A
-Columbia University,US,2020,1130310399.41,7,N/A
-Columbia University,US,2021,1070107685.36,6,N/A
-Columbia University,US,2022,1146067408.57,6,N/A
-Columbia University,US,2023,1137788514.3,3,N/A
-Columbia University,US,2024,1117182325.89,4,N/A
-Columbia University,US,2025,975127438.35,3,N/A
-University of Chicago,US,2019,369124290.45,6,N/A
-University of Chicago,US,2020,418045061.23,7,N/A
-University of Chicago,US,2021,488932108.32,7,N/A
-University of Chicago,US,2022,443971400.23,6,N/A
-University of Chicago,US,2023,498638681.22,5,N/A
-University of Chicago,US,2024,500438365.94,5,N/A
-University of Chicago,US,2025,477435570.16,4,N/A
-University of Pennsylvania,US,2019,887207941.31,33,N/A
-University of Pennsylvania,US,2020,960700310.08,35,N/A
-University of Pennsylvania,US,2021,1322288105.97,30,N/A
-University of Pennsylvania,US,2022,960253467.29,27,N/A
-University of Pennsylvania,US,2023,1039085506.67,12,N/A
-University of Pennsylvania,US,2024,1016304438.24,12,N/A
-University of Pennsylvania,US,2025,1069655845.26,12,N/A
-Cornell University,US,2019,558792349.34,8,N/A
-Cornell University,US,2020,618365413.03,7,N/A
-Cornell University,US,2021,680228434.86,6,N/A
-Cornell University,US,2022,654765999.27,5,N/A
-Cornell University,US,2023,751289059.31,5,N/A
-Cornell University,US,2024,729569698.24,4,N/A
-Cornell University,US,2025,672106018.91,5,N/A
-Johns Hopkins University,US,2019,2345602621.76,6,N/A
-Johns Hopkins University,US,2020,2679544126.12,6,N/A
-Johns Hopkins University,US,2021,2699408894.4,4,N/A
-Johns Hopkins University,US,2022,2883385235.28,4,N/A
-Johns Hopkins University,US,2023,3245301523.52,3,N/A
-Johns Hopkins University,US,2024,3256256487.37,3,N/A
-Johns Hopkins University,US,2025,3520298879.38,2,N/A
-Duke University,US,2019,724147310.89,3,N/A
-Duke University,US,2020,771339695.05,4,N/A
-Duke University,US,2021,910859096.11,4,N/A
-Duke University,US,2022,838447890.2,3,N/A
-Duke University,US,2023,861888839.02,2,N/A
-Duke University,US,2024,772847642.25,2,N/A
-Duke University,US,2025,769708738.14,2,N/A
-Northwestern University,US,2019,530330537.09,3,N/A
-Northwestern University,US,2020,571590538.73,8,N/A
-Northwestern University,US,2021,605393807.26,4,N/A
-Northwestern University,US,2022,602074265.04,3,N/A
-Northwestern University,US,2023,635717139.34,4,N/A
-Northwestern University,US,2024,610408840.64,2,N/A
-Northwestern University,US,2025,581331455.28,2,N/A
-University of Michigan,US,2019,958729472.38,6,N/A
-University of Michigan,US,2020,1070190986.13,8,N/A
-University of Michigan,US,2021,1130312891.39,5,N/A
-University of Michigan,US,2022,1039011228.62,5,N/A
-University of Michigan,US,2023,1164528510.79,4,N/A
-University of Michigan,US,2024,1202834741.49,4,N/A
-University of Michigan,US,2025,1183841995.33,3,N/A
-University of Texas at Austin,US,2019,499191496.09,5,N/A
-University of Texas at Austin,US,2020,535635290.68,7,N/A
-University of Texas at Austin,US,2021,663160137.73,6,N/A
-University of Texas at Austin,US,2022,545902888.29,6,N/A
-University of Texas at Austin,US,2023,633027222.83,5,N/A
-University of Texas at Austin,US,2024,895612109.99,5,N/A
-University of Texas at Austin,US,2025,799759429.94,5,N/A
-University of Washington,US,2019,1036454082.19,10,N/A
-University of Washington,US,2020,1069292710.08,12,N/A
-University of Washington,US,2021,1228441091.93,4,N/A
-University of Washington,US,2022,1179595509.86,4,N/A
-University of Washington,US,2023,1144964404.13,4,N/A
-University of Washington,US,2024,1178896257.84,5,N/A
-University of Washington,US,2025,1028535266.41,4,N/A
-University of Illinois Urbana-Champaign,US,2019,69350.0,1,N/A
-University of Illinois Urbana-Champaign,US,2020,5384108.56,1,N/A
-University of Illinois Urbana-Champaign,US,2021,299000.0,1,N/A
-University of Illinois Urbana-Champaign,US,2022,11638935.0,1,N/A
-University of Illinois Urbana-Champaign,US,2023,21044888.0,1,N/A
-University of Illinois Urbana-Champaign,US,2024,41727607.05,1,N/A
-University of Illinois Urbana-Champaign,US,2025,20880719.11,1,N/A
-Ohio State University,US,2019,495885991.2,10,N/A
-Ohio State University,US,2020,556053238.42,14,N/A
-Ohio State University,US,2021,688305572.75,11,N/A
-Ohio State University,US,2022,537752600.95,8,N/A
-Ohio State University,US,2023,562591941.8,5,N/A
-Ohio State University,US,2024,583450930.5,3,N/A
-Ohio State University,US,2025,585004770.24,5,N/A
-Penn State University,US,2019,6756533.0,1,N/A
-Penn State University,US,2020,3881183.0,3,N/A
-Penn State University,US,2021,10087293.84,1,N/A
-Penn State University,US,2022,5708761.28,1,N/A
-Penn State University,US,2023,20956971.97,1,N/A
-Penn State University,US,2024,10342148.41,1,N/A
-Penn State University,US,2025,27563439.68,1,N/A
-"University of California, Berkeley",US,2019,2554335.0,1,N/A
-"University of California, Berkeley",US,2020,1564454.0,2,N/A
-"University of California, Berkeley",US,2021,1094930.74,1,N/A
-"University of California, Berkeley",US,2022,3145701.0,1,N/A
-"University of California, Berkeley",US,2023,-136528.0,1,N/A
-"University of California, Berkeley",US,2024,0.0,1,N/A
-"University of California, Berkeley",US,2025,0.0,0,N/A
-"University of California, Los Angeles",US,2019,645917910.32,2,N/A
-"University of California, Los Angeles",US,2020,906817590.64,2,N/A
-"University of California, Los Angeles",US,2021,926506345.85,2,N/A
-"University of California, Los Angeles",US,2022,833475226.27,2,N/A
-"University of California, Los Angeles",US,2023,861465735.99,1,N/A
-"University of California, Los Angeles",US,2024,814267003.01,1,N/A
-"University of California, Los Angeles",US,2025,739264165.63,1,N/A
-"University of California, San Diego",US,2019,664386239.06,4,N/A
-"University of California, San Diego",US,2020,743262004.9,4,N/A
-"University of California, San Diego",US,2021,925969132.41,5,N/A
-"University of California, San Diego",US,2022,832678531.78,5,N/A
-"University of California, San Diego",US,2023,793707465.64,4,N/A
-"University of California, San Diego",US,2024,738238210.59,3,N/A
-"University of California, San Diego",US,2025,781906641.01,2,N/A
+institution,country,time_period,post_policy,H_f,H_s,N_g,attrition_rate,S_r
+Stanford University,US,2019,0,3760546.27,42842.83,4850,0.0306,-3.6404
+Stanford University,US,2020,0,5957059.9,43688.41,4850,0.0311,-3.1999
+Stanford University,US,2021,0,65542131.21,47745.86,4850,0.031,-0.8906
+Stanford University,US,2022,0,65866603.43,48597.82,4850,0.0314,-0.9034
+Stanford University,US,2023,1,77929982.12,52377.5,4850,0.0296,-0.8101
+Stanford University,US,2024,1,99648776.17,51909.6,4850,0.0308,-0.5553
+Stanford University,US,2025,1,78343242.32,57143.33,4850,0.0298,-0.8919
+Harvard University,US,2019,0,8058081.49,38009.3,3950,0.0281,-2.6028
+Harvard University,US,2020,0,5179526.0,34585.41,3950,0.0293,-2.9504
+Harvard University,US,2021,0,15265716.67,36716.17,3950,0.0295,-1.9292
+Harvard University,US,2022,0,26762215.2,37342.54,3950,0.03,-1.3848
+Harvard University,US,2023,1,21385983.5,44133.1,3950,0.0255,-1.7761
+Harvard University,US,2024,1,21817108.83,50200.0,3950,0.0248,-1.885
+Harvard University,US,2025,1,32006038.67,51300.0,3950,0.026,-1.5234
+Massachusetts Institute of Technology,US,2019,0,1514974003.91,35768.6,4100,0.0297,2.6858
+Massachusetts Institute of Technology,US,2020,0,1511686136.55,38339.59,4100,0.0299,2.6142
+Massachusetts Institute of Technology,US,2021,0,1556611827.47,39413.17,4100,0.0303,2.6158
+Massachusetts Institute of Technology,US,2022,0,1641356030.23,42278.67,4100,0.0304,2.5987
+Massachusetts Institute of Technology,US,2023,1,1794466899.58,46800.5,4100,0.0359,2.5862
+Massachusetts Institute of Technology,US,2024,1,1887299852.78,48269.71,4100,0.0362,2.6058
+Massachusetts Institute of Technology,US,2025,1,1885485007.63,44688.0,4100,0.0376,2.6819
+California Institute of Technology,US,2019,0,2848707903.67,37916.67,1400,0.0252,4.3121
+California Institute of Technology,US,2020,0,2815733185.16,36400.0,1400,0.0261,4.3412
+California Institute of Technology,US,2021,0,2530275642.76,37750.0,1400,0.0264,4.1979
+California Institute of Technology,US,2022,0,2827651642.96,26183.56,1400,0.0291,4.6749
+California Institute of Technology,US,2023,1,2992533235.26,45000.0,1400,0.0355,4.19
+California Institute of Technology,US,2024,1,2438269942.61,46500.0,1400,0.0353,3.9524
+California Institute of Technology,US,2025,1,2590270744.29,47581.33,1400,0.0358,3.9899
+Princeton University,US,2019,0,312273657.42,34238.79,3100,0.0272,1.3023
+Princeton University,US,2020,0,341670144.24,34612.71,3100,0.0277,1.3814
+Princeton University,US,2021,0,378612589.92,42087.33,3100,0.0268,1.2885
+Princeton University,US,2022,0,346067854.04,47264.58,3100,0.0263,1.0826
+Princeton University,US,2023,1,348535137.4,46883.64,3100,0.0294,1.0978
+Princeton University,US,2024,1,314832856.81,49808.6,3100,0.0291,0.9356
+Princeton University,US,2025,1,409551684.0,54923.43,3100,0.029,1.1009
+Yale University,US,2019,0,10876785.22,34132.81,3500,0.0295,-2.1264
+Yale University,US,2020,0,11425130.24,34010.19,3500,0.0301,-2.0736
+Yale University,US,2021,0,30825860.44,36800.0,3500,0.0302,-1.1599
+Yale University,US,2022,0,55929272.29,38963.92,3500,0.0304,-0.6213
+Yale University,US,2023,1,45864673.29,43202.45,3500,0.0281,-0.9229
+Yale University,US,2024,1,33144751.46,46115.0,3500,0.0273,-1.313
+Yale University,US,2025,1,45656267.28,52016.45,3500,0.0272,-1.1132
+Columbia University,US,2019,0,906489561.45,34310.79,5200,0.0364,2.0442
+Columbia University,US,2020,0,1130310399.41,34977.44,5200,0.0368,2.2456
+Columbia University,US,2021,0,1070107685.36,37857.0,5200,0.037,2.1118
+Columbia University,US,2022,0,1146067408.57,39940.9,5200,0.0372,2.1267
+Columbia University,US,2023,1,1137788514.3,45129.92,5200,0.0414,1.9973
+Columbia University,US,2024,1,1117182325.89,39791.09,5200,0.0431,2.105
+Columbia University,US,2025,1,975127438.35,34529.43,5200,0.0446,2.1108
+University of Chicago,US,2019,0,369124290.45,33438.17,4600,0.0385,1.1222
+University of Chicago,US,2020,0,418045061.23,35374.39,4600,0.0387,1.1904
+University of Chicago,US,2021,0,488932108.32,34095.0,4600,0.0395,1.3839
+University of Chicago,US,2022,0,443971400.23,35586.82,4600,0.0398,1.2446
+University of Chicago,US,2023,1,498638681.22,41771.67,4600,0.0419,1.2005
+University of Chicago,US,2024,1,500438365.94,44929.41,4600,0.0417,1.1312
+University of Chicago,US,2025,1,477435570.16,46350.0,4600,0.0419,1.053
+University of Pennsylvania,US,2019,0,887207941.31,31026.07,4900,0.0347,1.9791
+University of Pennsylvania,US,2020,0,960700310.08,33270.74,4900,0.0349,1.9889
+University of Pennsylvania,US,2021,0,1322288105.97,34899.81,4900,0.0352,2.2605
+University of Pennsylvania,US,2022,0,960253467.29,37427.49,4900,0.0353,1.8707
+University of Pennsylvania,US,2023,1,1039085506.67,42403.75,4900,0.0389,1.8247
+University of Pennsylvania,US,2024,1,1016304438.24,42175.83,4900,0.0395,1.808
+University of Pennsylvania,US,2025,1,1069655845.26,43582.0,4900,0.0398,1.8263
+Cornell University,US,2019,0,558792349.34,37276.6,6100,0.0359,1.0389
+Cornell University,US,2020,0,618365413.03,36075.71,6100,0.0368,1.1729
+Cornell University,US,2021,0,680228434.86,36587.83,6100,0.0372,1.2542
+Cornell University,US,2022,0,654765999.27,39284.53,6100,0.0373,1.1449
+Cornell University,US,2023,1,751289059.31,44712.78,6100,0.0392,1.153
+Cornell University,US,2024,1,729569698.24,39403.88,6100,0.0412,1.2501
+Cornell University,US,2025,1,672106018.91,47886.56,6100,0.0393,0.9731
+Johns Hopkins University,US,2019,0,2345602621.76,36382.54,5400,0.0355,2.6704
+Johns Hopkins University,US,2020,0,2679544126.12,32231.86,5400,0.0369,2.9247
+Johns Hopkins University,US,2021,0,2699408894.4,35630.46,5400,0.0368,2.8318
+Johns Hopkins University,US,2022,0,2883385235.28,33961.2,5400,0.0378,2.9457
+Johns Hopkins University,US,2023,1,3245301523.52,35334.0,5400,0.0448,3.0243
+Johns Hopkins University,US,2024,1,3256256487.37,45811.11,5400,0.0426,2.768
+Johns Hopkins University,US,2025,1,3520298879.38,50500.0,5400,0.0422,2.7485
+Duke University,US,2019,0,724147310.89,29191.65,3800,0.0325,1.9894
+Duke University,US,2020,0,771339695.05,32555.96,3800,0.0323,1.9435
+Duke University,US,2021,0,910859096.11,33210.71,3800,0.0328,2.0898
+Duke University,US,2022,0,838447890.2,35137.81,3800,0.033,1.9506
+Duke University,US,2023,1,861888839.02,38590.91,3800,0.0369,1.8844
+Duke University,US,2024,1,772847642.25,38000.0,3800,0.0375,1.7908
+Duke University,US,2025,1,769708738.14,43024.43,3800,0.0367,1.6626
+Northwestern University,US,2019,0,530330537.09,31424.35,4400,0.0358,1.5754
+Northwestern University,US,2020,0,571590538.73,31531.84,4400,0.0363,1.6469
+Northwestern University,US,2021,0,605393807.26,34898.33,4400,0.0363,1.6029
+Northwestern University,US,2022,0,602074265.04,33947.1,4400,0.0371,1.6251
+Northwestern University,US,2023,1,635717139.34,37561.76,4400,0.0404,1.5783
+Northwestern University,US,2024,1,610408840.64,42705.12,4400,0.0396,1.4093
+Northwestern University,US,2025,1,581331455.28,47310.22,4400,0.039,1.2581
+University of Michigan,US,2019,0,958729472.38,28669.55,11900,0.0477,1.1643
+University of Michigan,US,2020,0,1070190986.13,28523.55,11900,0.0483,1.2794
+University of Michigan,US,2021,0,1130312891.39,30380.62,11900,0.0485,1.2709
+University of Michigan,US,2022,0,1039011228.62,30440.04,11900,0.0491,1.1848
+University of Michigan,US,2023,1,1164528510.79,31367.64,11900,0.0523,1.2688
+University of Michigan,US,2024,1,1202834741.49,39396.0,11900,0.0507,1.0733
+University of Michigan,US,2025,1,1183841995.33,40930.73,11900,0.0509,1.0191
+University of Texas at Austin,US,2019,0,499191496.09,25676.29,9700,0.0523,0.8086
+University of Texas at Austin,US,2020,0,535635290.68,26033.92,9700,0.0528,0.8653
+University of Texas at Austin,US,2021,0,663160137.73,31643.33,9700,0.0521,0.8837
+University of Texas at Austin,US,2022,0,545902888.29,27415.09,9700,0.0537,0.8326
+University of Texas at Austin,US,2023,1,633027222.83,29547.43,9700,0.0558,0.9057
+University of Texas at Austin,US,2024,1,895612109.99,31723.81,9700,0.0565,1.1816
+University of Texas at Austin,US,2025,1,799759429.94,36885.3,9700,0.0554,0.9177
+University of Washington,US,2019,0,1036454082.19,30549.14,11500,0.0493,1.3745
+University of Washington,US,2020,0,1069292710.08,30595.38,11500,0.0499,1.4042
+University of Washington,US,2021,0,1228441091.93,30243.24,11500,0.0506,1.5546
+University of Washington,US,2022,0,1179595509.86,30368.1,11500,0.0511,1.5099
+University of Washington,US,2023,1,1144964404.13,31337.0,11500,0.0547,1.4487
+University of Washington,US,2024,1,1178896257.84,32131.75,11500,0.0552,1.4528
+University of Washington,US,2025,1,1028535266.41,39009.6,11500,0.0538,1.1224
+University of Illinois Urbana-Champaign,US,2019,0,69350.0,20486.92,12100,0.0536,-8.2329
+University of Illinois Urbana-Champaign,US,2020,0,5384108.56,24224.0,12100,0.0532,-4.0484
+University of Illinois Urbana-Champaign,US,2021,0,299000.0,21286.13,12100,0.0546,-6.8099
+University of Illinois Urbana-Champaign,US,2022,0,11638935.0,24165.89,12100,0.0544,-3.2751
+University of Illinois Urbana-Champaign,US,2023,1,21044888.0,28869.92,12100,0.0475,-2.8606
+University of Illinois Urbana-Champaign,US,2024,1,41727607.05,26548.13,12100,0.0504,-2.0923
+University of Illinois Urbana-Champaign,US,2025,1,20880719.11,30433.42,12100,0.0482,-2.9212
+Ohio State University,US,2019,0,495885991.2,22078.7,10400,0.0564,0.7497
+Ohio State University,US,2020,0,556053238.42,22498.32,10400,0.0569,0.8454
+Ohio State University,US,2021,0,688305572.75,26174.43,10400,0.0565,0.9074
+Ohio State University,US,2022,0,537752600.95,26477.92,10400,0.057,0.6491
+Ohio State University,US,2023,1,562591941.8,24702.07,10400,0.0598,0.7637
+Ohio State University,US,2024,1,583450930.5,31419.88,10400,0.0582,0.5595
+Ohio State University,US,2025,1,585004770.24,30476.0,10400,0.0591,0.5927
+Penn State University,US,2019,0,6756533.0,27530.04,7800,0.0503,-3.4391
+Penn State University,US,2020,0,3881183.0,28175.21,7800,0.0507,-4.0166
+Penn State University,US,2021,0,10087293.84,27586.71,7800,0.0514,-3.0404
+Penn State University,US,2022,0,5708761.28,28094.8,7800,0.0519,-3.6279
+Penn State University,US,2023,1,20956971.97,32453.73,7800,0.046,-2.4717
+Penn State University,US,2024,1,10342148.41,28891.15,7800,0.0462,-3.0616
+Penn State University,US,2025,1,27563439.68,26756.5,7800,0.0496,-2.0046
+"University of California, Berkeley",US,2019,0,2554335.0,34051.94,11200,0.045,-4.6483
+"University of California, Berkeley",US,2020,0,1564454.0,34232.95,11200,0.0456,-5.1439
+"University of California, Berkeley",US,2021,0,1094930.74,35319.91,11200,0.046,-5.532
+"University of California, Berkeley",US,2022,0,3145701.0,38079.3,11200,0.0461,-4.5519
+"University of California, Berkeley",US,2023,1,-136528.0,42216.92,11200,0.046,0.0
+"University of California, Berkeley",US,2024,1,0.0,36114.0,11200,0.012,-19.4604
+"University of California, Berkeley",US,2025,1,0,39451.69,11200,0.012,-19.5488
+"University of California, Los Angeles",US,2019,0,645917910.32,28290.23,10800,0.048,1.0922
+"University of California, Los Angeles",US,2020,0,906817590.64,29981.56,10800,0.0483,1.3734
+"University of California, Los Angeles",US,2021,0,926506345.85,31527.21,10800,0.0486,1.3446
+"University of California, Los Angeles",US,2022,0,833475226.27,29643.05,10800,0.0495,1.3004
+"University of California, Los Angeles",US,2023,1,861465735.99,30110.62,10800,0.053,1.3178
+"University of California, Los Angeles",US,2024,1,814267003.01,31277.78,10800,0.0531,1.2234
+"University of California, Los Angeles",US,2025,1,739264165.63,20357.14,10800,0.0564,1.5563
+"University of California, San Diego",US,2019,0,664386239.06,28366.06,7300,0.0488,1.4733
+"University of California, San Diego",US,2020,0,743262004.9,31236.5,7300,0.0489,1.4891
+"University of California, San Diego",US,2021,0,925969132.41,29692.19,7300,0.0497,1.7596
+"University of California, San Diego",US,2022,0,832678531.78,32925.32,7300,0.0497,1.55
+"University of California, San Diego",US,2023,1,793707465.64,33775.62,7300,0.0534,1.4766
+"University of California, San Diego",US,2024,1,738238210.59,38261.75,7300,0.0528,1.2794
+"University of California, San Diego",US,2025,1,781906641.01,39310.0,7300,0.0533,1.3099
+University of Tokyo,JP,2019,0,0.0,19800.0,14100,0.0369,-19.2485
+University of Tokyo,JP,2020,0,0.0,20394.0,14100,0.0374,-19.2781
+University of Tokyo,JP,2021,1,734183806.3,21005.82,14100,0.0403,1.1066
+University of Tokyo,JP,2022,1,734183806.3,21635.99,14100,0.0407,1.0771
+University of Tokyo,JP,2023,1,734183806.3,22285.07,14100,0.0411,1.0475
+University of Tokyo,JP,2024,1,734183806.3,22953.63,14100,0.0415,1.018
+University of Tokyo,JP,2025,1,734183806.3,23642.24,14100,0.0419,0.9884
+Kyoto University,JP,2019,0,0.0,18500.0,9300,0.0407,-18.8863
+Kyoto University,JP,2020,0,0.0,19055.0,9300,0.0412,-18.9159
+Kyoto University,JP,2021,1,484248893.52,19626.65,9300,0.044,1.0527
+Kyoto University,JP,2022,1,484248893.52,20215.45,9300,0.0444,1.0231
+Kyoto University,JP,2023,1,484248893.52,20821.91,9300,0.0448,0.9935
+Kyoto University,JP,2024,1,484248893.52,21446.57,9300,0.0452,0.964
+Kyoto University,JP,2025,1,484248893.52,22089.97,9300,0.0455,0.9344
+Tohoku University,JP,2019,0,0.0,17000.0,6800,0.0416,-18.6065
+Tohoku University,JP,2020,0,0.0,17510.0,6800,0.042,-18.636
+Tohoku University,JP,2021,1,354074459.78,18035.3,6800,0.0447,1.0194
+Tohoku University,JP,2022,1,354074459.78,18576.36,6800,0.0451,0.9899
+Tohoku University,JP,2023,1,354074459.78,19133.65,6800,0.0455,0.9603
+Tohoku University,JP,2024,1,354074459.78,19707.66,6800,0.0459,0.9308
+Tohoku University,JP,2025,1,354074459.78,20298.89,6800,0.0463,0.9012
+Osaka University,JP,2019,0,0.0,17500.0,7900,0.0438,-18.7054
+Osaka University,JP,2020,0,0.0,18025.0,7900,0.0443,-18.7349
+Osaka University,JP,2021,1,411351210.62,18565.75,7900,0.0471,1.0705
+Osaka University,JP,2022,1,411351210.62,19122.72,7900,0.0475,1.0409
+Osaka University,JP,2023,1,411351210.62,19696.4,7900,0.0479,1.0114
+Osaka University,JP,2024,1,411351210.62,20287.3,7900,0.0483,0.9818
+Osaka University,JP,2025,1,411351210.62,20895.92,7900,0.0487,0.9523
+Nagoya University,JP,2019,0,0.0,17200.0,5400,0.0424,-18.4087
+Nagoya University,JP,2020,0,0.0,17716.0,5400,0.0429,-18.4383
+Nagoya University,JP,2021,1,281176776.88,18247.48,5400,0.0455,0.9867
+Nagoya University,JP,2022,1,281176776.88,18794.9,5400,0.0459,0.9571
+Nagoya University,JP,2023,1,281176776.88,19358.75,5400,0.0463,0.9276
+Nagoya University,JP,2024,1,281176776.88,19939.51,5400,0.0467,0.898
+Nagoya University,JP,2025,1,281176776.88,20537.7,5400,0.047,0.8684
+Kyushu University,JP,2019,0,0.0,16800.0,5900,0.0444,-18.4952
+Kyushu University,JP,2020,0,0.0,17304.0,5900,0.0449,-18.5248
+Kyushu University,JP,2021,1,307211663.63,17823.12,5900,0.0475,0.9887
+Kyushu University,JP,2022,1,307211663.63,18357.81,5900,0.0479,0.9591
+Kyushu University,JP,2023,1,307211663.63,18908.55,5900,0.0483,0.9296
+Kyushu University,JP,2024,1,307211663.63,19475.8,5900,0.0487,0.9
+Kyushu University,JP,2025,1,307211663.63,20060.08,5900,0.0491,0.8705
+Hokkaido University,JP,2019,0,0.0,16500.0,6100,0.0465,-18.5215
+Hokkaido University,JP,2020,0,0.0,16995.0,6100,0.0469,-18.551
+Hokkaido University,JP,2021,1,317625618.33,17504.85,6100,0.0496,0.9958
+Hokkaido University,JP,2022,1,317625618.33,18030.0,6100,0.05,0.9662
+Hokkaido University,JP,2023,1,317625618.33,18570.9,6100,0.0504,0.9367
+Hokkaido University,JP,2024,1,317625618.33,19128.02,6100,0.0507,0.9071
+Hokkaido University,JP,2025,1,317625618.33,19701.86,6100,0.0511,0.8776
+Tokyo Institute of Technology,JP,2019,0,0.0,19000.0,5200,0.038,-18.2263
+Tokyo Institute of Technology,JP,2020,0,0.0,19570.0,5200,0.0385,-18.2558
+Tokyo Institute of Technology,JP,2021,1,270762822.18,20157.1,5200,0.0415,1.1313
+Tokyo Institute of Technology,JP,2022,1,270762822.18,20761.81,5200,0.0419,1.1018
+Tokyo Institute of Technology,JP,2023,1,270762822.18,21384.67,5200,0.0423,1.0722
+Tokyo Institute of Technology,JP,2024,1,270762822.18,22026.21,5200,0.0427,1.0427
+Tokyo Institute of Technology,JP,2025,1,270762822.18,22686.99,5200,0.0431,1.0131
+Tsukuba University,JP,2019,0,0.0,16900.0,6600,0.0436,-18.5812
+Tsukuba University,JP,2020,0,0.0,17407.0,6600,0.044,-18.6107
+Tsukuba University,JP,2021,1,343660505.08,17929.21,6600,0.0467,1.0149
+Tsukuba University,JP,2022,1,343660505.08,18467.09,6600,0.0471,0.9853
+Tsukuba University,JP,2023,1,343660505.08,19021.1,6600,0.0475,0.9557
+Tsukuba University,JP,2024,1,343660505.08,19591.73,6600,0.0479,0.9262
+Tsukuba University,JP,2025,1,343660505.08,20179.48,6600,0.0483,0.8966
+Waseda University,JP,2019,0,0.0,18000.0,8800,0.0423,-18.6818
+Waseda University,JP,2020,0,0.0,18540.0,8800,0.0428,-18.7113
+Waseda University,JP,2021,1,458214006.77,19096.2,8800,0.0459,1.2019
+Waseda University,JP,2022,1,458214006.77,19669.09,8800,0.0463,1.1724
+Waseda University,JP,2023,1,458214006.77,20259.16,8800,0.0468,1.1428
+Waseda University,JP,2024,1,458214006.77,20866.93,8800,0.0472,1.1133
+Waseda University,JP,2025,1,458214006.77,21492.94,8800,0.0476,1.0837
+Keio University,JP,2019,0,0.0,18200.0,7400,0.0403,-18.5033
+Keio University,JP,2020,0,0.0,18746.0,7400,0.0408,-18.5329
+Keio University,JP,2021,1,385316323.87,19308.38,7400,0.044,1.2072
+Keio University,JP,2022,1,385316323.87,19887.63,7400,0.0444,1.1776
+Keio University,JP,2023,1,385316323.87,20484.26,7400,0.0448,1.148
+Keio University,JP,2024,1,385316323.87,21098.79,7400,0.0452,1.1185
+Keio University,JP,2025,1,385316323.87,21731.75,7400,0.0456,1.0889

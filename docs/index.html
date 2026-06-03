@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Education Policy — Federal Funding & PhD Stipends Dashboard</title>
+<title>Education Policy Governance Matrix — Live Dashboard</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 20px; }
@@ -16,45 +16,42 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .dot-green { background: #22c55e; }
 .dot-yellow { background: #eab308; }
 .dot-red { background: #ef4444; }
-.tabs { max-width: 1400px; margin: 0 auto 16px; display: flex; gap: 0; }
-.tab { padding: 10px 24px; font-size: 0.95rem; font-weight: 600; cursor: pointer; border: 1px solid #d0d5dd; border-bottom: none; background: #fff; color: #666; border-radius: 8px 8px 0 0; margin-right: -1px; }
-.tab.active { background: #16213e; color: #fff; border-color: #16213e; }
-.panel { display: none; }
-.panel.active { display: block; }
 .controls { max-width: 1400px; margin: 0 auto 16px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .controls input, .controls select { padding: 8px 12px; border: 1px solid #d0d5dd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
 .controls input { width: 260px; }
 .controls button { padding: 8px 16px; border: none; border-radius: 6px; font-size: 0.85rem; cursor: pointer; background: #16213e; color: #fff; }
 .controls button:hover { background: #1a3a5c; }
-.stats { max-width: 1400px; margin: 0 auto 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.stats { max-width: 1400px; margin: 0 auto 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
 .stat-card { background: #fff; border-radius: 10px; padding: 16px; border: 1px solid #e0e0e0; }
-.stat-card .label { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
-.stat-card .value { font-size: 1.4rem; font-weight: 700; color: #16213e; margin-top: 4px; }
-.table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); max-height: 70vh; }
-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-thead th { background: #16213e; color: #fff; padding: 12px 14px; text-align: left; position: sticky; top: 0; cursor: pointer; white-space: nowrap; user-select: none; z-index: 1; }
+.stat-card .label { font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-card .value { font-size: 1.3rem; font-weight: 700; color: #16213e; margin-top: 4px; }
+.table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); max-height: 72vh; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+thead th { background: #16213e; color: #fff; padding: 10px 12px; text-align: left; position: sticky; top: 0; cursor: pointer; white-space: nowrap; user-select: none; z-index: 1; }
 thead th:hover { background: #1a3a5c; }
 thead th .sort-arrow { margin-left: 4px; font-size: 0.7rem; }
-tbody td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+tbody td { padding: 8px 12px; border-bottom: 1px solid #f0f0f0; }
 tbody tr:hover { background: #f8fafc; }
+tbody tr.post-policy { background: #f0fdf4; }
+tbody tr.post-policy:hover { background: #dcfce7; }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
-.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; }
 .tag-us { background: #dbeafe; color: #1e40af; }
-.tag-good { background: #d1fae5; color: #065f46; }
-.tag-ok { background: #fef3c7; color: #92400e; }
-.tag-low { background: #fee2e2; color: #991b1b; }
-.funding-bar { display: inline-block; height: 6px; border-radius: 3px; background: #3b82f6; vertical-align: middle; margin-right: 8px; }
-.lw-bar { display: inline-block; height: 6px; border-radius: 3px; vertical-align: middle; margin-right: 8px; }
+.tag-jp { background: #fce7f3; color: #9d174d; }
+.tag-pre { background: #fee2e2; color: #991b1b; }
+.tag-post { background: #d1fae5; color: #065f46; }
 .loading { text-align: center; padding: 60px; color: #888; font-size: 1.1rem; }
 .error { text-align: center; padding: 60px; color: #ef4444; font-size: 1rem; }
 .footer { max-width: 1400px; margin: 16px auto 0; font-size: 0.8rem; color: #999; text-align: center; }
+.source-note { max-width: 1400px; margin: 12px auto 0; font-size: 0.78rem; color: #888; background: #fff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e0e0e0; }
+.source-note strong { color: #16213e; }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Education Policy — Federal Funding & PhD Stipends</h1>
-  <p>Real-time data from <a href="https://api.usaspending.gov" target="_blank">USASpending.gov</a> and <a href="https://www.phdstipends.com" target="_blank">PHDStipends.com</a> | <a href="https://github.com/zl1212-ship-it/education-policy-care-audit" target="_blank">GitHub</a></p>
+  <h1>Education Policy Governance Matrix</h1>
+  <p>Live data from <a href="https://api.usaspending.gov" target="_blank">USASpending.gov</a> + <a href="https://www.phdstipends.com" target="_blank">PHDStipends.com</a> | <a href="https://github.com/zl1212-ship-it/education-policy-care-audit" target="_blank">GitHub</a></p>
   <div class="status-bar">
     <span class="status-item" id="status"><span class="dot dot-yellow"></span>Loading...</span>
     <span class="status-item" id="row-count">—</span>
@@ -63,268 +60,139 @@ tbody tr:hover { background: #f8fafc; }
   </div>
 </div>
 
-<div class="tabs">
-  <div class="tab active" onclick="switchTab('funding')">Federal Funding</div>
-  <div class="tab" onclick="switchTab('stipends')">PhD Stipends</div>
+<div class="stats" id="stats"></div>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search institution...">
+  <select id="filter-country">
+    <option value="">All Countries</option>
+    <option value="US">US</option>
+    <option value="JP">Japan</option>
+  </select>
+  <select id="filter-year"><option value="">All Years</option></select>
+  <select id="filter-policy">
+    <option value="">Pre & Post Policy</option>
+    <option value="0">Pre-Policy</option>
+    <option value="1">Post-Policy</option>
+  </select>
+  <button onclick="fetchData()">Refresh Now</button>
 </div>
 
-<!-- ==================== FEDERAL FUNDING PANEL ==================== -->
-<div class="panel active" id="panel-funding">
-  <div class="stats" id="stats-funding"></div>
-  <div class="controls">
-    <input type="text" id="search-funding" placeholder="Search institution...">
-    <select id="filter-year-funding"><option value="">All Fiscal Years</option></select>
-    <button onclick="fetchFunding()">Refresh</button>
-  </div>
-  <div class="table-wrap">
-    <div class="loading" id="loading-funding">Loading funding data...</div>
-    <table id="table-funding" style="display:none">
-      <thead><tr id="header-funding"></tr></thead>
-      <tbody id="body-funding"></tbody>
-    </table>
-    <div class="error" id="error-funding" style="display:none"></div>
-  </div>
+<div class="table-wrap">
+  <div class="loading" id="loading">Loading governance matrix...</div>
+  <table id="data-table" style="display:none">
+    <thead><tr id="header-row"></tr></thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  <div class="error" id="error" style="display:none"></div>
 </div>
 
-<!-- ==================== PHD STIPENDS PANEL ==================== -->
-<div class="panel" id="panel-stipends">
-  <div class="stats" id="stats-stipends"></div>
-  <div class="controls">
-    <input type="text" id="search-stipends" placeholder="Search university or department...">
-    <select id="filter-year-stipends"><option value="">All Years</option></select>
-    <button onclick="fetchStipends()">Refresh</button>
-  </div>
-  <div class="table-wrap">
-    <div class="loading" id="loading-stipends">Loading stipends data...</div>
-    <table id="table-stipends" style="display:none">
-      <thead><tr id="header-stipends"></tr></thead>
-      <tbody id="body-stipends"></tbody>
-    </table>
-    <div class="error" id="error-stipends" style="display:none"></div>
-  </div>
+<div class="source-note">
+  <strong>Data Sources:</strong>
+  <strong>H_f</strong> (Federal Funding) — USASpending.gov API, real award totals per institution per fiscal year |
+  <strong>H_s</strong> (PhD Stipend) — phdstipends.com, crowd-sourced average stipend per institution per year |
+  <strong>N_g</strong> (Enrollment) — institutional baseline |
+  <strong>S_r</strong> = log((H_f+1) / ((H_s/cost_index) * N_g)) |
+  <strong>Attrition Rate</strong> — modeled from stipend + policy effects
 </div>
 
 <div class="footer" id="footer"></div>
 
 <script>
-const FUNDING_CSV = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/governance_matrix.csv';
-const STIPENDS_CSV = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/phd_stipends.csv';
+const CSV_URL = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/governance_matrix.csv';
 const REFRESH_MS = 60 * 60 * 1000;
+let allRows = [], headers = [], sortCol = -1, sortAsc = true;
 
-// ---- shared utilities ----
-function parseCSV(text) {
-  const lines = text.trim().split('\n');
-  const hdrs = parseCSVLine(lines[0]);
-  const rows = [];
-  for (let i = 1; i < lines.length; i++) {
-    const vals = parseCSVLine(lines[i]);
-    if (vals.length === hdrs.length) {
-      const row = {};
-      hdrs.forEach((h, j) => row[h] = vals[j]);
-      rows.push(row);
-    }
-  }
-  return { headers: hdrs, rows };
-}
-function parseCSVLine(line) {
-  const result = []; let current = ''; let inQ = false;
-  for (let i = 0; i < line.length; i++) {
-    const ch = line[i];
-    if (inQ) { if (ch === '"' && line[i+1] === '"') { current += '"'; i++; } else if (ch === '"') { inQ = false; } else { current += ch; } }
-    else { if (ch === '"') { inQ = true; } else if (ch === ',') { result.push(current.trim()); current = ''; } else { current += ch; } }
-  }
-  result.push(current.trim());
-  return result;
-}
-
-// ---- tab switching ----
-function switchTab(name) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-  event.target.classList.add('active');
-  document.getElementById('panel-' + name).classList.add('active');
-}
-
-// ==================== FUNDING ====================
-let fundingRows = [], fundingHeaders = [], fundingSortCol = -1, fundingSortAsc = true;
-const FUNDING_COLS = {
-  'institution':           { label: 'Institution',         format: v => v },
-  'country':               { label: 'Country',             format: v => `<span class="tag tag-us">${v}</span>` },
-  'fiscal_year':           { label: 'Fiscal Year',         cls: 'num', format: v => 'FY' + v },
-  'federal_funding_total': { label: 'Federal Funding ($)', cls: 'num', format: v => {
-    const n = Number(v); return '$' + n.toLocaleString('en-US', {maximumFractionDigits: 0});
-  }},
-  'award_count':           { label: 'Awards',              cls: 'num', format: v => v },
-  'top_awarding_agency':   { label: 'Top Agency',          format: v => v === 'N/A' ? '—' : v },
+const COL = {
+  'institution':    { label: 'Institution',     format: v => v },
+  'country':        { label: 'Country',         format: v => `<span class="tag ${v==='US'?'tag-us':'tag-jp'}">${v}</span>` },
+  'time_period':    { label: 'Year',            cls: 'num', format: v => v },
+  'post_policy':    { label: 'Policy',          format: v => v==='1'||v===1 ? '<span class="tag tag-post">Post</span>' : '<span class="tag tag-pre">Pre</span>' },
+  'H_f':            { label: 'H_f (Funding $)', cls: 'num', format: v => { const n=Number(v); return n>=1e9?'$'+(n/1e9).toFixed(2)+'B':n>=1e6?'$'+(n/1e6).toFixed(2)+'M':n>=1e3?'$'+(n/1e3).toFixed(1)+'K':n>0?'$'+n.toFixed(0):'$0'; }},
+  'H_s':            { label: 'H_s (Stipend $)', cls: 'num', format: v => '$'+Number(v).toLocaleString('en-US',{maximumFractionDigits:0}) },
+  'N_g':            { label: 'N_g (Enrollment)',cls: 'num', format: v => Number(v).toLocaleString() },
+  'attrition_rate': { label: 'Attrition',       cls: 'num', format: v => (Number(v)*100).toFixed(2)+'%' },
+  'S_r':            { label: 'S_r (Score)',      cls: 'num', format: v => Number(v).toFixed(4) },
 };
-function getFilteredFunding() {
-  const s = document.getElementById('search-funding').value.toLowerCase();
-  const y = document.getElementById('filter-year-funding').value;
-  return fundingRows.filter(r => {
-    if (s && !(r.institution||'').toLowerCase().includes(s)) return false;
-    if (y && r.fiscal_year !== y) return false;
+
+function parseCSV(t){const l=t.trim().split('\n'),h=pL(l[0]),r=[];for(let i=1;i<l.length;i++){const v=pL(l[i]);if(v.length===h.length){const o={};h.forEach((k,j)=>o[k]=v[j]);r.push(o);}}return{headers:h,rows:r};}
+function pL(l){const r=[];let c='',q=false;for(let i=0;i<l.length;i++){const ch=l[i];if(q){if(ch==='"'&&l[i+1]==='"'){c+='"';i++;}else if(ch==='"'){q=false;}else{c+=ch;}}else{if(ch==='"'){q=true;}else if(ch===','){r.push(c.trim());c='';}else{c+=ch;}}}r.push(c.trim());return r;}
+
+function getFiltered(){
+  const s=document.getElementById('search').value.toLowerCase();
+  const c=document.getElementById('filter-country').value;
+  const y=document.getElementById('filter-year').value;
+  const p=document.getElementById('filter-policy').value;
+  return allRows.filter(r=>{
+    if(s&&!(r.institution||'').toLowerCase().includes(s))return false;
+    if(c&&r.country!==c)return false;
+    if(y&&r.time_period!==y)return false;
+    if(p!==''&&String(r.post_policy)!==p)return false;
     return true;
   });
 }
-function renderFunding(rows) {
-  const hr = document.getElementById('header-funding');
-  hr.innerHTML = '';
-  fundingHeaders.forEach((h,i) => {
-    const cfg = FUNDING_COLS[h] || {label:h};
-    const th = document.createElement('th');
-    let arrow = fundingSortCol === i ? `<span class="sort-arrow">${fundingSortAsc?'▲':'▼'}</span>` : '';
-    th.innerHTML = cfg.label + arrow; th.className = cfg.cls||'';
-    th.onclick = () => { if(fundingSortCol===i){fundingSortAsc=!fundingSortAsc}else{fundingSortCol=i;fundingSortAsc=true} sortRows(fundingRows,fundingHeaders[i]); renderFunding(getFilteredFunding()); };
-    hr.appendChild(th);
-  });
-  const tb = document.getElementById('body-funding');
-  tb.innerHTML = '';
-  rows.forEach(row => {
-    const tr = document.createElement('tr');
-    fundingHeaders.forEach(h => {
-      const td = document.createElement('td');
-      const cfg = FUNDING_COLS[h] || {format:v=>v};
-      td.className = cfg.cls||''; td.innerHTML = cfg.format(row[h],row);
-      tr.appendChild(td);
-    });
-    tb.appendChild(tr);
-  });
-  document.getElementById('row-count').textContent = `${rows.length} rows`;
-  const totalF = rows.reduce((s,r) => s + Number(r.federal_funding_total||0), 0);
-  const totalA = rows.reduce((s,r) => s + Number(r.award_count||0), 0);
-  const insts = new Set(rows.map(r=>r.institution)).size;
-  document.getElementById('stats-funding').innerHTML = `
-    <div class="stat-card"><div class="label">Total Federal Funding</div><div class="value">$${(totalF/1e9).toFixed(2)}B</div></div>
-    <div class="stat-card"><div class="label">Total Awards</div><div class="value">${totalA.toLocaleString()}</div></div>
+
+function renderStats(rows){
+  const hfTotal=rows.reduce((s,r)=>s+Number(r.H_f||0),0);
+  const avgHs=rows.length?rows.reduce((s,r)=>s+Number(r.H_s||0),0)/rows.length:0;
+  const avgAttr=rows.length?rows.reduce((s,r)=>s+Number(r.attrition_rate||0),0)/rows.length:0;
+  const insts=new Set(rows.map(r=>r.institution)).size;
+  const postRows=rows.filter(r=>String(r.post_policy)==='1');
+  const preRows=rows.filter(r=>String(r.post_policy)==='0');
+  const avgSrPost=postRows.length?postRows.reduce((s,r)=>s+Number(r.S_r||0),0)/postRows.length:0;
+  const avgSrPre=preRows.length?preRows.reduce((s,r)=>s+Number(r.S_r||0),0)/preRows.length:0;
+  document.getElementById('stats').innerHTML=`
+    <div class="stat-card"><div class="label">Total H_f (Funding)</div><div class="value">$${(hfTotal/1e9).toFixed(2)}B</div></div>
+    <div class="stat-card"><div class="label">Avg H_s (Stipend)</div><div class="value">$${avgHs.toLocaleString('en-US',{maximumFractionDigits:0})}</div></div>
+    <div class="stat-card"><div class="label">Avg Attrition</div><div class="value">${(avgAttr*100).toFixed(2)}%</div></div>
     <div class="stat-card"><div class="label">Institutions</div><div class="value">${insts}</div></div>
-    <div class="stat-card"><div class="label">Records</div><div class="value">${rows.length}</div></div>`;
-}
-function sortRows(arr, key) {
-  arr.sort((a,b) => {
-    let va=a[key],vb=b[key]; const na=Number(va),nb=Number(vb);
-    if(!isNaN(na)&&!isNaN(nb)) return fundingSortAsc?na-nb:nb-na;
-    return fundingSortAsc?String(va).localeCompare(String(vb)):String(vb).localeCompare(String(va));
-  });
-}
-async function fetchFunding() {
-  const ld = document.getElementById('loading-funding'), tb = document.getElementById('table-funding'), er = document.getElementById('error-funding');
-  ld.style.display='block'; tb.style.display='none'; er.style.display='none';
-  try {
-    const res = await fetch(FUNDING_CSV + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const parsed = parseCSV(await res.text());
-    fundingHeaders = parsed.headers; fundingRows = parsed.rows;
-    const sel = document.getElementById('filter-year-funding');
-    sel.innerHTML = '<option value="">All Fiscal Years</option>';
-    [...new Set(fundingRows.map(r=>r.fiscal_year))].sort().forEach(y => { const o=document.createElement('option'); o.value=y; o.textContent='FY'+y; sel.appendChild(o); });
-    renderFunding(getFilteredFunding());
-    ld.style.display='none'; tb.style.display='table';
-    return true;
-  } catch(e) { ld.style.display='none'; er.style.display='block'; er.textContent='Failed: '+e.message; return false; }
+    <div class="stat-card"><div class="label">Avg S_r (Pre)</div><div class="value">${avgSrPre.toFixed(2)}</div></div>
+    <div class="stat-card"><div class="label">Avg S_r (Post)</div><div class="value">${avgSrPost.toFixed(2)}</div></div>`;
 }
 
-// ==================== STIPENDS ====================
-let stipendRows = [], stipendHeaders = [], stipendSortCol = -1, stipendSortAsc = true;
-const STIPEND_COLS = {
-  'university':     { label: 'University',      format: v => v },
-  'department':     { label: 'Department',       format: v => v },
-  'overall_pay':    { label: 'Overall Pay',      cls: 'num', format: v => v ? '$'+Number(v).toLocaleString() : '—' },
-  'lw_ratio':       { label: 'LW Ratio',         cls: 'num', format: v => {
-    const n = Number(v); if (!v || isNaN(n)) return '—';
-    const cls = n >= 1.0 ? 'tag-good' : n >= 0.8 ? 'tag-ok' : 'tag-low';
-    return `<span class="tag ${cls}">${n.toFixed(2)}</span>`;
-  }},
-  'academic_year':  { label: 'Academic Year',    format: v => v },
-  'program_year':   { label: 'Program Year',     format: v => v },
-  'gross_pay_12m':  { label: '12M Gross Pay',    cls: 'num', format: v => v ? '$'+Number(v).toLocaleString() : '—' },
-  'fees':           { label: 'Fees',             cls: 'num', format: v => v ? '$'+Number(v).toLocaleString() : '—' },
-};
-const STIPEND_VISIBLE = ['university','department','overall_pay','lw_ratio','academic_year','program_year','gross_pay_12m','fees'];
-function getFilteredStipends() {
-  const s = document.getElementById('search-stipends').value.toLowerCase();
-  const y = document.getElementById('filter-year-stipends').value;
-  return stipendRows.filter(r => {
-    if (s && !(r.university||'').toLowerCase().includes(s) && !(r.department||'').toLowerCase().includes(s)) return false;
-    if (y && r.academic_year !== y) return false;
-    return true;
-  });
-}
-function renderStipends(rows) {
-  const hr = document.getElementById('header-stipends');
-  hr.innerHTML = '';
-  STIPEND_VISIBLE.forEach((h,i) => {
-    const cfg = STIPEND_COLS[h] || {label:h};
-    const th = document.createElement('th');
-    let arrow = stipendSortCol===i ? `<span class="sort-arrow">${stipendSortAsc?'▲':'▼'}</span>` : '';
-    th.innerHTML = cfg.label + arrow; th.className = cfg.cls||'';
-    th.onclick = () => { if(stipendSortCol===i){stipendSortAsc=!stipendSortAsc}else{stipendSortCol=i;stipendSortAsc=true}
-      stipendRows.sort((a,b)=>{let va=a[STIPEND_VISIBLE[stipendSortCol]],vb=b[STIPEND_VISIBLE[stipendSortCol]];const na=Number(va),nb=Number(vb);if(!isNaN(na)&&!isNaN(nb))return stipendSortAsc?na-nb:nb-na;return stipendSortAsc?String(va).localeCompare(String(vb)):String(vb).localeCompare(String(va));});
-      renderStipends(getFilteredStipends());
-    };
-    hr.appendChild(th);
-  });
-  const tb = document.getElementById('body-stipends');
-  tb.innerHTML = '';
-  const display = rows.slice(0, 500);
-  display.forEach(row => {
-    const tr = document.createElement('tr');
-    STIPEND_VISIBLE.forEach(h => {
-      const td = document.createElement('td');
-      const cfg = STIPEND_COLS[h] || {format:v=>v};
-      td.className = cfg.cls||''; td.innerHTML = cfg.format(row[h],row);
-      tr.appendChild(td);
-    });
-    tb.appendChild(tr);
-  });
-  document.getElementById('row-count').textContent = `${display.length}${rows.length>500?' of '+rows.length:''} rows`;
-  const withPay = rows.filter(r => r.overall_pay && Number(r.overall_pay) > 0);
-  const avgPay = withPay.length ? withPay.reduce((s,r)=>s+Number(r.overall_pay),0)/withPay.length : 0;
-  const withLW = rows.filter(r => r.lw_ratio && Number(r.lw_ratio) > 0);
-  const avgLW = withLW.length ? withLW.reduce((s,r)=>s+Number(r.lw_ratio),0)/withLW.length : 0;
-  const belowLW = withLW.filter(r => Number(r.lw_ratio) < 1.0).length;
-  document.getElementById('stats-stipends').innerHTML = `
-    <div class="stat-card"><div class="label">Total Entries</div><div class="value">${rows.length.toLocaleString()}</div></div>
-    <div class="stat-card"><div class="label">Avg Stipend</div><div class="value">$${avgPay.toLocaleString('en-US',{maximumFractionDigits:0})}</div></div>
-    <div class="stat-card"><div class="label">Avg LW Ratio</div><div class="value">${avgLW.toFixed(2)}</div></div>
-    <div class="stat-card"><div class="label">Below Living Wage</div><div class="value">${belowLW.toLocaleString()} (${withLW.length?(belowLW/withLW.length*100).toFixed(1):0}%)</div></div>`;
-}
-async function fetchStipends() {
-  const ld = document.getElementById('loading-stipends'), tb = document.getElementById('table-stipends'), er = document.getElementById('error-stipends');
-  ld.style.display='block'; tb.style.display='none'; er.style.display='none';
-  try {
-    const res = await fetch(STIPENDS_CSV + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const parsed = parseCSV(await res.text());
-    stipendHeaders = parsed.headers; stipendRows = parsed.rows;
-    const sel = document.getElementById('filter-year-stipends');
-    sel.innerHTML = '<option value="">All Years</option>';
-    [...new Set(stipendRows.map(r=>r.academic_year))].sort().forEach(y => { if(y){const o=document.createElement('option'); o.value=y; o.textContent=y; sel.appendChild(o);} });
-    renderStipends(getFilteredStipends());
-    ld.style.display='none'; tb.style.display='table';
-    return true;
-  } catch(e) { ld.style.display='none'; er.style.display='block'; er.textContent='Failed: '+e.message; return false; }
+function renderTable(rows){
+  const hr=document.getElementById('header-row');hr.innerHTML='';
+  headers.forEach((h,i)=>{const cfg=COL[h]||{label:h};const th=document.createElement('th');
+    let a=sortCol===i?`<span class="sort-arrow">${sortAsc?'▲':'▼'}</span>`:'';
+    th.innerHTML=cfg.label+a;th.className=cfg.cls||'';
+    th.onclick=()=>{if(sortCol===i){sortAsc=!sortAsc;}else{sortCol=i;sortAsc=true;}
+      allRows.sort((a,b)=>{let va=a[headers[sortCol]],vb=b[headers[sortCol]];const na=Number(va),nb=Number(vb);
+        if(!isNaN(na)&&!isNaN(nb))return sortAsc?na-nb:nb-na;
+        return sortAsc?String(va).localeCompare(String(vb)):String(vb).localeCompare(String(va));});
+      renderTable(getFiltered());};
+    hr.appendChild(th);});
+  const tb=document.getElementById('table-body');tb.innerHTML='';
+  rows.forEach(row=>{const tr=document.createElement('tr');
+    if(String(row.post_policy)==='1')tr.className='post-policy';
+    headers.forEach(h=>{const td=document.createElement('td');const cfg=COL[h]||{format:v=>v};
+      td.className=cfg.cls||'';td.innerHTML=cfg.format(row[h],row);tr.appendChild(td);});
+    tb.appendChild(tr);});
+  document.getElementById('row-count').textContent=`${rows.length} / ${allRows.length} rows`;
+  renderStats(rows);
 }
 
-// ---- init ----
-document.getElementById('search-funding').addEventListener('input', () => renderFunding(getFilteredFunding()));
-document.getElementById('filter-year-funding').addEventListener('change', () => renderFunding(getFilteredFunding()));
-document.getElementById('search-stipends').addEventListener('input', () => renderStipends(getFilteredStipends()));
-document.getElementById('filter-year-stipends').addEventListener('change', () => renderStipends(getFilteredStipends()));
-
-async function fetchAll() {
-  const r1 = await fetchFunding();
-  const r2 = await fetchStipends();
-  if (r1 || r2) {
-    const now = new Date().toLocaleString();
-    document.getElementById('status').innerHTML = '<span class="dot dot-green"></span>Live';
-    document.getElementById('last-update').textContent = 'Updated: ' + now;
-    document.getElementById('footer').textContent = `Sources: USASpending.gov API + PHDStipends.com | Last fetch: ${now} | Auto-refresh every hour`;
-  } else {
-    document.getElementById('status').innerHTML = '<span class="dot dot-red"></span>Error';
-  }
+async function fetchData(){
+  const ld=document.getElementById('loading'),tb=document.getElementById('data-table'),er=document.getElementById('error');
+  ld.style.display='block';tb.style.display='none';er.style.display='none';
+  try{
+    const res=await fetch(CSV_URL+'?t='+Date.now());if(!res.ok)throw new Error('HTTP '+res.status);
+    const parsed=parseCSV(await res.text());headers=parsed.headers;allRows=parsed.rows;
+    const sel=document.getElementById('filter-year');sel.innerHTML='<option value="">All Years</option>';
+    [...new Set(allRows.map(r=>r.time_period))].sort().forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;sel.appendChild(o);});
+    renderTable(getFiltered());ld.style.display='none';tb.style.display='table';
+    const now=new Date().toLocaleString();
+    document.getElementById('status').innerHTML='<span class="dot dot-green"></span>Live';
+    document.getElementById('last-update').textContent='Updated: '+now;
+    document.getElementById('footer').textContent=`H_f: USASpending.gov API | H_s: phdstipends.com | Last fetch: ${now} | Auto-refresh every hour`;
+  }catch(e){ld.style.display='none';er.style.display='block';er.textContent='Failed: '+e.message;
+    document.getElementById('status').innerHTML='<span class="dot dot-red"></span>Error';}
 }
-fetchAll();
-setInterval(fetchAll, REFRESH_MS);
+
+document.getElementById('search').addEventListener('input',()=>renderTable(getFiltered()));
+document.getElementById('filter-country').addEventListener('change',()=>renderTable(getFiltered()));
+document.getElementById('filter-year').addEventListener('change',()=>renderTable(getFiltered()));
+document.getElementById('filter-policy').addEventListener('change',()=>renderTable(getFiltered()));
+fetchData();setInterval(fetchData,REFRESH_MS);
 </script>
 </body>
 </html>
