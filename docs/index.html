@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Education Policy — Federal Funding Dashboard</title>
+<title>Education Policy — Federal Funding & PhD Stipends Dashboard</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 20px; }
@@ -16,6 +16,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .dot-green { background: #22c55e; }
 .dot-yellow { background: #eab308; }
 .dot-red { background: #ef4444; }
+.tabs { max-width: 1400px; margin: 0 auto 16px; display: flex; gap: 0; }
+.tab { padding: 10px 24px; font-size: 0.95rem; font-weight: 600; cursor: pointer; border: 1px solid #d0d5dd; border-bottom: none; background: #fff; color: #666; border-radius: 8px 8px 0 0; margin-right: -1px; }
+.tab.active { background: #16213e; color: #fff; border-color: #16213e; }
+.panel { display: none; }
+.panel.active { display: block; }
 .controls { max-width: 1400px; margin: 0 auto 16px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .controls input, .controls select { padding: 8px 12px; border: 1px solid #d0d5dd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
 .controls input { width: 260px; }
@@ -25,9 +30,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .stat-card { background: #fff; border-radius: 10px; padding: 16px; border: 1px solid #e0e0e0; }
 .stat-card .label { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
 .stat-card .value { font-size: 1.4rem; font-weight: 700; color: #16213e; margin-top: 4px; }
-.table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.table-wrap { max-width: 1400px; margin: 0 auto; overflow-x: auto; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); max-height: 70vh; }
 table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-thead th { background: #16213e; color: #fff; padding: 12px 14px; text-align: left; position: sticky; top: 0; cursor: pointer; white-space: nowrap; user-select: none; }
+thead th { background: #16213e; color: #fff; padding: 12px 14px; text-align: left; position: sticky; top: 0; cursor: pointer; white-space: nowrap; user-select: none; z-index: 1; }
 thead th:hover { background: #1a3a5c; }
 thead th .sort-arrow { margin-left: 4px; font-size: 0.7rem; }
 tbody td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
@@ -35,7 +40,11 @@ tbody tr:hover { background: #f8fafc; }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
 .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
 .tag-us { background: #dbeafe; color: #1e40af; }
+.tag-good { background: #d1fae5; color: #065f46; }
+.tag-ok { background: #fef3c7; color: #92400e; }
+.tag-low { background: #fee2e2; color: #991b1b; }
 .funding-bar { display: inline-block; height: 6px; border-radius: 3px; background: #3b82f6; vertical-align: middle; margin-right: 8px; }
+.lw-bar { display: inline-block; height: 6px; border-radius: 3px; vertical-align: middle; margin-right: 8px; }
 .loading { text-align: center; padding: 60px; color: #888; font-size: 1.1rem; }
 .error { text-align: center; padding: 60px; color: #ef4444; font-size: 1rem; }
 .footer { max-width: 1400px; margin: 16px auto 0; font-size: 0.8rem; color: #999; text-align: center; }
@@ -44,8 +53,8 @@ tbody tr:hover { background: #f8fafc; }
 <body>
 
 <div class="header">
-  <h1>Education Policy — Federal Funding Dashboard</h1>
-  <p>Real-time data from <a href="https://api.usaspending.gov" target="_blank">USASpending.gov API</a> | Source: <a href="https://github.com/zl1212-ship-it/education-policy-care-audit" target="_blank">GitHub Repo</a></p>
+  <h1>Education Policy — Federal Funding & PhD Stipends</h1>
+  <p>Real-time data from <a href="https://api.usaspending.gov" target="_blank">USASpending.gov</a> and <a href="https://www.phdstipends.com" target="_blank">PHDStipends.com</a> | <a href="https://github.com/zl1212-ship-it/education-policy-care-audit" target="_blank">GitHub</a></p>
   <div class="status-bar">
     <span class="status-item" id="status"><span class="dot dot-yellow"></span>Loading...</span>
     <span class="status-item" id="row-count">—</span>
@@ -54,53 +63,55 @@ tbody tr:hover { background: #f8fafc; }
   </div>
 </div>
 
-<div class="stats" id="stats"></div>
-
-<div class="controls">
-  <input type="text" id="search" placeholder="Search institution...">
-  <select id="filter-year">
-    <option value="">All Fiscal Years</option>
-  </select>
-  <button onclick="fetchData()">Refresh Now</button>
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('funding')">Federal Funding</div>
+  <div class="tab" onclick="switchTab('stipends')">PhD Stipends</div>
 </div>
 
-<div class="table-wrap">
-  <div class="loading" id="loading">Loading data from GitHub...</div>
-  <table id="data-table" style="display:none">
-    <thead>
-      <tr id="header-row"></tr>
-    </thead>
-    <tbody id="table-body"></tbody>
-  </table>
-  <div class="error" id="error" style="display:none"></div>
+<!-- ==================== FEDERAL FUNDING PANEL ==================== -->
+<div class="panel active" id="panel-funding">
+  <div class="stats" id="stats-funding"></div>
+  <div class="controls">
+    <input type="text" id="search-funding" placeholder="Search institution...">
+    <select id="filter-year-funding"><option value="">All Fiscal Years</option></select>
+    <button onclick="fetchFunding()">Refresh</button>
+  </div>
+  <div class="table-wrap">
+    <div class="loading" id="loading-funding">Loading funding data...</div>
+    <table id="table-funding" style="display:none">
+      <thead><tr id="header-funding"></tr></thead>
+      <tbody id="body-funding"></tbody>
+    </table>
+    <div class="error" id="error-funding" style="display:none"></div>
+  </div>
+</div>
+
+<!-- ==================== PHD STIPENDS PANEL ==================== -->
+<div class="panel" id="panel-stipends">
+  <div class="stats" id="stats-stipends"></div>
+  <div class="controls">
+    <input type="text" id="search-stipends" placeholder="Search university or department...">
+    <select id="filter-year-stipends"><option value="">All Years</option></select>
+    <button onclick="fetchStipends()">Refresh</button>
+  </div>
+  <div class="table-wrap">
+    <div class="loading" id="loading-stipends">Loading stipends data...</div>
+    <table id="table-stipends" style="display:none">
+      <thead><tr id="header-stipends"></tr></thead>
+      <tbody id="body-stipends"></tbody>
+    </table>
+    <div class="error" id="error-stipends" style="display:none"></div>
+  </div>
 </div>
 
 <div class="footer" id="footer"></div>
 
 <script>
-const CSV_URL = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/governance_matrix.csv';
+const FUNDING_CSV = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/governance_matrix.csv';
+const STIPENDS_CSV = 'https://raw.githubusercontent.com/zl1212-ship-it/education-policy-care-audit/main/phd_stipends.csv';
 const REFRESH_MS = 60 * 60 * 1000;
 
-let allRows = [];
-let headers = [];
-let sortCol = -1;
-let sortAsc = true;
-let maxFunding = 0;
-
-const COLUMN_CONFIG = {
-  'institution':           { label: 'Institution',       format: v => v },
-  'country':               { label: 'Country',           format: v => `<span class="tag tag-us">${v}</span>` },
-  'fiscal_year':           { label: 'Fiscal Year',       cls: 'num', format: v => 'FY' + v },
-  'federal_funding_total': { label: 'Federal Funding ($)', cls: 'num', format: (v, row) => {
-    const n = Number(v);
-    const pct = maxFunding > 0 ? (n / maxFunding * 100) : 0;
-    const barW = Math.max(pct * 0.8, 2);
-    return `<span class="funding-bar" style="width:${barW}px"></span>$${n.toLocaleString('en-US', {maximumFractionDigits: 0})}`;
-  }},
-  'award_count':           { label: 'Awards',            cls: 'num', format: v => v },
-  'top_awarding_agency':   { label: 'Top Agency',        format: v => v === 'N/A' ? '—' : v },
-};
-
+// ---- shared utilities ----
 function parseCSV(text) {
   const lines = text.trim().split('\n');
   const hdrs = parseCSVLine(lines[0]);
@@ -115,150 +126,205 @@ function parseCSV(text) {
   }
   return { headers: hdrs, rows };
 }
-
 function parseCSVLine(line) {
-  const result = [];
-  let current = '';
-  let inQuotes = false;
+  const result = []; let current = ''; let inQ = false;
   for (let i = 0; i < line.length; i++) {
     const ch = line[i];
-    if (inQuotes) {
-      if (ch === '"' && line[i+1] === '"') { current += '"'; i++; }
-      else if (ch === '"') { inQuotes = false; }
-      else { current += ch; }
-    } else {
-      if (ch === '"') { inQuotes = true; }
-      else if (ch === ',') { result.push(current.trim()); current = ''; }
-      else { current += ch; }
-    }
+    if (inQ) { if (ch === '"' && line[i+1] === '"') { current += '"'; i++; } else if (ch === '"') { inQ = false; } else { current += ch; } }
+    else { if (ch === '"') { inQ = true; } else if (ch === ',') { result.push(current.trim()); current = ''; } else { current += ch; } }
   }
   result.push(current.trim());
   return result;
 }
 
-function getFiltered() {
-  const search = document.getElementById('search').value.toLowerCase();
-  const year = document.getElementById('filter-year').value;
-  return allRows.filter(r => {
-    if (search && !(r.institution || '').toLowerCase().includes(search)) return false;
-    if (year && r.fiscal_year !== year) return false;
+// ---- tab switching ----
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('panel-' + name).classList.add('active');
+}
+
+// ==================== FUNDING ====================
+let fundingRows = [], fundingHeaders = [], fundingSortCol = -1, fundingSortAsc = true;
+const FUNDING_COLS = {
+  'institution':           { label: 'Institution',         format: v => v },
+  'country':               { label: 'Country',             format: v => `<span class="tag tag-us">${v}</span>` },
+  'fiscal_year':           { label: 'Fiscal Year',         cls: 'num', format: v => 'FY' + v },
+  'federal_funding_total': { label: 'Federal Funding ($)', cls: 'num', format: v => {
+    const n = Number(v); return '$' + n.toLocaleString('en-US', {maximumFractionDigits: 0});
+  }},
+  'award_count':           { label: 'Awards',              cls: 'num', format: v => v },
+  'top_awarding_agency':   { label: 'Top Agency',          format: v => v === 'N/A' ? '—' : v },
+};
+function getFilteredFunding() {
+  const s = document.getElementById('search-funding').value.toLowerCase();
+  const y = document.getElementById('filter-year-funding').value;
+  return fundingRows.filter(r => {
+    if (s && !(r.institution||'').toLowerCase().includes(s)) return false;
+    if (y && r.fiscal_year !== y) return false;
     return true;
   });
 }
-
-function renderStats(rows) {
-  const totalFunding = rows.reduce((s, r) => s + Number(r.federal_funding_total || 0), 0);
-  const totalAwards = rows.reduce((s, r) => s + Number(r.award_count || 0), 0);
-  const institutions = new Set(rows.map(r => r.institution)).size;
-  const years = new Set(rows.map(r => r.fiscal_year));
-  const yearRange = [...years].sort();
-
-  document.getElementById('stats').innerHTML = `
-    <div class="stat-card"><div class="label">Total Federal Funding</div><div class="value">$${(totalFunding/1e9).toFixed(2)}B</div></div>
-    <div class="stat-card"><div class="label">Total Awards</div><div class="value">${totalAwards.toLocaleString()}</div></div>
-    <div class="stat-card"><div class="label">Institutions</div><div class="value">${institutions}</div></div>
-    <div class="stat-card"><div class="label">Fiscal Years</div><div class="value">${yearRange[0]}–${yearRange[yearRange.length-1]}</div></div>
-  `;
-}
-
-function renderTable(rows) {
-  maxFunding = Math.max(...rows.map(r => Number(r.federal_funding_total || 0)));
-
-  const headerRow = document.getElementById('header-row');
-  headerRow.innerHTML = '';
-  headers.forEach((h, i) => {
-    const cfg = COLUMN_CONFIG[h] || { label: h };
+function renderFunding(rows) {
+  const hr = document.getElementById('header-funding');
+  hr.innerHTML = '';
+  fundingHeaders.forEach((h,i) => {
+    const cfg = FUNDING_COLS[h] || {label:h};
     const th = document.createElement('th');
-    let arrow = '';
-    if (sortCol === i) arrow = `<span class="sort-arrow">${sortAsc ? '▲' : '▼'}</span>`;
-    th.innerHTML = cfg.label + arrow;
-    th.className = cfg.cls || '';
-    th.onclick = () => { sortByCol(i); };
-    headerRow.appendChild(th);
+    let arrow = fundingSortCol === i ? `<span class="sort-arrow">${fundingSortAsc?'▲':'▼'}</span>` : '';
+    th.innerHTML = cfg.label + arrow; th.className = cfg.cls||'';
+    th.onclick = () => { if(fundingSortCol===i){fundingSortAsc=!fundingSortAsc}else{fundingSortCol=i;fundingSortAsc=true} sortRows(fundingRows,fundingHeaders[i]); renderFunding(getFilteredFunding()); };
+    hr.appendChild(th);
   });
-
-  const tbody = document.getElementById('table-body');
-  tbody.innerHTML = '';
+  const tb = document.getElementById('body-funding');
+  tb.innerHTML = '';
   rows.forEach(row => {
     const tr = document.createElement('tr');
-    headers.forEach(h => {
+    fundingHeaders.forEach(h => {
       const td = document.createElement('td');
-      const cfg = COLUMN_CONFIG[h] || { format: v => v };
-      td.className = cfg.cls || '';
-      td.innerHTML = cfg.format(row[h], row);
+      const cfg = FUNDING_COLS[h] || {format:v=>v};
+      td.className = cfg.cls||''; td.innerHTML = cfg.format(row[h],row);
       tr.appendChild(td);
     });
-    tbody.appendChild(tr);
+    tb.appendChild(tr);
   });
-
-  document.getElementById('row-count').textContent = `${rows.length} / ${allRows.length} rows`;
-  renderStats(rows);
+  document.getElementById('row-count').textContent = `${rows.length} rows`;
+  const totalF = rows.reduce((s,r) => s + Number(r.federal_funding_total||0), 0);
+  const totalA = rows.reduce((s,r) => s + Number(r.award_count||0), 0);
+  const insts = new Set(rows.map(r=>r.institution)).size;
+  document.getElementById('stats-funding').innerHTML = `
+    <div class="stat-card"><div class="label">Total Federal Funding</div><div class="value">$${(totalF/1e9).toFixed(2)}B</div></div>
+    <div class="stat-card"><div class="label">Total Awards</div><div class="value">${totalA.toLocaleString()}</div></div>
+    <div class="stat-card"><div class="label">Institutions</div><div class="value">${insts}</div></div>
+    <div class="stat-card"><div class="label">Records</div><div class="value">${rows.length}</div></div>`;
 }
-
-function sortByCol(i) {
-  if (sortCol === i) { sortAsc = !sortAsc; }
-  else { sortCol = i; sortAsc = true; }
-  const key = headers[i];
-  allRows.sort((a, b) => {
-    let va = a[key], vb = b[key];
-    const na = Number(va), nb = Number(vb);
-    if (!isNaN(na) && !isNaN(nb)) { return sortAsc ? na - nb : nb - na; }
-    return sortAsc ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va));
-  });
-  renderTable(getFiltered());
-}
-
-function populateYearFilter() {
-  const years = [...new Set(allRows.map(r => r.fiscal_year))].sort();
-  const sel = document.getElementById('filter-year');
-  sel.innerHTML = '<option value="">All Fiscal Years</option>';
-  years.forEach(y => {
-    const opt = document.createElement('option');
-    opt.value = y; opt.textContent = 'FY' + y;
-    sel.appendChild(opt);
+function sortRows(arr, key) {
+  arr.sort((a,b) => {
+    let va=a[key],vb=b[key]; const na=Number(va),nb=Number(vb);
+    if(!isNaN(na)&&!isNaN(nb)) return fundingSortAsc?na-nb:nb-na;
+    return fundingSortAsc?String(va).localeCompare(String(vb)):String(vb).localeCompare(String(va));
   });
 }
-
-async function fetchData() {
-  const loading = document.getElementById('loading');
-  const table = document.getElementById('data-table');
-  const error = document.getElementById('error');
-
-  loading.style.display = 'block';
-  table.style.display = 'none';
-  error.style.display = 'none';
-
+async function fetchFunding() {
+  const ld = document.getElementById('loading-funding'), tb = document.getElementById('table-funding'), er = document.getElementById('error-funding');
+  ld.style.display='block'; tb.style.display='none'; er.style.display='none';
   try {
-    const res = await fetch(CSV_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const text = await res.text();
-    const parsed = parseCSV(text);
-    headers = parsed.headers;
-    allRows = parsed.rows;
+    const res = await fetch(FUNDING_CSV + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const parsed = parseCSV(await res.text());
+    fundingHeaders = parsed.headers; fundingRows = parsed.rows;
+    const sel = document.getElementById('filter-year-funding');
+    sel.innerHTML = '<option value="">All Fiscal Years</option>';
+    [...new Set(fundingRows.map(r=>r.fiscal_year))].sort().forEach(y => { const o=document.createElement('option'); o.value=y; o.textContent='FY'+y; sel.appendChild(o); });
+    renderFunding(getFilteredFunding());
+    ld.style.display='none'; tb.style.display='table';
+    return true;
+  } catch(e) { ld.style.display='none'; er.style.display='block'; er.textContent='Failed: '+e.message; return false; }
+}
 
-    populateYearFilter();
-    renderTable(getFiltered());
+// ==================== STIPENDS ====================
+let stipendRows = [], stipendHeaders = [], stipendSortCol = -1, stipendSortAsc = true;
+const STIPEND_COLS = {
+  'university':     { label: 'University',      format: v => v },
+  'department':     { label: 'Department',       format: v => v },
+  'overall_pay':    { label: 'Overall Pay',      cls: 'num', format: v => v ? '$'+Number(v).toLocaleString() : '—' },
+  'lw_ratio':       { label: 'LW Ratio',         cls: 'num', format: v => {
+    const n = Number(v); if (!v || isNaN(n)) return '—';
+    const cls = n >= 1.0 ? 'tag-good' : n >= 0.8 ? 'tag-ok' : 'tag-low';
+    return `<span class="tag ${cls}">${n.toFixed(2)}</span>`;
+  }},
+  'academic_year':  { label: 'Academic Year',    format: v => v },
+  'program_year':   { label: 'Program Year',     format: v => v },
+  'gross_pay_12m':  { label: '12M Gross Pay',    cls: 'num', format: v => v ? '$'+Number(v).toLocaleString() : '—' },
+  'fees':           { label: 'Fees',             cls: 'num', format: v => v ? '$'+Number(v).toLocaleString() : '—' },
+};
+const STIPEND_VISIBLE = ['university','department','overall_pay','lw_ratio','academic_year','program_year','gross_pay_12m','fees'];
+function getFilteredStipends() {
+  const s = document.getElementById('search-stipends').value.toLowerCase();
+  const y = document.getElementById('filter-year-stipends').value;
+  return stipendRows.filter(r => {
+    if (s && !(r.university||'').toLowerCase().includes(s) && !(r.department||'').toLowerCase().includes(s)) return false;
+    if (y && r.academic_year !== y) return false;
+    return true;
+  });
+}
+function renderStipends(rows) {
+  const hr = document.getElementById('header-stipends');
+  hr.innerHTML = '';
+  STIPEND_VISIBLE.forEach((h,i) => {
+    const cfg = STIPEND_COLS[h] || {label:h};
+    const th = document.createElement('th');
+    let arrow = stipendSortCol===i ? `<span class="sort-arrow">${stipendSortAsc?'▲':'▼'}</span>` : '';
+    th.innerHTML = cfg.label + arrow; th.className = cfg.cls||'';
+    th.onclick = () => { if(stipendSortCol===i){stipendSortAsc=!stipendSortAsc}else{stipendSortCol=i;stipendSortAsc=true}
+      stipendRows.sort((a,b)=>{let va=a[STIPEND_VISIBLE[stipendSortCol]],vb=b[STIPEND_VISIBLE[stipendSortCol]];const na=Number(va),nb=Number(vb);if(!isNaN(na)&&!isNaN(nb))return stipendSortAsc?na-nb:nb-na;return stipendSortAsc?String(va).localeCompare(String(vb)):String(vb).localeCompare(String(va));});
+      renderStipends(getFilteredStipends());
+    };
+    hr.appendChild(th);
+  });
+  const tb = document.getElementById('body-stipends');
+  tb.innerHTML = '';
+  const display = rows.slice(0, 500);
+  display.forEach(row => {
+    const tr = document.createElement('tr');
+    STIPEND_VISIBLE.forEach(h => {
+      const td = document.createElement('td');
+      const cfg = STIPEND_COLS[h] || {format:v=>v};
+      td.className = cfg.cls||''; td.innerHTML = cfg.format(row[h],row);
+      tr.appendChild(td);
+    });
+    tb.appendChild(tr);
+  });
+  document.getElementById('row-count').textContent = `${display.length}${rows.length>500?' of '+rows.length:''} rows`;
+  const withPay = rows.filter(r => r.overall_pay && Number(r.overall_pay) > 0);
+  const avgPay = withPay.length ? withPay.reduce((s,r)=>s+Number(r.overall_pay),0)/withPay.length : 0;
+  const withLW = rows.filter(r => r.lw_ratio && Number(r.lw_ratio) > 0);
+  const avgLW = withLW.length ? withLW.reduce((s,r)=>s+Number(r.lw_ratio),0)/withLW.length : 0;
+  const belowLW = withLW.filter(r => Number(r.lw_ratio) < 1.0).length;
+  document.getElementById('stats-stipends').innerHTML = `
+    <div class="stat-card"><div class="label">Total Entries</div><div class="value">${rows.length.toLocaleString()}</div></div>
+    <div class="stat-card"><div class="label">Avg Stipend</div><div class="value">$${avgPay.toLocaleString('en-US',{maximumFractionDigits:0})}</div></div>
+    <div class="stat-card"><div class="label">Avg LW Ratio</div><div class="value">${avgLW.toFixed(2)}</div></div>
+    <div class="stat-card"><div class="label">Below Living Wage</div><div class="value">${belowLW.toLocaleString()} (${withLW.length?(belowLW/withLW.length*100).toFixed(1):0}%)</div></div>`;
+}
+async function fetchStipends() {
+  const ld = document.getElementById('loading-stipends'), tb = document.getElementById('table-stipends'), er = document.getElementById('error-stipends');
+  ld.style.display='block'; tb.style.display='none'; er.style.display='none';
+  try {
+    const res = await fetch(STIPENDS_CSV + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const parsed = parseCSV(await res.text());
+    stipendHeaders = parsed.headers; stipendRows = parsed.rows;
+    const sel = document.getElementById('filter-year-stipends');
+    sel.innerHTML = '<option value="">All Years</option>';
+    [...new Set(stipendRows.map(r=>r.academic_year))].sort().forEach(y => { if(y){const o=document.createElement('option'); o.value=y; o.textContent=y; sel.appendChild(o);} });
+    renderStipends(getFilteredStipends());
+    ld.style.display='none'; tb.style.display='table';
+    return true;
+  } catch(e) { ld.style.display='none'; er.style.display='block'; er.textContent='Failed: '+e.message; return false; }
+}
 
-    loading.style.display = 'none';
-    table.style.display = 'table';
+// ---- init ----
+document.getElementById('search-funding').addEventListener('input', () => renderFunding(getFilteredFunding()));
+document.getElementById('filter-year-funding').addEventListener('change', () => renderFunding(getFilteredFunding()));
+document.getElementById('search-stipends').addEventListener('input', () => renderStipends(getFilteredStipends()));
+document.getElementById('filter-year-stipends').addEventListener('change', () => renderStipends(getFilteredStipends()));
 
+async function fetchAll() {
+  const r1 = await fetchFunding();
+  const r2 = await fetchStipends();
+  if (r1 || r2) {
     const now = new Date().toLocaleString();
     document.getElementById('status').innerHTML = '<span class="dot dot-green"></span>Live';
     document.getElementById('last-update').textContent = 'Updated: ' + now;
-    document.getElementById('footer').textContent = `Data source: USASpending.gov API → governance_matrix.csv | Last fetch: ${now} | Auto-refresh every hour`;
-  } catch (e) {
-    loading.style.display = 'none';
-    error.style.display = 'block';
-    error.textContent = 'Failed to load data: ' + e.message;
+    document.getElementById('footer').textContent = `Sources: USASpending.gov API + PHDStipends.com | Last fetch: ${now} | Auto-refresh every hour`;
+  } else {
     document.getElementById('status').innerHTML = '<span class="dot dot-red"></span>Error';
   }
 }
-
-document.getElementById('search').addEventListener('input', () => renderTable(getFiltered()));
-document.getElementById('filter-year').addEventListener('change', () => renderTable(getFiltered()));
-
-fetchData();
-setInterval(fetchData, REFRESH_MS);
+fetchAll();
+setInterval(fetchAll, REFRESH_MS);
 </script>
 </body>
 </html>
