@@ -3,8 +3,12 @@ Build governance_matrix.csv with real data from two sources:
   H_f  = USASpending.gov API (federal funding per institution per FY)
   H_s  = phdstipends.com (average PhD stipend per institution per academic year)
   N_g  = institutions_config.json (baseline enrollment)
-  S_r  = log((H_f + 1) / ((H_s / cost_index) * N_g))
-  attrition_rate = modeled from stipend + policy effects
+  S_r  = log((H_f + 1) / ((H_s / cost_index) * N_g))  -- descriptive disparity ratio
+
+Note: no outcome variable (e.g. doctoral attrition) is generated. Reliable
+institution-by-year retention data are not available, and a modelled attrition
+series would be synthetic and circular with S_r. Only auditable inputs and the
+descriptive S_r ratio are written.
 """
 
 import csv
@@ -192,7 +196,7 @@ def build_hs_lookup(stipend_entries, config):
     return hs
 
 
-# --------------- step 4: compute S_r and attrition ---------------
+# --------------- step 4: compute descriptive S_r ratio ---------------
 
 def compute_sr(hf, hs, ng, cost_idx):
     adjusted_hs = hs / cost_idx if cost_idx > 0 else hs
@@ -203,14 +207,6 @@ def compute_sr(hf, hs, ng, cost_idx):
     if ratio <= 0:
         return 0.0
     return round(math.log(ratio), 4)
-
-
-def compute_attrition(base_rate, hs, cost_idx, sr, post_policy, year):
-    stipend_effect = -0.00000025 * (hs / cost_idx) if cost_idx > 0 else 0
-    policy_effect = 0.0022 * sr if post_policy == 1 else 0
-    time_trend = (year - 2019) * 0.0006
-    rate = base_rate + stipend_effect + policy_effect + time_trend
-    return round(max(0.012, min(rate, 0.14)), 4)
 
 
 # --------------- main ---------------
@@ -250,7 +246,6 @@ def main():
     for inst_name, inst_cfg in config.items():
         country = inst_cfg["country"]
         cost_idx = inst_cfg["local_cost_of_living_index"]
-        base_attrition = inst_cfg["baseline_attrition"]
         ng = inst_cfg["baseline_enrollment"]
         baseline_stipend = inst_cfg["baseline_stipend_2019"]
 
@@ -269,7 +264,6 @@ def main():
                 hs = round(baseline_stipend * ((1 + inflation) ** (yr - 2019)), 2)
 
             sr = compute_sr(hf, hs, ng, cost_idx)
-            attrition = compute_attrition(base_attrition, hs, cost_idx, sr, post_policy, yr)
 
             rows.append({
                 "institution": inst_name,
@@ -279,12 +273,11 @@ def main():
                 "H_f": hf,
                 "H_s": hs,
                 "N_g": ng,
-                "attrition_rate": attrition,
                 "S_r": sr,
             })
 
     # Write CSV
-    fields = ["institution", "country", "time_period", "post_policy", "H_f", "H_s", "N_g", "attrition_rate", "S_r"]
+    fields = ["institution", "country", "time_period", "post_policy", "H_f", "H_s", "N_g", "S_r"]
     with open("governance_matrix.csv", "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
@@ -302,7 +295,7 @@ def main():
         if r["institution"] == "Stanford University":
             src = "real" if (r["institution"], r["time_period"]) in hs_data else "est."
             print(f"  {r['time_period']}  H_f=${r['H_f']:>14,.2f}  H_s=${r['H_s']:>8,.0f}({src})  "
-                  f"attr={r['attrition_rate']:.4f}  S_r={r['S_r']:.4f}")
+                  f"S_r={r['S_r']:.4f}")
 
 
 if __name__ == "__main__":
