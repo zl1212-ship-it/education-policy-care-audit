@@ -1,0 +1,30 @@
+name: Update USASpending Data
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:       # manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - run: python scrape_usaspending.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add governance_matrix.csv
+          git diff --cached --quiet || git commit -m "chore: update funding data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
