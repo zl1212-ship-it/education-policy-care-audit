@@ -3,6 +3,7 @@ Build governance_matrix.csv with real data from two sources:
   H_f  = USASpending.gov API (federal funding per institution per FY)
   H_s  = phdstipends.com (average PhD stipend per institution per academic year)
   N_g  = institutions_config.json (baseline enrollment)
+  doctorates_awarded = NSF NCSES Survey of Earned Doctorates (sed_doctorates.csv), 2019-2023
   S_r  = log((H_f + 1) / ((H_s / cost_index) * N_g))  -- descriptive disparity ratio
 
 Note: no outcome variable (e.g. doctoral attrition) is generated. Reliable
@@ -221,6 +222,16 @@ def main():
     us_insts = [n for n, c in config.items() if c["country"] == "US"]
     jp_insts = [n for n, c in config.items() if c["country"] == "JP"]
 
+    # Real research-doctorate counts (NSF NCSES Survey of Earned Doctorates,
+    # Table 3 / Table 7-2, "Top 50 doctorate-granting institutions"), 2019-2023.
+    # Source-extracted; blank where an institution falls below the annual top-50
+    # cutoff (e.g. Caltech) or the year is not yet published (2024-2025).
+    doctorates = {}
+    if os.path.exists("sed_doctorates.csv"):
+        with open("sed_doctorates.csv") as f:
+            for r in csv.DictReader(f):
+                doctorates[(r["institution"], int(r["time_period"]))] = int(r["doctorates_awarded"])
+
     # Step 1: H_f from USASpending (US only)
     print("\n[1/3] Fetching federal funding from USASpending.gov...")
     hf_data = fetch_all_hf(us_insts)
@@ -273,11 +284,12 @@ def main():
                 "H_f": hf,
                 "H_s": hs,
                 "N_g": ng,
+                "doctorates_awarded": doctorates.get((inst_name, yr), ""),
                 "S_r": sr,
             })
 
     # Write CSV
-    fields = ["institution", "country", "time_period", "post_policy", "H_f", "H_s", "N_g", "S_r"]
+    fields = ["institution", "country", "time_period", "post_policy", "H_f", "H_s", "N_g", "doctorates_awarded", "S_r"]
     with open("governance_matrix.csv", "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()

@@ -1,0 +1,104 @@
+institution,time_period,doctorates_awarded
+Columbia University,2019,573
+Columbia University,2020,673
+Columbia University,2021,585
+Columbia University,2022,577
+Columbia University,2023,606
+Cornell University,2019,527
+Cornell University,2020,514
+Cornell University,2021,472
+Cornell University,2022,509
+Cornell University,2023,549
+Duke University,2019,382
+Duke University,2020,407
+Duke University,2021,384
+Duke University,2022,417
+Duke University,2023,435
+Harvard University,2019,738
+Harvard University,2020,630
+Harvard University,2021,621
+Harvard University,2022,753
+Harvard University,2023,725
+Johns Hopkins University,2019,455
+Johns Hopkins University,2020,426
+Johns Hopkins University,2021,423
+Johns Hopkins University,2022,507
+Johns Hopkins University,2023,531
+Massachusetts Institute of Technology,2019,685
+Massachusetts Institute of Technology,2020,579
+Massachusetts Institute of Technology,2021,568
+Massachusetts Institute of Technology,2022,735
+Massachusetts Institute of Technology,2023,684
+Northwestern University,2019,484
+Northwestern University,2020,433
+Northwestern University,2021,428
+Northwestern University,2022,491
+Northwestern University,2023,473
+Ohio State University,2019,726
+Ohio State University,2020,704
+Ohio State University,2021,713
+Ohio State University,2022,767
+Ohio State University,2023,748
+Penn State University,2019,659
+Penn State University,2020,688
+Penn State University,2021,629
+Penn State University,2022,710
+Penn State University,2023,691
+Princeton University,2019,398
+Princeton University,2022,447
+Princeton University,2023,445
+Stanford University,2019,770
+Stanford University,2020,769
+Stanford University,2021,815
+Stanford University,2022,836
+Stanford University,2023,799
+"University of California, Berkeley",2019,864
+"University of California, Berkeley",2020,797
+"University of California, Berkeley",2021,787
+"University of California, Berkeley",2022,830
+"University of California, Berkeley",2023,834
+"University of California, Los Angeles",2019,701
+"University of California, Los Angeles",2020,632
+"University of California, Los Angeles",2021,639
+"University of California, Los Angeles",2022,786
+"University of California, Los Angeles",2023,749
+"University of California, San Diego",2019,492
+"University of California, San Diego",2020,512
+"University of California, San Diego",2021,490
+"University of California, San Diego",2022,545
+"University of California, San Diego",2023,537
+University of Chicago,2019,409
+University of Chicago,2020,370
+University of Chicago,2021,455
+University of Chicago,2022,462
+University of Chicago,2023,467
+University of Illinois Urbana-Champaign,2019,759
+University of Illinois Urbana-Champaign,2020,821
+University of Illinois Urbana-Champaign,2021,662
+University of Illinois Urbana-Champaign,2022,824
+University of Illinois Urbana-Champaign,2023,731
+University of Michigan,2019,801
+University of Michigan,2020,846
+University of Michigan,2021,797
+University of Michigan,2022,861
+University of Michigan,2023,900
+University of Pennsylvania,2019,450
+University of Pennsylvania,2020,469
+University of Pennsylvania,2021,455
+University of Pennsylvania,2022,516
+University of Pennsylvania,2023,508
+University of Texas at Austin,2019,801
+University of Texas at Austin,2020,744
+University of Texas at Austin,2021,667
+University of Texas at Austin,2022,741
+University of Texas at Austin,2023,767
+University of Washington,2019,708
+University of Washington,2020,681
+University of Washington,2021,632
+University of Washington,2022,615
+University of Washington,2023,710
+Yale University,2019,415
+Yale University,2020,423
+Yale University,2021,410
+Yale University,2022,424
+Yale University,2023,442
