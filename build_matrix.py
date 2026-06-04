@@ -2,7 +2,8 @@
 Build governance_matrix.csv with real data from two sources:
   H_f  = USASpending.gov API (federal funding per institution per FY)
   H_s  = phdstipends.com (average PhD stipend per institution per academic year)
-  N_g  = institutions_config.json (baseline enrollment)
+  N_g  = institutions_config.json (approximate baseline enrollment seed)
+  grad_enrollment_ipeds = IPEDS via Urban Education Data API (ipeds_grad_enrollment.csv), 2019-2022
   doctorates_awarded = NSF NCSES Survey of Earned Doctorates (sed_doctorates.csv), 2019-2023
   S_r  = log((H_f + 1) / ((H_s / cost_index) * N_g))  -- descriptive disparity ratio
 
@@ -232,6 +233,15 @@ def main():
             for r in csv.DictReader(f):
                 doctorates[(r["institution"], int(r["time_period"]))] = int(r["doctorates_awarded"])
 
+    # Real total graduate enrollment (IPEDS via Urban Education Data API), 2019-2022.
+    # Total graduate headcount (incl. master's/professional), broader than the
+    # doctoral pipeline. Blank where not yet released (2023-2025) or for Japan.
+    grad_enroll = {}
+    if os.path.exists("ipeds_grad_enrollment.csv"):
+        with open("ipeds_grad_enrollment.csv") as f:
+            for r in csv.DictReader(f):
+                grad_enroll[(r["institution"], int(r["time_period"]))] = int(r["grad_enrollment_ipeds"])
+
     # Step 1: H_f from USASpending (US only)
     print("\n[1/3] Fetching federal funding from USASpending.gov...")
     hf_data = fetch_all_hf(us_insts)
@@ -284,12 +294,13 @@ def main():
                 "H_f": hf,
                 "H_s": hs,
                 "N_g": ng,
+                "grad_enrollment_ipeds": grad_enroll.get((inst_name, yr), ""),
                 "doctorates_awarded": doctorates.get((inst_name, yr), ""),
                 "S_r": sr,
             })
 
     # Write CSV
-    fields = ["institution", "country", "time_period", "post_policy", "H_f", "H_s", "N_g", "doctorates_awarded", "S_r"]
+    fields = ["institution", "country", "time_period", "post_policy", "H_f", "H_s", "N_g", "grad_enrollment_ipeds", "doctorates_awarded", "S_r"]
     with open("governance_matrix.csv", "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
