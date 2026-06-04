@@ -1,9 +1,12 @@
 name: Update Governance Matrix
 
 on:
-  schedule:
-    - cron: "0 * * * *"   # every hour
-  workflow_dispatch:       # manual trigger
+  # Hourly schedule disabled: the dataset backing the manuscript is frozen and
+  # versioned (see tag paper-data-v1). Re-run manually when a deliberate refresh
+  # is wanted. Re-enabling the cron will silently overwrite the canonical CSV.
+  #   schedule:
+  #     - cron: "0 * * * *"
+  workflow_dispatch:       # manual trigger only
 
 jobs:
   scrape:
