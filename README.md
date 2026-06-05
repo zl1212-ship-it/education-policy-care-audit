@@ -1,48 +1,74 @@
-# Educational Care Audit
+# Funding Without Care — Replication Data and Code
 
-This repository contains the replication code, structured panel datasets, and automated verification pipelines for the paper:
-*"Funding High-Skill STEM Pipelines: A Comparative Policy Audit of Institutional Infrastructure and Doctoral Labor Support in the United States and Japan."*
+This repository holds the data-construction scripts and the assembled dataset for the paper:
 
-The codebase models how macro-industrial transformations, specifically the U.S. CHIPS and Science Act and Japan's Society 5.0 framework, alter localized institutional resource allocation profiles and drive doctoral pipeline attrition.
+*"Funding Without Care: A Critical Policy Audit of Doctoral Stipend Adequacy and Institutional Hospitality."*
 
-## Key Metrics
+The paper is a **descriptive critical policy audit**. It estimates no regression, models no
+outcome, and makes no causal claim. In particular it does not model doctoral attrition:
+reliable institution-by-year retention data are not available, so none are used or claimed.
+Everything here is built from publicly auditable sources so that each figure in the paper can
+be reproduced from source.
 
-The analytical framework operationalizes the structural indicator to evaluate systemic pipeline strain:
+## What the paper measures
 
-* **Funding-to-Stipend Disparity Ratio ($S_{rit}$):** Evaluates structural per-capita fiscal divergence across capitalization layers.
-  $$S_{rit} = \ln \left( \frac{H_{fit} + 1}{\left( \frac{H_{sit}}{C_i} \right) \times N_{git}} \right)$$
-  Where $H_{fit}$ is the total macro-infrastructure asset funding, $H_{sit}$ is individual baseline student subsistence support, $C_i$ represents local cost-of-living adjustments, and $N_{git}$ tracks active graduate enrollment headcounts.
+The audit assembles a balanced descriptive panel of **22 elite U.S. Carnegie R1 universities**
+across **2019–2025**.
 
-## Econometric Design
+* **Primary measure — doctoral stipend living-wage adequacy.** For each report, the *living-wage
+  ratio* is the reported stipend expressed relative to a single-adult local living wage. These
+  ratios come from the crowd-sourced PhD Stipends repository (4,495 reports across the cohort)
+  and are aggregated to institutional means. This ratio, not the dollar level alone, is the
+  audit's primary measure, because it captures the *adequacy* of support relative to local cost
+  of living. At the cohort mean the ratio is about 1.32; the finding is in the distribution,
+  where about one report in seven falls below a local living wage and the highest-cost public
+  flagships sit barely above parity.
 
-We evaluate the structural "life stall" hypothesis using a Two-Way Fixed Effects (TWFE) panel regression design tracking historical cross-country policy cutoffs:
+* **Context only — institutional federal funding (`H_f`).** Total federal award amounts per
+  institution per fiscal year from the USASpending.gov API. These establish the resource scale
+  of the institutions and are deliberately *not* set against stipends as an opposed quantity,
+  since federal research awards themselves fund a large share of stipends, tuition, and
+  personnel.
 
-$$AttritionRate_{it} = \beta_0 + \beta_1 PostPolicy_{it} + \beta_2 S_{rit} + \alpha_i + \delta_t + \varepsilon_{it}$$
+* **Supporting context.** Graduate enrolment from IPEDS via the Urban Institute Education Data
+  API (2019–2022); research-doctorate counts from the NSF NCSES Survey of Earned Doctorates
+  (2019–2023).
 
-* **AttritionRate_{it}**: Localized doctoral pipeline attrition indicator matrix for institution $i$ across calendar year $t$.
-* **$\alpha_i$ & $\delta_t$**: Entity and time-trend fixed effects parameters capturing time-invariant institutional factors and global macroeconomic shocks.
-* **PostPolicy_{it}**: Step-treatment binary indicator tracking policy activation windows ($t \ge 2023$ for the United States; $t \ge 2021$ for Japan).
-* **Variance Corrective**: Standard errors are evaluated using Huber-White robust estimation clustered at the institutional level ($HC1$) to control for heteroskedasticity.
+`governance_matrix.csv` also carries a descriptive log ratio `S_r = log((H_f + 1) / ((H_s /
+cost_index) * N_g))`. It is a transparency artefact for the funding context, not a causal or
+treatment-effect design; no `post_policy` coefficient is estimated anywhere.
 
-## Repository Architecture
+## Files
 
-* `metrics_engine.py`: Core processing pipeline executing live API audits and estimating the TWFE panel regressions.
-* `institutions_config.json`: Master lookup profile housing real postsecondary database mappings for the active cohort.
-* `governance_matrix.csv`: Standardized historical panel tracking parameters across target elite research centers ($N = 33$).
-* `.github/workflows/run_audit.yml`: Automated GitHub Actions runner validating script execution environment on push.
+| File | Contents |
+|---|---|
+| `scrape_stipends.py` | Pulls PhD Stipends reports → `phd_stipends.csv` (includes `lw_ratio`) |
+| `scrape_usaspending.py` | Pulls federal award totals per institution from USASpending.gov |
+| `build_matrix.py` | Assembles `governance_matrix.csv` from the real sources above |
+| `institutions_config.json` | Institution name mappings and baseline enrolment seed |
+| `phd_stipends.csv` | Raw stipend reports with living-wage ratios |
+| `lw_ratio_by_institution.csv` | Institutional mean living-wage ratio and report counts |
+| `ipeds_grad_enrollment.csv` | Graduate enrolment, IPEDS via Urban Institute (2019–2022) |
+| `sed_doctorates.csv` | Research doctorates awarded, NSF SED (2019–2023) |
+| `governance_matrix.csv` | Assembled institution-year panel used by the paper |
 
-## Setup & Replication
-
-Execute the analysis pipeline locally inside an isolated Python 3.10+ workspace:
+## Reproduce
 
 ```bash
-# Clone the workspace architecture
-git clone https://github.com
+git clone https://github.com/zl1212-ship-it/education-policy-care-audit
 cd education-policy-care-audit
+git checkout paper-data-v1          # frozen snapshot matching the manuscript
 
-# Install analytical dependencies
-pip install numpy pandas statsmodels requests
-
-# Run the replication engine
-python metrics_engine.py
+pip install requests
+python build_matrix.py              # rebuilds governance_matrix.csv from source
 ```
+
+The tag `paper-data-v1` is the frozen, version-tagged snapshot the paper cites; checking it out
+reproduces the exact figures reported, independent of any later data refresh.
+
+## Sources
+
+* PhD Stipends — <https://www.phdstipends.com/> (stipends and living-wage ratios)
+* USASpending.gov API — <https://api.usaspending.gov/> (federal awards)
+* IPEDS via Urban Institute Education Data Portal — <https://educationdata.urban.org/>
+* NSF NCSES Survey of Earned Doctorates — <https://ncses.nsf.gov/>
