@@ -4,10 +4,7 @@ This repository holds the data-construction scripts and the assembled dataset fo
 
 *"Funding Without Care: A Critical Policy Audit of Doctoral Stipend Adequacy and Institutional Hospitality."*
 
-The paper is a **descriptive critical policy audit**. It estimates no regression, models no
-outcome, and makes no causal claim. In particular it does not model doctoral attrition:
-reliable institution-by-year retention data are not available, so none are used or claimed.
-Everything here is built from publicly auditable sources so that each figure in the paper can
+The paper is a descriptive critical policy audit. Everything here is built from publicly auditable sources so that each figure in the paper can
 be reproduced from source.
 
 ## What the paper measures
