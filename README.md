@@ -35,7 +35,7 @@ across 2019–2025.
   (2019–2023).
 
 `governance_matrix.csv` also carries a descriptive log ratio `S_r = log((H_f + 1) / ((H_s /
-cost_index) * N_g))`. It is a transparency artefact for the funding context, no `post_policy` coefficient is estimated anywhere.
+cost_index) * N_g))`. It is a transparency artefact for the funding context.
 
 ## Files
 
