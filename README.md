@@ -1,4 +1,4 @@
-# Funding Without Care — Replication Data and Code
+# Funding Without Care
 
 This repository holds the data-construction scripts and the assembled dataset for the paper:
 
@@ -12,10 +12,10 @@ be reproduced from source.
 
 ## What the paper measures
 
-The audit assembles a balanced descriptive panel of **22 elite U.S. Carnegie R1 universities**
-across **2019–2025**.
+The audit assembles a balanced descriptive panel of 22 elite U.S. Carnegie R1 universities
+across 2019–2025.
 
-* **Primary measure — doctoral stipend living-wage adequacy.** For each report, the *living-wage
+* **Doctoral stipend living-wage adequacy.** For each report, the *living-wage
   ratio* is the reported stipend expressed relative to a single-adult local living wage. These
   ratios come from the crowd-sourced PhD Stipends repository (4,495 reports across the cohort)
   and are aggregated to institutional means. This ratio, not the dollar level alone, is the
@@ -23,8 +23,8 @@ across **2019–2025**.
   of living. At the cohort mean the ratio is about 1.32; the finding is in the distribution,
   where about one report in seven falls below a local living wage and the highest-cost public
   flagships sit barely above parity.
-
-* **Context only — institutional federal funding (`H_f`).** Total federal award amounts per
+  
+* **Institutional federal funding (`H_f`).** Total federal award amounts per
   institution per fiscal year from the USASpending.gov API. These establish the resource scale
   of the institutions and are deliberately *not* set against stipends as an opposed quantity,
   since federal research awards themselves fund a large share of stipends, tuition, and
@@ -35,8 +35,7 @@ across **2019–2025**.
   (2019–2023).
 
 `governance_matrix.csv` also carries a descriptive log ratio `S_r = log((H_f + 1) / ((H_s /
-cost_index) * N_g))`. It is a transparency artefact for the funding context, not a causal or
-treatment-effect design; no `post_policy` coefficient is estimated anywhere.
+cost_index) * N_g))`. It is a transparency artefact for the funding context, no `post_policy` coefficient is estimated anywhere.
 
 ## Files
 
