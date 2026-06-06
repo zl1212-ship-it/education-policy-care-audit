@@ -1,3 +1,10 @@
 paper/
 background/
+research-os/
 .DS_Store
+# J4 findings narrative kept private until publication (reproducible from the scripts)
+j4_adoption/results.md
+j4_adoption/literature.md
+
+# Quarantined mismeasured artifact (see robustness.py Pell caveat)
+j4_adoption/data/pell_share.csv
