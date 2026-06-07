@@ -1,0 +1,4 @@
+group,level,slope_pp_yr
+Treated,0.8,-0.04
+Matched controls,0.797,-0.01
+All controls,0.72,0.41
