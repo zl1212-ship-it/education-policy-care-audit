@@ -1,0 +1,5 @@
+case,label,outcome,K,donors,pre_rmspe,gap_post,ratio,p
+gw,George Washington University,share_urm,25,392,0.532,2.566,6.02,0.32
+gw,George Washington University,admit_rate,25,220,0.578,-10.214,18.26,0.213
+montclair,Montclair State University,share_urm,25,362,0.738,2.701,4.78,0.377
+montclair,Montclair State University,admit_rate,25,146,3.031,2.547,1.92,0.762

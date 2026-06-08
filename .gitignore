@@ -6,5 +6,10 @@ research-os/
 j4_adoption/results.md
 j4_adoption/literature.md
 
+# J3 findings narrative kept private until publication (reproducible from the scripts)
+j3_admissions/results.md
+# local solver backup (see scm_gw.py compute note)
+j3_admissions/scm_gw.py.orig
+
 # Quarantined mismeasured artifact (see robustness.py Pell caveat)
 j4_adoption/data/pell_share.csv
