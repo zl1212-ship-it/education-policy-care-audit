@@ -87,8 +87,12 @@ for y in YEARS:
         uid = x["unitid"]
         if uid not in uni:
             continue
+        # reqt_test_scores valid categories are 0/1/2/3; IPEDS uses negatives (-1,-2)
+        # as missing/not-applicable sentinels -> treat those as missing.
+        rts = x.get("reqt_test_scores")
+        rts = rts if rts in (0, 1, 2, 3) else None
         req[(uid, y)] = {
-            "reqt_test_scores": x.get("reqt_test_scores"),
+            "reqt_test_scores": rts,
             "open_adm": x.get("open_admissions_policy"),
             "sat_cr_25": num(x.get("sat_crit_read_25_pctl")),
             "sat_cr_75": num(x.get("sat_crit_read_75_pctl")),

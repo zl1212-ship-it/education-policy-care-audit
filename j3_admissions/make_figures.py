@@ -40,6 +40,7 @@ for a, (fn, title, ylab) in zip(ax, [
     a.spines["top"].set_visible(False); a.spines["right"].set_visible(False)
 plt.tight_layout()
 plt.savefig(os.path.join(OUT, "j3_figure1.pdf"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT, "j3_figure1.png"), bbox_inches="tight", dpi=200)
 print("wrote j3_figure1.pdf")
 
 # ---------- Figure 2: synthetic control, two flagship adopters ----------
@@ -65,4 +66,5 @@ for a, (fn, lab, p) in zip(ax, [
     a.spines["top"].set_visible(False); a.spines["right"].set_visible(False)
 plt.tight_layout()
 plt.savefig(os.path.join(OUT, "j3_figure2.pdf"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT, "j3_figure2.png"), bbox_inches="tight", dpi=200)
 print("wrote j3_figure2.pdf")
