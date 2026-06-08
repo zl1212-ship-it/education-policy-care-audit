@@ -42,42 +42,58 @@ def level_slope(row):
     return v.mean(), slope
 
 
-def cs_overall(wide, G, idx, years, cohorts):
-    post = []
+def _cells(wide, Gmap, idx, years, cohorts):
+    """Precompute (g,t) post-cell matrices for the vectorized C&S; see analyze_did.py."""
+    units = list(idx); N = len(units); pos = {u: i for i, u in enumerate(units)}
+    G = np.array([Gmap[u] for u in units], float)
+    col_of = {y: j for j, y in enumerate(wide.columns)}
+    Y = wide.loc[units].to_numpy(float)
+    T, C, TD, CD = [], [], [], []
     for g in cohorts:
-        gunits = [u for u in idx if G[u] == g]
-        if not gunits:
+        if (g - 1) not in col_of:
             continue
+        jb = col_of[g - 1]
         for t in years:
-            base = g - 1
-            if base not in wide.columns or t not in wide.columns or t < g:
+            if t not in col_of or t < g:
                 continue
-            yb, yt = wide[base], wide[t]
-            tr = [u for u in gunits if pd.notna(yb.get(u)) and pd.notna(yt.get(u))]
-            ctrl = [u for u in idx if (G[u] == 0 or G[u] > t) and G[u] != g
-                    and pd.notna(yb.get(u)) and pd.notna(yt.get(u))]
-            if len(tr) < 1 or len(ctrl) < 5:
-                continue
-            att = (yt[tr] - yb[tr]).mean() - (yt[ctrl] - yb[ctrl]).mean()
-            post.append((att, len(tr)))
-    if not post:
-        return np.nan
-    a = np.array([x[0] for x in post]); w = np.array([x[1] for x in post], float)
-    return float((a * w).sum() / w.sum())
+            d = Y[:, col_of[t]] - Y[:, jb]
+            valid = ~np.isnan(d)
+            tre = ((G == g) & valid).astype(float)
+            ctr = (((G == 0) | (G > t)) & (G != g) & valid).astype(float)
+            df = np.where(valid, d, 0.0)
+            T.append(tre); C.append(ctr); TD.append(tre * df); CD.append(ctr * df)
+    return (np.array(T), np.array(C), np.array(TD), np.array(CD), pos, N, units)
+
+
+def _agg(cells, W):
+    Tm, Cm, TD, CD = cells[0], cells[1], cells[2], cells[3]
+    if Tm.size == 0:
+        return np.full(W.shape[1], np.nan)
+    tden = Tm @ W; cden = Cm @ W
+    feas = (tden >= 1) & (cden >= 5)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        att = (TD @ W) / np.where(tden > 0, tden, 1) - (CD @ W) / np.where(cden > 0, cden, 1)
+    w = np.where(feas, tden, 0.0)
+    num = (np.where(feas, att, 0.0) * w).sum(0); den = w.sum(0)
+    return np.where(den > 0, num / den, np.nan)
+
+
+def cs_overall(wide, G, idx, years, cohorts):
+    cells = _cells(wide, G, idx, years, cohorts)
+    return float(_agg(cells, np.ones((cells[5], 1)))[0])
 
 
 def boot(wide, Gmap, idx, years, cohorts):
-    ests = []
+    cells = _cells(wide, Gmap, idx, years, cohorts)
+    pos, N = cells[4], cells[5]
     base = list(idx)
-    for _ in range(B):
+    Wb = np.empty((N, B))
+    for b in range(B):
         samp = rng.choice(base, size=len(base), replace=True)
-        wb = wide.loc[samp].reset_index(drop=True)
-        Gb = pd.Series([Gmap[u] for u in samp])
-        o = cs_overall(wb, Gb, list(wb.index), years, cohorts)
-        if not np.isnan(o):
-            ests.append(o)
-    e = np.array(ests)
-    return e.std(ddof=1)
+        Wb[:, b] = np.bincount([pos[u] for u in samp], minlength=N)
+    ob = _agg(cells, Wb)
+    ob = ob[~np.isnan(ob)]
+    return ob.std(ddof=1)
 
 
 def main():

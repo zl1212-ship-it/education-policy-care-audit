@@ -61,17 +61,34 @@ def _proj_simplex(v):
 
 
 def synth_weights(target, Z):
+    """Simplex-constrained least squares on the pre-period,
+        min_w ||target_pre - Z_pre w||^2  s.t.  w >= 0, sum w = 1,
+    solved by FISTA (accelerated projected gradient with function restart). FISTA reaches the
+    optimum to a tight tolerance in a few hundred iterations; the earlier plain projected-gradient
+    routine did not converge within its 8000-iteration cap on these degenerate (donors > pre-years)
+    problems, so it returned a non-optimal point. The Gram matrix A = Zp'Zp is precomputed so each
+    iteration is a single K x K product. Uniform initialization makes the result deterministic.
+    """
     Zp, tp = Z[pre_idx], target[pre_idx]
     n = Z.shape[1]
+    A = Zp.T @ Zp
+    b = Zp.T @ tp
     L = 2.0 * np.linalg.norm(Zp, 2) ** 2
     step = 1.0 / L if L > 0 else 1.0
-    w = np.full(n, 1.0 / n); prev = np.inf
-    for _ in range(8000):
-        w = _proj_simplex(w - step * (-2.0 * Zp.T @ (tp - Zp @ w)))
-        obj = float(np.sum((tp - Zp @ w) ** 2))
-        if prev - obj < 1e-11 * max(1.0, prev):
-            break
-        prev = obj
+    w = np.full(n, 1.0 / n); y = w.copy(); tmom = 1.0; prev = np.inf
+    for _ in range(20000):
+        wn = _proj_simplex(y - step * (2.0 * (A @ y - b)))
+        r = tp - Zp @ wn
+        obj = float(r @ r)
+        if obj > prev:                       # function restart: drop momentum
+            y = wn.copy(); tmom = 1.0
+        else:
+            tn = 0.5 * (1.0 + np.sqrt(1.0 + 4.0 * tmom * tmom))
+            y = wn + ((tmom - 1.0) / tn) * (wn - w)
+            tmom = tn
+        if abs(prev - obj) < 1e-13 * max(1.0, abs(prev)):
+            w = wn; break
+        w = wn; prev = obj
     return w
 
 

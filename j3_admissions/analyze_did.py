@@ -56,57 +56,76 @@ print(f"window {min(years)}-{max(years)}  treat cohorts {cohorts}  "
 
 
 def run_outcome(outcome):
+    # Vectorized Callaway-Sant'Anna. The group-time ATT is a difference of weighted means;
+    # a clustered bootstrap that resamples institutions is exactly a reweighting of those
+    # means by each institution's resample multiplicity. So we precompute, for every (g,t)
+    # cell, the per-institution difference d_i = Y_{i,t} - Y_{i,g-1} and the treated/control
+    # masks, then evaluate all B bootstrap reps as matrix products against a count-weight
+    # matrix. Drawing the SAME rng.choice resamples as the loop version reproduces its
+    # numbers exactly, because mean-over-duplicated-rows == count-weighted mean.
     wide = adm.pivot_table(index="unitid", columns="year", values=outcome)
-    G = adm.groupby("unitid")["G"].first()
     allu = list(wide.index)
+    N = len(allu)
+    pos = {u: i for i, u in enumerate(allu)}
+    G = adm.groupby("unitid")["G"].first().reindex(allu).to_numpy()
+    col_of = {y: j for j, y in enumerate(wide.columns)}
+    Y = wide.to_numpy(float)
 
-    def att(g, t, treated_units, Gv, w):
-        base = g - 1
-        if base not in w.columns or t not in w.columns:
-            return None
-        yb, yt = w[base], w[t]
-        tr = [u for u in treated_units if u in yb.index and pd.notna(yb[u]) and pd.notna(yt[u])]
-        ctrl = [u for u in w.index if (Gv[u] == 0 or Gv[u] > t) and Gv[u] != g
-                and pd.notna(yb[u]) and pd.notna(yt[u])]
-        if len(tr) < 1 or len(ctrl) < 5:
-            return None
-        return (yt[tr] - yb[tr]).mean() - (yt[ctrl] - yb[ctrl]).mean(), len(tr)
-
-    def aggregate(w, Gv, idx):
-        es, post = {}, []
-        for g in cohorts:
-            gunits = [u for u in idx if Gv[u] == g]
-            if not gunits:
+    cell_TD, cell_CD, cell_T, cell_C, cell_e, cell_post = [], [], [], [], [], []
+    for g in cohorts:
+        if (g - 1) not in col_of:
+            continue
+        jb = col_of[g - 1]
+        for t in years:
+            if t not in col_of:
                 continue
-            for t in years:
-                r = att(g, t, gunits, Gv, w)
-                if r is None:
-                    continue
-                a, n = r
-                es.setdefault(t - g, []).append((a, n))
-                if t >= g:
-                    post.append((a, n))
-        def wm(p):
-            if not p:
-                return np.nan
-            a = np.array([x[0] for x in p]); ww = np.array([x[1] for x in p], float)
-            return float((a * ww).sum() / ww.sum())
-        return wm(post), {e: wm(v) for e, v in es.items()}
+            d = Y[:, col_of[t]] - Y[:, jb]
+            valid = ~np.isnan(d)
+            tre = ((G == g) & valid).astype(float)
+            ctr = (((G == 0) | (G > t)) & (G != g) & valid).astype(float)
+            df = np.where(valid, d, 0.0)
+            cell_T.append(tre); cell_C.append(ctr)
+            cell_TD.append(tre * df); cell_CD.append(ctr * df)
+            cell_e.append(t - g); cell_post.append(t >= g)
+    Tm = np.array(cell_T); Cm = np.array(cell_C)            # cells x N
+    TD = np.array(cell_TD); CD = np.array(cell_CD)
+    e_arr = np.array(cell_e); post_arr = np.array(cell_post)
 
-    overall, es = aggregate(wide, G, allu)
+    def agg(W):                                             # W: N x B -> overall (B,)
+        tden = Tm @ W; cden = Cm @ W
+        feas = (tden >= 1) & (cden >= 5)
+        with np.errstate(divide="ignore", invalid="ignore"):
+            att = (TD @ W) / np.where(tden > 0, tden, 1) - (CD @ W) / np.where(cden > 0, cden, 1)
+        wcell = np.where(feas & post_arr[:, None], tden, 0.0)
+        num = (np.where(feas, att, 0.0) * wcell).sum(0); den = wcell.sum(0)
+        return np.where(den > 0, num / den, np.nan)
 
-    # clustered (by institution) bootstrap
-    ests = []
-    for _ in range(B):
-        samp = rng.choice(allu, size=len(allu), replace=True)
-        wb = wide.loc[samp].reset_index(drop=True)
-        Gb = pd.Series([G[u] for u in samp])
-        o, _ = aggregate(wb, Gb, list(wb.index))
-        if not np.isnan(o):
-            ests.append(o)
-    ests = np.array(ests)
-    se = ests.std(ddof=1)
-    ci = np.percentile(ests, [2.5, 97.5])
+    overall = float(agg(np.ones((N, 1)))[0])
+
+    # event study (point estimate): same feasibility, weighted by treated count, by event time
+    w1 = np.ones((N, 1))
+    tden = (Tm @ w1).ravel(); cden = (Cm @ w1).ravel()
+    feas = (tden >= 1) & (cden >= 5)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        attp = ((TD @ w1).ravel() / np.where(tden > 0, tden, 1)
+                - (CD @ w1).ravel() / np.where(cden > 0, cden, 1))
+    es = {}
+    for e in sorted(set(e_arr.tolist())):
+        m = (e_arr == e) & feas
+        w = tden[m]
+        if w.sum() > 0:
+            es[e] = float((attp[m] * w).sum() / w.sum())
+
+    # clustered bootstrap: replicate the exact rng.choice draws, as count weights
+    allu_arr = np.array(allu)
+    Wb = np.empty((N, B))
+    for b in range(B):
+        samp = rng.choice(allu_arr, size=N, replace=True)
+        Wb[:, b] = np.bincount([pos[u] for u in samp], minlength=N)
+    ob = agg(Wb)
+    ob = ob[~np.isnan(ob)]
+    se = ob.std(ddof=1)
+    ci = np.percentile(ob, [2.5, 97.5])
     n_treated = sum(int((G == c).sum()) for c in cohorts)
     return overall, se, ci, es, n_treated
 
@@ -131,7 +150,7 @@ for oc in OUTCOMES:
     summary.append({"outcome": oc, "att": round(overall, 4), "se": round(se, 4),
                     "ci_lo": round(ci[0], 4), "ci_hi": round(ci[1], 4),
                     "z": round(z, 2), "n_treated": ntr})
-    pd.DataFrame([(e, es[e]) for e in sorted(es)], columns=["event_time", "att"]) \
+    pd.DataFrame([(e, round(es[e], 6)) for e in sorted(es)], columns=["event_time", "att"]) \
         .to_csv(os.path.join(DATA, f"did_event_{oc}.csv"), index=False)
 
 pd.DataFrame(summary).to_csv(os.path.join(DATA, "did_results.csv"), index=False)
