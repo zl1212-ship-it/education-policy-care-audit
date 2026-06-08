@@ -36,16 +36,17 @@ def rd_estimate(y, x, c=0.0, h=None):
     keep = w > 0
     d, y, w = d[keep], y[keep], w[keep]
     right = (d >= 0).astype(float)
-    # interaction model: y = a + tau*1{d>=0} + b1*d + b2*d*1{d>=0} + e, weighted by kernel
+    # interaction model: y = a + tau*1{d>=0} + b1*d + b2*d*1{d>=0} + e, weighted by kernel.
+    # Weighting is applied by row-scaling (X*w) rather than a dense diag(w), matching the
+    # vectorized style used elsewhere in this folder.
     X = np.column_stack([np.ones_like(d), right, d, d * right])
-    W = np.diag(w)
-    XtW = X.T @ W
-    XtWX = XtW @ X
-    beta = np.linalg.solve(XtWX, XtW @ y)
+    Xw = X * w[:, None]
+    XtWX = X.T @ Xw
+    bread = np.linalg.inv(XtWX)
+    beta = bread @ (Xw.T @ y)
     resid = y - X @ beta
     # HC sandwich: (X'WX)^-1 (X'W diag(e^2) W X) (X'WX)^-1
-    meat = (X * (w * resid ** 2)[:, None]).T @ (X * w[:, None])
-    bread = np.linalg.inv(XtWX)
+    meat = (X * (w * resid ** 2)[:, None]).T @ Xw
     V = bread @ meat @ bread
     tau = beta[1]; se = np.sqrt(V[1, 1])
     return tau, se, int((d < 0).sum()), int((d >= 0).sum())
@@ -98,8 +99,8 @@ def mccrary(x, c=0.0, h=None):
         xm, ym, w = xm[k], ym[k], w[k]
         d = xm - c
         X = np.column_stack([np.ones_like(d), d])
-        W = np.diag(w)
-        beta = np.linalg.solve(X.T @ W @ X, X.T @ W @ ym)
+        Xw = X * w[:, None]
+        beta = np.linalg.solve(X.T @ Xw, Xw.T @ ym)
         out[side] = beta[0]                             # density estimate at c from this side
     fr, fl = out["r"], out["l"]
     theta = np.log(max(fr, 1e-12)) - np.log(max(fl, 1e-12))
@@ -123,8 +124,8 @@ def validate_senate():
     for h in [10, 15, 20, 25, 30]:
         tau, se, nl, nr = rd_estimate(y, x, 0.0, h)
         print(f"  h={h:2d}: tau {tau:+.2f}  SE {se:.2f}  z={tau/se:+.2f}")
-    th, set_, zt = mccrary(x, 0.0)
-    print(f"\nMcCrary density test at 0: log-jump {th:+.3f}  SE {set_:.3f}  z={zt:+.2f} "
+    th, se_m, zt = mccrary(x, 0.0)
+    print(f"\nMcCrary density test at 0: log-jump {th:+.3f}  SE {se_m:.3f}  z={zt:+.2f} "
           f"(|z|<1.96 ⇒ no manipulation, as expected for vote margins)")
     # covariate balance: pre-determined covariate should be continuous at the cutoff
     for cov in ["termshouse", "population"]:
