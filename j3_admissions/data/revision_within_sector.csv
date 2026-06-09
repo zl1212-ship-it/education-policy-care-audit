@@ -1,0 +1,7 @@
+outcome,sector,att,se,z,n_treated
+share_urm,public,0.367,0.598,0.61,37
+share_urm,private-nonprofit,0.901,0.486,1.85,199
+share_black,public,0.211,0.462,0.46,37
+share_black,private-nonprofit,0.357,0.407,0.88,199
+share_hisp,public,0.418,0.427,0.98,37
+share_hisp,private-nonprofit,0.184,0.358,0.51,199
