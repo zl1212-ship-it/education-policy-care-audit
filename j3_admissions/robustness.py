@@ -157,6 +157,11 @@ def main():
     se_p = boot(wpl, Gp, allu, yrs_pl, placebo_cohorts)
     print(f"\n[Placebo-in-time, adoption-3yr, pre-period only] %URM 'ATT' = {att_p:+.3f} pp  "
           f"SE {se_p:.3f}  z={att_p/se_p:+.2f}  (should be ~0 if pre-trends are parallel)")
+    pd.DataFrame([
+        {"spec": "matched_did_urm", "att": round(att_m, 3), "se": round(se_m, 3), "z": round(att_m / se_m, 2), "n_treated": len(treated)},
+        {"spec": "placebo_in_time_urm", "att": round(att_p, 3), "se": round(se_p, 3), "z": round(att_p / se_p, 2), "n_treated": len(treated)},
+    ]).to_csv(os.path.join(DATA, "robustness_urm.csv"), index=False)
+    print("wrote data/robustness_urm.csv")
 
 
 if __name__ == "__main__":

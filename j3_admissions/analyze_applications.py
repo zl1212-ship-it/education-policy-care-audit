@@ -76,10 +76,12 @@ def main():
         print(f"  ATT {o:+.2f}  SE {se:.2f}  z={o/se:+.2f}  (n_treated={ntr})  MDE80={ (z975+z80)*se:.2f}")
         print("  event study:", {e: round(es[e], 1) for e in sorted(es)})
         if oc == "ln_applied":
+            arch = [{"spec": "overall", "att": round(o, 3), "se": round(se, 3), "z": round(o / se, 2), "n_treated": ntr}]
             for cval, l in [(1, "public"), (2, "private")]:
                 u = set(adm.loc[adm.control == cval, "unitid"])
                 oa, sea, na, _ = cs(adm, oc, units=u)
                 print(f"  within {l:8s}: ATT {oa:+.2f} SE {sea:.2f} z={oa/sea:+.2f} (n_tr={na})")
+                arch.append({"spec": f"within_{l}", "att": round(oa, 3), "se": round(sea, 3), "z": round(oa / sea, 2), "n_treated": na})
             # persistence
             rq = pd.read_csv(os.path.join(DATA, "admissions_panel.csv")); rq["reqt"] = pd.to_numeric(rq["reqt_test_scores"], errors="coerce")
             byinst = {uu: g.set_index("year")["reqt"].to_dict() for uu, g in rq.groupby("unitid")}
@@ -92,9 +94,8 @@ def main():
                 Gp[uu] = ad if (ad and ad <= 2019) else 0
             op, sep, npr, _ = cs(adm, oc, Goverride=pd.Series(Gp))
             print(f"  persistence>=2yr: ATT {op:+.2f} SE {sep:.2f} z={op/sep:+.2f} (n_tr={npr})")
-            pd.DataFrame([{"outcome": "ln_applied_x100", "att": round(o, 3), "se": round(se, 3),
-                           "z": round(o / se, 2), "n_treated": ntr}]).to_csv(
-                os.path.join(DATA, "applications_did.csv"), index=False)
+            arch.append({"spec": "persist2yr", "att": round(op, 3), "se": round(sep, 3), "z": round(op / sep, 2), "n_treated": npr})
+            pd.DataFrame(arch).to_csv(os.path.join(DATA, "applications_did.csv"), index=False)
     print("\nwrote data/applications_did.csv")
 
 

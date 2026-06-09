@@ -1,0 +1,5 @@
+spec,att,se,z,n_treated
+overall,1.0,0.529,1.89,237
+within_public,1.219,0.644,1.89,37
+within_private-nonprofit,1.02,0.618,1.65,199
+persist2yr,0.772,0.51,1.51,213

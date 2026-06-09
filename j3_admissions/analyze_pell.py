@@ -67,10 +67,12 @@ def main():
     print(f"  ATT {o:+.3f} pp  SE {se:.3f}  z={o/se:+.2f}  (n_treated={ntr})")
     print(f"  MDE(80%) {mde:.2f}pp | equivalent to 0 within +/-{equiv:.2f}pp")
     print("  within-sector:")
+    arch = [{"spec": "overall", "att": round(o, 3), "se": round(se, 3), "z": round(o / se, 2), "n_treated": ntr}]
     for cval, lab in [(1, "public"), (2, "private-nonprofit")]:
         units = set(adm.loc[adm.control == cval, "unitid"])
         os_, ses_, n_ = cs(adm, "pell_share", units=units)
         print(f"    {lab:17s} ATT {os_:+.3f} SE {ses_:.3f} z={os_/ses_:+.2f} (n_tr={n_})")
+        arch.append({"spec": f"within_{lab}", "att": round(os_, 3), "se": round(ses_, 3), "z": round(os_ / ses_, 2), "n_treated": n_})
     # persistence >=2yr (reuse derived G from admissions reqt)
     rq = pd.read_csv(os.path.join(DATA, "admissions_panel.csv"))
     rq["reqt"] = pd.to_numeric(rq["reqt_test_scores"], errors="coerce")
@@ -85,10 +87,12 @@ def main():
         Gp[u] = adopt if (adopt and adopt <= 2019) else 0
     op, sep, np_ = cs(adm, "pell_share", Goverride=pd.Series(Gp))
     print(f"  persistence>=2yr: ATT {op:+.3f} SE {sep:.3f} z={op/sep:+.2f} (n_tr={np_})")
+    arch.append({"spec": "persist2yr", "att": round(op, 3), "se": round(sep, 3), "z": round(op / sep, 2), "n_treated": np_})
     pd.DataFrame([{"outcome": "pell_share", "att": round(o, 4), "se": round(se, 4),
                    "mde80": round(mde, 3), "equiv_margin": round(equiv, 3), "n_treated": ntr}]
                  ).to_csv(os.path.join(DATA, "pell_did.csv"), index=False)
-    print("wrote data/pell_did.csv")
+    pd.DataFrame(arch).to_csv(os.path.join(DATA, "pell_robustness.csv"), index=False)
+    print("wrote data/pell_did.csv and pell_robustness.csv")
 
 
 if __name__ == "__main__":

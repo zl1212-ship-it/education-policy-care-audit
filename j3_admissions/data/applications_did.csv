@@ -1,2 +1,5 @@
-outcome,att,se,z,n_treated
-ln_applied_x100,6.894,2.949,2.34,237
+spec,att,se,z,n_treated
+overall,6.894,2.949,2.34,237
+within_public,-3.295,4.59,-0.72,37
+within_private,8.306,3.324,2.5,199
+persist2yr,4.352,2.318,1.88,213
