@@ -40,8 +40,11 @@ MARK = {"governor": ("o", "0.35", "Governor-appointed"),
         "elected": ("^", "0.0", "Publicly elected"),
         "hybrid": ("D", "0.55", "Hybrid")}
 fig, ax = plt.subplots(figsize=(7, 5.6))
-ax.plot([0, 1], [0, 1], color="0.6", linewidth=1, linestyle="--", zorder=1)
-ax.fill_between([0, 1], [0, 1], [1, 1], color="0.92", zorder=0)
+# quadrant plot: midpoint crosshairs (no diagonal; the two indices are not subtracted)
+ax.axvline(0.5, color="0.6", linewidth=1, linestyle="--", zorder=1)
+ax.axhline(0.5, color="0.6", linewidth=1, linestyle="--", zorder=1)
+ax.fill_between([-0.03, 0.5], 0.5, 1.06, color="0.92", zorder=0)   # high-authority, low-representation
+n_q = int(((b.auth_index > 0.5) & (b.rep_index < 0.5)).sum())
 jit = np.random.default_rng(3).normal(0, 0.006, len(b))
 for reg, (mk, col, lab) in MARK.items():
     s = b[b.board_regime == reg]
@@ -54,10 +57,11 @@ for st, dx, dy in [("New York", 0.012, -0.03), ("South Carolina", 0.012, 0.015),
     r = b[b.state == st].iloc[0]
     ax.annotate(st, (r.rep_index, r.auth_index), xytext=(r.rep_index + dx, r.auth_index + dy),
                 fontsize=8.5, color="0.2")
-ax.text(0.30, 0.94, "authority exceeds representation", fontsize=9.5, color="0.45", style="italic")
+ax.text(0.485, 0.55, f"high authority,\nlow representation\n({n_q} of {len(b)} boards)",
+        ha="right", va="bottom", fontsize=9.5, color="0.4", style="italic")
 ax.set_xlabel("Representation Index  (directly elected, voting student, voting teacher)")
 ax.set_ylabel("Authority Index  (standards, licensure, constitutional entrenchment)")
-ax.set_xlim(-0.03, 1.03); ax.set_ylim(-0.03, 1.06)
+ax.set_xlim(-0.03, 1.03); ax.set_ylim(-0.03, 1.08)
 ax.legend(loc="lower right", frameon=False, fontsize=9)
 ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
 ax.set_title("Figure 1. Authority versus representation across 47 state boards", fontsize=11)
