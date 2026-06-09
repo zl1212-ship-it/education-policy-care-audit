@@ -23,3 +23,7 @@ ols_soc_p,0.462
 spearman_rep_soc,0.14
 soc_gap_ci_lo,-19.4
 soc_gap_ci_hi,9.4
+pct_boards_algorithmic_grade,48.9
+pct_students_algorithmic_grade,48.3
+rep_algo_diff_p,0.585
+spearman_rep_algo,0.086

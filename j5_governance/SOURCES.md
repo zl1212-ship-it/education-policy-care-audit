@@ -26,6 +26,18 @@ All data are public and current as of June 2026. No values are imputed except wh
   noisy poverty proxy and is used only as a secondary measure; `pct_students_of_color` is the
   primary "whose interests" variable. Alaska FRL is suppressed in the source (blank here).
 
+## 3. School-accountability rating type
+`data/state_accountability_2024.csv`
+- **Source:** Education Commission of the States (ECS), *50-State Comparison: States' School
+  Accountability Systems* (2024), "Rating System" field.
+  URL: https://reports.ecs.org/comparisons/states-school-accountability-systems-2024
+- **Coverage:** 50 states + DC. Each state's summative rating type transcribed from the ECS
+  "Rating System" column: A-F letter grade (6), 1-5 star (4), numeric/index (14), descriptive
+  labels (12), federal tiers of support only (14), dashboard / no summative (1, California).
+- **Derived:** `algorithmic_grade` = 1 if the state reduces school performance to a single
+  formula-driven score/letter/star (A-F, star, or numeric index), else 0. `summative_any` = 1 if
+  the state assigns any single summative rating (adds descriptive labels), else 0.
+
 ## Coding rules
 Coded variables are derived from the raw NASBE strings in `build_governance_panel.py`; the raw
 columns are retained in the panel so every coded value is traceable to its source text.

@@ -150,5 +150,28 @@ lo, hi = np.percentile(diffs, [2.5, 97.5])
 print(f"  bootstrap 95% CI, SOC gap (appointed-elected): [{lo:.1f}, {hi:.1f}] pts")
 rec("soc_gap_ci_lo", round(lo, 1)); rec("soc_gap_ci_hi", round(hi, 1))
 
+print("\n" + line); print("6. THE ALGORITHMIC ACCOUNTABILITY LAYER (ECS 2024)"); print(line)
+print("  rating-type distribution (51 jurisdictions):")
+print(df.rating_category.value_counts().to_string())
+algo = b.algorithmic_grade
+print(f"\n  boards running a formula-driven summative grade (A-F/star/index): "
+      f"{int(algo.sum())}/{len(b)}  ({algo.mean()*100:.1f}%)")
+print(f"  boards with any single summative rating               : "
+      f"{int(b.summative_any.sum())}/{len(b)}  ({b.summative_any.mean()*100:.1f}%)")
+# enrollment-weighted exposure
+ew = (df.loc[df.algorithmic_grade == 1, "enrollment_2021"].sum() / TOT * 100)
+print(f"  students under a board with an algorithmic grade      : {ew:.1f}%")
+rec("pct_boards_algorithmic_grade", round(algo.mean() * 100, 1))
+rec("pct_students_algorithmic_grade", round(ew, 1))
+# does representation predict algorithmic grading? (honest test of the alternative)
+r_alg = b.loc[b.algorithmic_grade == 1, "rep_index"]
+r_no = b.loc[b.algorithmic_grade == 0, "rep_index"]
+ta, pa = stats.ttest_ind(r_alg, r_no, equal_var=False)
+print(f"\n  mean Representation Index: algorithmic-grade boards {r_alg.mean():.3f} "
+      f"vs others {r_no.mean():.3f}  (Welch t={ta:.2f}, p={pa:.3f})")
+rho2, pr2 = stats.spearmanr(b.rep_index, b.algorithmic_grade)
+print(f"  Spearman rho(rep_index, algorithmic_grade): {rho2:+.3f} (p={pr2:.3f})")
+rec("rep_algo_diff_p", round(pa, 3)); rec("spearman_rep_algo", round(rho2, 3))
+
 pd.DataFrame(rows).to_csv(os.path.join(DATA, "results_summary.csv"), index=False)
 print(f"\nwrote {os.path.join(DATA, 'results_summary.csv')}")

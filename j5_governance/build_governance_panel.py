@@ -145,11 +145,21 @@ gov.loc[gov.board_exists == 0, "rep_index_altWA"] = np.nan
 out = gov.merge(dem, on="state_abbr", how="left")
 out["pct_students_of_color"] = 100 - out["pct_white_2021"]
 
+# ---- Merge school-accountability rating type (ECS 2024) ----
+acct = pd.read_csv(os.path.join(DATA, "state_accountability_2024.csv"))[
+    ["state_abbr", "rating_category", "rating_raw"]]
+out = out.merge(acct, on="state_abbr", how="left")
+# algorithmic summative grade: a single formula-derived score/letter/star (A-F, 1-5 star, numeric index)
+out["algorithmic_grade"] = out.rating_category.isin(["A-F", "Star", "Index"]).astype(int)
+# any single summative rating (adds descriptive single labels); excludes dashboard / federal-tiers-only
+out["summative_any"] = out.rating_category.isin(["A-F", "Star", "Index", "Descriptive"]).astype(int)
+
 cols = ["state", "state_abbr", "board_regime", "board_exists", "csso_regime",
         "n_voting", "term_years", "constitutional",
         "frac_elected_public", "student_voting", "teacher_voting", "student_present",
         "auth_standards_board", "auth_licensure_board",
         "rep_index", "rep_index_equal", "rep_index_altWA", "auth_index", "gap",
+        "rating_category", "algorithmic_grade", "summative_any",
         "enrollment_2021", "pct_white_2021", "pct_students_of_color", "pct_frl_2122",
         "sel_board_raw", "sel_csso_raw", "n_voting_raw", "term_raw", "established_raw",
         "auth_licensure", "auth_standards"]
