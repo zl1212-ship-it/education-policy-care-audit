@@ -1,0 +1,238 @@
+unitid,name,on_fairtest
+100937,Birmingham Southern College,1
+102049,Samford University,1
+102234,Spring Hill College,1
+104179,University of Arizona,1
+104586,Embry-Riddle Aeronautical University-Prescott,1
+105589,Prescott College,1
+107080,Hendrix College,1
+107558,University of the Ozarks,1
+109785,Azusa Pacific University,1
+111966,Charles R Drew University of Medicine and Science,1
+112084,San Diego Christian College,1
+117140,University of La Verne,1
+117751,The Master's University and Seminary,1
+118888,Mills College,1
+120403,Otis College of Art and Design,1
+122612,University of San Francisco,1
+125763,Whittier College,1
+125897,Woodbury University,1
+127060,University of Denver,1
+128498,Albertus Magnus College,1
+129525,University of Hartford,1
+129941,University of New Haven,1
+130226,Quinnipiac University,1
+130314,University of Saint Joseph,1
+130590,Trinity College,1
+130624,United States Coast Guard Academy,0
+131159,American University,1
+131469,George Washington University,1
+132657,Lynn University,1
+133553,Embry-Riddle Aeronautical University-Daytona Beach,1
+133711,Flagler College-St Augustine,1
+134945,Jacksonville University,1
+137032,Saint Leo University,1
+137564,Southeastern University,1
+138275,Warner University,1
+138716,Albany State University,1
+138868,Point University,1
+139199,Brenau University,1
+139205,Brewton-Parker College,1
+141361,Young Harris College,1
+141981,University of Hawaii-West Oahu,0
+144050,University of Chicago,1
+145497,Hebrew Theological College,0
+146427,Knox College,1
+146676,Lincoln College,1
+147341,Monmouth College,1
+147369,Moody Bible Institute,1
+150400,DePauw University,1
+150455,Earlham College,1
+150534,University of Evansville,1
+150756,Hanover College,1
+151777,Manchester University,1
+152381,Saint Mary-of-the-Woods College,1
+152390,Saint Mary's College,1
+153162,Cornell College,1
+153320,Faith Baptist Bible College and Theological Seminary,1
+153977,Mercy College of Health Sciences,1
+154590,William Penn University,1
+154749,Bethel College-North Newton,1
+155520,MidAmerica Nazarene University,1
+155681,Pittsburg State University,1
+155937,Sterling College,1
+156213,Asbury University,1
+156356,Brescia University,1
+157757,Spalding University,1
+157818,Transylvania University,1
+159009,Grambling State University,1
+160065,University of Holy Cross,1
+161086,Colby College,1
+161235,University of Maine at Fort Kent,1
+161457,University of New England,1
+161509,Maine College of Art,1
+161518,Saint Joseph's College of Maine,1
+162007,Bowie State University,1
+162654,Goucher College,1
+163462,Mount St. Mary's University,1
+163578,Notre Dame of Maryland University,1
+163976,St. John's College,1
+164270,McDaniel College,1
+164447,American International College,1
+164632,Bay Path University,1
+164720,Becker College,0
+165024,Bridgewater State University,1
+165574,Dean College,1
+165662,Emerson College,1
+165671,Emmanuel College,1
+165820,Fitchburg State University,1
+165866,Framingham State University,1
+166054,Hellenic College-Holy Cross Greek Orthodox School of Theology,0
+166391,Lasell College,1
+166638,University of Massachusetts-Boston,1
+167729,Salem State University,1
+168227,Wentworth Institute of Technology,1
+168254,Western New England University,1
+168281,Wheaton College,1
+169327,Cleary University,1
+169910,Ferris State University,1
+170532,Kalamazoo College,1
+170806,Madonna University,1
+171599,Olivet College,1
+172264,Siena Heights University,1
+173045,Augsburg University,1
+174899,The College of Saint Scholastica,1
+176318,Rust College,1
+177968,Lindenwood University,1
+178059,Maryville University of Saint Louis,1
+178208,Midwestern Baptist Theological Seminary,1
+178411,Missouri University of Science and Technology,1
+180106,Carroll College,1
+180258,University of Providence,1
+181002,Creighton University,1
+181127,Hastings College,1
+182795,Franklin Pierce University,1
+183044,University of New Hampshire-Main Campus,1
+183062,Keene State College,1
+183071,University of New Hampshire at Manchester,1
+183239,Saint Anselm College,1
+183275,Thomas More College of Liberal Arts,1
+183822,Bloomfield College,1
+185590,Montclair State University,1
+186283,Rider University,1
+186432,Saint Peter's University,1
+186618,College of Saint Elizabeth,1
+186867,Stevens Institute of Technology,1
+186876,Stockton University,1
+188182,University of the Southwest,1
+189848,Cazenovia College,1
+190248,Concordia College-New York,1
+190761,Dominican College of Blauvelt,0
+190983,Elmira College,1
+191649,Hofstra University,0
+191676,Houghton College,1
+191931,Iona College,1
+192192,Keuka College,1
+192271,LIM College,1
+192323,Le Moyne College,1
+192864,Marymount Manhattan College,1
+192925,Medaille College,1
+193016,Mercy College,1
+193654,The New School,1
+193900,New York University,1
+193973,Niagara University,1
+195030,University of Rochester,1
+195526,Skidmore College,1
+195809,St John's University-New York,1
+196149,SUNY Cortland,1
+196219,SUNY at Purchase College,1
+196866,Union College,1
+197230,Wells College,1
+197984,Belmont Abbey College,1
+198598,Greensboro College,1
+198613,Guilford College,1
+198695,High Point University,1
+199306,Pfeiffer University,1
+199607,Salem College,1
+199865,Warren Wilson College,1
+200217,University of Mary,1
+201061,Art Academy of Cincinnati,1
+201690,Central State University,1
+201821,The Christ College of Nursing and Health Sciences,1
+202046,Cleveland Institute of Art,1
+202170,Columbus College of Art and Design,1
+202523,Denison University,1
+203128,Hiram College,1
+203580,Lake Erie College,1
+203960,Mercy College of Ohio,1
+204468,Notre Dame College,1
+204617,Ohio Dominican University,1
+206437,Walsh University,1
+206491,Wilberforce University,1
+206622,Xavier University,1
+207722,University of Science and Arts of Oklahoma,1
+209056,Lewis & Clark College,1
+209065,Linfield College-McMinnville Campus,1
+209807,Portland State University,1
+210429,Western Oregon University,1
+210669,Allegheny College,1
+211291,Bucknell University,1
+211352,Cabrini University,1
+212115,East Stroudsburg University of Pennsylvania,1
+212133,Eastern University,1
+213011,Immaculata University,1
+213303,Keystone College,1
+213358,La Roche University,1
+213774,Manor College,1
+214148,Moore College of Art and Design,1
+214175,Muhlenberg College,1
+215105,The University of the Arts,1
+215691,Rosemont College,1
+215770,Saint Joseph's University,1
+216524,Ursinus College,1
+216807,Westminster College,1
+217013,Wilson College,1
+217165,Bryant University,1
+217934,Columbia College,1
+217961,Converse College,1
+218070,Furman University,1
+218539,Presbyterian College,1
+218973,Wofford College,1
+219000,Augustana University,1
+219471,University of South Dakota,1
+219718,Bethel University,1
+220516,King University,1
+220598,Lane College,1
+221519,The University of the South,1
+222983,Austin College,1
+225201,Hallmark University,1
+225502,University of Houston-Victoria,1
+228343,Southwestern University,1
+228501,Sul Ross State University,1
+228796,The University of Texas at El Paso,1
+230852,Champlain College,1
+230913,Northern Vermont University,1
+231712,Christopher Newport University,1
+232423,James Madison University,1
+233301,Randolph College,1
+234164,Virginia Union University,1
+235167,The Evergreen State College,1
+236230,Pacific Lutheran University,1
+237057,Whitman College,1
+237066,Whitworth University,1
+237312,University of Charleston,1
+237640,Ohio Valley University,1
+238333,Beloit College,1
+238476,Carthage College,1
+239017,Lawrence University,1
+239071,Maranatha Baptist University,0
+239628,Ripon College,1
+243665,University of the Virgin Islands,1
+245652,St. John's College,1
+247649,Landmark College,1
+417734,Southeast Missouri Hospital College of Nursing and Health Sciences,0
+455770,Providence Christian College,1
+459417,Compass College of Cinematic Arts,1
+475608,Criswell College,1
+476975,Colorado State University-Global Campus,1
+483018,Antioch College,1
