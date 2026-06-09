@@ -13,6 +13,11 @@ pct_boards_constitutional,53.2
 spearman_rep_auth,-0.016
 quadrant_hi_auth_lo_rep,30.0
 corner_count,16.0
+rep_share_zero,57.0
+spearman_rep_auth_subset,0.244
+spearman_rep_auth_subset_p,0.301
+meanrep_high_auth,0.166
+meanrep_max_auth,0.202
 spearman_rep_auth_noentrench,-0.206
 spearman_rep_entrench,0.184
 mean_rep_index,0.177

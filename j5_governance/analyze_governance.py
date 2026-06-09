@@ -83,6 +83,21 @@ print(f"\n  Spearman rho(Rep, Auth)   : {rho_ra:+.3f} (p={p_ra:.3f})  [distinct 
 print(f"  high-authority/low-representation quadrant: {hi_lo}/{len(b)} "
       f"({hi_lo/len(b)*100:.0f}%);  extreme corner (Auth>=.83 & Rep<=.20): {corner}")
 rec("spearman_rep_auth", round(rho_ra, 3)); rec("quadrant_hi_auth_lo_rep", hi_lo); rec("corner_count", corner)
+# Variance-restriction check: representation is floored, so the near-zero full correlation is read
+# as "representation uniformly low," not "two independent rich dimensions."
+sub = b[b.rep_index > 0]
+rho_sub, p_sub = stats.spearmanr(sub.rep_index, sub.auth_index)
+hi_auth = b[b.auth_index > 0.5]
+maxa = b[b.auth_index == 1.0]
+print(f"  representation floor: {(b.rep_index==0).mean()*100:.0f}% of boards at rep=0, "
+      f"{(b.rep_index<=0.2).mean()*100:.0f}% at <=0.2 (sd {b.rep_index.std():.3f})")
+print(f"  within rep>0 subset (n={len(sub)}): Spearman(rep,auth) = {rho_sub:+.3f} (p={p_sub:.3f})")
+print(f"  among {len(hi_auth)} high-authority boards: mean rep {hi_auth.rep_index.mean():.3f}; "
+      f"among {len(maxa)} maximal-authority boards: mean rep {maxa.rep_index.mean():.3f}")
+rec("rep_share_zero", round((b.rep_index==0).mean()*100, 0))
+rec("spearman_rep_auth_subset", round(rho_sub, 3)); rec("spearman_rep_auth_subset_p", round(p_sub, 3))
+rec("meanrep_high_auth", round(hi_auth.rep_index.mean(), 3))
+rec("meanrep_max_auth", round(maxa.rep_index.mean(), 3))
 # Major-5 robustness: Authority Index WITHOUT constitutional entrenchment (standards + licensure only)
 an = b[["auth_standards_board", "auth_licensure_board"]].mean(axis=1)
 rho_ne, p_ne = stats.spearmanr(b.rep_index, an)
