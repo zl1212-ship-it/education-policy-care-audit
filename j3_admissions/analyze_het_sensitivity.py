@@ -38,7 +38,7 @@ def load():
     comp = pd.read_csv(os.path.join(DATA, "composition_panel.csv"))
     comp["share_urm"] = comp["share_urm"] * 100
     pell = pd.read_csv(os.path.join(DATA, "pell_panel.csv"))
-    adm = adm.merge(comp[["unitid", "year", "share_urm", "entering_total"]], on=["unitid", "year"], how="left")
+    adm = adm.merge(comp[["unitid", "year", "share_urm", "entering_total", "domestic_total"]], on=["unitid", "year"], how="left")
     adm = adm.merge(pell, on=["unitid", "year"], how="left")
     adm["G"] = adm["adoption_year"].fillna(0).astype(int)
     return adm
@@ -53,7 +53,8 @@ def add_urm_excl(adm):
             if x.get("race") == 7:
                 s7[(x["unitid"], y)] = x.get("enrollment_fall") or 0
     adm["n7"] = adm.apply(lambda r: s7.get((r["unitid"], r["year"]), np.nan), axis=1)
-    adm["share7"] = np.where(adm["entering_total"] > 0, 100 * adm["n7"] / adm["entering_total"], np.nan)
+    # share_urm now uses the domestic denominator, so the two-or-more share must too
+    adm["share7"] = np.where(adm["domestic_total"] > 0, 100 * adm["n7"] / adm["domestic_total"], np.nan)
     adm["urm_excl"] = adm["share_urm"] - adm["share7"]
     return adm
 

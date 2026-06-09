@@ -1,9 +1,9 @@
 outcome,group,att,se,z,n
-share_urm,more-selective (admit<med),1.047,0.522,2.01,115
-share_urm,less-selective (admit>=med),0.453,0.522,0.87,115
-share_urm,higher-minority (URM>=med),0.214,0.631,0.34,118
-share_urm,lower-minority (URM<med),1.046,0.427,2.45,117
-pell_share,more-selective (admit<med),0.677,0.695,0.97,115
-pell_share,less-selective (admit>=med),1.752,0.562,3.12,115
-pell_share,higher-minority (URM>=med),1.674,0.628,2.67,118
-pell_share,lower-minority (URM<med),0.276,0.769,0.36,117
+share_urm,more-selective (admit<med),1.297,0.528,2.46,115
+share_urm,less-selective (admit>=med),0.58,0.531,1.09,115
+share_urm,higher-minority (URM>=med),0.201,0.714,0.28,118
+share_urm,lower-minority (URM<med),1.163,0.483,2.41,117
+pell_share,more-selective (admit<med),0.677,0.707,0.96,115
+pell_share,less-selective (admit>=med),1.752,0.579,3.03,115
+pell_share,higher-minority (URM>=med),1.689,0.654,2.58,118
+pell_share,lower-minority (URM<med),0.234,0.775,0.3,117

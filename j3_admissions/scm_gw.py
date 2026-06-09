@@ -29,7 +29,8 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 YEARS = list(range(2009, 2020)); PRE = list(range(2009, 2016)); POST = list(range(2016, 2020))
 yi = {y: i for i, y in enumerate(YEARS)}
 pre_idx = [yi[y] for y in PRE]; post_idx = [yi[y] for y in POST]
-K_MAIN = 25; K_GRID = [20, 25, 30, 40]
+K_MAIN = 20; K_GRID = [20, 25, 30, 40]   # 20 is the largest bandwidth with a non-degenerate
+# (pre-RMSPE > 0) fit for the GW domestic-URM series; K >= 25 overfit (pre-RMSPE -> 0).
 
 CASES = [
     {"name": "gw", "label": "George Washington University", "unitid": 131469, "control": "2"},

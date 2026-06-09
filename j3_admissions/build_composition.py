@@ -7,15 +7,20 @@ filtered server-side to the ENTERING degree-seeking cohort:
   class_level = 1 (first-time), degree_seeking = 1, ftpt = 99 (full+part total),
   sex = 99 (both sexes).
 This yields, for each institution-year, the racial composition of the first-time
-degree-seeking entering class -- the admissions flow the reform is meant to move. The
-race = 99 row is the cohort total; shares are race k / total.
+degree-seeking entering class -- the admissions flow the reform is meant to move.
+
+Shares use a DOMESTIC, KNOWN-RACE denominator: domestic_total = total (race 99) minus nonresident
+(international, code 8) minus unknown race (code 9). This prevents an expansion of international
+enrollment from mechanically diluting the URM share (Reviewer 3). The nonresident and unknown
+shares (over the all-students total) are stored separately as diagnostics.
 
 Urban race codes: 1 White, 2 Black, 3 Hispanic, 4 Asian, 5 Am.Indian/Alaska,
   6 Pacific Islander, 7 Two or more, 8 Nonresident, 9 Unknown, 99 Total.
-URM = Black + Hispanic + Am.Indian + Pacific Islander + Two-or-more.
+URM = Black + Hispanic + Am.Indian + Pacific Islander + Two-or-more (over domestic known race).
 
 Output: data/composition_panel.csv
-  unitid, year, entering_total, share_black, share_hisp, share_urm, share_white, share_asian
+  unitid, year, entering_total, domestic_total, share_black, share_hisp, share_urm, share_white,
+  share_asian, share_nonres, share_unknown
 """
 import urllib.request, json, csv, time, os
 from collections import defaultdict
@@ -69,14 +74,24 @@ def main():
             tot = rc.get(99) or sum(v for k, v in rc.items() if k != 99)
             if not tot or tot <= 0:
                 continue
+            nonres = rc.get(8, 0.0); unknown = rc.get(9, 0.0)
+            # Composition shares use a DOMESTIC, KNOWN-RACE denominator: total minus nonresident
+            # (international, code 8) and unknown race (code 9). Reviewer 3's concern is that the
+            # all-students denominator (race=99) mechanically dilutes URM share when adopters expand
+            # international enrollment, which could manufacture a null. dom = tot - nonres - unknown.
+            dom = tot - nonres - unknown
+            if dom <= 0:
+                continue
             urm = sum(rc.get(k, 0.0) for k in URM)
             rows.append({
-                "unitid": uid, "year": y, "entering_total": int(tot),
-                "share_black": round(rc.get(2, 0.0) / tot, 5),
-                "share_hisp": round(rc.get(3, 0.0) / tot, 5),
-                "share_urm": round(urm / tot, 5),
-                "share_white": round(rc.get(1, 0.0) / tot, 5),
-                "share_asian": round(rc.get(4, 0.0) / tot, 5),
+                "unitid": uid, "year": y, "entering_total": int(tot), "domestic_total": int(dom),
+                "share_black": round(rc.get(2, 0.0) / dom, 5),
+                "share_hisp": round(rc.get(3, 0.0) / dom, 5),
+                "share_urm": round(urm / dom, 5),
+                "share_white": round(rc.get(1, 0.0) / dom, 5),
+                "share_asian": round(rc.get(4, 0.0) / dom, 5),
+                "share_nonres": round(nonres / tot, 5),
+                "share_unknown": round(unknown / tot, 5),
             })
         print(f"  {y}: {len(bycount)} institutions", flush=True)
 

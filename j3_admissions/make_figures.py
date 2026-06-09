@@ -53,8 +53,8 @@ def load_scm(fn):
 
 fig, ax = plt.subplots(1, 2, figsize=(10, 4.2))
 for a, (fn, lab, p) in zip(ax, [
-        ("scm_gw_share_urm.csv", "(a) George Washington U. (selective private)", 0.24),
-        ("scm_montclair_share_urm.csv", "(b) Montclair State U. (broad-access public)", 0.31)]):
+        ("scm_gw_share_urm.csv", "(a) George Washington U. (selective private)", 0.12),
+        ("scm_montclair_share_urm.csv", "(b) Montclair State U. (broad-access public)", 0.54)]):
     yrs, real, syn = load_scm(fn)
     a.plot(yrs, real, "-", color="black", linewidth=2, label="Actual")
     a.plot(yrs, syn, "--", color="gray", linewidth=2, label="Synthetic control")
