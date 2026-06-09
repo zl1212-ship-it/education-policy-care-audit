@@ -28,7 +28,7 @@ TREAT_COHORTS = [2016, 2017, 2018, 2019]
 # ---- assemble panel: admissions + composition ----
 adm = pd.read_csv(os.path.join(DATA, "panel_treated.csv"))
 adm["adoption_year"] = pd.to_numeric(adm["adoption_year"], errors="coerce")
-for c in ["admit_rate", "yield_rate", "sat_pct_submit", "female_share"]:
+for c in ["admit_rate", "yield_rate", "sat_pct_submit", "act_pct_submit", "female_share"]:
     adm[c] = pd.to_numeric(adm[c], errors="coerce")
 # percentage-point scale for rates stored as proportions
 adm["admit_rate"] = adm["admit_rate"] * 100
@@ -133,6 +133,7 @@ def run_outcome(outcome):
 OUTCOMES = ["admit_rate", "yield_rate", "sat_pct_submit"]
 if os.path.exists(comp_path):
     OUTCOMES += ["share_urm", "share_black", "share_hisp"]
+OUTCOMES += ["act_pct_submit"]   # appended last so it does not shift earlier outcomes' bootstrap draws
 
 summary = []
 for oc in OUTCOMES:
