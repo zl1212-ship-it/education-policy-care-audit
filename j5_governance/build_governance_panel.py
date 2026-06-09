@@ -6,7 +6,8 @@ representation/authority variables, merges NCES enrollment and student demograph
 constructs two transparent 0-1 indices:
 
   Representation Index  -- how far the governed can democratically shape the board:
-        0.60 * frac_elected_public + 0.20 * student_voting + 0.20 * teacher_voting
+        0.50 * frac_elected_public + 0.25 * student_voice + 0.25 * teacher_voice
+        (voice: binding seat = 1, advisory/nonvoting seat = 0.5, none = 0)
   Authority Index       -- how much consequential power the board holds:
         mean(standards-adoption authority, teacher-licensure authority, constitutional entrenchment)
 
@@ -91,6 +92,10 @@ def has_any_student(s):
     return int("student" in str(s).lower())
 
 
+def has_any_teacher(s):
+    return int("teacher" in str(s).lower())
+
+
 gov["board_regime"] = gov.apply(board_regime, axis=1)
 gov["board_exists"] = (gov.board_regime != "none").astype(int)
 gov["n_voting"] = gov.n_voting_raw.apply(first_int)
@@ -98,6 +103,10 @@ gov["frac_elected_public"] = gov.apply(frac_elected_public, axis=1)
 gov["student_voting"] = gov.n_voting_raw.apply(has_voting_student)
 gov["teacher_voting"] = gov.n_voting_raw.apply(has_voting_teacher)
 gov["student_present"] = gov.n_voting_raw.apply(has_any_student)
+gov["teacher_present"] = gov.n_voting_raw.apply(has_any_teacher)
+# graded "voice": a binding (voting) seat = 1, an advisory (present but nonvoting) seat = 0.5, none = 0
+gov["student_voice"] = np.where(gov.student_voting == 1, 1.0, np.where(gov.student_present == 1, 0.5, 0.0))
+gov["teacher_voice"] = np.where(gov.teacher_voting == 1, 1.0, np.where(gov.teacher_present == 1, 0.5, 0.0))
 gov["term_years"] = pd.to_numeric(gov.term_raw, errors="coerce")
 gov["constitutional"] = gov.established_raw.str.contains("Constitution", na=False).astype(int)
 
@@ -123,11 +132,14 @@ gov.loc[gov.board_exists == 0,
         ["auth_licensure_board", "auth_standards_board", "constitutional"]] = np.nan
 
 # ---- Indices (board states only) ----
-W = dict(elect=0.60, student=0.20, teacher=0.20)
+# Representation Index: public-election fraction (dominant) + GRADED student/teacher voice
+# (binding seat = 1, advisory seat = 0.5). Grading the seats credits the many boards that seat
+# students or teachers without a vote, which gives the index real variance rather than a floor.
+W = dict(elect=0.50, student=0.25, teacher=0.25)
 gov["rep_index"] = (W["elect"] * gov.frac_elected_public
-                    + W["student"] * gov.student_voting
-                    + W["teacher"] * gov.teacher_voting)
-gov["rep_index_equal"] = gov[["frac_elected_public", "student_voting", "teacher_voting"]].mean(axis=1)
+                    + W["student"] * gov.student_voice
+                    + W["teacher"] * gov.teacher_voice)
+gov["rep_index_equal"] = gov[["frac_elected_public", "student_voice", "teacher_voice"]].mean(axis=1)
 gov["auth_index"] = gov[["auth_standards_board", "auth_licensure_board", "constitutional"]].mean(axis=1)
 gov.loc[gov.board_exists == 0, ["rep_index", "rep_index_equal", "auth_index"]] = np.nan
 gov["gap"] = gov.auth_index - gov.rep_index
@@ -137,8 +149,8 @@ gov["frac_elected_alt"] = gov.frac_elected_public
 wa = gov.state == "Washington"
 gov.loc[wa, "frac_elected_alt"] = round(6 / gov.loc[wa, "n_voting"].iloc[0], 4)
 gov["rep_index_altWA"] = (W["elect"] * gov.frac_elected_alt
-                          + W["student"] * gov.student_voting
-                          + W["teacher"] * gov.teacher_voting)
+                          + W["student"] * gov.student_voice
+                          + W["teacher"] * gov.teacher_voice)
 gov.loc[gov.board_exists == 0, "rep_index_altWA"] = np.nan
 
 # ---- Merge demographics ----
@@ -163,6 +175,7 @@ out = out.merge(stg, on="state_abbr", how="left")
 cols = ["state", "state_abbr", "board_regime", "board_exists", "csso_regime",
         "n_voting", "term_years", "constitutional",
         "frac_elected_public", "student_voting", "teacher_voting", "student_present",
+        "teacher_present", "student_voice", "teacher_voice",
         "auth_standards_board", "auth_licensure_board",
         "rep_index", "rep_index_equal", "rep_index_altWA", "auth_index", "gap",
         "rating_category", "algorithmic_grade", "summative_any", "naep_g4_math_equiv",
