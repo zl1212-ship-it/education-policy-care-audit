@@ -119,4 +119,28 @@ ax[1].spines["top"].set_visible(False); ax[1].spines["right"].set_visible(False)
 ax[1].set_title("(b) Representation does not track the demography of the governed", fontsize=10.5)
 save(fig, "j5_figure3")
 
-print("wrote j5_figure1/2/3 (pdf+png) to", os.path.abspath(OUT))
+# ---------- Figure 4: the algorithmic accountability layer ----------
+order = [("A-F", "A-F letter grade"), ("Star", "1-5 star"), ("Index", "Numeric index"),
+         ("Descriptive", "Descriptive labels"), ("FederalTiers", "Federal tiers only"),
+         ("Dashboard", "Dashboard / none")]
+cnt = b.rating_category.value_counts()
+vals = [int(cnt.get(k, 0)) for k, _ in order]
+labs = [lab for _, lab in order]
+algo = [True, True, True, False, False, False]
+fig, ax = plt.subplots(figsize=(7.4, 4.3))
+y = np.arange(len(order))[::-1]
+ax.barh(y, vals, color=["0.25" if a else "0.7" for a in algo], edgecolor="black", linewidth=0.6)
+for yi, v in zip(y, vals):
+    ax.text(v + 0.2, yi, str(v), va="center", fontsize=9)
+ax.set_yticks(y); ax.set_yticklabels(labs, fontsize=9.5)
+n_algo = sum(v for v, a in zip(vals, algo) if a)
+ax.text(0.985, 0.95, f"formula-driven grade:\n{n_algo} of {len(b)} boards ({n_algo/len(b)*100:.0f}%)",
+        transform=ax.transAxes, ha="right", va="top", fontsize=9.5, color="0.2", fontweight="bold")
+ax.text(0.985, 0.74, f"adoption unrelated to\nrepresentation (p = {res['rep_algo_diff_p']:.2f})",
+        transform=ax.transAxes, ha="right", va="top", fontsize=9, color="0.4", style="italic")
+ax.set_xlabel("Number of state boards"); ax.set_xlim(0, max(vals) + 3)
+ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+ax.set_title("Figure 4. Half of state boards grade schools by a single formula", fontsize=11)
+save(fig, "j5_figure4")
+
+print("wrote j5_figure1/2/3/4 (pdf+png) to", os.path.abspath(OUT))

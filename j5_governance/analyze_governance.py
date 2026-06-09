@@ -72,9 +72,17 @@ print(f"  constitutionally entrenched boards    : {int(b.constitutional.sum())}/
       f"({b.constitutional.mean()*100:.1f}%)")
 rec("pct_boards_set_standards", round(b.auth_standards_board.mean() * 100, 1))
 rec("pct_boards_constitutional", round(b.constitutional.mean() * 100, 1))
+# Rep and Auth as distinct dimensions (rank-based, scale-free) + joint-distribution quadrant
+rho_ra, p_ra = stats.spearmanr(b.rep_index, b.auth_index)
+hi_lo = int(((b.auth_index > 0.5) & (b.rep_index < 0.5)).sum())
+corner = int(((b.auth_index >= 0.67) & (b.rep_index <= 0.20)).sum())
+print(f"\n  Spearman rho(Rep, Auth)   : {rho_ra:+.3f} (p={p_ra:.3f})  [distinct dimensions]")
+print(f"  high-authority/low-representation quadrant: {hi_lo}/{len(b)} "
+      f"({hi_lo/len(b)*100:.0f}%);  extreme corner (Auth>=.67 & Rep<=.20): {corner}")
+rec("spearman_rep_auth", round(rho_ra, 3)); rec("quadrant_hi_auth_lo_rep", hi_lo); rec("corner_count", corner)
 print(f"\n  mean Representation Index : {b.rep_index.mean():.3f}")
 print(f"  mean Authority Index      : {b.auth_index.mean():.3f}")
-print(f"  mean gap (auth - rep)     : {b.gap.mean():.3f}")
+print(f"  mean gap (auth - rep, descriptive heuristic): {b.gap.mean():.3f}")
 rec("mean_rep_index", round(b.rep_index.mean(), 3))
 rec("mean_auth_index", round(b.auth_index.mean(), 3))
 rec("mean_gap", round(b.gap.mean(), 3))
@@ -171,7 +179,7 @@ print(f"\n  mean Representation Index: algorithmic-grade boards {r_alg.mean():.3
       f"vs others {r_no.mean():.3f}  (Welch t={ta:.2f}, p={pa:.3f})")
 rho2, pr2 = stats.spearmanr(b.rep_index, b.algorithmic_grade)
 print(f"  Spearman rho(rep_index, algorithmic_grade): {rho2:+.3f} (p={pr2:.3f})")
-rec("rep_algo_diff_p", round(pa, 3)); rec("spearman_rep_algo", round(rho2, 3))
+rec("rep_algo_diff_p", round(pa, 4)); rec("spearman_rep_algo", round(rho2, 3))
 
 pd.DataFrame(rows).to_csv(os.path.join(DATA, "results_summary.csv"), index=False)
 print(f"\nwrote {os.path.join(DATA, 'results_summary.csv')}")

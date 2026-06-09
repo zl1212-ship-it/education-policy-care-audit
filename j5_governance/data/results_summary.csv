@@ -10,6 +10,9 @@ pct_boards_teacher_voting,12.8
 pct_boards_student_present,46.8
 pct_boards_set_standards,91.5
 pct_boards_constitutional,53.2
+spearman_rep_auth,-0.016
+quadrant_hi_auth_lo_rep,30.0
+corner_count,16.0
 mean_rep_index,0.177
 mean_auth_index,0.755
 mean_gap,0.578
@@ -25,5 +28,5 @@ soc_gap_ci_lo,-19.4
 soc_gap_ci_hi,9.4
 pct_boards_algorithmic_grade,48.9
 pct_students_algorithmic_grade,48.3
-rep_algo_diff_p,0.585
+rep_algo_diff_p,0.5853
 spearman_rep_algo,0.086

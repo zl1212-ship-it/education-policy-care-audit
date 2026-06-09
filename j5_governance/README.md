@@ -26,6 +26,8 @@ See `SOURCES.md` for provenance and `results.md` for the headline findings.
 
 ## Headline
 Only 17% of state boards are directly elected; 12.8% seat a voting student and 12.8% a voting
-teacher; yet 92% adopt academic standards and 94% control teacher licensure. Mean
-accountability–representation gap = 0.58. The deficit does not track student demography
-(p = 0.46) — it is structural and near-universal.
+teacher; yet 92% adopt academic standards and 70% directly control teacher licensure.
+Representation and authority are rank-independent (Spearman -0.02); 30/47 boards combine high
+authority with low representation. No evidence the deficit is concentrated on students of color
+(p = 0.46); it is broad-based. And 49% of boards now grade schools by a single formula
+(A-F / star / index), reaching 48% of students, regardless of representation (p = 0.59).
