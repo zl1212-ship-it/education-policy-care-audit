@@ -60,7 +60,7 @@ ax.set_ylabel("Authority Index  (standards, licensure, constitutional entrenchme
 ax.set_xlim(-0.03, 1.03); ax.set_ylim(-0.03, 1.06)
 ax.legend(loc="lower right", frameon=False, fontsize=9)
 ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
-ax.set_title("Figure 1. The accountability–representation gap across 47 state boards", fontsize=11)
+ax.set_title("Figure 1. Authority versus representation across 47 state boards", fontsize=11)
 save(fig, "j5_figure1")
 
 # ---------- Figure 2: authority vs representation asymmetry ----------
