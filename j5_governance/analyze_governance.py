@@ -75,11 +75,21 @@ rec("pct_boards_constitutional", round(b.constitutional.mean() * 100, 1))
 # Rep and Auth as distinct dimensions (rank-based, scale-free) + joint-distribution quadrant
 rho_ra, p_ra = stats.spearmanr(b.rep_index, b.auth_index)
 hi_lo = int(((b.auth_index > 0.5) & (b.rep_index < 0.5)).sum())
-corner = int(((b.auth_index >= 0.67) & (b.rep_index <= 0.20)).sum())
+# extreme corner: authority 5/6 or 6/6 of components (>=0.83) and representation <=0.20.
+# (0.83 not 0.67: the 0.6667 boards display as "0.67" in the appendix, so label the threshold
+#  at the next clean cut to keep text, table, and appendix mutually consistent.)
+corner = int(((b.auth_index >= 0.83) & (b.rep_index <= 0.20)).sum())
 print(f"\n  Spearman rho(Rep, Auth)   : {rho_ra:+.3f} (p={p_ra:.3f})  [distinct dimensions]")
 print(f"  high-authority/low-representation quadrant: {hi_lo}/{len(b)} "
-      f"({hi_lo/len(b)*100:.0f}%);  extreme corner (Auth>=.67 & Rep<=.20): {corner}")
+      f"({hi_lo/len(b)*100:.0f}%);  extreme corner (Auth>=.83 & Rep<=.20): {corner}")
 rec("spearman_rep_auth", round(rho_ra, 3)); rec("quadrant_hi_auth_lo_rep", hi_lo); rec("corner_count", corner)
+# Major-5 robustness: Authority Index WITHOUT constitutional entrenchment (standards + licensure only)
+an = b[["auth_standards_board", "auth_licensure_board"]].mean(axis=1)
+rho_ne, p_ne = stats.spearmanr(b.rep_index, an)
+rho_ent, p_ent = stats.spearmanr(b.rep_index, b.constitutional)
+print(f"  robustness: Spearman(Rep, Auth without entrenchment) = {rho_ne:+.3f} (p={p_ne:.3f}); "
+      f"Spearman(Rep, entrenchment alone) = {rho_ent:+.3f} (p={p_ent:.3f})")
+rec("spearman_rep_auth_noentrench", round(rho_ne, 3)); rec("spearman_rep_entrench", round(rho_ent, 3))
 print(f"\n  mean Representation Index : {b.rep_index.mean():.3f}")
 print(f"  mean Authority Index      : {b.auth_index.mean():.3f}")
 print(f"  mean gap (auth - rep, descriptive heuristic): {b.gap.mean():.3f}")
