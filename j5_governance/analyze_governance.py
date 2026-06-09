@@ -154,6 +154,13 @@ print(f"  mean gap, WA partial-election credit     : "
       f"{(b.auth_index - b.rep_index_altWA).mean():.3f}")
 print(f"  mean gap, excluding DC                   : "
       f"{b[b.state_abbr!='DC'].gap.mean():.3f}")
+# no-board coding sensitivity: treat New Mexico's elected (advisory) Public Education Commission
+# as a directly elected board and recompute the headline exposure figure
+notelect = df[~df.board_regime.eq("elected")].enrollment_2021.sum()
+nm = df.loc[df.state_abbr == "NM", "enrollment_2021"].iloc[0]
+pct_noelect_nm = (notelect - nm) / TOT * 100
+print(f"  %students w/o elected board, NM-as-elected: {pct_noelect_nm:.1f} (vs 79.6 baseline)")
+rec("pct_no_elected_board_nm", round(pct_noelect_nm, 1))
 # Spearman: representation vs students of color (rank-robust)
 rho, pr = stats.spearmanr(b.rep_index, b.pct_students_of_color)
 print(f"  Spearman rho(rep_index, pct_SOC)         : {rho:+.3f} (p={pr:.3f})")
