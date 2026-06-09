@@ -154,12 +154,18 @@ out["algorithmic_grade"] = out.rating_category.isin(["A-F", "Star", "Index"]).as
 # any single summative rating (adds descriptive single labels); excludes dashboard / federal-tiers-only
 out["summative_any"] = out.rating_category.isin(["A-F", "Star", "Index", "Descriptive"]).astype(int)
 
+# ---- Merge a board-discretionary policy OUTPUT: proficiency-standard stringency ----
+# NCES 2021-036 grade-4 mathematics NAEP-equivalent of each state's "proficient" cut (higher = more
+# demanding). The state board sets/approves academic standards, so this is a downstream output.
+stg = pd.read_csv(os.path.join(DATA, "state_proficiency_stringency.csv"))
+out = out.merge(stg, on="state_abbr", how="left")
+
 cols = ["state", "state_abbr", "board_regime", "board_exists", "csso_regime",
         "n_voting", "term_years", "constitutional",
         "frac_elected_public", "student_voting", "teacher_voting", "student_present",
         "auth_standards_board", "auth_licensure_board",
         "rep_index", "rep_index_equal", "rep_index_altWA", "auth_index", "gap",
-        "rating_category", "algorithmic_grade", "summative_any",
+        "rating_category", "algorithmic_grade", "summative_any", "naep_g4_math_equiv",
         "enrollment_2021", "pct_white_2021", "pct_students_of_color", "pct_frl_2122",
         "sel_board_raw", "sel_csso_raw", "n_voting_raw", "term_raw", "established_raw",
         "auth_licensure", "auth_standards"]

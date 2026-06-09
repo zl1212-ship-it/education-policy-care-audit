@@ -38,6 +38,16 @@ All data are public and current as of June 2026. No values are imputed except wh
   formula-driven score/letter/star (A-F, star, or numeric index), else 0. `summative_any` = 1 if
   the state assigns any single summative rating (adds descriptive labels), else 0.
 
+## 4. Academic-standard stringency (governance output)
+`data/state_proficiency_stringency.csv`
+- **Source:** NCES, *Mapping State Proficiency Standards Onto the NAEP Scales: Results From the
+  2019 NAEP Reading and Mathematics Assessments* (NCES 2021-036), Technical Notes Table A-1.
+  URL: https://nces.ed.gov/nationsreportcard/subject/publications/studies/pdf/2021036a.pdf
+- **Field:** `naep_g4_math_equiv` = the NAEP-scale equivalent of each state's grade-4 mathematics
+  "proficient" cut (higher = more demanding standard). Grade-4 math chosen for coverage (only New
+  Hampshire unmapped). This is a board-discretionary policy output (the board sets/approves the
+  state's academic standards), used to test the representative-bureaucracy prediction.
+
 ## Coding rules
 Coded variables are derived from the raw NASBE strings in `build_governance_panel.py`; the raw
 columns are retained in the panel so every coded value is traceable to its source text.

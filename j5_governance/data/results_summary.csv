@@ -33,3 +33,11 @@ pct_boards_algorithmic_grade,48.9
 pct_students_algorithmic_grade,48.3
 rep_algo_diff_p,0.5853
 spearman_rep_algo,0.086
+stringency_n,46.0
+stringency_elected,246.2
+stringency_other,242.0
+stringency_ttest_p,0.133
+stringency_ols_rep_coef,5.53
+stringency_ols_rep_p,0.258
+stringency_spearman,0.155
+stringency_spearman_p,0.303

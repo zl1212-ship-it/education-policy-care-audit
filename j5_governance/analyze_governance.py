@@ -198,5 +198,29 @@ rho2, pr2 = stats.spearmanr(b.rep_index, b.algorithmic_grade)
 print(f"  Spearman rho(rep_index, algorithmic_grade): {rho2:+.3f} (p={pr2:.3f})")
 rec("rep_algo_diff_p", round(pa, 4)); rec("spearman_rep_algo", round(rho2, 3))
 
+print("\n" + line); print("7. DOES REPRESENTATION SHAPE A GOVERNANCE OUTPUT? (stringency)"); print(line)
+s = b.dropna(subset=["naep_g4_math_equiv"]).copy()   # board states with a mapped stringency
+print(f"  boards with mapped grade-4 math stringency: {len(s)}  "
+      f"(mean {s.naep_g4_math_equiv.mean():.1f}, range {int(s.naep_g4_math_equiv.min())}-{int(s.naep_g4_math_equiv.max())})")
+# elected vs other
+st_el = s.loc[s.board_regime == "elected", "naep_g4_math_equiv"]
+st_ot = s.loc[s.board_regime != "elected", "naep_g4_math_equiv"]
+tt, pt = stats.ttest_ind(st_el, st_ot, equal_var=False)
+print(f"  stringency, elected {st_el.mean():.1f} vs other {st_ot.mean():.1f}  (Welch t={tt:.2f}, p={pt:.3f})")
+# OLS stringency ~ rep_index (+ controls)
+s["log_enroll"] = np.log(s.enrollment_2021)
+Xs = sm.add_constant(s[["rep_index", "pct_students_of_color", "log_enroll"]])
+ms = sm.OLS(s.naep_g4_math_equiv, Xs).fit(cov_type="HC3")
+print(f"  OLS stringency ~ rep_index (+%SOC +log enroll, HC3, n={len(s)}):")
+print(f"    rep_index coef = {ms.params['rep_index']:+.2f} (p={ms.pvalues['rep_index']:.3f})  R^2={ms.rsquared:.3f}")
+rho_s, pr_s = stats.spearmanr(s.rep_index, s.naep_g4_math_equiv)
+print(f"  Spearman rho(rep_index, stringency): {rho_s:+.3f} (p={pr_s:.3f})")
+rec("stringency_n", len(s))
+rec("stringency_elected", round(st_el.mean(), 1)); rec("stringency_other", round(st_ot.mean(), 1))
+rec("stringency_ttest_p", round(pt, 3))
+rec("stringency_ols_rep_coef", round(ms.params["rep_index"], 2))
+rec("stringency_ols_rep_p", round(ms.pvalues["rep_index"], 3))
+rec("stringency_spearman", round(rho_s, 3)); rec("stringency_spearman_p", round(pr_s, 3))
+
 pd.DataFrame(rows).to_csv(os.path.join(DATA, "results_summary.csv"), index=False)
 print(f"\nwrote {os.path.join(DATA, 'results_summary.csv')}")
