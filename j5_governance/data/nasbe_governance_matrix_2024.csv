@@ -1,0 +1,52 @@
+state,state_abbr,sel_board_raw,sel_csso_raw,sel_chair_raw,n_voting_raw,term_raw,established_raw,auth_licensure,auth_standards
+Alabama,AL,Partisan ballot,SBE appoints,Governor serves as president,8 plus governor,4,Constitution,SBE,SBE
+Alaska,AK,Governor appoints; legislature confirms,SBE appoints with approval by governor,SBE elects,"7 plus 2 nonvoting members, including 1 student",5,Statute,SBE,SBE
+Arizona,AZ,"Governor appoints with consent of Senate, except CSSO",Partisan ballot,SBE elects,"11, including 1 teacher",4,Constitution,SBE,SBE
+Arkansas,AR,Governor appoints; Senate confirms,SBE appoints,SBE elects,"9, including 1 nonvoting teacher of the year",7,Statute,SBE,SBE
+California,CA,Governor appoints with advice and consent of Senate,Nonpartisan ballot,SBE elects,"11, including 1 voting student",4,Constitution,PSC,SBE
+Colorado,CO,Partisan ballot,SBE appoints,SBE elects,9,6,Constitution,SBE,SBE
+Connecticut,CT,Governor appoints with advice and consent of General Assembly,SBE makes recommendation; governor appoints,Governor appoints,11 voting members plus 2 nonvoting students,4,Statute,SBE,SBE
+Delaware,DE,Governor appoints; Senate confirms,Governor appoints,Governor appoints,7 voting members plus 1 nonvoting student and former teacher of the year,6,Statute,SBE,SBE
+Florida,FL,Governor appoints; Senate confirms,SBE appoints,SBE elects,7,4,Constitution,SBE,SBE
+Georgia,GA,"Governor appoints, with consent of Senate",Partisan ballot,SBE elects,14,7,Constitution,PSC,SBE
+Hawaii,HI,Governor appoints with advice and consent of Senate,SBE appoints,Governor appoints chair; SBE elects vice chair,"9 plus 2 nonvoting members, including 1 student",3,Constitution,PSC,SBE
+Idaho,ID,Governor appoints 7 with consent of Senate; CSSO also serves,Partisan ballot,SBE appoints,8,5,Constitution,SBE,SBE
+Illinois,IL,Governor appoints with consent of Senate,Governor proposes; SBE appoints,Governor appoints chair; SBE elects vice chair,9,4,Constitution,SBE,SBE
+Indiana,IN,Governor appoints 8; speaker of the House 1; president pro tempore 1; CSSO also serves,Governor appoints,CSSO serves as chair,11,4,Statute,SEA,SBE
+Iowa,IA,Governor appoints; Senate confirms,Governor appoints,SBE elects (2 year term),9 plus 1 nonvoting student,6,Statute,PSC,SBE
+Kansas,KS,Elected,SBE appoints,SBE elects,10,4,Constitution,SBE,SBE
+Kentucky,KY,Governor appoints; Senate confirms,SBE appoints,SBE elects,"11 plus 4 nonvoting members, including student and teacher",4,Statute,PSC,SBE
+Louisiana,LA,8 elected by nonpartisan ballot; governor appoints 3; Senate confirms,SBE appoints,SBE elects,11,4,Constitution,SBE,SBE
+Maine,ME,Governor appoints,Governor appoints,SBE elects,9 plus 2 nonvoting students,5,Statute,SBE,SEA
+Maryland,MD,Governor appoints 13 with advice and consent of Senate; teachers elect 1 teacher,SBE appoints,SBE elects,"14, including 1 teacher, parent, and student",4,Statute,SBE,SBE
+Massachusetts,MA,"Governor appoints 6; 4 voting ex officio members, 1 student","SBE appoints, with approval from secretary",Governor appoints,"11, including 1 voting student",5,Statute,SBE,SBE
+Michigan,MI,Partisan ballot,SBE appoints,SBE elects,"8, plus 1 nonvoting teacher",8,Constitution,CSSO,SBE
+Minnesota,MN,None,Governor appoints,NA,NA,NA,None,PSC,CSSO
+Mississippi,MS,Governor appoints 5; lt. gov. appoints 2; speaker of the house appoints 2,SBE appoints,SBE elects,"9, including 1 teacher, plus 2 nonvoting students",9,Constitution,SBE,SBE
+Missouri,MO,Governor appoints; Senate confirms,SBE appoints,SBE elects,"8, plus 1 nonvoting teacher",8,Constitution,SBE,SBE
+Montana,MT,Governor appoints; Senate confirms,Partisan ballot,SBE elects,7 plus 4 nonvoting members including 1 student,7,Constitution,SBE,SBE
+Nebraska,NE,Nonpartisan ballot,SBE appoints,SBE elects,8,4,Constitution,SBE,SBE
+Nevada,NV,"4 elected; governor appoints 3, 2 of whom the legislature nominates; governor appoints 4 nonvoting members",Governor appoints from 3 nominees SBE provides,SBE elects,"7, including 1 teacher, plus 4 nonvoting members, including 1 student",4,Statute,PSC,SBE
+New Hampshire,NH,Governor and executive council appoints,Governor appoints after consulting SBE; council confirms,Governor appoints,7,5,Statute,SBE,SBE
+New Jersey,NJ,"Governor appoints, with advice and consent of Senate","Governor appoints, with advice and consent of Senate",SBE elects,13 plus 1 nonvoting student,6,Statute,SBE,SBE
+New Mexico,NM,None,Governor appoints,NA,NA,NA,None,SEA,SEA
+New York,NY,Legislature appoints,SBE appoints,SBE elects,17,5,Constitution and Statute,SBE,SBE
+North Carolina,NC,Governor appoints and legislature confirms,Partisan ballot,SBE elects,13 plus 2 nonvoting students and the teacher of the year,8,Constitution,SBE,SBE
+North Dakota,ND,None,Nonpartisan ballot,NA,NA,NA,NA,PSC,CSSO
+Ohio,OH,11 elected by nonpartisan ballot; governor appoints 8 with advice and consent of Senate,SBE appoints,SBE elects (2 year term),19,4,Constitution,SBE,SEA
+Oklahoma,OK,"Governor appoints, with advice and consent of Senate",Partisan ballot,CSSO serves as chair,7,4,Constitution,SBE,SBE
+Oregon,OR,Governor appoints; Senate confirms; SBE appoints student,Governor serves as superintendent of education; appoints deputy,SBE elects,7 plus 6 nonvoting members including 2 students and a teacher,4,Statute,PSC,SBE
+Pennsylvania,PA,"Governor appoints 17, Senate confirms; General Assembly appoints 4",Governor appoints,Governor appoints,21 plus 4 nonvoting students,6,Statute,SBE,SBE
+Rhode Island,RI,Governor appoints with advice and consent Senate,"Council appoints, with advice and consent of SBE",Governor appoints,17 plus 1 nonvoting student,3,Statute,SBE,SBE
+South Carolina,SC,"Legislature appoints 16, governor appoints 1",Partisan ballot,SBE elects,17,4,Constitution,SBE,SBE
+South Dakota,SD,Governor appoints with consent of the Senate,Governor appoints,SBE elects,7,4,Statute,SBE,SBE
+Tennessee,TN,Governor appoints; General Assembly confirms,Governor appoints,SBE elects (4 year term),"10, including 1 student and teacher",5,Statute,SBE,SBE
+Texas,TX,Partisan ballot,Governor appoints,Governor appoints (2 year term),15,4,Constitution,PSC,SEA
+Utah,UT,Partisan ballot,SBE appoints,SBE elects,15,4,Constitution,SBE,SBE
+Vermont,VT,Governor appoints 9 voting members and 2 nonvoting members with consent of Senate,Governor appoints from 3 nominees SBE provides,SBE elects (2 year term),"9 voting members, including 1 voting student, plus 1 nonvoting student and the CSSO",6,Statute,PSC,SBE
+Virginia,VA,Governor appoints; General Assembly confirms,Governor appoints,SBE elects,9,4,Constitution,SBE,SBE
+Washington,WA,Local school board members elect 5; governor appoints and Senate confirms 7; student group selects 2 students; private schools elect 1; CSSO also serves,Nonpartisan ballot,SBE elects,"16, including 2 voting students",4,Statute,PSC,CSSO
+West Virginia,WV,"Governor appoints 9, with consent of Senate; 3 nonvoting ex-officio members",SBE appoints,SBE elects,9,9,Constitution,SBE,SBE
+Wisconsin,WI,None,Nonpartisan ballot,NA,NA,NA,None,SEA,CSSO
+Wyoming,WY,Governor appoints; Senate approves,Partisan ballot,SBE elects,"12, including 1 teacher",6,Statute,PSC,SBE
+District of Columbia,DC,Nonpartisan ballot,Mayor appoints chancellor and CSSO,SBE elects,9 plus 4 students (vote recorded w/o weight),4,Statute,CSSO,SBE
