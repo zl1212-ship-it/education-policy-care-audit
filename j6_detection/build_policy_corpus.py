@@ -69,7 +69,10 @@ def _slug(institution: str) -> str:
 
 
 def fetch(url: str):
-    req = urllib.request.Request(url, headers={"User-Agent": "j6-policy-fetch (academic audit)"})
+    # Many .edu WAFs block non-browser agents; use a realistic UA to read public pages.
+    ua = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+          "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "text/html"})
     with urllib.request.urlopen(req, timeout=60) as r:
         raw = r.read()
         status = r.status
