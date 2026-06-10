@@ -1,11 +1,11 @@
 institution,state,url,detector_admissibility,burden_of_proof,appeal_pathway,l2_protection,decision_locus,coder
-University of Hawaii at Manoa,HI,https://manoa.hawaii.edu/ovpae/guidance-on-ai/,silent,unspecified,none,generic_fairness,delegated,codex-secondcoder
-University of Idaho,ID,https://support.uidaho.edu/TDClient/40/Portal/KB/ArticleDet?ID=3464,silent,unspecified,none,none,delegated,codex-secondcoder
-University of Iowa,IA,https://teach.its.uiowa.edu/artificial-intelligence-tools-and-teaching,prohibited,unspecified,none,generic_fairness,delegated,codex-secondcoder
-University of Maine,ME,https://umaine.edu/communitystandards/resources-policies-and-forms/generative-ai-teaching-and-learning-guidelines/,silent,unspecified,none,generic_fairness,delegated,codex-secondcoder
-University of Missouri,MO,https://oai.missouri.edu/chatgpt-artificial-intelligence-and-academic-integrity/,admissible,unspecified,none,none,delegated,codex-secondcoder
-University of North Dakota,ND,https://und.edu/academics/provost/faculty-affairs/ai-and-emerging-technology-academic-integrity-resources.html,silent,institution,formal,generic_fairness,delegated,codex-secondcoder
-University of Rhode Island,RI,https://uri.libguides.com/ai/instructors,admissible,unspecified,none,explicit,delegated,codex-secondcoder
-University of South Carolina,SC,https://sc.edu/about/offices_and_divisions/cte/teaching_resources/generative_ai/genai_teaching_guidelines/,advisory,institution,none,generic_fairness,institutional,codex-secondcoder
-University of South Dakota,SD,https://www.usd.edu/About/Artificial-Intelligence,silent,unspecified,none,generic_fairness,delegated,codex-secondcoder
-University of Tennessee Knoxville,TN,https://oit.utk.edu/ai/,advisory,institution,none,generic_fairness,institutional,codex-secondcoder
+University of Hawaii at Manoa,HI,https://hawaii.edu,silent,unspecified,none,none,delegated,second_coder
+University of Idaho,ID,https://uidaho.edu,silent,unspecified,none,none,delegated,second_coder
+University of Iowa,IA,https://uiowa.edu,advisory,unspecified,none,none,delegated,second_coder
+University of Maine,ME,https://umaine.edu,silent,unspecified,none,none,delegated,second_coder
+University of Missouri,MO,https://missouri.edu,silent,unspecified,none,none,delegated,second_coder
+University of North Dakota,ND,https://und.edu,silent,unspecified,formal,none,delegated,second_coder
+University of Rhode Island,RI,https://libguides.com,advisory,unspecified,none,explicit,delegated,second_coder
+University of South Carolina,SC,https://sc.edu,silent,unspecified,none,none,delegated,second_coder
+University of South Dakota,SD,https://usd.edu,silent,unspecified,none,none,delegated,second_coder
+University of Tennessee Knoxville,TN,https://utk.edu,silent,unspecified,none,none,silent,second_coder
