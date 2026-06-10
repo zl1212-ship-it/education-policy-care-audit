@@ -1,6 +1,0 @@
-dimension,cohens_kappa,pct_agreement,n
-detector_admissibility,0.545,0.8,10
-burden_of_proof,0.0,0.9,10
-appeal_pathway,1.0,1.0,10
-l2_protection,1.0,1.0,10
-decision_locus,0.474,0.9,10
