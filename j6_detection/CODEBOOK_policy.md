@@ -50,12 +50,17 @@ Each dimension has an ordered value set and an explicit decision rule. Code
 | `informal` | Mentions review/reconsideration but no formal route. |
 | `none` | No appeal mechanism described, or silent. |
 
-### 4. `l2_protection` — are multilingual / non-native writers acknowledged?
+### 4. `l2_protection` — are multilingual / non-native writers acknowledged? (binary)
 | value | decision rule |
 |---|---|
-| `explicit` | Names multilingual / ELL / non-native / international writers, or warns of detector bias against them. |
-| `generic_fairness` | General fairness/equity/due-process language only, no L2-specific mention. |
-| `none` | Neither. |
+| `explicit` | Names multilingual / ELL / non-native / international writers, or warns that detector output may misread writers whose first language is not English. |
+| `none` | No language-specific acknowledgement (general fairness/equity/bias language, with no link to language background, counts as `none`). |
+
+This dimension is binary. An earlier three-level version (`explicit` / `generic_fairness`
+/ `none`) had a `generic_fairness`/`none` boundary that two coders could not apply
+reliably (Cohen's kappa near zero), and the distinction changes no finding: only
+`explicit` clears the governance floor, and general fairness language does not. It was
+collapsed to the decision-relevant binary on 2026-06-10.
 
 ### 5. `decision_locus` — who decides whether a flag becomes a case?
 The governance-vacuum thesis turns on delegation: a binding institutional rule is a
@@ -75,7 +80,7 @@ binding institutional floor stand between a 16.9x-biased flag and the writer":
   (a binding ban is a floor; advisory guidance discredits detectors but does not bind
   adjudication; silence/admission leaves the flag usable)
 - `decision_locus`: delegated = 1, silent = 1, institutional = 0
-- `l2_protection`: none = 1, generic_fairness = 0.5, explicit = 0
+- `l2_protection`: none = 1, explicit = 0
 - `burden_of_proof`: student = 1, unspecified = 0.5, institution = 0
 - `appeal_pathway`: none = 1, informal = 0.5, formal = 0
 

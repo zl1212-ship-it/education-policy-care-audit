@@ -34,7 +34,7 @@ DIMENSIONS = ["detector_admissibility", "burden_of_proof", "appeal_pathway",
 VACUUM_WEIGHTS = {
     "detector_admissibility": {"admissible": 1, "silent": 1, "advisory": 0.5, "prohibited": 0},
     "decision_locus": {"delegated": 1, "silent": 1, "institutional": 0},
-    "l2_protection": {"none": 1, "generic_fairness": 0.5, "explicit": 0},
+    "l2_protection": {"none": 1, "explicit": 0},
     "burden_of_proof": {"student": 1, "unspecified": 0.5, "institution": 0},
     "appeal_pathway": {"none": 1, "informal": 0.5, "formal": 0},
 }
