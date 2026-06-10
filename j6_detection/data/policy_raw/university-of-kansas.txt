@@ -1,0 +1,327 @@
+### PRIMARY https://cte.ku.edu/maintaining-academic-integrity-ai-era
+Maintaining academic integrity in the AI era | Center for Teaching Excellence
+
+ Skip to main content
+ 
+The University 
+of
+ Kansas
+MENU
+THE UNIVERSITY 
+ of 
+KANSAS
+Center for Teaching Excellence
+myKU
+Email
+Canvas
+Enroll & Pay
+Jayhawk GPS
+Close
+Search this unit
+Start search
+Submit Search
+Main navigation
+
+ Home
+ 
+
+ About
+
+ 
+ 
+
+ Programs & Initiatives
+
+ 
+ 
+
+ Teaching Resources
+
+ 
+ 
+
+ Assessment of Student Learning
+
+ 
+ 
+
+ Course Portfolios
+
+ 
+ 
+
+ AI Resources & Guidance
+
+ 
+Select to follow link
+
+ Adapting classes to the artificial intelligence era
+
+ 
+ 
+
+ How to integrate generative AI into your courses
+
+ 
+ 
+
+ Building AI policies into your syllabus
+
+ 
+ 
+
+ Maintaining academic integrity in the AI era
+
+ 
+ 
+
+ Ethical use of AI in writing assignments
+
+ 
+ 
+
+ Easing into generative AI
+
+ 
+ 
+
+ Addressing bias in AI
+
+ 
+ 
+
+ Prompting AI chatbots
+
+ 
+ 
+
+ AI as tutor on research projects
+
+ 
+ 
+
+ AI-related steps to take now
+
+ 
+ 
+
+ Careful use of AI detectors
+
+ 
+ 
+
+ FAQs about AI and teaching
+
+ 
+ 
+
+ News, Events & Media Gallery
+
+ 
+ 
+
+ Bloom's Sixth Blog
+
+ 
+ 
+Info for
+New Faculty
+GTA Resources
+myKU
+Email
+Canvas
+Enroll & Pay
+Jayhawk GPS
+THE UNIVERSITY 
+ of 
+KANSAS
+University of Kansas logo
+Center for Teaching Excellence
+Menu
+Search this unit
+Start search
+Submit Search
+ 
+ Home
+ 
+ 
+ AI Resources & Guidance
+ 
+
+Maintaining academic integrity in the AI era
+
+The University of Kansas does not have a specific policy about use of generative artificial intelligence in teaching and learning. The 
+University Senate Rules and Regulations
+ do provide guidance on academic integrity, though:
+Academic misconduct by a student shall include, but not be limited to, disruption of classes; threatening an instructor or fellow student in an academic setting; giving or receiving of unauthorized aid on examinations or in the preparation of notebooks, themes, reports or other assignments; knowingly misrepresenting the source of any academic work; unauthorized changing of grades; unauthorized use of University approvals or forging of signatures; falsification of research results; plagiarizing of another's work; violation of regulations or ethical codes for the treatment of human and animal subjects; or otherwise acting dishonestly in research.
+The KU Code of Ethical Conduct also provides guidance, emphasizing the importance of demonstrating accountability, modeling ethical standards, fostering honest pursuit of knowledge, ensuring originality of work, and attributing ideas drawn from others’ intellectual work.
+To supplement those, we encourage faculty members to include a statement about permissible use of generative artificial intelligence in their classes. We provide examples below.
+Creating a class policy
+A policy does not have to be extensive, but it should provide clear guidance to students on how they may and may not use generative AI in your class. We urge instructors to permit the use of ChatGPT and other tools wherever appropriate but also to talk with students about why you are approaching things as you are.
+Here are two examples. One is short. The other offers more explanation to students. The second version is from an editing class that Doug Ward, associate director of CTE, teaches. It can be easily adapted to nearly any discipline, though.
+Brief version
+You may use ChatGPT and other generative AI tools in this class in some instances. That includes generating ideas, outlining steps in a project, finding sources, getting feedback on your writing, and overcoming obstacles on papers and projects. Using those tools to generate all or most of an assignment, though, will be considered academic misconduct. If you are ever in doubt, ask. In your course work, you will be asked to explain in a reflection statement how you used any generative AI tools.
+A more extensive version
+Journalism, like many professions, is learning to adapt to generative artificial intelligence. No one knows what that adaptation might mean in the future, but it seems clear that you will need to know how to use AI tools in whatever career you choose. To help you gain those skills, we will experiment with Bing Chat, ChatGPT and other generative AI tools this semester, with a goal of learning to apply them in meaningful and ethical ways. At times, though, you will 
+not
+ be allowed to use AI. That’s because the core skills an editor needs – critical evaluation, creativity, inquiry, collegiality – have nothing to do with technology. Generative AI is useless if you don’t know how to evaluate and adapt what it produces. We will work at honing those evaluation and adaptation skills throughout the semester. I will tell you when we will use AI tools and when we won’t.
+ A few ground rules:
+Do your work honestly
+. Turning in work you have cut and pasted from generative AI is academic misconduct. It’s no different from cutting and pasting from a website. It is also academic misconduct if you use AI tools when you are asked not to. The goal is to use AI to help you improve your skills, not to avoid doing assignments. Read the 
+university’s policy on academic misconduct
+ and the 
+KU Code of Ethical Conduct
+ and follow those in all your work.
+Explain your use of AI
+. If you use AI tools to assist in your work, include a paragraph explaining how you used them, how they helped you, and how you made the work your own. Include explanations of where AI wasn’t effective or where it provided weak or false information. Also explain what you learned about prompting and how you can improve your prompting in the future.
+If you aren’t sure at any time, ask
+. That’s an important skill all journalists must learn.
+Beyond the basics
+We understand the wait-and-see approach that many instructors have taken with generative AI, just as we understand the appeal of using AI detectors as a seemingly simple approach to upholding academic integrity. Neither waiting nor trying to prevent the use of AI will serve our students, though. We agree with the 
+U.S. Department of Education, which said in May
+ that it was “imperative to address AI in education now to realize key opportunities, prevent and mitigate emergent risks, and tackle unintended consequences.”
+Adapting to AI will be crucial for our students and our institutions, but it will also be crucial for democracy. The use of AI to create disinformation, to distort reality, and to mislead the public has already begun. We can push back against that by helping our students understand the workings of large language models and other forms of generative AI, and by helping them grapple with the ethics of AI. We can also help them use AI as a partner in discovery and learning. That will require some bold and perhaps uncomfortable steps.
+Decriminalize the use of AI
+Many instructors banned the use of generative AI after ChatGPT was released and used AI detectors to try to root out offenders. Those detectors have far too many flaws to be reliable and 
+were never intended as a sole indicator of cheating
+. They still have a place, but they provide information, not indictments. Instructor time is far better spent on helping students use AI responsibly than on trying to forbid AI in the learning process. That takes time. So does pursuing cases of academic misconduct, though. 
+Bring students into the conversation
+. An inflexible, top-down class policy on use of generative AI is very likely to fail. A better approach would be to talk with students about AI use in your discipline and work together on setting a class policy. When is it appropriate to use generative AI? When is it not? And why? Students can be excellent partners in working through these types of difficult issues. They are grappling with them, too, and having a class discussion helps them better understand the ethics of AI and makes it more likely they will follow the guidelines they help create.  
+Model ethical use of generative AI
+By looking at AI as a partner rather than a villain, we can begin to create policies that reflect the reality of an AI-augmented world. Ethical and responsible use of AI does 
+not
+ mean allowing students to turn in the unedited output of chatbots as original work. It does allow use of AI to generate ideas, outlines, and drafts; summarize articles; provide insights into data; and provide feedback on writing, coding, and problem-solving. (See 
+An instructor guide to easing into generative AI.
+) It must include conversations with students about when 
+not
+ to use AI and how long-established practices help them gain critical skills. It should also include the routine use of reflective statements from students on how they use AI in the work they turn in. Discussions about ethics should be combined with building community and trust among students, and creating meaningful assignments.
+Develop a plan for adoption of AI
+As much as we would like all faculty to integrate AI immediately, we expect most to do so in stages. To help, we are creating and curating tutorials, examples of AI use in classes, syllabus statements, prompting guides, ethics guidelines, and other materials for faculty and students. We are also planning workshops and discussions to help faculty to learn to use AI effectively, and we will encourage department and school conversations about applying consistent approaches to the use of AI. This will require time from instructors, and departments and schools must keep that in mind.
+Develop authentic assignments
+Authentic assignments allow students to apply their developing knowledge to real-world situations, which can improve relevance and motivation (Wiggins and Grant, 1998). These can take many forms, depending on the discipline. In general, though, authentic assignments involve application of learning in ways that students are likely to encounter in their careers, that allow students to share their learning outside the class, or that allow students to engage with outside communities or to apply disciplinary thinking to other fields or to a general audience. For example:
+Students in a 
+chemistry
+ class create posters about how chemical interactions affect everyday life (hand-washing, auto exhaust, water purification).
+Students in a 
+psychology
+ class create an op-ed article in which they use the principles of psychology to add new perspectives to an event in the news.
+Students in a 
+journalism
+ class work with a non-profit agency to create messages about the importance of mental health for high-school students.
+Students in a 
+physics class
+ create a graphic explaining what caused a deep-water submarine to explode.
+Students in a 
+biology
+ class hold an end-of-semester festival for which students groups create displays and activities that help attendees learn about threatened species.
+Students in a 
+film and media studies
+ class develop video and social media messages about the importance of digital literacy.
+All of those examples helped students apply their learning in new ways. Generative AI offers powerful new opportunities to expand authentic assignments and to infuse them with technological skills that students will need in careers. In each of the examples above, generative AI could be used to generate ideas, provide examples, create images and illustrations, design posters and brochures, and create drafts of materials. It could also be used to create discipline-specific case studies or create interactive scenarios in which students grapple with real-world problems. Instructors could also challenge students to create examples of how generative AI could be used in various professions. That would help students learn more about potential careers while also considering ways that technology may change a profession.
+Have students work on assignments in class
+This provides a better opportunity to guide the use of AI tools so that students focus on areas instructors see as important. Class time is limited, though, and keep in mind that some students don’t work well under time pressure. That will mean assignments need to be short enough to complete within a given class period.
+Use group exams
+If your class is large and you feel you must use exams, consider two-stage exams or other types of group exams. Two-stage exams take different forms. A common approach is to have students take an exam individually and then take it again with a group. The group gets only one copy of the exam, though, and must agree on answers. This generates discussion about how students arrived at answers and takes advantage of curiosity students often have about how classmates answered various questions.
+Another approach
+. Students get individual copies of the exam but work with partners or teams. The exam is open book, giving students an opportunity to revisit readings and discuss interpretations with colleagues. This approach also emphasizes application of learning rather than memorization of facts.
+Further adaptations
+These ideas and approaches will no doubt expand as we gain more experience in using generative AI. We encourage you to share your ideas, experiences, and discoveries. Doing so not only strengthens our community of teachers and learners but also benefits all our students.
+
+ 
+AI syllabus statements
+
+ 
+Click to expand
+50+ policies crowdsourced in a Google Doc
+Update Your Course Syllabus for ChatGPT
+, by Ryan Watkins. Medium (18 December 2022).
+Student-generated proposal for College Unbound
+
+ 
+A letter to students
+
+ 
+Click to expand
+This is a truncated version of a letter that Alice Keeler, a California high school teacher, created for her students. It is an excellent example of providing clear guidance to students while still allowing use of generative AI. 
+Her website
+ has the full letter and additional clarification on the guidelines.   
+Dear Students,
+Welcome to a new year in our English Language Arts class! As we embark on this exciting journey of learning together, I want to take a moment to discuss how we will be integrating some incredible technology into our classroom.
+Artificial Intelligence, particularly AI tools like ChatGPT and Google Bard, offer wonderful opportunities to support and enrich our learning process. Whether we're brainstorming ideas, dissecting complex texts, or honing our grammar and writing style, these tools can provide assistance and spark creativity. But it's important we use them in a way that upholds the principles of academic integrity, and that we remember the true purpose of our work here.
+In this class, our mission is to nurture critical thinking, refine our communication skills, deepen our literacy, and stoke our creativity. Assignments are not merely tasks to complete; they are chances to explore and express our ideas, to learn from each other, and to grow personally and academically. 
+With this in mind, I want to outline some guidelines for how we can use AI ethically and responsibly:
+1. 
+AI as a Tool, Not a Crutch:
+ AI is here to assist us, to inspire and clarify. But remember, the thoughts, analysis, and crafting of your assignments should be primarily your own.
+2. 
+Cite Your Sources:
+ Just as we acknowledge human sources, any significant insights or phrases you borrow from AI should also be properly cited. As with any source, it should be limited to a quotation of no more than a couple of sentences, as AI can be used to support your work but not be your work.  
+3. 
+AI for Understanding, Not for Shortcuts:
+ Use AI to clarify your doubts, to seek further understanding. Don't use it as a way to avoid reading, thinking deeply, or engaging with the text. Use AI to give you feedback on your writing with suggestions for improvement before the assignment is submitted. Do not ask AI to rewrite it for you beyond your capabilities and submit the rewrite.
+4. 
+AI for Learning, Not Just Task Completion:
+ Aim to understand and develop skills, not just to finish an assignment. 
+5. 
+Tutor not Reader
+: While reading a text, just as you might chat with a friend about what you are reading, AI can help you to understand parts of the reading that you need further clarification on. However, bypassing the reading and doing the hard work of comprehension yourself is not acceptable. 
+...
+In order to verify that you have genuinely learned from the assignment and have not resorted to using AI or cheating you should be able to discuss the topic verbally and demonstrate your knowledge and understanding of anything submitted. An inability to support/extend your work through conversation or extension questions will demonstrate a need to relearn the material and provide new evidence of the learning. 
+Remember, the ultimate goal of education is your growth and learning. AI can be a fantastic tool to aid us in this journey, but it can't replace your active engagement and effort. Ensure that anything you submit is an accurate representation of your learning and capability. Let's use AI responsibly, and let's make this a year of meaningful learning and creativity. 
+Here's to an exciting year ahead!
+Your English Language Arts Teacher
+
+More on generative AI and academic integrity
+
+ We can't detect our way out of the AI challenge
+ 
+
+ How should we use AI detectors with student writing?
+ 
+
+ The bots are here to stay. Do we deny or do we adapt?
+ 
+
+ Budig Hall, Room 135
+
+ 1455 Jayhawk Blvd.
+
+ Lawrence, KS 66045
+cte@ku.edu
+785-864-4199
+facebook
+instagram
+linkedin
+About CTE
+People
+Faculty Ambassadors
+CTE Advisory Board
+Visit KU
+KU Admissions
+KU Endowment
+KU News
+KU Events
+KU Careers
+KU Alumni Association
+Nondiscrimination statement 
+Accessibility
+|
+Website support
+|
+CMS login
+© 2026 
+The University of Kansas
+The University of Kansas prohibits discrimination on the basis of race, color, ethnicity, religion, sex, national origin, age, ancestry, disability, status as a veteran, sexual orientation, marital status, parental status, gender identity, gender expression, and genetic information in the university's programs and activities. Retaliation is also prohibited by university policy. The following person has been designated to handle inquiries regarding the nondiscrimination 
+policies
+ and 
+procedures
+ and is the Title IX Coordinator for all KU and KUMC campuses: Associate Vice Chancellor for the Office of Civil Rights and Title IX, 
+civilrights@ku.edu
+, Room 1082, Dole Human Development Center, 1000 Sunnyside Avenue, Lawrence, KS 66045, 
+785-864-6414
+, 711 TTY. Reports can be submitted by contacting the Title IX Coordinator as provided herein or using the 
+Title IX online report form
+ and complaints can be submitted with the Title IX Coordinator or using the 
+Title IX online complaint form
+.
+The University of Kansas is a public institution governed by the Kansas Board of Regents.

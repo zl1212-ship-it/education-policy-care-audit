@@ -1,0 +1,147 @@
+### PRIMARY https://www.buffalo.edu/academic-integrity/instructors/protect/ai-guidance.html
+Artificial Intelligence Guidance - Office of Academic Integrity - University at Buffalo
+Skip to Content
+UB Home
+Maps
+UB Directory
+University at Buffalo (UB)
+Office of Academic Integrity
+ Student Information 
+ Report Academic Misconduct 
+Menu
+Search
+Loading menu...
+Process Academic Integrity
+Consultative Resolution Meeting Guidelines
+Imposing Sanctions
+Sanctions Chart
+Grading Guidelines
+Student Appeals
+Nine Common Academic Integrity Infractions
+Report Academic Misconduct
+Promote Academic Integrity
+Academic Integrity in the Classroom
+Grab and Go Lessons
+"Academic Integrity at UB" Course
+Student Integrity Ambassadors
+Request an in-class Presentation
+Academic Integrity Awards
+Awards Nomination Form
+2024-25 Award Winners
+2023-24 Award Winners
+2022-23 Award Winners
+2021-22 Award Winners
+Protect Academic Integrity
+Artificial Intelligence Guidance
+Exam Proctoring Tips
+Protecting Integrity in Online Instruction
+Plagiarism and AI-Detection Tools for Assignments
+Proctoring Tools
+Required Statements for Syllabi
+Statements for Assignments and Exams
+Protecting Your Intellectual Property
+Instructor Information
+Process Academic Integrity
+Promote Academic Integrity
+Protect Academic Integrity
+Artificial Intelligence Guidance
+Exam Proctoring Tips
+Protecting Integrity in Online Instruction
+Plagiarism and AI-Detection Tools for Assignments
+Proctoring Tools
+Required Statements for Syllabi
+Statements for Assignments and Exams
+Protecting Your Intellectual Property
+ Have questions? 
+We're here to help.
+Kelly Ahuna, PhD
+Director
+Loretta Frankovitch, PhD
+Associate Director
+24 Capen Hall
+ 716-645-2111
+academicintegrity@buffalo.edu
+ Monday-Friday: 8 a.m.-4 p.m.
+Request an in-class presentation
+.
+ Artificial Intelligence Guidance 
+ Does UB have a policy about artificial intelligence use? 
+UB has no universal policy about student use of artificial intelligence. Instructors have the academic freedom to determine what tools students can and cannot use in pursuit of meeting course learning objectives. This includes artificial intelligence tools such as ChatGPT.
+ What should I tell my students about using artificial intelligence? 
+Because there is no universal UB policy about artificial intelligence tools, instructors need to give students clear guidance about what is and is not allowed in their course overall and/or on each assessment. In the same way students are told when exams are “open book” or not, they need to be told when AI tools are allowed or not. This should be done orally in class when discussing each and every assignment or exam as well as in your syllabus.  Some examples of syllabus language from other institutions can be found 
+here
+.
+ Should I allow students to use artificial intelligence in my class? 
+Deciding whether to allow students to use artificial intelligence on course assessments can best be determined by evaluating how that use affects fulfillment of the learning objectives. If an AI tool can be used to complete low-level work that students can already do, for example, it can be used a head start to propel students toward higher level thinking. But if use of the AI tool replaces the student thinking and process that you intend to assess, it should be disallowed.
+ How can I help students understand the rules I set around artificial intelligence? 
+Instructors should make the rationale for their rules around AI as overt as possible. Students don’t always understand how the assessments instructors design for them lead to fulfillment of learning objectives. As the expert, it is up to the instructor to help students identify in what ways using artificial intelligence can help or hinder those learning objectives. The more students understand why a tool is disallowed, the more likely they are to respect that rule.
+ How can I tell if a student used an AI tool? 
+Some of the common ways instructors can identify use of AI tools include:
+Misalignment of student response with what was taught in class.
+Odd errors in content. (When AI makes these mistakes, they are called “hallucinations.”)
+Formulaic prose at a general level, lacking specific details.
+ What should I do if I suspect a student has used AI in violation of my guidelines? 
+The procedure for pursuing this suspicion is the same as in any academic dishonesty case, and instructors should follow the 
+consultative resolution process
+ dictated by the academic integrity policy. There are some additional 
+considerations
+ that may help here, however, including:
+Entering your assignment prompt into AI tools yourself. This will show you the type and tone of output a student would get. Consider doing this three or four times to see the extent of possible outputs and using more than one tool.
+Running the student assessment through the Turnitin AI-detection tool. Although there are mixed reviews about detection tools in general, Turnitin is 
+highly reliable
+. Turnitin's 
+AI-detection tool
+ is included in UB’s Brightspace package. This is different from, and in addition to, the Turnitin plagiarism-detection tool. You can 
+set this as a default
+ so that student work will run through it. 
+Comparing the student’s work to an in-class or previous writing sample.
+Checking references for accuracy, validity, and relevance. 
+Overtly discussing both the content of the assessment and the process the student took to create it at the consultative resolution meeting. If the student prepared the work, they should be able to talk to you about how they did it and what it includes. They may even be able to show earlier drafts, time-stamped documents, etc. It is good to be prepared with 
+discussion starters
+ for this conversation.
+ How do I decide if I should report the case to the Office of Academic Integrity? 
+Whenever an instructor believes that it is “more likely than not” that academic dishonesty occurred, they are obligated to report it to OAI. This standard of evidence is called “preponderance.” Instructors do not need the certainty of “beyond a reasonable doubt.” In the case of unauthorized use of AI, preponderance can come in many forms, but it must include more than just the Turnitin AI-detection report. 
+ Other signs include:
+Falsified citations
+Content that is well above course level
+A submission that does not fulfill the assignment parameters, but some kind of adjacent question
+Work that is substantially different from the student's past assessments or writing samples
+Notable inaccuracies (AI hallucinations)
+A student who is unable to explain what they submitted or how they prepared it
+If you are uncertain about this, you can contact the Office of Academic Integrity for guidance.
+ What charge and sanction are appropriate for this kind of policy violation? 
+While unauthorized use of AI on assessments can fall into a number of the violations described in the policy, it is commonly reported to OAI as “falsifying academic materials.” This violation includes, “submitting a report, paper, materials, computer data or examination (or any considerable part thereof) prepared by any person or technology (e.g., artificial intelligence) other than the student responsible for the assignment.” Since plagiarism implies violating ownership of ideas or language and AI can’t have ownership, these cases are typically not processed as plagiarism under UB’s policy.  
+ How can I design assessments that are AI-proof? 
+There is no foolproof way to do this, but there are some steps you can take to prevent unauthorized AI use on assessments:
+Move assessments to in-class and proctor well.
+Apply 
+Lockdown Browser and Respondus Monitor
+ for remote assessments. This ensures that the student cannot access an AI tool on their test-taking device and allows you to observe if they attempt to use another device.
+Include an oral component to your assessments so students can explain what they’ve done and what they know.
+Consider redesigning your assessments. The more you can make them specific to course content, class materials, and student experience, the less helpful AI tools are.
+Contact the Office of Curriculum, Assessment and Teaching Transformation (
+CATT
+) for more guidance and support on assessment redesign.
+Guidance is provided for students on this topic 
+here.
+ What should I know about Grammarly? 
+Grammarly was originally designed as a tool to check spelling and grammar usage. However, Grammarly, and other tools like Dal-E and Perplexity, now include a generative artificial intelligence technology that can suggest heavy re-writes of material and/or create new text.  Please clarify with your students what is and is not acceptable in your courses.  Additional guidance can be found from a human-written 
+Inside Higher Ed article
+ and an AI-generated/human-modified 
+article in Scribe
+.
+Site Index
+Office of Academic Integrity
+24 Capen Hall
+ 716-645-2111
+academicintegrity@buffalo.edu
+University at Buffalo
+. All rights reserved.  |  
+Privacy
+  |  
+Accessibility
+Your Privacy is Important To Us.
+Buffalo.edu uses cookies to help build a better website experience for our visitors. Learn more in our 
+Privacy Policy
+.
+Okay

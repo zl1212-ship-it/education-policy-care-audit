@@ -1,0 +1,120 @@
+### PRIMARY https://www.alaska.edu/ai/policies/
+University GenAI Policies and Guidelines | Generative Artificial Intelligence (GenAI) at UA
+Skip to main content
+e.g.
+Board of Regents, UA System Offices etc.
+News
+Directory
+Jobs
+UAOnline
+UA System 
+System Offices
+Expand search
+Generative Artificial Intelligence (GenAI) at UA
+Home
+(current)
+Understanding GenAI Concepts
+(current)
+Using GenAI Responsibly
+(current)
+University GenAI Policies and Guidelines
+(current)
+GenAI Tools for the UA Community
+(current)
+Getting Help and Support
+(current)
+University AI Policies and Guidelines
+University GenAI Policies and Guidelines
+University GenAI Policies and Guidelines
+UA’s AI Adoption Framework
+
+ GenAI Tool Risk Assessment
+ 
+Systemwide Guidance on GenAI Use
+Overview of ongoing policy development and how it affects AI use at UA.
+What UA regulations apply to the adoption and use of GenAI tools?
+UA System regulations are currently under development.
+What UA standards apply to the adoption and use of GenAI tools?
+UA System standards
+ address data privacy, legal/regulatory compliance, and enterprise security.
+Classroom and Research Guidelines
+Regulations and best practices for using AI in educational and research settings.
+What are the policies regarding classroom use of GenAI tools?
+The adoption and use of these tools are guided by individual university and academic
+ department policies.
+UAA Tools, guidelines and resources
+UAF Student Code of Conduct
+UAF Center for Teaching and Learning
+UAS Generative AI Guidance
+What are the policies regarding research use of GenAI tools?
+The adoption and use of these tools are guided by individual university and department
+ policies, currently under development.
+Compliance and Risk Management
+Overview of legal considerations (FERPA, HIPAA, etc.) and risk management protocols.
+What is UA’s approach to adopting AI tools?
+UA is using a distributed risk-based approach to evaluating the adoption of AI tools.
+ Systemwide vetting focuses on data privacy, compliance, and enterprise security risks
+ with respect to the type and sensitivity of data. Issues surrounding pedagogy and
+ appropriate use within an educational or research context are addressed at the individual
+ university level based upon each institution’s unique operating context.
+Requests to adopt AI-based software tools should be submitted through the existing
+ software procurement process managed by 
+UA OIT Security Operations
+.
+ Adopters of unmanaged AI applications or services will be required to comply with
+ UA’s Generative AI Security Standard 
+and to complete a Generative AI Risk Awareness and Acknowledgement Form 
+.
+How does UA evaluate proposed AI solutions?
+ AI software is evaluated based upon a standard set of evaluation criteria designed
+ to address data privacy, compliance, and enterprise security concerns with respect
+ to data classification risk:
+Which AI models does the tool leverage (vendor and third-party)?
+What tools are available to access the underlying models?
+Is user-input data used to train the underlying models?
+Does the vendor use input data for non-model training purposes other than that required
+ to maintain and support the service?
+Is user-deleted data retained by the vendor?
+Does the vendor store interaction data outside of the U.S.?
+Is user-input data encrypted? If so, who controls the encryption keys?
+Is data isolated to ensure segregation of customer data?
+Does the vendor utilize third-party LLMs or other services that have access to user-input
+ data?
+Is it possible for IT administrators or end-users to identify or control which third-party
+ models are being used for a given activity or session?
+Does the tool notify the user and other affected parties if data is being recorded
+ or otherwise input indirectly (e.g. screenshots, chat messages, document scanning,
+ etc.)?
+Does the vendor’s Privacy Policy or Terms of Service give them rights to the user’s
+ or institution’s data?
+Does the vendor provide any additional privacy and data protection assurances for
+ Education customers using AI services beyond the standard Terms of Service and Privacy
+ Policy?
+Does the tool integrate with back-end services such as applications and cloud storage
+ (e.g. Google Drive, Microsoft OneDrive, email, chat, etc.)?
+Can AI features be controlled individually?
+Does the University have group level access control over the vendors tools and services?
+ If yes, can this be linked to directory/access control systems such as Microsoft Active
+ Directory?
+Is the tool compliant with the following: FERPA?; HIPAA?; GLBA?; GDPR?; CJIS?; COPPA?;
+ FedRAMP?; Subject to Export Control restrictions?; DoD/DFARS (CUI)?; DoD 5200.01?
+What tools have been approved for use by UA employees?
+UA has reviewed the following
+ AI tools
+ for use based on relative risk with respect to data classification.
+Last Updated: 03/11/2025
+The 
+University of Alaska
+ is an Equal Opportunity/Equal Access Employer and Educational Institution. The University is committed to a 
+policy of non-discrimination
+ against individuals on the basis of any legally protected status.
+
+ UA is committed to providing accessible websites. Learn more about UA's 
+notice of web accessibility
+.
+This site is maintained by OIT.
+
+ For questions or comments regarding this page, contact 
+helpdesk@alaska.edu
+ | 
+ ⓒ UA

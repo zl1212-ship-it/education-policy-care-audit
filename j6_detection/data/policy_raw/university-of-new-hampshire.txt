@@ -1,0 +1,652 @@
+### PRIMARY https://www.unh.edu/teaching-learning-resource-hub/delivery/generative-artificial-intelligence
+Generative Artificial Intelligence | Teaching & Learning Resource Hub
+
+ Skip to main content
+ 
+University of New Hampshire
+Search
+ 
+Menu
+ 
+Search UNH.edu
+Search Teaching & Learning Resource Hub
+Search UNH.edu
+Search
+Search
+Commonly Searched Items:
+Academic Calendar
+Visit
+Tuition
+Registrar
+Teaching & Learning Resource Hub
+Design
+Course Design
+Learning Environment
+Learning Resources
+Student Academic Success
+Teaching Modality
+Delivery
+Active Learning
+Generative Artificial Intelligence
+Authentic Learning
+Collaborative Learning
+Fundamentals of Online Instruction
+Large Enrollment Classes
+Studio and Performance
+STEM Courses and Online Labs
+Teaching and Learning Library
+The Student Cognition Toolbox (SCT)
+Assessment
+Academic Honesty
+Formative Assessment and Feedback
+Grading
+Mid-Course Assessment Process (MAP)
+Student Experiences of Learning (SEL) Survey
+Summative Assessment
+Technology
+Cloud Storage and Sharing
+Presentation Tools
+Student Response Systems
+Video Creation and Hosting
+Virtual Whiteboard
+Web Conferencing
+Website Creation 
+myCourses (Canvas) 
+Support
+Resource Search
+Resource Index
+Calendar
+Delivery
+Generative Artificial Intelligence
+In This Section
+Delivery
+Active Learning
+Generative Artificial Intelligence
+Authentic Learning
+Collaborative Learning
+Fundamentals of Online Instruction
+Large Enrollment Classes
+Studio and Performance
+STEM Courses and Online Labs
+Teaching and Learning Library
+The Student Cognition Toolbox (SCT)
+
+ Generative Artificial Intelligence
+
+2025-26 Programming 
+Creating Efficiencies in Teaching using Artificial Intelligence
+ (click here to register)
+ is a professional development workshop series focused on how AI can support more efficient and effective teaching practices. Participants will read and discuss current articles on using AI to develop efficiencies in instructional planning, content creation, assessment, feedback, and communication. This virtual series emphasizes practical strategies to help save time while maintaining strong pedagogical foundations. 
+Descriptions, dates, and times of virtual events:
+Friday, March 6, 12:00-1:00PM
+Trends in AI and Education.
+ After reading the Technology and Policy sections of the 2025 Teaching and learning Educause Horizon Report, we will consider how some of these identified trends impact your own classrooms. Participants will also examine the Artificial Intelligence Assessment Scale (AIAS) (Mike Perkins, Leon Furze, Jasper Roe, Jason MacVaugh, 2024) as a potential framework to follow when considering AI use policies in courses.
+Access the EDUCAUSE Horizon Report
+ (
+NOTE: On the webpage, there are two videos that summarize “Trends” (11:38) and “Key Technologies and Practices” (06:48))
+Access the AIAS research article
+Friday, March 27, 12:00-1:00PM
+How AI can enhance how learning works.
+ Starting with a discussion of Chapter 6 of the “How Learning Works: 8 Research-based Principles for Smart Teaching” (Marsha Lovett, 2023), we will discuss the practice of giving feedback to enhance learning. Integrating AI use, we will discuss ways that technology can help design assessments to assist with developing Canvas quizzes.
+Access the book
+Friday, April 10, 12:00-1:00PM
+Use AI to create and develop multimedia content.
+ Based on Chapter 6 from the book "Multimedia in the College Classroom" (Heidi Skurat  Harris, Michael Greer, 2024), we will discuss AI driven tools and platforms to create multimedia teaching materials to enhance student learning.
+Access the book
+Friday, May 1, 12:00-1:00PM
+Explore AI tools to teach effectively.
+ The last session of this series will feature a hands-on learning lab with a focus on AI tools and strategies that can make teaching efforts more efficient, without compromising student learning.
+Generative AI in Research
+ – A faculty panel workshop (click here to register)
+Join us for an engaging workshop featuring a panel of UNH researchers who will share how they use generative AI tools in their scholarly work. Panelists will discuss practical applications across the research lifecycle and will highlight real-world examples, benefits and limitations, and ethical considerations about integrating AI into research practice. Designed for researchers at all stages, this workshop will offer concrete insights, spark discussion, and provide an opportunity to exchange perspectives on the evolving role of generative AI in research. Tuesday March 24, 3:40pm – 5:00pm 
+10-hour Course Enrollment for Teaching with AI
+We are excited to offer a course on Teaching with AI to a small group of UNH faculty.
+ This online, asynchronous course was produced by Auburn University for instructors across universities. For more details, see 
+https://biggio.auburn.edu/programs/professional-development-programs/teaching-with-ai-auburn
+.
+This course will be available to complete at any time between: 
+August 20, 2025 – August 29, 2026
+. You can express your interest by emailing us with details about when you hope to complete the course during this time (
+unh.e3@unh.edu
+). There are a limited number of seats that have been purchased (unique licenses for individuals participating in the course).
+This course will take 9-10 hours to complete. This estimate is based on experiences from UNH instructors and staff piloting the course in June 2025. 
+If you choose to participate in this faculty development opportunity, you are committing to all of the following:
+   Complete a (UNH) pre-course survey with 3-4 questions
+Complete the 9-10 hours of asynchronous course time
+Attend 1+ synchronous UNH workshop with other UNH faculty in AY 25-26 (described above)
+Complete a (UNH) post-course survey with 3-4 questions
+Share course materials and a brief description of how you modified course materials after completing the course (
+e.g,
+syllabus, assignment, rubric).
+There will also be optional post-course debrief discussions with other UNH instructors who completed the course. 
+Privacy Considerations: 
+Please note that in the course, you will be asked to submit posts with your name for badging (optional). 
+Explore AI in Teaching & Learning Workshops
+Workshop: Getting Started with AI 
+Wednesday September 10, 12:00pm - 1:00pm
+Description: 
+This workshop is designed to support participants in basic AI literacy skills. Participants will gain foundational knowledge of key AI concepts and terminology, explore commonly used large language models (LLMs), and learn about AI tools available at UNH, including Microsoft Copilot. The session will also cover UNH’s AI-related policies and recommended practices, offer strategies for communicating these policies to students, and provide hands-on experience in crafting effective AI prompts in real-time.
+Recording of Getting Started with AI Workshop
+Getting Started with AI Workshop Slides
+Handouts: 
+USNH AI Recommended Practices
+      Prompt Engineering Basics
+Workshop: Teaching Without AI
+September 24, 12:00pm - 1:00pm
+Description: Concerned about the impact of AI on academic integrity and learning? This workshop equips faculty with practical strategies to recognize how students may use AI tools to complete coursework, understand UNH’s AI policies, and communicate clear expectations around AI use. Participants will explore assignment and activity design approaches that help discourage impermissible AI use while maintaining academic rigor and student engagement. Participants are encouraged to bring an example of a course assignment or activity to the session. 
+Please bring your laptop to the session. 
+ Recording of Teaching without AI Workshop
+ Teaching Without AI Workshop Slides
+Handouts:
+ AI Resilient Assignments & Activities
+Academic Honesty and AI Policy Summary
+TurnItIn AI Misuse Rubric Guide.pdf
+Track Changes in MS Word and Google docs
+A.I. Faculty info materials from Connors Writing Center
+DeepThought AI for Researchers: What, Why, How, & When
+Thursday, September 25, 2025. 11:10am - 12:30pm virtual event 
+Generative Artificial Intelligence (AI) chatbots are increasingly being integrated into academic and professional environments, offering new opportunities for research, teaching, and scholarly communication. USNH has developed DeepThought AI, a platform that leverages multiple Large Language Models (LLMs) and a USNH knowledge base. The system runs on an onsite high-performance computing cluster, ensuring all data remains securely within the network. This session will provide an overview of DeepThought, explore various use cases for research, discuss current limitations and ethical considerations for research and scholarship, and offer a live demonstration of the platform.
+Presentation Recording and Slides
+Resources: 
+The Ethics of Using Artificial Intelligence in Scientific Research: New Guidance Needed for a New Tool (2024)
+Best Practices for Using AI When Writing Scientific Manuscripts (2023)
+Bookclub - AI in Teaching 
+(click here to register)
+Tuesdays Oct 7, Oct 21, Nov 4  -  12:00pm - 1:00pm 
+USNH instructors and teaching assistants welcomed.
+The Teaching and Learning Book Club is a 3-session series in which participants read “
+Teaching with AI: A Practical Guide to a New Era of Human Learning
+.” Each hour-long virtual discussion will explore different themes from the book and how you might apply what you have learned in your courses.
+Please feel free to join us for any of the sessions that you are available to attend! The book is available digitally through the UNH library. 
+Building Safe and Effective AI adoption Strategies
+Wednesday 
+October 22, 2025 11:00am - 12:00pm
+Description:
+Since the release of ChatGPT in 2022, artificial intelligence (AI) is proving one of the most potentially disruptive technologies in history. The development of generative AI tools from OpenAI, Anthropic, DeepSeek, and others introduced a new era of AI development and applications. AI is a source of both fear and excitement, creating novel challenges and global races to dominate the space. In this presentation, I will outline the opportunities and concerns that people and organizations must navigate when using AI. I will discuss strategies for successfully adopting AI safely, responsibly, and productively, including the risks of not embracing AI in the new global landscape.
+Workshop: Partnering with AI 
+Wednesday October 22, 2025 12:00pm - 1:00pm
+Description
+: Ready to take the next step with AI in your classroom? In this interactive workshop, participants will explore collaborative approaches to promoting AI literacy with students, review key elements of UNH’s AI policies, and consider ethical, equity, and accessibility implications. The session will also guide faculty in identifying one assignment or activity to begin redesigning with AI integration in mind. Participants are encouraged to come prepared by considering a course they would like to focus on for this session. 
+Workshop Partnering with AI Recording
+Partnering with AI Workshop Slides
+Resources for you: 
+AI Presentation for Students
+A teachers guide with many examples 
+     Ideas for Course Assignments Using AI
+     Ideas for Class Activities Using AI
+Deep Fake Social Engineering 
+(click here to register)
+Wednesday October 29, 2025 11:00am - 12:00pm
+Description
+: Advances in artificial intelligence are making it easier than ever for attackers to create convincing fake audio and video. This presentation will explore how deepfake technology is being used in social engineering attacks, from impersonating executives to tricking employees, to manipulating voices and faces in real time. The session will include a demo showing just how realistic these fakes can be, and what organizations can do to prepare and protect themselves.
+Workshop: Innovating with AI
+Wednesday January 14, 2026 12:00pm - 1:00pm
+Target audience
+: This workshop is designed for faculty who are ready to move beyond basic AI integration and explore its full potential in teaching and learning. 
+Description
+: In this intermediate to advanced-level workshop, participants will examine the evolving opportunities and challenges of AI and the implications in higher education, identify classroom-ready tools to enhance instruction, review UNH’s AI policies and the capabilities of UNH DeepThought. This interactive session will provide space for reflection and discussion to help faculty innovate their use of AI in the classroom. Participants are encouraged to come prepared to share their strategies and experiences using AI in the classroom. 
+Innovating with AI Workshop Recording
+    Innovating with AI Workshop Slides
+Resources shared during the workshop:
+Useful AI Tools to know about
+Overview of AI Chatbots at USNH
+How to access and utilize DeepThought
+DeepThought for Research: What, Why, How and When (Workshop in Fall 2025 from UNH REEO, Julie Simpson)
+Presentation Slides
+workshop Recording
+FITSI 2025 - Essential Skills and Digital Literacies in Higher Education
+If you were unable to attend August 2025 FITSI, please check out all of the recordings and slides to the event! 
+FITSI website
+We had 6+ faculty present how they utilize AI in their classroom, we also had a session on legal, ethical, and academic guidance from General Counsel, Research Integrity Services, and the Provost office.  
+AI Basics (click here to review how AI works, AI detection, & privacy)
+AI Basics Overview
+Generally speaking, generative artificial intelligence focuses on applications that use Large Language Models (LLMs) that generate responses to prompts using large pretrained data sets (often the internet but sometimes localized datasets). Example AI tools are Claude, ChatGPT, Perplexity, Co-Pilot, and Gemini. Many AI tools that also create images in a similar process (using diffusion models that were trained on images to produce visuals from text responses).
+Source: Grammarly for Education and Higher Ed Dive's studioID survey of Higher Education leadership and Faculty, 2024
+Prediction and variability
+LLMs generate responses by predicting the most likely next word or phrase based on patterns learned from their training data. For example, if you ask an AI tool to complete the phrase “the cat in the _”, it would be statistically probable that based on the internet (should that be the LLM’s data set) the response should be “hat” as opposed to “spaceship”. LLMs generate responses probabilistically, meaning that the same question may yield slightly different answers. This variation occurs because AI does not retrieve pre-written responses. Instead, it predicts the most probable next words based on the given prompt, its training data, and system parameters (e.g., randomness (temperature)
+[1]
+ which impacts the variability of responses; prescribed response length).
+Understand what training data an LLM uses by either researching or asking the Application Programming Interface (API) tool. Most AI tools rely on pre-trained datasets. You can always ask the AI for the date in which its training data was last updated. Some AI tools will allow the occasional use of real-time access to the internet if needed. This is often limited due to safeguards against misinformation and copyright concerns. For those that use real-time information from the internet, it still uses the LLM to generate a predictive response and is not just copied from the source. Using real-time browsing allows access to the latest information but this can introduce variability and potential misinformation (by using unverified, inaccurate, or even malicious information). 
+Source: Digital Education Council Global AI Student Survey, 2024
+Unavoidable Bias
+You interact with Application Programming Interfaces (API) powered by LLMs. LLMs are trained on human generated content – so they reproduce and amplify bias based on what is/isn’t in the dataset (e.g., if the API pulls from the internet, including Reddit, the responses you get will be predictions based on the content within). Depending on the data used by an AI model for training, it will have tendencies towards cultural, political and ideological perspectives. 
+Inequities and marginalization 
+are promoted through generative AI for multiple reasons: bias in trained data (which is discriminatory, promotes misrepresentations, or is unrepresentative), and through bias among users in a society that perpetuates these issues. 
+Read more about this here.
+ In contrast, if the database is peer-reviewed journals, the predictions will be based on that content (which can be different than direct citations). These are important limitations to always be aware of. 
+Hallucinations in AI Responses
+The types of hallucinations can vary based upon the API. For example, early ChatGPT critics complained that citations often included hallucinations (i.e., made up references). Even AI tools only trained on peer-reviewed research can still produce inaccuracies. This happens because AI does not ‘look up’ facts like a search engine. Instead, it predicts responses based on learned patterns. So, if an AI cannot find a strong match in its dataset, it may generate a plausible but incorrect response, a phenomenon known as hallucinations.
+AI tools hallucinate in different ways depending on the AI tool’s design, data source, and safeguards. A model trained on general web content (e.g., Reddit) may generate conversational but unreliable claims, while a research-specific AI may hallucinate plausible but incorrect citations. Understanding an AI tool’s dataset and intended use can help you anticipate and mitigate hallucinations.
+Source: Digital Education Council Global AI Student Survey, 2024
+It is a good practice to verify the accuracy of responses pulled from AI tools. Here are some possible steps you could take:
+Steps to Verify Accuracy of an AI Response
+1. 
+Ask for sources and links: 
+In your prompts, ask for links and citations to facilitate your verification process.
+2. 
+Verify the Citation:
+ If AI cites an article, check if the quote or summary matches the original text. Does the AI-generated text provide primary sources
+[2]
+?
+3. 
+Cross Reference with Other Sources: 
+Compare AI response with another research tool. Encourage students to ask their instructors or librarians about AI-generated research.
+4. 
+Identify Logical Gaps: 
+If something seems unusual or overly generalized, ask for more information or look for corroborating evidence. 
+Detecting the use of AI
+Both humans and AI detection tools struggle to accurately identify whether work is produced entirely by the student, entirely by the AI, or collaboratively. This means that instructors may be unable to determine whether student work was created entirely by them, entirely by an AI tool, or collaboratively.
+In addition, some software that students and faculty use have AI features behind the scenes to support work quality. Spell-checkers or grammatical recommendations (e.g., software programs like those in the Microsoft suite and additional AIs within Grammarly) further blur the lines between intentionally or unintentionally using AI. Essential tools like speech-to-text software are often flagged as being created by AI by detection software – even though students are not using AI to create their work.
+Source: Digital Education Council Global AI Student Survey, 2024
+Considering inaccuracies for false positives and negatives in AI detection software (including Turnitin), they should be used with caution and never the sole source of evidence for plagiarism.
+In fact, some institutions have disabled AI detection due to reliability concerns and advise faculty against using AI detection tools like Turnitin's AI-writing detectors. Notable examples include:
+Vanderbilt University
+: After extensive evaluation, Vanderbilt decided to disable Turnitin's AI detection tool, citing concerns about its reliability and the risk of falsely accusing students of academic misconduct.
+University of Texas at Austin
+:
+ The university opted out of using Turnitin's AI detection feature, expressing doubts about its accuracy and the potential for incorrect accusations.
+St. Joseph's University
+: At the beginning of the fall semester in 2023, St. Joseph's University removed the AI detection feature from Turnitin. This decision was influenced by concerns regarding the reliability of the tool and its potential to produce false positives.
+Currently, AI detectors (like Turnitin’s AI detection tool) struggle with reliably delineating between human-written text vs. AI-generated. Furthermore, AI detection tools cannot reliably determine whether a student used AI for brainstorming, editing, or writing entire sections. As AI-assisted writing tools become more common (e.g., Grammarly, Microsoft Copilot), distinguishing between acceptable and unacceptable AI use will require clear academic policies rather than just detection software. 
+This article discusses the accuracy rates of Gen AI detection tools.
+ Note that the mean accuracy rate to properly label content that was AI generated across tools was only 40% and for Turnitin was 61%.  Any additional manipulation of the content to evade detection further reduces the accuracy rate (Turnitin accuracy decreased to 8%). There were also high false positive rates across AI detection tools (human generated text was falsely labeled as AI generated).  Fortunately, in this study, Turnitin did not produce false detections. 
+Please also note that Turnitin has changed its stance that false positive rates are less than 1% to now state that they are 4% at the sentence level.
+The Department of Education Office of Civil Rights: 
+Avoiding the Discriminatory Use of Artificial Intelligence
+helpfully described (November 2024) scenarios where AI could be problematic, including false accusations of AI use by users of AI detection software.
+Source: Grammarly for Education and Higher Ed Dive's studioID survey, 2024
+Privacy of your prompts and shared documents with an AI  
+When using AI tools, it is essential to always think about the content you share in a prompt or uploaded files. Avoid including sensitive, confidential, or personally identifying information. Not only do some AI systems not securely store their data, but they may use the content of prompts to train models.
+If you have any privacy concerns about the content of your prompt and/or documents you are sharing with an AI tool, determine how that tool retains data, whether it uses your responses to train future models and whether it shares the data with third parties. Some AI tools explicitly state they do not train on user inputs, and some have “opt-out” features as a user’s setting.
+When engaging AI tools to support UNH work, it is essential to only use USNH approved AI tools with strict data protections. See 
+USNH Resources
+and Guidelines
+ section below for more details.
+Source: Digital Education Council Global AI Student Survey, 2024
+Additional Ethical Considerations 
+There are many serious ethical considerations for general AI. They include privacy issues, plagiarism, misuse and deepfake, bias and misrepresentation, inequities and marginalization, and high energy usage and pollution concerns.
+Plagiarism: 
+Many LLMs (but not all) are trained on datasets that scrape the internet. This means that the LLMs include all available data from broad sources, regardless of copyright status or usage permissions.  Anything scraped, including materials people have not intentionally posted or intended to share have trained the model. Therefore, when you submit your prompt to the AI tool, it responds with an amalgamation of content produced by others without considering permissions. Using content produced by others without their permission and without proper attribution (citation) constitutes plagiarism. Furthermore, when you use many AI tools (but not all), your prompts may continue to provide data to retrain the model regardless of your intent. Therefore, intellectual property infringement is a legitimate ethical concern when using AI tools.
+Misuse:
+ People can use AI tools to create scientific articles that are highly convincing but inauthentic. 
+Read about the potential to create AI generated medical research articles here.
+ In addition, 
+deepfake
+ is the creation of fake images, videos or audio seeking to imitate someone. 
+Read more about deepfake here.
+ You can also read about 
+strategies to identify deepfake images here.
+Sustainability (environmental costs)
+: AI tools are computationally intensive; queries use more electricity than standard web searches, and this will increase global energy use. In addition, the data centers produce electronic waste (like mercury and lead), use rare minerals (which are mined un-sustainably), and waste a large amount of water (which is globally scarce). You and/or your students may reasonably object to the 
+environmental cost of utilizing these resources which you can read about in more detail here.
+[1]
+ AI tools each have parameters set to tell the predictions how creative they want its responses to be. This is often referred to as an AI’s temperature where a tool with a low temperature will pick the most common response and a high temperature allows for more randomness, making response more diverse or creative (where multiple ideas are acceptable).
+[2]
+ A primary source is a reliable source because it has direct experience, account, or record of that which is being researched (e.g., news articles, law cases, patents, government documents). This is counter to secondary sources which provide an interpretation or synthesis of primary sources (e.g., political analyses, editorials, biography). 
+USNH Resources and Guidance
+Review guidance for 
+Using Artificial Intelligence in a University Setting
+Review the 
+USNH Artificial Intelligence Standard
+Review the 
+Syllabus Guidance from the Office of the Provost Website
+see page 13 within the Fall 2024 linked documents for 
+2.6.1 Artificial Intelligence
+AI use in the classroom 
+Examples for faculty use of AI in teaching
+Example prompts for faculty to consider in their various roles
+USNH currently has two tools that include data protections:
+Copilot 
+is recommended for faculty, staff, and students. There is a free version and a Pro version of Copilot. 
+The free version is available to all USNH employees and students
+. 
+You may access this here,
+ and you will be prompted to login to your USNH account. When you login, you will notice that Copilot has conveniently saved your recent chats for you to access. Your data will leave the USNH network, but it is not monitored, shared or provided to third parties. 
+***The Pro version also provides integration with Microsoft word, excel and outlook, as well as PowerBI reports. However, Pro currently costs $30/month. 
+You can request licensing here.
+DeepThought AI is
+ an excellent choice if you have sensitive data, a high volume of queries, or require integration with other applications. USNH has developed DeepThought AI, a platform that leverages multiple Large Language Models (LLMs) and a USNH knowledge base. The system runs on an onsite high-performance computing cluster, ensuring all data remains securely within the network. Chatbots in this platform are highly customizable.
+ You can find out more about using DeepThought AI here.
+Did You Know? Guide to Using AI in Research
+Since widespread generative artificial intelligence writing tools such as Chat GPT arrived, the research enterprise has been assessing their use with a variety of responses. The UNH Responsible Conduct of Research and Scholarly Activity (RCR) Committee has published a 
+Simple Guide to Using Generative Artificial Intelligence Writing Tools in Research and Scholarship at UNH 
+to help researchers understand the fundamental issues with these technologies regarding research integrity.
+The Connors Writing Center provides two resources
+:
+Writing and AI
+Statement on AI Usage
+AI Detection Software: 
+In addition, here is a resource on
+ AI detection Software Best Practices 
+developed by Teaching and Learning Technologies.
+Pedagogy Resources from Other Institutions
+Overview of Pedagogical Considerations for AI in Higher Education:
+Recording of 2025 FITSI Keynote Speaker Chris Dede on Lifelong Learning in the Age of AI
+Recording of 2024 FITSI Keynote Speaker José Antonio Bowen on Teaching and Thinking with A.I.
+10 best Practices for AI Assignments in Higher Ed
+Revised Blooms Taxonomy that includes generative AI created by Oregon State University
+AI policies and Syllabi:
+AI assessment scale for courses (syllabi and assignments)
+Resources and AI policies in your course
+ created at Stanford University (includes  syllabus sample language)
+AI Prompts and Activities for Courses:
+Artificial Intelligence Literacy Student Learning Outcome Examples 
+AI pedagogy Project (metaLab at Harvard) includes AI activities & implementation details
+NCFDD generated prompts for various higher education purposes (including teaching prompts)
+University of Central Florida:
+ open source book with AI activity prompts
+(which you could also implement in Copilot)
+AI Pedagogy Project metaLAB at Harvard
+ Engaging assignments designed to spark informed conversation about the risks, benefits, and potential impacts of AI tools. Sourced from educators around the world.
+​​​AAC&U Free Student Resource
+A Student Guide to Navigating College in the Artificial Intelligence Era 
+For expanded resources complementing the above guide, you can 
+visit this site
+Spring 2025 Programming on Generative AI (recordings and resources)
+Book Club: Teaching with AI
+:
+The Teaching and Learning Book Club is a 3-session series in which participants read “
+Teaching with AI: A Practical Guide to a New Era of Human Learning
+.” Each hour-long discussion will explore different themes from the book and how you might apply what you have learned in your courses.
+ Wednesdays Feb 12, Feb 26, March 12, 11:00am - 12:00pm, (virtual). 
+Please feel free to join us for any of the sessions that you are available to attend!
+AI Basics for Instructors
+: 
+This session will discuss important details about AI for the classroom setting including AI literacy (e.g., how generative AI works; data and information privacy; unavoidable biases).  
+Thursday, March 6
+th
+ 11:00 am – 12:00 pm (hybrid)
+You may review the slides for this presentation here.
+Integrating AI Intentionally and Realistically in Small Bites
+:
+This session will review simple options for embedding AI into course activities. UNH faculty will share specific examples of their experiences developing and implementing AI activities in their courses. 
+Thursday,
+March 13
+th
+ 11:00 am – 12:00 pm (hybrid)
+You may watch Lisa Owen's portion of the session here,
+ where she describes her use of AI in her Occupational Therapy classes.
+Continuing community discussions around AI
+:
+Many efforts are underway to raise awareness, understanding, and effective use of AI within the UNH classroom. This will be an opportunity to provide some updates to one another and to be a place for the community to share with one another what’s working and what is still challenging. This is an E3 think tank, proving an opportunity for open discussion among participants. 
+Tuesday April 8
+th
+ at 11:00am – 12:00pm (hybrid)
+Academic Honesty and AI Policy: Transparency, Consistency and Student Conversations
+:
+This session will discuss being transparent and consistent in your approach to academic honesty in your syllabus and throughout the semester. In addition, we will talk about fruitful discussions with your students around AI policies and academic honesty in general. 
+Wednesday,
+April 9
+th
+ at 2:00pm – 3:00pm (hybrid)
+You may watch the video here
+ and you may access a 
+summary document here.
+Repository of Assorted AI Articles
+Ai chabots are already biasing research - we must establish guidelines for their use now
+  - Spetember 2025
+"Context Engineering" gaining popularity over "Prompt Engineering"
+ - June 2025
+AI Is Flipping the Classroom: Faculty Roles in a Changing Higher Education Landscape
+ - June 2025
+Student Engagement and AI: Research Overview and Findings
+ - May 2025
+The effect of ChatGPT on students' learning performance, learning perception, and higher-order thinking: insights from a meta-analysis
+- May 6, 2025 (nature)
+A New Muse: How Guided AI Use Impacts Creativity in Online Creative Writing Courses
+ - April 2025
+How Stanford Teaches AI-Powered Creativity in Just 13 Minutes
+ㅣJeremy Utley - April 2025
+Educators failed students with social media. We can do better with AI
+ - March 13, 2025
+AI Integration Blueprint: Transforming Higher Education for the Age of Intelligence
+ - February 11, 2025
+Teaching Tip: Navigating AI in the Classroom
+ | 
+Inside Higher Ed
+ - February 6, 2024
+Embracing Artificial Intelligence in the Classroom | Faculty Focus
+ - December 6, 2023
+Artificial Intelligence: The Rise of ChatGPT and Its Implications | Faculty Focus
+ - August 25, 2023
+AI Eroding AI? A New Era for Artificial Intelligence and Academic Integrity | Faculty Focus
+ - July 19, 2023
+Level Up Higher Education Assessments with ChatGPT | Faculty Focus
+ - May 3, 2023
+Article - Turnitin - AI Detection (Fa... (unh.edu)
+ - April 18, 2023
+Episode 57: Friend or Foe? 
+Faculty Focus Live Podcast | Faculty Focus
+ - April 13, 2023
+How to cite ChatGPT (apa.org)
+ - April 7, 2023
+Will ChatGPT Change How Professors Assess Learning? (chronicle.com)
+ - April 5, 2023
+Write Free or Die Vol. 9, Issue 2
+ - March 30, 2023
+Resources (click + for details)
+expand all
+Articles
+Older Articles
+WIRED (Retrieved March 28, 2023): "How WIRED Will Use Generative AI Tools" by WIRED 
+https://www.wired.com/about/generative-ai-policy/
+Faculty Focus (February 15, 2023): "How Well Would ChatGPT Do in My Course? I Talked to It to Find Out" by Nuria Lopez 
+https://www.facultyfocus.com/articles/effective-classroom-management/how-well-would-chatgpt-do-in-my-course-i-talked-to-it-to-find-out/?st=FFdaily%3Bsc%3DFF230215%3Butm_term%3DFF230215&mailingID=4470
+Inside Higher Ed (February 15, 2023): "In the Coming Weeks, How to Respond to Generative AI" by Ray Schroeder 
+https://www.insidehighered.com/digital-learning/blogs/online-trending-now/coming-weeks-how-respond-generative-ai
+Harvard Business Publishing Education 
+Inspiring Minds
+ (February 9, 2023): "Why All Our Classes Suddenly Became AI Classes" by Ethan Mollick and Lilach Mollick 
+https://hbsp.harvard.edu/inspiring-minds/why-all-our-classes-suddenly-became-ai-classes?cid=email%7Cmarketo%7C2023-02-14-the-faculty-lounge%7C1301208%7Cfaculty-lounge-newsletter%7Cbutton%7Cvarious%7Cfeb2023&acctID=8322159&mkt_tok=ODU1LUFUWi0yOTQAAAGJ7sbB-zKP9DR9lIYBoAy55VHsm_aiclCS6h1dcDLFJdgIAxniWozmGt9bLbNCMaDQQ-TubRhUOvpBw1H-aXNmj3yI0pCMR6SzkQDlIRR3Jw
+The Chronicle of Higher Education (February 8, 2023): "ChatGPT has Everyone Freaking Out About Cheating. It's Not the First Time" by Eva Surovell 
+https://www.chronicle.com/article/chatgpt-has-everyone-freaking-out-about-cheating-its-not-the-first-time?utm_source=Iterable&utm_medium=email&utm_campaign=campaign_6137806_nl_Daily-Briefing_date_20230209&cid=db&source=&sourceid=
+Inside Higher Ed (January 31, 2023):" Designing Assignments in the ChatGPT Era" by Susan D'Agostino 
+https://www.insidehighered.com/news/2023/01/31/chatgpt-sparks-debate-how-design-student-assignments-now#.Y9kLC1ue6qE.link
+Inside Higher Ed (January 12, 2023): "ChatGPT Advice Academics Can Use Now" by Susan D'Agostino 
+https://www.insidehighered.com/news/2023/01/12/academic-experts-offer-advice-chatgpt?utm_source=Inside+Higher+Ed&utm_campaign=3c0258a21a-WNU_COPY_01&utm_medium=email&utm_term=0_1fcbc04421-3c0258a21a-199642249&mc_cid=3c0258a21a&mc_eid=e212c1ecad
+Inside Higher Ed (January 9, 2023): "ChatGPT: A Must-See Before the Semester Begins" by Cynthia Alby 
+https://www.facultyfocus.com/articles/teaching-with-technology-articles/chatgpt-a-must-see-before-the-semester-begins/?st=FFdaily%3Bsc%3DFF230109%3Butm_term%3DFF230109&mailingID=4330
+NPR (January 9, 2023): "A College Student Wrote an App that can Tell if AI Wrote an Essay" by Emma Bowman 
+https://www.npr.org/2023/01/09/1147549845/gptzero-ai-chatgpt-edward-tian-plagiarism#:~:text=Edward%20Tian%2C%20a%2022-year,for%20unethical%20uses%20in%20acade
+Inside Higher Ed (December 23, 2022): "The Forces that are Shaping the Future of Higher Education" by Steven Mintz 
+https://www.insidehighered.com/blogs/higher-ed-gamma/forces-are-shaping-future-higher-education
+Medium (December 18, 2022): "Update Your Course Syllabus for ChatGPT" by Ryan Watkins 
+https://medium.com/@rwatkins_7167/updating-your-course-syllabus-for-chatgpt-965f4b57b003
+Inside Higher Ed (December 14, 2022): "AI Will Augment, Not Replace" by John Warner 
+https://www.insidehighered.com/blogs/just-visiting/guest-post-ai-will-augment-not-replace
+The Chronicle of Higher Education (December 13, 2022): "AI and the Future of Undergraduate Writing" by Beth McMurtrie 
+https://www.chronicle.com/article/ai-and-the-future-of-undergraduate-writing?cid=gen_sign_in
+The Guardian US (December 4, 2022): "AI bot ChatGPT stuns academics with essay-writing skills and usability" by Arwa Mahdawi 
+https://www.proquest.com/docview/2745622258/21A7AECCDFB442D6PQ/19?accountid=14612
+ [via ProQuest]
+The New York Times (April 6, 2022): "Meet DALL-E: The AI that Draws Anything at your Command" by Cade Metz 
+https://www.proquest.com/docview/2647445158/CDBD2ADB2BF44EF3PQ/10?accountid=14612
+ [via ProQuest]
+Google Docs
+Google Docs
+"ChatGPT: Understanding the new landscape and short-term solutions"
+ by Cynthia Alby (Google Docs - created December 17, 2022)
+"The nail in the coffin: How AI could be the impetus to re-imagine education"
+ by Cynthia Alby (Google Docs - created December 22, 2022)
+Other Institutions
+Other Institutions
+"Do Users Write More Insecure Code with AI Assistants?"
+Stanford University (Retrieved by 
+ArXig.org
+ December 16, 2022)
+"Artificial Intelligence Writing"
+Faculty Center, University of Central Florida (Retrieved January 23, 2023)
+Neutralize the software
+Teach ethics, integrity and career-related skills
+Lean into the software’s abilities
+"Practical Responses to ChatGPT"
+Office for Faculty Excellence, Montclair State University (Retrieved January 23, 2023)
+The Latest Technology: ChatGPT and Other Generative AI bots
+Practical Suggestions to Mitigate Non-Learning/Cheating
+ 
+ 
+ 
+ Copyright © 2026, University of New Hampshire. All rights reserved.
+
+ TTY Users: 7-1-1 or 800-735-2964 (Relay NH)
+USNH Privacy Policies  • 
+USNH Terms of Use  • 
+ADA Acknowledgment  • 
+Statement of Nondiscrimination  • 
+Jeanne Clery Act
+Contact Us
+Teaching & Learning Resource Hub
+Teaching & Learning Resource Hub
+Design
+Show
+ Design submenu
+Course Design
+Learning Environment
+Learning Resources
+Student Academic Success
+Teaching Modality
+Delivery
+Hide
+ Delivery submenu
+Active Learning
+Generative Artificial Intelligence
+Authentic Learning
+Collaborative Learning
+Fundamentals of Online Instruction
+Large Enrollment Classes
+Studio and Performance
+STEM Courses and Online Labs
+Teaching and Learning Library
+The Student Cognition Toolbox (SCT)
+Assessment
+Show
+ Assessment submenu
+Academic Honesty
+Formative Assessment and Feedback
+Grading
+Mid-Course Assessment Process (MAP)
+Student Experiences of Learning (SEL) Survey
+Summative Assessment
+Technology
+Show
+ Technology submenu
+Cloud Storage and Sharing
+Presentation Tools
+Student Response Systems
+Video Creation and Hosting
+Virtual Whiteboard
+Web Conferencing
+Website Creation 
+myCourses (Canvas) 
+Show
+ myCourses (Canvas)  submenu
+Assessment links 
+Assignments
+Discussion
+Files
+Gradebook
+Images
+Module
+Pages
+Quizzes
+Syllabus
+Video
+Web links 
+Support
+Resource Search
+Show
+ Resource Search submenu
+Resource Index
+Calendar
+Academics
+Show
+ Academics submenu
+Explore Degree Programs
+Areas of Study
+Show
+ Areas of Study submenu
+Certificate Programs
+Continuing Education
+Professional Development & Training
+Colleges & Schools
+Show
+ Colleges & Schools submenu
+Carsey School of Public Policy
+College of Engineering and Physical Sciences
+College of Health and Human Services
+College of Liberal Arts
+College of Life Sciences and Agriculture
+Show
+ College of Life Sciences and Agriculture submenu
+UNH Extension
+College of Professional Studies
+Franklin Pierce School of Law
+School of Marine Science and Ocean Engineering
+Online
+Peter T. Paul College of Business and Economics
+Experiential Learning
+Show
+ Experiential Learning submenu
+Study Abroad
+Honors Opportunities
+Outcomes & Value
+Admissions & Aid
+Show
+ Admissions & Aid submenu
+Access & Affordability
+Show
+ Access & Affordability submenu
+Financial Aid
+Apply
+Show
+ Apply submenu
+Apply Undergraduate Programs
+Apply Graduate Programs
+Apply Law Programs
+Plan a Visit
+Admitted Students
+International Students
+Parents & Family
+Life at UNH
+Show
+ Life at UNH submenu
+Explore Campuses
+Show
+ Explore Campuses submenu
+Durham Campus
+Athletics & Recreation
+Show
+ Athletics & Recreation submenu
+Campus Recreation
+Show
+ Campus Recreation submenu
+Intramural Sports
+Outdoor Recreation
+Recreational Sport Clubs
+Campus Safety
+Dining
+Show
+ Dining submenu
+Dining Options & Meal Plans
+Getting Involved
+Housing
+Health & Well-Being
+Military and Veteran Services
+Research
+Show
+ Research submenu
+Centers & Institutes
+Sustainability
+About UNH
+Show
+ About UNH submenu
+Facts & Figures
+Alumni & Friends
+Contact Us
+NH Impact
+UNH Faculty & Staff Resources
+UNH Leadership
+Wildcat athletics
+My UNH portal
+UNH Today
+Give

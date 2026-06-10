@@ -1,0 +1,571 @@
+### PRIMARY https://citl.indiana.edu/teaching-resources/academic-integrity/ai-generated-text.html
+How to Productively Address AI-Generated Text in Your Classroom : 
+ 
+ 
+ 
+ 
+ Academic Integrity: 
+ 
+ 
+ 
+ 
+ Teaching Resources: 
+ 
+ 
+ 
+ 
+ Center for Innovative Teaching & Learning: 
+ 
+ 
+ 
+ Indiana University Bloomington
+Skip to Content
+Skip to Main Navigation
+Skip to Search
+Indiana University Bloomington
+Indiana University Bloomington
+IU Bloomington
+Menu
+About
+Staff
+CITL Advisory Board
+Contact Us
+Subscribe
+Grants & Awards
+Programs
+CCTI
+New Faculty Programs
+Scholarship of Teaching and Learning
+Advisory Board
+SOTL Resources
+IUB Database
+SoTL Programming 
+Scholarly Teaching
+Campus Writing Program
+Service-Learning Program
+Develop Your CEL Class
+CEL Course Design
+CEL Experiential Learning Designation
+Community Partners
+Faculty Learning Community
+CEL Course Development Institute
+Take CEL Courses
+Partner with IU
+Community Alignment Initiative
+ACE Program
+CEL Conference
+Associate Instructor Support
+Annual AI Orientation
+Classroom Climate Module
+Graduate Teaching Apprenticeship Program
+GTAP Awardees
+Graduate Student Learning Communities
+Pedagogy Courses for Credit
+Internal and External Resources
+Diversity Statements
+Learning Communities
+Consultations
+Course Development
+Course Development Institute
+Programmatic Assessment
+Instructional Technology
+Class Observations and Feedback
+Online Course Review and Feedback
+Teaching Resources
+Generative AI
+Recommended Readings on AI
+Blog Posts on GenAI
+Integrating AI into Assignments
+Evidence-based Teaching
+Active Learning
+Frequent and Targeted Feedback 
+Spaced Practice
+Transparency in Learning and Teaching
+Faculty Spotlights
+Preparing to Teach
+Course Design
+Decoding the Disciplines
+Backward Course Design
+Online Delivery
+Developing Learning Outcomes
+Syllabus Construction
+Academic Integrity
+How to Productively Address AI-Generated Text in Your Classroom 
+Accurate Attendance & Participation with Tophat
+Turnitin
+Designing Assignments to Encourage Integrity
+Inclusive Teaching
+Supporting Student-Led Study Groups
+Student Evals of Inclusive Teaching
+Engaging Students with Mental Health Issues
+Inclusive and Equitable Syllabi
+Creating Accessible Classrooms
+Equitable Assignment Design
+Making Teaching Transparent
+Sense of Belonging
+Trauma-Informed Teaching
+Managing Difficult Classroom Discussions
+Technology to Support Equitable and Inclusive Teaching
+Teaching during a Crisis
+Supporting Religious Observances
+Assessing Student Learning
+Test Construction
+Summative and Formative Assessment
+Classroom Assessment Techniques
+Authentic Assessment
+Alternatives to Traditional Exams and Papers
+Assessment for General Education and Programmatic Review
+Rubric Creation and Use
+Instructional Technologies
+Canvas
+eTexts and Unizin Engage
+Top Hat | Student Response Systems
+PlayPosit
+Kaltura
+Web Conferencing
+Turnitin
+Third Party Services: Legal, Privacy, and Instructional Concerns
+Documenting Teaching
+Mid-Semester Evaluations
+Teaching Statements & Philosophies
+Peer Review of Teaching
+Teaching Portfolios
+Administering and Interpreting Course Evaluations
+Teaching Strategies
+Attendance Policies and Student Engagement
+Teaching in the Face of Tragedy
+Active Learning Classrooms
+Application for an Active Learning Classroom
+Reflection in Service Learning
+Discussions
+Incorporating Writing
+Team-Based Learning
+First Day Strategies
+Flipping the Class
+Holding Students Accountable
+Producing Video for Courses
+Games for Learning
+Group Work
+Quick Guides
+Events
+Partnerships
+FACET
+Mosaic Initiative
+Kelley Office of Instructional Consulting and Assessment
+Center for
+ Innovative Teaching & Learning
+Home
+About
+Staff
+CITL Advisory Board
+Contact Us
+Subscribe
+Grants & Awards
+Programs
+CCTI
+New Faculty Programs
+Scholarship of Teaching and Learning
+Campus Writing Program
+Service-Learning Program
+Associate Instructor Support
+Learning Communities
+Consultations
+Course Development
+Programmatic Assessment
+Instructional Technology
+Class Observations and Feedback
+Online Course Review and Feedback
+Teaching Resources
+Generative AI
+Evidence-based Teaching
+Faculty Spotlights
+Preparing to Teach
+Course Design
+Academic Integrity
+Inclusive Teaching
+Assessing Student Learning
+Instructional Technologies
+Documenting Teaching
+Teaching Strategies
+Quick Guides
+Events
+Partnerships
+FACET
+Mosaic Initiative
+Kelley Office of Instructional Consulting and Assessment
+Home
+Teaching Resources
+Academic Integrity
+How to Productively Address AI-Generated Text in Your Classroom 
+How to Productively Address AI-Generated Text in Your Classroom 
+How to Productively Address AI-Generated Text in Your Classroom 
+Updated 1/12/2026
+Generative AI (GenAI) continues to disrupt higher education
+, raising questions about how these ubiquitous tools are changing learning, writing, and academic integrity in our classes. While there is great potential for GenAI to advance how we teach and students learn, there is also potential that some students may misuse these GenAI tools, bypassing the work we see as vital to their intellectual and professional development, and challenging the validity of our assessments of their learning. This page is intended to provide some ideas on how we can engage with this emerging technology in productive and pedagogically sound ways.
+We will continue to update this page over time, so if you have a specific resource, insight, or teaching idea to share, please let us know. For more GenAI resources at IU, structured by what you are trying to learn/do, see our broader 
+GenAI page
+.
+What Is Generative AI?
+Generative AI tools utilize large language generator models, training artificial neural networks (algorithms designed to recognize patterns) on large datasets of texts and human conversations. One of the current models, GPT (Generative Pre-Trained Transformer) is trained for the task of conversational language modeling and is fine-tuned to generate more contextually relevant responses. A key element of this is the ability to predict what the next words and phrases are within a conversational context (similar to what Word and Google do on a smaller scale). While 
+Chat-GPT
+ is the tool that first captured our attention, other tools are available with different characteristics and strengths, like 
+Microsoft's Copilot
+, 
+Claude
+, and 
+Google's Gemini
+. As of 2026, Indiana University has licensed CoPilot, Gemini, ChatGPT Edu, and NotebookLM for use with 
+some levels of institutional data
+, so those will be the default tools discussed here. 
+These generative AI tools are the latest in a progression of tools we’ve all become familiar with—from the automatic chatbots on customer service webpages to the editing and phrase-completion tools we see in Word and Google Docs. While the text-generation capabilities of these recent tools seem a huge leap over Word’s editorial suggestions, integration of these generative technologies is likely to continue growing.
+How can you most productively address Generative AI tools?
+As with any discussion about academic integrity, we want to address the very real and important question of where you want to put your time and energy. We understand the need to ensure academic integrity in your courses, but we also want to promote approaches that can help you focus less on policing student behavior so you can get back to teaching. How can you keep learning at the core of your interactions with students, allowing you to strike a balance that doesn’t make you hate teaching or view your students as adversaries? 
+In this case, rather than focusing solely on a punitive approach of catching inappropriate uses of GenAI—which is a challenging proposition with a tool that learns and evolves—we recommend putting your time and energy into approaches that can mitigate its inappropriate use while improving student learning.
+Why might students misuse GenAI?
+There are many reasons why students may turn to online tools, including GenAI. Students are quickly discovering ways to use it for jumpstarting their thinking on a topic, explain complex concepts with familiar metaphors, summarize articles, make research more efficient, and so much more. Many of these uses are creative ways to advance their learning.
+Some students, however, may use these GenAI tools as shortcuts to complete their work for them, bypassing learning opportunities and invalidating assessments. In this case, it is important to consider why students may choose to outsource their work to an AI bot, since those reasons can help us design our assignments to actively support academic integrity. Here are several reasons students may cheat, whether via GenAI or other means:
+Poor time and workload management skills
+ can lead to pressure to complete big assignments at the last minute. This can be exacerbated by outside time pressures like work or overpacked course schedules.
+Pressure to receive good grades
+ is particularly powerful when points are condensed into a few high-stakes exams or assignments. In some curricular paths, students may feel a poor grade on one big assignment will derail their career goals.
+Lack of confidence
+ with their content knowledge or academic writing skills can drive students to use tools that they think make them sound more correct or professional.
+Emphasis on correctness
+ over authentic writing, unique voice, or student learning in prior courses can make GenAI appealing. 
+Lack of relevance or interest
+ in the topic can reduce intrinsic motivation and/or make assignments feel like busy work.
+Confusion over what "help" is acceptable
+ may be driven by seeing tools like Grammarly or Jasper being used in industry settings, or by contradictory policies in their various classes.
+This list isn't intended to excuse academic misconduct, but to explore the reasons behind it. Simply writing students off as lazy or dishonest misses valuable opportunities to structure assignments in ways that can encourage academic integrity and promote student learning and success. For a more detailed exploration of this topic, see James Lang's 
+Cheating Lessons: Learning from Academic Dishonesty
+.
+We address some ways below that you can revise specific assignments to promote academic integrity—additional structure, increased relevance, alternate assignment formats, etc.—but instructors can also help students avoid misuses of these tools by addressing broader issues. If you want students to help engage in the research process, for example, we highly recommend working with 
+IU librarians
+ to support students in that process. Or, if you are concerned about your students’ time management skills, we recommend you turn to the Student Academic Center (
+SAC
+) and their 
+time management resources page
+. We understand that instructors are not directly responsible for student academic misconduct, but it is always better to address the challenges students face through educational support than to deal with disciplinary issues later.
+How can you identify AI-generated text?
+Much of the early discussion around GenAI has been about how we can identify the text it generates. While we are trying not to make detection and punishment the focus of our efforts, here are a few things you should know.
+Text-matching isn’t very useful.
+ Many of the plagiarism detection tools we have, such as
+Turnitin
+, rely on text-matching between a submitted student assignment 
+ and the company’s database of other essays, as well as what is available online
+. That matching is not feasible with AI tools that generate novel text with each prompt, and that can be told to quote and paraphrase. 
+Available detection tools are imperfect.
+ There are several tools out there that claim to spot AI-generated text, including 
+GPT-2 Output Detector
+ and 
+GPT Zero
+, and they do seem to offer some ability to spot AI-generated language patterns. But current reports indicate widely varying degrees of detection success, including a significant number of false positives, especially with 
+text generated by non-native speakers of English
+. Further, there is a growing body of online tools designed to make AI-generated text undetectable. So, using such inconsistent (and likely defeatable) detection tools as the basis of an academic integrity strategy is problematic, and more so if they are the basis for an academic misconduct claim. 
+Note that Turnitin has released their own 
+AI detection product
+, but at the current time, IU's implementation of Turnitin does not include this new tool. Before including this tool in our suite of supported products, IU is examining its accuracy and efficacy, as well as how it handles student data. 
+Further, 
+current university guidelines
+ indicate instructors should not upload student work to any AI-detection tools, due to privacy and intellectual property concerns; we have no control over how the companies use submitted work.
+Look to your discipline.
+ One of the best ways to understand the characteristics and limitations of GenAI is to look for conversations within your disciplines that might identify the kinds of patterns or errors GenAI makes about your field. And consider entering your assignments into Copilot to see what kinds of flags or indicators of AI-generated content emerge
+.
+Know your students' writing.
+ Knowing your students' writing styles
+—
+from smaller assignments or in-class writing tasks
+—
+can help you identify when a submission seems to be different from what they usually submit. That is not proof of GenAI use, but it is a starting point to having a conversation with the student about their work. A caveat: Newer tools are improving in matching the style of a provided sample.
+How can you address AI-generated content in your syllabus and course design?
+Most instructors already include statements in their syllabi about academic integrity, so extending those practices to overtly include GenAI is an important first step.
+ Here are some suggestions:
+Focus on positive aspects of academic integrity. 
+Establishing trust and a sense of community can reduce cheating, so develop policies and practices that promote a positive learning community (see 
+Rettinger
+, 2022). In fact, some instructors have students co-create course honor codes and discussion norms, and this would be an ideal situation for such collaborative practices. Ironically, threatening or punitive language in a syllabus can break down instructor-student relationships and make cheating psychologically easier for students. This doesn’t mean you cannot lay out consequences, but lead with the reasons for ethical behavior, and avoid legalistic or adversarial tones. See our 
+Inclusive and Equitable Syllabus page
+ for more information on the benefits of positive syllabus language.
+If your course has opportunities to address ethics in the discipline, be ready to address those, too. What are the benefits of integrity in your field, and what are the implications of mis-representing their work? 
+Focus on benefits of learning.
+ Help students understand 
+why you are giving them assignments, and emphasize how reliance on GenAI can hinder their learning (although there might be ways GenAI can help that process, too). Do you talk with your students about what you want to see in their writing, and do your assignments and grading practices reflect that? Students sometime cheat because they think an assignment is simply a mechanical performance for a grade, so the more you can show the benefits for learning—personal relevance, reflection on the process and their growth, feelings of accomplishment, etc.—the less likely they are to take those shortcuts. 
+For a model for clarifying an assignment's purpose, see our 
+page on the TILT model of assignment design
+.
+If you can make career connections within your course, address how reliance on GenAI can hinder their development of writing skills that employers highly value.
+Have clear course policies about whether and how students may use AI tools in your class.
+ Have a clear statement in your syllabus about your expectations around GenAI, and be ready to discuss it frequently throughout the semester. Make sure your policies explain the 
+reasons
+ for your decisions, so students can see that the policies reinforce your learning goals for them and aren't arbitrary rules, as discussed in the CITL post “
+Articulating the ‘Why’ Behind Your AI Stance to Your Students
+.” For sample policies, see the 
+GenAI resources on Teaching.IU
+ or guidance provided by your school. For sample policies, see the 
+GenAI resources on Teaching.IU
+ or guidance provided by your school.
+If you do want to allow some uses of generative AI, be clear about how students can use it and how they shouldn't. For example, 
+Justin Hodgson
+ from IUB's English Department provides clear guidelines for an "ethics of practice" within his courses. See his guidelines in his broader 
+Ethics of Practice page
+; see also the 
+recording from his August 15, 2023 webinar
+.
+Specifically discuss Copilot and other GenAI tools.
+ In addition to discussing your course policies around GenAI, be ready to talk with students more generally about these tools—how well you see them engage with your disciplinary content, what impact they might have on how students learn in your course, and how they might impact students' future careers. Showing students you are savvy about generative AI can both be a deterrent to its use and open up opportunities for meaningful conversations with students.
+Reduce workload and focus on process to disincentivize cheating
+. A significant reason students cheat is because they feel overwhelmed, so consider if your course workload or assignment timing might be contributing to this pressure and working against your goals for student learning. Similarly, designing writing assignments that only include the one final paper can lead to procrastination and desperation, both big causes of cheating. Having students build towards that assignment in smaller chunks can reduce that procrastination anxiety, and give you more reference points about their writing style along the way.
+To foreground process and deter copy-paste misuse, consider using version history to see how a document has evolved over time. For more on this technique, see the CITL post, “
+Using Version History to See Writing Evolve
+.”  
+How can you adjust assignments to make them more AI-resistant?
+Probably the best way to guard against inappropriate use of GenAI is to redesign your assignments, both the prompts themselves and the related processes. Success in these efforts will depend on a combination of two factors: 1) increasing student motivation by making the assignments relevant and engaging, and 2) making assignments more resistant to GenAI use through some of the suggestions below. These options vary in their usefulness across contexts, but consider these ideas as starting points:
+Avoid simple fact-based questions.
+ The first step with avoiding GenAI-generated responses is to avoid prompts with specific, factual answers. Current GenAI tools
+, however, still does a pretty good job with higher-order questions (analysis, synthesis, etc.), and it can be pretty creative
+. So, aim for assignments calling for more complex cognitive skills, and then layer on some of the other techniques below. 
+Use class-specific cases and examples.
+ Tie writing prompts to unique or fictional cases or scenarios in your class, particularly if those cases build over time and draw on in-class activities or group work. Relying on in-class activities as a basis for assignments leaves GenAI without necessary information, and feeding it all that information would be time-consuming for students. 
+If you use this approach, be ready to have an alternate assignment ready for students who cannot come to class for medical or other legitimate reasons.
+Break large assignments into smaller stages.
+ Giving an assignment in one big chunk can add pressures that sometimes drive students to cheat, while breaking an assignment into smaller pieces can improve learning and writing skills while mitigating these pressures and reliance on GenAI. Consider breaking larger assignments into multiple stages, giving feedback and grades on each one, and perhaps incorporating peer feedback. This helps in multiple ways: 1) It mitigates the pressure to cheat that emerges from procrastination and feeling lost on a big, high-stakes assignment; 2) It gives you some sense of students’ writing styles along the way, especially if in-class writing is added to the mix; and 3) It leads to better learning and writing in general.
+Ask for meta- or reflective statements.
+ Having students reflect on their writing process is always a good practice—asking them what their process was like, what parts of the project was most interesting or meaningful to them, what challenges they experienced, or where they'd go next with their learning. The approach can also boost personal engagement with assignments and discourage use of GenAI. If you are worried about students asking GenAI to produce these reflections, short conversations with students can be very illuminating. And if you allow use of AI, this is an opportunity for students to reflect on how they used it and how it fit into the rest of their process.
+Mix in some in-class writing. 
+This can be anywhere in the writing process—early idea-development stages, syntheses of in-class activities that will be incorporated into the project, or reflections on their work and process. Aside from being a valuable approach to teaching writing in your discipline, in-class writing can provide a baseline of a student’s style that can be used to identify writing that isn’t the student’s original work. Those of us who have dealt with plagiarism before know that those students rarely know the submitted work well, nor are they able to talk about their writing process. But try to use in-class writing for learning opportunities, not just a policing tool.
+ For successful examples of in-class writing assignments designed by IUB instructors, visit “
+Writing In Class to Reduce Students’ Stress and Overreliance on AI
+” and “
+Consider a Scaffolded In-Class Writing Assignment with Canvas and LockDown Browser
+."
+Ask for personal connections and examples.
+ Sure, students can ask GenAI to do this—there are numerous examples of AI generating passable "personal" college admission essays—but adding a personal element like this might reduce the likelihood that students will turn to GenAI, especially if you have also built personal relationships with them. In general, anonymity makes cheating easier, both functionally and psychologically.
+Use sources GenAI cannot access.
+ Since GenAI tools have overcome their original limitation of not being able to access the live web, consider finding other ways to take advantage its limited reach. Could you utilize pre-print scholarship, unpublished poems, guest speakers, recorded interviews with experts, or items behind paywalls? We've seen assignments that GenAI seems to address well until they include phrases like, "Using evidence from the video we viewed in class..." or "Based upon the case described during the guest lecture on February 21st ...." 
+A student could feasibly feed this information into the GenAI, but relying on inaccessible sources can be useful, especially when layered with other strategies.
+Require students to verify all sources, paraphrases, and quotations
+. Often, you will need students to draw from published sources. If they are over-relying on AI, they might submit work with fabricated quotations and hallucinated sources, made up by a chatbot. It’s not feasible for you to check every source. Instead, have students do so. You can, for example, require that they hyperlink every source so you can simply click to see it. Or have them compile PDFs of their sources and highlight all the passages they quoted or paraphrased. For more ideas, read “
+Teaching Students to Be Source Detectives
+.”
+Use images in prompts.
+ GenAI is getting better at taking visual input instead of just text—for example, Copilot can identify an adrenaline molecule—but you can explore whether using images in your prompts makes it harder to use GenAI. 
+Be aware that using images might be a problem for students with vision impairments, so be ready to provide an alternative assignment for them.
+Utilize alternative assignments.
+ Consider other ways that students could demonstrate their knowledge and mastery of learning outcomes, including “performative tasks.” This is a useful practice in general, aligning well with precepts of 
+Universal Design for Learning
+, but it also avoids GenAI altogether, or at least relegates it to a supporting role. Could students develop a 
+video
+, podcast, or drawing to demonstrate their knowledge? Or engage in an in-class debate or performance? Remember that GenAI can be very creative in text, so asking for alternate 
+outputs or performances 
+is the key here.
+Run your own assignments through GenAI.
+ Curious how well GenAI answers your assignments? Try running them through yourself to see both how well it does and what markers you see of its work. If it provides solid answers, you might want to keep working on the assignment.
+How can you talk to students about potential misuse of generative AI?
+Long before generative AI, instructors have had to address potential student plagiarism or other forms of academic misconduct on assignments. And while this sometimes had a paper trail that included clear matches to online or print materials, more often the instructor would have more general evidence that the writing did not sound like the student's voice, was significantly different than their prior work, or didn't match their sophistication with language or the content. Talking to students about such suspicions is a delicate task, where outright accusations can lead to confrontational situations rather than educational ones. So, how can instructors firmly uphold academic integrity while keeping student learning and growth at the heart of the discussion? Please see the video below for suggestions from Dr. Miranda Rodak, the Director of IU's 
+Mosaic Initiative
+ and Senior Visiting Lecturer in IUB's Kelley School of Business.
+How can you embrace GenAI tools for improving student learning?
+Most of our comments so far have focused on mitigating or disrupting the use of GenAI tools. But since these tools will only proliferate and will be a part of our students’ educational and professional careers, consider ways of actively addressing and embracing them as part of your work with students.
+*
+ Here are some suggestions:
+Have students analyze GenAI text.
+ Have students use GenAI to generate a response to a key question in your class or field, and then have them analyze it for accuracy and quality. Their ability to spot flaws in the AI’s output can be a valuable learning experience and indicator of their knowledge, often forcing them to understand subtleties in a concept or argument, propose better solutions to a problem, or find better sources or citations.
+Use GenAI for generating early drafts or starting points.
+ GenAI can be used for the invention stage of writing, helping students get started. Using Track Changes in Microsoft Word can be used to show how they have revised and improved that text.
+Use GenAI as a heuristic
+. One of the interesting aspects of ChatGPT is the ability to continually refine a question. Consider having students utilize GenAI as a heuristic tool, helping them learn how to ask iterative questions in order to refine a response. Sometimes knowing how to frame a question can demonstrate understanding of complex task, and "prompt engineering" skills are becoming valuable for those wanting to explore issues with GenAI.
+Engage students in understanding how GenAI can shape their future work.
+ Having discussions about the evolving power of GenAI within your discipline can be a valuable career tool. What are the types of things GenAI tools can do for professionals in your field, and what are the potential pitfalls of using or relying on such tools? Matching such discussions with hands-on practice with the tools can be a powerful professional development practice.
+For an example of one IUB instructor’s approach, see “
+Building Critical AI Literacy through Writing Assignments: Dr. Abigail Rawleigh’s Method
+.”
+* Note: Remember that specific AI programs are available to students and faculty for free. While instructors may prefer other GenAI tools, note 
+the concerns the university raises
+ about requiring students to use a tool it has not vetted for security and privacy issues.
+While none of these approaches will completely prevent students from using GenAI in unauthorized ways in your classes, we hope that these suggestions improve learning for your students while promoting academic integrity. We recognize that there will always be instances of academic misconduct that you need to address—be aware of your department’s policies and procedures there—but focusing on ways to improve learning and disincentivizing cheating is better in the long run for both your students and yourself.
+As always, you can 
+reach out to the CITL
+ for assistance with course and assignment design, and we welcome any sample assignments or activities you are willing to share.
+ We are also available to talk with departments about uses of GenAI in teaching and learning.
+Additional Resources
+Alby, Cynthia. “
+ChatGPT: A Must-See Before the Semester Begins
+.” 
+Faculty Focus
+. January 9, 2023.
+ChatGPT and AI in Teaching and Learning: Opportunities and Challenges
+. Webinar recording from January 18, 2023 faculty panel.
+ChatGPT, Generative AI, & Syllabi An Ethics of Practice
+. 
+Webinar recording from August 15, 2023.
+Digital Gardener Initiative AI Series
+.
+Developing AI Course Policies and Addressing Academic Integrity Violations
+. Webinar recording from the August 11 presentation in the IUB College of Arts and Sciences.
+Lang, James. 
+Cheating Lessons: Learning from Academic Dishonesty
+. 2013. (IU instructors and staff can also access a 
+video of Lang’s 2020 SoTL talk on academic integrity
+.)
+McMurtrie, Beth. “
+AI and the Future of Academic Writing
+.” 
+Chronicle of Higher Education
+. December 13, 2022. [
+IU off-campus proxy link here
+]
+Novotney, Amy. “
+Beat the Cheat
+.” 
+APA Monitor on Psychology
+ 42.6. June, 2011. 
+Rettinger, David. “
+Show Students You Care About Their Learning—They May Cheat Less
+.” 
+The Faculty Lounge
+ (Harvard Business Publishing). May 3, 2022.
+Generative AI
+Evidence-based Teaching
+Faculty Spotlights
+Preparing to Teach
+Course Design
+Academic Integrity
+How to Productively Address AI-Generated Text in Your Classroom 
+Accurate Attendance & Participation with Tophat
+Turnitin
+Designing Assignments to Encourage Integrity
+Inclusive Teaching
+Assessing Student Learning
+Instructional Technologies
+Documenting Teaching
+Teaching Strategies
+Quick Guides
+Center for Innovative Teaching & Learning social media channels
+YouTube
+Useful Indiana University Information
+Expand section 
+Resources
+Campus Policies
+Knowledge Base
+University Information Technology Services
+Office of the Vice Provost for Undergraduate Education
+Office of the Vice Provost for Faculty and Academic Affairs
+Faculty Academy on Excellence in Teaching
+Expand section 
+Contact
+Wells Library, 2nd Floor, East Tower
+
+ 1320 East Tenth Street
+
+ Bloomington, IN 47405
+Phone: 
+812-855-9023
+Center for Innovative Teaching and Learning
+Accessibility
+ | 
+ 
+College Scorecard
+ | 
+ 
+Open to All
+ | 
+ 
+Privacy Notice
+ | 
+Copyright
+ © 2026 
+ 
+ 
+The Trustees of 
+ 
+ 
+Indiana University
+
+
+### SECONDARY https://teaching.iu.edu/resources/generative-ai/policies.html
+Policies and Guidance: Generative AI: Teaching Resources: Teaching.IU: Indiana University
+Skip to Content
+Skip to Main Navigation
+Skip to Search
+Indiana University
+Indiana University
+IU
+Menu
+Teaching Resources
+Professional Development
+Teaching Showcase
+Tool Finder
+Help
+Teaching.IU
+Home
+Teaching Resources
+Professional Development
+Teaching Showcase
+Tool Finder
+Help
+Home
+Teaching Resources
+Generative AI
+Policies and Guidance
+Policies and Guidance
+IU does not currently have any specific policies around the use of generative AI, other than policies related to data security and privacy. 
+Microsoft Copilot (formerly Bing Chat Enterprise)
+ is IU's preferred generative AI service for faculty and staff. It can handle data up to University-Internal level. When using public tools, usage of data is more restrictive, even when the data are anonymized. See 
+Acceptable uses of generative AI services at IU.
+ Understanding the way data is classified can be complicated, and IU provides a 
+Data Classification Matrix
+ to help faculty make the most appropriate decisions with using data.
+Students are expected to adhere to the Code of 
+Student Rights, Responsibilities, and Conduct
+, which addresses 
+Academic Misconduct.
+ However, it may be useful for instructors to address generative AI more specifically, such as in their syllabi.
+The IU Bloomington 
+FACET Leadership Institute team
+, which is working on a project related to GenAI, has produced the following sample syllabus statements that you may consider as starting templates.
+Least restrictive syllabus policy example
+The use of generative AI (GAI) is 
+permitted
+ in this course for all assignments and assessments with no penalty. However, students should note that all large language models (basis of GAI) still have a large tendency to make up incorrect facts or fake citations, produce inaccurate outputs, or generate highly offensive products. You will be responsible for any inaccurate, biased, offensive, or otherwise unethical content you submit regardless of whether it originally comes from you or a GAI platform.
+Any use of such tools must be appropriately acknowledged and cited. Use of GAI without acknowledgement will result in a penalty. The disclosure of use of GAI for spelling and grammar checkers is not necessary, but all other uses of GAI require proper acknowledgment and citations.
+APA Citation Example: 
+OpenAI. (2024). ChatGPT (Mar 14 version) [Large language model]. https://chat.openai.com/chat
+The use of GAI platforms without disclosure will be considered plagiarism and/or cheating and will be reported to the Dean of Students and handled according to university policies. Sanctions for academic misconduct in this course may include a failing grade on the assignment, a reduction in your final course grade, or a failing grade in the course, among other possibilities. If you have any questions about the acceptable use of GAI tools, please consult with the instructor before submitting your work.
+With the understanding of the limitations and necessary acknowledgments, we encourage the use of GAI as a means for you to submit higher quality assignments in less time. Learning how to use Gen AI is an emerging skill, and it would be to your advantage to learn how to use it well. GAI can be a valuable tool for augmenting human decision, but it is not a replacement for critical thinking.
+ Most restrictive syllabus policy example
+In this course, you are expected to do your own work and properly cite any sources you use. The use of generative AI (GAI) tools, such as chatbots, text generators, paraphrasers, summarizers, or solvers, is strictly prohibited for any part of your assignments. Students must complete all work independently and without GAI-generated content. The use of GAI
+platforms will be considered plagiarism and/or cheating and will be reported to the Dean of Students and handled according to university policies.
+Sanctions for academic misconduct in this course may include a failing grade on the assignment, a reduction in your final course grade, or a failing grade in the course, among other possibilities.
+If you have any questions about the acceptable use of GAI tools, please consult with the instructor before submitting your work.
+Of course, you should always check with your department, school, or campus to see if there are specific GenAI statements or policies that should be included. 
+No matter what policy you use, 
+IU Bloomington English Associate Professor Justin Hodgson has the following suggestions for how you may want to talk about GenAI in your classes:
+"Include a permission and acknowledgement disclaimer. 'AI generators/programs such as ChatGPT, Grammarly, QuillBot, Spinbot, Dall-E, etc. should not be used for any work for this class without explicit permission of the instructor and appropriate attribution.' -- from IUB College of Arts & Sciences, Office of Undergraduate Academic Affairs 
+"Repeat policies frequently. Students have multiple classes, each which may have some variation in generative AI policy. To help students understand your expectations, be sure to: 
+
+Include the policy on your syllabus 
+Cover the policy in class 
+Repeat the policy regularly, and 
+Remind students of the policy for each relevant assignment by including it, in some form, on assignment handouts/guides and Canvas pages 
+"Focus on an ethics of practice. The simple truth is that students need to learn how to use these tools and to do so responsibly. Banning them outright is not only likely a losing battle, but may do students a disservice as they enter a working world where the use of these technologies are not only allowed but encouraged. There are some clear cases where banning these tools make sense (e.g., language acquisition courses), but leaning into the possibilities and helping students learn to ethically and responsibly use these technologies may pay greater dividends in the long run. For an example, review 
+Generative AI – Ethics of Practice
+." 
+Uses in Teaching and Learning
+Overview
+Accessibility
+ | 
+ 
+College Scorecard
+ | 
+ 
+Open to All
+ | 
+ 
+Privacy Notice
+ | 
+Copyright
+ © 2026 
+ 
+The Trustees of 
+ 
+Indiana University

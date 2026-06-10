@@ -1,0 +1,541 @@
+### PRIMARY https://teaching.unl.edu/resources/ai/academic-integrity/
+AI and Academic Integrity | Center for Transformative Teaching | Nebraska
+Skip to main content
+University
+of
+Nebraska–Lincoln
+Log In
+Log In
+Log In
+Close
+Log in to this site as Ryan Dee
+View Profile
+Log out
+Microsoft 365
+ -
+Storage and Applications
+Outlook
+Email
+OneDrive
+Personal Cloud Storage
+SharePoint
+Shared Cloud Storage
+Teams
+Collaboration Service
+Canvas
+ -
+Learning Management System (
+LMS
+)
+Log into Canvas with your University of 
+Nebraska–Lincoln
+ or TrueYou credentials.
+MyRed
+Student Information System
+TrueYou
+Identity Management
+Bridge
+On-Demand Learning
+Exam Commons Reservations
+Digital Learning Center (DLC)
+Firefly
+Employee Portal
+Handshake
+Career Network
+NvolveU
+Student Organizations
+Salesforce
+Student Success Hub
+Wepa
+Student Printing
+YuJa
+Academic Video
+Zoom
+Video Conferencing
+More services are available in the 
+Service Catalog
+Search
+Search Form
+Log In
+Close
+ Search
+Search
+Submit
+Center for Transformative Teaching
+Menu
+Search
+Search
+Log In
+Log In
+Menu
+Learning Communities
+Opportunities
+OER Seed Grants
+CTT Grants
+Digital Accessibility Research
+Student Experience Project
+Programs
+FIRST
+Title II & Digital Accessibility Programming
+TOLC: Teaching Online Learning Community
+STAR: Successful Teaching with Affordable Resources
+ATI for CEHS
+Workshops Spring 2026
+Events & Workshops
+Workshops
+Symposia
+Accessibility Workshop Series
+Resources
+Title II Accessibility and UDL
+A.I. and Teaching
+Teaching@UNL
+Large-Enrollment Courses
+Inclusive Teaching
+Interactive Lecture
+Canvas Commons: Modules for Instructors
+Timely Tools for Student Success
+A Guide to Learning Online
+A Guide for Effective Teamwork
+News & Articles
+Teacher Stories
+Quick Tips
+Contact Us
+About Us
+Advisory Board
+Staff Directory
+Menu
+Menu
+Visit
+University of Nebraska–Lincoln
+Apply
+to
+University of Nebraska–Lincoln
+Give
+to
+University of Nebraska–Lincoln
+Nebraska
+Center for Transformative Teaching
+Resources
+
+ AI and Academic Integrity
+ 
+AI and Academic Integrity
+Content
+The impact of AI on any specific course depends on the course’s level, assessment types, and topics covered. For example, academic dishonesty through AI is more likely in a level one-hundred writing course than a graduate level mathematics course. Even the graduate course likely has some susceptibility to AI depending on the assessments used and the level of AI understanding that students have. 
+Our goal in bringing up this topic is not to add to what may be an already stressful situation. Instead, this resource is designed to provide ideas for informed techniques, including discussion of their associated strengths and weaknesses, to assist in developing courses in the age of AI. These suggestions can assist you in developing an AI-resistant course without introducing additional educational barriers that some, or many, students may not be able to overcome. The terminology of “AI-Resistant” versus “AI-Proof” is intentional. Creating a course that is devoid of any possibility of AI interference is increasingly unobtainable. Using “AI-Proof” might also give a false sense of security when incorporating practices to assist in preventing AI involvement. 
+University of Nebraska-Lincoln Student Code of Conduct 
+The University of Nebraska-Lincoln’s 
+Student Code of Conduct
+ has been amended to the following text. Previously, it made reference to using work from “someone else”, but now it says “someone else or an entity.” This is intended to ensure that using artificial intelligence (or any other technology) and claiming the output as one’s own work, is an infringement unless the student is given explicit permission from the instructor to use those technologies. 
+Cheating
+1.b. Using materials or resources during an exam or for an assignment that are not authorized by the instructor.
+1.i. Taking all or part of work that someone else or an entity prepared and submitting it as one’s own.
+Dishonesty, Falsification, and Fabrication
+2.d. Engaging in plagiarism by presenting the words or ideas of another person or entity as one’s own.
+If an instructor imposes a grade penalty due to unauthorized use of AI, that instructor should fill out the 
+Academic Misconduct Form
+. This form states that, “If the sanction you impose might affect the student’s final grade, you 
+must
+ submit a report.” 
+AI Checkers and Detectors 
+AI Checkers are AI that attempt to evaluate compositions to check for the likelihood of AI written work. For a number of reasons, the University of Nebraska currently does not provide access to AI checking software and does not recommend instructors use AI checkers when determining whether students may have used AI. Early AI checkers were presented as near infallible with supposed failure rates of less than one percent. However, 
+independent research has found that they are significantly less accurate than originally presented
+, producing both false positives and false negatives at a decently high rate.  AI checkers can be tricked by students that understand how they work and there are many other challenges that arise when evaluating work for AI written content.  For more information read 
+The Challenge of AI Checkers
+ written by Senior Instructional Designer Nate Pindell. 
+Identifying Courses and Assessments that are Vulnerable to AI and Steps to Make Them More Resistant 
+Assessment vulnerability depends on a variety of factors but can be boiled down to three: 
+level of the course,  
+type of assessment,  
+and how the assessment is taken.  
+Separate from that, but worth including, is the skill a student has at using AI as well as the types of AI to which they have access. For example, an introduction to composition English course with take-home components will have more difficulty with AI intervention than a quantum mechanics graduate physics course with all in-class assessment. While this is an exaggerated comparison, the purpose is to demonstrate that some things are inherently more AI-resistant while others are susceptible to student AI use. The subsequent sections discuss a few challenges, tactics to overcome them, and drawbacks to consider when implementing. 
+Course Level 
+Courses that are 100/200 or equivalent are often the most susceptible to AI intervention since they tend to be focused on learning and remembering core information for future courses to build upon, which is a skill that most AI tools do very well. It is essential for students to learn these skills rather than offloading the cognitive tasks to AI, so the best approach is to make the course more AI resistant by carefully considering what type of assessments are given. 
+Alternatively, higher level courses are more resistant as these often demand students apply their knowledge in hyper specific and advanced scenarios. While AI can assist with this (especially if the user knows how to work with AI prompt engineering) the efficacy of AI intervention will be reduced relative to lower-level course work.  
+There are conversations at the national level about whether the appropriate response to the easy availability of AI is to make courses more advanced and difficult to account for the use of AI as a collaborator. When considering this for your own course, it is important to recognize that students have differing levels of AI opportunities (free and paid). Also, many students avoid using AI entirely because they believe it is cheating, which would put them at a disadvantage compared to other students. At present, the consensus seems to be that until AI availability and competency is more homogenous for all students, the difficulty should remain the same unless you are explicitly instructing students in AI use. The conversation itself, however, does point to how higher education may evolve. 
+Assessment Type and Implementation 
+One of the primary areas where AI resistance can be incorporated is the type of assessment and the mode in which it is carried out. To prevent AI use, some instructors have moved to have most, if not all, of their exams and quizzes carried out in a proctored testing center. While this approach significantly mitigates or even eliminates, at least for most students, AI influence in assessments, they often have substantial resource implications and may impact students in unfair ways. For example: 
+Students will require time beyond scheduled class and work hours. If utilizing the 
+Digital Learning Center (DLC)
+, scheduling constraints may arise due to assignment deadlines, material coverage timelines, holidays, and other logistical factors. These issues are exacerbated when many instructors choose this strategy.  
+Students that are remote that need proctors may have to pay for such services, increasing the costs of the course. 
+The increased application of these techniques influences teacher evaluations. Communicating the rationale for their use and maintaining open communication with students will mitigate this impact. 
+Consequently, while testing centers and proctoring represent effective security measures, we recommend a thorough exploration of alternative approaches prior to their implementation. 
+Examples of Assessment Types that are Susceptible to AI  
+As stated previously, many commonly used assessments are vulnerable to student AI use. This doesn't necessarily mean that those assignments no longer have a place.  
+For example, in high enrollment courses where instructors have limited to no teaching assistant support, it may not be feasible to move away from auto-graded quizzes and exams. This is why it is important to consider not just the assignment itself, but also the parameters around how the assessment is delivered. 
+Before we explore the weaknesses and ways to strengthen them, it is important to note that there are a variety of assessments that exist that may be substituted into your courses. Looking into these to determine the best option for your course could be time-consuming. Consider contacting 
+your instructional designer
+ to discuss and explore options for your course. 
+Multiple Choice  
+Many AI tools can answer a wide range of multiple choice questions. They can be typed directly into AI tools or screenshots can be taken and given for the AI to recognize. There are even some browser extensions that will answer questions directly in Canvas so students don’t need to move between browser tabs. Large enrollment courses often lean heavily on multiple choice assessments and may not be able to avoid these complications.  
+Here are a few ideas that may assist in strengthening multiple-choice questions. 
+Avoid simple fact/definition questions. Instead, make use of  this 
+AI Bloom’s Taxonomy
+ from Oregon State University. Using the Bloom’s hierarchy, it lists commonly used assessment techniques with annotation highlighting which skills are distinctively human vs those easily supplemented by AI. This tool is also helpful when developing learning objectives and outcomes for your course.  
+Use information that is highly specific in either content or area. Consider making direct reference to information you present in class. 
+Incorporate graphs/media (as long as they are accessible) as this can slow and hinder AI perception. However, you should not replace text with images (for example, changing all question text to images) since this makes the exam impossible if the images don’t load.  
+Increase the difficulty of wrong answers. Consider creating ‘choose the best answer’ where distractors are partially correct rather than completely wrong.  
+This is a great area where AI can excel in assisting you in creating/augmenting your assessments. Instructors have presented that having AI assist in writing wrong answers on multiple choice questions make them more AI resistant. 
+AI can also be used to help you create large question banks
+.   
+Have students take exams on paper. This prevents use of AI, although it makes grading more challenging for instructors. For auto-graded questions, you can use Akindi to speed up the grading process. Note that you may have some students with accommodations requiring electronic testing, so you should still be prepared to create an online version of the exam for those students.  
+Information on 
+Akindi
+Information on 
+Gradescope
+Short Answer / Discussion Posts 
+ Short writing assignments, including discussion posts, are highly susceptible to AI use since many common tools like ChatGPT are designed for just that: writing. Many of the strategies used in multiple choice also apply here. 
+Avoid simple and generic questions like ‘write a summary of this content’.  
+Have your students write in class a few times early in the term to develop a baseline for their language and writing style. 
+Ask them to include more specific information about the content area in their responses. You may even ask them to cite specific page numbers or in-class experiences. 
+Give novel situations and have the student apply their knowledge to answer. 
+Use graphs and images where appropriate. When doing this, ensure they are made accessible by adding alt text and descriptions. 
+Have multi-part questions where students have to write their answer and then defend their decision in a separate question. 
+Consider alternative assessment types. 
+Long Form Essay 
+Long form essays are as susceptible to AI interference as short answers are, and in many ways may be more vulnerable. With short answer questions, the main concern is that a student will copy and paste the entire output that they direct an AI to generate and submit it as their own. Once instructors start to look for it, this type of output can be more easily spotted since many AI tools speak with a particular voice. With longer papers and essays, while this type of cheating can still happen, a more challenging problem to detect is students using AI to assist in specific areas and paragraphs while mixing in their own writing and voice since they are aware that instructors can tell the difference.  
+It is important to note that often, students do this without intending to cheat. They may be thinking of AI as an editor and sounding board while adding their own voice to ensure the writing conveys their own ideas. They may even be in courses with other instructors where using AI tools in this way is encouraged rather than prohibited. This is why having 
+clear policies
+ and intentional discussions about AI use with your students is critical.  
+Consider all the same tactics as applied to the short-answer response. 
+Create assessments that behave as checkpoints. 
+For the initial draft, tell your students to write without editing. Often students turn to AI when they don’t have a clear idea of what they want to write about, so this “writing from the hip” style exercise helps them develop their own voice, point of view, perhap reveal areas where more research or study is needed. 
+The next assessment is to edit and resubmit that work. You can have your students edit each other’s work and provide feedback if enrollment is high. Then, have students submit the feedback as well as the edited version. 
+Repeat this process adding additional objectives as needed. 
+Other Types of Assessments 
+The examples above are just a short list of the most “AI susceptible” forms of assessment. Assessments that have been in use prior to AI interventions since January 2023 should be evaluated and modified if possible. 
+Assistance in Developing Course Material 
+If you would like help making your assessments as AI-resistant as possible while being aligned with course objectives, please reach out to 
+instructional designers designated for your college
+. 
+
+ Contact us
+ 
+https://
+www.unl.edu
+Address
+
+ 
+ 305 Brace
+
+ 
+ P.O. Box 
+ 
+ 880109 
+Lincoln
+,
+
+ 
+ 
+NE
+68588-0109
+US
+Phone
+402-472-4681
+Email
+ctt@unl.edu
+Related links
+Campus Links
+Directory
+Employment
+Events
+Libraries
+Maps
+News
+Office of the Chancellor
+Report an Incident
+University
+of
+Nebraska–Lincoln
+Established 1869 · Copyright 2026
+UNL web framework and quality assurance provided by the 
+Web Developer Network
+ · 
+QA Test
+ · 
+Accessibility Statement
+ · 
+Institutional Equity and Compliance
+ · 
+Notice of Nondiscrimination
+ · 
+Privacy Policy
+ · 
+Safety at Nebraska
+ · 
+Student Information Disclosures
+
+
+### SECONDARY https://teaching.unl.edu/ai/teaching-and-generative-artificial-intelligence/
+Teaching and Generative Artificial Intelligence | Center for Transformative Teaching | Nebraska
+Skip to main content
+University
+of
+Nebraska–Lincoln
+Log In
+Log In
+Log In
+Close
+Log in to this site as Ryan Dee
+View Profile
+Log out
+Microsoft 365
+ -
+Storage and Applications
+Outlook
+Email
+OneDrive
+Personal Cloud Storage
+SharePoint
+Shared Cloud Storage
+Teams
+Collaboration Service
+Canvas
+ -
+Learning Management System (
+LMS
+)
+Log into Canvas with your University of 
+Nebraska–Lincoln
+ or TrueYou credentials.
+MyRed
+Student Information System
+TrueYou
+Identity Management
+Bridge
+On-Demand Learning
+Exam Commons Reservations
+Digital Learning Center (DLC)
+Firefly
+Employee Portal
+Handshake
+Career Network
+NvolveU
+Student Organizations
+Salesforce
+Student Success Hub
+Wepa
+Student Printing
+YuJa
+Academic Video
+Zoom
+Video Conferencing
+More services are available in the 
+Service Catalog
+Search
+Search Form
+Log In
+Close
+ Search
+Search
+Submit
+Center for Transformative Teaching
+Menu
+Search
+Search
+Log In
+Log In
+Menu
+Learning Communities
+Opportunities
+OER Seed Grants
+CTT Grants
+Digital Accessibility Research
+Student Experience Project
+Programs
+FIRST
+Title II & Digital Accessibility Programming
+TOLC: Teaching Online Learning Community
+STAR: Successful Teaching with Affordable Resources
+ATI for CEHS
+Workshops Spring 2026
+Events & Workshops
+Workshops
+Symposia
+Accessibility Workshop Series
+Resources
+Title II Accessibility and UDL
+A.I. and Teaching
+Teaching@UNL
+Large-Enrollment Courses
+Inclusive Teaching
+Interactive Lecture
+Canvas Commons: Modules for Instructors
+Timely Tools for Student Success
+A Guide to Learning Online
+A Guide for Effective Teamwork
+News & Articles
+Teacher Stories
+Quick Tips
+Contact Us
+About Us
+Advisory Board
+Staff Directory
+Menu
+Menu
+Visit
+University of Nebraska–Lincoln
+Apply
+to
+University of Nebraska–Lincoln
+Give
+to
+University of Nebraska–Lincoln
+Nebraska
+Center for Transformative Teaching
+
+ A.I. and Teaching
+ 
+Teaching and Generative Artificial Intelligence
+This CTT resource introduces faculty to A.I. and provides information about common questions around policies and adapting instruction. 
+We encourage faculty at UNL to contact us at 
+ctt@unl.edu
+ if they would like to explore the capabilities of ChatGPT4 or other AIs without creating accounts
+.
+Academic integrity section added to resource
+The impact of AI on any specific course depends on the course’s level, assessment types, and topics covered. Learn more about this in the 
+Academic Integrity section
+ of this resource.
+Long-form prompts for learning from Mollick & Mollick
+Ethan Mollick and Lilach Mollick have created a 
+collection of prompts
+ that can aid instructors and students. These are extensive prompts worth reading to better understand the capacity of AI to perform more sophisticated work, as well as the knowledge and expertise needed to create such a prompt.
+AI and Information Literacy Canvas module available to UNL instructors
+A new module, “
+AI and Information Literacy
+” is now available in the Canvas Commons. This module is written for students to help them learn about AI tools such as ChatGPT, Bing AI, and DALL-E and strategies for evaluating and citing the outputs created by them. Insert this module into your course and use it as-is or modify it to suit your teaching and learning goals and course policies. Content includes short videos, reading, completing short quizzes, and activities.
+Once completed, students will be able to evaluate how to use AI-based tools responsibly in their academic work. Learning outcomes include:
+Explain generally how AI-based tools work as well as their benefits and risks
+Recognize when AI gives inaccurate or misleading answers, and fact-check AI output
+Cite AI-generated work
+Begin exploring creative ways to use these tools
+This CC-licensed module was adapted by the UNL Libraries and the CTT and originally created by the University of Maryland.
+To add the module to your course, search the Commons for “AI and information literacy” and select “Import/Download”.
+Questions?
+Contact Melissa Gomis (
+melissa.gomis@unl.edu
+) or an 
+instructional designer assigned to your college
+.
+UNO Launches Prompt Book for Faculty and Staff
+These 
+prompts for teaching and learning
+ were created by Cassie Mallette and made available to other University of Nebraska campuses and the public through UNO's Canvas LMS.
+ AI Prompt Resources 
+More Useful Things
+ is the companion website to Ethan Mollick's blog and some of the most useful material on this site are 
+the tested prompts developed by Mollick and Mollick for use in teaching and learning
+.  
+Use 
+AI to develop simulations, games, and role playing
+ for students from the author of Teaching with AI, José Antonio Bowen. 
+Explore AI assignments
+ curated by the AI Pedagogy Project by metaLAB (at) Harvard
+Or 
+contact us
+ if you'd like assistance with an AI project for teaching and learning that you're developing. 
+Learning Communites
+ AI Learning Communities 
+Join us this semester for either or both of our AI learning communities: 
+AI Skill Sharing
+ and the new 
+AI Resistant Pedagogy
+. For more details and dates along with the link to sign-up, 
+click over to the workshops page.
+Resource
+ Example Course Policies around AI 
+There are three types of policies that may be used at the course or assignment level:
+Unrestricted use
+Use under specific circumstances
+Use prohibited entirely
+See examples
+Higher Ed Impact
+What is Generative AI?
+Course Policies 
+Academic Integrity
+Assessment Practices
+Classroom Implications
+AI Exchange
+Explore Generative AI
+FAQ on AI
+Content
+Developing Course Policies
+Three types of policies and several examples
+Miron et al. (2023). 
+Supporting Academic Integrity: Ethical Uses of Artificial Intelligence in Higher Education Information Sheet (PDF)
+. This resource provides guidance on how to communicate assessment expectations to students and what aspects should be considered when "cognitive offloading tools" are employed or available.
+Specific Examples of using A.I. as part of teaching
+Hendriksen, C. (2023). 
+ChatGPT and Bing: A practical guide for social science and management studies
+. Google Docs.
+Nirantzi et al. (2023) 
+100+ Creative Ideas to use AI in Education
+. Creative Commons. Each slide in this presentation gives an example of how instructors or students are using AI to teach and learn.
+Alby, C. (n.d)
+ChatGPT: Understanding the new landscape and short-term solutions.
+Google Docs. This resource uses "problem/suggestions" format that may help address many initial questions.
+D’Agostino, S. (2023, January 12). 
+ChatGPT Advice Academics Can Use Now
+. Inside Higher Ed.
+A more extensive article in which 11 academics propose ideas for “harnessing the potential and averting the risks” of AI technology in the classroom.
+Mills, A. (n.d.). 
+AI Text Generators: Sources to Stimulate Discussion among Teachers
+. Google Docs.
+A large collection of resources and articles sorted into several categories among which are “Sample Academic Integrity Statements about Text Generators” and “Student Perspectives and Marketing to Students” along with “Understanding AI Text Generators/Large Language Models.”
+
+ Contact us
+ 
+https://
+www.unl.edu
+Address
+
+ 
+ 305 Brace
+
+ 
+ P.O. Box 
+ 
+ 880109 
+Lincoln
+,
+
+ 
+ 
+NE
+68588-0109
+US
+Phone
+402-472-4681
+Email
+ctt@unl.edu
+Related links
+Campus Links
+Directory
+Employment
+Events
+Libraries
+Maps
+News
+Office of the Chancellor
+Report an Incident
+University
+of
+Nebraska–Lincoln
+Established 1869 · Copyright 2026
+UNL web framework and quality assurance provided by the 
+Web Developer Network
+ · 
+QA Test
+ · 
+Accessibility Statement
+ · 
+Institutional Equity and Compliance
+ · 
+Notice of Nondiscrimination
+ · 
+Privacy Policy
+ · 
+Safety at Nebraska
+ · 
+Student Information Disclosures

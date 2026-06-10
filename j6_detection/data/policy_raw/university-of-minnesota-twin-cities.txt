@@ -1,0 +1,340 @@
+### PRIMARY https://teachingsupport.umn.edu/what-faculty-should-know-about-genai-detectors
+What Faculty Should Know About GenAI Detectors | Teaching Support
+
+ Skip to main content
+ 
+Go to the University of Minnesota Twin Cities home page
+One Stop
+MyU
+: For Students, Faculty, and Staff
+Search
+Teaching Support
+Menu
+Accessible and Inclusive Teaching
+Accessible and Inclusive Teaching Overview
+Fundamentals Training
+Inclusive and Accessible Pedagogy
+Accessible Course Content
+Learning Accommodations
+Diversity, Equity, & Justice
+Mental Health and Wellbeing
+Academic Integrity
+Academic Integrity Overview
+Cheating & Academic Integrity
+Why Students Say They Cheat
+Communicating with Learners
+GenAI and Academic Integrity
+Teaching with Gen AI
+Prepare to Teach
+Prepare to teach overview
+Assess and Evaluate Student Progress
+Create and Share Course Content
+Regular and Substantive Interaction (RSI)
+Syllabus Design
+Set up Your Canvas Course Site
+Communicate With Your Students
+News, Events & Programs
+News, Events & Programs Overview
+Newsletters
+Emerging Technologies Faculty Fellows Program
+Events
+Canvas Course Site Hall of Fame Awards (2026)
+Breadcrumb
+Home
+What Faculty Should Know About GenAI Detectors
+Facing growing concerns about GenAI use, some instructors are turning to AI detection software such as GPTZero in an attempt to identify AI-generated student work. However, these tools have significant risks related to reliability, bias, and student privacy. 
+Given these limitations, the 
+University of Minnesota does not centrally support or recommend the use of any GenAI detection tool
+. The most effective way to determine the role Generative AI played in a student’s work is to have a conversation about their process for completing the activity. 
+This resource outlines the key challenges associated with GenAI detectors and provides considerations for instructors navigating issues related to GenAI and academic integrity.
+The Trouble with Trusting AI Detectors 
+While GenAI detection tools promise to offer a quick way to verify student authorship, they are far from transparent or definitive in their findings. Most detection tools operate by analyzing linguistic patterns and statistical anomalies in a textual sample and assigning a probability percentage score that indicates the extent to which the piece was AI-generated (Tiwari et al., 2024). 
+These scores are far from conclusive and can not be used to consistently detect AI-generated writing, which means that students can be falsely accused of misconduct.
+Try It Yourself 
+Anecdotally, University faculty have found inaccurate results when submitting their own writing to GenAI detection tools. In many cases, a portion of their text has been flagged as AI-generated, even when entirely original or predates the emergence of GenAI! 
+Curious? Try submitting a piece of your writing and see how it is evaluated. Would you trust the results in your classroom?  
+Challenges with GenAI Detection Tools 
+Accuracy and Reliability 
+GenAI detection tools (
+CopyLeaks
+, 
+Originality.ai
+, and 
+GPTZero
+) cannot provide proof of AI authorship. These tools can merely assign an estimate of the likelihood that a text was created with GenAI based on patterns identified by its training and algorithmic model. Moreover, numerous scholarly studies have found that GenAI detectors are unable to reliably distinguish between AI and human-generated texts (Ardito, 2024; Chaka, 2024). 
+False Positives
+Even tools that claim a low 1-2% false positive rate acknowledge the potential for error. Independent research, however, has found higher false positive rates, particularly for human-generated text (Elkhatat et al., 2023; Gegg-Harrison & Quarterman, 2024). 
+Any false positive result can have serious consequences for accused students, including: 
+Undue stress and anxiety
+Disruption to financial aid, academic progress, or graduation
+Damage to instructor-student trust 
+Bias Against Marginalized Students 
+Studies have shown that GenAI detection tools are more likely to flag writing by: 
+non-native English writers
+neurodivergent students 
+These groups may produce writing that deviates from the linguistic patterns GenAI detection tools associate with human-generated writing, resulting in disproportionate false accusations (Chaka, 2024; Liang et al., 2023, Gegg-Harrison & Quarterman, 2024). 
+Vulnerability to Adversarial Techniques
+AI-generated text can easily be modified to avoid detection. Common “adversarial techniques” include prompting GenAI to:
+Add spelling or grammatical errors
+Vary sentence length
+Increase or decrease complexity
+Write as a non-native English speaker
+Change the tone, audience, mood, style, or skill level of a text 
+These methods deceive detectors, making detection easy to circumvent (Malik & Amjad, 2025; Perkins, 2024). 
+Data Privacy Concerns
+As the University of Minnesota does not license a GenAI detection tool, use of such tools requires instructors to enter student coursework into unvetted 3rd-party tools. Faculty are not authorised to share student work with external companies without explicit written consent from the student. 
+Feeding your students’ work into these models also raises serious data privacy concerns: 
+FERPA
+ Violations: 
+Student work is protected as part of their academic record, and entering it into these tools violates student privacy.
+Intellectual Property:
+ Students retain rights to their original work; uploading it without permission infringes on those rights
+Data Use: 
+Many tools do not disclose how uploaded data is stored or may be used to train future AI models.   
+Recommendations for Instructors 
+In light of the challenges described above, the 
+use of AI detection tools is not recommended
+. Instead, consider alternative approaches: 
+Foster a culture of ethical use. 
+Include a strong 
+statement
+ about GenAI use in your syllabus, discuss GenAI and academic integrity with your students, and instruct students on how to acknowledge their use of GenAI appropriately.
+Use grading schemas that reward originality, accuracy, analysis, and voice. 
+Focus on building skills that are harder to replicate with GenAI.
+Explain why
+ it is important for students to develop their own ideas and be able to express them in their own words.
+Incorporate process-based assessments. 
+Ask students to include drafts, outlines, reflections, and in-class writing in their final products. 
+See 
+GenAI-Resilient Assignments
+ for additional ideas.
+References 
+Ardito, C. G. (2024). 
+Generative AI detection in higher education assessments
+. 
+New Directions for Teaching and Learning
+, 1-18. doi.org/10.1002/tl.20624
+Chaka, C. (2024). 
+Accuracy pecking order – How 30 AI detectors stack up in detecting generative artificial intelligence content in university English L1 and English L2 student essays
+. 
+Journal of Applied Learning & Teaching
+, 
+7
+(1). doi.org/10.37074/jalt.2024.7.1.33
+Elkhatat, A. M., Elsaid, K., & Saeed, A. (2023). 
+Evaluating the efficacy of AI content detection tools in differentiating between human and AI-generated text
+. 
+International Journal for Educational Integrity
+, 19. doi.org/10.1007/s40979-023-00140-5
+Gegg-Harrison, W., & Quarterman, C. (2024). 
+AI detection’s high false positive rates and the psychological and material impacts on students
+. In S. Mahmud (Ed.), 
+Advances in educational marketing, administration, and leadership
+, 199–219. IGI Global. doi.org/10.4018/979-8-3693-0240-8.ch011
+Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J. (2023). 
+GPT detectors are biased against non-native English writers
+. 
+Patterns
+,
+ 4
+(7), 100779. doi.org/10.1016/j.patter.2023.100779
+Malik, M. A., & Amjad, A. I. (2025). 
+AI vs AI: How effective are Turnitin, ZeroGPT, GPTZero, and Writer AI in detecting text generated by ChatGPT, Perplexity, and Gemini?
+Journal of Applied Learning and Teaching
+, 
+8
+(1), 91-101. doi.org/10.37074/jalt.2025.8.1.9 
+Perkins, M., Roe, J., Vu, B. H., Postma, D., Hickerson, D., McGaughran, J., & Khuat, H. Q. (2024). 
+Simple techniques to bypass GenAI text detectors: Implications for inclusive education
+. 
+International Journal of Educational Technology in Higher Education
+, 
+21
+(1), 53. doi.org/10.1186/s41239-024-00487-w
+Tiwari, S., Sharma, R., Sikarwar, R. S., Dubey, G. P., Bajpai, N., & Singhatiya, S. (2024). 
+Detecting AI generated content: A study of methods and applications
+. 
+Proceedings of International Conference on Communication and Computational Technologies
+, 161–176. doi.org/10.1007/978-981-97-7423-4_13
+Teaching Support
+A collaborative network of support connecting those who teach to resources across the UofM system
+Website Feedback
+Contact Us
+Get Help
+For Students, Faculty, and Staff
+One Stop
+MyU
+: For Students, Faculty, and Staff
+© 
+2026
+ Regents of the 
+University of Minnesota
+. All rights reserved. The University of Minnesota is an equal opportunity educator and employer. 
+Privacy Statement
+Report Web Accessibility Issues
+Accessible and Inclusive Teaching
+Accessible and Inclusive Teaching Overview
+Fundamentals Training
+Inclusive and Accessible Pedagogy
+Accessible Course Content
+Learning Accommodations
+Diversity, Equity, & Justice
+Mental Health and Wellbeing
+Academic Integrity
+Academic Integrity Overview
+Cheating & Academic Integrity
+Why Students Say They Cheat
+Communicating with Learners
+GenAI and Academic Integrity
+Teaching with Gen AI
+Prepare to Teach
+Prepare to teach overview
+Assess and Evaluate Student Progress
+Create and Share Course Content
+Regular and Substantive Interaction (RSI)
+Syllabus Design
+Set up Your Canvas Course Site
+Communicate With Your Students
+News, Events & Programs
+News, Events & Programs Overview
+Newsletters
+Emerging Technologies Faculty Fellows Program
+2024-25 Capstone Conversations
+Current Program Details
+Meet Faculty Fellows
+Molly Ball
+Events
+Canvas Course Site Hall of Fame Awards (2026)
+How Top Instructors Design
+Connect
+Engage
+Engage Image List
+Organize
+
+
+### SECONDARY https://teachingsupport.umn.edu/academic-integrity/genai-and-academic-integrity
+GenAI and Academic Integrity | Teaching Support
+
+ Skip to main content
+ 
+Go to the University of Minnesota Twin Cities home page
+One Stop
+MyU
+: For Students, Faculty, and Staff
+Search
+Teaching Support
+Menu
+Accessible and Inclusive Teaching
+Accessible and Inclusive Teaching Overview
+Fundamentals Training
+Inclusive and Accessible Pedagogy
+Accessible Course Content
+Learning Accommodations
+Diversity, Equity, & Justice
+Mental Health and Wellbeing
+Academic Integrity
+Academic Integrity Overview
+Cheating & Academic Integrity
+Why Students Say They Cheat
+Communicating with Learners
+GenAI and Academic Integrity
+Teaching with Gen AI
+Prepare to Teach
+Prepare to teach overview
+Assess and Evaluate Student Progress
+Create and Share Course Content
+Regular and Substantive Interaction (RSI)
+Syllabus Design
+Set up Your Canvas Course Site
+Communicate With Your Students
+News, Events & Programs
+News, Events & Programs Overview
+Newsletters
+Emerging Technologies Faculty Fellows Program
+Events
+Canvas Course Site Hall of Fame Awards (2026)
+Breadcrumb
+Home
+Academic Integrity
+
+ GenAI and Academic Integrity
+ 
+GenAI and Academic Integrity
+Generative Artificial Intelligence (GenAI) tools are reshaping how students learn and create, raising questions about ethical use, academic integrity, and the value of original thinking in higher education. As these tools become increasingly integrated into the technologies we use for research and writing, and their power and sophistication grows, the challenge of appropriate and ethical AI use becomes more complex. While submitting AI-generated output without attribution is inappropriate, the more nuanced questions regarding where, when, and how students might ethically use Generative AI merit ongoing discussion.
+Academic integrity encompasses more than preventing misconduct. It also includes building a culture of trust, curiosity, and intellectual honesty. We need to encourage students to understand that complexity, ambiguity, struggle, and even confusion are all evidence of learning, not reasons to outsource their work to technology. At the same time, instructors should design assignments and activities that promote meaningful learning, offer support for struggling students, and mitigate the risks of high-risk failures that arise during the learning process.   
+The resources below offer guidance for instructors navigating this evolving context with clarity and purpose. It includes advice on strategies for engaging students in productive conversations about GenAI use, commentary on the state of AI detection tools, recommendations and resources for addressing citation practices, ideas for designing AI-resilient assignments, and, importantly, procedures for handling suspected misuse. 
+Starting the Conversation
+
+Start and sustain productive conversations with your students about GenAI in your courses.
+
+About GenAI Detectors
+
+Learn the risks and limitations of GenAI detection tools and find alternative strategies for promoting academic integrity.
+
+Citation and Acknowledgement
+
+Discover practical strategies, classroom activities, and current citation guidelines that support teaching students to engage with GenAI tools responsibly.
+
+Scholastic Dishonesty involving GenAI
+
+Navigate how to respond to students who you believe may have used GenAI in violation of your course policy.
+
+GenAI-Resilient Assignments
+
+Design assignments that promote integrity, critical thinking, and authentic student engagement in a GenAI-saturated learning environment.
+
+This resource was co-developed with Google Gemini as a tool to help organize research notes, structure outlines, and edit for clarity and directness. The content is grounded in curated resources, background research, and the expertise of UMN academic technology staff from across the system. While GenAI assisted in drafting and organization, the final product has been reviewed, analyzed, and edited by humans, representing approximately 85% human-created and 15% AI-assisted content. 
+Teaching Support
+A collaborative network of support connecting those who teach to resources across the UofM system
+Website Feedback
+Contact Us
+Get Help
+For Students, Faculty, and Staff
+One Stop
+MyU
+: For Students, Faculty, and Staff
+© 
+2026
+ Regents of the 
+University of Minnesota
+. All rights reserved. The University of Minnesota is an equal opportunity educator and employer. 
+Privacy Statement
+Report Web Accessibility Issues
+Accessible and Inclusive Teaching
+Accessible and Inclusive Teaching Overview
+Fundamentals Training
+Inclusive and Accessible Pedagogy
+Accessible Course Content
+Learning Accommodations
+Diversity, Equity, & Justice
+Mental Health and Wellbeing
+Academic Integrity
+Academic Integrity Overview
+Cheating & Academic Integrity
+Why Students Say They Cheat
+Communicating with Learners
+GenAI and Academic Integrity
+Teaching with Gen AI
+Prepare to Teach
+Prepare to teach overview
+Assess and Evaluate Student Progress
+Create and Share Course Content
+Regular and Substantive Interaction (RSI)
+Syllabus Design
+Set up Your Canvas Course Site
+Communicate With Your Students
+News, Events & Programs
+News, Events & Programs Overview
+Newsletters
+Emerging Technologies Faculty Fellows Program
+2024-25 Capstone Conversations
+Current Program Details
+Meet Faculty Fellows
+Molly Ball
+Events
+Canvas Course Site Hall of Fame Awards (2026)
+How Top Instructors Design
+Connect
+Engage
+Engage Image List
+Organize

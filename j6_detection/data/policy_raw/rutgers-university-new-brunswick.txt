@@ -1,0 +1,196 @@
+### PRIMARY https://it.rutgers.edu/ai/guidance-on-the-use-of-ai-at-rutgers/
+Guidance on the use of AI at Rutgers - Artificial Intelligence at Rutgers
+Skip to main content
+Information Technology
+@Rutgers
+IT
+Visit RutgersIT Twitter
+Visit RutgersIT Facebook
+Visit RutgersIT YouTube
+
+ Rutgers.edu
+Menu
+ 
+Locations
+Rutgers–Camden IT
+Rutgers–New Brunswick IT
+Rutgers–Newark IT
+Health Sciences IT
+Services
+All services
+Getting started with IT
+IT security
+Teach with technology
+Get Help
+Support & hours
+Find answers
+Rutgers IT Help portal
+Report a security incident
+About
+About Rutgers IT
+Office of the CIO
+Office of Information Technology
+Distributed IT
+Policies
+Strategic priorities
+Contact Us
+I want to…
+Access DocuSign
+Buy a computer or other tech
+Contact the Help Desk
+Connect to Wi-Fi
+Create forms and surveys
+Download Microsoft 365
+Find a computing lab
+Get Adobe Creative Cloud
+Get a Grammarly account
+Get software
+Manage my NetID
+Print on campus
+Report a security incident
+Reset my NetID password
+Secure my technology
+Set up two-step login with Duo
+Teach with technology
+View tech guides
+Log in to…
+Box file storage
+Canvas
+Qualtrics survey tool
+LinkedIn Learning
+Rutgers Connect
+myRutgers portal
+ScarletMail
+University software portal
+Virtual computer labs
+Webex
+Zoom
+IT Community
+Committees and working groups
+IT annual review
+IT communications resources
+IT community hub
+IT email lists
+IT Leadership Council
+Policies
+Slack for Rutgers IT
+Strategic priorities
+Alerts 
+2
+Zoom update on Thursday evening, June 18 
+June 9, 2026
+Planned Maintenance: Request System maintenance scheduled for June 9, 2026 
+June 2, 2026
+View All Alerts
+Search
+Open Search Input
+
+ Artificial Intelligence at Rutgers 
+Rutgers IT
+ / 
+Artificial Intelligence at Rutgers
+ / 
+Guidance on the use of AI at Rutgers
+Guidance on the use of AI at Rutgers
+Guidance on the use of AI at Rutgers
+RELATED LINKS:
+AI HOMEPAGE
+AI assistants
+AI@Rutgers Initiative
+ Use approved AI tools
+The Office of Information Technology (OIT) provides access to generative AI tools with protections for use in university work. The tools licensed by Rutgers include security and privacy safeguards for appropriate use at the university. By using the Rutgers-approved versions of these tools, your data will not be used to train the models underlying the tools. To protect university data and ensure appropriate use, only Rutgers-approved AI tools should be used at the university. You can 
+view a list of available tools provided by OIT
+.
+Ensure academic integrity when using AI
+At Rutgers, guidance on the appropriate use of AI tools in academic settings will typically vary depending on the discipline, course, and/or instructor. Faculty should consider providing guidance to students on the use of AI to support learning and coursework, and students are encouraged to review course materials and speak with their instructors to understand any specific expectations related to AI. Though AI tools are widely available to students, they should not be considered permissible for coursework unless clearly stated or communicated by instructors. Students are responsible for understanding and abiding by their program and instructors’ guidance or rules on the use of AI. As noted in 
+Rutgers Academic Integrity Policy 10.2.13
+, the principles of academic integrity require that students ensure that coursework be “the student’s own and created without the aid of impermissible technologies, materials, or collaborations.”
+Protect confidential data
+Confidential information, Protected Health Information (PHI), and other proprietary Rutgers information may not be appropriate for use in AI applications and systems. For additional guidance, please consult 
+this data classification chart for AI tools
+, as well as the 
+Information Classification Policy 70.1.2
+ and 
+other Information Technology policies
+.
+Check and review AI content
+Always review and verify AI content and outputs. AI tools can produce biased and inaccurate information, and may include copyrighted information without attribution. You are responsible for ensuring the accuracy and appropriateness of AI-generated content used for university work.
+ Follow required processes when purchasing AI technology
+If you are considering the purchase of an AI application for use at Rutgers, you must follow the same 
+security processes and risk assessments
+ as for other software purchases, as well as 
+standards for digital accessibility
+.
+University policies 
+The following policies within the 
+University Policy Library
+ are particularly relevant for the use of AI at Rutgers.
+Academic Integrity Policy 10.2.13
+
+ Details on standards of academic integrity and the process for adjudicating alleged violations of those standards.
+
+ 
+
+ View policy
+ 
+Information Classification Policy 70.1.2
+
+ Outlines the standards for classifying information at Rutgers to ensure the protection of university data.
+ 
+
+ View policy
+ 
+Acceptable Use Policy for IT Resources 70.1.1
+
+ Outlines the acceptable use of university information technology resources, such as software, systems, and other resources.
+ 
+
+ View policy
+ 
+Follow @RutgersIT on Social
+Feedback
+Submit your comments, suggestions, and other feedback about IT at Rutgers.
+Locations
+Rutgers–Camden IT
+Rutgers–New Brunswick IT
+Rutgers–Newark IT
+Health Sciences IT
+Explore Rutgers
+Universitywide
+Rutgers University—New Brunswick
+Rutgers University—Newark
+Rutgers University—Camden
+Rutgers Health
+Search Rutgers
+Rutgers IT News
+Learn strategic planning for digital accessibility on June 17
+June 9, 2026
+Faculty and staff: Explore shared storage options at Rutgers
+June 2, 2026
+Before graduating, twins created an AI classroom innovation
+May 28, 2026
+Frank Reda named Chief Information Security Officer
+May 26, 2026
+What to know about AI features within Rutgers-hosted Zoom meetings
+May 19, 2026
+
+ Rutgers is an equal access/equal opportunity institution. Individuals with disabilities are
+ encouraged to direct suggestions, comments, or complaints concerning any accessibility issues with
+ Rutgers websites to
+ 
+accessibility@rutgers.edu
+ or complete the 
+Report Accessibility Barrier /
+ Provide Feedback
+ form.
+ 
+Copyright ©2024
+, 
+Rutgers,
+ The State University of New Jersey
+. All rights reserved.
+ Contact 
+webmaster
+. View 
+privacy statement
+.

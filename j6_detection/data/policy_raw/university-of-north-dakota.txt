@@ -1,0 +1,258 @@
+### PRIMARY https://und.edu/academics/provost/faculty-affairs/ai-and-emerging-technology-academic-integrity-resources.html
+AI and Emerging Technology Academic Integrity Resources | University of North Dakota
+Skip to main content
+Open Menu
+Close Menu
+University of North Dakota
+Open Search
+Close Search
+Close Menu
+University of North Dakota
+Info For
+Admitted Students
+Current Students
+Families of Current Students
+Faculty & Staff
+Alumni
+Logins
+Email
+Blackboard
+Campus Connection
+Employee Self-Service
+Hawk Central
+Degree Map
+Zoom
+Directory
+Search
+Search
+Submit
+Academics
+Admissions
+Student Life
+Research
+Athletics
+Majors & Programs
+About
+Menu
+University of North Dakota
+Academics
+Admissions
+Student Life
+Research
+Athletics
+Majors & Programs
+About
+Request Info
+Visit
+Apply
+Search
+Search
+Submit
+Request Info
+Visit
+Apply
+Search
+Submit
+Home
+Academics
+Office of the Provost
+Faculty Affairs
+AI and Emerging Technology Academic Integrity Resources
+Skip Section Navigation
+Faculty Affairs
+Faculty Affairs
+Post-Tenure Review
+University Senate
+Faculty Forms & Resources
+Show/hide children
+Annual Evaluations
+Course Resources
+Conflict Management Services
+Courtesy Appointments
+Curriculum Resources
+Department Chair Handbook
+Developmental Leave
+Honorary Degrees
+Immigration
+Promotion & Tenure
+Faculty Awards & Recognition
+Show/hide children
+Fulbright Scholars
+Faculty Fellowship Award Opportunities
+Scholarships & Fellowships
+UND Connect
+Show/hide children
+Previously Funded UND CONNECT Projects
+Hawks in Harmony
+New Faculty Resources
+Show/hide children
+New Faculty Orientation
+Artificial Intelligence Use in the Classroom
+Contact Us
+AI and Emerging Technology Academic Integrity Resources
+Before the Course Begins
+Faculty should p
+rovide clear expectations
+regarding
+academic integrity and AI. Clarify for students your expectations
+regarding
+using any generative AI tools or applications. State these expectations clearly on
+ your course syllabus and
+in
+any assignment prompts. Explain the consequences for the students if your expectations
+regarding
+the use of generative AI tools are not met.
+UND does not have an AI policy. If an instructor believes a student has used AI
+for
+an assignment or exam in violation of a
+course
+policy, it is addressed through
+UND’s Academic Integrity Policy. Academic concerns may be reported via the 
+Academic Integrity Concern Report
+.  
+Sample Syllabus Statement from UND
+Please feel free to adapt these sample statements for your courses.
+Open All
+ Sections
+Yes, AI Use is Always Allowed in the Course
+(
+Open
+ this section)
+I expect you to use AI (ChatGPT and image generation tools, at a minimum), in this
+ class. In fact, some assignments will require it. Learning to use AI is an emerging
+ skill, and I provide tutorials in Blackboard about how to use them. I am happy to
+ meet and help with these tools during office hours or after class.
+Be Aware of the Limits of ChatGPT:
+If you provide minimum effort prompts, you will get low quality results. You will
+ need to refine your prompts in order to get good outcomes. This will take work.
+Don’t trust anything it says. If it gives you a number or fact, assume it is wrong
+ unless you either know the answer or can check in with another source. You will be
+ responsible for any errors or omissions provided by the tool. It works best for topics
+ you understand.
+AI is a tool, but one that you need to acknowledge using. Please include a paragraph
+ at the end of any assignment that uses AI explaining what you used the AI for and
+ what prompts you used to get the results. Failure to do so is in violation of the
+ academic honesty policies.
+Be thoughtful about when this tool is useful. Don’t use it if it isn’t appropriate
+ for the case or circumstance.
+Statement courtesy of Dr. Ethan Mollick, Wharton School, University of Pennsylvania
+Yes, AI Use is Sometimes Allowed, But
+(
+Open
+ this section)
+Since we recognize the potential for enhancing the educational process, the use of
+ AI-generated content in this class is acceptable in specific circumstances. The use
+ of AI tools must be acknowledged just like the use of any other software package.
+ For example, I used Grammarly to edit this syllabus. You might also use ChatGPT or
+ help outline an essay or organize your notes.
+However, because generative AI can copy work without using citations, students are
+ still responsible for ensuring the originality, integrity, and accuracy of their work.
+ Do not use AI-generated sources, as they are often formatted incorrectly or make up
+ sources entirely. Violation of academic honesty standards, including plagiarism, is
+ prohibited under the UND Code of Student Life.
+UND does not have an AI policy because the use of AI is discipline and course-specific.
+ The policy stated above applies only to the course. Please consult the syllabus for
+ each of class for its AI Policy.
+Statement courtesy of Dr. Jayne Kinney, Assistant Professor, IS 121 Introduction to
+ American Indian Studies 
+No, AI Use is Never Allowed
+(
+Open
+ this section)
+Plagiarism is an increasingly common form of academic misconduct. All the following
+ are considered plagiarism:
+Using any AI Software (e.g. Chat GPT) to write part or all of your assignment. NOTE:
+ AI can be used to spellcheck and help with grammar. It should not be providing original
+ thoughts.
+Statement courtesy of Dr. Ashley Fansher, Assistant Professor of Criminal Justice
+Resources
+UND AI Assignment Repository
+UND AI Guidance
+"Student Assessment of Ethical AI Use"
+ resource (Bertram Gallant, 2025)
+"Generative AI and Policy Development: Guidance from the MLA-CCCC Task Force"
+Frequently Asked Questions
+I suspect a student used AI inappropriately. What should I do?
+If you believe a student has used AI in a way that violates course or university policies,
+ address the concern directly with the student and follow all departmental, college,
+ and syllabus-based academic integrity policies. If you are unsure which policies apply,
+ consult your department Chair. Instructors retain discretion over grade-related consequences.
+Instructors are also encouraged to report the incident to the Community Standards
+ & Care Network (CSCN) and provide any relevant documentation. CSCN can help advise
+ on appropriate next steps.
+What happens when I report a student to CSCN for AI-related academic integrity concerns?
+Most first-time reports of inappropriate AI use do not result in formal conduct charges.
+ CSCN typically notifies the student that a report has been received and explains that
+ future incidents may result in a student conduct process.
+If the AI misuse is particularly serious, a first-time report may be referred directly
+ to student conduct.
+Do I have to report AI misuse, or can I handle it myself?
+Reporting to CSCN is not required. However, sharing even low-level or first-time AI-related
+ concerns allows the University to identify patterns across courses and better support
+ student learning and accountability. Handling cases only at the course or department
+ level may unintentionally allow repeated misuse of AI across multiple classes.
+What if a student repeatedly misuses AI after being reported?
+Subsequent reports of academic dishonesty, including AI misuse, are typically referred
+ to a student conduct process. This process is designed to be educational and supportive
+ of student development. Possible outcomes may include academic integrity education
+ and conduct probation. In rare cases, suspension may occur.
+What is my responsibility to investigate suspected AI misuse?
+Faculty should use professional judgment and follow departmental or college guidance
+ when responding to suspected AI misuse. Any academic consequences should be based
+ on clear evidence and documented justification. Students retain the right to pursue
+ an academic grievance.
+If a report results in formal conduct charges, CSCN staff are responsible for the
+ investigation, with faculty collaboration playing an important role.
+Questions
+if you have questions on academic integrity and potential misuse of AI resources,
+ please contact the 
+Community Standards & Care Network
+. 
+Vice Provost for Faculty Affairs
+O'Kelly Hall Room 8 
+221 Centennial Drive Stop 8006
+Grand Forks ND 58202-8006
+P 701.777.4138
+UND.facultyaffairs@UND.edu
+
+ We use cookies on this site to enhance your user experience.
+ 
+
+ By clicking any link on this page you are giving your consent for us
+ to set cookies, 
+Privacy Information
+.
+ 
+I Agree
+ to cookie policy
+Exit Site
+Back to Top
+Ready 
+to Enroll?
+Request Information
+Schedule a Visit
+Apply Now
+UND.info@UND.edu
+701.777.3000
+Instagram
+Facebook
+LinkedIn
+YouTube
+TikTok
+Contact UND
+Campus Map
+Events Calendar
+Community & Belonging
+Explore Programs
+Employment
+Make a Gift
+Campus Safety (SafeUND)
+University of North Dakota
+©
+ 2026 University of North Dakota - Grand Forks, ND - Member of ND University System
+ Accessibility & Website Feedback
+Terms of Use & Privacy
+Notice of Nondiscrimination
+Student Disclosure Information
+Title IX
+©

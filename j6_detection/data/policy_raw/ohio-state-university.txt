@@ -1,0 +1,216 @@
+### PRIMARY https://ai.osu.edu/resources-buckeyes/responsible-use
+Responsible Use | Artificial Intelligence at Ohio State
+
+ Skip to main content
+
+Show Links
+Map
+Buckeye Link
+Webmail
+Search Ohio State
+Artificial Intelligence at Ohio State
+Main navigation
+Education and Fluency
+
+ Learn with AI
+ 
+
+ Teach with AI
+ 
+
+ Work Smarter with AI
+ 
+Research and Innovation
+
+ Research Guidelines
+ 
+
+ AI(X) Hub
+ 
+
+ Research Partners
+ 
+Resources for Buckeyes
+
+ How to use AI
+ 
+
+ Approved Tools
+ 
+
+ Prompt Library
+ 
+
+ Resources and Events
+ 
+
+ Responsible Use
+ 
+Search
+Submit search
+Toggle search dialog
+Home
+Resources for Buckeyes
+Responsible Use
+Responsible Use
+Thinking of using AI? Ask yourself these questions first
+Generative AI can enhance learning, creativity, and research—but only when used thoughtfully. As a student at a research university, take time to reflect on how and why you’re using these tools. Students should use GenAI tools for coursework only with the explicit permission of each instructor, in the ways allowed by that instructor.  
+Students' choices shape not just their academic success, but also their role in a changing digital world. Because we know AI is not always reliable, users should 
+take time to verify results
+. Responsible use helps you grow as a learner, thinker, and ethical contributor—on campus and beyond. 
+Questions students should consider
+Learning and Growth
+Am I using this GenAI tool to support my own learning, or to bypass the learning process?
+Is this helping me better understand the material and engage more deeply with the course content?
+Will I be able to explain the results or ideas it helped me generate in my own words?
+Academic Integrity and Course Alignment
+Does using this tool align with my instructor’s expectations and the academic integrity policies of my institution?
+Is GenAI helping or hindering my ability to meet the learning outcomes of this course?
+Would I be comfortable explaining how I used AI in this assignment to my instructor or classmates?
+Accuracy and Accountability
+Is the information I’ve generated accurate, current, and based on trustworthy sources?
+Have I checked for hallucinations (false or fabricated information) or misinterpretations in the content?
+Am I taking responsibility for fact-checking and understanding the material?
+Equity and Fairness
+Does my use of GenAI give me an unfair advantage over my peers?
+Do all students in my course have access to similar tools or support?
+Am I contributing to a learning environment that is equitable and inclusive?
+Ethics and Broader Impacts
+Could the content I generated reinforce stereotypes, contain biased assumptions, or cause harm to others?
+How transparent am I being about the role AI played in creating my work?
+In what ways could my use of AI contribute to (or detract from) the greater good—academically, socially, or culturally?
+Questions instructors should consider
+Teaching and Learning
+How will AI impact student learning outcomes?  Will it enhance or undermine critical thinking, writing, or research skills?
+Am I modeling responsible and ethical AI use for students? Should I disclose when I use AI to generate materials or feedback?
+How can I design assignments that either integrate or guard against AI? Are tasks too easily completed by AI? Can I shift toward higher-order thinking?
+What guidance do my students need about using AI? Have I clearly explained what’s allowed, expected, or prohibited?
+Academic Integrity
+How do I assess work fairly in an AI-enabled classroom?  Do my assessments measure original thought or just output?
+Am I prepared to address suspected misuse of AI?  Do I understand the limitations of detection tools and the due process for misconduct?
+Research and Writing
+Am I using AI transparently in my research or publications?  Should I disclose assistance from AI in grant writing, lit reviews, or manuscript drafts?
+Could AI introduce bias, error, or plagiarism into my work? Am I reviewing AI output as critically as I would a student draft?
+Privacy and Policy
+Am I entering sensitive student or institutional data into AI tools? Have I checked whether the tool is approved or FERPA-compliant?
+Is my use of AI aligned with university and publisher policies? Have I reviewed any guidance on responsible AI use from my institution or professional organizations?
+Professional Growth
+What skills or knowledge do I need to use AI effectively in my field?  Should I seek out training, collaborate with tech-savvy colleagues, or attend workshops?
+How can I contribute to conversations about AI in higher education? Could I help shape policies, pilot new practices, or share insights with peers?
+Questions researchers should consider
+Purpose and Scope 
+Is this tool appropriate for my research purpose?  
+Am I using AI to explore ideas, generate drafts, analyze data—or in a way that could compromise rigor? 
+Have I checked the analysis to make sure that the analysis is correct or the proofs have gaps?
+Could this tool unintentionally influence my conclusions?  
+Am I relying too heavily on AI rather than human judgment, especially in interpretation?  
+Transparency and Disclosure  
+How transparent do I need to be about using AI?  
+Should I disclose AI assistance in my methods, acknowledgments, or elsewhere?  
+Would peers or reviewers view this use as appropriate or problematic?  
+Bias and Accuracy  
+Could AI-generated content introduce bias or error?  
+Am I critically evaluating outputs for accuracy, fairness, and relevance?  
+Is the model trained on appropriate 
+and a rich and varied set of 
+sources?  
+Do I understand the limitations or scope of the data the AI tool was trained on?
+Could this tool unintentionally influence my conclusions?
+Am I relying too heavily on AI rather than human judgment, especially in interpretation? 
+Privacy and Ethics  
+Am I protecting sensitive or proprietary data?  
+Does using this tool comply with data privacy, IRB, or grant requirements?  
+Does my use of AI align with my discipline’s ethical standards?  
+Ownership and Intellectual Property  
+Who owns the output?  
+Are there authorship, copyright, or licensing issues I need to consider? 
+Questions staff members should consider
+Ethical and Practical Use
+Is this the right task for AI? Will AI save time or introduce confusion?
+Who is affected by the AI-generated content? Does this impact students, colleagues, leadership, or the public?
+Will anyone assume this was written by a person? Should I disclose that AI helped create this?
+Privacy and Data Security
+Am I entering confidential or sensitive information?  Includes student records, health info, personal data, or internal communications.
+Where does this tool store data, and who can access it? Is this tool approved by our IT/security office?
+Accuracy and Oversight
+Do I understand this tool well enough to spot errors? Can I confidently check for factual, biased, or misleading content?
+Will someone review this before it’s sent or published? Especially important for emails, reports, or public messages.
+Policy and Compliance
+Is this tool aligned with university or office policies? Has the university given guidance or restrictions on its use?
+Am I accountable for the final product, even if AI helped? Responsibility always remains with the human user.
+Skills and Development
+Do I need training or support to use this tool responsibly? Is there a resource, colleague, or IT contact who can help?
+
+ Generative AI and Academic Integrity
+ 
+The Office of Academic Affairs offers guidance on using AI to help shape the future of work, research and teaching and learning while avoiding conflict with academic integrity at Ohio State.
+Academic Conduct Guidance
+
+ GenAI for Marketers and Communicators
+ 
+The Office of Marketing and Communications guidelines for how and where Ohio State marketers and communicators should and should not utilize Generative AI in their work.
+Communications Guidelines
+
+ Security Statement on Generative AI
+ 
+OTDI'S Digital Security and Trust team offers security guidance to protect institutions data when using AI and 
+actively evaluates AI platforms and AI-augmented software for use by the university.
+Security and Privacy Statement
+Strengths and Weaknesses of AI Tools
+Generative AI tools can boost creativity, streamline tasks, and help with everything from writing to coding. But like any technology, they come with tradeoffs—understanding their strengths and limitations is key to using them effectively and responsibly.
+Strengths of Generative AI 
+Proofreading and editing – Polishes writing for grammar, clarity, and tone.
+Brainstorming – Offers creative prompts, angles, or approaches to get ideas flowing.
+Generating code – Can draft, explain, or troubleshoot code snippets in many languages.
+Creating visuals – Produces images, diagrams, or layouts from simple descriptions.
+Mimicking and explaining genre – Understands and reproduces the structure or style of specific types of writing (e.g., cover letters, scientific abstracts, social posts).
+Adapting tone and voice – Matches a particular tone (e.g., formal, playful, academic) to suit the audience or context.
+Summarizing and translating – Condenses long content or translates text between languages while maintaining core meaning.
+Reformatting content – Transforms text into different formats (e.g., turning notes into a blog post or a script into bullet points).
+Weaknesses of Generative AI
+Factual inaccuracies ("hallucinations") – May confidently generate false or misleading information.
+Inherent bias – Reflects and can reinforce societal or dataset-based biases.
+Privacy and liability risks – May expose sensitive data or create legal/ethical concerns depending on how it's used.
+Citation and authorship challenges – Struggles to accurately attribute sources or clarify ownership of output.
+Linguistic and cultural limitations – May misinterpret context, idioms, or norms, especially outside dominant languages and cultures.
+Unintended consequences – Can lead to over-reliance, misinformation, or misuse when applied without oversight.
+Lack of critical thinking or judgment – Doesn’t “understand” information or context the way humans do; it can’t evaluate nuance, emotion, or ethics without guidance.
+Outdated or limited knowledge – Unless connected to real-time data, it may rely on old or incomplete training information.
+Know the Differences between Tools
+Available AI tools differ based on 
+how vendors use the data you enter
+. The chart below explores these differences and explains why you should only use approved tools if you are working with institutional data.
+AI Tools
+Public GenAI 
+(ChatGPT, MS Personal Copilot, Personal Gemini)
+Microsoft Copilot Chat and Gemini provided by 
+Ohio State
+Microsoft Copilot for M365 (integrated into apps)
+Availability
+Anyone with free or paid individual accounts
+Automatically integrated into OSU student and employee accounts
+Individual employee licenses are available for departmental purchase
+Privacy
+Prompts should be considered public, much like social media posts, and are used to train AI models
+Unlike the public tools, your prompts and results are protected inside OSU’s environment and not used to train public AI models
+Unlike the public tools, your prompts and results are protected inside OSU’s environment and not used to train public AI models
+Data Source
+Public GenAI learns from a wide range of information available on the internet, however it may not always be up-to-date
+Microsoft Copilot Chat is an advanced AI model that not only learns from a vast amount of internet data, but can also access and use the most recent data from the web to provide up-to-date responses
+Microsoft Copilot for M365 is designed to prioritize and use your specific Microsoft 365 data, such as emails, chats, documents and meeting details to tailor its responses more closely to your personal or organizational context
+Features
+Conversational AI
+Conversational AI with enterprise data protection
+Conversational AI with enterprise data protection that provides advanced search, chat, and Copilot features leveraging your Microsoft 365 files and data
+
+ Artificial Intelligence at Ohio State
+ 
+AI@osu.edu
+If you have a disability and experience difficulty accessing this content please call the Accessibility Helpline at 
+614-292-5000
+.
+Privacy Statement
+Non-discrimination Notice
+Review Cookie Settings
+Login
+© 2026 The Ohio State University

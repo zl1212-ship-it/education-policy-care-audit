@@ -1,0 +1,289 @@
+### PRIMARY https://rtl.berkeley.edu/resources/ai-teaching-learning/transparency-about-generative-ai-tools
+Transparency about Generative AI Tools | Research, Teaching, & Learning
+Skip to main content
+|
+Undergraduate Education
+Toggle navigation
+
+ Research, Teaching, & Learning 
+Search Terms 
+Submit Search
+Home
+About Us 
+RTL aims to democratize access to both education and research opportunities and to ensure higher education continues to evolve in teaching and research practices that are inclusive, equitable, and accessible.
+Overview
+What We Do
+RTL Leadership
+RTL Org Chart
+Services + Programs 
+RTL provides a wide range of services and programs in support of research, teaching, and learning on campus.
+Overview
+Active Learning Classrooms
+Academic Innovation Studio (AIS)
+Academic Integrity
+Ally in bCourses
+bCourses
+bCourses Project Sites
+BOA
+Classroom Technology Support
+Computer-Based Testing Facility (CBTF)
+Consulting for Instructors
+Course Capture
+Course Design Tools
+Course Evaluations
+DataHub
+DIY Media
+edX and Coursera
+Gradescope
+Instructional Computer Facilities
+Instructional Equipment Checkout
+Kaltura
+Online Discussions
+Peerceptiv
+Research IT
+SensusAccess
+Student Response Systems
+SuiteC
+Media Services
+Resources 
+RTL is committed to advancing Berkeley’s teaching and research mission. Our specialized teams collaborate with instructors, researchers, and academic staff to provide tailored support and innovative solutions through consultations, resources, and tools all to foster a more inclusive and effective learning environment.
+Overview
+AI in Teaching & Learning
+Accessibility in Teaching & Learning
+RTL Media Library
+RTL Learning Paths 
+Our Learning Paths bring together curated live sessions and asynchronous resources to help you grow your teaching practice at your own pace and schedule. 
+Overview
+Navigating GenAI: Implications for Teaching and Learning
+bCourses Essentials: Building Effective Courses
+Rethinking Student Engagement
+Building Inclusive Classrooms
+Equitable Assessment and Grading
+Events
+Get Help
+Secondary navigation
+Center for Teaching & Learning
+Classroom Database
+Home
+Resources
+AI in Teaching & Learning
+Transparency about Generative AI Tools
+Transparency about Generative AI Tools
+RTL is committed to using technology that supports teaching and learning effectively and responsibly. This includes understanding how Generative AI (GenAI) tools might be used within the resources we provide.
+Numerous AI detection tools have emerged to address the use of technology such as ChatGPT, but none of these tools have been reviewed for accessibility, privacy, and security. In Fall 2023, RTL led a pilot of the AI detection tool within Turnitin (Berkeley's Academic Integrity platform available in bCourses). Results from the pilot have been inconsistent, so we’ve decided not to enable the tool campuswide. We will continue to review options for AI detection as they develop, but will only adopt solutions that have been fully vetted and tested. 
+Note that using any third-party AI detection tools could lead to FERPA, privacy, and copyright violations given that using these tools require faculty to input examples of student work into a third-party software. We do not recommend that instructors rely upon AI detection tools to identify usage for writing and, instead, encourage faculty to engage in conversation with their students about appropriate (and inappropriate) usage of AI for their courses. Learn more about 
+AI Teaching Resources
+ on the Center for Teaching & Learning website.
+Transparency about GenAI Tools
+Before adopting any tool that might utilize GenAI, we'll work with vendors to ensure transparency. In addition to campus procurement procedures around security, privacy, and accessibility, we’ll also ask the following AI-specific questions, guided by 
+1EdTech’s AI Tools Framework
+:
+GenAI Utilization
+: Does any component of this tool use GenAI? 
+User Awareness:
+ Is the use of GenAI clear to users? 
+Opt-out options:
+ Can users opt out of the GenAI component of the tool? 
+Data Handling: 
+What happens to the inputted data? 
+Will it be used to train future models? 
+Do any additional third parties have access to that data?
+Model Training and Improvement: 
+How was the AI model trained? 
+How will the model continue to be improved? 
+By addressing these questions, we aim to ensure transparency and hold vendors accountable for the proper handling of sensitive data. As third-party vendors release AI features, we’ll ask the questions above before enabling those features. 
+Partnerships with Faculty
+For any centrally deployed AI tools, we will partner with the Center for Teaching & Learning (CTL), the Academic Senate, and faculty in first implementing a pilot study to identify the potential impact on instruction including improvements to student learning, risks and vulnerabilities.  The outcome of the pilot will be evaluated by campus leadership and the Academic Senate as well as made public to the campus in advance of implementation.
+AI Components in RTL-supported Tools
+Many educational technology companies are experimenting with AI applications for their tools. At Berkeley, we have existing licenses with many of these tools and are actively assessing which new application developments may be of benefit to our campus community. If you have questions about these applications or their potential use cases, our team would be happy to discuss. 
+Campus Licensed Generative AI Tools
+Review a list of Generative AI tools
+ available through UC system-wide and UC Berkeley licensing. To access tools with the protections of UC-Berkeley licensing, users must authenticate through CalNet and, in some cases, request a Berkeley-provided license.
+Resources
+AI in Teaching & Learning
+Transparency about Generative AI Tools
+Accessibility in Teaching & Learning
+RTL Media Library
+Follow us:
+LinkedIn
+YouTube
+RSS
+Home
+Quick Support Options
+Credits
+Land Acknowledgment
+Center for Teaching and Learning
+Research IT
+KALX Radio
+RTL Insider
+ (requires RTL staff authentication)
+One IT Service Catalogue
+Powered by Open Berkeley
+Accessibility
+ Statement
+Nondiscrimination
+ Policy Statement
+Privacy
+ Statement
+Copyright © 2026 UC Regents; all rights reserved
+
+Back to Top
+
+
+### SECONDARY https://oercs.berkeley.edu/appropriate-use-generative-ai-tools
+Appropriate Use of Generative AI Tools | Office of Ethics, Risk, and Compliance Services
+Skip to main content
+|
+Office of the Chancellor
+Toggle navigation
+
+ Office of Ethics, Risk, and Compliance Services 
+Search Terms 
+Submit Search
+Home
+About
+Policies 
+Campus Policy Library
+Campuswide Policy Governance
+Policy development resources
+Policies Under Review
+Systemwide Policies
+Archive: Office of the President Guidance
+Free Speech and Expressive Activity
+Ethics
+Privacy 
+I need help with... / I have questions about...
+About Privacy
+Preservation, Access Requests, and Transparency
+Selected Privacy Policies and Regulations
+Educational Resources
+Delegations
+Conflict of Interest 
+Financial Conflict of Interest and Disqualification Rules under the CA Political Reform Act
+Gifts and Gratuities
+Research Conflict of Interest
+Outside Professional Activities and Conflict of Commitment
+Doing Business with UC Berkeley
+AI Ethics
+Records Management
+Home
+Appropriate Use of Generative AI Tools
+Appropriate Use of Generative AI Tools
+Privacy
+I need help with... / I have questions about...
+About Privacy
+Preservation, Access Requests, and Transparency
+Selected Privacy Policies and Regulations
+Educational Resources
+AI Risk Assessment & Mitigation
+Guidance from the Compliance and Enterprise Risk Committee's 
+Subcommittee on AI Risk (CERC-AIR)
+About Generative AI Tools
+With the emergence of various generative AI tools (e.g., ChatGPT, Google Gemini, DALL-E, Microsoft CoPilot, Zoom AI Companion, Adobe Acrobat AI Assistant, and others), members of the campus community are eager to explore their use in the university context. This advisory guides how to use these tools to support innovation without putting institutional, personal, or proprietary information at risk. 
+In all cases, use should be consistent with 
+UC Berkeley’s Principles of Community
+and the 
+UC Principles of Responsible AI
+(
+summary
+ / 
+full report
+)
+Allowable Use by Data Classification
+Publicly-available information (
+Protection Level P1
+) can be used in generative AI tools. 
+UC has license agreements for certain AI tools, which provide protection for use with more sensitive information. It is important to be sure you are using licensed tools, rather than individual consumer accounts, to benefit from UC’s contractual protections. Please see 
+https://ai.berkeley.edu/resources/licensed-generative-ai-tools
+Use of AI tools procured by units separately from the campus or systemwide agreements mentioned above must also adhere to the approved Protection Level limitations advised by the unit to ensure compliance with the agreement and appropriate protections relative to the safety features of the tool.  Units offering such tools should clearly advise staff and users as to the appropriate use and Protection Level limitations of the AI (and all) tools that they offer. Units are encouraged to use and refer people to the campus 
+Data Classification Standard
+ and 
+Guidelines
+ for assistance with determining the Protection Level of data being contemplated for use in unit-provided AI tools.
+Prohibited Use
+Completion of academic work in a manner not allowed by the instructor.
+Unless specifically stated in the "Allowable Use" section above
+, no personal, confidential, proprietary, or otherwise sensitive information may be 
+entered into
+ or generated as 
+output from
+ models or prompts. Such information includes:
+Student records subject to FERPA
+Non-public instructional materials
+Proprietary or unpublished research
+Any other information classified as 
+Protection Level P2, P3, or P4
+ (unless specifically allowed under UC's contracts; see list in "Allowable Use by Data Classification" section above.
+Some generative AI tools, such as OpenAI,  explicitly forbid their use for certain categories of activity, including harassment, discrimination, and other illegal activities. An example of this can be found in found in OpenAI's 
+usage policy document
+. This is also consistent with 
+UC Berkeley’s Principles of Community
+,
+Additional Consultation Needed
+New Uses of AI: 
+If you are considering a new use of Generative AI in your studies or work, it is your responsibility to consider the ethics and risks involved and obtain approval from your instructor/responsible unit head. Be sure to 
+take the 
+AI Essentials Training
+ and consult 
+CERC-AIR
+,
+ a committee that  assesses and offers guidance for mitigating AI risks 
+Use of AI that involves 
+highly-consequential automated decision-making
+ requires 
+extreme caution
+, and should not be employed without prior consultation with appropriate campus entities, including the responsible Unit head, as such use could put the University and individuals as significant risk.
+Examples include, but are not limited to:
+
+Legal analysis or advice
+Recruitment, personnel, or disciplinary decision-making
+Seeking to replace work currently done by represented employees
+Security tools using facial recognition
+Grading or assessment of student work
+Personal Liability:
+ Please note that certain generative AI tools use click-through agreements. Click-through agreements, including OpenAI and ChatGPT terms of use, are contracts. Individuals who accept click-through agreements without delegated signature authority may face personal consequences, including responsibility for compliance with terms and conditions. [
+Business Contracts FAQ
+]
+Using AI with 
+Library Digital Resources
+: Before using or training AI tools with materials acquired from Library-licensed resources or databases, researchers must comply with varying license agreement terms. Violations can result in personal liability and campus-wide loss of access to critical research resources. See: "
+Before you scrape and before you train
+."
+For questions
+ regarding privacy with AI tools, contact 
+privacyoffice@berkeley.edu
+. For questions regarding appropriate use of AI tools, the 
+UC Artificial Intelligence Risk Assessment Guide
+ is a helpful starting point.
+Rationale for the Above Guidance
+Per 
+UC LEGAL - OFFICE OF THE GENERAL COUNSEL’s Legal Alert: Artificial Intelligence Tools (March 2024)
+"[AI] is a tool that calls for the same type of analysis as any other third-party service or product. Indeed, like any tool utilized by UC, whether for education, research, health care, or operational purposes, AI tools and their terms of use are subject to all UC policies regarding third parties and their access to UC data, such as those relating to procurement, research, privacy, data security, accessibility and employee, faculty, and student conduct. ….
+“Unless specific precautions are taken, any content that is provided to generative AI tools can be saved and reused by the company offering the tool (e.g., OpenAI for ChatGPT) and their affiliates. Providing data to a generative AI tool requires the same analysis as when UC provides data to any service vendor, research partner, or other third party. Therefore, unless Units enter into properly negotiated agreements with these companies, which would include privacy, confidentiality, security, accessibility and intellectual property terms consistent with UC policy and appropriate for the types of information at issue, Units are prohibited from providing any information that could be construed as confidential information of UC, or confidential information of a third party. Such disclosure could cause UC to be in violation of statutory or contractual requirements.”
+Additional Resources and Guidance
+Hub Website for AI at UC Berkeley
+AI in Teaching & Learning
+ from Research, Teaching & Learning
+
+Understanding AI Writing Tools and their Uses for Teaching and Learning at UC Berkeley
+Hub Website for AI systemwide at University of California
+UC Artificial Intelligence Risk Assessment Guide
+Law and UC Policy Applicable to AI
+Last updated: July 25, 2025
+Home
+Credits
+Office of the Chancellor
+711
+ CA 
+Relay
+ Service
+Powered by Open Berkeley
+Accessibility
+ Statement
+Nondiscrimination
+ Policy Statement
+Privacy
+ Statement
+Copyright © 2026 UC Regents; all rights reserved
+
+Back to Top

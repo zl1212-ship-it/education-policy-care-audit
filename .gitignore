@@ -22,5 +22,5 @@ j6_detection/results.md
 j6_detection/literature.md
 # J6 anchor corpus is a verbatim download of an external repo; regenerate with fetch_anchor_data.py
 j6_detection/data/anchor/
-# J6 raw policy text is re-fetchable from the registry URLs; codes + provenance live in policy_corpus.csv
-j6_detection/data/policy_raw/
+# (J6 policy_raw/ is now COMMITTED: live policy pages change, so the retrieved text at the access
+#  date is the archived evidence behind each code; verification needs no re-fetch.)

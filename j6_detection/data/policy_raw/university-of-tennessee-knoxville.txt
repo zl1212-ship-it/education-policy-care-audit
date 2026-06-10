@@ -1,0 +1,414 @@
+### PRIMARY https://oit.utk.edu/ai/
+Artificial Intelligence | Office of Innovative Technologies
+Skip to content
+Skip to main navigation
+Report an accessibility issue
+The University of Tennessee, Knoxville
+Office of Innovative Technologies
+GET 
+HELP
+Explore
+Write
+Chat
+Call
+Call
+Visit the HelpDesk
+Find Answers
+Service Catalog
+Main Menu
+Main Menu
+Home
+All Services
+A-Z Services Index
+Accounts & Access Management
+Application Development & Support
+Artificial Intelligence
+Audiovisual Technology
+Backup & Recovery
+Business Information Systems
+Cable TV
+Cloud Infrastructure
+Computer Labs
+Database Administration
+Desktops, Laptops, & Mobile
+Document Imaging & Management
+Email, Calendars, & Instant Messaging
+Faculty Information Systems
+File Sharing & Storage
+High Performance & Scientific Computing
+Information Management & Analytics
+Information Security
+Instructional Support
+IP Names & Addresses
+IT Service Management
+Network
+OIT HelpDesk
+OIT Research Services
+Research Computing Support
+Software/Hardware Procurement, Distribution, & Licensing
+Student Information Systems
+System Administration – Linux
+System Administration – Windows
+Teaching & Learning Technologies
+Telephone
+Training
+Websites
+Are You New?
+On Campus Students
+Online Students
+All Employees
+Graduate Students
+Faculty
+Researchers
+Tech Guides
+Technology & Teaching Modalities
+Working & Teaching Remotely
+Just for Students
+UT Verse
+Log Into...
+Online@UT (Canvas)
+LiveOnline@UT (Zoom)
+UT Canvas Catalog
+LinkedIn Learning
+Microsoft 365
+Google
+MyUTK
+UT Email/Volmail Account
+Web Surveys
+I Want...
+Cable TV Lineup
+Email Setup
+Internet Connection
+Password Management
+Software Downloads
+Training
+News
+Home
+Artificial Intelligence
+Artificial Intelligence
+Service navigation
+Explore
+Related Links
+Related Links
+Artificial Intelligence Home
+UT AI Hub
+Get Started with UT AI Hub
+UT AI Hub Guide
+AI Tools at UT
+Guidance Chart for Using AI Tools
+UT Verse
+What is UT Verse?
+UT Verse Resources
+Where do I begin?
+AI Tools and Technologies
+Introduction to Prompting
+Guides and Tutorials
+Frequently Asked Questions About UT Verse
+AI Workshops and Events
+UT Verse: AI Unplugged
+Teaching and Learning with AI
+Applications of AI in Education
+Guidance on AI Adoption
+Opportunities & Challenges
+Resources
+AI News
+Log In
+Related Logins
+Related Logins
+UT Verse
+Copilot
+Artificial intelligence (AI) is becoming a bigger part of daily life at UT. Even if you feel late to the game, you’re not alone. Learn to use AI securely and effectively at UT through these guidelines, resources, and tools.  
+AI Guiding Principles
+Mission-Driven Use of AI
+: AI should support the university’s mission of education, research, and service—expanding access, advancing discovery, and solving real-world problems for the public good. 
+Data Privacy and Stewardship
+: AI must operate within legal and ethical boundaries and reflect the university’s commitment to security, transparency, and responsible management. 
+Responsible Practices
+: AI should be used with integrity, supporting fairness in outcomes, treating all individuals with respect, and ensuring decisions reflect the university’s educational and ethical standards. 
+Transparency and Accountability
+: AI systems must be explainable and governed responsibly, with clear human oversight to maintain trust, ensure fairness, and uphold institutional accountability. 
+AI Tools at UT (managed and contracted)
+Certain AI tools are centrally managed, contracted, and reviewed by the university and provide the security and stability necessary for university content. They include the following chat tools, as well as selected external AI tools for meeting summaries, academics, and research. 
+UT AI Hub: 
+A Generative AI (GenAI) gateway providing access to ChatGPT, Claude, Grok, and others in a secure environment.
+UT Verse: 
+A collection of AI tools developed by the University of Tennessee, Kno
+xville, including UT Verse: AI Assistant and the UTVersal Translator. 
+Microsoft Copilot:
+ Microsoft’s AI-powered 
+chat
+ platform for searching for information, creating content, and communicating with others. 
+Learn more about UT-managed and contracted AI tools
+Teaching and Learning with AI 
+Artificial Intelligence (AI) offers transformative opportunities to ethically and effectively further our institutional mission. The Office of Innovative Technologies is dedicated to actively educating UT’s academic community on teaching and learning with artificial intelligence, including: 
+Applications of AI in Education 
+Guidance on AI Adoption 
+Opportunities and Challenges 
+Prompting and AI Assistant Creation 
+Additional Resources 
+Watch OIT’s AI and Teaching video
+ on the importance of guiding students in ethical AI use and integrating AI into classroom activities to foster a culture of inquiry and curiosity (2min 54sec). 
+Learn more about teaching and learning with AI
+Policies & Guidelines 
+Everyone is responsible for understanding and following university policies and ethical guidelines when using AI. This means not sharing confidential information with AI tools and making sure work submitted is your own. 
+Review the guidance chart
+ to determine what types of data you can enter into these tools.
+UT Policy on Artificial Intelligence
+UT Health Science Center Acceptable Use of Generative AI
+Acceptable Use of IT Resources Policy
+Guidelines for Responsible Use 
+Protect university and personal data 
+Verify accuracy and do not assume AI output is correct 
+Be cognizant of bias with inputs and outputs 
+Maintain confidentiality and minimum necessary use 
+Be transparent when using AI for official work 
+Respect copyright, licensing, and intellectual property 
+Use only approved or authorized AI services for sensitive data 
+ A Risk-Based Approach Based on Data Classification 
+Whether an AI tool may be used depends on the type of data you enter into it, not simply whether the tool is available or supported by IT. AI use is governed by UT’s Data Classification Standard and a risk-based decision model. Whether an AI tool may be used depends on:
+The classification of the data
+The contractual protections in place
+The technical configuration of the AI service
+The presence or absence of external data sharing (e.g., web search)**
+This approach ensures that AI adoption supports innovation while maintaining compliance with FERPA, HIPAA, CUI, and other regulatory obligations.
+ How to Determine If You Can Use an AI Tool
+Before using any AI tool, ask:
+What type of data am I entering?
+What 
+classification level does that data fall under
+?
+Is the AI tool 
+UT-managed and contractually covered
+?
+Is web search or external sharing enabled?
+Do I need to coordinate with campus IT or 
+Cybersecurity Governance, Risk, and Compliance
+ (GRC)?
+Your answers determine whether the use is allowed.
+Software Approval Process
+Submit a request online
+ to ask for consideration of an AI tool for departmental or university use. 
+Resources 
+Office of Innovative Technologies
+Guides and Tutorials
+Workshops and Events
+Teaching and Learning with AI
+UT Verse Vodcast
+Teaching & Learning Innovation
+Teaching with Generative Artificial Intelligence at UTK
+ (requires UT login) 
+Research, Innovation, & Economic Development
+AI Tennessee Initiative
+Guidance Available by Campus 
+UT Chattanooga: 
+utc.edu/ai
+UT Health Science Center: 
+uthsc.edu/its/ai/index.php
+ (requires UTHSC login) 
+UT Knoxville: 
+oit.utk.edu/ai
+ (this page)
+Office of Innovative Technologies
+CONNECT WITH US:
+Follow OIT on X (Twitter)
+Sign Up for IT Weekly
+Read IT Weekly
+ OIT Instruction & Research News
+OIT on the UTK Employee Hub
+About OIT
+Employment
+Technology Fee
+Are You New?
+See All Services
+Policies
+OIT HELPDESK
+Commons North
+
+2nd Floor Hodges
+865-974-9900
+Contact Form
+Search Knowledge Base
+Office of Innovative Technologies
+University of Tennessee
+The University of Tennessee, Knoxville
+Knoxville, Tennessee 37996
+865-974-1000
+Search for:
+Events
+A-Z 
+Apply
+Privacy
+Map
+Directory
+Give to UT
+Accessibility
+The flagship campus of 
+the University of Tennessee System
+ and partner in 
+the Tennessee Transfer Pathway
+.
+
+
+### SECONDARY https://policy.tennessee.edu/policy/bt0035-policy-on-artificial-intelligence/
+BT0035 - Policy on Artificial Intelligence - UT System Policies
+Skip to content
+Search
+Search
+BT0035 – Policy on Artificial Intelligence
+System-wide Policy:
+BT0035 – Policy on Artificial Intelligence
+Version: 1
+Effective Date: 02/28/2025
+AUTHORITY
+Pursuant to Tennessee Public Chapter 550 (2024),* the Board of Trustees (“Board”) of The 
+University
+ of Tennessee (the “University”) is responsible for adopting a policy pertaining to the use of artificial intelligence technology by students, 
+faculty
+, and staff for instructional and assignment purposes. Additionally, the Board is responsible for approval of policies governing, among other things: (i) student conduct,** and (ii) the general welfare and success of students.***
+DEFINITIONS
+For purposes of this policy, capitalized terms used herein shall have the meanings set forth below:
+“Artificial Intelligence” 
+or 
+“AI” 
+means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations, or decisions influencing real or virtual environments and that is capable of using machine and human- based inputs to perceive real and virtual environments, abstract such perceptions into models through analysis in an automated manner, and use model inference to formulate options for information or action.****
+“
+Campus
+” 
+means The University of Tennessee at Chattanooga (UT Chattanooga), The University of Tennessee Health Science Center (UTHSC), The University of Tennessee, Knoxville (UT Knoxville), The University of Tennessee at Martin (UT Martin), The University of Tennessee Southern (UT Southern), and any other campus that is or becomes a part of The University of Tennessee system. For purposes of this policy, the University of Tennessee Institute of Agriculture (UTIA) and the University of Tennessee Space Institute are recognized as component units of the UT Knoxville campus.
+“Faculty” 
+or 
+“Faculty Member” 
+means any faculty member (regardless of rank or title) employed by the University engaged primarily in academic instruction, research, or service.
+“Staff” or “Staff Member” 
+means exempt and non-exempt staff members employed by the University not engaged primarily in academic instruction, research, or service, including but not limited to professional staff and executive/
+administrative staff
+.
+“Student” 
+or 
+“Students” 
+shall include person(s) enrolled or registered for study at the University, either full-time or part-time, pursuing undergraduate, graduate, or professional studies, as well as non-degree and non-credit programs and courses to the extent they are so defined in a Campus’ student code of conduct or similar University rule (e.g., student rights and responsibilities), as applicable.
+PURPOSE
+The University’s mission is to serve “
+all Tennesseans and beyond through education, discovery and outreach that enables strong economic, social and environmental well-being.
+” Pursuant to the Be One UT values, the University strives to: (i) be bold and impactful, (ii) inspire creative and transformational action, and (iii) foster 
+integrity
+ through openness, accountability, and stewardship. Consistent with the University’s mission and core values, the Board recognizes that AI technologies will continue to evolve and that it is imperative for Students, Faculty, and Staff to have the opportunity to succeed and thrive in a world transformed by AI.
+Through this policy, the Board aims to balance the innovative potential of AI with the need to uphold academic integrity, protect 
+sensitive information
+, and comply with applicable laws, rules, and regulations. This policy is intended to provide a framework of broad systemwide expectations while maintaining the necessary flexibility for the Campuses to issue academic procedures, guidelines, and/or restrictions pertaining to the responsible and ethical use of AI for instructional and assignment purposes in a dynamic landscape.
+SCOPE AND APPLICABILITY
+This policy applies systemwide to all Students, Faculty, and Staff with respect to the use of AI technology for instructional and assignment purposes in connection with all academic courses offered by the Campuses.
+POLICY STATEMENT AND GUIDING PRINCIPLES
+The University embraces the use of AI as a powerful tool for the purpose of enhancing human learning, creativity, analysis, and innovation within the academic context.
+Each Faculty or Staff Member (to the extent responsible for the delivery of a course) shall consider whether, when, and how AI may be used, if at all, for instructional and assignment purposes associated with a course, including independent study, clinical, and/or research activities.
+Faculty/Staff Members responsible for the delivery of a course are expected to clearly communicate to Students the permitted use(s), if any, of AI technology in connection with a course and the extent to which AI technology and derived content may be used as part of a Student’s academic work.
+Students are responsible for adhering to the requirements set by Faculty/Staff Members with respect to the permitted use of AI technology in each of their courses. Students should be made aware that the use of AI technology may vary by course, discipline, and by Faculty/Staff Member. Students who are uncertain of the permitted use of AI technology are encouraged to seek further clarification from the respective Faculty/Staff Member.
+AI generated results may contain 
+data
+, images, and other information protected under intellectual property or other ownership rights, including copyright. Authors shall be fully responsible for ensuring the allowed use of any AI generated data and information contained in their academic work.
+AI technology is to be used in accordance with: (i) academic and student codes of conduct/honor codes; (ii) any ethical and professional standards applicable to a particular course or program; (iii) academic standards pertaining to attribution and citations; (iv) University/Campus policies, procedures, and other guidelines; and (v) applicable laws, rules, or regulations.
+VI. 
+CAMPUS PROCEDURES
+Each Campus shall establish academic procedures and guidance as may be necessary to provide transparency and clarity regarding the responsibilities of Students, Faculty, and Staff with respect to the appropriate use of AI technology for instructional and assignment purposes, which shall, at a minimum, address the following items:
+Course-related Communication. Communication of Faculty/Staff expectations regarding the permitted use of AI technology by Students for a course shall occur through at least one of the following modalities: (i) course syllabus; (ii) course materials; (iii) assignment instructions; (iv) research guidelines; (v) a learning management system (LMS); and/or (vi) other standard forms of course-related communications, including in-person and electronic methods of communication (online, email, etc.) provided to Students.
+Types of Permitted Use. Course-related communication shall address the context(s) in which a Student may employ AI technology with respect to a course and/or particular assignments. Three possible options include, but are not limited to, the following:
+
+Unrestricted Use 
+– Students may use AI technology for any learning, creation, or analysis, without restriction.
+Mixed Use 
+– Students may use AI technology for some learning, creation, or analysis, with specifics provided in a clear and timely manner.
+Total Prohibition 
+– Students may not use AI technology for any learning, creation, or analysis.
+In describing any limitations (or lack thereof) on the use of AI technology in course-related communications, Faculty/Staff shall consider, among other things, the following use cases:
+Learning 
+– AI can provide definitions, facts, names, dates, or summaries of larger topics.
+Creating 
+– AI can generate a text work (from a single word up to an entire long-form text), an image (from a simple still image up through an entire video), and possibly other creations.
+Analyzing 
+– AI can examine patterns, gain insights, and make informed decisions of quantitative or qualitative data.
+Academic Integrity. Course-related communications pertaining to the use of AI technology shall: (i) affirm the importance of academic honesty; and (ii) inform Students that the unpermitted use of AI technology is a form of academic misconduct, which violations are subject to the Campus’ student code of conduct.
+AI Detection Tools. The Campus academic procedures and/or guidance shall provide Faculty/Staff with advice as to the acceptable use, if any, of AI detection tools for instructional and assignment purposes. Notwithstanding the foregoing, under no circumstances shall the results of AI detection tools be the single measure for determining the academic performance of or misconduct by a Student.
+Campus procedures may include more stringent requirements provided that such procedures do not conflict with or lower the requirements set forth in this policy.
+Additionally, Campuses are encouraged to provide: (i) Faculty/Staff members with examples, templates, and/or standard language for course-related communication based on multiple types of AI use, which can be adopted for instructional and assignment purposes; and (ii) education and training concerning the potential benefits, risks, and responsibilities associated with the use of AI technology.
+VII. 
+AI TECHNOLOGY RESOURCES/DATA PROTECTION
+The use of AI technology is subject to the University’s policies and procedures pertaining to information technology, including the University’s policy on Acceptable Use of Information Technology Resources (IT0002).
+As with the use of any type of information technology, Students, Faculty, and Staff must be cognizant of information security and data protection obligations (e.g., intellectual property rights, personally identifiable information, protected health information, contractual and other legal obligations, etc.) that may apply. 
+Protected University Data
+ shall not be entered into AI technology that has not been reviewed by the University’s Chief Information Officer (or designee) and authorized for use. The University shall maintain a list of approved AI technology resources available for use. Faculty, Staff, and Students are free to use any AI technology for instructional purposes so long as Protected University Data is not entered into such systems. “Protected University Data” shall have the meaning set forth in the University’s General Statement on Information Technology Policy (IT0001).
+VIII. 
+ADMINISTRATIVE RESPONSIBILITIES
+The Vice President for Academic Affairs, Research, and Student Success, in consultation with the appropriate subject matter experts, shall be responsible for providing advice and support to the Campuses with respect to the requirements of this policy. The Chancellor of each Campus shall be responsible for ensuring the establishment of the Campus procedures, guidelines, and/or other resources consistent with this policy.
+IX. 
+COMPLIANCE AND OVERSIGHT
+The Office of Institutional Compliance shall be responsible for reviewing the Campuses’ procedures, guidelines, and other efforts to promote compliance with the provisions of this policy. The Office of Institutional Compliance shall prepare reports regarding the implementation and ongoing compliance with this policy as may be requested by the Audit and Compliance Committee.
+History:
+Adopted 02/28/2025
+* Tennessee Code Annotated § 49-7-185.
+** Tennessee Code Annotated § 49-9-209(d)(1)(I).
+*** Education, Research, and Service Committee Charter.
+**** Tennessee Code Annotated § 49-7-185(a).
+Policy Details:
+BT0035 – Policy on Artificial Intelligence
+Version: 1 // Effective: January 2, 2028
+ Downloadable PDF
+Related Policies:
+IT0001 – General Statement on Information Technology Policy
+IT0002 – Acceptable Use of Information Technology Resources
+Menu
+Home
+Updates
+UT System Policies
+General Policies
+Board of Trustees Policies
+Fiscal Policies
+Human Resources Policies
+Information Technology Policies
+Research Policies
+Health & Safety / Emergency Management Policies
+Campus/Institute Procedures
+UT System (UTSA) Procedures
+UT Knoxville Handbooks & Procedures
+UT Chattanooga Handbooks & Procedures
+UT Southern Handbooks & Procedures
+UT Martin Handbooks & Procedures
+UT Health Science Center Handbooks & Procedures
+Institute of Agriculture Procedures
+Institute for Public Service (IPS) Procedures
+Bylaws of The University of Tennessee Board of Trustees
+Guidance Documents
+Forms and Templates
+Statement of Need and Impact
+Forms
+Policy Template
+Procedure Template
+Committees
+Responsible Officials
+General Policy Committee Members
+Fiscal Policy Committee Members
+Human Resources Policy Committee Members
+IT Security Policy Committee Members
+Research Policy Committee Members
+Safety Policy Committee Members
+Campus Procedure Contacts
+Tennessee Rules & Regulations
+FAQs
+General Policy
+Board of Trustees Policy
+Fiscal Policy
+Health & Safety / Risk Management Policy
+Human Resources
+Information Technology Policy
+Research
+Policy Details
+Policy Details:
+BT0035 – Policy on Artificial Intelligence
+Version: 1 // Effective: January 2, 2028
+ Downloadable PDF
+Related Policies:
+IT0001 – General Statement on Information Technology Policy
+IT0002 – Acceptable Use of Information Technology Resources
+<
+ go back to main policy page
+The University of Tennessee Office of the General Counsel • 400 W. Summit Hill Dr. SW, Knoxville, TN 37902 • (865) 974-3245
+© 2026 The University of Tennessee System

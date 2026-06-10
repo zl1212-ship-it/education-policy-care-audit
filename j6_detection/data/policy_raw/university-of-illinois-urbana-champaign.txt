@@ -1,0 +1,100 @@
+### PRIMARY https://genai.grainger.illinois.edu/ai-guidance
+AI Guidance | AI Guidance and Resources | Illinois
+Block I logo
+
+ University of Illinois Urbana-Champaign
+ 
+The Grainger College of Engineering
+AI Guidance and Resources
+Search
+Menu
+Search
+Home
+Using AI
+AI-Supported Learning
+AI Guidance
+AI Ethics
+Home
+AI Guidance
+AI Guidance
+AI Guidance
+Sample Statements for Engineering
+General information:
+U of I System: 
+Generative AI Guidance for Instructors
+General AI-related guidance
+ from the Gies College of Business
+CITL Illinois: 
+Generative AI Implications for Teaching & Learning
+Template Statements for Engineering
+Restricted
+Generative AI tools, such as ChatGPT, Co-pilot, and Gemini, are not permitted for any stage or phase of work in this class. Use of these tools in this course will be considered academic dishonesty and a violation of the University of Illinois Student Code. 
+Any work written, developed, created, or inspired by artificial intelligence (AI) is considered plagiarism and will not be tolerated. While these tools will find their place in our workforces and personal lives, for this class their use hinders the learning process and therefore is not allowed.
+Limited Use
+Generative AI, such as ChatGPT, Microsoft Copilot, and Gemini, can answer questions and generate text, images, and other media.  The appropriate use of generative AI varies from course to course.  In ______, there are times when generative AI may be useful in the course.  If you choose to use generative AI as permitted below, you must document and attribute all AI contributions to your coursework and take full responsibility for the contributions including the accuracy of the information and reliability of sources.  When using generative AI, keep a journal documenting prompts, AI responses, and your usage.  Your instructor may ask you to provide this documentation.
+You may use generative AI in ______ for the following:
+Add acceptable uses here, see suggestions in 
+BIOE415 example
+.
+You MAY NOT use generative AI in ______ for the following:
+Add unacceptable uses here
+If you have a question about the use of Generative AI, please reach out to your instructors.  Failure to abide by these guidelines is a violation of academic integrity. We will investigate suspected uses of generative AI that do not follow these guidelines and apply sanctions as outlined in the University of Illinois Student Code.
+Use When Instructed to Do So
+During our class, we may use AI tools such as ChatGPT. You will be informed as to when, where, and how these tools are permitted to be used, along with guidance for attribution. Any use outside of when permission is explicitly given will be considered academic dishonesty and a violation of the University of Illinois Student Code. 
+All Use
+Generative AI tools, such as ChatGPT, Co-pilot, and Gemini are welcome in this class, provided that you cite when and how you use the tool. You will be provided with examples of how to cite your use of this tool for your assignments.
+There are a variety of AI programs available to assist students. AI programs are not a replacement for critical thinking, analysis, creativity, originality, and problem-solving. Engineering is a craft that you must develop over time by learning skills and building intuition. However, AI tools may be used to assist with engineering design as long as proper attribution is provided.
+Other Sample Statements/Policies
+The examples above are adapted from the 
+models for syllabus statements provided by the Illinois College of Law 
+Sample syllabus statements
+ and guidance from the University of Minnesota
+Vanderbilt: Sample AI Policies:
+BIO 415 Academic Integrity and Use of Generative AI Statement
+Sample statement from LAS RHET course
+This AI policy curation resource 
+is created by 
+Lance Eaton
+ (contact him via 
+email
+, 
+Twitter
+, 
+LinkedIn
+, or sign up for his 
+AI+Edu=Simplified newsletter
+) for the purposes of sharing and helping other instructors see the range of policies available by other educators to help in the development of their own for navigating AI-Generative Tools (such as ChatGPT, MidJourney, Dall-E, etc).  
+AI Policies for CS 411: Database Systems
+Use of Generative AI Tools:
+When AI is prohibited. Students are not allowed to use advanced automated tools (artificial intelligence or machine learning tools such as ChatGPT, Bard, or Dall-E 2) on assignments in this course. Each student is expected to complete each assignment without substantive assistance from others, including automated tools. The use of generative AI is strictly prohibited for homework assignments and project track 2.
+When AI is allowed with attribution. Students are allowed to use advanced automated tools (artificial intelligence or machine learning tools such as ChatGPT, Bard, or Dall-E 2) on assignments in this course if that use is properly documented and credited. For Group Activities, the use of generative AI is strongly discouraged and should be limited to debugging or seeking guidance. This is conditional upon having made a genuine attempt to address the problem independently within your group. It is also required that any use of generative AI is clearly disclosed in your submission. For project track 1, Generative AI can be utilized to assist with front-end development tasks. However, its use is expressly forbidden for writing database-related code, including SQL queries, stored procedures, and triggers.
+Northern Illinois University
+Northern Illinois University: Compiled List of College/University Class Policies for AI Tools
+Predictive writing technologies (like ChatGPT, Google Translate, and Grammarly) can be valuable writing tools in many contexts, when used effectively. However, much of the learning in this course occurs through direct, personal experience of the writing process, from first drafts to final revisions. If you use predictive technologies in this class, use them ethically by disclosing how you used them (see, for example, the 
+MLA citation guidelines for generative AI
+).
+Regardless of what you use to compose, you are responsible for what you turn in. For example, including inaccurate citations and sources from predictive technology puts you at risk of academic integrity violations.
+AI Guidance and Resources
+Twitter
+Instagram
+Facebook
+LinkedIn
+YouTube
+306 Engineering Hall
+1308 W. Green St., MC-266
+Urbana
+,
+ IL 61801
+Phone: 
+(217) 333-2280
+Fax: 
+Email: 
+engineering@illinois.edu
+The Grainger College of Engineering
+The purpose of this resource is to provide guidance and resources on the use of AI in the Grainger College of Engineering.
+About Cookies
+Privacy Policy
+Copyright © 2026
+Accessibility
+Webmaster
+Login

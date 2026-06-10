@@ -1,0 +1,148 @@
+### PRIMARY https://ctal.udel.edu/advanced-automated-tools/
+Updated Collection: Advanced Automated Tools in Teaching and Learning | Center for Teaching and Assessment of Learning
+Log In
+Search
+Center for Teaching & Assessment of Learning
+About Us
+Programs
+Services
+Resources
+Confidentiality
+Select Page
+Updated Collection: Advanced Automated Tools in Teaching and Learning
+This landing page and collection of webpages have been designed as both standalone resources and those which build upon and reinforce other pages in this series. We recommend that you start with this landing page, which lays out the intention behind these pages (purpose), how we are framing the discussion (approach), how these concepts connect to the practice of teaching and learning (application) and important questions you may or may not have previously been able to answer (FAQ’s). 
+Definition
+ Advanced automated tools – artificial intelligence or machine learning tools such as 
+Microsoft Copilot
+ and 
+Google Gemini
+ that are sometimes described as “generative” or “autogenerative” tools – use sophisticated technology and very large data sets to create realistic writing, images, or other artifacts in response to natural language queries and prompts. They are very easy to use and some of their output is very difficult to distinguish from human-generated material.
+Purpose
+This collection of webpages is intended to simplify the process for members of the UD teaching and learning community seeking background information, research-backed best practices, and practical solutions to common challenges in course design, teaching, and assessment as advanced automated tools become ever-increasingly used both in and out of the classroom. The topical pages contain links to a wide range of resources both internal and external to UD that we make our best effort to ensure remain relevant. This guide represents the current state of how educational development and assessment professionals, who spend their time providing recommendations in the context of university teaching and learning, 
+generally,
+ are approaching advanced automated tools at the time these pages were most recently updated. This collection is not, and cannot, be an exhaustive or comprehensive guide for all instructional contexts. Once you have reviewed the available resources, please feel free to 
+complete this form to request a consultation
+ with a CTAL staff member to discuss course and/or discipline specific needs.
+Please note: 
+While we do not recommend the use of specific GenAI tools or products, or recommend the use of one tool over another, we do occasionally make reference to various user-facing (the AI chatbot you or students interact with) websites and applications. 
+Approach
+While there are a growing number of competency or behavioralist oriented frameworks within the context of teaching and learning with AI that define either the competencies necessary for effective, efficient, and ethical use of Generative AI, Rick Dakan and Joseph Feller’s 
+Framework for AI Fluency
+ is the theoretical framework we will use to describe the general modalities and competencies for users of advanced automated tools. This is not a prescriptive framework for the design of significant learning experiences, like 
+Backward Design
+. Rather, it describes use of these tools in simple, and straightforward terms. 
+Note: 
+We recognize that Dakan and Feller are talking about Artificial Intelligence and Generative Artificial Intelligence and not all machine learning or advanced automated tools use AI or GenAI. However, in the context of teaching and learning the primary modalities via which human users interact with tools and the competencies they do(n’t) exhibit when working with these tools are similar enough that we feel it apt to apply their assertions more broadly.
+Modalities
+Dakan and Feller note that there are, fundamentally, three modalities of human-advanced automated tools interactions. They are:
+Automation:
+ Tools do work for you following explicit instructions. These are generally repetitive tasks and the choice to automate generally comes from a desire to work more efficiently and save time. 
+Augmentation:
+ Humans work collaboratively with tools. Humans are in control and AI is the co-pilot or assistant which extends the capacity, capability, creativity, and/or insights of the human. 
+Agent:
+ AI works independently on your behalf. Fully automated tasks are performed in a way that defines the character of the tool, not the task. Examples include the creation of interactive tutors, chatbots, and game characters. 
+Learn more about Agentic AI
+UD students and faculty primarily use automation and augmentation modalities in the context of teaching and learning
+, as most do not have highly specialized training to design or appropriately use AI agents, or if they do, they’re not using these tools in this way for most teaching and learning related tasks. Dakan and Feller note that the boundaries between these modalities are fluid. For example, a student might use an advanced automated tool to revise existing text with explicit instructions (automation) after asking for personalized feedback on their writing (augmentation). Faculty may use these tools to analyze de-identified examples of student work in a closed LLM or GenAI tool and ask what common elements student submissions are missing from the assignment instructions and rubric (augmentation). They might then generate reports, using advanced automated tools, to share with students of frequencies and examples of these missing elements (automation). 
+The 4D’s 
+More importantly, Dakan and Feller name the 4 D’s of AI competencies which represent the interconnected human skills, knowledge and values that enable effective, efficient, ethical, and safe Human-AI interaction: Delegation, Description, Discernment, and Diligence. These four competencies are central (and perhaps essential) to the use of AI both from a normative standpoint (how people 
+should 
+use AI fluently) but also from the perspective of simply defining the ways humans interact with these tools. Dakan and Feller define the 4 D’s as follows (
+emphasis added
+):
+Delegation 
+refers to 
+the ability to identify when and how to use AI tools and modalities
+ effectively in creative and problem-solving processes. It involves 
+understanding the capabilities and limitations of various AI technologies
+ and 
+making informed decisions about when to use AI
+ for automation, augmentation, or independent agent-mediated experiences.
+Description 
+encompasses the 
+skills needed to effectively communicate ideas, requirements, constraints, and other aspects of creative visions to AI systems
+. It involves crafting 
+clear, specific, and well-structured prompts
+ (using a wide range of prompting techniques) and other elements that 
+guide and enable AI tools to produce desired behaviors and outputs
+.
+Discernment
+ involves the 
+critical evaluation of AI-generated outputs
+, understanding their 
+quality, relevance, potential biases, and other salient characteristics
+. It also includes the 
+ability to iterate and refine the collaborative process with AI tools
+.
+Diligence
+ refers to the 
+responsible use of AI
+, including 
+ethical considerations, transparency
+ about AI use, and 
+taking accountability
+ for the final products created with AI assistance.
+While both students and faculty 
+should 
+practice these four competencies when interacting with advanced automated tools, these four categories also expose some of the key fault lines which have emerged in debates around appropriate and inappropriate use of these tools. It is useful to remember that these competencies, depending on the teaching and learning context, might not be taken into consideration by either students or faculty. Remember, these competencies, like any other kind of competency we teach, must be learned. 
+Application
+The following pages delve deeper into how the framework introduced above can be applied in various contexts including selecting a course-level syllabus statement, designing assessments, and addressing concerns related to ethics, bias, and access. 
+What are these tools and how do students use them?
+Pain points from empirical research on advanced automated tools 
+(Coming May 2026)
+Course policies and communication for use of advanced automated tools
+Assessment and advanced automated tools
+Ethics, bias, and access 
+(Coming May 2026)
+Frequently Asked Questions (FAQs)
+What institution wide policies are in place at UD? 
+Please refer to the 
+Guidelines and FAQs for Use of Generative Artificial Intelligence Tools at the University of Delaware for institution-wide
+ policies. The university has also published a
+ Directive for Appropriate Use of Generative Artificial Intelligence Tools and Services
+ and maintains a 
+University Generative AI Services List.
+Laid out in the Guidelines and FAQs as well as the Directive stipulate that:
+Expectations regarding the use of Generative AI should be clear to students and consistent with the guidelines the Center for Teaching & Assessment of Learning adopts in these webpages (Directive)
+Students should follow instructor guidance on when and how to use University-approved AI tools and should not distribute AI-generated content outside the context of the course. (Guidelines and FAQs)
+Students should not use University-approved AI tools to create, share, or distribute materials derived from course content without explicit permission from the instructor. (Guidelines and FAQs)
+Faculty should avoid uploading student work or protected data without appropriate consent and should also follow copyright and licensing requirements. (Guidelines and FAQs)
+I came here looking for course-level GenAI use language to add to my syllabus, where can I find it?
+At a minimum we recommend that you ensure you have chosen 
+1. a course policy
+, 
+2. syllabus statemen
+t, and 
+3. communication plan
+ for all courses you teach each semester. You can find all of this information on the linked page titled “
+course policies and communication for the use of advanced automated tools
+” It is our professional opinion that simply selecting a no-use policy for advanced automated tools, or drafting your own, similar language, is not acceptable, these policies must be actively communicated to your students. If you want to learn more about these tools to help ground your decisions, please start with the “what are these tools and how do students use them” page. 
+Why “Advanced Automated Tools” and not simply “Generative AI”?
+Advanced automated tools – artificial intelligence or machine learning tools such as Microsoft Copilot and Google Gemini that are sometimes described as “generative” or “autogenerative” tools – use sophisticated technology and very large data sets to create realistic writing, images, or other artifacts in response to natural language queries and prompts (e.g. write a 500 word essay on X topic, generate an image of Y, provide python code to plot a sine wave). They are very easy to use and some of their output is very difficult to distinguish from human-generated material. Perhaps the most publicized (and criticized) versions of advanced automated tools, Generative Pre-trained Transformers (GPTs) like OpenAI’s ChatGPT, or Large Language Models (LLMs) like Anthropic’s Claude, use predictive algorithms, pre-training, and gigantic sources of data to generate content, acting as both human assistants and automated agents. However, not all advanced automated tools are used to generate new text, even if they use AI, machine learning, and/or neural networks to assist students or faculty in processes like editing writing or code, marking (assigning grades), or giving feedback. One commonality of most of these tools is their reliance and training on large language models with different parameters set in place by developers which lead to some tools being better suited for different tasks. Another commonality, and one we discuss more in webpages linked on this page are the pain points form empirical research and ethics, bias, and access pages are that nearly all of these tools operate as “black boxes” of closed off and relatively non-transparent, protected intellectual property. This means, practically, that tools compute differently from one another and only some of the “how” information is publicly available.
+Revised on April 16, 2026
+Facebook
+X
+RSS
+Designed by 
+Elegant Themes
+ | Powered by 
+WordPress
+Center for Teaching & Assessment of Learning | Est. 1964 |
+83 E. Main St., 3rd Floor (Bookstore Building) | (302) 831-2027 | ctal-info@udel.edu
+Twitter 
+(opens in new tab)
+Facebook 
+(opens in new tab)
+Instagram 
+(opens in new tab)
+Youtube 
+(opens in new tab)
+Pintrest 
+(opens in new tab)
+Linkedin 
+(opens in new tab)
+© 
+University of Delaware
+Comments
+Legal Notices
+Accessibility Notice

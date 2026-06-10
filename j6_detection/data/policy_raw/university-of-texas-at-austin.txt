@@ -1,0 +1,151 @@
+### PRIMARY https://provost.utexas.edu/the-office/faculty-affairs/office-of-academic-technology/ai-detection-software-guidance/
+AI Detection Software Guidance - Office of the Executive Vice President and Provost
+Skip to content
+UTEXAS.EDU
+
+ Join Our Faculty
+ 
+
+ Leadership Searches
+ 
+Menu
+
+ About the Provost
+
+ Meet The Provost, William Inboden 
+
+ The Office 
+
+ Leadership 
+
+ Directory – Provost Staff 
+
+ Organizational Chart
+
+ Initiatives and Committees 
+
+ Resources
+
+ Finance, Reporting & Compliance 
+
+ Academic Personnel Services
+
+ Faculty Events 
+
+ Contact Us 
+ Close
+
+ About the Provost 
+
+ Meet The Provost, William Inboden 
+
+ The Office 
+
+ Leadership 
+
+ Directory – Provost Staff 
+
+ Organizational Chart 
+
+ Initiatives and Committees 
+
+ Resources 
+
+ Finance, Reporting & Compliance 
+
+ Academic Personnel Services 
+
+ Faculty Events 
+
+ Contact Us 
+
+ Join Our Faculty
+ 
+
+ Leadership Searches
+ 
+Home
+...
+Office of Academic Technology
+AI Detection Software Guidance
+AI Detection Software Guidance
+The University of Texas at Austin provides the following guidance on the use of AI Detection Software on campus. If you have questions about this guidance, please contact the Office of Academic Technology at 
+oat@utexas.edu
+.
+1.0 Resources on Academic Integrity and Generative AI
+The general philosophy Academic Affairs promotes is that the primary focus should be on fostering academic integrity through effective course and assessment design rather than by engaging in increasingly complex efforts to police students. To this end, the University maintains resources related to Assessment and generative AI. You can get started with 
+Generative AI in Teaching and Learning: Assessment
+ resources. These resources emphasize proactive assessment design in order to promote genuine learning and create environments that motivate academic integrity by emphasizing the importance of coursework as practice and assessment for core course learning outcomes.
+The Office of Academic Technology provides 
+guidance on Responsible Use of AI for Teaching and Learning
+, including principles on responsible adoption that you can share with students.
+2.0  University Academic Integrity Policies
+HOP 2-9970
+, Teaching of Courses by Faculty, Assistant Instructors, and Teaching Assistants emphasizes that instructors are required to follow the 
+Student Conduct and Academic Integrity
+Guidelines for Resolving Academic Misconduct
+ to resolve any instances of suspected academic misconduct. These guidelines include the following:  
+Instructors may not adjust or otherwise impact the student’s grade on the academic assessment in question while the student is engaged in the conduct process. 
+Instructors may not encourage the student to cease attending or prevent the student from continuing to attend class or discourage them from submitting coursework while engaged in either process
+If the course concludes prior to the matter reaching full resolution, instructors must submit a grade of “X” until notification of final resolution is received from the Dean of Students. 
+In addition, Academic Integrity guidance is detailed in the 
+Texas Statement on Academic Integrity
+ and the 
+Acceptable Use of Generative AI Tools from the Information Security Office
+. 
+3.0 Use of AI Detection Software Requires a University Contract or Purchase Order 
+The University prohibits the use of all third-party software, including AI Detection Software (ADS, software used to flag or otherwise detect output as AI-generated), to evaluate student work or assignments unless a University contract or purchase order is in place. This is to ensure the security, privacy, accessibility, and intellectual property rights of faculty, staff and students. Because AI Detection Software uses AI models that train data, any software contract or purchase order with a vendor must include language that ensures the vendor protects university data from being used by training models or otherwise isolates University data into a separate instance that is not accessible by parties external to the University.  
+Individual faculty may not sign contracts or purchase orders on behalf of the University. All academic technology software contracts or purchase orders must be administered by a department, College, School, Unit or at the enterprise level and be processed through the 
+University’s Business Contracts Office
+.  
+The University does not endorse the use of AI Detection Software and does not have any central contracts or purchase orders with active AI Detection Software features.  
+Procurement and Payment Services
+ is available to consult, provide guidance, and assist all University personnel in obtaining software agreements that comply with University and State of Texas requirements.  
+3.1. Use of Procards or Personal Credits for AI Detection Software is Prohibited.
+Due risks posed to students’ intellectual property and privacy rights, AI Detection Software is considered a 
+High Risk Software
+ and cannot be purchased with a Purchase Card (Procard) or a personal credit card.  
+4.0 Student Intellectual Property and Copyright 
+UT Austin students own the 
+intellectual property and copyright
+ of any work they create in a course. Submitting student work (even if it is anonymized) into any AI Detection Software (or any other third-party software) without a University contract or purchase order in place may be a violation of that student’s copyright and intellectual property rights. 
+4.1 Student Privacy
+UT Austin students’ privacy rights are protected through
+FERPA
+ – the federal Family Educational Rights and Privacy Act. Student work is an educational record protected by FERPA. Submitting student work (even if it is anonymized) into any AI Detection Software (or any other third-party software) without a University contract or purchase order in place may also be a violation of that student’s FERPA rights if any personally identifiable information is present in that record. Further, any software or software as a service or technology that 1) utilizes FERPA data and/or 2) is required by an instructor for student use in a course must be obtained through a business contract and with the approval of the Information Security Office. 
+5.0 Personal Liability
+Instructors who purchase AI Detection Software on a personal credit card or a Procard may be personally liable for paying any damages or legal costs which may occur because of the purchase. Personal credit cards, and more specifically Procards, do not have thorough controls or purchase review in place by the University prior to purchase. A University Procard holder is solely responsible for the charges that are made on the card. Instructors who purchase AI Detection software with a personal credit will not be reimbursed for that expense. Further, University employees, including instructors, do not have authority to agree to terms and conditions for software or software as a service, and by agreeing to terms and conditions of software, or software as a service, an employee is acting outside the course and scope of their position which can create personal liability for the employee’s personal assets.  
+Questions/Comments
+If you have questions or comments about the University’s AI Detection Software Guidance please contact the Office of Academic Technology at 
+oat@utexas.edu
+UT Generative AI Guidance and Information
+Texas Statement on Academic Integrity
+Statement on Requiring Generative AI in the Classroom
+Responsible AI for Teaching and Learning – Addressing the Limitations of Using Generative AI for Learning
+Acceptable Use of Generative AI Tools
+5 Things to Know about ChatGPT and Other Tools
+Statement on Artificial Intelligence in Writing Flag Courses
+Expanded Statement on Artificial Intelligence in Writing Flag Courses
+A Guide to Getting Started with Gen AI
+Generative AI in Teaching and Learning Toolkit
+Phone
+512-471-4363
+Email
+provost.office@utexas.edu
+Peter T. Flawn Academic Center
+
+(FAC 326)
+
+2304 Whitis Ave, Austin, TX 78712-1701
+Contact Us
+Initiatives and Committees
+Messages From the Provost
+Meet The Provost, William Inboden
+Directory – Provost Staff
+© 
+The University of Texas at Austin
+ 2026
+Emergency Information
+Site Policies
+Web Accessibility Policy
+Web Privacy Policy

@@ -1,0 +1,276 @@
+### PRIMARY https://provost.ua.edu/resources/policies-guidelines/
+Policies & Guidelines | Office for Academic Affairs
+Skip to content
+myBama
+
+ Office for Academic Affairs 
+Expand title bar menu
+Close title bar menu
+
+ Search This Site
+ 
+Submit
+About
+Expand About menu
+Close About menu
+About the Provost
+Staff
+Colleges & Schools
+Affiliated Offices & Units
+UA Committees & Councils
+UA Organizational Chart
+General Education
+Expand General Education menu
+Close General Education menu
+Core Curriculum Framework
+Pathways
+Legends 101
+Experiential Learning
+Core Curriculum Oversight Committee
+Committees & Subcommittees
+Awards & Opportunities
+Expand Awards & Opportunities menu
+Close Awards & Opportunities menu
+Faculty Awards
+Provost’s Faculty Fellows
+Provost Capstone Accolades
+Emeritus Appointments
+Distinguished Professorships
+Promotion & Recognition Events
+Subvention Program
+Resources
+Expand Resources menu
+Close Resources menu
+Academic Program Review
+Academic Misconduct
+Accommodations & Support Hub
+AGSC Forms & Guidelines
+Faculty Careers
+Forms & Requests
+Policies & Guidelines
+Task Force Studying Race, Slavery and Civil Rights
+Faculty Affairs
+Shelby Endowment
+Expand Shelby Endowment menu
+Close Shelby Endowment menu
+The Shelby Endowment for Distinguished Faculty
+Shelby Institute
+Shelby Scholars
+Policies & Guidelines
+Policies & Guidelines
+UA Policies
+Faculty Handbook
+Academic Misconduct
+Higher Ed. Opportunity Act (HEOA)
+State Ethics Law
+Guidelines on Using Generative AI Tools
+Official Transcript Policy for Faculty Hires
+OAA Guidelines for Religious Observances
+Pregnant & Parenting Student FAQ
+Guidelines for Determining Credit Hours for Courses
+Guidelines for Students’ Required Participation in University-Sanctioned Events or Activities
+Faculty Handbook
+The purpose of the
+Faculty Handbook
+ is to describe the administrative policies and procedures of the University of Alabama (“University”) that affect faculty-rank employees in academic units. Reasonable efforts have been made to cover all important matters and to ensure that the contents are accurate; in the event that areas of policy have been omitted or are not stated clearly, or if ambiguities or inconsistencies are found to exist, decisions will be made by appropriate officials of the University.
+The provisions of and policies referenced in the 
+Employee Handbook
+ (except for provisions and policies applicable only to non-exempt employees) apply to faculty members.  Faculty members are responsible for reviewing and adhering to the 
+Employee Handbook,
+ the 
+Faculty Handbook,
+ and all applicable rules of 
+The Board of Trustees of The University of Alabama
+. If, in applicable situations involving faculty-rank employees, a conflict exists between the language of the 
+Faculty Handbook
+ and the language of the 
+Employee Handbook, 
+the language of the 
+Faculty Handbook
+ will control and supersede the language of the 
+Employee Handbook
+ provided that interpretation is consistent with the University’s custom and practice with applicable faculty status.
+Faculty with rights and responsibilities under this 
+Faculty
+Handbook 
+are understood to be all persons who have full-time tenured, tenure-track, or renewable contract appointments. Part-time, temporary, emeritus, and adjunct faculty are understood to have responsibilities dictated by this 
+Faculty
+Handbook 
+(e.g. compliance with policies and upholding instructional standards), but do not have full rights as defined herein. Some faculty rights are exclusive to those holding a tenured or tenure-track position; these rights are noted in the appropriate sections.
+The University reserves the right to amend or alter the conditions and terms contained in this 
+Faculty Handbook
+ as it deems necessary. The University will attempt to give notice of changes of information, policy, and procedure to faculty members and administrative personnel; inquiries as to whether the information contained herein is the current policy and procedure of the University should be made at the Office for Academic Affairs. 
+Board of Trustees Rule 108
+ requires this statement appear in this 
+Faculty Handbook
+:
+“Although the policies contained herein are intended to reflect current rules and policies of the University, users are cautioned that changes or additions may have become effective since the publication of this material.  In the event of a conflict, current statements of Board policy contained in the Bylaws, Rules, official minutes, and other pronouncements of the Board or Chancellor, or superseding law, shall prevail.”
+This 
+Faculty
+Handbook
+ will be reviewed annually. The revision process will include consultation with the Council of Deans and with the Steering Committee of the Faculty Senate. Suggestions for changes should be addressed to the Provost. All changes will be made in compliance with Board of Trustees Rule 108.
+Guidelines for Faculty in Dealing with the Use of Generative AI Tools
+Generative Artificial Intelligence (Generative AI) is a computer-based technology that creates a variety of data, such as pictures, videos, music or words, which look or sound like they were created by a person. It has been predicted that in the future, there will be a greater number of AI systems designed to facilitate creative cooperation between humans and AI. At the University of Alabama, faculty have expressed interests in exploring and applying generative AI tools (such as ChatGPT, DALL.E, Midjourney, Stable Diffusion, and Codex) to collaborative teaching and learning. This document aims at providing UA faculty with understanding the limitations of these tools, offering guidelines to faculty on using these tools in the classroom as they continue to evolve.
+What are ChatGPT and other GPT-based software and tools?
+ChatGPT is a large language model (LLM) based chatbot that was made available to the public on November 30, 2022. GPT is an abbreviation of Generative Pretrained Transformer, derived from a specific architecture of neural networks for natural language processing. It has been gaining a lot of attention and is evolving rapidly. It has already been integrated into Microsoft Office apps and other software. This type of generative AI analyzes language structure by mimicking how humans comprehend text and then uses this knowledge to automatically create text and other content. The abilities of the generative AI have been expanded from text to images, videos, computer codes and other data formats, such as DALL.E, Midjourney, Stable Diffusion and Codex.
+What are the functions of GPT-based software and tools?
+The functions of GPT-based software and tools are continuously evolving and spanning from text, vision, music, coding and mathematics. The recent trends have demonstrated interactions with the world, humans and other internet AI modules and systems, such as AutoGPT and AgentGPT.
+What are the limitations?
+1. Next-word-prediction paradigm. The model operates on a next-word-prediction paradigm, which means it only generates the next word, and currently, it has no mechanism to revise or modify its previous output. Some of these limitations could be solved by providing specific prompts, which are called “prompt engineering.” However, the inherent flaw is not solved yet.
+2. It generates errors without warning. Erroneous references, content, and statements may be intertwined with correct information and presented in a persuasive and confident manner, making their identification difficult without close inspection and effortful factchecking. Therefore, it still requires extensive efforts to search and fact-check the generated content. You cannot rely on ChatGPT-generated content for research, learning and education.
+3. Bias. All users need to be aware of the inherent bias of these generative AI tools since the GPT models are trained on data from the public internet. Among these data sources, they are riddled with various sources of inherent bias. LLMs may perpetuate or amplify existing bias.
+Guidelines
+1. Experiment and learn these AI tools – Faculty may experiment with generative AI tools in conjunction with their course materials and assignments. To begin, you can create a free account on Open AI’s platform with ChatGPT. Once registered, you can input some of your assignment prompts and evaluate the accuracy of the results. Subsequently, you should consider how you can integrate the tool or develop alternative approaches that do not require it. Additionally, involving students in the reflection process can provide a valuable learning experience, enabling them to comprehend the advantages and limitations of these tools.
+2. Explain these AI tools explicitly in your class – Talk with students about these generative AI tools explicitly. Invite them to collaboratively consider and establish learning goals and criteria for the task, with consideration for the role of AI software. It would help students to evaluate and judge appropriate contexts in which AI can work as a learning tool. This communication will further seize the opportunity to center the importance of critical thinking and digital literacy among students. – Discuss academic integrity with students. You should clarify the principles and guidelines for using generative AI tools in your courses. In addition to verbal explanations, we recommend a syllabus statement on using AI. – Discuss the ethical issues and limitations of AI with your students. As you experiment with the course materials and assignments using generative AI tools, you may engage in conversations with your students about the effects of inaccurate or biased information generated by these tools, particularly as it pertains to the course materials. Despite the likelihood that students will continue to utilize ChatGPT and similar tools, it is essential that our community shares a common understanding of the associated risks and benefits.
+3. Change your assignments so that they may not be easily completed using AI – Create assignments that are not easily completed using AI. It is highly recommended that you provide clear instructions to students regarding the proper citation of generative AI tools in their assignments and requiring them to provide references for all submissions. Students should be required to explain how they utilized these tools in their work. To enhance students’ oral communication skills, you may provide more opportunities for in-class presentations or incorporating them into discussion sections.
+4. Move to more authentic assessments and include performance elements – You may incorporate a formative assessment practice where students are required to submit drafts of their work for review and feedback. These reviews and feedback could be considered as grading subcomponents of the assignments or tasks. This approach not only helps to detect plagiarism but also guides students in the development of their work, enabling them to improve their performance. Teachers, peers, or self-assessments can provide feedback, which can facilitate the critical evaluation of work in progress. Encouraging peer- and self-feedback can enhance the authenticity of the assessment process.
+Suggested Syllabus Statements on AI Use
+1. AI use is allowed in the Course with proper referencing.
+Students are welcome to explore generative AI tools, such as ChatGPT, to seek support for their assignments or other activities. However, students should follow the “verify everything” approach to the content generated by these AI tools. These tools learned the models from the public internet, which means they may reproduce substantial text from other sources. It is the student’s responsibility to check the original sources to be sure they are not plagiarizing someone else’s work. Students should also cross-check the content and citations generated by these tools to ensure they are accurate and properly referenced.Students should incorporate the subsequent statement in their assignments when using a Generative AI Tool: “For this assignment’s preparation, the author(s) have utilized [Generative AI Tool Name], a language model created by [Generative AI Tool Provider]. Within this assignment, the [Generative AI Tool Name] was used for purposes such as [e.g., brainstorming, grammatical correction, writing paraphrasing, citation, specific sections of the assignment].”
+2. 
+AI use is not allowed.
+All submitted work must be produced by the students themselves, whether individually or collaboratively. Use of a generative AI tools such as ChatGPT to complete an assignment constitutes academic misconduct.
+OAA Guidelines for Religious Holiday Observance
+Adopted Fall 2016
+The University of Alabama respects the religious diversity of our academic community and recognizes the importance of religious holy days and observances in the lives of our community members. UA strives to be an inclusive community in all aspects of academic and campus life. As such, the Office for Academic Affairs (OAA) encourages faculty members, staff, and students to be cognizant of major religious and cultural observances when planning courses and campus events and to be sensitive to potential conflicts. Faculty members are expected to make reasonable efforts to accommodate the sincerely held religious practices and observances of students unless the accommodation would create an undue hardship on the University.
+View 2024-2025 Religious Holiday Schedule
+Guidelines: 
+ OAA’s guidelines pertaining to the observance of religious holidays are as follows:
+Annually, OAA officials will circulate to students and faculty, and make available online, a schedule of religious holidays which lists commonly observed religious holidays as a reference to aid in planning courses, assignments and events. See above link. 
+At the beginning of each semester, OAA officials will circulate to students and faculty and make available online, these guidelines.
+Out of respect for persons of all faiths and religious traditions, OAA encourages nonsectarian approaches when marking the solemnity of a University event with an invocation or similar ritual.
+OAA encourages all faculty, staff, and students to be cognizant of major religious and cultural observances when planning major campus events in order to be sensitive to potential conflict.
+Guidelines relating academic work (below) will be loaded into the online syllabus template. All faculty members are encouraged to include on the syllabus and to announce at the beginning of the semester the following:
+
+Students should notify faculty in writing or via email during the first two weeks of the semester of their intention to be absent from class for religious observance.
+Faculty should provide students who give the required notice of and are absent for observance of a religious holiday reasonable opportunity to complete academic responsibilities in the original or alternative form without penalty, unless doing so would interfere unreasonably with the academic integrity of the course.
+Official Transcript Policy for Faculty Hires
+UA requires an official transcript for every faculty member to comply with SACSCOC requirements. For individuals hired through the faculty hiring system, a scanned copy of this official transcript must be attached to the Documents Tab in the section labeled “Transcript”.
+To ensure that the transcripts will be available in time to process PA forms, it is recommended that official transcripts be requested at the interview stage for all applicants interviewed and selected for hire.
+STEPS:
+1. Each applicant interviewed and selected for hire should request an official transcript. Official transcripts should be mailed directly to the appropriate Dean’s Office or Departmental Office.
+Exception
+UA Graduates, see below:
+For Individuals who have earned the applicable terminal degree from UA, we can accept an unofficial transcript. The appropriate Dean’s Office or departmental office faculty or staff member should pull the information from the UA student information system. The steps to pull this information are as follows:
+1. First, the faculty/staff member in the Dean’s Office or Department must be designated as an advisor in Banner. If the faculty/staff member is not certain, call 348‐2857.
+2. If designated as an advisor, go to mybama and log‐in.
+3. Select the Faculty tab, Banner Self‐Service, and click on Faculty & Advisors.
+4. On the Student Information Menu scroll down and click on Academic Transcript. The system will then prompt you for a term and then the student’s CWID or name.
+5. If the student cannot be found in Banner, call 348‐2857 so that the information may be researched.
+2. Official transcripts should be opened and reviewed by a Dean’s office or Department official.
+3. Upon acceptance of the offer of employment, a copy of that individual’s official transcript should be scanned and attached to the hiring requisition on the documents tab.
+4. The Dean’s Office should maintain the official transcript in the appropriate personnel files.
+5. Process the PA form once all hiring steps have been completed. If an official transcript has been requested but is not available by the hire date (due to unforeseen circumstances – not applicable to UA graduates) 5. Process the PA form.
+6. The hiring requisition will remain outstanding until the department completes the process.
+7. OAA will require monthly reviews of outstanding requisitions regarding this issue. Once the transcript has been attached, contact OAA so that the requisition process can be completed.
+Pregnant & Parenting Student FAQ
+Title IX is a federal law that prohibits discrimination on the basis of sex in an education program. Among the types of gender discrimination covered by this statute, Title IX protects against discrimination related to pregnancy or parental status. Protection extends to students who are pregnant or who have either had a false pregnancy, termination of pregnancy, have gone through childbirth, or are recovering from any of those conditions. Title IX regulations also prohibit a school from applying any rule related to a student’s parental, family or marital status that treats students differently based on their sex. Below are some frequently asked questions and their answers about the University’s compliance with this aspect of Title IX.
+Where can a student seek assistance for pregnancy-related accommodations?
+Pregnant students may contact the 
+Title IX Office
+ to request assistance with accommodations. Examples of accommodations include, but are not limited to, rescheduling tests or exams, excusing absences, submitting work after a deadline, providing alternatives to make up missed work or retaking a semester. The Title IX Office may facilitate communications with the student’s professors or assist with other University resources.
+Pregnancy, childbirth, and related conditions may necessitate absences. Will those absences be excused?
+Yes. Absences due to pregnancy, childbirth, or related medical conditions must be excused and cannot be treated or penalized like unexcused absences. Depending on the length of the absence and area of instruction, it may be academically necessary for the student to take a leave of absence. Professors must provide a leave of absence for pregnant students for as long as it is deemed necessary by their medical doctor. Professors may require a doctor’s note for pregnancy –related absences only if a doctor’s note is required to excuse other medically-related absences.
+What happens when a pregnant student misses assignments, tests, exams etc. due to an excused absence?
+After an excused absence due to pregnancy, childbirth, or any related medical conditions, professors must allow a reasonable time for the student to make up missed assignments and tests. This is true regardless of the professor’s typical makeup assignment policy. Depending on the nature of the course, making up the exact missed assignment might not be feasible. The makeup work does not have to be exactly the same as the missed work, but needs to be reasonably equivalent.
+Can pregnant students be penalized for their absence if grades in a class are based on attendance or participation?
+A student may not be penalized for absences known to be due to pregnancy, childbirth or other related medical conditions. A professor cannot reduce a pregnant student’s grade because of attendance or participation points that the student missed during excused absences due to her pregnancy-related conditions. The professor must give the student a reasonable opportunity to earn back the credit missed due to pregnancy.
+Can a professor prevent a pregnant student from attending class?
+No. Under Title IX, the University cannot exclude someone from class based on their pregnancy. The University can only require a pregnant student to provide a doctor’s certification of fitness to continue in an education program or activity if the same requirement is imposed on all other students with medical conditions requiring a doctor’s care.
+Can a pregnant student participate in internships and other off-campus programs?
+Yes. Pregnant students cannot be excluded from University-related off-campus programs, such as internships, off-campus activities, University-sponsored activities and other extracurricular activities. A professor cannot require a doctor’s note to show fitness to participate unless it is required for all students in the program.
+Does the University have to provide special services to pregnant students?
+The University must provide the same services to pregnant students that it provides to other students with temporary disabilities.
+What if a student or professor makes an offensive or inappropriate remark about a student’s pregnancy?
+The University will not tolerate gender-based harassment, including harassment based on pregnancy and related conditions. If a pregnant student experiences harassment based on her pregnancy, she should let the Title IX Office know immediately. If a faculty or staff member witnesses or learns about harassment of a pregnant student, they should immediately notify the Title IX Office so that it can take prompt and effective steps reasonably calculated to end pregnancy-related harassment, prevent its recurrence and eliminate any hostile environment created by the harassment. The same grievance procedures applicable to complaints of sexual misconduct also apply to discrimination based on pregnancy or parental status.
+Title IX prohibits a school’s retaliation against an individual for filing a complaint or raising concerns about the rights of a pregnant and parenting student.
+Can a pregnant student lose her scholarship due to her pregnancy?
+As long as the student remains in school and in good standing when the student is not medically required to be absent, the student will not lose the scholarship. Pregnant students will keep their status as a student for up to one year. If a student wants to take off more time than their doctor says is medically necessary, the student should contact the Title IX Office.
+Does the University have designated areas for mothers to breastfeed, pump milk, or address other needs related to breastfeeding throughout the day?
+Yes. The University has designated lactation rooms. For a list of the designated lactation rooms, 
+click here
+.
+Does the University have other resources for parenting students?
+Yes.
+The Parent Resource Library
+ is located at the Child Development Resource Center. The library contains books on parenting, breastfeeding and other resources for parents.
+The Parenting Assistance Line (866) 962-3030 is a toll free number providing support on many parenting topics. For more information about PAL and additional online resources, 
+click here
+. 
+Graduate School Parent Support 
+supports students who have children. This program coordinates events with parents, provides opportunities for professional development, institutes programs and services to address the needs of student parents, and works to foster an environment that is receptive to children and their student parents.
+Is a GTA/GRA who is pregnant or experiencing pregnant-related conditions entitled to reasonable accommodations in the workplace?
+Yes. To request reasonable accommodations, contact the Title IX Office, who will recommend reasonable accommodations and work with the department in implementing them.
+If you have any questions, please contact:
+Title IX Office
+2418 Capital Hall
+Box 870259
+Tuscaloosa, Alabama 35487-0114
+(205) 348-5496
+titleix@ua.edu
+Guidelines for Determining Credit Hours for Courses
+Purpose
+The purpose of these guidelines is to ensure the determination of credit hours for coursework in all degree programs at The University of Alabama is consistent with institutional policies, federal regulations and accreditation standards.
+Policy Overview
+A credit hour at The University of Alabama is defined as an amount of work represented in intended learning outcomes and verified by evidence of student achievement that reasonably approximates:
+At least one hour (50 minutes) of classroom or direct faculty instruction and a minimum of two hours of out-of-class student work each week for approximately 15 weeks for one semester, or the equivalent amount of work over a different period, or;
+At least an equivalent amount of work as outlined above for other academic activities including laboratory work, internships, practica, studio work, clinical research, directed study, and other academic work leading to the award of credit hours, regardless of the mode of instructional delivery.
+Key Considerations
+Contact Hours:
+Typically, one credit hour corresponds to one hour (50 minutes) of classroom or direct faculty instruction per week and a minimum of two hours of out-of-class student work each week for approximately fifteen weeks.
+For laboratory courses, internships, practica, studio work, clinical research, and other similar activities, an equivalent amount of work is required.
+Course Type:
+Lecture-based courses:
+ Generally require one hour of classroom instruction and two hours of outside study per week per credit hour.
+Laboratory courses or other educational activities supervised as a group
+ (e.g., laboratory, studio, field trip): Often require more contact hours per credit hour due to the hands-on nature of the learning activities. The semester credit hours awarded vary depending on the amount of outside work required. When substantial outside work is required for each two-hour block of laboratory per week, one semester hour of credit is awarded. Group activity requiring little outside work may require three or four hours of laboratory time each week for each semester credit hour awarded.
+Full-time independent study 
+(e.g., student teaching, practicum, internships, clinicals): These may have different structures and requirements but must meet the equivalent workload expectations. If a student’s academic activity is essentially full-time (as in student teaching), one semester credit hour may be awarded for each week of work.
+Supervised individual activity
+ (e.g., independent study, individual studio, tutorial). Appropriate credit is awarded when students demonstrate evidence of achievement of intended learning outcomes equal to that required in the comparable course or activity.
+Experiential learning
+. One semester hour of credit may be awarded for each 40-to-45-hour week of activity that provides the learning considered necessary to the program of study.
+Short sessions
+ (e.g., interim terms, summer terms of five and ten weeks, weekend college). When credit hours are awarded for courses taught during a part-of-term, the learning outcomes expected must be the same as those expected for the same course taught during the fall or spring semester.
+Courses offered using alternative forms of delivery
+ (online, intensive, or hybrid). Alternative forms of delivery are planned to enable students to achieve the equivalent student learning outcomes as courses offered in the traditional, instructor-led format in classrooms.
+Learning Outcomes and Objectives:
+The amount of time required to achieve the intended learning outcomes of the course must be considered. This involves evaluating the depth and complexity of the material covered.
+Institutional and Federal Guidelines:
+Ensure alignment with The University of Alabama’s Course Credit Hour Policy and federal regulations.
+The U.S. Department of Education defines a credit hour as one hour of classroom or direct faculty instruction and a minimum of two hours of out-of-class student work each week for approximately fifteen weeks for one semester or trimester hour of credit.
+Steps to Determine Credit Hours
+Review the Course Content and Structure:
+Outline the topics covered, learning activities, assignments, assessments, and expected student workload.
+Calculate Contact Hours:
+Determine the total hours of direct instruction and planned in-class activities.
+Estimate Out-of-Class Work:
+Estimate the amount of time students will need to spend on readings, assignments, projects, and studying.
+Consult Institutional and Accreditation Guidelines:
+Ensure that the calculations align with The University of Alabama’s policies and accreditation requirements.
+Approval Process:
+Submit the course proposal, including the credit hour calculation, to the appropriate curricular committees or academic bodies within the institution for review and approval.
+By systematically considering these factors, the appropriate number of credit hours for a course can be determined to ensure that it meets educational standards and provides a meaningful learning experience for students.
+Office for Academic Affairs
+254 Rose Administration
+Box 870114
+Tuscaloosa, AL 35487
+205-348-4890
+academicaffairs@ua.edu
+Copyright © 2026
+ The University of Alabama
+(205) 348-6010
+Contact UA
+Accessibility
+SACSCOC
+
+ Taskstream
+ 
+Equal Opportunity
+Data Access Request
+Disclaimer
+Privacy
+This website uses cookies to collect information to improve your browsing experience. Please review our 
+Privacy Statement
+ for more information.
+I understand
