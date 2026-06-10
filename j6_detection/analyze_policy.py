@@ -26,7 +26,16 @@ DETECTOR = HERE / "data" / "results_summary.csv"
 OUT = HERE / "data" / "policy_results.csv"
 
 ADMIS = {"prohibited", "advisory", "admissible", "silent"}
-PERMISSIVE_ADMIS = {"admissible": 2, "advisory": 1, "prohibited": 0, "silent": 0}
+DIMENSIONS = ["detector_admissibility", "burden_of_proof", "appeal_pathway",
+              "l2_protection", "decision_locus"]
+# Governance-vacuum weights (higher = less of a floor between a biased flag and the writer).
+VACUUM_WEIGHTS = {
+    "detector_admissibility": {"admissible": 1, "silent": 1, "advisory": 0.5, "prohibited": 0},
+    "decision_locus": {"delegated": 1, "silent": 1, "institutional": 0},
+    "l2_protection": {"none": 1, "generic_fairness": 0.5, "explicit": 0},
+    "burden_of_proof": {"student": 1, "unspecified": 0.5, "institution": 0},
+    "appeal_pathway": {"none": 1, "informal": 0.5, "formal": 0},
+}
 
 
 def detector_gap() -> str:
@@ -44,12 +53,9 @@ def detector_gap() -> str:
         return "(detector-layer gap unavailable)"
 
 
-def permissiveness(row) -> float:
-    s = PERMISSIVE_ADMIS.get(row["detector_admissibility"], 0)
-    s += 1 if row["burden_of_proof"] == "student" else 0
-    s += 1 if row["appeal_pathway"] == "none" else 0
-    s += {"none": 1, "generic_fairness": 0.5, "explicit": 0}.get(row["l2_protection"], 0)
-    return s
+def vacuum_index(row) -> float:
+    """0-5 governance-vacuum score; blank/uncoded dimensions contribute 0 (conservative)."""
+    return sum(VACUUM_WEIGHTS[d].get(row.get(d, ""), 0) for d in VACUUM_WEIGHTS)
 
 
 def main() -> int:
@@ -74,38 +80,42 @@ def main() -> int:
         rows.append({"metric": metric, "dimension": dimension, "value": value,
                      "share": round(count / n_coded, 4), "count": int(count), "n": n_coded})
 
-    for dim in ["detector_admissibility", "burden_of_proof", "appeal_pathway", "l2_protection"]:
-        for value, cnt in coded[dim].value_counts().items():
+    for dim in DIMENSIONS:
+        for value, cnt in coded[dim].replace("", "(uncoded)").value_counts().items():
             emit("dimension_distribution", dim, value, cnt)
 
-    coded["permissiveness"] = coded.apply(permissiveness, axis=1)
-    for value, cnt in coded["permissiveness"].value_counts().sort_index().items():
-        emit("permissiveness_index", "0_to_5", str(value), cnt)
+    coded["vacuum_index"] = coded.apply(vacuum_index, axis=1)
+    for value, cnt in coded["vacuum_index"].value_counts().sort_index().items():
+        emit("vacuum_index", "0_to_5", str(value), cnt)
 
-    # Cross-tab admissibility x L2 protection.
-    for adm in sorted(coded["detector_admissibility"].unique()):
-        for l2 in sorted(coded["l2_protection"].unique()):
-            cnt = ((coded.detector_admissibility == adm) & (coded.l2_protection == l2)).sum()
-            if cnt:
-                emit("admissibility_x_l2", adm, l2, cnt)
+    # Cross-tabs: who is protected (L2) against the detector stance / locus of decision.
+    for xname, xcol in (("admissibility_x_l2", "detector_admissibility"),
+                        ("decision_locus_x_l2", "decision_locus")):
+        for xv in sorted(v for v in coded[xcol].unique() if v):
+            for l2 in sorted(v for v in coded["l2_protection"].unique() if v):
+                cnt = ((coded[xcol] == xv) & (coded.l2_protection == l2)).sum()
+                if cnt:
+                    emit(xname, xv, l2, cnt)
 
-    # Joint-exposure cell.
+    # The governance-vacuum cell: a biased flag can reach a non-native writer with no floor.
     exposed = coded[
-        (coded.detector_admissibility == "admissible")
-        & ((coded.burden_of_proof == "student") | (coded.appeal_pathway == "none"))
+        (coded.detector_admissibility != "prohibited")
         & (coded.l2_protection != "explicit")
+        & ((coded.decision_locus != "institutional") | (coded.burden_of_proof == "student"))
     ]
-    emit("joint_exposure", "admissible & (student-burden|no-appeal) & no-explicit-L2",
+    emit("governance_vacuum", "no-binding-floor & no-explicit-L2 & (delegated|student-burden)",
          "exposed", len(exposed))
 
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False)
     print(f"\nWrote {OUT} ({len(out)} rows)")
-    print(f"\nDetector-admissibility distribution:")
+    print("\nDetector-admissibility distribution:")
     print(coded["detector_admissibility"].value_counts().to_string())
-    print(f"\nJoint exposure: {len(exposed)}/{n_coded} institutions admit detector output as "
-          f"evidence, put the writer at risk (student burden or no appeal), and give multilingual "
-          f"writers no explicit protection.")
+    print("\nL2-protection distribution:")
+    print(coded["l2_protection"].value_counts().to_string())
+    print(f"\nGovernance vacuum: {len(exposed)}/{n_coded} flagships place no binding floor "
+          f"(detector evidence not prohibited) and no multilingual-specific protection between "
+          f"a 16.9x-biased flag and the writer, with the call delegated or the burden on the student.")
     return 0
 
 

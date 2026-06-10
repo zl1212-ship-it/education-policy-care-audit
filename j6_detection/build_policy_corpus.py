@@ -33,7 +33,8 @@ REGISTRY = HERE / "data" / "policy_registry.csv"
 RAW_DIR = HERE / "data" / "policy_raw"
 OUT = HERE / "data" / "policy_corpus.csv"
 
-CODE_COLUMNS = ["detector_admissibility", "burden_of_proof", "appeal_pathway", "l2_protection"]
+CODE_COLUMNS = ["detector_admissibility", "burden_of_proof", "appeal_pathway",
+                "l2_protection", "decision_locus"]
 SUPPORT_COLUMNS = ["support_passage", "coder", "notes"]
 PROV_COLUMNS = ["institution", "state", "control", "policy_type", "url", "secondary_url",
                 "access_date", "http_status", "sha256", "n_chars"]
