@@ -33,12 +33,15 @@ make_figures.py         # Figures -> ../paper/blinded-manuscript/j6_figure{1,2,3
 ```
 
 ## Data
-- `data/essays_panel.csv` — human essays with native/non-native label + source corpus (provenance columns).
-- `data/detector_scores.csv` — per-essay AI-probability from each open detector.
-- `data/policy_corpus.csv` — coded university integrity/AI policies (admissibility, burden, appeal, L2 protection).
-- `data/results_summary.csv` — every number cited in the paper.
+- `data/essays_panel.csv` — one row per human essay: native/non-native label, source corpus, length, and the seven 2023 detectors' AI-probability scores (provenance via corpus).
+- `data/results_summary.csv` — detector-layer numbers (FPR by L1 status, per-detector + pooled + unanimous-flag, threshold sensitivity).
+- `data/policy_registry.csv` — input: curated real institution policy URLs (institution, state, control, policy_type, url).
+- `data/policy_corpus.csv` — fetched policies with provenance + the four codebook columns, coded per `CODEBOOK_policy.md`.
+- `data/policy_results.csv` — governance-layer numbers (code distributions, permissiveness index, joint exposure).
 
-Detectors are open-source and version-pinned (see `SOURCES.md`). Essay corpora are public.
+Detectors are open-source and version-pinned (see `SOURCES.md`). Essay corpora are public. The
+policy coding protocol (admissibility, burden of proof, appeal, L2 protection) is in
+`CODEBOOK_policy.md`; codes are auditable against the fetched text under `data/policy_raw/`.
 
 ## Headline
 **Detector layer (baseline, seven 2023 detectors over 249 human essays).** At the
