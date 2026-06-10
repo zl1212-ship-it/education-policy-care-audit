@@ -1,4 +1,4 @@
-# J6 — Flagged for Fluency
+# J6 — How Universities Govern a Biased Writing Detector
 
 An algorithm audit of AI-writing detectors deployed for academic integrity, and of the
 institutional policy that gives their output force. Two layers:
