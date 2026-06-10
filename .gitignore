@@ -2,6 +2,9 @@ paper/
 background/
 research-os/
 .DS_Store
+# local working guide for Claude Code, not published
+CLAUDE.md
+.claude/
 # J4 findings narrative kept private until publication (reproducible from the scripts)
 j4_adoption/results.md
 j4_adoption/literature.md
@@ -13,3 +16,9 @@ j3_admissions/scm_gw.py.orig
 
 # Quarantined mismeasured artifact (see robustness.py Pell caveat)
 j4_adoption/data/pell_share.csv
+
+# J6 findings narrative kept private until publication (reproducible from the scripts)
+j6_detection/results.md
+j6_detection/literature.md
+# J6 anchor corpus is a verbatim download of an external repo; regenerate with fetch_anchor_data.py
+j6_detection/data/anchor/
