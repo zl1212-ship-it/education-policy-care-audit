@@ -1,29 +1,29 @@
 metric,dimension,value,share,count,n
-dimension_distribution,detector_admissibility,advisory,0.6786,19,28
-dimension_distribution,detector_admissibility,silent,0.2143,6,28
-dimension_distribution,detector_admissibility,admissible,0.0714,2,28
-dimension_distribution,detector_admissibility,prohibited,0.0357,1,28
-dimension_distribution,burden_of_proof,(uncoded),0.9286,26,28
-dimension_distribution,burden_of_proof,institution,0.0714,2,28
-dimension_distribution,appeal_pathway,(uncoded),1.0,28,28
-dimension_distribution,l2_protection,none,0.8214,23,28
-dimension_distribution,l2_protection,explicit,0.1786,5,28
-dimension_distribution,decision_locus,delegated,0.8571,24,28
-dimension_distribution,decision_locus,institutional,0.1429,4,28
-vacuum_index,0_to_5,0.5,0.0357,1,28
-vacuum_index,0_to_5,1.0,0.0357,1,28
-vacuum_index,0_to_5,1.5,0.1786,5,28
-vacuum_index,0_to_5,2.0,0.0357,1,28
-vacuum_index,0_to_5,2.5,0.4643,13,28
-vacuum_index,0_to_5,3.0,0.25,7,28
-admissibility_x_l2,admissible,none,0.0714,2,28
-admissibility_x_l2,advisory,explicit,0.1786,5,28
-admissibility_x_l2,advisory,none,0.5,14,28
-admissibility_x_l2,prohibited,none,0.0357,1,28
-admissibility_x_l2,silent,none,0.2143,6,28
-decision_locus_x_l2,delegated,explicit,0.1429,4,28
-decision_locus_x_l2,delegated,none,0.7143,20,28
-decision_locus_x_l2,institutional,explicit,0.0357,1,28
-decision_locus_x_l2,institutional,none,0.1071,3,28
-governance_vacuum,not-prohibited & no-explicit-L2 & burden!=institution,exposed,0.7143,20,28
-active_endorsement,admissible & no-explicit-L2,exposed,0.0714,2,28
+dimension_distribution,detector_admissibility,advisory,0.55,22,40
+dimension_distribution,detector_admissibility,silent,0.375,15,40
+dimension_distribution,detector_admissibility,admissible,0.05,2,40
+dimension_distribution,detector_admissibility,prohibited,0.025,1,40
+dimension_distribution,burden_of_proof,(uncoded),0.925,37,40
+dimension_distribution,burden_of_proof,institution,0.075,3,40
+dimension_distribution,appeal_pathway,(uncoded),1.0,40,40
+dimension_distribution,l2_protection,none,0.875,35,40
+dimension_distribution,l2_protection,explicit,0.125,5,40
+dimension_distribution,decision_locus,delegated,0.9,36,40
+dimension_distribution,decision_locus,institutional,0.1,4,40
+vacuum_index,0_to_5,0.5,0.025,1,40
+vacuum_index,0_to_5,1.0,0.025,1,40
+vacuum_index,0_to_5,1.5,0.125,5,40
+vacuum_index,0_to_5,2.0,0.025,1,40
+vacuum_index,0_to_5,2.5,0.4,16,40
+vacuum_index,0_to_5,3.0,0.4,16,40
+admissibility_x_l2,admissible,none,0.05,2,40
+admissibility_x_l2,advisory,explicit,0.125,5,40
+admissibility_x_l2,advisory,none,0.425,17,40
+admissibility_x_l2,prohibited,none,0.025,1,40
+admissibility_x_l2,silent,none,0.375,15,40
+decision_locus_x_l2,delegated,explicit,0.1,4,40
+decision_locus_x_l2,delegated,none,0.8,32,40
+decision_locus_x_l2,institutional,explicit,0.025,1,40
+decision_locus_x_l2,institutional,none,0.075,3,40
+governance_vacuum,not-prohibited & no-explicit-L2 & burden!=institution,exposed,0.775,31,40
+active_endorsement,admissible & no-explicit-L2,exposed,0.05,2,40
