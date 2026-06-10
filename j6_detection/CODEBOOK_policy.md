@@ -109,3 +109,36 @@ test whether the most-exposed campuses have more or less protective governance.
 Codes are auditable because the raw text is committed. For the manuscript, a
 second coder independently codes a random 20% subsample; report Cohen's kappa per
 dimension. Disagreements resolved against the verbatim passage and the rule above.
+
+## Reconciliation clarifications (2026-06-10)
+A first reliability round (a 10-institution subsample, second coder `codex`) showed
+high agreement on `decision_locus` (kappa 0.62) and `detector_admissibility` (0.52)
+but exposed three ambiguities, resolved here against the verbatim text.
+
+- **No blank cells.** Every dimension is coded for every institution. If the text
+  describes a process without locating the burden, `burden_of_proof = unspecified`
+  (not blank); if no appeal is described, `appeal_pathway = none`. Blanks made the
+  burden/appeal kappa uncomputable and are disallowed going forward.
+- **`detector_admissibility` cues.** `prohibited` requires a binding ban ("prohibits",
+  "may not be used / may not be the basis"); "instructors should refrain from / avoid /
+  are discouraged from using detectors" is `advisory`; merely noting that detection
+  tools exist, with no rule on using their output as evidence, is `silent`; "approved
+  for use" or "encouraged to use" is `admissible`.
+- **`l2_protection` boundary.** `explicit` includes any sentence that warns detector
+  output may misread writers whose first language is not English (e.g., "if English is
+  not a student's first language ... will this show up as AI-generated?"), not only the
+  literal terms multilingual/ELL/non-native. `generic_fairness` is general
+  fairness/equity/due-process/bias language with no link to language background;
+  `none` is neither. Note: `generic_fairness` vs `none` does not change vacuum
+  membership (both are non-`explicit`); only `explicit` clears the floor.
+- **`decision_locus` codes the rule-setter, not the venue.** It records who sets the
+  rule on AI use and detector use: a binding institution-wide rule is `institutional`;
+  deferral to instructors/syllabi is `delegated`. A central conduct or honor office
+  that merely adjudicates cases under the generic preponderance standard is not, by
+  itself, `institutional` locus unless it sets the AI/detector rule institution-wide.
+
+Applying these: URI is recoded `l2_protection = explicit` (its page warns of the
+first-language detector-bias risk), which clears it from the vacuum (40 -> 39 of 50).
+Iowa stays `advisory` ("should refrain" is not a ban), Missouri stays `silent` (notes
+detectors exist but sets no evidence rule), and South Carolina stays `delegated`
+(the Honor Code office adjudicates but the AI-use rule is delegated to syllabi).
