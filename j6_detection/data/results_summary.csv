@@ -114,3 +114,13 @@ flag_ge4_of_7,ge4_of_7,0.9,native,0.0,0.0,158.0
 cs224n_robustness_pooled5,mean_of_5,0.5,native,0.0329,,158.0
 cs224n_robustness_pooled5,mean_of_5,0.5,non-native,0.5714,,91.0
 cs224n_robustness_pooled5,mean_of_5,0.5,mixed-CS224N,0.0262,,145.0
+current_detector_fpr,roberta-base-openai-detector,0.5,non-native,0.5824,,
+current_detector_fpr,roberta-base-openai-detector,0.5,native,0.0506,,
+current_detector_fpr,roberta-large-openai-detector,0.5,non-native,0.8462,,
+current_detector_fpr,roberta-large-openai-detector,0.5,native,0.9747,,
+current_detector_fpr,roberta-base-ai-text-detection-v1,0.5,non-native,0.6593,,
+current_detector_fpr,roberta-base-ai-text-detection-v1,0.5,native,0.1329,,
+current_detector_fpr,chatgpt-detector-roberta,0.5,non-native,0.3626,,
+current_detector_fpr,chatgpt-detector-roberta,0.5,native,0.0,,
+current_detector_pooled,mean_of_3_discriminating,0.5,non-native,0.5348,,
+current_detector_pooled,mean_of_3_discriminating,0.5,native,0.0612,,

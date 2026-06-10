@@ -67,7 +67,13 @@ so protection is not allocated where the harm concentrates. Codes are
 `claude-firstpass` with verbatim support passages (see `data/policy_corpus.csv`),
 for author verification + a second coder (Cohen's kappa) before submission.
 
-Current-detector extension (2024-25 open models): TBD after `run_detectors.py`.
+**Current-detector extension.** The penalty is not an artifact of the 2023 detectors. Re-scored with
+four current open detectors (`run_detectors.py`), three still misflag non-native writers far more than
+native writers (pooled **53% vs 6%, 8.7-fold**); the fourth (roberta-large-openai-detector) flags 97.5%
+of native human essays and so does not discriminate at all (excluded). CS224N robustness: over the five
+detectors common to all corpora, the pooled false-accusation rate is 3.3% native, 2.6% for fluent
+graduate technical writing (CS224N), and 57.1% non-native, so the penalty tracks developing-English
+fluency, not international authorship.
 
 ## Target journals
 AERA Open; Computers & Education; British Journal of Educational Technology; Educational
