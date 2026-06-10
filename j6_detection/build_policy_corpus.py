@@ -100,13 +100,33 @@ def main() -> int:
     out_rows = []
     ok = 0
     for r in rows:
-        inst, url = r["institution"], r["url"]
+        inst, url = r["institution"], r["url"].strip()
         slug = _slug(inst)
+        if not url:  # institution in the frame but URL not sourced yet
+            out_rows.append({
+                "institution": inst, "state": r.get("state", ""), "control": r.get("control", ""),
+                "policy_type": r.get("policy_type", ""), "url": "", "secondary_url": "",
+                "access_date": today, "http_status": "PENDING", "sha256": "", "n_chars": 0,
+                **{c: "" for c in CODE_COLUMNS}, **{c: "" for c in SUPPORT_COLUMNS},
+            })
+            print(f"  [PENDING] {inst}: no URL in registry yet")
+            continue
+        sec = r.get("secondary_url", "").strip()
         try:
             status, text = fetch(url)
-            (RAW_DIR / f"{slug}.txt").write_text(text, encoding="utf-8")
-            sha = hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
-            n = len(text)
+            parts = [f"### PRIMARY {url}\n{text}"]
+            if sec:  # conduct/appeal process page, for burden_of_proof + appeal_pathway
+                try:
+                    s2, t2 = fetch(sec)
+                    parts.append(f"\n\n### SECONDARY {sec}\n{t2}")
+                    status = f"{status}+{s2}"
+                except Exception as e2:
+                    parts.append(f"\n\n### SECONDARY {sec}\nFETCH-FAILED: {e2}")
+                    status = f"{status}+ERR"
+            combined = "\n".join(parts)
+            (RAW_DIR / f"{slug}.txt").write_text(combined, encoding="utf-8")
+            sha = hashlib.sha256(combined.encode("utf-8")).hexdigest()[:16]
+            n = len(combined)
             ok += 1
             print(f"  [{status}] {inst}: {n} chars -> {slug}.txt")
         except Exception as e:
