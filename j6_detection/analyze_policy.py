@@ -97,14 +97,20 @@ def main() -> int:
                 if cnt:
                     emit(xname, xv, l2, cnt)
 
-    # The governance-vacuum cell: a biased flag can reach a non-native writer with no floor.
+    # The governance vacuum: a biased flag can reach a non-native writer with NO protective
+    # floor. Three distinct floors clear it: a binding detector ban (admissibility==prohibited),
+    # explicit multilingual protection (l2==explicit), or a corroboration rule that the flag
+    # cannot stand alone (burden==institution). Absent all three, the institution is exposed.
     exposed = coded[
         (coded.detector_admissibility != "prohibited")
         & (coded.l2_protection != "explicit")
-        & ((coded.decision_locus != "institutional") | (coded.burden_of_proof == "student"))
+        & (coded.burden_of_proof != "institution")
     ]
-    emit("governance_vacuum", "no-binding-floor & no-explicit-L2 & (delegated|student-burden)",
+    emit("governance_vacuum", "not-prohibited & no-explicit-L2 & burden!=institution",
          "exposed", len(exposed))
+    # Sharpest sub-cell: institutions that affirmatively endorse a detector with no L2 floor.
+    endorse = coded[(coded.detector_admissibility == "admissible") & (coded.l2_protection != "explicit")]
+    emit("active_endorsement", "admissible & no-explicit-L2", "exposed", len(endorse))
 
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False)
@@ -113,9 +119,11 @@ def main() -> int:
     print(coded["detector_admissibility"].value_counts().to_string())
     print("\nL2-protection distribution:")
     print(coded["l2_protection"].value_counts().to_string())
-    print(f"\nGovernance vacuum: {len(exposed)}/{n_coded} flagships place no binding floor "
-          f"(detector evidence not prohibited) and no multilingual-specific protection between "
-          f"a 16.9x-biased flag and the writer, with the call delegated or the burden on the student.")
+    print(f"\nGovernance vacuum: {len(exposed)}/{n_coded} flagships clear none of the three floors "
+          f"(no binding detector ban, no explicit multilingual protection, no rule that the flag "
+          f"cannot stand alone), leaving a 16.9x-biased flag able to reach a non-native writer "
+          f"unchecked.")
+    print(f"Active endorsement (admissible + no explicit L2): {len(endorse)}/{n_coded}.")
     return 0
 
 

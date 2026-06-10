@@ -86,11 +86,17 @@ dimension distributions and cross-tabs so no conclusion rests on the index alone
 The detector layer fixes the group-level false-flag gap (16.9x, group-level, not
 institution-specific). The governance layer asks whether any institutional floor
 checks it. The headline cell is the vacuum: institutions where the biased flag can
-reach a non-native writer with no protective floor, operationalized as
+reach a non-native writer with no protective floor. Three distinct floors clear an
+institution, so the vacuum is the absence of all three:
 
-  `detector_admissibility != prohibited`  (no binding restriction on detector evidence)
+  `detector_admissibility != prohibited`  (no binding ban on detector evidence)
   AND `l2_protection != explicit`          (no multilingual-specific protection)
-  AND (`decision_locus != institutional` OR `burden_of_proof == student`).
+  AND `burden_of_proof != institution`     (no rule that the flag cannot stand alone).
+
+The sharpest sub-cell is active endorsement: `detector_admissibility == admissible`
+with `l2_protection != explicit` (the institution approves a biased tool and names
+no protection). `decision_locus` (delegated/silent) is reported as the modal
+texture of the vacuum, and feeds the vacuum index, rather than gating the cell.
 
 `analyze_policy.py` reports the share of institutions in that cell, the
 `detector_admissibility x l2_protection` and `decision_locus x l2_protection`
