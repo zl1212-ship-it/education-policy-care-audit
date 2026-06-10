@@ -111,3 +111,6 @@ flag_all_7,all_7,0.9,non-native,0.044,4.0,91.0
 flag_all_7,all_7,0.9,native,0.0,0.0,158.0
 flag_ge4_of_7,ge4_of_7,0.9,non-native,0.2967,27.0,91.0
 flag_ge4_of_7,ge4_of_7,0.9,native,0.0,0.0,158.0
+cs224n_robustness_pooled5,mean_of_5,0.5,native,0.0329,,158.0
+cs224n_robustness_pooled5,mean_of_5,0.5,non-native,0.5714,,91.0
+cs224n_robustness_pooled5,mean_of_5,0.5,mixed-CS224N,0.0262,,145.0
