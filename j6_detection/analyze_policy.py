@@ -19,10 +19,12 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+from scipy import stats
 
 HERE = Path(__file__).parent
 CORPUS = HERE / "data" / "policy_corpus.csv"
 DETECTOR = HERE / "data" / "results_summary.csv"
+COVARIATE = HERE / "data" / "ipeds_covariate.csv"
 OUT = HERE / "data" / "policy_results.csv"
 
 ADMIS = {"prohibited", "advisory", "admissible", "silent"}
@@ -80,6 +82,10 @@ def main() -> int:
         rows.append({"metric": metric, "dimension": dimension, "value": value,
                      "share": round(count / n_coded, 4), "count": int(count), "n": n_coded})
 
+    def emit_row(metric, dimension, value, share, count, n):
+        rows.append({"metric": metric, "dimension": dimension, "value": value,
+                     "share": share, "count": int(count), "n": int(n)})
+
     for dim in DIMENSIONS:
         for value, cnt in coded[dim].replace("", "(uncoded)").value_counts().items():
             emit("dimension_distribution", dim, value, cnt)
@@ -101,16 +107,37 @@ def main() -> int:
     # floor. Three distinct floors clear it: a binding detector ban (admissibility==prohibited),
     # explicit multilingual protection (l2==explicit), or a corroboration rule that the flag
     # cannot stand alone (burden==institution). Absent all three, the institution is exposed.
-    exposed = coded[
+    coded["exposed"] = (
         (coded.detector_admissibility != "prohibited")
         & (coded.l2_protection != "explicit")
         & (coded.burden_of_proof != "institution")
-    ]
+    )
+    exposed = coded[coded.exposed]
     emit("governance_vacuum", "not-prohibited & no-explicit-L2 & burden!=institution",
          "exposed", len(exposed))
     # Sharpest sub-cell: institutions that affirmatively endorse a detector with no L2 floor.
     endorse = coded[(coded.detector_admissibility == "admissible") & (coded.l2_protection != "explicit")]
     emit("active_endorsement", "admissible & no-explicit-L2", "exposed", len(endorse))
+
+    # IPEDS covariate: do the most-exposed campuses (highest international enrollment, the
+    # group the detector bias targets) govern more or less protectively?
+    if COVARIATE.exists():
+        cov = pd.read_csv(COVARIATE)[["institution", "intl_share"]]
+        m = coded.merge(cov, on="institution", how="inner").dropna(subset=["intl_share"])
+        if len(m) >= 6:
+            m["explicit_l2"] = (m.l2_protection == "explicit")
+            for grp, sub in (("vacuum", m[m.exposed]), ("not-vacuum", m[~m.exposed])):
+                emit_row("intl_share_by_group", "mean", grp, round(sub.intl_share.mean(), 4), len(sub), len(sub))
+            for grp, sub in (("explicit-L2", m[m.explicit_l2]), ("no-explicit-L2", m[~m.explicit_l2])):
+                emit_row("intl_share_by_l2", "mean", grp, round(sub.intl_share.mean(), 4), len(sub), len(sub))
+            # International-enrollment terciles x vacuum rate.
+            m["tercile"] = pd.qcut(m.intl_share, 3, labels=["low", "mid", "high"])
+            for t, sub in m.groupby("tercile", observed=True):
+                emit_row("vacuum_rate_by_intl_tercile", str(t), "exposed",
+                         round(sub.exposed.mean(), 4), int(sub.exposed.sum()), len(sub))
+            rho, p = stats.spearmanr(m.intl_share, m.vacuum_index)
+            emit_row("spearman_intl_vs_vacuumindex", "rho", "all", round(float(rho), 3), len(m), len(m))
+            emit_row("spearman_intl_vs_vacuumindex", "p", "all", round(float(p), 3), len(m), len(m))
 
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False)
@@ -124,6 +151,19 @@ def main() -> int:
           f"cannot stand alone), leaving a 16.9x-biased flag able to reach a non-native writer "
           f"unchecked.")
     print(f"Active endorsement (admissible + no explicit L2): {len(endorse)}/{n_coded}.")
+
+    if (out.metric == "vacuum_rate_by_intl_tercile").any():
+        print("\n=== IPEDS covariate: international enrollment vs governance ===")
+        g = out[out.metric == "intl_share_by_group"].set_index("dimension")
+        bym = {r.value: r.share for _, r in out[out.metric == "intl_share_by_group"].iterrows()}
+        print(f"  Mean international share: vacuum {bym.get('vacuum', float('nan')):.1%} vs "
+              f"not-vacuum {bym.get('not-vacuum', float('nan')):.1%}")
+        ter = out[out.metric == "vacuum_rate_by_intl_tercile"]
+        print("  Vacuum rate by international-enrollment tercile:")
+        for _, r in ter.iterrows():
+            print(f"    {r.dimension:>4}: {r.share:.0%} ({r['count']}/{r.n})")
+        sp = out[out.metric == "spearman_intl_vs_vacuumindex"].set_index("dimension")["share"]
+        print(f"  Spearman(international share, vacuum index) = {sp.get('rho')}  (p={sp.get('p')})")
     return 0
 
 
