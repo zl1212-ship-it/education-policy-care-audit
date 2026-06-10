@@ -53,7 +53,20 @@ an artifact of the cutoff: the fold-difference widens from 10.4x at tau=0.25 to
 26.4x at tau=0.90. This reproduces Liang et al. (2023); the paper's contribution is
 the governance layer and joint-exposure framing layered on top.
 
-Governance-layer headline: TBD after `build_policy_corpus.py` / `analyze_policy.py`.
+**Governance layer (50 state-flagship public universities, first-pass coding).** No
+flagship keeps the bias out of the misconduct process by trusting detectors less:
+the gate is left open. Only **1** bans detector evidence (UT-Austin), **6** name
+multilingual writers as a protected group, and **3** bar a detector flag from being
+the sole basis; the other **40 of 50 (80%)** sit in a governance vacuum, where the
+detector stance is non-binding guidance, the decision is delegated to individual
+instructors, and no multilingual protection exists. One flagship (Georgia)
+institutionally approves a detector with no L2 protection. The vacuum does not track
+exposure: governance-vacuum rate is 76% / 75% / 88% across low / mid / high
+international-enrollment terciles (Spearman with the vacuum index = 0.15, p = 0.31),
+so protection is not allocated where the harm concentrates. Codes are
+`claude-firstpass` with verbatim support passages (see `data/policy_corpus.csv`),
+for author verification + a second coder (Cohen's kappa) before submission.
+
 Current-detector extension (2024-25 open models): TBD after `run_detectors.py`.
 
 ## Target journals
