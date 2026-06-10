@@ -3,7 +3,7 @@ University of Alabama,AL,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,
 University of Alaska Fairbanks,AK,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Arizona,AZ,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Arkansas,AR,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-University of California Berkeley,CA,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
+University of California Berkeley,CA,Public,academic_integrity,https://rtl.berkeley.edu/resources/ai-teaching-learning/transparency-about-generative-ai-tools,https://oercs.berkeley.edu/appropriate-use-generative-ai-tools,2026-06-09,200+200,8691c39bb2cbbe3a,14344,advisory,,,none,delegated,"'In Fall 2023, RTL led a pilot of the AI detection tool within Turnitin ... Results from the pilot have been inconsistent, so we've decided not to enable the tool campuswide'; 'We do not recommend that instructors rely upon AI detection tools'",claude-firstpass,"Detector not enabled campuswide; FERPA/privacy/accessibility rationale, not L2. burden/appeal not on RTL/OERCS pages."
 University of Colorado Boulder,CO,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Connecticut,CT,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Delaware,DE,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
@@ -11,7 +11,7 @@ University of Florida,FL,Public,academic_integrity,https://ai.ufl.edu/guidelines
 University of Georgia,GA,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Hawaii at Manoa,HI,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Idaho,ID,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-University of Illinois Urbana-Champaign,IL,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
+University of Illinois Urbana-Champaign,IL,Public,academic_integrity,https://genai.grainger.illinois.edu/ai-guidance,,2026-06-09,200,981f66a71c6bcff5,6687,silent,,,none,delegated,'The appropriate use of generative AI varies from course to course'; 'reach out to your instructors ... We will investigate suspected uses ... and apply sanctions as outlined in the University of Illinois Student Code' (no detector or L2 mention),claude-firstpass,genai.grainger guidance is instructor-delegated; sanctions per Student Code. burden/appeal in Student Code (not fetched).
 Indiana University Bloomington,IN,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Iowa,IA,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Kansas,KS,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
@@ -20,7 +20,7 @@ Louisiana State University,LA,Public,academic_integrity,,,2026-06-09,PENDING,,0,
 University of Maine,ME,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Maryland College Park,MD,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Massachusetts Amherst,MA,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-University of Michigan,MI,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
+University of Michigan,MI,Public,academic_integrity,https://genai.umich.edu/resources/faculty,https://academictechnology.umich.edu/instructional-resources/generative-ai/academic-integrity-resources,2026-06-09,ERR:HTTPError,,0,,,,,,,,"PENDING-manual: genai.umich.edu and academictechnology.umich.edu return HTTP 403 to urllib/WebFetch. Secondary sources: U-M does not support detection tools (unreliable, false positives). Retrieve via browser to code."
 University of Minnesota Twin Cities,MN,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Mississippi,MS,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Missouri,MO,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
@@ -31,12 +31,12 @@ University of New Hampshire,NH,Public,academic_integrity,,,2026-06-09,PENDING,,0
 Rutgers University-New Brunswick,NJ,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of New Mexico,NM,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University at Buffalo,NY,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-University of North Carolina at Chapel Hill,NC,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
+University of North Carolina at Chapel Hill,NC,Public,academic_integrity,https://college.unc.edu/2023/09/student-use-guidelines-for-generative-ai/,https://catalog.unc.edu/policies-procedures/honor-code/,2026-06-09,200+200,7a0a1741cbc40806,17884,silent,,,none,delegated,'it will be a requirement for instructors in the College of Arts and Sciences to include a Student AI Use statement on their course syllabi ... give instructors wide latitude to craft Student AI Use statements appropriate for their courses' (no detector or L2 mention),claude-firstpass,No university-wide AI policy; instructors craft syllabus statements. catalog secondary returned a dept listing; burden/appeal need honor.unc.edu procedure.
 University of North Dakota,ND,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 Ohio State University,OH,Public,academic_integrity,https://ai.osu.edu/resources-buckeyes/responsible-use,,2026-06-09,200,8b89a9c2579a9aef,12408,silent,,,none,delegated,'Am I prepared to address suspected misuse of AI? Do I understand the limitations of detection tools and the due process for misconduct?' (reflective guidance; no rule on detector output as evidence),claude-firstpass,responsible-use page is guidance-only. burden/appeal at Committee on Academic Misconduct page; recode there.
 University of Oklahoma,OK,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Oregon,OR,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-Pennsylvania State University,PA,Public,academic_integrity,https://integrity.psu.edu/ai,,2026-06-09,200,964c53587d2322b3,2447,,,,,,,,"EXCLUDED from pilot coding: integrity.psu.edu/ai stored text is link-only/JS-rendered (2.4k chars), no codeable policy language. Recode from GCAC-805 or scranton responding-ai page."
+Pennsylvania State University,PA,Public,academic_integrity,https://academicintegrity.psu.edu/courses/academic-integrity/artificial-intelligence,,2026-06-09,200,05824b53557e7626,2066,,,,,,,,PENDING-manual: integrity.psu.edu/ai and academicintegrity.psu.edu are link-only/orientation pages with no codeable policy text. Use G-9 policy or college responding-ai page.
 University of Rhode Island,RI,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of South Carolina,SC,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of South Dakota,SD,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
@@ -44,8 +44,8 @@ University of Tennessee Knoxville,TN,Public,academic_integrity,,,2026-06-09,PEND
 University of Texas at Austin,TX,Public,academic_integrity,https://provost.utexas.edu/the-office/faculty-affairs/office-of-academic-technology/ai-detection-software-guidance/,,2026-06-09,200,74f71be5584e83e8,8249,prohibited,,,none,institutional,"'The University prohibits the use of all third-party software, including AI Detection Software ... to evaluate student work or assignments unless a University contract or purchase order is in place'; 'The University does not endorse the use of AI Detection Software'",claude-firstpass,"Ban grounded in privacy/FERPA/IP, not L2 bias. burden/appeal not on this page (see Student Conduct & Academic Integrity Guidelines for Resolving Academic Misconduct)."
 University of Utah,UT,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
 University of Vermont,VT,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-University of Virginia,VA,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
+University of Virginia,VA,Public,academic_integrity,https://honor.virginia.edu/resources/artificial-intelligence,https://honor.virginia.edu/resources/frequently-asked-questions,2026-06-09,ERR:HTTPError,,0,,,,,,,,PENDING-manual: honor.virginia.edu returns HTTP 403. Honor Committee weighs detector reliability + standard of proof; AI evidence used at hearings (beyond reasonable doubt). Likely institutional locus + formal appeal; retrieve via browser.
 University of Washington,WA,Public,academic_integrity,https://teaching.washington.edu/course-design/ai/,,2026-06-09,200,f746615efd1e8d84,16240,advisory,,,none,delegated,'Because no technology currently exists that can reliably identify when a student uses AI to complete an assignment ... adopting a policing approach to student use of AI will likely be both time-consuming and unsuccessful',claude-firstpass,No institution-wide policy; instructor-delegated. burden/appeal at campus Student Conduct office.
 West Virginia University,WV,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
-University of Wisconsin-Madison,WI,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
+University of Wisconsin-Madison,WI,Public,academic_integrity,https://ctlm.wisc.edu/uw-madison-guiding-principles-for-generative-ai-in-teaching/,https://ctlm.wisc.edu/generativeai/promoting-academic-integrity/,2026-06-09,200+200,de3e9b0456764016,12979,advisory,,,explicit,delegated,"'Avoid generative AI detection tools; they are imperfect at best, carry the risk of false positives, have been shown to be biased against non-native English speakers ... UW-Madison has decided not to offer an enterprise tool for AI detection'",claude-firstpass,Explicit non-native bias acknowledgement; no enterprise detector. burden/appeal not on guiding-principles page.
 University of Wyoming,WY,Public,academic_integrity,,,2026-06-09,PENDING,,0,,,,,,,,
