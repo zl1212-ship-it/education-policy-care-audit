@@ -41,7 +41,7 @@ verify_identity.py    # LFW 1:1 verification (MTCNN+FaceNet, YuNet+SFace), probe
 analyze_verification.py # FNMR / cannot-verify by ITA tercile at fixed FMR -> data/verification_results.csv
 build_vendor_corpus.py# fetch + archive vendor documentation (registry-driven, provenance headers)
 analyze_vendor.py     # consequence codes + detection-layer bridge -> data/vendor_results.csv
-make_figures.py       # (planned) figures -> ../paper/blinded-manuscript/j7_figure*.{pdf,png}
+make_figures.py       # Figures 1-3 -> ../paper/blinded-manuscript/j7_figure{1,2,3}.{pdf,png,tiff}
 ```
 
 ## Data
