@@ -37,7 +37,8 @@ fetch_face_data.py    # FairFace validation set (padding=1.25), HF mirror, revis
 build_face_panel.py   # + ITA skin-tone measure (CIELAB) and Del Bino tone bins -> data/face_panel.csv
 run_detectors.py      # 4 open detectors x exposure conditions -> data/detection_outcomes.csv
 analyze_detection.py  # miss rates by tone bin / race, contrasts, trend tests -> data/results_summary.csv
-verify_identity.py    # (planned) LFW face-verification FNMR by skin tone
+verify_identity.py    # LFW 1:1 verification (MTCNN+FaceNet, YuNet+SFace), probe-side dimming
+analyze_verification.py # FNMR / cannot-verify by ITA tercile at fixed FMR -> data/verification_results.csv
 build_vendor_corpus.py# (planned) vendor doc consequence mapping, J6-style coded corpus
 make_figures.py       # (planned) figures -> ../paper/blinded-manuscript/j7_figure*.{pdf,png}
 ```
@@ -48,6 +49,10 @@ make_figures.py       # (planned) figures -> ../paper/blinded-manuscript/j7_figu
 - `data/detection_outcomes.csv` — long: image x detector x exposure, faces found, top confidence, detected.
 - `data/results_summary.csv` — per-stratum miss rates (Wilson CIs), darkest-vs-lightest and
   Black-vs-White contrasts (risk diff, fold ratio, Fisher exact), ITA trend.
+- `data/verification_outcomes.csv` — long: LFW pair x verifier x exposure, cascade detect
+  flags + cosine similarity (enrollment side native, probe side dimmed).
+- `data/verification_results.csv` — FNMR and cannot-verify rates by ITA tercile at the
+  FMR=1% (and 0.1%) operating point, with contrasts and trend.
 - Raw images sit under `data/raw/` (gitignored); `fetch_face_data.py` re-creates them
   byte-identically from the pinned revision.
 
@@ -83,6 +88,21 @@ by its input normalization (stated limitation: real low light also adds sensor
 noise, so these sweep numbers are conservative). The very-light ITA tail degrades
 fastest among modern detectors when dimmed, consistent with that tail holding
 overexposed, low-contrast photos rather than the lightest-skinned subjects.
+
+**Verification layer (LFW 10-fold pairs, 3,000 genuine / 3,000 impostor, two open
+cascades, threshold fixed at FMR = 1% on native-exposure impostors).** The matcher
+does not reproduce the detection gap: genuine-pair rejection ("you are not you")
+is flat across ITA terciles for both stacks at every exposure (FaceNet 5.6% vs
+5.3% darkest-vs-lightest at native, 1.06x, p = 0.8; SFace 3.2% vs 3.0%, 1.06x,
+p = 0.9; all dimmed conditions 0.94x-1.10x, every p > 0.4; Spearman ITA-match
+|rho| < 0.013 throughout). Probe-side dimming does not open a gap either, and the
+cascades' internal detectors almost never fail on LFW's tight well-lit crops
+(99.98% detect at exposure 0.15), so cannot-verify collapses to the match decision
+there. Within open stacks, the skin-tone burden concentrates at the presence-
+detection gate measured on in-the-wild images, not the identity matcher: precisely
+the step proctoring systems automate as the "no face detected" flag. Bounded by
+LFW's light-skewed composition (within-sample terciles, no race labels), stated in
+the paper.
 
 ## Target journals
 Computers & Education (primary); Internet and Higher Education; AI & Society.

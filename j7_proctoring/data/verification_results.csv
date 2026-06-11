@@ -1,0 +1,185 @@
+kind,verifier,point,value,n,exposure,outcome,group,failures,rate,wilson_lo,wilson_hi,comparison_rate,risk_diff,ratio,p_fisher
+threshold,facenet,fmr1pct,0.3788,3000,,,,,,,,,,,
+rate,facenet,fmr1pct,,1001,0.15,fnmr,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.15,fnmr,T2_mid,45.0,0.045,0.0338,0.0597,,,,
+rate,facenet,fmr1pct,,999,0.15,fnmr,T3_dark,52.0,0.0521,0.0399,0.0676,,,,
+contrast,facenet,fmr1pct,,2000,0.15,fnmr,T3_dark vs T1_light,,0.0521,,,0.0519,0.0001,1.0,1.0
+rate,facenet,fmr1pct,,1001,0.15,cannot_verify,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.15,cannot_verify,T2_mid,45.0,0.045,0.0338,0.0597,,,,
+rate,facenet,fmr1pct,,1000,0.15,cannot_verify,T3_dark,53.0,0.053,0.0407,0.0687,,,,
+contrast,facenet,fmr1pct,,2001,0.15,cannot_verify,T3_dark vs T1_light,,0.053,,,0.0519,0.0011,1.02,0.9205538780323509
+trend,facenet,fmr1pct,,3000,0.15,match,spearman_ita,,,,,,,-0.0069,0.7071811590602921
+rate,facenet,fmr1pct,,1001,0.25,fnmr,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.25,fnmr,T2_mid,44.0,0.044,0.033,0.0586,,,,
+rate,facenet,fmr1pct,,999,0.25,fnmr,T3_dark,55.0,0.0551,0.0425,0.071,,,,
+contrast,facenet,fmr1pct,,2000,0.25,fnmr,T3_dark vs T1_light,,0.0551,,,0.0519,0.0031,1.06,0.7666571043158257
+rate,facenet,fmr1pct,,1001,0.25,cannot_verify,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.25,cannot_verify,T2_mid,44.0,0.044,0.033,0.0586,,,,
+rate,facenet,fmr1pct,,1000,0.25,cannot_verify,T3_dark,56.0,0.056,0.0434,0.072,,,,
+contrast,facenet,fmr1pct,,2001,0.25,cannot_verify,T3_dark vs T1_light,,0.056,,,0.0519,0.0041,1.08,0.6937470435171202
+trend,facenet,fmr1pct,,3000,0.25,match,spearman_ita,,,,,,,-0.012,0.5095710077443107
+rate,facenet,fmr1pct,,1001,0.35,fnmr,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.35,fnmr,T2_mid,45.0,0.045,0.0338,0.0597,,,,
+rate,facenet,fmr1pct,,1000,0.35,fnmr,T3_dark,49.0,0.049,0.0373,0.0642,,,,
+contrast,facenet,fmr1pct,,2001,0.35,fnmr,T3_dark vs T1_light,,0.049,,,0.0519,-0.0029,0.94,0.8382927580288375
+rate,facenet,fmr1pct,,1001,0.35,cannot_verify,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.35,cannot_verify,T2_mid,45.0,0.045,0.0338,0.0597,,,,
+rate,facenet,fmr1pct,,1000,0.35,cannot_verify,T3_dark,49.0,0.049,0.0373,0.0642,,,,
+contrast,facenet,fmr1pct,,2001,0.35,cannot_verify,T3_dark vs T1_light,,0.049,,,0.0519,-0.0029,0.94,0.8382927580288375
+trend,facenet,fmr1pct,,3000,0.35,match,spearman_ita,,,,,,,0.001,0.9547018685127163
+rate,facenet,fmr1pct,,1001,0.5,fnmr,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.5,fnmr,T2_mid,42.0,0.042,0.0313,0.0563,,,,
+rate,facenet,fmr1pct,,1000,0.5,fnmr,T3_dark,57.0,0.057,0.0443,0.0731,,,,
+contrast,facenet,fmr1pct,,2001,0.5,fnmr,T3_dark vs T1_light,,0.057,,,0.0519,0.0051,1.1,0.6240368333011383
+rate,facenet,fmr1pct,,1001,0.5,cannot_verify,T1_light,52.0,0.0519,0.0398,0.0675,,,,
+rate,facenet,fmr1pct,,999,0.5,cannot_verify,T2_mid,42.0,0.042,0.0313,0.0563,,,,
+rate,facenet,fmr1pct,,1000,0.5,cannot_verify,T3_dark,57.0,0.057,0.0443,0.0731,,,,
+contrast,facenet,fmr1pct,,2001,0.5,cannot_verify,T3_dark vs T1_light,,0.057,,,0.0519,0.0051,1.1,0.6240368333011383
+trend,facenet,fmr1pct,,3000,0.5,match,spearman_ita,,,,,,,-0.0127,0.48743561619386033
+rate,facenet,fmr1pct,,1001,1.0,fnmr,T1_light,53.0,0.0529,0.0407,0.0686,,,,
+rate,facenet,fmr1pct,,999,1.0,fnmr,T2_mid,46.0,0.046,0.0347,0.0609,,,,
+rate,facenet,fmr1pct,,1000,1.0,fnmr,T3_dark,56.0,0.056,0.0434,0.072,,,,
+contrast,facenet,fmr1pct,,2001,1.0,fnmr,T3_dark vs T1_light,,0.056,,,0.0529,0.0031,1.06,0.7687184016739301
+rate,facenet,fmr1pct,,1001,1.0,cannot_verify,T1_light,53.0,0.0529,0.0407,0.0686,,,,
+rate,facenet,fmr1pct,,999,1.0,cannot_verify,T2_mid,46.0,0.046,0.0347,0.0609,,,,
+rate,facenet,fmr1pct,,1000,1.0,cannot_verify,T3_dark,56.0,0.056,0.0434,0.072,,,,
+contrast,facenet,fmr1pct,,2001,1.0,cannot_verify,T3_dark vs T1_light,,0.056,,,0.0529,0.0031,1.06,0.7687184016739301
+trend,facenet,fmr1pct,,3000,1.0,match,spearman_ita,,,,,,,-0.0099,0.5882823641522219
+threshold,facenet,fmr01pct,0.50213,3000,,,,,,,,,,,
+rate,facenet,fmr01pct,,1001,0.15,fnmr,T1_light,107.0,0.1069,0.0892,0.1276,,,,
+rate,facenet,fmr01pct,,999,0.15,fnmr,T2_mid,62.0,0.0621,0.0487,0.0788,,,,
+rate,facenet,fmr01pct,,999,0.15,fnmr,T3_dark,83.0,0.0831,0.0675,0.1018,,,,
+contrast,facenet,fmr01pct,,2000,0.15,fnmr,T3_dark vs T1_light,,0.0831,,,0.1069,-0.0238,0.78,0.07923931520902802
+rate,facenet,fmr01pct,,1001,0.15,cannot_verify,T1_light,107.0,0.1069,0.0892,0.1276,,,,
+rate,facenet,fmr01pct,,999,0.15,cannot_verify,T2_mid,62.0,0.0621,0.0487,0.0788,,,,
+rate,facenet,fmr01pct,,1000,0.15,cannot_verify,T3_dark,84.0,0.084,0.0684,0.1028,,,,
+contrast,facenet,fmr01pct,,2001,0.15,cannot_verify,T3_dark vs T1_light,,0.084,,,0.1069,-0.0229,0.79,0.09397678957887245
+trend,facenet,fmr01pct,,3000,0.15,match,spearman_ita,,,,,,,0.0312,0.08709745067846264
+rate,facenet,fmr01pct,,1001,0.25,fnmr,T1_light,97.0,0.0969,0.0801,0.1168,,,,
+rate,facenet,fmr01pct,,999,0.25,fnmr,T2_mid,58.0,0.0581,0.0452,0.0743,,,,
+rate,facenet,fmr01pct,,999,0.25,fnmr,T3_dark,78.0,0.0781,0.063,0.0964,,,,
+contrast,facenet,fmr01pct,,2000,0.25,fnmr,T3_dark vs T1_light,,0.0781,,,0.0969,-0.0188,0.81,0.15419784662643626
+rate,facenet,fmr01pct,,1001,0.25,cannot_verify,T1_light,97.0,0.0969,0.0801,0.1168,,,,
+rate,facenet,fmr01pct,,999,0.25,cannot_verify,T2_mid,58.0,0.0581,0.0452,0.0743,,,,
+rate,facenet,fmr01pct,,1000,0.25,cannot_verify,T3_dark,79.0,0.079,0.0638,0.0974,,,,
+contrast,facenet,fmr01pct,,2001,0.25,cannot_verify,T3_dark vs T1_light,,0.079,,,0.0969,-0.0179,0.82,0.17953809804073717
+trend,facenet,fmr01pct,,3000,0.25,match,spearman_ita,,,,,,,0.0227,0.21337946819714632
+rate,facenet,fmr01pct,,1001,0.35,fnmr,T1_light,88.0,0.0879,0.0719,0.1071,,,,
+rate,facenet,fmr01pct,,999,0.35,fnmr,T2_mid,56.0,0.0561,0.0434,0.0721,,,,
+rate,facenet,fmr01pct,,1000,0.35,fnmr,T3_dark,72.0,0.072,0.0576,0.0897,,,,
+contrast,facenet,fmr01pct,,2001,0.35,fnmr,T3_dark vs T1_light,,0.072,,,0.0879,-0.0159,0.82,0.21624717605664046
+rate,facenet,fmr01pct,,1001,0.35,cannot_verify,T1_light,88.0,0.0879,0.0719,0.1071,,,,
+rate,facenet,fmr01pct,,999,0.35,cannot_verify,T2_mid,56.0,0.0561,0.0434,0.0721,,,,
+rate,facenet,fmr01pct,,1000,0.35,cannot_verify,T3_dark,72.0,0.072,0.0576,0.0897,,,,
+contrast,facenet,fmr01pct,,2001,0.35,cannot_verify,T3_dark vs T1_light,,0.072,,,0.0879,-0.0159,0.82,0.21624717605664046
+trend,facenet,fmr01pct,,3000,0.35,match,spearman_ita,,,,,,,0.022,0.2284257629323704
+rate,facenet,fmr01pct,,1001,0.5,fnmr,T1_light,93.0,0.0929,0.0764,0.1125,,,,
+rate,facenet,fmr01pct,,999,0.5,fnmr,T2_mid,54.0,0.0541,0.0417,0.0699,,,,
+rate,facenet,fmr01pct,,1000,0.5,fnmr,T3_dark,79.0,0.079,0.0638,0.0974,,,,
+contrast,facenet,fmr01pct,,2001,0.5,fnmr,T3_dark vs T1_light,,0.079,,,0.0929,-0.0139,0.85,0.29982651890578715
+rate,facenet,fmr01pct,,1001,0.5,cannot_verify,T1_light,93.0,0.0929,0.0764,0.1125,,,,
+rate,facenet,fmr01pct,,999,0.5,cannot_verify,T2_mid,54.0,0.0541,0.0417,0.0699,,,,
+rate,facenet,fmr01pct,,1000,0.5,cannot_verify,T3_dark,79.0,0.079,0.0638,0.0974,,,,
+contrast,facenet,fmr01pct,,2001,0.5,cannot_verify,T3_dark vs T1_light,,0.079,,,0.0929,-0.0139,0.85,0.29982651890578715
+trend,facenet,fmr01pct,,3000,0.5,match,spearman_ita,,,,,,,0.0204,0.2636818849240227
+rate,facenet,fmr01pct,,1001,1.0,fnmr,T1_light,88.0,0.0879,0.0719,0.1071,,,,
+rate,facenet,fmr01pct,,999,1.0,fnmr,T2_mid,57.0,0.0571,0.0443,0.0732,,,,
+rate,facenet,fmr01pct,,1000,1.0,fnmr,T3_dark,79.0,0.079,0.0638,0.0974,,,,
+contrast,facenet,fmr01pct,,2001,1.0,fnmr,T3_dark vs T1_light,,0.079,,,0.0879,-0.0089,0.9,0.5179850928306207
+rate,facenet,fmr01pct,,1001,1.0,cannot_verify,T1_light,88.0,0.0879,0.0719,0.1071,,,,
+rate,facenet,fmr01pct,,999,1.0,cannot_verify,T2_mid,57.0,0.0571,0.0443,0.0732,,,,
+rate,facenet,fmr01pct,,1000,1.0,cannot_verify,T3_dark,79.0,0.079,0.0638,0.0974,,,,
+contrast,facenet,fmr01pct,,2001,1.0,cannot_verify,T3_dark vs T1_light,,0.079,,,0.0879,-0.0089,0.9,0.5179850928306207
+trend,facenet,fmr01pct,,3000,1.0,match,spearman_ita,,,,,,,0.015,0.41091964212564935
+threshold,sface,fmr1pct,0.2899,2961,,,,,,,,,,,
+rate,sface,fmr1pct,,979,0.15,fnmr,T1_light,33.0,0.0337,0.0241,0.047,,,,
+rate,sface,fmr1pct,,994,0.15,fnmr,T2_mid,32.0,0.0322,0.0229,0.0451,,,,
+rate,sface,fmr1pct,,988,0.15,fnmr,T3_dark,34.0,0.0344,0.0247,0.0477,,,,
+contrast,sface,fmr1pct,,1967,0.15,fnmr,T3_dark vs T1_light,,0.0344,,,0.0337,0.0007,1.02,1.0
+rate,sface,fmr1pct,,1001,0.15,cannot_verify,T1_light,55.0,0.0549,0.0425,0.0708,,,,
+rate,sface,fmr1pct,,999,0.15,cannot_verify,T2_mid,37.0,0.037,0.027,0.0506,,,,
+rate,sface,fmr1pct,,1000,0.15,cannot_verify,T3_dark,46.0,0.046,0.0347,0.0608,,,,
+contrast,sface,fmr1pct,,2001,0.15,cannot_verify,T3_dark vs T1_light,,0.046,,,0.0549,-0.0089,0.84,0.4141049423824177
+trend,sface,fmr1pct,,3000,0.15,match,spearman_ita,,,,,,,0.0077,0.6723271385129201
+rate,sface,fmr1pct,,982,0.25,fnmr,T1_light,31.0,0.0316,0.0223,0.0445,,,,
+rate,sface,fmr1pct,,995,0.25,fnmr,T2_mid,33.0,0.0332,0.0237,0.0462,,,,
+rate,sface,fmr1pct,,987,0.25,fnmr,T3_dark,33.0,0.0334,0.0239,0.0466,,,,
+contrast,sface,fmr1pct,,1969,0.25,fnmr,T3_dark vs T1_light,,0.0334,,,0.0316,0.0019,1.06,0.8990201629876149
+rate,sface,fmr1pct,,1001,0.25,cannot_verify,T1_light,50.0,0.05,0.0381,0.0652,,,,
+rate,sface,fmr1pct,,999,0.25,cannot_verify,T2_mid,37.0,0.037,0.027,0.0506,,,,
+rate,sface,fmr1pct,,1000,0.25,cannot_verify,T3_dark,46.0,0.046,0.0347,0.0608,,,,
+contrast,sface,fmr1pct,,2001,0.25,cannot_verify,T3_dark vs T1_light,,0.046,,,0.05,-0.004,0.92,0.7538432396942579
+trend,sface,fmr1pct,,3000,0.25,match,spearman_ita,,,,,,,-0.0048,0.7912788414258347
+rate,sface,fmr1pct,,986,0.35,fnmr,T1_light,29.0,0.0294,0.0206,0.0419,,,,
+rate,sface,fmr1pct,,995,0.35,fnmr,T2_mid,34.0,0.0342,0.0246,0.0474,,,,
+rate,sface,fmr1pct,,988,0.35,fnmr,T3_dark,32.0,0.0324,0.023,0.0454,,,,
+contrast,sface,fmr1pct,,1974,0.35,fnmr,T3_dark vs T1_light,,0.0324,,,0.0294,0.003,1.1,0.7950206060507585
+rate,sface,fmr1pct,,1001,0.35,cannot_verify,T1_light,44.0,0.044,0.0329,0.0585,,,,
+rate,sface,fmr1pct,,999,0.35,cannot_verify,T2_mid,38.0,0.038,0.0278,0.0518,,,,
+rate,sface,fmr1pct,,1000,0.35,cannot_verify,T3_dark,44.0,0.044,0.0329,0.0586,,,,
+contrast,sface,fmr1pct,,2001,0.35,cannot_verify,T3_dark vs T1_light,,0.044,,,0.044,0.0,1.0,1.0
+trend,sface,fmr1pct,,3000,0.35,match,spearman_ita,,,,,,,-0.0095,0.6032199254502706
+rate,sface,fmr1pct,,988,0.5,fnmr,T1_light,32.0,0.0324,0.023,0.0454,,,,
+rate,sface,fmr1pct,,995,0.5,fnmr,T2_mid,32.0,0.0322,0.0229,0.045,,,,
+rate,sface,fmr1pct,,989,0.5,fnmr,T3_dark,33.0,0.0334,0.0239,0.0465,,,,
+contrast,sface,fmr1pct,,1977,0.5,fnmr,T3_dark vs T1_light,,0.0334,,,0.0324,0.001,1.03,1.0
+rate,sface,fmr1pct,,1001,0.5,cannot_verify,T1_light,45.0,0.045,0.0338,0.0596,,,,
+rate,sface,fmr1pct,,999,0.5,cannot_verify,T2_mid,36.0,0.036,0.0261,0.0495,,,,
+rate,sface,fmr1pct,,1000,0.5,cannot_verify,T3_dark,44.0,0.044,0.0329,0.0586,,,,
+contrast,sface,fmr1pct,,2001,0.5,cannot_verify,T3_dark vs T1_light,,0.044,,,0.045,-0.001,0.98,1.0
+trend,sface,fmr1pct,,3000,0.5,match,spearman_ita,,,,,,,-0.0076,0.677616964928167
+rate,sface,fmr1pct,,989,1.0,fnmr,T1_light,30.0,0.0303,0.0213,0.043,,,,
+rate,sface,fmr1pct,,995,1.0,fnmr,T2_mid,31.0,0.0312,0.022,0.0439,,,,
+rate,sface,fmr1pct,,992,1.0,fnmr,T3_dark,32.0,0.0323,0.0229,0.0452,,,,
+contrast,sface,fmr1pct,,1981,1.0,fnmr,T3_dark vs T1_light,,0.0323,,,0.0303,0.0019,1.06,0.8974668631768293
+rate,sface,fmr1pct,,1001,1.0,cannot_verify,T1_light,42.0,0.042,0.0312,0.0562,,,,
+rate,sface,fmr1pct,,999,1.0,cannot_verify,T2_mid,35.0,0.035,0.0253,0.0483,,,,
+rate,sface,fmr1pct,,1000,1.0,cannot_verify,T3_dark,40.0,0.04,0.0295,0.054,,,,
+contrast,sface,fmr1pct,,2001,1.0,cannot_verify,T3_dark vs T1_light,,0.04,,,0.042,-0.002,0.95,0.9103008752051085
+trend,sface,fmr1pct,,3000,1.0,match,spearman_ita,,,,,,,-0.0044,0.808881783193443
+threshold,sface,fmr01pct,0.35172,2961,,,,,,,,,,,
+rate,sface,fmr01pct,,979,0.15,fnmr,T1_light,46.0,0.047,0.0354,0.0621,,,,
+rate,sface,fmr01pct,,994,0.15,fnmr,T2_mid,35.0,0.0352,0.0254,0.0486,,,,
+rate,sface,fmr01pct,,988,0.15,fnmr,T3_dark,38.0,0.0385,0.0281,0.0523,,,,
+contrast,sface,fmr01pct,,1967,0.15,fnmr,T3_dark vs T1_light,,0.0385,,,0.047,-0.0085,0.82,0.3735266865808743
+rate,sface,fmr01pct,,1001,0.15,cannot_verify,T1_light,68.0,0.0679,0.0539,0.0852,,,,
+rate,sface,fmr01pct,,999,0.15,cannot_verify,T2_mid,40.0,0.04,0.0295,0.0541,,,,
+rate,sface,fmr01pct,,1000,0.15,cannot_verify,T3_dark,50.0,0.05,0.0381,0.0653,,,,
+contrast,sface,fmr01pct,,2001,0.15,cannot_verify,T3_dark vs T1_light,,0.05,,,0.0679,-0.0179,0.74,0.10634091765604749
+trend,sface,fmr01pct,,3000,0.15,match,spearman_ita,,,,,,,0.0196,0.2832852195039219
+rate,sface,fmr01pct,,982,0.25,fnmr,T1_light,44.0,0.0448,0.0335,0.0596,,,,
+rate,sface,fmr01pct,,995,0.25,fnmr,T2_mid,35.0,0.0352,0.0254,0.0485,,,,
+rate,sface,fmr01pct,,987,0.25,fnmr,T3_dark,39.0,0.0395,0.029,0.0536,,,,
+contrast,sface,fmr01pct,,1969,0.25,fnmr,T3_dark vs T1_light,,0.0395,,,0.0448,-0.0053,0.88,0.576680908770582
+rate,sface,fmr01pct,,1001,0.25,cannot_verify,T1_light,63.0,0.0629,0.0495,0.0797,,,,
+rate,sface,fmr01pct,,999,0.25,cannot_verify,T2_mid,39.0,0.039,0.0287,0.0529,,,,
+rate,sface,fmr01pct,,1000,0.25,cannot_verify,T3_dark,52.0,0.052,0.0399,0.0676,,,,
+contrast,sface,fmr01pct,,2001,0.25,cannot_verify,T3_dark vs T1_light,,0.052,,,0.0629,-0.0109,0.83,0.33683194071943084
+trend,sface,fmr01pct,,3000,0.25,match,spearman_ita,,,,,,,0.0055,0.7627622608131241
+rate,sface,fmr01pct,,986,0.35,fnmr,T1_light,46.0,0.0467,0.0352,0.0617,,,,
+rate,sface,fmr01pct,,995,0.35,fnmr,T2_mid,38.0,0.0382,0.0279,0.052,,,,
+rate,sface,fmr01pct,,988,0.35,fnmr,T3_dark,41.0,0.0415,0.0307,0.0558,,,,
+contrast,sface,fmr01pct,,1974,0.35,fnmr,T3_dark vs T1_light,,0.0415,,,0.0467,-0.0052,0.89,0.5856026093656499
+rate,sface,fmr01pct,,1001,0.35,cannot_verify,T1_light,61.0,0.0609,0.0477,0.0775,,,,
+rate,sface,fmr01pct,,999,0.35,cannot_verify,T2_mid,42.0,0.042,0.0313,0.0563,,,,
+rate,sface,fmr01pct,,1000,0.35,cannot_verify,T3_dark,53.0,0.053,0.0407,0.0687,,,,
+contrast,sface,fmr01pct,,2001,0.35,cannot_verify,T3_dark vs T1_light,,0.053,,,0.0609,-0.0079,0.87,0.4997594452142259
+trend,sface,fmr01pct,,3000,0.35,match,spearman_ita,,,,,,,0.0009,0.962376653072996
+rate,sface,fmr01pct,,988,0.5,fnmr,T1_light,47.0,0.0476,0.036,0.0627,,,,
+rate,sface,fmr01pct,,995,0.5,fnmr,T2_mid,35.0,0.0352,0.0254,0.0485,,,,
+rate,sface,fmr01pct,,989,0.5,fnmr,T3_dark,38.0,0.0384,0.0281,0.0523,,,,
+contrast,sface,fmr01pct,,1977,0.5,fnmr,T3_dark vs T1_light,,0.0384,,,0.0476,-0.0091,0.81,0.32106165168292977
+rate,sface,fmr01pct,,1001,0.5,cannot_verify,T1_light,60.0,0.0599,0.0468,0.0764,,,,
+rate,sface,fmr01pct,,999,0.5,cannot_verify,T2_mid,39.0,0.039,0.0287,0.0529,,,,
+rate,sface,fmr01pct,,1000,0.5,cannot_verify,T3_dark,49.0,0.049,0.0373,0.0642,,,,
+contrast,sface,fmr01pct,,2001,0.5,cannot_verify,T3_dark vs T1_light,,0.049,,,0.0599,-0.0109,0.82,0.32463022724062496
+trend,sface,fmr01pct,,3000,0.5,match,spearman_ita,,,,,,,0.0085,0.6435079878243493
+rate,sface,fmr01pct,,989,1.0,fnmr,T1_light,47.0,0.0475,0.0359,0.0626,,,,
+rate,sface,fmr01pct,,995,1.0,fnmr,T2_mid,35.0,0.0352,0.0254,0.0485,,,,
+rate,sface,fmr01pct,,992,1.0,fnmr,T3_dark,37.0,0.0373,0.0272,0.051,,,,
+contrast,sface,fmr01pct,,1981,1.0,fnmr,T3_dark vs T1_light,,0.0373,,,0.0475,-0.0102,0.78,0.2670110336506185
+rate,sface,fmr01pct,,1001,1.0,cannot_verify,T1_light,59.0,0.0589,0.046,0.0753,,,,
+rate,sface,fmr01pct,,999,1.0,cannot_verify,T2_mid,39.0,0.039,0.0287,0.0529,,,,
+rate,sface,fmr01pct,,1000,1.0,cannot_verify,T3_dark,45.0,0.045,0.0338,0.0597,,,,
+contrast,sface,fmr01pct,,2001,1.0,cannot_verify,T3_dark vs T1_light,,0.045,,,0.0589,-0.0139,0.76,0.19023684333044832
+trend,sface,fmr01pct,,3000,1.0,match,spearman_ita,,,,,,,0.0171,0.3477355012241867
