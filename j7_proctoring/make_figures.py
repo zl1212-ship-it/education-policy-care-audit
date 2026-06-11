@@ -5,9 +5,13 @@
   Figure 2: the tone gradient -- Haar cascade miss rate across the six ITA tone
             bins at native exposure and at the dimmest condition.
   Figure 3: the gate vs the matcher -- group failure-rate ratio across exposure:
-            detection (Black/White miss ratio, three detectors that leave the
+            detection (Black vs White miss ratio, three detectors that leave the
             floor) against 1:1 verification (T3/T1 FNMR ratio, both cascades).
             The gate diverges as the light dims; the matcher stays at parity.
+
+Detector names in the figures match the manuscript text exactly: Haar, YuNet,
+MTCNN, MediaPipe; the verification cascades are "MTCNN + InceptionResnet" and
+"YuNet + SFace".
 
 Inputs : data/results_summary.csv, data/verification_results.csv
 Outputs: ../paper/blinded-manuscript/j7_figure{1,2,3}.{pdf,png,tiff}
@@ -55,10 +59,10 @@ def race_series(detector, group):
 
 
 # ---- Figure 1: miss rate by race across the exposure sweep, per detector ----
-PANELS = [("haar", "Haar cascade (legacy webcam-grade)"),
-          ("yunet", "YuNet 2023 (production lightweight)"),
+PANELS = [("haar", "Haar cascade (legacy webcam)"),
+          ("yunet", "YuNet (lightweight production)"),
           ("mtcnn", "MTCNN (deep cascade)"),
-          ("mediapipe", "MediaPipe BlazeFace (on-device)")]
+          ("mediapipe", "MediaPipe BlazeFace (on device)")]
 x = np.arange(len(EXPOSURES))
 fig, axes = plt.subplots(2, 2, figsize=(8.2, 6.2), sharex=True)
 for ax, (d, title) in zip(axes.ravel(), PANELS):
@@ -76,7 +80,7 @@ for ax in axes[1]:
 for ax in axes[:, 0]:
     ax.set_ylabel('"No face" rate (%)')
 axes[0, 0].legend(frameon=False, fontsize=9)
-fig.suptitle("Face-detection failure on single-face images, by perceived race, "
+fig.suptitle("Face detection failure on single-face images, by perceived race, "
              "as the light dims", fontsize=11, y=0.995)
 save(fig, "j7_figure1")
 
@@ -96,7 +100,7 @@ for off, exp, col, lab in ((-w / 2, 1.0, "0.55", "Native exposure (1.00)"),
                 ecolor="0.25", lw=0.9, capsize=2)
 ax.set_xticks(np.arange(len(TONE_ORDER)))
 ax.set_xticklabels([t.replace("_", " ") for t in TONE_ORDER])
-ax.set_xlabel("Skin-tone bin (ITA, lightest to darkest)")
+ax.set_xlabel("Skin tone bin (ITA, lightest to darkest)")
 ax.set_ylabel('"No face" rate (%)')
 ax.set_title("Haar cascade: the tone gradient at native exposure and in a dim room",
              fontsize=10.5)
@@ -106,16 +110,23 @@ save(fig, "j7_figure2")
 
 # ---- Figure 3: failure-rate ratio across exposure, gate vs matcher ----
 fig, (axL, axR) = plt.subplots(1, 2, figsize=(8.4, 4.0), sharey=True)
-
-
-def ratio_line(ax, c, marker, col, label):
-    """Filled markers where Fisher p < .05, open where not significant."""
-    ax.plot(x, c["ratio"], "-", color=col, lw=1.5, label=label)
-    sig = c["p_fisher"].values < 0.05
-    ax.scatter(x[sig], c["ratio"].values[sig], marker=marker, s=30,
-               facecolor=col, edgecolor=col, zor
-for ax, title in ((axL, "Detection gate\n(Black/White miss ratio, FairFace)"),
-                  (axR, "Identity matcher\n(darkest/lightest tercile FNMR ratio, LFW)")):
+DET_LINES = [("haar", "o-", "#b2182b", "Haar"),
+             ("yunet", "s-", "#ef8a62", "YuNet"),
+             ("mtcnn", "^-", "#67001f", "MTCNN")]
+for d, st, col, lab in DET_LINES:
+    c = (det[(det["kind"] == "contrast") & (det["sample"] == "all")
+             & (det["detector"] == d) & (det["stratifier"] == "race")]
+         .set_index("exposure").reindex(EXPOSURES))
+    axL.plot(x, c["ratio"], st, color=col, ms=4.5, lw=1.5, label=lab)
+VER_LINES = [("facenet", "o-", "#2166ac", "MTCNN + InceptionResnet"),
+             ("sface", "s-", "#67a9cf", "YuNet + SFace")]
+for v, st, col, lab in VER_LINES:
+    c = (ver[(ver["kind"] == "contrast") & (ver["point"] == "fmr1pct")
+             & (ver["verifier"] == v) & (ver["outcome"] == "fnmr")]
+         .set_index("exposure").reindex(EXPOSURES))
+    axR.plot(x, c["ratio"], st, color=col, ms=4.5, lw=1.5, label=lab)
+for ax, title in ((axL, "Detection gate\n(Black vs White miss ratio, FairFace)"),
+                  (axR, "Identity matcher\n(darkest vs lightest tercile FNMR ratio, LFW)")):
     ax.axhline(1.0, color="0.6", lw=0.9, ls="--")
     ax.set_xticks(x)
     ax.set_xticklabels(XLAB)
@@ -123,7 +134,7 @@ for ax, title in ((axL, "Detection gate\n(Black/White miss ratio, FairFace)"),
     ax.set_title(title, fontsize=10)
     ax.legend(frameon=False, fontsize=9)
     ax.spines[["top", "right"]].set_visible(False)
-axL.set_ylabel("Group failure-rate ratio")
+axL.set_ylabel("Group failure rate ratio")
 fig.suptitle("The gap lives at the detection gate, not the matcher", fontsize=11)
 save(fig, "j7_figure3")
 

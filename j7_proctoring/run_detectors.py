@@ -82,14 +82,16 @@ def underexpose(img_bgr, factor):
     return np.clip(out, 0, 255).astype(np.uint8)
 
 
-def det_haar():
+def det_haar(min_neighbors=5):
     casc = cv2.CascadeClassifier(
         cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
     def run(img):
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # OpenCV tutorial defaults: scaleFactor=1.1, minNeighbors=5
-        faces = casc.detectMultiScale(gray, 1.1, 5, minSize=(30, 30))
+        # OpenCV tutorial defaults: scaleFactor=1.1, minNeighbors=5. Lowering
+        # minNeighbors is the Haar confidence dial: it accepts detections backed
+        # by fewer overlapping neighbor windows, so it raises the detection rate.
+        faces = casc.detectMultiScale(gray, 1.1, min_neighbors, minSize=(30, 30))
         return len(faces), np.nan
     return run
 
@@ -146,7 +148,12 @@ BUILDERS = {"yunet": det_yunet, "mediapipe": det_mediapipe,
             "haar": det_haar, "mtcnn": det_mtcnn,
             # threshold-sensitivity variant: same YuNet weights at the looser
             # 0.6 operating point some deployments use (default is 0.9)
-            "yunet06": lambda: det_yunet(score_threshold=0.6)}
+            "yunet06": lambda: det_yunet(score_threshold=0.6),
+            # Haar confidence-dial sensitivity: minNeighbors 3 (looser) and 8
+            # (stricter) bracket the default 5, to test whether the skin-tone gap
+            # is an artifact of the operating point rather than the detector
+            "haar3": lambda: det_haar(min_neighbors=3),
+            "haar8": lambda: det_haar(min_neighbors=8)}
 
 
 def merge_save(rows):

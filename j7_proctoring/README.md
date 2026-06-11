@@ -109,9 +109,13 @@ So most of YuNet's "no face" returns at 0.9 are low-confidence detections the
 threshold discards, and the skew lives in that discarded tail. The escape is
 illusory for proctoring: a detector at 0.6 almost never reports "no face," which
 means it has stopped gating presence at all rather than gating it fairly. Haar has
-no such knob (its cascade is structural, not a confidence cut), so its 1.6x-1.7x
-race gap has no operating point that erases it; that gap is a property of the
-detector, not the cutoff.
+its own dial, the `minNeighbors` parameter, but sweeping it tells the opposite
+story: moving `minNeighbors` from 3 to the default 5 to 8 swings the overall miss
+rate from 16.8% to 22.8% to 29.1%, yet the Black-White ratio barely moves (1.58 /
+1.56 / 1.59, all p < 1e-11). For YuNet the dial erases the gap, but only by
+switching the detector off in effect; for Haar no setting of the dial erases it.
+There the gap is a property of the detector, not the cutoff. (Run the bracket with
+`run_detectors.py --detectors haar3,haar8`.)
 
 **Verification layer (LFW 10-fold pairs, 3,000 genuine / 3,000 impostor, two open
 cascades, threshold fixed at FMR = 1% on native-exposure impostors).** The matcher
