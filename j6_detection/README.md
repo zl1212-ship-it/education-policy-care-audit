@@ -53,19 +53,23 @@ an artifact of the cutoff: the fold-difference widens from 10.4x at tau=0.25 to
 26.4x at tau=0.90. This reproduces Liang et al. (2023); the paper's contribution is
 the governance layer and joint-exposure framing layered on top.
 
-**Governance layer (50 state-flagship public universities, first-pass coding).** No
+**Governance layer (50 state-flagship public universities).** No
 flagship keeps the bias out of the misconduct process by trusting detectors less:
-the gate is left open. Only **1** bans detector evidence (UT-Austin), **6** name
+the gate is left open. Only **1** bans detector evidence (UT-Austin), **7** name
 multilingual writers as a protected group, and **3** bar a detector flag from being
-the sole basis; the other **40 of 50 (80%)** sit in a governance vacuum, where the
+the sole basis; the other **39 of 50 (78%)** sit in a governance vacuum, where the
 detector stance is non-binding guidance, the decision is delegated to individual
 instructors, and no multilingual protection exists. One flagship (Georgia)
 institutionally approves a detector with no L2 protection. The vacuum does not track
-exposure: governance-vacuum rate is 76% / 75% / 88% across low / mid / high
-international-enrollment terciles (Spearman with the vacuum index = 0.15, p = 0.31),
-so protection is not allocated where the harm concentrates. Codes are
-`claude-firstpass` with verbatim support passages (see `data/policy_corpus.csv`),
-for author verification + a second coder (Cohen's kappa) before submission.
+exposure: governance-vacuum rate is 76% / 75% / 82% across low / mid / high
+international-enrollment terciles (Spearman with the vacuum index = 0.21, p = 0.15),
+so protection is not allocated where the harm concentrates. Codes of record carry
+verbatim support passages (`data/policy_corpus.csv`, reconciled against the stored
+text in `data/policy_raw/`). Reliability: an independent second coder re-coded a
+random fifth of the census from the stored text (`data/policy_corpus_secondcoder.csv`,
+per-dimension kappa in `data/kappa_results.csv`: 0.81--1.00 on the floor dimensions),
+and the author re-coded the same ten by hand (`data/policy_corpus_handcoder.csv`);
+the governance-floor classification is identical under all three sets of codes.
 
 **Current-detector extension.** The penalty is not an artifact of the 2023 detectors. Re-scored with
 four current open detectors (`run_detectors.py`), three still misflag non-native writers far more than
