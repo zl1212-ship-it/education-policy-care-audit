@@ -109,22 +109,37 @@ ax.spines[["top", "right"]].set_visible(False)
 save(fig, "j7_figure2")
 
 # ---- Figure 3: failure-rate ratio across exposure, gate vs matcher ----
+# Markers are filled where the Fisher contrast is significant (p < .05) and open
+# where it is not, so a large but non-significant point (e.g. MTCNN at full
+# exposure) is not read as a real gap.
 fig, (axL, axR) = plt.subplots(1, 2, figsize=(8.4, 4.0), sharey=True)
-DET_LINES = [("haar", "o-", "#b2182b", "Haar"),
-             ("yunet", "s-", "#ef8a62", "YuNet"),
-             ("mtcnn", "^-", "#67001f", "MTCNN")]
-for d, st, col, lab in DET_LINES:
+
+
+def ratio_line(ax, c, marker, col, lab):
+    ax.plot(x, c["ratio"].values, "-", color=col, lw=1.5, label=lab)
+    p = c["p_fisher"].values
+    sig = p < 0.05
+    ax.scatter(x[sig], c["ratio"].values[sig], marker=marker, s=34,
+               color=col, zorder=3)
+    ax.scatter(x[~sig], c["ratio"].values[~sig], marker=marker, s=34,
+               facecolor="white", edgecolor=col, linewidths=1.1, zorder=3)
+
+
+DET_LINES = [("haar", "o", "#b2182b", "Haar"),
+             ("yunet", "s", "#ef8a62", "YuNet"),
+             ("mtcnn", "^", "#67001f", "MTCNN")]
+for d, marker, col, lab in DET_LINES:
     c = (det[(det["kind"] == "contrast") & (det["sample"] == "all")
              & (det["detector"] == d) & (det["stratifier"] == "race")]
          .set_index("exposure").reindex(EXPOSURES))
-    axL.plot(x, c["ratio"], st, color=col, ms=4.5, lw=1.5, label=lab)
-VER_LINES = [("facenet", "o-", "#2166ac", "MTCNN + InceptionResnet"),
-             ("sface", "s-", "#67a9cf", "YuNet + SFace")]
-for v, st, col, lab in VER_LINES:
+    ratio_line(axL, c, marker, col, lab)
+VER_LINES = [("facenet", "o", "#2166ac", "MTCNN + InceptionResnet"),
+             ("sface", "s", "#67a9cf", "YuNet + SFace")]
+for v, marker, col, lab in VER_LINES:
     c = (ver[(ver["kind"] == "contrast") & (ver["point"] == "fmr1pct")
              & (ver["verifier"] == v) & (ver["outcome"] == "fnmr")]
          .set_index("exposure").reindex(EXPOSURES))
-    axR.plot(x, c["ratio"], st, color=col, ms=4.5, lw=1.5, label=lab)
+    ratio_line(axR, c, marker, col, lab)
 for ax, title in ((axL, "Detection gate\n(Black vs White miss ratio, FairFace)"),
                   (axR, "Identity matcher\n(darkest vs lightest tercile FNMR ratio, LFW)")):
     ax.axhline(1.0, color="0.6", lw=0.9, ls="--")
