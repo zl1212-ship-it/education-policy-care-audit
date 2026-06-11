@@ -20,7 +20,16 @@ j4_adoption/data/pell_share.csv
 # J6 findings narrative kept private until publication (reproducible from the scripts)
 j6_detection/results.md
 j6_detection/literature.md
+
+# J7 findings narrative kept private until publication (reproducible from the scripts)
+j7_proctoring/results.md
+j7_proctoring/literature.md
+# J7 raw face images are large binaries from public datasets; regenerate with fetch_face_data.py
+j7_proctoring/data/raw/
+# J7 third-party detector weights; run_detectors.py re-downloads and sha256-verifies them
+j7_proctoring/models/
 # J6 anchor corpus is a verbatim download of an external repo; regenerate with fetch_anchor_data.py
 j6_detection/data/anchor/
 # (J6 policy_raw/ is now COMMITTED: live policy pages change, so the retrieved text at the access
 #  date is the archived evidence behind each code; verification needs no re-fetch.)
+j7_proctoring/data/*.log
