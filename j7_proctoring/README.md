@@ -69,5 +69,20 @@ evidence that photo exposure contaminates the very-light ITA tail; the
 author-assigned race labels serve as the independent stratifier for exactly this
 reason.
 
+**Low-light sweep (exposure 0.5 -> 0.15, linear-light).** Dimming amplifies the
+disparity in three of the four detectors, on the race contrast that the ITA
+contamination cannot touch. Haar: Black miss rises 35.5% -> 42.6% while White rises
+22.7% -> 25.9% (risk difference 12.8pp -> 16.7pp, p = 6e-26). YuNet: the Black-White
+ratio climbs monotonically with darkness, 1.04 -> 1.12 -> 1.14 -> 1.16 -> 1.25
+(p = 0.002 at 0.15; adults 1.09 -> 1.30, p = 0.001). MTCNN leaves the ceiling and a
+significant gap emerges: 0.71% vs 0.34% (n.s.) at native exposure becomes 4.6% vs
+2.4% (1.9x, p = 4e-4) at 0.15. So equal-light parity is not equal-dark parity: the
+gap appears exactly under the deployed condition, a dim room behind a webcam.
+MediaPipe stays at the ceiling throughout; pure exposure scaling is largely undone
+by its input normalization (stated limitation: real low light also adds sensor
+noise, so these sweep numbers are conservative). The very-light ITA tail degrades
+fastest among modern detectors when dimmed, consistent with that tail holding
+overexposed, low-contrast photos rather than the lightest-skinned subjects.
+
 ## Target journals
 Computers & Education (primary); Internet and Higher Education; AI & Society.
