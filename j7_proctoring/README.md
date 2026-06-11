@@ -117,6 +117,16 @@ switching the detector off in effect; for Haar no setting of the dial erases it.
 There the gap is a property of the detector, not the cutoff. (Run the bracket with
 `run_detectors.py --detectors haar3,haar8`.)
 
+**Sensor-noise robustness (Poisson + Gaussian noise at exposures 0.25 and 0.15).**
+Adding sensor noise measures, rather than assumes, that pure exposure scaling is a
+mild lower bound on difficulty: every detector misses more with noise. The Haar race
+gap (the headline) is unmoved, ~1.6x with p < 1e-23 at both settings. MTCNN's shrinks
+but holds (1.9x -> 1.56x). YuNet saturates: both groups reach ~45-52% miss and the
+gap compresses to ~0.95x, not because it became fair but because the detector is
+failing on nearly everyone, a harm of its own. So noise does not weaken the central
+finding; where it shrinks a gap it does so by breaking the detector. (Run with
+`run_detectors.py --noise --exposures 0.25,0.15`.)
+
 **Verification layer (LFW 10-fold pairs, 3,000 genuine / 3,000 impostor, two open
 cascades, threshold fixed at FMR = 1% on native-exposure impostors).** The matcher
 does not reproduce the detection gap: genuine-pair rejection ("you are not you")

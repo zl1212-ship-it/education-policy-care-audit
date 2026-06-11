@@ -82,6 +82,18 @@ def underexpose(img_bgr, factor):
     return np.clip(out, 0, 255).astype(np.uint8)
 
 
+def add_sensor_noise(img_bgr, rng, read_sigma=3.0, shot_gain=0.5):
+    """Approximate a dim webcam's sensor noise (M5 robustness check): a
+    signal-dependent Poisson shot term plus a fixed Gaussian read term, added
+    after underexposure. shot_gain is electrons per intensity unit; lower means
+    stronger shot noise. The transform preserves the mean, so it adds noise
+    without brightening or darkening the frame."""
+    lin = np.maximum(img_bgr.astype(np.float64), 0.0)
+    shot = rng.poisson(lin * shot_gain) / shot_gain
+    noisy = shot + rng.normal(0.0, read_sigma, img_bgr.shape)
+    return np.clip(noisy, 0, 255).astype(np.uint8)
+
+
 def det_haar(min_neighbors=5):
     casc = cv2.CascadeClassifier(
         cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
@@ -172,26 +184,34 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--detectors", default=",".join(BUILDERS))
     ap.add_argument("--exposures", default="1.0")
+    ap.add_argument("--noise", action="store_true",
+                    help="add sensor noise after underexposure (M5 robustness); "
+                         "the detector is recorded with a +n suffix")
+    ap.add_argument("--seed", type=int, default=0)
     args = ap.parse_args()
     detectors = args.detectors.split(",")
     exposures = [float(x) for x in args.exposures.split(",")]
+    rng = np.random.default_rng(args.seed)
 
     files = pd.read_csv(PANEL_CSV)["file"].tolist()
     for name in detectors:
         run = BUILDERS[name]()
+        out_name = name + "+n" if args.noise else name
         for exp in exposures:
             rows = []
             for i, fname in enumerate(files):
                 img = underexpose(cv2.imread(os.path.join(RAW_DIR, fname)), exp)
+                if args.noise:
+                    img = add_sensor_noise(img, rng)
                 n, conf = run(img)
-                rows.append({"file": fname, "detector": name, "exposure": exp,
+                rows.append({"file": fname, "detector": out_name, "exposure": exp,
                              "n_faces": n, "max_conf": np.nan if np.isnan(conf)
                              else round(conf, 4), "detected": int(n > 0)})
                 if (i + 1) % 2000 == 0:
-                    print(f"{name} exp={exp}: {i + 1}/{len(files)}", flush=True)
+                    print(f"{out_name} exp={exp}: {i + 1}/{len(files)}", flush=True)
             merge_save(rows)
             miss = 1.0 - np.mean([r["detected"] for r in rows])
-            print(f"done {name} exp={exp}: miss rate {miss:.3%}", flush=True)
+            print(f"done {out_name} exp={exp}: miss rate {miss:.3%}", flush=True)
 
 if __name__ == "__main__":
     main()
