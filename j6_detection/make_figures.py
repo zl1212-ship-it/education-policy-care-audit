@@ -88,13 +88,12 @@ disp = {"admissible": "Admissible\n(endorsed)", "silent": "Silent",
 cnt = coded.detector_admissibility.value_counts()
 vals = [int(cnt.get(k, 0)) for k in order]
 colors = ["#b2182b", "#ef8a62", "#67a9cf", "#2166ac"]
-a1.barh(range(len(order)), vals, color=colors)
-a1.set_yticks(range(len(order)))
-a1.set_yticklabels([disp[k] for k in order], fontsize=9)
-a1.invert_yaxis()
+a1.bar(range(len(order)), vals, color=colors)
+a1.set_xticks(range(len(order)))
+a1.set_xticklabels([disp[k] for k in order], fontsize=9)
 for i, v in enumerate(vals):
-    a1.text(v + 0.4, i, str(v), va="center", fontsize=9)
-a1.set_xlabel("Flagship universities (of 50)")
+    a1.text(i, v + 0.5, str(v), ha="center", fontsize=9)
+a1.set_ylabel("Flagship universities (of 50)")
 a1.set_title("(a) Is detector output usable as evidence?", fontsize=10)
 a1.spines[["top", "right"]].set_visible(False)
 
