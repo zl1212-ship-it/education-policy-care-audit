@@ -57,7 +57,7 @@ pooled_nn = float(det[(det.analysis == "fpr_pooled_mean7") & (det.threshold == 0
 pooled_na = float(det[(det.analysis == "fpr_pooled_mean7") & (det.threshold == 0.50)
                       & (det.group == "native")]["value"].iloc[0])
 
-labels = DETECTORS + ["Pooled\n(mean of 7)"]
+labels = [d.replace("Quil", "Quil.org") for d in DETECTORS] + ["Pooled\n(mean of 7)"]
 nn_all, na_all = nn + [pooled_nn], na + [pooled_na]
 x = np.arange(len(labels))
 w = 0.4

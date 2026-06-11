@@ -1,51 +1,51 @@
 institution,state,unitid,year,total_enroll,nonresident_alien,intl_share
-University of Alabama,AL,100751,2022,38644,1355,0.0351
-University of Alaska Fairbanks,AK,102614,2022,6607,534,0.0808
-University of Arizona,AZ,104179,2022,49403,1658,0.0336
-University of Arkansas,AR,106397,2022,30936,463,0.015
-University of California Berkeley,CA,110635,2022,45307,1368,0.0302
-University of Colorado Boulder,CO,126614,2022,39585,420,0.0106
-University of Connecticut,CT,129020,2022,27003,392,0.0145
-University of Delaware,DE,130943,2022,24039,522,0.0217
-University of Florida,FL,134130,2022,55211,1223,0.0222
-University of Georgia,GA,139959,2022,40607,478,0.0118
-University of Hawaii at Manoa,HI,141574,2022,19074,113,0.0059
-University of Idaho,ID,142285,2022,11507,412,0.0358
-University of Illinois Urbana-Champaign,IL,145637,2022,56916,1942,0.0341
-Indiana University Bloomington,IN,151351,2022,47005,335,0.0071
-University of Iowa,IA,153658,2022,30015,908,0.0303
-University of Kansas,KS,155317,2022,26708,366,0.0137
-University of Kentucky,KY,157085,2022,31547,732,0.0232
-Louisiana State University,LA,159391,2022,37348,444,0.0119
-University of Maine,ME,161253,2022,12231,547,0.0447
-University of Maryland College Park,MD,163286,2022,40792,1719,0.0421
-University of Massachusetts Amherst,MA,166629,2022,32229,1273,0.0395
-University of Michigan,MI,170976,2022,51225,2164,0.0422
-University of Minnesota Twin Cities,MN,174066,2022,54955,2762,0.0503
-University of Mississippi,MS,176017,2022,22300,51,0.0023
-University of Missouri,MO,178396,2022,31304,393,0.0126
-University of Montana,MT,180489,2022,9955,460,0.0462
-University of Nebraska-Lincoln,NE,181464,2022,23805,340,0.0143
-University of Nevada Reno,NV,182290,2022,20945,406,0.0194
-University of New Hampshire,NH,183044,2022,13953,694,0.0497
-Rutgers University-New Brunswick,NJ,186380,2022,50637,1072,0.0212
-University of New Mexico,NM,187985,2022,21953,370,0.0169
-University at Buffalo,NY,196088,2022,32099,1122,0.035
-University of North Carolina at Chapel Hill,NC,199120,2022,31705,684,0.0216
-University of North Dakota,ND,200280,2022,13876,317,0.0228
-Ohio State University,OH,204796,2022,60540,2016,0.0333
-University of Oklahoma,OK,207342,2022,3389,292,0.0862
-University of Oregon,OR,209551,2022,23163,379,0.0164
-Pennsylvania State University,PA,214777,2022,50028,1523,0.0304
-University of Rhode Island,RI,217484,2022,17473,739,0.0423
-University of South Carolina,SC,218645,2022,3840,27,0.007
-University of South Dakota,SD,219471,2022,9856,381,0.0387
-University of Tennessee Knoxville,TN,221759,2022,33805,367,0.0109
-University of Texas at Austin,TX,228778,2022,52384,826,0.0158
-University of Utah,UT,230764,2022,34734,973,0.028
-University of Vermont,VT,231174,2022,14088,431,0.0306
-University of Virginia,VA,234076,2022,26082,1247,0.0478
-University of Washington,WA,236948,2022,52319,5746,0.1098
-West Virginia University,WV,238032,2022,24741,301,0.0122
-University of Wisconsin-Madison,WI,240444,2022,48956,1394,0.0285
-University of Wyoming,WY,240727,2022,11100,581,0.0523
+University of Alabama,AL,100751,2022,38644,1118,0.0289
+University of Alaska Fairbanks,AK,102614,2022,6607,174,0.0263
+University of Arizona,AZ,104179,2022,49403,3502,0.0709
+University of Arkansas,AR,106397,2022,30936,1144,0.037
+University of California Berkeley,CA,110635,2022,45307,8160,0.1801
+University of Colorado Boulder,CO,126614,2022,39585,3080,0.0778
+University of Connecticut,CT,129020,2022,27003,3464,0.1283
+University of Delaware,DE,130943,2022,24039,2554,0.1062
+University of Florida,FL,134130,2022,55211,4951,0.0897
+University of Georgia,GA,139959,2022,40607,2053,0.0506
+University of Hawaii at Manoa,HI,141574,2022,19074,1270,0.0666
+University of Idaho,ID,142285,2022,11507,648,0.0563
+University of Illinois Urbana-Champaign,IL,145637,2022,56916,12791,0.2247
+Indiana University Bloomington,IN,151351,2022,47005,5414,0.1152
+University of Iowa,IA,153658,2022,30015,1458,0.0486
+University of Kansas,KS,155317,2022,26708,1837,0.0688
+University of Kentucky,KY,157085,2022,31547,1164,0.0369
+Louisiana State University,LA,159391,2022,37348,1571,0.0421
+University of Maine,ME,161253,2022,12231,529,0.0433
+University of Maryland College Park,MD,163286,2022,40792,4777,0.1171
+University of Massachusetts Amherst,MA,166629,2022,32229,4170,0.1294
+University of Michigan,MI,170976,2022,51225,8880,0.1734
+University of Minnesota Twin Cities,MN,174066,2022,54955,5181,0.0943
+University of Mississippi,MS,176017,2022,22300,750,0.0336
+University of Missouri,MO,178396,2022,31304,1377,0.044
+University of Montana,MT,180489,2022,9955,203,0.0204
+University of Nebraska-Lincoln,NE,181464,2022,23805,1683,0.0707
+University of Nevada Reno,NV,182290,2022,20945,684,0.0327
+University of New Hampshire,NH,183044,2022,13953,423,0.0303
+Rutgers University-New Brunswick,NJ,186380,2022,50637,5218,0.103
+University of New Mexico,NM,187985,2022,21953,1063,0.0484
+University at Buffalo,NY,196088,2022,32099,6495,0.2023
+University of North Carolina at Chapel Hill,NC,199120,2022,31705,2396,0.0756
+University of North Dakota,ND,200280,2022,13876,885,0.0638
+Ohio State University,OH,204796,2022,60540,5803,0.0959
+University of Oklahoma,OK,207342,2022,3389,121,0.0357
+University of Oregon,OR,209551,2022,23163,999,0.0431
+Pennsylvania State University,PA,214777,2022,50028,7903,0.158
+University of Rhode Island,RI,217484,2022,17473,468,0.0268
+University of South Carolina,SC,218645,2022,3840,61,0.0159
+University of South Dakota,SD,219471,2022,9856,400,0.0406
+University of Tennessee Knoxville,TN,221759,2022,33805,1169,0.0346
+University of Texas at Austin,TX,228778,2022,52384,5117,0.0977
+University of Utah,UT,230764,2022,34734,3051,0.0878
+University of Vermont,VT,231174,2022,14088,373,0.0265
+University of Virginia,VA,234076,2022,26082,2457,0.0942
+University of Washington,WA,236948,2022,52319,8199,0.1567
+West Virginia University,WV,238032,2022,24741,1195,0.0483
+University of Wisconsin-Madison,WI,240444,2022,48956,7331,0.1497
+University of Wyoming,WY,240727,2022,11100,497,0.0448

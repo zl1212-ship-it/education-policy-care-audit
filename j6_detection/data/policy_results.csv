@@ -28,12 +28,12 @@ decision_locus_x_l2,institutional,explicit,0.02,1,50
 decision_locus_x_l2,institutional,none,0.06,3,50
 governance_vacuum,not-prohibited & no-explicit-L2 & burden!=institution,exposed,0.78,39,50
 active_endorsement,admissible & no-explicit-L2,exposed,0.02,1,50
-intl_share_by_group,mean,vacuum,0.0315,39,39
-intl_share_by_group,mean,not-vacuum,0.0253,11,11
-intl_share_by_l2,mean,explicit-L2,0.0272,7,7
-intl_share_by_l2,mean,no-explicit-L2,0.0307,43,43
+intl_share_by_group,mean,vacuum,0.0785,39,39
+intl_share_by_group,mean,not-vacuum,0.0757,11,11
+intl_share_by_l2,mean,explicit-L2,0.0786,7,7
+intl_share_by_l2,mean,no-explicit-L2,0.0777,43,43
 vacuum_rate_by_intl_tercile,low,exposed,0.7647,13,17
-vacuum_rate_by_intl_tercile,mid,exposed,0.75,12,16
-vacuum_rate_by_intl_tercile,high,exposed,0.8235,14,17
-spearman_intl_vs_vacuumindex,rho,all,0.206,50,50
-spearman_intl_vs_vacuumindex,p,all,0.152,50,50
+vacuum_rate_by_intl_tercile,mid,exposed,0.8125,13,16
+vacuum_rate_by_intl_tercile,high,exposed,0.7647,13,17
+spearman_intl_vs_vacuumindex,rho,all,0.078,50,50
+spearman_intl_vs_vacuumindex,p,all,0.591,50,50

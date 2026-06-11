@@ -85,7 +85,7 @@ def intl_share(unitid: int):
            if x["ftpt"] == 99 and x["degree_seeking"] == 99
            and x["class_level"] == 99 and x["sex"] == 99]
     by_race = {x["race"]: x["enrollment_fall"] for x in agg}
-    total, nra = by_race.get(99), by_race.get(9)
+    total, nra = by_race.get(99), by_race.get(8)  # race=8 nonresident alien; 9 is race-unknown
     if not total or nra is None:
         return None, None, None
     return total, nra, round(nra / total, 4)

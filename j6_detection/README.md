@@ -61,8 +61,8 @@ the sole basis; the other **39 of 50 (78%)** sit in a governance vacuum, where t
 detector stance is non-binding guidance, the decision is delegated to individual
 instructors, and no multilingual protection exists. One flagship (Georgia)
 institutionally approves a detector with no L2 protection. The vacuum does not track
-exposure: governance-vacuum rate is 76% / 75% / 82% across low / mid / high
-international-enrollment terciles (Spearman with the vacuum index = 0.21, p = 0.15),
+exposure: governance-vacuum rate is 76% / 81% / 76% across low / mid / high
+international-enrollment terciles (Spearman with the vacuum index = 0.08, p = 0.59),
 so protection is not allocated where the harm concentrates. Codes of record carry
 verbatim support passages (`data/policy_corpus.csv`, reconciled against the stored
 text in `data/policy_raw/`). Reliability: an independent second coder re-coded a
