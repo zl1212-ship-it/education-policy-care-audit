@@ -1,0 +1,11 @@
+dimension,coder,gwet_ac1,pct_agreement,n
+detector_admissibility,human-second,0.865,0.9,10
+burden_of_proof,human-second,1.0,1.0,10
+appeal_pathway,human-second,1.0,1.0,10
+l2_protection,human-second,1.0,1.0,10
+decision_locus,human-second,0.89,0.9,10
+detector_admissibility,codex,0.865,0.9,10
+burden_of_proof,codex,1.0,1.0,10
+appeal_pathway,codex,0.866,0.9,10
+l2_protection,codex,1.0,1.0,10
+decision_locus,codex,1.0,1.0,10
