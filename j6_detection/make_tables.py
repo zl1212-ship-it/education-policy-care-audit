@@ -45,7 +45,8 @@ lines = [r"\begin{table}[H]\centering",
          r"\begin{tabular}{lccc}", r"\toprule",
          r"Detector & Non-native (\%) & Native (\%) & Fold gap \\", r"\midrule"]
 for d in DETECTORS:
-    lines.append(f"{d} & {fpr(d,'non-native'):.1f} & {fpr(d,'native'):.1f} & {fold(d):.1f} \\\\")
+    disp = d.replace("Quil", "Quil.org")
+    lines.append(f"{disp} & {fpr(d,'non-native'):.1f} & {fpr(d,'native'):.1f} & {fold(d):.1f} \\\\")
 pnn = float(det[(det.analysis=="fpr_pooled_mean7")&(det.threshold==0.50)&(det.group=="non-native")]["value"].iloc[0])*100
 pna = float(det[(det.analysis=="fpr_pooled_mean7")&(det.threshold==0.50)&(det.group=="native")]["value"].iloc[0])*100
 pfold = float(det[(det.analysis=="fpr_pooled_gap_fold")&(det.threshold==0.50)]["value"].iloc[0])
@@ -53,7 +54,9 @@ lines += [r"\midrule",
           f"Pooled (mean of 7) & {pnn:.1f} & {pna:.1f} & {pfold:.1f} \\\\",
           r"\bottomrule", r"\end{tabular}",
           r"\\[3pt]\footnotesize \textit{Note.} Non-native $n=91$ (TOEFL); native $n=158$ (US "
-          r"essays). Eighteen of 91 non-native essays were flagged by all seven detectors; no native "
+          r"essays). Detector names follow the released data. Fold gaps are computed from unrounded "
+          r"rates, so they can differ from the ratio of the rounded columns. Eighteen of 91 "
+          r"non-native essays were flagged by all seven detectors; no native "
           r"essay was flagged unanimously at any threshold. The pooled gap widens from 10.4-fold at "
           r"threshold 0.25 to 26.4-fold at 0.90.",
           r"\end{table}"]
@@ -93,10 +96,11 @@ open(os.path.join(OUT, "j6_table2.tex"), "w").write("\n".join(t2) + "\n")
 ABBR = {"detector_admissibility": {"prohibited": "prohib.", "advisory": "advis.",
         "silent": "silent", "admissible": "admiss."}}
 s1 = [r"\begin{longtable}{p{4.7cm}cccccc c}",
-      r"\caption{Supplementary Table S1. Governance codes for all fifty public flagship universities. "
+      r"\caption{Governance codes for all fifty public flagship universities. "
       r"Adm = detector admissibility; Burd = burden of proof; App = appeal pathway; L2 = multilingual "
       r"protection; Locus = decision locus; Vac = in the governance vacuum. Source URLs and verbatim "
-      r"supporting passages are in the public coded corpus (\texttt{j6\_detection/data/policy\_corpus.csv}).}"
+      r"supporting passages accompany each code in the released policy corpus; see the Data "
+      r"Availability Statement.}"
       r"\label{tab:s1}\\",
       r"\toprule",
       r"Institution & St & Adm & Burd & App & L2 & Locus & Vac \\", r"\midrule", r"\endfirsthead",
