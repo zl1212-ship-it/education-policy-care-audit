@@ -99,6 +99,20 @@ noise, so these sweep numbers are conservative). The very-light ITA tail degrade
 fastest among modern detectors when dimmed, consistent with that tail holding
 overexposed, low-contrast photos rather than the lightest-skinned subjects.
 
+**Threshold sensitivity (YuNet at 0.6 vs the default 0.9).** YuNet's race gap is
+operating-point dependent, but the only setting that removes it also removes the
+function. Loosening the confidence threshold from 0.9 to 0.6 (a value some
+deployments use) collapses the overall miss rate from 9.5% to 0.07% at native
+exposure and 15.0% to 0.19% at the dimmest, and with it the Black-White gap
+(1.04x-1.25x at 0.9 becomes statistically null at every exposure, all p > 0.2).
+So most of YuNet's "no face" returns at 0.9 are low-confidence detections the
+threshold discards, and the skew lives in that discarded tail. The escape is
+illusory for proctoring: a detector at 0.6 almost never reports "no face," which
+means it has stopped gating presence at all rather than gating it fairly. Haar has
+no such knob (its cascade is structural, not a confidence cut), so its 1.6x-1.7x
+race gap has no operating point that erases it; that gap is a property of the
+detector, not the cutoff.
+
 **Verification layer (LFW 10-fold pairs, 3,000 genuine / 3,000 impostor, two open
 cascades, threshold fixed at FMR = 1% on native-exposure impostors).** The matcher
 does not reproduce the detection gap: genuine-pair rejection ("you are not you")

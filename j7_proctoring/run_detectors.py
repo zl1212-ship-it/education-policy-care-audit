@@ -94,9 +94,10 @@ def det_haar():
     return run
 
 
-def det_yunet():
+def det_yunet(score_threshold=None):
+    args = {} if score_threshold is None else {"score_threshold": score_threshold}
     det = cv2.FaceDetectorYN.create(
-        fetch_model(YUNET_URL, YUNET_PATH, YUNET_SHA256), "", (320, 320))
+        fetch_model(YUNET_URL, YUNET_PATH, YUNET_SHA256), "", (320, 320), **args)
     # library defaults: score_threshold=0.9, nms_threshold=0.3
 
     def run(img):
@@ -142,7 +143,10 @@ def det_mtcnn():
 
 
 BUILDERS = {"yunet": det_yunet, "mediapipe": det_mediapipe,
-            "haar": det_haar, "mtcnn": det_mtcnn}
+            "haar": det_haar, "mtcnn": det_mtcnn,
+            # threshold-sensitivity variant: same YuNet weights at the looser
+            # 0.6 operating point some deployments use (default is 0.9)
+            "yunet06": lambda: det_yunet(score_threshold=0.6)}
 
 
 def merge_save(rows):
