@@ -1,0 +1,322 @@
+SOURCE_URL: https://support.examsoft.com/hc/en-us/articles/11166685091341-Exam-Integrity-Review-ExamID-and-ExamMonitor-Results
+VENDOR: ExamSoft | PRODUCT: ExamID/ExamMonitor
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200 (zendesk help-center JSON API)
+RAW_HTML_SHA256: 976ed67c5fb21d774d20b634dc0aeb32da8a8509cab7e59278a82e6c435b84a5
+------------------------------------------------------------------------
+Exam Integrity: Review ExamID and ExamMonitor Results
+
+After you post an assessment with ExamID or ExamMonitor enabled, you can monitor the overall results, review incidents, and submit dispositions.
+
+Note: Exam-takers do not have access to these results.
+
+Procedures
+
+Find an Assessment to Review
+
+Use the Review Queue to Monitor Activity and Identify Incidents 
+
+Find an Assessment to Review
+
+Log in to your institution's ExamSoft portal.
+
+(Legacy Portal only) If you are using the Legacy Portal, select a folder before continuing.
+
+Select the Exam Integrity tab. 
+
+Note: If you do not see the Exam Integrity tab, try to open an incognito browser or clear your browser's cache. If that does not work, please check with your Key Administrator or Institutional Administrator to see if you have the right permissions to access these pages. 
+
+The Assessments tab is selected by default.
+
+Each assessment is listed with the following information:
+
+Assessment Name
+
+Note: If you duplicated another assessment to create this one, this assessment is listed by the original name, not the name that you entered for the duplicate. (We are working on an update to address this issue.)
+
+Assessment ID:  This is the posting ID of the assessment, not the assessment ID, since you can post assessments more than once.
+
+ExamID: Statistics for ExamID verifications and resume code activity.
+
+Verified:  The number of exam-takers who have been verified successfully by using ExamID. Because this feature was introduced on Sept. 22, 2020, it shows only the exams posted after that date. For older exams, you can see the accurate data when you view the report (by selecting the assessment name). 
+
+Resume Code: The number of times that a resume code was entered for this assessment.
+
+ExamMonitor: Statistics for incidents that were detected by ExamMonitor.
+
+Processed: The number of processed incident reports, as a fraction of the total number of exam-takers for this assessment.
+
+Incident Reports: The number of possible incidents that were detected. These incidents need to be reviewed by your institution to determine if there were breaches of academic integrity.
+
+Review Queue: Statistics about investigations that are underway, with links to more information. 
+
+Pending: Select this link to see a list of exam-takers whose exams require review for possible breaches. These exams have not yet been reviewed by your institution.
+
+Escalated: Select this link to see a list of exam-takers whose exams have been reviewed by someone in your institution. These incidents have been escalated for further investigation and confirmation.
+
+Note: Alternatively, you can use the Exam-Takers tab to navigate to the results for a single exam-taker. For how-to instructions, go to this article:  Exam Integrity: Use the Exam-Takers List to Review Incidents
+
+(Optional) In the Search box above the table, enter the assessment name or the posting ID. 
+
+In the table, select an assessment to go to the Review Queue page, where you can monitor the status of ExamID and ExamMonitor processes, as well as your institution's process of entering dispositions.
+
+Continue to the next procedure.
+
+Use the Review Queue to Monitor Activity and Identify Incidents
+
+The Review Queue displays information about the ExamID and ExamMonitor status for each exam-taker, as well as the status of dispositions (the conclusions that people at your institution have submitted about the incidents).
+
+(Optional) Use the Exam ID and ExamMonitor filters (above the table) to show only the information that you want to see at this time.
+
+Examples
+
+To see only exam-takers with ExamID incidents: In the ExamID Filters, select Incidents Detected, and then select Apply.
+
+To see only exam-takers with ExamMonitor incidents: In the ExamMonitor Filters, select Incidents Detected, and then select Apply.
+
+To see only ExamID incidents that need to be reviewed: In the ExamID Filters, select Pending Review, and then select Apply.
+
+To see only ExamMonitor incidents that have been reviewed and require further investigation: In the ExamMonitor Filters, select Escalated, and then select Apply.
+
+For more information, see:
+
+Exam ID Status Filters (based on ExamID processes)
+
+ExamMonitor Status Filters (based on ExamMonitor processes)
+
+Disposition Status Filters (based on your institution's review processes)
+
+Other Review Queue Procedures
+
+(Optional) In the Search box above the table, enter the name or ID of an exam-taker that you want to find.
+
+Refer to the icons in the AI column and the Proctoring column to determine which exam-takers require your attention.
+
+Example
+
+For more information, see:
+
+ExamID Icons (AI column)
+
+ExamMonitor Icons (Proctoring column)
+
+Select an exam-taker's name to go to the Exam-Taker Details page, where you can review the reports from ExamID and ExamMonitor and submit a disposition. 
+
+Next Steps: Review the Exam-Taker Details and enter a disposition. For how-to instructions, go to this article: Exam Integrity: Review the Exam-Taker Details and Submit a Disposition
+
+ExamID Filters
+
+These filters are based on the process of validating the exam-taker's identity at the beginning of the exam. 
+
+To apply ExamID Filters: Use the ExamID Filters menu (above the Review Queue table). Select the checkbox for each filter that you want to apply.
+
+Tip: You can use multiple filters at the same time. For example, you might want to see only the exam-takers with Incidents Detected and a Very High or High likelihood of an integrity breach. When you select multiple options, the results include all exam-takers that fit at least one of the selected criteria.
+
+After you apply filters, the number of filters is indicated on the menu. If you want to remove the filters and show all records, select Clear filters.
+
+ExamID Filter Descriptions
+
+Status Filters
+
+The ExamID status filters are based on the AI column of the table. This column shows the progress of the ExamID verification process.
+
+Verified: Select this filter to show only exam-takers whose exam-day photo matches their baseline photo.
+
+Accommodation: Select this filter to show only exam-takers whose account settings require all assessments to be delivered in non-secure mode. This accommodation bypasses both ExamID and ExamMonitor.
+
+Incidents Detected: Select this filter to show only exam-takers whose exam-day photo did not match the baseline photo.
+
+Resume Code Used: Select this filter to show only exam-takers who used a resume code to bypass ExamID and start the exam.
+
+Pending Verification: Select this filter to show only exam-takers whose photo has not yet been validated. Exam-takers are allowed to start an exam after capturing their photo. The verification is expected to take place within minutes after the exam starts. However, the time can be longer during peak usage.
+
+Not Started: Use this filter to show only exam-takers who have not started the exam.
+
+Disposition Filters
+
+These filters are based on the ExamID Disposition column of the table. These dispositions are entered by people at your institution when reviewing the Exam-Taker Details. (For more information about that process, see the Exam-Takers Details section of this article.)
+
+Pending Review: Select this filter to show only incidents that require a disposition to be entered by someone at your institution.
+
+Escalated: Select this filter to show only incidents that were reviewed by someone at your institution and were marked for additional investigation.
+
+Confirmed Breach: Select this filter to show only incidents that someone at your institution confirmed as an academic integrity breach.
+
+Resolved: Select this filter to show only exam-takers who did not require investigation and disposition (because no incident was detected).
+
+ExamMonitor Filters
+
+These filters are based on the audio and video files that ExamMonitor captured throughout the exam, and on the reports from the A.I. that proctors the exam (if A.I. proctoring was enabled). To access these filters, use the ExamMonitor Filters menu (above the Review Queue table).
+
+To apply ExamMonitor Filters: Use the ExamMonitor Filters menu (above the Review Queue table). Select the checkbox for each filter that you want to apply.
+
+Tip: You can use multiple filters at the same time. For example, you might want to see only the exam-takers with Multiple Persons Detected and Speaking.
+
+After you select filters, the number of applied filters is indicated on the menu. If you want to remove the filters and show all records, select Clear filters.
+
+Status Filters
+
+These filters are based on the Proctoring column of the table. This column shows the progress of monitoring and proctoring, and any issues that were detected.
+
+Verified: Use this filter to show only exam-takers with no ExamMonitor incidents detected.
+
+Accommodation: Use this filter to show only exam-takers whose account settings require all assessments to be delivered in non-secure mode. This accommodation bypasses both ExamID and ExamMonitor.
+
+Incidents Detected: Use this filter to show only exam-takers with ExamMonitor incidents detected.
+
+In Review: Use this filter to show only exam-takers whose exam videos were uploaded and are being reviewed.
+
+Upload Pending: Use this filter to show only exam-takers whose video file upload is not completed.
+
+Processing Issue: Proctoring is not yet completed.
+
+AI Complete: A.I.-enabled proctoring is completed.
+
+Disposition Filters
+
+These filters are based on the ExamMonitor Disposition column of the table. These dispositions are entered by people at your institution when reviewing the Exam-Taker Details. (For more information about that process, see the Exam-Takers Details section of this article.)
+
+Pending Review: Select this filter to show only incidents that require a disposition to be entered by someone at your institution.
+
+Escalated: Select this filter to show only incidents that were reviewed by someone at your institution and were marked for additional investigation.
+
+Confirmed Breach: Select this filter to show only incidents that someone at your institution confirmed as an academic integrity breach.
+
+Resolved: Select this filter to show only exam-takers who did not require investigation and disposition (because no incident was detected).
+
+Incident Type Filters
+
+These filters are based on the A.I. reports. The A.I. can detect the following types of incidents and will indicate a High, Medium, or Low severity. People at your institution need to review the reports to determine if academic integrity was breached.
+
+Applicant Missing: The exam-taker was not detected within the webcam frame. The exam-taker might be missing, or the exam-taker's face might be partly covered.
+
+Multiple Persons: More than one person was detected within the webcam frame.
+
+Suspicious Objects: Objects such as earphones, earbuds, mobile phones, etc., were detected within the webcam frame.
+
+Speaking: Audio was detected. The exam-taker might be reading questions aloud or talking to someone, or there might be background music such as a radio or an intercom.
+
+Off-screen gaze: The exam-taker's gaze moved away from the screen.
+
+Hand gestures: Unusual or atypical hand movements were detected within the webcam frame.
+
+Overall Feedback Filters
+
+These filters represent the likelihood that an integrity breach has occurred based on all of the incidents that were detected, and the severity of the incidents.
+
+Very high: There is a very high likelihood of an integrity breach. 
+
+High: There is a high likelihood of an integrity breach. 
+
+Low: There is a low likelihood of an integrity breach. 
+
+No incidents: No incidents were detected.
+
+Other Review Queue Procedures
+
+Check the Exam Starts
+
+Check the Video File Uploads
+
+Check the Exam Starts
+
+As the exam-takers begin to take the exam, you can check the progress of the ExamID validations. 
+
+Use the Assessments list to open the Review Queue page.
+
+Note: The Review Queue page shows 100 records. Use the controls above and below the table to adjust the number of records per page and to navigate between pages.  
+
+(Optional) Use the ExamID Filters (above the table) to show only exam-takers in Verified or Pending Verification status.
+
+Examples
+
+To see which applicants have started the exam and successfully validated with ExamID: In the ExamID Filters, select Verified.
+
+To see which applicants have started the exam but not yet validated: In the ExamID Filters, select Pending Verification.
+
+Refer to the ExamID column to see the status for each exam-taker. 
+
+IMPORTANT
+
+A red triangle indicates that an incident was detected and requires investigation and disposition. To review the details, select the exam-taker's name. This link goes to the Exam-Taker Details page. For how-to instructions, go to this article: Exam Integrity: Review the Exam-Taker Details and Submit a Disposition
+
+Next Steps: As the exam progresses, check for video file uploads. After the video files are uploaded, identify incidents to review.
+
+Check for Video File Uploads
+
+After the exam, you can monitor the progress of the video file uploads. 
+
+Use the Assessments list to open the Review Queue page. 
+
+Note: The Review Queue page shows 100 records. Use the controls above and below the table to adjust the number of records per page and to navigate between pages.  
+
+To see the video upload status, refer to the Exam Video Uploaded column.
+
+Dashes indicate that the file is not yet available.
+
+When the file has been uploaded, the date and time appear.
+
+Icons
+
+ExamID Icons
+
+These icons appear in the ExamID AI column.
+
+Icons
+Description
+
+The blank space (no icon) indicates that the ExamID review has not yet occurred. This could mean that the exam-taker has not started the assessment yet, the photo has not been captured yet, or the assessment was not enabled with ExamID. 
+
+This applicant has taken a picture for validation, and ExamID has not yet completed the validation. 
+
+Note: Exam-takers are allowed to start an exam after capturing their photo. The verification is expected to take place within minutes after the exam starts. However, the time can be longer during peak usage. 
+
+This applicant has been processed through ExamID, and the photo taken for this particular exam matches this applicant's baseline and other successful photos. 
+
+Note: The Disposition is set to a green checkmark. No review is needed.
+
+****
+This applicant received a resume code to get into the ExamID and bypass the ExamID process. This will not bypass ExamMonitor.
+
+Note: The Disposition is set to Pending Review until this incident is investigated and a disposition is entered by someone at your institution.
+
+The photo taken for this particular exam did not match this applicant's baseline photo. Possible reasons could be that this applicant had poor lighting, no webcam picture at all, a mask covering, poor face alignment, or that another person was trying to validate.
+
+Note: The Disposition is set to Pending Review until this incident is investigated and a disposition is entered by someone at your institution.
+
+This applicant has a non-secure accommodation that will bypass ExamID and ExamMonitor. This means that the exam will be taken in non-secure mode, and this applicant will not be monitored. 
+
+Note: The Disposition is set to a green checkmark. No review is needed.
+
+ExamMonitor Icons
+
+These icons appear in the ExamMonitor Proctoring column.
+
+Icons
+Description
+
+The blank space (no icon) indicates either that the files have not been uploaded yet or that ExamMonitor was not enabled for this assessment.
+
+No incidents were found during proctoring, OR the ExamMonitor video was less than 10 minutes long and therefore was not proctored. Exams less than 10 minutes are treated as mock exams and are not proctored.
+
+Note: The Disposition is set to a green checkmark. No review is needed.
+
+Files were uploaded, but proctoring is not yet completed.
+
+Files were uploaded, and A.I. proctoring is completed.
+
+Note: The Disposition is set to Pending Review because the A.I. report needs to be reviewed by someone at your institution. For more information, see: Tips for A.I.-Assisted Exam Integrity Reviews
+
+An incident was found during proctoring.
+
+Note: The Disposition is set to Pending Review until this incident is investigated and a disposition is entered by someone at your institution.
+
+This applicant has a non-secure accommodation that will bypass ExamID and ExamMonitor. This means that the exam will be taken in non-secure mode, and this applicant will not be monitored. 
+
+Note: The Disposition is set to a green checkmark. No review is needed.
+
+There is a Processing Issue with proctoring.
+
+Next Steps
+
+After selecting an exam-taker on the Review Queue page, you'll go to the Exam-Taker Details page. View the reports from ExamID and ExamMonitor, and submit the disposition. For how-to instructions, see: Exam Integrity: Review the Exam-Taker Details and Submit a Disposition

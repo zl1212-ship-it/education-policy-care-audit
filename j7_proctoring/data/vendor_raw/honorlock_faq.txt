@@ -1,0 +1,152 @@
+SOURCE_URL: https://honorlock.com/faculty-student-faq/
+VENDOR: Honorlock | PRODUCT: Honorlock
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: 62a3b72930f6d0782e1b4ee9304d997713e06f2b61ae6d5c7bd44c76aaaa7b65
+------------------------------------------------------------------------
+Faculty & Student FAQ
+
+Skip to content
+
+ Get a Demo 
+
+ Exam Support 
+
+Exam Administrator & Test Taker FAQ
+
+Exam Administrator FAQ
+
+Am I able to specify custom guidelines?
+
+Absolutely! We seamlessly integrate with your Learning Management System (LMS), allowing you to easily toggle options on and off. If your test takers need access to specific information, you can whitelist the websites they are permitted to visit during the exam. Additionally, you can disable printing, require test takers to use only a single screen, record their web traffic, prevent access to external sites and applications, and mandate a room scan before the exam to ensure they are not using unauthorized resources.
+
+How do I view exam results?
+
+Exam sessions become available automatically after test takers complete the proctored sessions. You can access these sessions through the Honorlock application in your LMS. After our human proctors review the sessions, they will provide you with detailed reports that are easy to understand. These reports will highlight any incidents, each accompanied by a timestamp that corresponds to the test session recording. This way, you can review the incidents yourself and decide if any further action is necessary.
+
+Will test takers call me endlessly with software issues?
+
+Absolutely not. We’re passionate about customer support. When issues do arise, we offer 24/7/365 email and live chat support. Throughout their exam, test takers will find support access just a click away. They’ll be able to contact us quickly and easily to troubleshoot any problems and get back on track with the assessment.
+
+What if there’s a technical problem while setting up an assessment?
+
+Our support is available 24/7 for faculty and exam administrators. We provide you with a high-priority support phone number so you can get your test up and running and get back to what you do best—teaching.
+
+Learn about Honorlock's Proctoring Software & Services
+
+Test Taker FAQ
+
+Why do I need a photo ID? What forms of ID are acceptable?
+
+We verify the photo and name on your ID to confirm your identity. You can use any government-issued ID, such as a driver’s license or passport, or an organizational or institutional ID that includes your photo.
+
+What if something goes wrong during my exam?
+
+Honorlock offers 24/7/365 technical support to assist test takers before, during, and after their online proctored exams. If you need any assistance, contact our support agents by email or live chat. During your exam, our support menu is visible on-screen, and our agents are just a click away.
+
+How does Honorlock protect my privacy?
+
+We use secure encrypted protocols to save and view all test taker assets. Honorlock’s certified proctors and exam administrators can review test session videos until they are deleted based on the organization’s retention policy or after 12 months. Learn more about our commitment to your privacy and data security below.
+
+Test Taker Privacy
+
+How does Honorlock protect test taker data?
+
+We understand that privacy and security are important to you, and here at Honorlock, we are dedicated to protecting your data. Watch the video below to see how we safeguard your information.
+
+Does Honorlock sell my data or monetize my data to third parties outside of my organization or institution?
+
+No. Honorlock will never sell or monetize your data.
+
+What data does Honorlock collect from test takers using the service?
+
+Honorlock collects various types of information as detailed in our Privacy Policy. This includes information such as your name, course number, and exam name. You will be required to provide a copy of your ID. This information is synced with the learning management system (LMS), such as Canvas. You may also need to upload a photo taken with your device’s camera and perform a scan of your testing area using your webcam. During the exam, if requested by your organization, we will collect a webcam video recording that includes your desktop activity and audio recording. We also monitor the exam and web pages visited during the examination.
+
+If your organization chooses to use our new Honorlock Application  (currently in limited release), you will need to download an application onto your computer, in addition to installing a Chrome browser extension. This app is designed to detect any applications on your device that you use or attempt to use during the exam, helping to identify any prohibited programs.
+
+How long does Honorlock keep my data?
+
+The standard data retention period is 365 days, but organizations can adjust it to be shorter or longer based on their privacy and accessibility policies and needs. After this time, test taker data will be securely deleted. The retention period can only be extended through a request from the organization.
+
+Is Honorlock tracking my online activities and watching me when I am not taking a proctored exam?
+
+No, Honorlock’s service is designed to collect information only during a proctored exam. This includes data about the websites you visit on your device. After completing a proctored exam, you are free to uninstall the Chrome browser extension and any other software that you were required to install.
+
+Where is my data stored and how well is my data protected?
+
+All data in transit and data at rest is encrypted and stored within the cloud in an Amazon (AWS) data center. Amazon’s data centers are SOC 3 certified, U.S. Privacy Shield, and General Data Protection Regulation (GDPR) compliant.
+
+Does Honorlock's proctoring platform use facial recognition to verify my identity?
+
+No. Honorlock uses facial detection, which only detects that there is a clear human face in the webcam. We do not identify the face, store any of the facial elements, or match the face to a database. If no face is detected, or if multiple faces are detected, AI will flag the incident, and a human proctor may intervene.
+
+Does Honorlock have control of my computer or my mobile phone?
+
+Honorlock offers widely available products that utilize a Chrome browser extension. This extension employs AI to detect faces through your camera and to identify different voices. To take an exam, test takers must install the browser extension, but can delete it right after the exam is completed. It’s important to note that Honorlock does not have the capability to control your computer, access your passwords, or download any files at any time. Additionally, Honorlock cannot access or control secondary devices, such as mobile phones. If your organization opts to use our new Honorlock Application, in limited release, in addition to the browser extension, you will be required to download an application onto your computer. This application is designed to detect any apps on your device that you may use (or attempt to use) during the exam, helping to identify any prohibited programs. Overall, Honorlock’s widely available service operates solely through a Chrome extension to ensure accessibility in learning, without needing any additional application download.
+
+Need more reassurance?
+
+Read these additional detailed resources about how we protect your privacy and data security.
+
+Privacy Statement
+
+What is accessibility and what are the compliance standards?
+
+Blog Post: A Message to Test Takers New to Online Education and Remote Proctoring
+
+Blog Post: Privacy, Online Exams, and COVID-19
+
+Still have questions? Email us at privacy@honorlock.com
+
+Watch the 1-minute Test Taker Privacy Video
+Exam Administrator & Test Taker Support
+
+Accessibility
+
+The Honorlock interfaces for administrators, instructors, and end-users are fully ADA accessible and compliant with Section 508 of the Americans with Disabilities Act. Honorlock has also been developed and tested to conform to WCAG 2.0 level AA guidelines for accessible use.
+
+Conformance to accessibility guidelines is part of our development process as our development team uses leading-edge accessibility testing tools throughout the development of our proctoring services and we are always looking for better ways to help the disadvantaged have a fair and objective testing experience.
+
+All information including details and disclosures have been specified in our VPAT.
+
+ Learn More 
+
+FERPA
+
+The Subscriber agrees that, for purposes of the Family Educational Rights and Privacy Act of 1974 as amended (“FERPA”), Honorlock will be considered a contractor to whom functions and services have been outsourced by the Subscriber.
+
+As a result of these function and services, Honorlock might have access to educational records, as defined by FERPA, and to other records that may be owed specific protections under Privacy Laws.
+
+Honorlock agrees that it shall not re-disclose personally identifiable information or educational records that it receives from the Subscriber or due to the Subscriber, pursuant to this Agreement, unless such disclosure is authorized to perform the functions and services provided through this agreement or is authorized under FERPA.
+
+Honorlock expressly warrants and represents that it shall not use the information or educational records provided by the Subscriber or due to the Subscriber for any purpose other than to comply with the terms of this Agreement with the Subscriber.
+
+ Learn More 
+
+Instructure Partner in Privacy and Security
+
+Honorlock was awarded the credential for “Partner in Privacy and Security” as part of Instructure’s EdTech Collective program. The program was recently launched as a way to align Canvas Community members and partners together on initiatives that are most important to educators and higher ed leaders today.
+
+The “Partner in Privacy and Security” credential is awarded to those who “received top-notch privacy and security ratings” for protecting student data after receiving a passing score from OneTrust, a category-defining enterprise platform used to operationalize trust, security, privacy, and data governance.
+
+App Privacy Policy
+
+Learn more about Honorlock’s App Privacy Policy.
+
+ Learn More 
+
+Faculty & Student Support
+
+Need technical support or have a general support question?
+
+Click the button below for more information.
+
+ Get Support 
+
+Exam Proctoring Services And Software
+
+Learn more about key features and benefits of Honorlock's proctoring services and software.
+
+ See Services
+
+ See Software

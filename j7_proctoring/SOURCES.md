@@ -25,10 +25,16 @@
   All thresholds are library defaults, stated inline in `run_detectors.py`.
 
 ## Proctoring consequence mapping (vendor documentation layer)
-- Public vendor documentation and help-center pages describing how face-detection /
-  identity-verification outcomes become flags or lockouts (Proctorio, Respondus
-  Monitor, Honorlock, ProctorU/Meazure, ExamSoft ExamID/ExamMonitor). Each entry will
-  record URL + access date in provenance columns when this layer is built.
+- Public vendor-authored documentation describing how face-detection /
+  identity-verification outcomes become flags, alerts, or entry gates, for five
+  product lines: Proctorio, Respondus Monitor, Honorlock, ProctorU/Meazure
+  (Record+), ExamSoft ExamID/ExamMonitor. The curated URL registry is
+  `data/vendor_registry.csv` (14 pages); `build_vendor_corpus.py` archives each
+  page under `data/vendor_raw/` with URL, access date, HTTP status, and raw-HTML
+  sha256 (Zendesk help centers are fetched through their public JSON API when the
+  HTML page refuses crawlers). Codes and verbatim support passages:
+  `data/vendor_corpus.csv` per `CODEBOOK_vendor.md`. Client-university pages about
+  these products are out of scope; only vendor domains are coded.
 
 ## Prior work this paper extends (not replicates)
 - Buolamwini, J., & Gebru, T. (2018). Gender Shades. FAccT/PMLR — established

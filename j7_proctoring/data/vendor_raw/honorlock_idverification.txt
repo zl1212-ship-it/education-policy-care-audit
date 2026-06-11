@@ -1,0 +1,53 @@
+SOURCE_URL: https://honorlock.com/id-verification-and-authentication/
+VENDOR: Honorlock | PRODUCT: Honorlock
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: e57c83f2bd9e1f2ff16618eb8225cf153cd465d36af8d91d23f57c300ef78f06
+------------------------------------------------------------------------
+ID Verification & Authentication | Honorlock Exam Proctoring
+
+Skip to content
+
+ Get a Demo 
+
+ Exam Support 
+
+Quickly verify identity
+
+ Validate test taker identity in about 60-seconds. 
+
+ Schedule a Demo 
+
+Authenticate
+
+test taker's ID
+
+Honorlock makes ID authentication quick and simple by capturing a picture of the test taker alongside their photo ID before starting the exam.
+
+How does test taker authentication work?
+
+1. Capture test taker photo
+
+In the case that your identity will be manually verified by a proctor, we will request a photo of you before an exam.
+
+2. Photo ID Verification
+
+We verify the name on your ID to ensure you are the correct test taker and log a photo of the ID.
+
+3. Room Scan
+
+A 360-degree room scan ensures that your test space complies with your exam administrator’s requirements.
+
+Safe and secure
+
+Honorlock does not use face recognition, fingerprints, voiceprints, or other biometric technologies to identify test takers.
+
+We do NOT identify any individual test taker’s face, store facial elements, or match the face to a database. If no face is detected, or if multiple faces are detected, AI will flag the incident and a live human proctor may intervene.
+
+"Honorlock takes the hassle out of having to verify student identity and monitor for academic integrity for faculty."
+
+Brian Marchman, Former Assistant Provost for Distance Learning, University of Florida
+
+ See Honorlock in Action 
+
+Please enter your information below and we’ll connect you with an Honorlock Representative.

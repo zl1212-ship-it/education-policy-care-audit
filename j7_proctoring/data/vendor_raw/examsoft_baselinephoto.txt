@@ -1,0 +1,29 @@
+SOURCE_URL: https://support.examsoft.com/hc/en-us/articles/11167190463501-ExamID-Issues-with-Your-Baseline-Photo
+VENDOR: ExamSoft | PRODUCT: ExamID
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200 (zendesk help-center JSON API)
+RAW_HTML_SHA256: b64ee54a512015607eb40787a54ad0fbb81e65bd3315e4ae15d55c483dd81d74
+------------------------------------------------------------------------
+ExamID: Issues with Your Baseline Photo
+
+If you have trouble taking your baseline photo, follow these tips. 
+
+Be sure to take a photograph of your face, not a driver's license or other identification card.
+
+Confirm that you're using Examplify version 2.3.2 or newer.  You can see the version number in the shaded bar at the bottom of the screen in Examplify.
+
+Confirm you can see a tile for ExamID on the dashboard for your exam.  If not, contact the exam-maker.
+
+Ensure that your webcam lens is clean and that nothing is blocking it.
+
+Ensure that nothing is concealing your face or head (hat, scarf, mask, etc.). 
+
+Ensure that you're in a well-lit area and that the light on your face is brighter than the light behind you.
+
+Tips:
+
+Turn on lights to illuminate your face.
+
+Increase the screen brightness of your device.
+
+Arrange your workspace so that you're not sitting with your back to a window or similar light source. Light behind you will create shadows on your face.

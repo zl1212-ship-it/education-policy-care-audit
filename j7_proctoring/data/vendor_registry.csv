@@ -1,0 +1,15 @@
+vendor,product,doc_type,slug,url
+Proctorio,Proctorio,faq,proctorio_faq,https://proctorio.com/faq
+Respondus,Respondus Monitor,product,respondus_monitor,https://web.respondus.com/he/monitor/
+Respondus,Respondus Monitor,vendor_blog,respondus_enhancedflagging,https://web.respondus.com/enhanced-flagging-respondus-monitor/
+Respondus,Respondus Monitor,student_guide,respondus_studentexperience,https://web.respondus.com/using-lockdown-browser-with-a-webcam-the-student-experience/
+Honorlock,Honorlock,faq,honorlock_faq,https://honorlock.com/faculty-student-faq/
+Honorlock,Honorlock,product,honorlock_idverification,https://honorlock.com/id-verification-and-authentication/
+Honorlock,Honorlock,privacy,honorlock_privacy,https://honorlock.com/studentprivacy/
+ProctorU (Meazure Learning),ProctorU,support_kb,proctoru_troubleshooting,https://support.proctoru.com/hc/en-us/articles/25429674959245-Common-Troubleshooting-Solutions-and-FAQs
+ProctorU (Meazure Learning),Meazure Exam Platform,faq,meazure_proctoringfaq,https://www.meazurelearning.com/exam-technology/meazure-exam-platform/online-proctoring-faq
+ProctorU (Meazure Learning),ProctorU Record+,product,proctoru_recordplus,https://www.meazurelearning.com/exam-technology/proctoru-online-proctoring/record-plus
+ExamSoft,ExamID,product,examsoft_examid,https://examsoft.com/solutions/id-verification/
+ExamSoft,ExamID,support_kb,examsoft_baselinephoto,https://support.examsoft.com/hc/en-us/articles/11167190463501-ExamID-Issues-with-Your-Baseline-Photo
+ExamSoft,ExamID/ExamMonitor,support_kb,examsoft_reviewresults,https://support.examsoft.com/hc/en-us/articles/11166685091341-Exam-Integrity-Review-ExamID-and-ExamMonitor-Results
+ExamSoft,ExamID/ExamMonitor,support_kb,examsoft_prepare,https://support.examsoft.com/hc/en-us/articles/11146346837901-Examplify-Prepare-to-Take-an-Exam-with-ExamID-and-ExamMonitor

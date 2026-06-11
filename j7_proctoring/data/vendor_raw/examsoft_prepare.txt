@@ -1,0 +1,144 @@
+SOURCE_URL: https://support.examsoft.com/hc/en-us/articles/11146346837901-Examplify-Prepare-to-Take-an-Exam-with-ExamID-and-ExamMonitor
+VENDOR: ExamSoft | PRODUCT: ExamID/ExamMonitor
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200 (zendesk help-center JSON API)
+RAW_HTML_SHA256: 76072c8e2751f01ec9b4952ef302646fda223c3736dd879f37be6d46e684ce80
+------------------------------------------------------------------------
+Examplify: Prepare to Take an Exam with ExamID and ExamMonitor
+
+This article helps you to know what to expect when you are going to take an exam that uses ExamID and ExamMonitor for remote proctoring. Your assessment might include one or both of them.
+
+ExamID is the software that will authenticate your identity by using your camera at the start of the exam.
+
+ExamMonitor is the software that will proctor your assessments by using your screen recorder, camera, and microphone throughout the exam.
+
+Note: If you are using an iPad for this exam, see: Examplify for iPad: Prepare for an Assessment with ExamID and ExamMonitor
+
+Before You Begin Your Exam
+
+Ensure that your device meets the Minimum System Requirements, including the special requirements for ExamID and ExamMonitor. See: Minimum System Requirements and Examplify: Update Your Device to Meet Minimum System Requirements
+
+Install Examplify and log in. See: Examplify for Windows and Mac: Download, Install, and Register Examplify
+
+Get familiar with Examplify. See: Best Practices for Exam-Takers
+
+Learn what to do and what not to do during the exam. See: A.I. Proctoring / Invigilation Exam Day Guide
+
+The above guide includes recommendations about lighting, background noise, devices, hats, headphones, and how to prevent being flagged for unusual behavior.
+
+Please note that headphones, including earbuds or microphones attached to headphones are never permitted during an assessment and can create potential audio flags during the proctoring review or your exam. 
+
+Make sure that you know the exam password and the date when the exam will be available for downloading. (Check with your instructor or exam manager for these details.)
+
+Select a well lighted, quiet, and distraction-free space in which to take your exam.
+
+If you are using an external camera or microphone, connect it to the device that you'll use to take the exam.
+
+To ensure the best results, temporarily disable your anti-virus software before starting the exam. See: Disable Anti-Virus Software
+
+Read all sections of this article so that you know what to expect during your exam.
+
+Internet Connection
+
+An internet connection is required to download your exam and to start an assessment with ExamID. Make sure that your device is connected to the internet before you continue with these procedures. If you attempt to start an ExamID exam but do not have an internet connection, an error message will appear.
+
+If you need more information about connecting to the Internet, see: Connect Your Device to the Internet for Exams with ExamID
+
+Device Checks
+
+Examplify performs certain checks when you start Examplify and when you attempt to download an exam.
+
+Note: To learn how to download an exam, see: Examplify: Download or Remove Exams
+
+If you see messages about Minimum System Requirements, review the on-screen information. Depending on the issues, you might be able to Continue with the exam, or you might see only the Return to Dashboard option.
+
+Even if the Continue button appears, we recommend that you update your device according to the on-screen information. If you see only the Return to Dashboard option, you cannot use this device without updating it to meet the requirements. For more information, see: Examplify: Update Your Device to Meet Minimum System Requirements
+
+Exam Details: ExamID/ExamMonitor Tiles
+
+After the exam downloads, you'll see the Exam Settings and Exam Details, such as the time limit and available features. For exams with ExamID and/or ExamMonitor, you'll also see additional tiles.
+
+If you do not see the expected tile(s), verify that you've selected the right exam. If needed, check with your instructor to confirm that this exam will use ExamID and/or ExamMonitor. If that is the case but you do not see the tile(s), then troubleshooting is needed. See: Examplify: ExamID and ExamMonitor Troubleshooting Guide
+
+Exam Details: Exam Sections
+
+For longer exams, the exam-maker can create exam sections. The section titles will be listed in the Exam Details.
+
+Example
+
+Note: For more information about taking an exam with exam sections, see: Tips for Exam Sections
+
+Exam Login
+
+At the scheduled time for this exam, you can enter your Exam Password (as provided by your instructor). Follow the on-screen prompts to continue. 
+
+Consent to Data Collection
+
+After you enter the exam password, you'll see the Welcome and Get Started screen, and then the Notice and Consent Request to Collect Biometric and Other Personal Data. ExamID will use your camera the beginning of your assessment, and ExamMonitor will use it throughout your assessment. You must consent to the collection of biometric and other personal data to continue. Read the notice, and then scroll down to select the checkbox that states I consent.
+
+Device Permissions
+
+If you see a screen asking for permission to use your camera and microphone, grant these permissions in order to take your assessment.
+
+Note: If you previously consented, you will see the following message and can simply select Next.
+
+Camera and Microphone Selection
+
+You'll see a screen that asks you to select your camera and microphone, verify your camera placement, and test your microphone.
+
+Tips:
+
+After speaking into your microphone, you should see sound bars as illustrated below. If these bars appear while you are speaking, then the microphone is working. (Note: This example is from Examplify 2.8.2. Your screen might look somewhat different.)
+
+You must select the checkbox to confirm that you have verified your device preferences.
+
+Photo Capture
+
+You'll need to take a photo, which ExamID will process to validate your identity.
+
+Make sure that your webcam is uncovered and is aligned for a straight-ahead view of you as you use your device. 
+
+Position yourself so that you are facing the camera, and remain still. 
+
+When you're ready, select the camera button, and Examplify will take your photo. 
+
+You'll have the opportunity to retake the photo or to Save and Continue.
+
+ExamMonitor Monitoring Activity
+
+If this is an ExamMonitor-enabled exam, you might notice these indicators of monitoring activity:
+
+Your camera light is on.
+
+The video feed will be visible in a small "thumbnail view" via the Monitoring tab at the top of the screen. To see the video feed, select the tab. To close it, select the tab again.
+
+Check your position and the camera angle, and make changes, if needed.  Make sure that your face is fully visible in the video feed.
+
+Exam-Taking Features
+
+When the first question appears on the screen, proceed through the exam, using the various features of the user interface as needed.
+
+Examplify saves your work automatically every 60 seconds. Additional timely backups and snapshots occur as well to ensure that your answer selections and content are safe.
+
+For tips about using exam controls (such as setting a timer or suspending the exam), viewing attachments, answering various types of questions, and navigating through the exam, see: Examplify: Exam-Taking Features and Options or Examplify: Get Started with Examplify (Video Guide)
+
+After Your Exam
+
+To submit your exam:
+
+If you reach the final question and the Next button changes to the Submit button: Select the Submit button.
+
+If you decide to submit the exam before you complete the final question: Near the top right corner of the screen, select Exam Controls, and then select Submit Exam.
+
+After you submit your exam:
+Follow the on-screen instructions, and keep Examplify open until your answer file and the monitoring files are successfully uploaded. If you wish, you can minimize Examplify.
+
+Depending on the exam length and the network speed, the upload process could take some time. For example, uploading a 90-minute exam with a 2 MB upload connection takes about 10 minutes. With a shorter exam or a faster upload speed, the upload process might take only 2-3 minutes. 
+
+Do not close or quit Examplify.
+
+Do not disconnect from your network.
+
+Check the dashboard periodically to determine the file status. On the left side of the dashboard, under My Exams, Examplify will indicate that the exam is uploading or that the upload is completed. If supported by your institution, you also will receive emails to confirm the answer file upload and the video file upload.
+
+When the exam appears in the Completed section with a green checkmark, then you can close Examplify and shut off your computer or disconnect from the network/Internet.

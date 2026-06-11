@@ -1,0 +1,121 @@
+SOURCE_URL: https://www.meazurelearning.com/exam-technology/proctoru-online-proctoring/record-plus
+VENDOR: ProctorU (Meazure Learning) | PRODUCT: ProctorU Record+
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: f9a0960da5900289a05ea76893bddc6860af8400b921f81d631ab2b3b48e68b1
+------------------------------------------------------------------------
+Record+ Secure Exam Recording with Professional Review | Meazure Learning
+
+ Skip to content
+
+Record+
+
+Deter proxy testing, cheating, and content theft. 
+
+Save yourself valuable time by using our Record+ solution for low-stakes exams. Combining an automated exam launch with session recording and professional review, Record+ shoulders the proctoring burden for you. And since we provide in-depth incident reporting that helps you make disciplinary decisions easier, you can maintain the integrity of your exam without missing a beat.
+
+ Request a Demo
+
+What You Can Expect with Record+
+
+Connect Through the Guardian Browser
+
+Test-takers connect to their proctoring session through our secure browser. Guardian secures the virtual environment by locking down each test-taker’s computer according to settings configured by exam administrators.
+
+Automated Exam Launch with Multifactor Identity Verification
+
+Test-takers are guided through an automated step-by-step process with our strongest authentication platform to verify their identity and launch their exam.
+
+Automated Monitoring Paired with Human Review and Validation
+
+The ProctorU platform was built to assist proctors, not replace them. During a Record+ session, the platform detects and flags patterns of suspicious activity, but an incident report is not created unless a certified proctor reviews the situation and confirms that the activity is not allowed in your exam rules.
+
+Exam Recordings Reviewed by a Professional Proctor
+
+Our professional proctors take on the task of watching every minute of every recorded session, drastically reducing the number of sessions you will need to review yourself. This removes the burden of reviewing hundreds of hours of video, giving you more time for other responsibilities.
+
+Timely Incident Reporting
+
+If an incident occurs during a session and is validated by a professional proctor, you will receive a queue of sessions to review. The incident report includes documented notes detailing the situation, a video recording of the test-taker, a screen recording, and chat logs.
+
+Exam Activity Reports
+
+Exam facilitators and administrators can view the activity report to get high-level insight and status of their exams – at any time.
+
+Sessions Available in Real Time
+
+Exam facilitators and administrators also have the option of viewing live exam videos, which can be watched and rewound without interrupting the session.
+
+Live Chat Tech Support for Test-Takers
+
+If test-takers need assistance before or during an exam, they will have access to our full tech support in an easy-to-use chat feature.
+
+LMS & Test Delivery System Integrations
+
+The ProctorU Proctoring Platform is integrated with leading learning management systems — including Canvas, Blackboard, Moodle, and D2L — as well as several test drivers.
+
+To see a full list of integrations, review our Meazure Valued Partners. Note that custom integrations may require an additional investment depending on the level of development work required.
+
+Key Benefits of All Proctoring Service Lines
+
+Human Review and Validation at Every Level
+
+Integration with Standard LMSs and Custom Test Drivers
+
+Dedicated Account or Program Team
+
+Proctoring Consistency
+
+Free Technical Support
+
+Guaranteed User Satisfaction
+
+Unparalleled Uptime
+
+Quality Assurance Session Auditing
+
+See all features compared across proctoring service lines.
+
+ Compare Features
+
+Testimonials
+
+ Using [Meazure Learning] is the most convenient way to take a test at home and in your own time. 
+
+ Jessica
+
+ Student, University of Texas at Tyler 
+
+ Introducing students to [Meazure Learning] is directly in line with Athabasca University's mission to reduce barriers to post-secondary education. This partnership creates an accessible, flexible, and affordable option for AU exam invigilation that maintains the highest level of academic integrity. 
+
+ Shawna Wasylyshyn
+
+ President, Athabasca University Students' Union 
+
+ Without [Meazure Learning], I wouldn’t be able to complete my bachelor’s degree because my university is in Canada and does not have invigilators where I live. So [Meazure Learning] has made my education a reality. Plus, I love the flexibility and ability to take my exams in the comfort of my own home. 
+
+ Luke M.
+
+ Student, Athabasca University 
+
+ [Meazure Learning] is a true partner that enables us to administer assessments for our online student demographic in a reputable remote manner. Everyone I work with at [Meazure Learning] is kind, smart and adaptable and their team is always open to suggestions and streamlining the process on my end. They work to find the solution that works for your institution or organization. 
+
+ Karen Kempter
+
+ Testing and Tutoring Specialist, Extended Learning Institute at Northern Virginia Community College 
+
+ Previous
+
+ Next
+
+Explore our other proctoring service lines.
+
+ Learn More
+
+ Learn More
+
+Protect your low-stakes exam. 
+
+Learn what our technology can do for you.
+
+ Request a Demo

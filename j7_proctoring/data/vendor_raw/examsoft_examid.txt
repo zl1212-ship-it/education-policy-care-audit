@@ -1,0 +1,59 @@
+SOURCE_URL: https://examsoft.com/solutions/id-verification/
+VENDOR: ExamSoft | PRODUCT: ExamID
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: ab0095cd4ec40a3115c9a8f63bfb4d43739c1734dedfb1f2dce007b3fd46b72d
+------------------------------------------------------------------------
+ExamID | Online Student Identity Verification
+
+Thank you for your interest in ExamSoft! Please click the icon below that best describes you:
+
+I want to schedule a demo
+
+I'm an exam-taker or student using Examplify
+
+I'm a current ExamSoft client
+
+Verify Exam-Taker Identity Efficiently
+
+Digitally verify the identity of each exam-taker, from any location, to save time and minimise cost
+
+Preventing exam-taker impersonation is a part of protecting assessment integrity. Unfortunately, traditional student identity verification systems are often inadequate and inefficient when administering large-scale or remote exams.
+
+ExamID is an advanced digital security tool that makes the entire identity authentication process faster, easier, and more reliable. ExamID is the ideal solution for both in-class exams and remote exams, quickly verifying the identity of exam-takers—no matter the size of the class.
+
+Download the ExamID brochure to learn more.
+
+Two-step authentication process requires a student username/password and face matching analysis
+
+Detects any exam-taker identification anomalies and provides documented evidence for faculty and administration review
+
+Administer exams anywhere, without sacrificing exam integrity, and cut the time and cost of manual verification
+
+Two-Step Authentication
+
+ExamID uses a two-step authentication process—username/password and face matching analysis—making exam-taker impersonation virtually impossible.
+
+Exam-Taker Control
+
+Exam-takers set their own baseline image prior to exam day, allowing them to be in control of the photo to which they are compared before an assessment.
+
+Streamline Large Scale Exams
+
+Eliminate the need for extra staff and make large-scale exams fast, efficient, and more secure. ExamID removes the laborious process of student check-in traditionally required to verify identification for large-scale exams, while significantly reducing the possibility for human error.
+
+Administer Remote Exams Securely
+
+For exams administered remotely, security options typically include a live remote proctor, which drives up costs for the institution and feels invasive to exam-takers, or testing centers that are both expensive and impractical. ExamID’s two-step authentication process offers added security with facial verification technology, making sure the right students take the right exams—no matter where they are.
+
+ExamID + ExamMonitor = End-to-End Remote Exam Security
+
+ExamID can be combined with ExamMonitor for a holistic remote exam security solution that eliminates the need for live proctors. With ExamMonitor, assessment integrity is protected with a technology-enabled proctoring service that records all video and audio as well as screen activity throughout an exam.
+
+Learn more about ExamMonitor.
+
+See ExamSoft in Action
+
+ Request a Demo
+
+Contact us to see how you can protect your exam integrity with ExamID.

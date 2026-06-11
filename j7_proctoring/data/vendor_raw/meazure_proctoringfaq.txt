@@ -1,0 +1,165 @@
+SOURCE_URL: https://www.meazurelearning.com/exam-technology/meazure-exam-platform/online-proctoring-faq
+VENDOR: ProctorU (Meazure Learning) | PRODUCT: Meazure Exam Platform
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: edd29dde31dcf0498c7ff7a033680f3d377e38ad1363195c1e9df2f06eb477a8
+------------------------------------------------------------------------
+FAQ - Online Proctoring for Candidates - Meazure Exam Platform
+
+ Skip to content
+
+Online Proctoring FAQ
+
+ English 
+
+English
+
+ French Canadian / Canadien Français
+
+Online Proctoring FAQ
+
+For Candidates Taking an Exam on the Meazure Exam Platform
+
+This page contains helpful information specific to candidates who are being proctored via the ProctorU Proctoring Platform while taking an exam on the Meazure Exam Platform.
+
+How to Get Support:
+
+Chat in Real Time
+
+The fastest way to get help!
+
+File a Support Ticket 
+
+For non-urgent matters.
+
+Call Us
+
+1-855-772-8678, Option 1
+
+How to Book an Exam:
+
+Below is a quick video demonstration of this reservation process
+
+How to Prepare for a Successful Exam Day:
+
+Download and install Google Chrome or Firefox
+
+Disable the pop-up blocker in your Chrome or Firefox browsers.
+
+Ensure that you have the ability to download and install programs/applications on the computer you intend to write the examination on. You will be required to install a program upon connecting to a proctor – it is not available prior to Exam Day! 
+
+Confirm your webcam is installed, functioning, and turned on
+
+You are only allowed to have 1 monitor running during the exam. If you have more than one monitor being used, please disconnect the other monitor and ensure it is turned around so that the screen is not facing you upon connection to the proctor. 
+
+To test your computer’s capability, please conduct a check on the terminal you will be using on exam day by checking the requirements.
+
+Perform a System Readiness Check by navigating to the Exams page on your Candidate Portal and clicking on the “Test it Out” link available at the bottom. This will launch a new window in ProctorU where it will test your camera, your speaker and microphone, and your internet speed, as well as confirm if there are any external devices connected to your computer. 
+
+Confirm that your internet download speed is acceptable. A hardwired connection is preferred, a wireless connection can be used, but can sometimes be unstable with an increased risk of disconnection during the exam. If you choose to use wireless, we recommend a speed of at least 10 Mbps. You may want to test your internet speed before the module. You can do so by using one of the following tests: http://speedtest.googlefiber.net
+
+http://beta.speedtest.net
+
+https://fast.com
+
+Confirm your username and password combination prior to Exam Day.
+
+With exception to the examination website, all other programs and applications are closed.
+
+Your workstation is clear of any non-approved materials.
+
+Confirm you are not testing from an unpermitted testing location.
+
+You have your government-issued photo identification ready to show the proctor. The identification must be valid (not expired) and include your signature. Examples include a driver’s license or a passport.
+
+What to Expect on Exam Day:
+
+Pre-checks: If you don’t already have the ProctorU extension, you’ll be prompted to download it. You’ll be required to accept exam guidelines, terms of service and privacy policy. The browser will prompt you to share your screen, a required part of being proctored online. You’ll be automatically guided through a series of equipment checks to make sure your system meets minimum requirements.
+
+Photos & Authentication: You’ll take a photo of yourself as well as your I.D. for identity verification purposes.
+
+Chatbox download: You will be prompted to download and run a LogMeIn Rescue applet file that will bring up a chat box allowing you to text with your proctor. When prompted, be sure to click “open” or “allow” to give the file permission to run. When the chat box says “waiting,” it means that you are in the queue waiting for your proctor. If your status shows “waiting,” do not re-download the applet file as that will put you back at the end of the queue.
+
+Proctor Connection & Confirmations: Your proctor will greet you and confirm that you passed your identity verification steps. You’ll review the exam rules with your proctor and they’ll ask to see any permitted resources allowed to use during your exam.
+
+Remote System Check: Your proctor will ask to take remote control of your mouse and keyboard via the LogMeIn Rescue applet in order to make sure no non-permitted programs are running. You will be able to see everything that your proctor is doing during this step, and it is impossible for them to access any files without your knowledge.
+
+6-point Camera Pan: Your proctor will ask you to show the 4 walls of your room as well as your desk space and below your desk space via your webcam. You may or may not also be asked to show your computer monitor. Your proctor will make sure your cell phone is out of reach.
+
+Person Check: The proctor will ask you to show your forearms and ears to ensure they are free of watches and listening devices.
+
+Take Your Exam: Your proctor will release control of your computer and you’ll begin your exam when you’re ready.
+
+Alert the proctor when you are finished the exam: let your proctor know through the chat box that you’re finished. You may also be required to clear a white board or tear up any scratch paper that was used during the exam.
+
+Log out of your exam site and browser: After reviewing your results, your proctor must observe you log out of the exam website and close out of all browser tabs.
+
+Close out of ProctorU chat box: This will end your session with ProctorU. Once the chat box closes, you’ll be invited to complete a customer satisfaction survey.
+
+Done: You’re done! Enjoy your day!
+
+What the Exam Day Connection Process Looks Like:
+
+Below is a quick video demonstration of this connection process
+
+Common Questions:
+
+How do I Test my System for the Online Proctor Requirements?
+
+Check out the Equipment Requirement page. 
+
+To perform a System Readiness Check, please navigate to the Exams page on your Measure portal and click on the “Test it Out” link available at the bottom. This will launch a new window in ProctorU where it will test your camera, your speaker and microphone, and your internet speed, as well as confirm if there are any external devices connected to your computer. 
+
+If you choose to use a wireless internet connection, we recommend a speed of at least 10 Mbps. 
+
+Before connecting to a live proctor, ensure that your browser & popup blocker is disabled. 
+
+How do I Access My Account?
+
+Log into your Candidate Portal using the username that was provided to you through your registration email.
+
+If you have forgotten your password, click on the Forgot your Password link on the login screen and follow the next steps.
+
+When I enter my email address, I receive an error that says, “This user does not exist.”
+
+As this field is case sensitive, ensure you are entering your email address using all lowercase letters. If you still get an error, contact Yardstick Assessment Strategies.
+
+Is there a tutorial exam I can take?
+
+You have access to an exam interface tutorial. We highly recommend that you take the exam tutorial before the exam, so you can become familiar with the exam interface.
+
+Please go to the exam site and enter the same access credentials that were provided to you to be able to access the exam.
+
+You can access the tutorial as many times as you wish, and the time used for the tutorial will not affect the time allotted for other exams
+
+Does my exam begin when I connect with ProctorU?
+
+No, the allotted time for your exam does not begin until the exam has been unlocked by your proctor.
+
+What time should I arrive for my exam?
+
+Arrive 15-minutes prior to the scheduled start time of your appointment.  This will afford you the opportunity to familiarize yourself with the workstation and make sure no technical issues are happening on Exam Day.
+
+Will the proctor be able to access my personal computer files and documents without my knowledge?
+
+ProctorU proctors cannot secretly access your computer files. With your permission, proctors have the ability to view your screen and utilize the mouse and keyboard as if they were sitting next to you.
+
+Once the exam starts, the proctor will monitor everything on the screen, but will no longer use your mouse and keyboard. During the entire process, a chat box is running, and you can see what permissions the proctor currently has at any time.
+
+The entire chat is saved, including a record of what actions the proctor took while accessing your computer.
+
+I am on the proctoring page, but I don’t see my proctor. What should I do?
+
+Make sure you’ve logged into the correct account and clicked the Launch Exam button. You will be asked to complete a basic computer check, capture an image of your face and ID, and then download, install, and run a program called Support-LogMeInRescue to connect to the Proctor.
+
+If any of these steps have not occurred, or if you continue to experience problems, contact ProctorU for support.
+
+I am logged in at my scheduled appointment time, but my exam is not allowing me to continue.
+
+If you have logged in prior to the scheduled appointment time and are unable to continue, refresh your internet browser. If this is still not available, it is recommended you clear your internet history, then log back in.
+
+MacOS X Catalina And Big Sur Users – Important Notice
+
+Apple introduced new security features with the release of OS Catalina and these also apply to Big Sur. If you are running macOS Catalina – version 10.15 or later – or, any version of Big Sur, you must grant Google Chrome or Firefox access to the new screen recording permission in order to share your screen for a proctored session with ProctorU.
+
+Learn how to enable screen sharing for your browser.

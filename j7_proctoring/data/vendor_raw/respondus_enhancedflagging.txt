@@ -1,0 +1,94 @@
+SOURCE_URL: https://web.respondus.com/enhanced-flagging-respondus-monitor/
+VENDOR: Respondus | PRODUCT: Respondus Monitor
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: 679b87503e7bca2d702bab22fe2e8ea462ebbfbba8bdecef89c1900cccfb6308
+------------------------------------------------------------------------
+Enhanced Flagging for Respondus Monitor - Respondus
+
+Skip to main content
+
+ About 
+
+ News 
+
+ Webinars 
+
+ Support 
+
+ Contact 
+
+ Admin Login 
+
+ Respondus
+ Assessment Tools for Learning Systems
+
+ News
+
+About
+
+Support + Resources
+
+Webinars
+
+Contact
+
+Subscribe
+
+News
+
+Enhanced Flagging for Respondus Monitor
+
+A proctoring system that flags too much is like the boy who cries wolf: after a while, you start to ignore the warnings. That’s why a key goal for Respondus Monitor is to reduce false positive flags, which we accomplish in two ways: improving the quality of the videos, and improving their analysis.
+
+A recent release of Respondus Monitor increased the resolution of proctoring videos. A subsequent release built on that enhancement in three meaningful ways.
+
+More Precise Flagging
+
+The computer vision models for Respondus Monitor are continually trained, tested, and updated. This has enabled us to reduce the false positive rate for flags by 80% in the past year. Respondus Monitor also saw significant improvements in correctly identifying events that should be flagged (a concept known as recall). These two improvements enable our system to put more weight on flagged events and to tighten the rules that trigger them. The benefit for students is that they get flagged less frequently. For instructors, it means flagged events are more relevant and take less time to review.
+
+Tilt Down
+
+During an online exam, Respondus Monitor will warn students when their face cannot be detected by the webcam. But there are situations when a face can be detected, but it is largely cropped by the edge of the video frame. Cropping occurs most often when students slouch in their seats or, unwittingly, push their notebook computer screens back. This results in only the top portion of their face being visible in the video.
+
+Respondus Monitor will now prompt students to tilt their camera downward when this situation occurs. This reduces the likelihood of students being flagged and it provides instructors with better videos of the entire examination environment.
+
+Bad Lighting
+
+Face detection in Respondus Monitor has gotten so good it can detect faces in very darkly lit rooms. This might seem like a great accomplishment, but instructors want to be able to see the faces of students in proctoring videos! Respondus Monitor will now detect a very darkly lit environment (or a glaringly bright one) and prompt the student to make a correction. This reduces the chance of a student being flagged, while providing instructors a better video for evaluating the student.
+
+Related Articles
+
+Handheld Device Flag for Respondus Monitor
+
+Sensitivity Levels in Respondus Monitor
+
+Why We Do Our Own Machine Learning
+
+Respondus Monitor Paves the Way
+
+Share this:
+
+ Email 
+ LinkedIn 
+ X 
+
+View Articles by Product
+
+LockDown Browser
+
+Respondus 4.0
+
+Respondus Monitor
+
+StudyMate Campus
+
+Test Bank Network
+
+View Articles by Audience
+
+Higher Ed
+
+K-12
+
+ Subscribe for Respondus Updates

@@ -1,0 +1,179 @@
+SOURCE_URL: https://proctorio.com/faq
+VENDOR: Proctorio | PRODUCT: Proctorio
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: 103811f3fbb9c4ff78f2d78e4be956577d68a5c3ad56abf8f9585afd3972efba
+------------------------------------------------------------------------
+FAQ | Proctorio
+
+Frequently Asked Questions
+
+ General 
+
+ Data security 
+
+ Data collected 
+
+ Exam environment 
+
+ Behavior 
+
+ Desk Scan Setting 
+
+ General 
+
+As a test-taker, where do I sign up / register / login?
+
+You don't! Because Proctorio integrates with most commonly-used Learning Management Systems (LMS) or assessment platforms via LTI, we simply leverage your institution's Single Sign-On. All you need to do is log in to your Learning Management System (LMS) or assessment platform and take your exam.
+
+How do I schedule an exam?
+
+With Proctorio, you don't have to schedule an exam! Your exam administrator will set a designated testing window and then you can take your exam at any point during that window, whether it's 3pm or 3am.
+
+Can Proctorio access the personal computer files or data of test-takers?
+
+No. Proctorio will never access your personal files or data stored on your computer.
+
+Does Proctorio allow for bathroom breaks during exams?
+
+Proctorio encourages exam administrators to allow bathroom breaks during exams as needed. Please note that our Support Agents cannot grant permission for bathroom breaks.
+
+Does Proctorio have access to my web history?
+
+No, Proctorio does not have access to your browser history.
+
+Once I install Proctorio, is Proctorio always on?
+
+No, Proctorio only runs during an exam and during exam review. Test-takers can tell when Proctorio is "on" because the Proctorio extension shield icon will turn green. Since Proctorio is a browser extension, it can be uninstalled or disabled immediately after an exam is submitted and reinstalled or enabled in time for the next exam.
+
+Do I lose exam time during the pre-check process?
+
+No. The exam timer does not start until after the pre-checks are complete.
+
+When does Proctorio start and stop recording?
+
+Proctorio only records during an exam and if the video/audio/screen recording settings are enabled by the exam administrator. Recording starts right as you enter the exam, after the diagnostics pre-check and exam agreement have been completed. Recording stops as soon as the test-taker submits or closes the exam.
+
+Who is watching me when I am using Proctorio?
+
+Only approved representatives at your institution have access to your audio, video, and screen recordings. If your institution is utilizing Live Proctoring, a Proctorio proctor will be monitoring you during the exam, flagging certain behaviors, as dictated by your exam administrator, and then sending the results to your exam administrator or institution for review. Decisions regarding potential breaches of exam integrity are left to the discretion of your exam administrator or institution.
+
+Does Proctorio use facial recognition?
+
+No. Unlike some competitors, Proctorio only uses face detection and gaze detection which cannot uniquely identify an individual's face. Face detection is used to detect the presence of one or more human faces or if the test-taker has left the exam for any reason. Gaze detection is used to see if a test-taker is looking away from the screen for an extended period of time.
+
+Does Proctorio utilize algorithmic decision-making?
+
+No, Proctorio only uses algorithms for face and gaze detection if certain settings are enabled on an assessment. Proctorio's software does not perform any type of algorithmic decision making, such as determining if a breach of exam integrity has occurred. All decisions regarding exam integrity are left up to the exam administrator or institution.
+
+Is Proctorio Spyware?
+
+No. Proctorio makes the test-taker fully aware of what permissions are required to enter a Proctorio exam. Proctorio software runs as a browser extension, meaning its access to the information on a test-taker's personal computer is limited and it cannot access personal files or change system settings. We encourage exam administrators to introduce test-takers to Proctorio at the beginning of the course to show them what they can expect.
+
+Data security
+
+Does Proctorio sell test-taker exam-related information?
+
+No. Proctorio does not sell test-taker data.
+
+Where is test-taker data being stored?
+
+Test-taker data is stored in secure, institution-chosen data centers in compliance with local data privacy laws. During the exam pre-checks, you will be notified where your institution's data center is located.
+
+How long does Proctorio store data?
+
+Proctorio stores recording data for as long as required by the institution or by local law. In some cases, this is as little as seven days. However, this is dependent on the individual agreement signed with each partnered institution. During the exam pre-checks, you will be notified how long your recordings will be stored for.
+
+What happens to test-taker data if an institution ends their contract with Proctorio?
+
+Proctorio keeps the stored data for up to 30 days after the end of the contract, unless otherwise specified by the institution. At the end of the 30 days, the data is either transferred to the institution or destroyed.
+
+Will data collected outside of the U.S. ever be transferred to the U.S.?
+
+Data collected outside of the U.S. will not be transferred to the U.S. Proctorio stores data in local data centers and makes every effort to comply with local privacy legislation.
+
+Will U.S. data ever be transferred outside of the U.S.?
+
+All recording data collected from institutions that contract with us in the U.S. will stay within U.S.-based data centers. Proctorio makes every effort to comply with state and regional privacy legislation.
+
+Who is Hackrate?
+
+Hackrate is a renowned team of IT security experts and ethical hackers with a mission to enhance digital safety. They help us address potential vulnerabilities and ensure the security of Proctorio’s software for test-takers and exam administrators worldwide. We welcome ethical hackers and cybersecurity professionals to participate by submitting detailed bug reports on our Data Security page.
+
+Data collected
+
+Does Proctorio use biometric analysis?
+
+No. Proctorio does not use biometric analysis like facial recognition, keystroke fingerprinting, voice recognition, etc. Instead, Proctorio uses facial detection and gaze detection to detect the presence of a face in an image and if it is looking off screen for extended periods of time.
+
+Does Proctorio use keystroke fingerprinting?
+
+No, we do not utilize keystroke fingerprinting. We do, however, track keystroke anomalies to determine whether a test-taker is consistently interacting with the exam.
+
+Does Proctorio require test-takers to input biometric information or personally identifiable information (PII) to enter an exam?
+
+No, Proctorio does not require test-takers to use biometric information or share additional PII to enter an exam, beyond what is already required by the assessment platform or institution. Instead, test-takers simply log in to their institution's LMS or assessment platform to access their exam.
+
+Why does Proctorio need to see my ID?
+
+Your exam administrator has requested that you scan your student or government-issued ID in order to validate your identity. If your exam administrator has enabled Automated Verify ID, an image of your ID will be collected and then made only available to your exam administrator for review. If they have enabled Live Verify ID then a Proctorio live proctor will compare your image to the image on your ID card at the beginning of the exam in real time. Once your identity is validated you will be allowed to enter the exam.
+
+Exam environment
+
+I don't want my exam administrator to see my room. What should I do?
+
+We recommend that test-takers take their exams in a neutral area. If possible, some options are your kitchen table, your living room, or a public area like a library. We know everyone is doing their best to find a neutral testing environment and we encourage exam administrators to show empathy and understanding to test-takers.
+
+I live with a lot of other people - will I get flagged if they make noise?
+
+We understand that there can be unexpected noise during the course of an exam. We encourage you to inform your family members or roommates you are about to begin an exam. We also encourage you to share your concerns with your exam administrator ahead of your exam. While you may get flagged for some background noise, Proctorio ultimately leaves it up to your exam administrator to decide whether this noise constitutes a breach of exam integrity.
+
+What happens if the webcam isn't able to pick up my image?
+
+If the webcam is unable to pick up your image after several attempts and you have tried altering the angle of the webcam or the background, a support chat window will open automatically. Our support staff will help you pass the pre-checks and enter your exam. Please see our Exam Environment Guide for more tips on setting up your exam space for success.
+
+I wear glasses and the webcam isn't picking up my image?
+
+You may be experiencing glare from the reflection with the lenses. To fix this, try adjusting the angle of your head a bit. You can also turn down the brightness on your computer monitor. You may remove your glasses in order to pass the pre-check and put them back on once the exam begins.
+
+Behavior
+
+Does Proctorio monitor eye movements?
+
+No. Proctorio does not track eye movements, but we may use facial detection to ensure test-takers are not looking away from their exam for an extended period of time. This simply detects the presence of a face interacting with the exam window.
+
+How do you decide what behavior counts as "cheating"?
+
+Only the exam administrator or the institution can dictate what type of behavior they want to monitor over the course of an exam. Institution-approved representatives will then review exam attempts to determine whether any flagged behavior was truly infringing on the integrity of the exam.
+
+What if a test-taker looks at the clock to check the time? Or moves around a lot? Will they be flagged?
+
+Subtle movements, such as the ones mentioned, are not likely to be flagged. Even if such actions are flagged, the institution-approved representative is able to review the exam attempt and determine whether the given behavior was actually a breach of exam integrity.
+
+When does Proctorio flag you?
+
+Proctorio will flag behavior based on the settings chosen by your exam administrator. Settings can differ from exam to exam.
+
+ Desk Scan Setting 
+
+Why is Proctorio forcing me to do a desk scan?
+
+Proctorio has no default settings, so not all test-takers will be asked to conduct a desk scan. Your exam administrator may enable a desk scan to ensure that no unauthorized resources are used for the exam. Institution-approved representatives will evaluate the desk scan and make final determinations about exam integrity.
+
+Do I lose exam time during the desk scan?
+
+Time continues to run during desk scans, but your exam administrator should have set aside additional time for this. We do recommend you complete the desk scan quickly and return to your exam immediately in order to not lose any additional time.
+
+Is Periodic Desk Scan triggered on suspicious activity?
+
+No, Proctorio's Periodic Desk Scan is triggered at random intervals.
+
+ Bring Proctorio to your institution. 
+
+ Get in touch with a Proctorio representative today. 
+ Get in touch 
+
+ About to take an exam with Proctorio? 
+
+ Need help or have questions about what to expect? 
+Read our FAQs•Get support

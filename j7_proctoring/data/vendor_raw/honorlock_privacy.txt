@@ -1,0 +1,73 @@
+SOURCE_URL: https://honorlock.com/studentprivacy/
+VENDOR: Honorlock | PRODUCT: Honorlock
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: fc33b7ad967d771ed4600c0b765e542948dff5d7e429a5f57eaffb615a3027a7
+------------------------------------------------------------------------
+Student Data Privacy & Security | Honorlock
+
+Skip to content
+
+ Get a Demo 
+
+ Exam Support 
+
+Honorlock Protects Privacy
+
+ January 27, 2026 
+
+How does Honorlock protect test taker data?
+
+We understand that privacy and security are important to you, and we are dedicated to protecting your data. Watch the video below to see how we protect your information.
+
+Common questions about data privacy & security with Honorlock
+
+Does Honorlock sell my data or monetize my data to third parties outside of my organization or institution?
+
+No. Honorlock will never sell or monetize your data.
+
+What data does Honorlock collect from test takers using the service?
+
+Honorlock collects various types of information as detailed in our Privacy Policy. This includes information such as your name, course number, and exam name. You will be required to provide a copy of your ID. This information is synced with the learning management system (LMS), such as Canvas. 
+
+You may also need to upload a photo taken with your device’s camera and perform a scan of your testing area using your webcam. During the exam, if requested by your organization, we will collect a webcam video recording that includes your desktop activity and audio recording. We also monitor the exam and web pages visited during the examination.
+
+If your organization chooses to use our new Honorlock Application  (currently in limited release), you will need to download an application onto your computer, in addition to installing a Chrome browser extension. This app is designed to detect any applications on your device that you use or attempt to use during the exam, helping to identify any prohibited programs.
+
+How long does Honorlock keep my data?
+
+The standard data retention period is 365 days, but organizations can adjust it to be shorter or longer based on their privacy and accessibility policies and needs. After this time, test taker data will be securely deleted. The retention period can only be extended through a request from the organization.
+
+Is Honorlock tracking my online activities and watching me when I am not taking a proctored exam?
+
+No, Honorlock’s service is designed to collect information only during a proctored exam. This includes data about the websites you visit on your device. After completing a proctored exam, you are free to uninstall the Chrome browser extension and any other software that you were required to install.
+
+Where is my data stored and how well is my data protected?
+
+All data in transit and data at rest is encrypted and stored within the cloud in an Amazon (AWS) data center. Amazon’s data centers are SOC 3 certified, U.S. Privacy Shield, and General Data Protection Regulation (GDPR) compliant.
+
+Does Honorlock's proctoring platform use facial recognition to verify my identity?
+
+No. Honorlock uses facial detection, which only detects that there is a clear human face in the webcam. We do not identify the face, store any of the facial elements, or match the face to a database. If no face is detected, or if multiple faces are detected, AI will flag the incident, and a human proctor may intervene.
+
+Does Honorlock have control of my computer or my mobile phone?
+
+Honorlock does not have the capability to control your computer, access your passwords, or download any files at any time. Honorlock cannot access or control secondary devices, such as mobile phones. 
+
+If your organization opts to uses the Honorlock Application, you will be required to download an application onto your computer. This application is designed to detect any apps on your device that you may use (or attempt to use) during the exam, helping to identify any prohibited programs. 
+
+To take an exam, test takers must install the Chrome browser extension, but can delete it right after the exam is completed.
+
+More Resources
+
+Read these additional detailed resources about how we protect your privacy and data security.
+
+Privacy Statement
+
+What is accessibility and what are the compliance standards?
+
+Blog Post: A Message to Test Takers New to Online Education and Remote Proctoring
+
+Blog Post: Privacy, Online Exams, and COVID-19
+
+Have questions? Email us at privacy@honorlock.com

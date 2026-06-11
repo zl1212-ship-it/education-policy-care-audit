@@ -1,0 +1,166 @@
+SOURCE_URL: https://web.respondus.com/he/monitor/
+VENDOR: Respondus | PRODUCT: Respondus Monitor
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200
+RAW_HTML_SHA256: f47b2631197cdea1fe8046a8e0dede61e51607472be8fe5abb86a1ac0c0fc20f
+------------------------------------------------------------------------
+Respondus Monitor - Respondus
+
+Skip to main content
+
+ About 
+
+ News 
+
+ Webinars 
+
+ Support 
+
+ Contact 
+
+ Admin Login 
+
+ Respondus
+ Assessment Tools for Learning Systems
+
+ Solutions for Higher Ed
+
+LockDown Browser
+
+Respondus Monitor
+
+StudyMate Campus
+
+Respondus 4
+
+Test Bank Network
+
+Respondus Monitor
+
+Fully automated proctoring for online exams
+
+Overview
+
+Pricing + Free Pilot
+
+Resources
+
+Respondus Monitor® is the leading remote proctoring solution for higher education. It allows students to take online assessments from a remote location - all while ensuring the integrity of the exam process.
+
+ Watch Overview Video 
+
+ Builds upon LockDown Browser 
+
+It starts with LockDown Browser, a custom browser that locks down the testing environment within a learning system. Students cannot print, copy, access other applications, or search the internet during an online exam.
+
+ Fully Automated Proctoring 
+
+Respondus Monitor is a fully automated proctoring solution. Students use a webcam to record themselves during an online exam. Afterward, flagged events and proctoring results are available to the instructor for further review.
+
+ "Auto-Launches" from any Browser  
+
+After a quick one-time installation, Respondus Monitor launches from the student's preferred browser (Chrome, Firefox, Safari, Edge) whenever the exam settings require it. Students are then guided through a pre-exam sequence, including a webcam check.
+
+ Integrates Seamlessly with LMSs + Publisher Systems 
+
+Respondus Monitor integrates seamlessly with learning systems like Canvas, Blackboard, Moodle, Brightspace, Schoology, Pearson MyLab and Mastering, McGraw Hill ALEKS, Cengage WebAssign, and Hawkes Learning. Students and instructors access exams within their learning system as they normally would, including the post-exam review of proctoring results.
+
+ No Scheduling or Registration 
+
+There’s no need to schedule a proctoring session in advance. Students and instructors don’t even have to register at the Respondus website.
+
+ Supports most Devices 
+
+Respondus Monitor isn’t just a browser extension. It offers a native, feature-rich experience for Windows, Mac, Chromebook and iPad devices.
+
+One technology, lots of flexibility.
+
+Many types of online testing occur at a university, each requiring a different approach for exam integrity. LockDown Browser and Respondus Monitor provide the flexibility needed for the entire institution. Simply select the settings appropriate for the examination environment.
+
+ Learn about online testing scenarios (PDF)
+
+ Three Licensing Options, No Per-exam Fees 
+
+The first year of a license is $4950, regardless of the size of the institution.
+
+After the first year, institutions have three, flexible licensing options: Tiered, Unlimited, or Student Purchase.
+
+ See Pricing or Start a Free Pilot 
+
+Security & Privacy. We take them seriously.
+
+Security and privacy start with great architecture. But it takes a dedicated and obsessed team to ensure it gets done right…And while the acronyms might seem a little overwhelming at times (FERPA, GDPR, CCPA, HECVAT, SOC 2, TX-RAMP, etc.) — rest assured that we've got it covered.
+
+Review our data privacy overview (PDF)
+
+Proven Scalability
+
+Last year Respondus Monitor was used at 1,500 universities, to proctor tens of million exams, for over a billion minutes of online proctoring. So, yes, we get scalability.
+
+24/7 Live Chat and 5 Star Support
+
+Respondus Monitor is backed by a 5-star support team, offering 24/7 real-time chat for students. A range of other support options are available, as are free trainings for instructors. The amazing training team at Respondus has helped tens of thousands of instructors get up and running with online testing and remote proctoring.
+
+Our Commitment to Accessibility
+
+Everyone should be able to access LockDown Browser and Respondus Monitor in a seamless way. We’re committed to making that a reality. More on Accessibility
+
+Ensuring Algorithm Fairness
+
+Respondus Monitor’s algorithms are systematically tested for fairness to ensure that age, gender and skin tone don’t impact proctoring results for students. Learn more
+
+ Learn More about Respondus Monitor 
+
+Load More Stories
+
+View Fewer Stories
+
+Respondus Monitor Has You Covered
+
+Explore five ways Respondus Monitor brings flexibility to online proctoring.
+
+Instructor Live Proctoring
+
+Learn how this proctoring option can be used with Zoom, Microsoft Teams, Google Meet and other video systems.
+
+New Features for Respondus Monitor
+
+Learn about sensitivity levels, increased precision with flagging, faster proctoring results, greater support for low bandwidth settings, and much more.
+
+LockDown Browser® vs. “locked browser” extensions
+
+Here’s how LockDown Browser compares to a locked browser extension.
+
+Attend a free webinar
+
+See in-depth demos, hear from users, and more.
+
+LockDown Browser + Respondus Monitor Checklist
+
+A quick summary of features, integrations, and settings.
+
+Selecting a proctoring tool at University of Texas
+
+Factors that led UT Arlington to select Respondus Monitor.
+
+Respondus Monitor reduces the level of cheating significantly. Simply put, students know they can’t cheat. And I get a truer picture of how each student is performing.
+
+Dr. Pats Neelakantan
+
+East Stroudsburg University of PA
+
+Conference panel recap of online proctoring
+
+Learn how three universities address integrity issues with online proctoring.
+
+Earthquake tests resilience of a university
+
+Technology helps restore a sense of order at Tecnológico de Monterrey.
+
+Training Faculty Like Students
+
+Creating ‘extreme adoption’ for proctoring technology.
+
+Summer school and working students
+
+How Alamo Colleges District supports working students in compressed summer courses.

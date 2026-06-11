@@ -39,7 +39,8 @@ run_detectors.py      # 4 open detectors x exposure conditions -> data/detection
 analyze_detection.py  # miss rates by tone bin / race, contrasts, trend tests -> data/results_summary.csv
 verify_identity.py    # LFW 1:1 verification (MTCNN+FaceNet, YuNet+SFace), probe-side dimming
 analyze_verification.py # FNMR / cannot-verify by ITA tercile at fixed FMR -> data/verification_results.csv
-build_vendor_corpus.py# (planned) vendor doc consequence mapping, J6-style coded corpus
+build_vendor_corpus.py# fetch + archive vendor documentation (registry-driven, provenance headers)
+analyze_vendor.py     # consequence codes + detection-layer bridge -> data/vendor_results.csv
 make_figures.py       # (planned) figures -> ../paper/blinded-manuscript/j7_figure*.{pdf,png}
 ```
 
@@ -53,6 +54,15 @@ make_figures.py       # (planned) figures -> ../paper/blinded-manuscript/j7_figu
   flags + cosine similarity (enrollment side native, probe side dimmed).
 - `data/verification_results.csv` — FNMR and cannot-verify rates by ITA tercile at the
   FMR=1% (and 0.1%) operating point, with contrasts and trend.
+- `data/vendor_registry.csv` — curated vendor-authored public documentation URLs (five
+  product lines: Proctorio, Respondus Monitor, Honorlock, ProctorU/Meazure, ExamSoft).
+- `data/vendor_raw/` — archived page text with provenance headers (URL, access date,
+  HTTP status, raw-HTML sha256). Committed: live pages change, so the stored text at the
+  access date is the evidence of record behind each code (same rule as J6 policy_raw).
+- `data/vendor_corpus.csv` — one row per vendor, six codes per `CODEBOOK_vendor.md`, each
+  with a verbatim support passage and source slug.
+- `data/vendor_results.csv` — code distributions + the mechanical bridge from measured
+  miss-rate ratios to implied per-check flag-rate ratios.
 - Raw images sit under `data/raw/` (gitignored); `fetch_face_data.py` re-creates them
   byte-identically from the pinned revision.
 
@@ -103,6 +113,23 @@ detection gate measured on in-the-wild images, not the identity matcher: precise
 the step proctoring systems automate as the "no face detected" flag. Bounded by
 LFW's light-skewed composition (within-sample terciles, no race labels), stated in
 the paper.
+
+**Consequence layer (five vendor product lines, coded from archived vendor-authored
+documentation).** Four of five document an automatic event when no face is detected
+(Proctorio "if the test-taker has left the exam for any reason"; Respondus
+"warn[s] students when their face cannot be detected"; Honorlock "AI will flag the
+incident"; ExamSoft's "Applicant Missing" incident category), so for those four the
+per-check flag-rate ratio is mechanically the detector's miss-rate ratio measured
+above. All five document a human in the loop, but for four of five the terminal
+reviewer is the instructor: the skewed flag is not filtered out, it is delivered to
+the grader as a suspicion record. None of the archived pages acknowledges that face
+detection can perform differently by skin tone; the two that address the bias
+controversy at all (Proctorio, Honorlock) deflect by distinguishing detection from
+recognition, which is nonresponsive here because the measured gap sits in detection
+itself. Two vendors (Respondus, ExamSoft) instruct students to secure lighting
+("Turn on lights to illuminate your face"), conceding the mechanism the exposure
+sweep manipulates while assigning the remedy to the student; the sweep shows the
+remedy does not equalize, because at any fixed dimness darker faces fail first.
 
 ## Target journals
 Computers & Education (primary); Internet and Higher Education; AI & Society.

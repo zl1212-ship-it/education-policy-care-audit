@@ -1,0 +1,143 @@
+SOURCE_URL: https://support.proctoru.com/hc/en-us/articles/25429674959245-Common-Troubleshooting-Solutions-and-FAQs
+VENDOR: ProctorU (Meazure Learning) | PRODUCT: ProctorU
+ACCESS_DATE: 2026-06-11
+HTTP_STATUS: 200 (zendesk help-center JSON API)
+RAW_HTML_SHA256: 7760fb98f17fc91e04ae5fd45ff2a19190301c0392a9351ea96def9370fd71ca
+------------------------------------------------------------------------
+Common Troubleshooting Solutions and FAQs
+
+If you are having technical issues that need immediate help Contact Our Live Support at any time, either here or within the ProctorU Platform or Guardian Browser.
+
+General Issues
+Issues While Testing
+Issues With My Account
+
+General Issues
+
+How Can I Access Live Support Within the ProctorU Platform or Guardian Browser?
+
+Log into your ProctorU account.
+
+Look for the green chat icon in the lower right corner of the screen.
+
+Follow the prompts to get help.
+
+How Can I Get Help if I'm Having a Problem During My Exam?
+
+If you are having trouble connecting to your exam, use the chat icon links to access the support team within the ProctorU Platform or the Guardian Browser.
+
+If you are connected to a proctor when you experience a technical issue, the proctor will attempt to resolve the issue. If they cannot successfully troubleshoot the problem within 5 minutes, you will be transferred to a technical support agent. If the technical support agent cannot resolve the issue(s) after 15 minutes of troubleshooting, you will be asked to reschedule your exam for a later date or reconnect with a new device. The technicians will assist you through this process.
+
+What Is the Proctor Chat Application (LogMeIn Rescue) and What Do I Do If I Have Trouble Downloading It?
+
+What is LogMeIn Rescue?
+
+As part of the launch process for a live proctored testing session, you will be prompted to download and run a LogMeIn (LMI) Rescue applet file. This will display a chat box allowing you to communicate with your proctor. If prompted, be sure to click “open” or “allow” to give the file permission to run. When the chat box says “waiting,” it means that you are in the queue waiting for your proctor.
+Note: If your status shows “waiting,” do not re-download the applet file, as that will put you back at the end of the queue.
+
+If you encounter any issues with this file, please follow the troubleshooting steps below
+
+What to Do if You Downloaded LogMeIn, But Do Not See the Chatbox
+Make sure you click "run" when prompted by the installation process. This will open it.
+If you do not see the prompt to run the file, you can find it in your downloads folder. Make sure the one you run is the most recent download.
+
+What to Do if Your Machine Will Not Allow You to Download LogMeIn
+You will need administrative access to your computer to download this applet. If you are testing from a work computer or a network secured by your employer or your university, there may be firewalls in place preventing the download of this program. You can try using an alternate device or testing from a network you can control. You can also work with the IT administrator in charge of your network to see if arrangements can be made.
+
+How Do I Re-enable My Mac Screenshot Hotkeys
+
+If your proctor has disabled this setting as a part of the virtual environment check you can follow these steps to re-enable screenshot hotkeys on your Mac or watch the video below.
+
+Click Apple Menu > System Preferences.
+
+Click Keyboard in the System Preferences window. If your list looks different, type Keyboard in the search pane in the top right of the System Preferences window.
+
+Click the Shortcuts tab in the Keyboard window.
+
+Click Screen Shots in the list on the left of the Shortcuts tab.
+
+Check the boxes for all shortcuts you wish to re-enable.
+
+Close the window.
+
+Issues While Testing
+
+I've Been Disconnected From My Exam
+
+If you are disconnected from an active exam session don't worry, you can still reconnect to your proctor and exam. Just follow the on screen prompts to get reconnected. If guardian or your browser closed then we recommend re entering the exam using the same page or process you used to first access it. You will be prompted to go through the exam launch and security process again and you will be reconnected to your exam once you have completed it.
+
+We recommend returning to your exam immediately, if you do not return to your exam within 5 minutes your exam may be ended.
+
+If you are experiencing technical issues or are unable to turn to your exam we suggest reaching out to support using the support chat in the ProctorU platform or by following this link.
+
+My Exam Access Code or Password Is Not Working
+
+If your exam requires an access code or password and the Guardian Browser is failing to insert it we recommend the following solutions.
+
+Refresh the page
+
+Restart the exam launch process
+
+Close and relaunch the Guardian Browser
+
+If these solutions do not work we recommend reaching out to support using the support chat in the ProctorU platform or by following this link.
+
+I have a “Multiple Sessions Running” Error
+
+If you are launching an exam and experience an error informing you of multiple sessions, we recommend closing the guardian browser and relaunching your exam.
+
+If the error persists we recommend reaching out to support using the support chat in the ProctorU platform or by following this link.
+
+I’m Being Told I Have Multiple Monitors Connected
+
+Testing with multiple monitors is not permitted. If you are attempting to test but are being stopped because you have received a warning about multiple monitors, but you do not have multiple monitors connected we recommend trying a few of these solutions.
+
+If you have a closed laptop and a monitor connected make sure the monitor is set to “Duplicate” instead of “extend” or another similar option.
+
+If you have a closed laptop connected to a monitor unplug the monitor and use the laptops screen
+
+If your monitor is connected to a dock try connecting the monitor directly to your device.
+
+If these solutions don’t solve the issue we recommend reaching out to support using the support chat in the ProctorU platform or by following this link.
+
+I'm Still Waiting For My Proctor
+
+During times of high exam volume you may experience longer wait times while waiting for your proctor. Please be patient and your proctor should be with you shortly. If you have redownloaded the LMI applet this may have restarted the connection process and extended your wait.
+
+If you have experienced wait times longer than 5 minutes something may have gone wrong, we recommend reaching out to support using the support chat in the ProctorU platform or by following this link.
+
+Issues With My Account
+
+Trouble Logging In?
+
+If you are having trouble logging in to the ProctorU Platform, try following the troubleshooting steps below.
+
+Make sure you entered the email address associated with your ProctorU account. If you have more than one email address that could have been used when creating your account, try checking your other inbox(es).
+
+If you forgot your password, click on the link that says “Forgot password?”
+
+Ensure that you’ve confirmed your account.
+
+If you follow these steps and cannot access your account, please submit a request through the help center, start a live chat, or call 1-855-772-8678.
+
+What Should I Do if I Did Not Receive a Confirmation Email?
+
+The ProctorU Platform requires that you confirm your email address when you create an account. This helps us ensure that we are sending communications to a valid email address. If you did not receive a confirmation email, try these troubleshooting methods:
+
+Check your spam folder.
+
+Make sure you entered the email address associated with your ProctorU account. If you have more than one email address that could have been used when creating your account, try checking your other inbox(es).
+
+Go to go.proctoru.com and click “Didn’t receive confirmation instructions?”
+
+If you've tried all of these steps and still did not receive an email, please submit a request or start a live chat and our support team will investigate further.
+
+What Time Zone Should I Use When Scheduling Or Registering?
+
+When scheduling an exam, schedule based on the time zone that you will be located in at the time of your exam, not the time zone of your institution or organization. Similarly, when signing up for a new test-taker account, set your time zone based on where you live and take exams. 
+
+Not sure which time zone you're in? We've got you covered. Click Here For Help Determining The Correct Time Zone
+
+Need to change your time zone in your account? No problem. You can do that under your Account Settings. Click Here To Change Your Timezone In Your ProctorU Account
+
+Ready to schedule an exam? Click Here For Scheduling Help
