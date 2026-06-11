@@ -67,3 +67,18 @@ for name, mat in [("unanimous_share_nonnative", nn), ("unanimous_share_native", 
 out = pd.DataFrame(rows, columns=["quantity", "estimate", "ci_lo", "ci_hi", "n"])
 out.to_csv(os.path.join(HERE, "data", "inference_results.csv"), index=False)
 print(out.to_string(index=False))
+
+
+# ---- current-classifier extension: consistency check + independent-pair pooled rates ----
+cur = pd.read_csv(os.path.join(HERE, "data", "detector_scores_current.csv"))
+m = df.merge(cur.drop(columns=["l1_status"]), on="essay_id")
+r = m["HFOpenAI"].corr(m["roberta-base-openai-detector"])
+ind = ["roberta-base-ai-text-detection-v1", "chatgpt-detector-roberta"]
+ext = [["consistency_r_HFOpenAI_vs_local_rerun", r, "", "", len(m)]]
+for g in ["non-native", "native"]:
+    sub = m[m.l1_status == g]
+    ext.append([f"independent2_pooled_rate_{g.replace('-','')}",
+                sum((sub[c] > TAU).mean() for c in ind) / 2, "", "", len(sub)])
+ext = pd.DataFrame(ext, columns=out.columns)
+pd.concat([out, ext]).to_csv(os.path.join(HERE, "data", "inference_results.csv"), index=False)
+print(ext.to_string(index=False))

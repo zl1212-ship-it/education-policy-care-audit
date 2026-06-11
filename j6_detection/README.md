@@ -71,10 +71,12 @@ per-dimension kappa in `data/kappa_results.csv`: 0.81--1.00 on the floor dimensi
 and the author re-coded the same ten by hand (`data/policy_corpus_handcoder.csv`);
 the governance-floor classification is identical under all three sets of codes.
 
-**Current-detector extension.** The penalty is not an artifact of the 2023 detectors. Re-scored with
-four current open detectors (`run_detectors.py`), three still misflag non-native writers far more than
-native writers (pooled **53% vs 6%, 8.7-fold**); the fourth (roberta-large-openai-detector) flags 97.5%
-of native human essays and so does not discriminate at all (excluded). CS224N robustness: over the five
+**Current-classifier extension.** The penalty is not an artifact of one panel's tools. The local
+re-run of roberta-base-openai-detector reproduces the panel's released HFOpenAI scores (r = 0.999), a
+consistency check; the two classifiers independent of the panel (Fakespot 65.9%/13.3%, Hello-SimpleAI
+36.3%/0.0%) still skew (pooled **51% vs 7%, 7.7-fold**); roberta-large-openai-detector flags 97.5% of
+native human essays and so does not discriminate at all (excluded). None of the four is a product
+universities license, so the claim is about the classifier family, not any campus tool. CS224N robustness: over the five
 detectors common to all corpora, the pooled false-accusation rate is 3.3% native, 2.6% for fluent
 graduate technical writing (CS224N), and 57.1% non-native, so the penalty tracks developing-English
 fluency, not international authorship.
