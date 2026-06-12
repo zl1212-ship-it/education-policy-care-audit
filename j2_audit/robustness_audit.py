@@ -3,11 +3,11 @@
 concentration by completion and selectivity tier; (3) cohort-size sensitivity.
 Addresses the central reviewer concern that a ratio metric is mechanically more
 likely to fail at low-baseline institutions. Real IPEDS data."""
-import csv, urllib.request, json, time
+import os, csv, urllib.request, json, time
 import statistics as st
 from collections import defaultdict
 
-BASE = "/Users/yuxialiang/education-policy-care-audit/j2_audit/"
+BASE = os.path.dirname(os.path.abspath(__file__)) + "/"
 P = {(r["unitid"], r["year"]): r for r in csv.DictReader(open(BASE + "disparate_impact_panel.csv"))}
 F = {r["unitid"]: r for r in csv.DictReader(open(BASE + "predict_features_2022.csv"))}
 def f(x):

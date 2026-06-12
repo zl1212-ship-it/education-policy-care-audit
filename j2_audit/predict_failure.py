@@ -6,9 +6,10 @@ institutional features (directory + admissions), then fits:
   (2) sklearn gradient boosting -> 5-fold CV AUC + feature importances (prediction)
 All data real (Urban Institute Education Data API, IPEDS).
 """
-import urllib.request, json, time, csv
+import os, urllib.request, json, time, csv
 import numpy as np, pandas as pd
 
+HERE = os.path.dirname(os.path.abspath(__file__))
 YEAR = 2022
 
 def fetch(url, tries=6):
@@ -28,7 +29,7 @@ def pull(path):
     return out
 
 # --- outcome: 2022 Black disparate-impact failures ---
-panel = pd.read_csv("/Users/yuxialiang/education-policy-care-audit/j2_audit/disparate_impact_panel.csv")
+panel = pd.read_csv(os.path.join(HERE, "disparate_impact_panel.csv"))
 p = panel[(panel.year == YEAR) & panel.black_fail.notna()].copy()
 print(f"auditable institutions (Black, {YEAR}): {len(p)}", flush=True)
 
@@ -85,7 +86,7 @@ for f, v in imp: print(f"  {f:18s} {v:.3f}")
 
 # (3) descriptive: failure rate by selectivity tier and sector
 df["fail"] = y.values
-df.to_csv("/Users/yuxialiang/education-policy-care-audit/j2_audit/predict_features_2022.csv", index=False)
+df.to_csv(os.path.join(HERE, "predict_features_2022.csv"), index=False)
 print("\nsaved predict_features_2022.csv")
 print("\n=== Failure rate by selectivity (admit rate) ===")
 df["sel_tier"] = pd.cut(df["admit_rate"], [-0.01, 0.25, 0.50, 0.75, 1.01],

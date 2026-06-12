@@ -1,7 +1,8 @@
 """Pooled predictive model 2018-2022 (year fixed effects) for Black-student
 4/5ths failure, to show the institutional correlates are stable over time."""
-import urllib.request, json, time
+import os, urllib.request, json, time
 import numpy as np, pandas as pd
+HERE = os.path.dirname(os.path.abspath(__file__))
 def fetch(u,t=6):
     for a in range(t):
         try:
@@ -14,7 +15,7 @@ def pull(path):
     while u:
         d=fetch(u); out+=d["results"]; u=d.get("next")
     return out
-panel=pd.read_csv("/Users/yuxialiang/education-policy-care-audit/j2_audit/disparate_impact_panel.csv")
+panel=pd.read_csv(os.path.join(HERE, "disparate_impact_panel.csv"))
 panel=panel[panel.black_fail.notna()].copy()
 frames=[]
 for y in [2018,2019,2020,2021,2022]:

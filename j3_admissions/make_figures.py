@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 
 HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "data")
 OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript")
+os.makedirs(OUT, exist_ok=True)  # gitignored on a fresh clone
 plt.rcParams.update({"font.size": 11})
 
 

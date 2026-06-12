@@ -6,8 +6,9 @@ rule into education policy: per institution-year, ratio of each subgroup's
 completion rate to the White reference rate; flag < 0.80 as adverse impact.
 Outputs a frozen institution-year CSV + a national summary by year.
 """
-import urllib.request, json, csv, time
+import os, urllib.request, json, csv, time
 from collections import defaultdict
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 YEARS = [2018, 2019, 2020, 2021, 2022]
 RACE = {1: "White", 2: "Black", 3: "Hispanic", 4: "Asian"}
@@ -62,7 +63,7 @@ cols = ["unitid","year","white_rate","white_cohort",
         "black_rate","black_di","black_fail",
         "hispanic_rate","hispanic_di","hispanic_fail",
         "asian_rate","asian_di","asian_fail"]
-with open("/Users/yuxialiang/education-policy-care-audit/j2_audit/disparate_impact_panel.csv","w",newline="") as f:
+with open(os.path.join(HERE, "disparate_impact_panel.csv"),"w",newline="") as f:
     w = csv.DictWriter(f, fieldnames=cols); w.writeheader()
     for r in rows: w.writerow({k: r.get(k) for k in cols})
 
