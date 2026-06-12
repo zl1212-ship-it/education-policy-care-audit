@@ -15,7 +15,7 @@ are unrelated artifacts of different pipelines.
 
 | Directory | What it audits | Primary public sources |
 |---|---|---|
-| repo root (J1) | Doctoral stipend adequacy relative to the local living wage at 22 elite R1 universities | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
+| repo root (J1) | Doctoral stipend adequacy relative to the local living wage at U.S. research universities | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
 | [`j2_audit/`](j2_audit/) | Completion outcomes by race and income against the EEOC four-fifths rule | IPEDS Graduation Rates / Outcome Measures (Urban Institute API) |
 | [`j3_admissions/`](j3_admissions/) | Whether test-optional admissions changed the measurement of merit or the composition of access | IPEDS admissions and enrollment panels |
 | [`j4_adoption/`](j4_adoption/) | The causal effect of adopting predictive-advising systems on completion gaps | Dated vendor/system contracts + IPEDS outcomes |
@@ -42,18 +42,17 @@ commit reachable from a paper's access date reproduces that paper's inputs.
 
 ## J1 — Doctoral stipend adequacy audit (repo root)
 
-The first paper predates the per-directory layout, so its pipeline lives at the repository
-root; the frozen tags and the manuscript's reproduction instructions reference these paths.
+This pipeline predates the per-directory layout, so it lives at the repository root; the
+frozen tags reference these paths.
 
-The audit assembles a balanced descriptive panel of 22 elite U.S. Carnegie R1 universities
-across 2019–2025. For each stipend report, the *living-wage ratio* expresses the reported
-stipend relative to a single-adult local living wage (PhD Stipends repository, 4,495 reports),
-aggregated to institutional means. This adequacy ratio is the primary measure. Institutional
-federal funding totals (USASpending.gov) establish resource scale and are deliberately not
-set against stipends as an opposed quantity. Graduate enrollment (IPEDS via Urban Institute)
-and research-doctorate counts (NSF SED) provide context. `governance_matrix.csv` is J1's
-assembled institution-year panel (distinct from J5's `nasbe_governance_matrix_2024.csv`,
-which is a different paper's source file).
+The pipeline assembles a descriptive institution-year panel of doctoral stipend reports at
+U.S. research universities. For each report, the *living-wage ratio* expresses the reported
+stipend relative to a single-adult local living wage (crowd-sourced PhD Stipends repository),
+aggregated to institutional means; this adequacy ratio is the primary measure. Institutional
+federal funding totals (USASpending.gov) establish resource scale, and graduate enrollment
+(IPEDS via Urban Institute) and research-doctorate counts (NSF SED) provide context.
+`governance_matrix.csv` is the assembled institution-year panel (distinct from J5's
+`nasbe_governance_matrix_2024.csv`, which is a different pipeline's source file).
 
 | File | Contents |
 |---|---|
