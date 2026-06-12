@@ -162,6 +162,3 @@ remedy to the student; the sweep shows the remedy does not equalize, because at 
 fixed dimness darker faces fail first. Codes checked by an independent second coder
 (Cohen's kappa = 0.96); recoding corrected three codes of record (see commit
 afdaf89).
-
-## Target journals
-Computers & Education (primary); Internet and Higher Education; AI & Society.

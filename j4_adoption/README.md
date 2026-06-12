@@ -1,7 +1,6 @@
-# J4 — Algorithmic Governance and Educational Opportunity
+# J4 — Did Predictive Advising Drive Georgia State's Turnaround? (algorithmic governance and educational opportunity)
 
-Replication code and data for the fourth paper in the educational-governance series.
-**Target journal: *Educational Evaluation and Policy Analysis* (EEPA).**
+Replication code and data for the predictive-advising adoption audit.
 Manuscript is kept in the private `blinded-manuscript` repo, not here.
 
 ## Research question
@@ -64,7 +63,7 @@ Candidate sources (to be vetted in the availability recon — see `adoption_sour
 - [ ] Merge with IPEDS outcome panels
 - [ ] Staggered DiD + event study
 - [ ] Strand B FOIA mechanism evidence
-- [ ] Draft to EEPA standard (private repo)
+- [ ] Draft manuscript (private repo)
 
 ## Notes
 

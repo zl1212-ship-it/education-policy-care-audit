@@ -1,4 +1,4 @@
-# J2 — Disparate-Impact Audit of College Completion
+# J2 — A National Disparate-Impact Audit of College Completion Equity
 
 Does U.S. higher education show disparate impact in completion outcomes by race and income,
 judged by the standard the law already uses for employment? The audit imports the EEOC

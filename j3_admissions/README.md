@@ -1,7 +1,6 @@
-# J3 — Admissions Without Fairness (test-optional admissions and the construction of merit)
+# J3 — The Measure Moved, the Boundary Did Not (test-optional admissions and the construction of merit)
 
-Replication code and data for the third paper in the educational-governance series.
-**Target journal: *Educational Evaluation and Policy Analysis* (EEPA).**
+Replication code and data for the test-optional admissions audit.
 Manuscript text is kept in the private `paper/blinded-manuscript` folder, not here; the findings
 narrative (`results.md`) is gitignored until publication. Everything in this directory is
 reproducible from public IPEDS data.

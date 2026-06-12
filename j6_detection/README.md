@@ -80,7 +80,3 @@ universities license, so the claim is about the classifier family, not any campu
 detectors common to all corpora, the pooled false-accusation rate is 3.3% native, 2.6% for fluent
 graduate technical writing (CS224N), and 57.1% non-native, so the penalty tracks developing-English
 fluency, not international authorship.
-
-## Target journals
-AERA Open; Computers & Education; British Journal of Educational Technology; Educational
-Evaluation and Policy Analysis.
