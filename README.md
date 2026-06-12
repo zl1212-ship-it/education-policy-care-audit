@@ -1,34 +1,33 @@
 # Education-Policy Audit Series — Replication Data and Code
 
-This repository holds the data-construction and analysis code for a series of independent
-education-policy audit papers. Every figure and number each paper reports is reproducible
-from public sources by running the scripts here; each paper's data-availability statement
-points to this repository.
+This repository holds the data-construction and analysis code for a set of independent
+education-policy audit pipelines. Every figure and number in the associated manuscripts is
+reproducible from public sources by running the scripts here; each manuscript's
+data-availability statement points to this repository.
 
-Each paper has its own pipeline directory with its own README (research question, data
-sources, run order). The pipelines are independent: each builds its own panel from its own
+Each pipeline has its own directory and README (data sources, build steps, run order).
+The pipelines are independent: each builds its own panel from its own
 public-source pulls, and no data file is shared or reused across papers. Files that happen
 to share a name in different directories (e.g. `treatment_panel.csv`, `results_summary.csv`)
 are unrelated artifacts of different pipelines.
 
-## The papers
+## The pipelines
 
-| Directory | What it audits | Primary public sources |
+| Directory | What it computes | Primary public sources |
 |---|---|---|
-| repo root (J1) | Doctoral stipend adequacy relative to the local living wage at U.S. research universities | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
-| [`j2_audit/`](j2_audit/) | Completion outcomes by race and income against the EEOC four-fifths rule | IPEDS Graduation Rates / Outcome Measures (Urban Institute API) |
-| [`j3_admissions/`](j3_admissions/) | Whether test-optional admissions changed the measurement of merit or the composition of access | IPEDS admissions and enrollment panels |
-| [`j4_adoption/`](j4_adoption/) | The causal effect of adopting predictive-advising systems on completion gaps | Dated vendor/system contracts + IPEDS outcomes |
-| [`j5_governance/`](j5_governance/) | Authority versus democratic representation across the 50 state boards of education | NASBE State Education Governance Matrix + NCES |
-| [`j6_detection/`](j6_detection/) | AI-writing-detector false-positive rates by language background, and the university policies that give the flag force | Public human-written essay corpora + 50 flagship integrity policies |
-| [`j7_proctoring/`](j7_proctoring/) | Face-detection miss rates by skin tone in the presence-check step of remote proctoring, and how vendors turn a miss into a consequence | FairFace validation set + open detectors + vendor documentation |
+| repo root (J1) | Institution-year panel of doctoral stipend reports scored against single-adult local living wages, with funding and enrollment context | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
+| [`j2_audit/`](j2_audit/) | Institution-year four-fifths (adverse-impact) screen on completion rates by race and income, plus a predictive layer | IPEDS Graduation Rates / Outcome Measures (Urban Institute API) |
+| [`j3_admissions/`](j3_admissions/) | Staggered DiD and synthetic control on admissions and entering-class composition outcomes around test-optional adoption | IPEDS admissions and enrollment panels |
+| [`j4_adoption/`](j4_adoption/) | Dated adoption panel for predictive-advising systems; staggered DiD on retention and completion-gap outcomes | Dated vendor/system contracts + IPEDS outcomes |
+| [`j5_governance/`](j5_governance/) | Coded state-board governance panel (authority and representation indices) merged with state demographics | NASBE State Education Governance Matrix + NCES |
+| [`j6_detection/`](j6_detection/) | Open AI-writing detectors scored over public human-essay corpora by language background; coded census of university integrity/AI policies | Public human-written essay corpora + 50 flagship integrity policies |
+| [`j7_proctoring/`](j7_proctoring/) | Open face detectors benchmarked under exposure degradation with skin-tone stratification; 1:1 verification benchmark; coded vendor-documentation mapping | FairFace validation set + open detectors + vendor documentation |
 
-Paper titles and venues are deliberately not listed while manuscripts are under review;
-each directory README identifies its study by question and design.
+Paper titles, venues, research questions, and findings are deliberately not described here
+while manuscripts are under review; each directory README documents the build, not the paper.
 
-**Start with the README inside each directory.** It states the research question, the
-identification or audit design, and the exact script run order (panels first, then analysis,
-then figures). Figure scripts write into a gitignored `paper/` folder and create it if absent.
+**Start with the README inside each directory.** It documents the estimator or audit design,
+the data sources, and the exact script run order (panels first, then analysis, then figures). Figure scripts write into a gitignored `paper/` folder and create it if absent.
 
 Per-pipeline findings narratives (`results.md`) are kept private until publication; the
 numbers behind them regenerate from the committed scripts and data.

@@ -1,15 +1,13 @@
 # J2 — Disparate-impact audit of college completion (four-fifths rule)
 
-Does U.S. higher education show disparate impact in completion outcomes by race and income,
-judged by the standard the law already uses for employment? The audit imports the EEOC
-Four-Fifths (4/5ths) adverse-impact rule into education policy: per institution-year, the
-ratio of each subgroup's completion rate to the White (or non-Pell) reference rate, flagging
-ratios below 0.80. A predictive layer then asks which institutional features anticipate
-failing the test.
+Applies the EEOC Four-Fifths (4/5ths) adverse-impact rule to college completion outcomes:
+per institution-year, the ratio of each subgroup's completion rate to the White (or
+non-Pell) reference rate, flagging ratios below 0.80. A predictive layer models which
+institutional features anticipate a flag.
 
 All inputs are public: IPEDS Graduation Rates (150% of normal time) and Outcome Measures
 (6-year completion), retrieved through the Urban Institute Education Data API (no key),
-cohort years 2018–2022. Every number in the paper regenerates from these scripts.
+cohort years 2018–2022. Every output regenerates from these scripts.
 
 ## Run order
 

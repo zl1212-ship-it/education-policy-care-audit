@@ -1,35 +1,24 @@
 # J7 — Remote-proctoring face-detection audit
 
-An algorithm audit of the face-detection step that remote-proctoring systems use to
-decide whether an examinee is present. Online exams point a webcam at a student and
-let a vision model confirm a face is there; "no face detected" becomes an absence or
-integrity flag, a lockout, or an escalation to human review. If the detection step
-sees darker faces worse, those students carry a higher risk of being falsely flagged
-for the same behavior: sitting in front of their own camera.
+Benchmarks the face-detection step used by remote-proctoring presence checks. Three
+coordinated pipelines:
 
-Two layers:
-
-1. **Detection layer (audit).** Every image in the panel contains exactly one face
-   by dataset construction, so a "no face" return is always a miss. We run four open
-   face detectors spanning the deployed spectrum (legacy Haar cascade, production
-   YuNet, on-device MediaPipe BlazeFace, deep MTCNN) over the FairFace validation
-   set and measure the miss rate by an image-derived skin-tone measure (ITA) and by
+1. **Detection layer.** Four open face detectors (legacy Haar cascade, YuNet,
+   MediaPipe BlazeFace, MTCNN) are run over the FairFace validation set, where
+   every image contains exactly one face, so a "no face" return is always a miss.
+   Miss rates are stratified by an image-derived skin-tone measure (ITA) and by
    the dataset's perceived-race labels, at native exposure and under controlled
-   low-light degradation simulating dim webcam conditions.
-2. **Consequence layer (mapping).** Public proctoring-vendor documentation is coded
-   for how a face-detection failure becomes a consequence for the student (flag,
-   lockout, instructor report), connecting the measured error gap to assessment
-   access.
+   low-light degradation.
+2. **Verification layer.** Two open 1:1 matcher cascades are benchmarked on LFW
+   pairs with probe-side dimming, separating the presence-detection gate from the
+   identity matcher.
+3. **Consequence layer.** Archived public proctoring-vendor documentation is coded
+   (protocol in `CODEBOOK_vendor.md`) for how a face-detection failure is handled
+   (flag, lockout, escalation, human review).
 
-Middle-range claim: automated presence verification redistributes the burden of
-being seen. A perception failure in the camera pipeline becomes an
-assessment-access harm through the rules that treat "no face" as evidence of
-absence or misconduct.
-
-Honest scope limit (stated in the paper): commercial proctoring engines are closed;
-the audit measures the open face-detection layer the same vision stack builds on,
-plus the vendors' own public documentation for the consequence mapping. It does not
-claim to measure any vendor's closed model directly.
+Scope note: commercial proctoring engines are closed; the pipelines measure open
+face-detection components and the vendors' own public documentation, not any
+vendor's closed model.
 
 ## Pipeline
 ```
@@ -66,99 +55,6 @@ make_figures.py       # Figures 1-3 -> ../paper/blinded-manuscript/j7_figure{1,2
 - Raw images sit under `data/raw/` (gitignored); `fetch_face_data.py` re-creates them
   byte-identically from the pinned revision.
 
-## Headline
-**Detection layer (baseline: four open detectors, 10,954 FairFace validation faces,
-native exposure).** Every image contains exactly one face, so every "no face" return
-is a miss. The legacy webcam-grade detector (Haar cascade, 22.8% overall miss) misses
-**30.2% of dark-bin faces vs 17.6% of very-light faces (1.71x, Fisher p = 5e-11)**
-and **35.5% of Black-labeled vs 22.7% of White-labeled faces (1.56x, p = 4e-17)**;
-the tone gradient is monotone from tan (15.7%) through brown (19.6%) to dark (30.2%)
-and survives restriction to adults (1.58x / 1.61x). The modern detectors sit at the
-ceiling at native exposure (MediaPipe 0.055% overall miss, MTCNN 0.44%; Black-White
-gaps point the same way, MTCNN 2.1x, but are not significant at these near-zero
-rates), which motivates the designed experiment: the low-light sweep (exposure 0.5
-to 0.15 in linear-light space) measures where the seen/unseen boundary moves as the
-webcam dims, the actual proctoring condition. YuNet (default score threshold 0.9,
-9.5% overall miss) shows elevated misses at BOTH ITA tails but no Black-White gap,
-evidence that photo exposure contaminates the very-light ITA tail; the
-author-assigned race labels serve as the independent stratifier for exactly this
-reason.
-
-**Low-light sweep (exposure 0.5 -> 0.15, linear-light).** Dimming amplifies the
-disparity in three of the four detectors, on the race contrast that the ITA
-contamination cannot touch. Haar: Black miss rises 35.5% -> 42.6% while White rises
-22.7% -> 25.9% (risk difference 12.8pp -> 16.7pp, p = 6e-26). YuNet: the Black-White
-ratio climbs monotonically with darkness, 1.04 -> 1.12 -> 1.14 -> 1.16 -> 1.25
-(p = 0.002 at 0.15; adults 1.09 -> 1.30, p = 0.001). MTCNN leaves the ceiling and a
-significant gap emerges: 0.71% vs 0.34% (n.s.) at native exposure becomes 4.6% vs
-2.4% (1.9x, p = 4e-4) at 0.15. So equal-light parity is not equal-dark parity: the
-gap appears exactly under the deployed condition, a dim room behind a webcam.
-MediaPipe stays at the ceiling throughout; pure exposure scaling is largely undone
-by its input normalization (stated limitation: real low light also adds sensor
-noise, so these sweep numbers are conservative). The very-light ITA tail degrades
-fastest among modern detectors when dimmed, consistent with that tail holding
-overexposed, low-contrast photos rather than the lightest-skinned subjects.
-
-**Threshold sensitivity (YuNet at 0.6 vs the default 0.9).** YuNet's race gap is
-operating-point dependent, but the only setting that removes it also removes the
-function. Loosening the confidence threshold from 0.9 to 0.6 (a value some
-deployments use) collapses the overall miss rate from 9.5% to 0.07% at native
-exposure and 15.0% to 0.19% at the dimmest, and with it the Black-White gap
-(1.04x-1.25x at 0.9 becomes statistically null at every exposure, all p > 0.2).
-So most of YuNet's "no face" returns at 0.9 are low-confidence detections the
-threshold discards, and the skew lives in that discarded tail. The escape is
-illusory for proctoring: a detector at 0.6 almost never reports "no face," which
-means it has stopped gating presence at all rather than gating it fairly. Haar has
-its own dial, the `minNeighbors` parameter, but sweeping it tells the opposite
-story: moving `minNeighbors` from 3 to the default 5 to 8 swings the overall miss
-rate from 16.8% to 22.8% to 29.1%, yet the Black-White ratio barely moves (1.58 /
-1.56 / 1.59, all p < 1e-11). For YuNet the dial erases the gap, but only by
-switching the detector off in effect; for Haar no setting of the dial erases it.
-There the gap is a property of the detector, not the cutoff. (Run the bracket with
-`run_detectors.py --detectors haar3,haar8`.)
-
-**Sensor-noise robustness (Poisson + Gaussian noise at exposures 0.25 and 0.15).**
-Adding sensor noise measures, rather than assumes, that pure exposure scaling is a
-mild lower bound on difficulty: every detector misses more with noise. The Haar race
-gap (the headline) is unmoved, ~1.6x with p < 1e-23 at both settings. MTCNN's shrinks
-but holds (1.9x -> 1.56x). YuNet saturates: both groups reach ~45-52% miss and the
-gap compresses to ~0.95x, not because it became fair but because the detector is
-failing on nearly everyone, a harm of its own. So noise does not weaken the central
-finding; where it shrinks a gap it does so by breaking the detector. (Run with
-`run_detectors.py --noise --exposures 0.25,0.15`.)
-
-**Verification layer (LFW 10-fold pairs, 3,000 genuine / 3,000 impostor, two open
-cascades, threshold fixed at FMR = 1% on native-exposure impostors).** The matcher
-does not reproduce the detection gap: genuine-pair rejection ("you are not you")
-is flat across ITA terciles for both stacks at every exposure (FaceNet 5.6% vs
-5.3% darkest-vs-lightest at native, 1.06x, p = 0.8; SFace 3.2% vs 3.0%, 1.06x,
-p = 0.9; all dimmed conditions 0.94x-1.10x, every p > 0.4; Spearman ITA-match
-|rho| < 0.013 throughout). Probe-side dimming does not open a gap either, and the
-cascades' internal detectors almost never fail on LFW's tight well-lit crops
-(99.98% detect at exposure 0.15), so cannot-verify collapses to the match decision
-there. Within open stacks, the skin-tone burden concentrates at the presence-
-detection gate measured on in-the-wild images, not the identity matcher: precisely
-the step proctoring systems automate as the "no face detected" flag. Bounded by
-LFW's light-skewed composition (within-sample terciles, no race labels), stated in
-the paper.
-
-**Consequence layer (five vendor product lines, coded from archived vendor-authored
-documentation).** Four of five document an automatic event when no face is detected
-(Proctorio "if the test-taker has left the exam for any reason"; Respondus
-"warn[s] students when their face cannot be detected"; Honorlock "AI will flag the
-incident"; ExamSoft's "Applicant Missing" incident category), so for those four the
-per-check flag-rate ratio is mechanically the detector's miss-rate ratio measured
-above. All five document a human in the loop, but for three of five the terminal
-reviewer is the instructor (Honorlock and ProctorU screen via a vendor proctor
-first): the skewed flag is not filtered out, it is delivered to the grader or a
-proctor as a suspicion record. Only one of five (Respondus) mentions skin tone at
-all, and only as an unverified claim of being "tested for fairness to ensure...skin
-tone don't impact" results; two others (Proctorio, Honorlock) deflect by
-distinguishing detection from recognition, nonresponsive here because the measured
-gap sits in detection itself; the other two are silent. Two vendors (Respondus,
-ExamSoft) instruct students to secure lighting ("Turn on lights to illuminate your
-face"), conceding the mechanism the exposure sweep manipulates while assigning the
-remedy to the student; the sweep shows the remedy does not equalize, because at any
-fixed dimness darker faces fail first. Codes checked by an independent second coder
-(Cohen's kappa = 0.96); recoding corrected three codes of record (see commit
-afdaf89).
+## Optional robustness runs
+- `run_detectors.py --detectors haar3,haar8` — Haar `minNeighbors` bracket around the default
+- `run_detectors.py --noise --exposures 0.25,0.15` — Poisson + Gaussian sensor-noise conditions

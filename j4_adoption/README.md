@@ -3,16 +3,11 @@
 Replication code and data for the predictive-advising adoption audit.
 Manuscript is kept in the private `blinded-manuscript` repo, not here.
 
-## Research question
+## What the pipeline estimates
 
-When a higher-education institution **adopts a predictive / early-alert algorithmic
-system** (e.g., EAB Navigate, Civitas Learning, Starfish/Hobsons), does that adoption
-**reduce or reproduce** racial and Pell completion gaps?
-
-The paper treats educational algorithms as *governance technologies that reallocate
-institutional attention* ("algorithmic opportunity allocation"). It is therefore NOT an
-audit of outcome disparity; it estimates the
-**causal effect of adopting algorithmic governance** on the distribution of opportunity.
+Staggered difference-in-differences effects of adopting a predictive / early-alert
+advising system (e.g., EAB Navigate, Civitas Learning, Starfish/Hobsons) on retention
+and on racial and Pell completion gaps, from a dated adoption panel assembled here.
 
 ## Design (Strand A — primary, causal)
 
@@ -33,37 +28,20 @@ audit of outcome disparity; it estimates the
 - **Robustness:** drop known early-adopter campuses (bounded measurement error);
   pre-trend tests.
 
-## Literature positioning
-
-See `literature.md`. Closest work — Vasquez, Gándara et al. (2025), *Selling Student Success*
-— is qualitative (vendor marketing). J4 is the causal complement: do these systems actually
-narrow equity gaps, or just market that they do? Not scooped.
-
-## Design (Strand B — mechanism chapter)
+## Design (Strand B — mechanism evidence)
 
 FOIA'd contracts / vendor validation docs: *what features the model scores, what
 thresholds flag students, who receives attention.* Makes "allocation of attention"
 concrete rather than inferred. Descriptive, not causal.
 
-## The novel asset to collect: adoption timing
+## The adoption-timing panel
 
-A panel of **which U.S. institutions adopted which predictive/early-alert platform, and when.**
-This dataset does not exist publicly and is the paper's original empirical contribution.
-
-Candidate sources (to be vetted in the availability recon — see `adoption_sources.md`):
-- USASpending procurement records (reuse `../scrape_usaspending.py`)
+A panel of **which U.S. institutions adopted which predictive/early-alert platform, and
+when**, assembled from sourced public records (see `adoption_sources.md`):
+- USASpending procurement records
 - State-level FOIA / public-records contracts for public institutions
 - Vendor public client lists, case studies, press releases
 - Higher-ed trade press (Inside Higher Ed, Chronicle) adoption announcements
-
-## Status
-
-- [ ] Availability recon — can we date adoption for enough institutions for DiD? (gate)
-- [ ] Build adoption panel
-- [ ] Merge with IPEDS outcome panels
-- [ ] Staggered DiD + event study
-- [ ] Strand B FOIA mechanism evidence
-- [ ] Draft manuscript (private repo)
 
 ## Notes
 
