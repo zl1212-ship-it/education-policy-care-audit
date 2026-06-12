@@ -7,3 +7,7 @@ j7_proctoring/models/
 # external essay corpus; regenerate with fetch_anchor_data.py
 j6_detection/data/anchor/
 j7_proctoring/data/*.log
+# external scored-essay corpora (essay text stays out of git); regenerate with fetch_corpora.py
+j8_aes/data/raw/
+# embedding/feature caches; regenerate with run_scorers.py
+j8_aes/data/cache/
