@@ -50,6 +50,7 @@ cost_index) * N_g))`. It is a transparency artefact for the funding context.
 | `stipend_sensitivity.py` | Extrapolation-sensitivity check → `stipend_sensitivity.csv` (all 154 US cells observed) |
 | `stipend_validation.py` | Validates crowd-sourced reports against published institutional floors → `stipend_validation_table.csv` |
 | `stipend_validation.csv` | Officially published minimum stipend rates (10 institutions, source URLs + access dates) |
+| `lw_distribution.py` | Per-institution living-wage ratio distribution (median, share below 1.0) → `lw_distribution.csv` |
 
 ## Reproduce
 
