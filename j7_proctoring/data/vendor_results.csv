@@ -1,21 +1,32 @@
 kind,dimension,code,n_vendors,vendors,stratifier,group,rate_dark,rate_light,ratio,p_fisher
 distribution,noface_flag,automatic_flag,4.0,Proctorio|Respondus|Honorlock|ExamSoft,,,,,,
 distribution,noface_flag,not_documented,1.0,ProctorU (Meazure Learning),,,,,,
-distribution,id_gate,human_fallback,2.0,Honorlock|ProctorU (Meazure Learning),,,,,,
-distribution,id_gate,blocks_entry,1.0,Proctorio,,,,,,
+distribution,id_gate,blocks_entry,2.0,Proctorio|ProctorU (Meazure Learning),,,,,,
 distribution,id_gate,not_documented,1.0,Respondus,,,,,,
+distribution,id_gate,human_fallback,1.0,Honorlock,,,,,,
 distribution,id_gate,flag_proceed,1.0,ExamSoft,,,,,,
-distribution,consequence_path,instructor_review,4.0,Proctorio|Respondus|Honorlock|ExamSoft,,,,,,
-distribution,consequence_path,vendor_review,1.0,ProctorU (Meazure Learning),,,,,,
+distribution,consequence_path,instructor_review,3.0,Proctorio|Respondus|ExamSoft,,,,,,
+distribution,consequence_path,vendor_review,2.0,Honorlock|ProctorU (Meazure Learning),,,,,,
 distribution,human_review,yes_documented,5.0,Proctorio|Respondus|Honorlock|ProctorU (Meazure Learning)|ExamSoft,,,,,,
 distribution,lighting_burden,no,3.0,Proctorio|Honorlock|ProctorU (Meazure Learning),,,,,,
 distribution,lighting_burden,yes,2.0,Respondus|ExamSoft,,,,,,
-distribution,bias_acknowledgment,silent,3.0,Respondus|ProctorU (Meazure Learning)|ExamSoft,,,,,,
 distribution,bias_acknowledgment,deflected,2.0,Proctorio|Honorlock,,,,,,
+distribution,bias_acknowledgment,silent,2.0,ProctorU (Meazure Learning)|ExamSoft,,,,,,
+distribution,bias_acknowledgment,acknowledged,1.0,Respondus,,,,,,
 bridge,implied_flag_ratio,haar@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.3826,0.1949,1.96,2.7968206296852716e-20
 bridge,implied_flag_ratio,haar@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.4261,0.2595,1.64,5.570920716927976e-26
 bridge,implied_flag_ratio,haar@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.302,0.1761,1.71,5.3777020122068936e-11
 bridge,implied_flag_ratio,haar@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.3548,0.2273,1.56,4.305781228368313e-17
+bridge,implied_flag_ratio,haar+n@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.3926,0.1932,2.03,1.869746131094116e-22
+bridge,implied_flag_ratio,haar+n@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.4274,0.2686,1.59,1.5959756030034486e-23
+bridge,implied_flag_ratio,haar3@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.3138,0.1504,2.09,1.2513979564825544e-17
+bridge,implied_flag_ratio,haar3@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.3477,0.2129,1.63,2.1083138017133588e-19
+bridge,implied_flag_ratio,haar3@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.2276,0.1299,1.75,2.1451702776561404e-08
+bridge,implied_flag_ratio,haar3@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.2635,0.1669,1.58,1.9445983430366016e-12
+bridge,implied_flag_ratio,haar8@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.4521,0.241,1.88,2.5366639822906658e-23
+bridge,implied_flag_ratio,haar8@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.5013,0.3146,1.59,4.994741782234612e-30
+bridge,implied_flag_ratio,haar8@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.3796,0.2171,1.75,2.610026105084233e-15
+bridge,implied_flag_ratio,haar8@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.4447,0.2801,1.59,1.1489975693009288e-24
 bridge,implied_flag_ratio,mediapipe@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.0002,0.0034,0.07,0.0395082777383166
 bridge,implied_flag_ratio,mediapipe@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.0013,0.001,1.34,1.0
 bridge,implied_flag_ratio,mediapipe@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.0007,0.0,inf,1.0
@@ -24,7 +35,15 @@ bridge,implied_flag_ratio,mtcnn@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,
 bridge,implied_flag_ratio,mtcnn@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.0456,0.024,1.9,0.0003606941411247
 bridge,implied_flag_ratio,mtcnn@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.0056,0.0085,0.65,0.3837479227310895
 bridge,implied_flag_ratio,mtcnn@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.0071,0.0034,2.11,0.1510596584761079
+bridge,implied_flag_ratio,mtcnn+n@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.0411,0.0581,0.71,0.06483573110869
+bridge,implied_flag_ratio,mtcnn+n@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.0463,0.0297,1.56,0.0097713260074657
 bridge,implied_flag_ratio,yunet@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.1864,0.2239,0.83,0.0330816880218342
 bridge,implied_flag_ratio,yunet@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.2037,0.1631,1.25,0.0017073659305958
 bridge,implied_flag_ratio,yunet@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.1072,0.1556,0.69,0.0008109971082298
 bridge,implied_flag_ratio,yunet@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.1157,0.1113,1.04,0.7113185924978552
+bridge,implied_flag_ratio,yunet+n@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.5126,0.6051,0.85,2.694671990888862e-05
+bridge,implied_flag_ratio,yunet+n@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.4949,0.5228,0.95,0.1006040019904676
+bridge,implied_flag_ratio,yunet06@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.0026,0.0068,0.37,0.0948722817423395
+bridge,implied_flag_ratio,yunet06@exp0.15,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.0045,0.0019,2.34,0.2226166195101243
+bridge,implied_flag_ratio,yunet06@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,tone_bin,dark vs very_light,0.0005,0.0034,0.14,0.0727967444342145
+bridge,implied_flag_ratio,yunet06@exp1.0,,Proctorio|Respondus|Honorlock|ExamSoft,race,Black vs White,0.0,0.001,0.0,0.5104200935016645

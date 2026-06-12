@@ -11,16 +11,17 @@ Two modes.
       of record.
 
   python3 analyze_vendor_kappa.py
-      Reads the filled data/vendor_corpus_secondcoder.csv and computes percent
-      agreement (per dimension and overall) and Cohen's kappa against the codes
-      of record in data/vendor_corpus.csv. Writes data/vendor_kappa_results.csv.
+      Reads every filled pass saved as data/vendor_corpus_<name>.csv (for example
+      _esa, _friend, _codex), plus the AI-assisted codes of record, and computes
+      pairwise percent agreement and Cohen's kappa. Each pass is labeled human or
+      LLM from its filename; the human-human pair is the inter-rater statistic to
+      report, and any pair involving an LLM is a cross-check only, never pooled
+      into the human number. Writes data/vendor_kappa_results.csv.
 
-The design is a single primary coder. The second pass can be either (a) an
-independent person, giving inter-rater reliability (the stronger claim, as in
-the J6 governance audit), or (b) the same author re-coding after a washout
-interval and blind to the originals, giving intra-rater reliability. Report
-whichever it is, honestly, in Methods. Either way the codebook plus the archived
-text in data/vendor_raw/ keep every code checkable.
+Honest reporting: the human-human pair (e.g. the author and an independent second
+coder) is the inter-rater reliability. An LLM pass may be run as an extra
+cross-check, but it must be disclosed as an LLM and kept out of the human kappa.
+The codebook plus the archived text in data/vendor_raw/ keep every code checkable.
 
 Cohen's kappa is computed directly (no sklearn): kappa = (po - pe) / (1 - pe),
 where po is observed agreement and pe is chance agreement from the two coders'
@@ -95,46 +96,78 @@ def cohens_kappa(a, b):
     return (po - pe) / (1 - pe) if pe < 1 else 1.0, po
 
 
-def analyze():
-    if not FILLED.exists():
-        sys.exit(f"missing {FILLED}\nRun `python3 analyze_vendor_kappa.py template` "
-                 "first, fill it in, and save it under that name.")
-    second = pd.read_csv(FILLED)
-    second["code"] = second["code"].astype(str).str.strip()
-    orig = pd.read_csv(CORPUS).set_index("vendor")
+def coder_kind(name):
+    """Label a pass as human or LLM from its filename, so the LLM cross-check is
+    never silently pooled with the human inter-rater statistic."""
+    low = name.lower()
+    if any(k in low for k in ("codex", "gpt", "llm", "claude", "ai")):
+        return "LLM"
+    return "human"
 
-    # long table of (vendor, dimension, code_orig, code_2nd)
-    recs = []
-    for _, r in second.iterrows():
-        recs.append({"vendor": r["vendor"], "dimension": r["dimension"],
-                     "code_2nd": r["code"],
-                     "code_orig": str(orig.loc[r["vendor"], r["dimension"]])})
-    d = pd.DataFrame(recs)
 
+def load_pass(path):
+    """Read a filled template into a (vendor, dimension) -> code map."""
+    df = pd.read_csv(path)
+    df["code"] = df["code"].astype(str).str.strip()
+    return {(r["vendor"], r["dimension"]): r["code"] for _, r in df.iterrows()}
+
+
+def pair_stats(a, b):
+    """Per-dimension and overall percent agreement + Cohen's kappa for two maps
+    over the cells they share."""
+    cells = sorted(set(a) & set(b))
     rows = []
-    for dim in DIMS:
-        sub = d[d["dimension"] == dim]
-        agree = (sub["code_orig"] == sub["code_2nd"]).mean()
-        k, _ = cohens_kappa(sub["code_orig"], sub["code_2nd"])
-        rows.append({"dimension": dim, "n": len(sub),
-                     "percent_agreement": round(agree, 3),
+    for dim in DIMS + ["OVERALL"]:
+        keys = cells if dim == "OVERALL" else [c for c in cells if c[1] == dim]
+        if not keys:
+            continue
+        ca = [a[k] for k in keys]
+        cb = [b[k] for k in keys]
+        k, po = cohens_kappa(ca, cb)
+        rows.append({"dimension": dim, "n": len(keys),
+                     "percent_agreement": round(po, 3),
                      "cohens_kappa": round(k, 3)})
-    overall_k, overall_po = cohens_kappa(d["code_orig"], d["code_2nd"])
-    rows.append({"dimension": "OVERALL", "n": len(d),
-                 "percent_agreement": round(overall_po, 3),
-                 "cohens_kappa": round(overall_k, 3)})
+    return pd.DataFrame(rows)
 
-    res = pd.DataFrame(rows)
-    res.to_csv(OUT, index=False)
-    print(res.to_string(index=False))
-    print(f"\nwrote -> {OUT}")
-    disagree = d[d["code_orig"] != d["code_2nd"]]
-    if len(disagree):
-        print("\nDisagreements (resolve against the verbatim passage in "
-              "vendor_corpus.csv):")
-        print(disagree.to_string(index=False))
-    else:
-        print("\nNo disagreements: the two passes are identical on all 30 cells.")
+
+def analyze():
+    import glob
+    # collect every filled pass: data/vendor_corpus_<name>.csv (not the template,
+    # not the AI codes of record itself)
+    passes = {}
+    for f in sorted(glob.glob(str(HERE / "data" / "vendor_corpus_*.csv"))):
+        name = Path(f).stem.replace("vendor_corpus_", "")
+        if name.endswith("_template"):
+            continue
+        passes[name] = load_pass(f)
+    # the original AI-assisted codes of record, in long form
+    corpus = pd.read_csv(CORPUS).set_index("vendor")
+    passes["ai_record"] = {(v, dim): str(corpus.loc[v, dim])
+                           for v in corpus.index for dim in DIMS}
+
+    if len(passes) < 2:
+        sys.exit("Need at least one filled pass besides the AI record. Save coder "
+                 "files as data/vendor_corpus_<name>.csv (e.g. _esa, _friend, "
+                 "_codex), then rerun.")
+
+    names = list(passes)
+    print("passes found:", {n: coder_kind(n) for n in names}, "\n")
+    all_rows = []
+    for i, a in enumerate(names):
+        for b in names[i + 1:]:
+            kinds = f"{coder_kind(a)}-{coder_kind(b)}"
+            stats = pair_stats(passes[a], passes[b])
+            tag = " <== HUMAN INTER-RATER" if kinds == "human-human" else ""
+            print(f"=== {a} vs {b}  ({kinds}){tag} ===")
+            print(stats.to_string(index=False), "\n")
+            for _, r in stats.iterrows():
+                all_rows.append({"pass_a": a, "pass_b": b, "pair_kind": kinds,
+                                 **r.to_dict()})
+    pd.DataFrame(all_rows).to_csv(OUT, index=False)
+    print(f"wrote -> {OUT}")
+    print("\nFor the manuscript: report the human-human pair as the inter-rater "
+          "kappa. Any pair involving an LLM is a cross-check only and must be "
+          "described as such, never pooled into the human statistic.")
 
 
 if __name__ == "__main__":
