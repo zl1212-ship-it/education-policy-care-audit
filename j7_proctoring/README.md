@@ -58,7 +58,7 @@ make_figures.py       # Figures 1-3 -> ../paper/blinded-manuscript/j7_figure{1,2
   product lines: Proctorio, Respondus Monitor, Honorlock, ProctorU/Meazure, ExamSoft).
 - `data/vendor_raw/` — archived page text with provenance headers (URL, access date,
   HTTP status, raw-HTML sha256). Committed: live pages change, so the stored text at the
-  access date is the evidence of record behind each code (same rule as J6 policy_raw).
+  access date is the evidence of record behind each code.
 - `data/vendor_corpus.csv` — one row per vendor, six codes per `CODEBOOK_vendor.md`, each
   with a verbatim support passage and source slug.
 - `data/vendor_results.csv` — code distributions + the mechanical bridge from measured

@@ -11,7 +11,7 @@ system** (e.g., EAB Navigate, Civitas Learning, Starfish/Hobsons), does that ado
 
 The paper treats educational algorithms as *governance technologies that reallocate
 institutional attention* ("algorithmic opportunity allocation"). It is therefore NOT an
-audit of outcome disparity (that is the J2 paper, `../j2_audit/`); it estimates the
+audit of outcome disparity; it estimates the
 **causal effect of adopting algorithmic governance** on the distribution of opportunity.
 
 ## Design (Strand A — primary, causal)
@@ -24,14 +24,14 @@ audit of outcome disparity (that is the J2 paper, `../j2_audit/`); it estimates 
 - **Treatment:** campus-by-year indicator = its system adopted system-wide in year T (or the
   campus adopted standalone where datable, e.g., Georgia State 2012).
 - **Outcome:** primary = first-to-second-year retention (responds fast, proximate to the
-  attention-reallocation mechanism); secondary = racial/Pell completion gaps from the IPEDS
-  panels in `../j2_audit/disparate_impact_panel.csv` and `../j2_audit/pell_audit.py`.
+  attention-reallocation mechanism); secondary = racial/Pell completion gaps built from
+  public IPEDS graduation-rate and Pell tables (Urban Institute Education Data API).
 - **Panel ~2010–2023.** Need pre-adoption baseline for parallel-trends; flag/exclude COVID
   cohorts (2020–22) as a confounder.
 - **Estimator:** Callaway–Sant'Anna (2021) staggered DiD + event-study leads/lags;
   not-yet-treated systems (e.g., Hawaii 2025) as controls. TWFE benchmark only.
-- **Robustness:** drop known early-adopter campuses (bounded measurement error); reuse
-  `../j2_audit/robustness_audit.py`; pre-trend tests.
+- **Robustness:** drop known early-adopter campuses (bounded measurement error);
+  pre-trend tests.
 
 ## Literature positioning
 

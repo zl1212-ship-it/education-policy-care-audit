@@ -5,9 +5,8 @@ detection / identity verification outcomes become flags, alerts, or gates), fetc
 each page, and archives extracted text under data/vendor_raw/<slug>.txt with a
 provenance header (URL, access timestamp, HTTP status, sha256 of the raw HTML).
 Live pages change; the stored text at the access date is the evidence of record
-behind every code in data/vendor_corpus.csv (rule mirrored from the J6 policy
-layer). Coding follows CODEBOOK_vendor.md; codes carry verbatim support passages
-checked against these archives.
+behind every code in data/vendor_corpus.csv. Coding follows CODEBOOK_vendor.md;
+codes carry verbatim support passages checked against these archives.
 
 Re-running refreshes only missing archives unless --refetch is given, so the
 committed evidence is not silently replaced.

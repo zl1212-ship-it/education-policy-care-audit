@@ -6,8 +6,8 @@ Two celebrated cases, chosen to span the sector contrast:
     selective-private adopter that marketed the move as an access reform;
   - Montclair State University (185590, public broad-access, test-optional 2016), an
     access-mission public adopter with a high baseline minority share.
-This is the admissions analogue of the canonical-case logic in the J4 paper: take the celebrated
-reform and ask whether the celebrated outcome actually moved.
+The canonical-case logic: take the celebrated reform and ask whether the celebrated
+outcome actually moved.
 
 DONOR SCREEN. An earlier version used every never-adopter with a complete series (~900 donors).
 With only seven pre-years that pool interpolates the pre-period almost perfectly (pre-RMSPE ~ 0,
