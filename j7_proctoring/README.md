@@ -1,4 +1,4 @@
-# J7 — Remote-proctoring face-detection audit
+# Remote-proctoring face-detection audit
 
 Benchmarks the face-detection step used by remote-proctoring presence checks. Three
 coordinated pipelines:

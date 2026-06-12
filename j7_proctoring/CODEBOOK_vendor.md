@@ -1,4 +1,4 @@
-# J7 vendor consequence-mapping codebook
+# vendor consequence-mapping codebook
 
 Coding unit: one **vendor product line** (five rows). Evidence: only the vendor's own
 public documentation, fetched and archived verbatim by `build_vendor_corpus.py` under
@@ -39,7 +39,7 @@ document slug. Pages authored by client universities are out of scope.
    secure adequate lighting (well-lit room, no backlighting, no dark room)?
    - `yes` / `no`.
    Rationale: instructing students to fix lighting is the vendor acknowledging that
-   detection degrades in dim light while assigning the remedy to the student; J7's
+   detection degrades in dim light while assigning the remedy to the student; the
    exposure sweep measures whose faces that remedy fails first.
 
 6. **bias_acknowledgment** — does the archived public documentation acknowledge that

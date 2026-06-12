@@ -1,4 +1,4 @@
-# J6 sources and provenance
+# sources and provenance
 
 ## Human-essay corpora (anchor)
 - **Liang et al. (2023), ChatGPT-Detector-Bias.** Public human-written essays used here so that

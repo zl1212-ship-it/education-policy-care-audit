@@ -1,4 +1,4 @@
-# J7 sources and provenance
+# sources and provenance
 
 ## Face image panel (anchor)
 - **FairFace** (Karkkainen & Joo, 2021, WACV) — validation split, padding=1.25 ("in
@@ -44,6 +44,6 @@
 - Reports of proctoring face-detection failures for darker-skinned students
   (e.g., the 2020-21 bar-exam and university ExamSoft/Proctorio coverage; Feathers,
   "Proctorio Is Using Racist Algorithms to Detect Faces," Vice/Motherboard 2021,
-  which tested one vendor's open-source dependency). J7's contribution: a
+  which tested one vendor's open-source dependency). Contribution: a
   reproducible multi-detector audit on a balanced labeled panel, a controlled
   low-light exposure design, and the education-assessment consequence mapping.

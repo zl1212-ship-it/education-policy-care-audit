@@ -1,4 +1,4 @@
-# J6 — AI-writing-detector bias and governance audit
+# AI-writing-detector bias and governance audit
 
 Two coordinated audit pipelines:
 
@@ -33,5 +33,5 @@ make_figures.py         # Figures -> ../paper/blinded-manuscript/j6_figure{1,2,3
 - `data/policy_corpus_secondcoder.csv`, `data/policy_corpus_handcoder.csv` — independent second-coder pass over a random fifth of the census and an author hand-recode of the same institutions, both from the stored text.
 - `data/kappa_results.csv`, `data/kappa_results_human.csv` — per-dimension inter-rater agreement for those passes.
 
-Detectors are open-source and version-pinned (see `SOURCES.md`). Essay corpora are public.
+Detectors are open-source and version-pinned (see `SOURCES.md`).
 Codes are auditable against the fetched policy text archived under `data/policy_raw/`.

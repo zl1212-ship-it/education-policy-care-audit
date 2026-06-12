@@ -1,4 +1,4 @@
-# J2 — Disparate-impact audit of college completion (four-fifths rule)
+# Disparate-impact audit of college completion (four-fifths rule)
 
 Applies the EEOC Four-Fifths (4/5ths) adverse-impact rule to college completion outcomes:
 per institution-year, the ratio of each subgroup's completion rate to the White (or

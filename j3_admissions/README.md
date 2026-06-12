@@ -1,4 +1,4 @@
-# J3 — Test-optional admissions audit (measurement vs access)
+# Test-optional admissions audit (measurement vs access)
 
 Replication code and data for the test-optional admissions audit. Everything in this
 directory is reproducible from public IPEDS data.

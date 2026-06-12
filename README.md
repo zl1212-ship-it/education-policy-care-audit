@@ -15,7 +15,7 @@ are unrelated artifacts of different pipelines.
 
 | Directory | What it computes | Primary public sources |
 |---|---|---|
-| repo root (J1) | Institution-year panel of doctoral stipend reports scored against single-adult local living wages, with funding and enrollment context | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
+| repo root | Institution-year panel of doctoral stipend reports scored against single-adult local living wages, with funding and enrollment context | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
 | [`j2_audit/`](j2_audit/) | Institution-year four-fifths (adverse-impact) screen on completion rates by race and income, plus a predictive layer | IPEDS Graduation Rates / Outcome Measures (Urban Institute API) |
 | [`j3_admissions/`](j3_admissions/) | Staggered DiD and synthetic control on admissions and entering-class composition outcomes around test-optional adoption | IPEDS admissions and enrollment panels |
 | [`j4_adoption/`](j4_adoption/) | Dated adoption panel for predictive-advising systems; staggered DiD on retention and completion-gap outcomes | Dated vendor/system contracts + IPEDS outcomes |
@@ -32,11 +32,11 @@ the data sources, and the exact script run order (panels first, then analysis, t
 ## Frozen tags
 
 Submitted manuscripts cite frozen snapshots so later data refreshes never silently change a
-reported number. `paper-data-v1` and `paper-data-v2` freeze the J1 stipend panel (v2 matches
+reported number. `paper-data-v1` and `paper-data-v2` freeze the stipend panel (v2 matches
 the current manuscript). Pipelines commit their assembled panels, so any
 commit reachable from a paper's access date reproduces that paper's inputs.
 
-## J1 — Doctoral stipend adequacy audit (repo root)
+## Repo Root
 
 This pipeline predates the per-directory layout, so it lives at the repository root; the
 frozen tags reference these paths.
@@ -47,8 +47,7 @@ stipend relative to a single-adult local living wage (crowd-sourced PhD Stipends
 aggregated to institutional means; this adequacy ratio is the primary measure. Institutional
 federal funding totals (USASpending.gov) establish resource scale, and graduate enrollment
 (IPEDS via Urban Institute) and research-doctorate counts (NSF SED) provide context.
-`governance_matrix.csv` is the assembled institution-year panel (distinct from J5's
-`nasbe_governance_matrix_2024.csv`, which is a different pipeline's source file).
+`governance_matrix.csv` is the assembled institution-year panel.
 
 | File | Contents |
 |---|---|
@@ -66,7 +65,7 @@ federal funding totals (USASpending.gov) establish resource scale, and graduate 
 | `stipend_validation.csv` | Officially published minimum stipend rates (10 institutions, source URLs + access dates) |
 | `lw_distribution.py` | Per-institution living-wage ratio distribution → `lw_distribution.csv` |
 
-### Reproduce J1
+### Reproduce
 
 ```bash
 git clone https://github.com/zl1212-ship-it/education-policy-care-audit
@@ -83,11 +82,11 @@ Python 3.9+; numpy, pandas, scipy, matplotlib (plus per-pipeline extras noted in
 README). No build system: scripts run directly with `python3`, in the order each pipeline's
 README gives.
 
-## Sources (J1)
+## Sources
 
 * PhD Stipends — <https://www.phdstipends.com/> (stipends and living-wage ratios)
 * USASpending.gov API — <https://api.usaspending.gov/> (federal awards)
 * IPEDS via Urban Institute Education Data Portal — <https://educationdata.urban.org/>
 * NSF NCSES Survey of Earned Doctorates — <https://ncses.nsf.gov/>
 
-Sources for J2–J7 are documented in each pipeline's README and `SOURCES.md`.
+Sources are documented in each pipeline's README and `SOURCES.md`.

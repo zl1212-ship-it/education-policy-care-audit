@@ -1,4 +1,4 @@
-# J6 governance-layer codebook
+# governance-layer codebook
 
 Coding protocol for the academic-integrity / AI policy corpus. One row per
 institution per policy document. Every code must be supported by a verbatim

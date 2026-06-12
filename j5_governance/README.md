@@ -1,4 +1,4 @@
-# J5 — State board authority and representation audit
+# State board authority and representation audit
 
 Codes the NASBE State Education Governance Matrix (50 states + DC) into governance variables
 and two indices: the rulemaking authority each state board of education holds (adopting

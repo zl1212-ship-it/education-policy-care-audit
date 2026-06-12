@@ -1,4 +1,4 @@
-# Data sources — J5 (governance representation audit)
+# Data sources — (governance representation audit)
 
 All data are public and current as of June 2026. No values are imputed except where noted.
 

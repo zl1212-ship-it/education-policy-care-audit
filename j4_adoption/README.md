@@ -1,4 +1,4 @@
-# J4 — Predictive-advising adoption audit (completion gaps)
+# Predictive-advising adoption audit (completion gaps)
 
 Replication code and data for the predictive-advising adoption audit.
 
