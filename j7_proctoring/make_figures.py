@@ -150,7 +150,6 @@ for ax, title in ((axL, "Detection gate\n(Black vs White miss ratio, FairFace)")
     ax.legend(frameon=False, fontsize=9)
     ax.spines[["top", "right"]].set_visible(False)
 axL.set_ylabel("Group failure rate ratio")
-fig.suptitle("The gap lives at the detection gate, not the matcher", fontsize=11)
 save(fig, "j7_figure3")
 
 print(f"figures written -> {os.path.abspath(OUT)}/j7_figure{{1,2,3}}.{{pdf,png,tiff}}")

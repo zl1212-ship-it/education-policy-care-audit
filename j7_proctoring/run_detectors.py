@@ -82,6 +82,20 @@ def underexpose(img_bgr, factor):
     return np.clip(out, 0, 255).astype(np.uint8)
 
 
+def shrink_face(img_bgr, scale=0.2, bg=114):
+    """Simulate a distant, small face (M3 robustness): the FairFace crop fills the
+    frame, but a real exam webcam sees a small, off-center face. Shrink the crop to
+    `scale` of frame size and pad it back to the original size with neutral gray, so
+    the face occupies about `scale` of the frame instead of filling it."""
+    h, w = img_bgr.shape[:2]
+    sh, sw = max(1, int(h * scale)), max(1, int(w * scale))
+    small = cv2.resize(img_bgr, (sw, sh), interpolation=cv2.INTER_AREA)
+    canvas = np.full((h, w, 3), bg, np.uint8)
+    y0, x0 = (h - sh) // 2, (w - sw) // 2
+    canvas[y0:y0 + sh, x0:x0 + sw] = small
+    return canvas
+
+
 def add_sensor_noise(img_bgr, rng, read_sigma=3.0, shot_gain=0.5):
     """Approximate a dim webcam's sensor noise (M5 robustness check): a
     signal-dependent Poisson shot term plus a fixed Gaussian read term, added
@@ -187,6 +201,9 @@ def main():
     ap.add_argument("--noise", action="store_true",
                     help="add sensor noise after underexposure (M5 robustness); "
                          "the detector is recorded with a +n suffix")
+    ap.add_argument("--small-face", type=float, default=0.0, metavar="SCALE",
+                    help="shrink the face to SCALE of the frame (e.g. 0.2) to "
+                         "simulate a distant webcam (M3); recorded with a +sNN suffix")
     ap.add_argument("--seed", type=int, default=0)
     args = ap.parse_args()
     detectors = args.detectors.split(",")
@@ -196,11 +213,17 @@ def main():
     files = pd.read_csv(PANEL_CSV)["file"].tolist()
     for name in detectors:
         run = BUILDERS[name]()
-        out_name = name + "+n" if args.noise else name
+        out_name = name
+        if args.small_face > 0:
+            out_name += f"+s{int(args.small_face*100)}"
+        if args.noise:
+            out_name += "+n"
         for exp in exposures:
             rows = []
             for i, fname in enumerate(files):
                 img = underexpose(cv2.imread(os.path.join(RAW_DIR, fname)), exp)
+                if args.small_face > 0:
+                    img = shrink_face(img, scale=args.small_face)
                 if args.noise:
                     img = add_sensor_noise(img, rng)
                 n, conf = run(img)

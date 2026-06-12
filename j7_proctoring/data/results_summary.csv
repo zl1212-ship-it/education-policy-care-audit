@@ -111,6 +111,38 @@ rate,all,haar+n,0.25,race,Black,1556,626.0,0.4023,0.3782,0.4269,,,,
 contrast,all,haar+n,0.25,tone_bin,dark vs very_light,4887,,0.3482,,,0.2,0.1482,1.74,1.356934399864709e-13
 contrast,all,haar+n,0.25,race,Black vs White,3641,,0.4023,,,0.2451,0.1572,1.64,6.323608117573282e-24
 trend,all,haar+n,0.25,ita_continuous,spearman,10954,,,,,,,0.1816,6.709731381706072e-82
+rate,all,haar+s20,1.0,tone_bin,very_light,585,240.0,0.4103,0.3711,0.4506,,,,
+rate,all,haar+s20,1.0,tone_bin,light,564,209.0,0.3706,0.3317,0.4112,,,,
+rate,all,haar+s20,1.0,tone_bin,intermediate,781,272.0,0.3483,0.3157,0.3824,,,,
+rate,all,haar+s20,1.0,tone_bin,tan,1299,464.0,0.3572,0.3316,0.3836,,,,
+rate,all,haar+s20,1.0,tone_bin,brown,3423,1432.0,0.4183,0.4019,0.435,,,,
+rate,all,haar+s20,1.0,tone_bin,dark,4302,2622.0,0.6095,0.5948,0.624,,,,
+rate,all,haar+s20,1.0,race,White,2085,964.0,0.4624,0.441,0.4838,,,,
+rate,all,haar+s20,1.0,race,East Asian,1550,735.0,0.4742,0.4494,0.4991,,,,
+rate,all,haar+s20,1.0,race,Latino_Hispanic,1623,645.0,0.3974,0.3739,0.4214,,,,
+rate,all,haar+s20,1.0,race,Middle Eastern,1209,566.0,0.4682,0.4402,0.4963,,,,
+rate,all,haar+s20,1.0,race,Southeast Asian,1415,651.0,0.4601,0.4342,0.4861,,,,
+rate,all,haar+s20,1.0,race,Indian,1516,655.0,0.4321,0.4073,0.4571,,,,
+rate,all,haar+s20,1.0,race,Black,1556,1023.0,0.6575,0.6335,0.6806,,,,
+contrast,all,haar+s20,1.0,tone_bin,dark vs very_light,4887,,0.6095,,,0.4103,0.1992,1.49,1.1302138551113556e-19
+contrast,all,haar+s20,1.0,race,Black vs White,3641,,0.6575,,,0.4624,0.1951,1.42,7.440226849317576e-32
+trend,all,haar+s20,1.0,ita_continuous,spearman,10954,,,,,,,0.22,3.9727183100057986e-120
+rate,all,haar+s30,1.0,tone_bin,very_light,585,118.0,0.2017,0.1712,0.2361,,,,
+rate,all,haar+s30,1.0,tone_bin,light,564,132.0,0.234,0.201,0.2707,,,,
+rate,all,haar+s30,1.0,tone_bin,intermediate,781,163.0,0.2087,0.1817,0.2386,,,,
+rate,all,haar+s30,1.0,tone_bin,tan,1299,274.0,0.2109,0.1896,0.234,,,,
+rate,all,haar+s30,1.0,tone_bin,brown,3423,820.0,0.2396,0.2256,0.2541,,,,
+rate,all,haar+s30,1.0,tone_bin,dark,4302,1633.0,0.3796,0.3652,0.3942,,,,
+rate,all,haar+s30,1.0,race,White,2085,572.0,0.2743,0.2556,0.2939,,,,
+rate,all,haar+s30,1.0,race,East Asian,1550,436.0,0.2813,0.2595,0.3042,,,,
+rate,all,haar+s30,1.0,race,Latino_Hispanic,1623,391.0,0.2409,0.2207,0.2623,,,,
+rate,all,haar+s30,1.0,race,Middle Eastern,1209,310.0,0.2564,0.2326,0.2818,,,,
+rate,all,haar+s30,1.0,race,Southeast Asian,1415,364.0,0.2572,0.2351,0.2807,,,,
+rate,all,haar+s30,1.0,race,Indian,1516,368.0,0.2427,0.2218,0.265,,,,
+rate,all,haar+s30,1.0,race,Black,1556,699.0,0.4492,0.4247,0.474,,,,
+contrast,all,haar+s30,1.0,tone_bin,dark vs very_light,4887,,0.3796,,,0.2017,0.1779,1.88,2.8118993038320188e-18
+contrast,all,haar+s30,1.0,race,Black vs White,3641,,0.4492,,,0.2743,0.1749,1.64,1.1219672433203185e-27
+trend,all,haar+s30,1.0,ita_continuous,spearman,10954,,,,,,,0.1772,6.307945123476206e-78
 rate,all,haar3,0.15,tone_bin,very_light,585,88.0,0.1504,0.1237,0.1817,,,,
 rate,all,haar3,0.15,tone_bin,light,564,75.0,0.133,0.1074,0.1635,,,,
 rate,all,haar3,0.15,tone_bin,intermediate,781,104.0,0.1332,0.1111,0.1588,,,,
@@ -367,6 +399,38 @@ rate,all,mtcnn+n,0.25,race,Black,1556,44.0,0.0283,0.0211,0.0377,,,,
 contrast,all,mtcnn+n,0.25,tone_bin,dark vs very_light,4887,,0.0225,,,0.0393,-0.0168,0.57,0.02147213677439276
 contrast,all,mtcnn+n,0.25,race,Black vs White,3641,,0.0283,,,0.0173,0.011,1.64,0.029515167033220394
 trend,all,mtcnn+n,0.25,ita_continuous,spearman,10954,,,,,,,0.0421,1.0364324182502294e-05
+rate,all,mtcnn+s20,1.0,tone_bin,very_light,585,15.0,0.0256,0.0156,0.0419,,,,
+rate,all,mtcnn+s20,1.0,tone_bin,light,564,2.0,0.0035,0.001,0.0128,,,,
+rate,all,mtcnn+s20,1.0,tone_bin,intermediate,781,2.0,0.0026,0.0007,0.0093,,,,
+rate,all,mtcnn+s20,1.0,tone_bin,tan,1299,8.0,0.0062,0.0031,0.0121,,,,
+rate,all,mtcnn+s20,1.0,tone_bin,brown,3423,10.0,0.0029,0.0016,0.0054,,,,
+rate,all,mtcnn+s20,1.0,tone_bin,dark,4302,35.0,0.0081,0.0059,0.0113,,,,
+rate,all,mtcnn+s20,1.0,race,White,2085,17.0,0.0082,0.0051,0.013,,,,
+rate,all,mtcnn+s20,1.0,race,East Asian,1550,16.0,0.0103,0.0064,0.0167,,,,
+rate,all,mtcnn+s20,1.0,race,Latino_Hispanic,1623,3.0,0.0018,0.0006,0.0054,,,,
+rate,all,mtcnn+s20,1.0,race,Middle Eastern,1209,10.0,0.0083,0.0045,0.0152,,,,
+rate,all,mtcnn+s20,1.0,race,Southeast Asian,1415,6.0,0.0042,0.0019,0.0092,,,,
+rate,all,mtcnn+s20,1.0,race,Indian,1516,6.0,0.004,0.0018,0.0086,,,,
+rate,all,mtcnn+s20,1.0,race,Black,1556,14.0,0.009,0.0054,0.015,,,,
+contrast,all,mtcnn+s20,1.0,tone_bin,dark vs very_light,4887,,0.0081,,,0.0256,-0.0175,0.32,0.0005021068599667263
+contrast,all,mtcnn+s20,1.0,race,Black vs White,3641,,0.009,,,0.0082,0.0008,1.1,0.8559790526388706
+trend,all,mtcnn+s20,1.0,ita_continuous,spearman,10954,,,,,,,0.0069,0.47070021476386503
+rate,all,mtcnn+s30,1.0,tone_bin,very_light,585,11.0,0.0188,0.0105,0.0334,,,,
+rate,all,mtcnn+s30,1.0,tone_bin,light,564,1.0,0.0018,0.0003,0.01,,,,
+rate,all,mtcnn+s30,1.0,tone_bin,intermediate,781,4.0,0.0051,0.002,0.0131,,,,
+rate,all,mtcnn+s30,1.0,tone_bin,tan,1299,7.0,0.0054,0.0026,0.0111,,,,
+rate,all,mtcnn+s30,1.0,tone_bin,brown,3423,4.0,0.0012,0.0005,0.003,,,,
+rate,all,mtcnn+s30,1.0,tone_bin,dark,4302,36.0,0.0084,0.0061,0.0116,,,,
+rate,all,mtcnn+s30,1.0,race,White,2085,15.0,0.0072,0.0044,0.0118,,,,
+rate,all,mtcnn+s30,1.0,race,East Asian,1550,13.0,0.0084,0.0049,0.0143,,,,
+rate,all,mtcnn+s30,1.0,race,Latino_Hispanic,1623,3.0,0.0018,0.0006,0.0054,,,,
+rate,all,mtcnn+s30,1.0,race,Middle Eastern,1209,10.0,0.0083,0.0045,0.0152,,,,
+rate,all,mtcnn+s30,1.0,race,Southeast Asian,1415,3.0,0.0021,0.0007,0.0062,,,,
+rate,all,mtcnn+s30,1.0,race,Indian,1516,6.0,0.004,0.0018,0.0086,,,,
+rate,all,mtcnn+s30,1.0,race,Black,1556,13.0,0.0084,0.0049,0.0142,,,,
+contrast,all,mtcnn+s30,1.0,tone_bin,dark vs very_light,4887,,0.0084,,,0.0188,-0.0104,0.45,0.022687189028552136
+contrast,all,mtcnn+s30,1.0,race,Black vs White,3641,,0.0084,,,0.0072,0.0012,1.16,0.7052333370854049
+trend,all,mtcnn+s30,1.0,ita_continuous,spearman,10954,,,,,,,0.0179,0.06111300471741111
 rate,all,yunet,0.15,tone_bin,very_light,585,131.0,0.2239,0.192,0.2595,,,,
 rate,all,yunet,0.15,tone_bin,light,564,85.0,0.1507,0.1236,0.1826,,,,
 rate,all,yunet,0.15,tone_bin,intermediate,781,108.0,0.1383,0.1158,0.1643,,,,
@@ -479,6 +543,38 @@ rate,all,yunet+n,0.25,race,Black,1556,665.0,0.4274,0.403,0.4521,,,,
 contrast,all,yunet+n,0.25,tone_bin,dark vs very_light,4887,,0.4342,,,0.5658,-0.1316,0.77,2.56290368938107e-09
 contrast,all,yunet+n,0.25,race,Black vs White,3641,,0.4274,,,0.4475,-0.0201,0.96,0.23745680527642615
 trend,all,yunet+n,0.25,ita_continuous,spearman,10954,,,,,,,0.0554,6.506886193563777e-09
+rate,all,yunet+s20,1.0,tone_bin,very_light,585,342.0,0.5846,0.5443,0.6239,,,,
+rate,all,yunet+s20,1.0,tone_bin,light,564,243.0,0.4309,0.3906,0.4721,,,,
+rate,all,yunet+s20,1.0,tone_bin,intermediate,781,311.0,0.3982,0.3645,0.433,,,,
+rate,all,yunet+s20,1.0,tone_bin,tan,1299,489.0,0.3764,0.3505,0.4031,,,,
+rate,all,yunet+s20,1.0,tone_bin,brown,3423,1271.0,0.3713,0.3553,0.3876,,,,
+rate,all,yunet+s20,1.0,tone_bin,dark,4302,2093.0,0.4865,0.4716,0.5015,,,,
+rate,all,yunet+s20,1.0,race,White,2085,972.0,0.4662,0.4449,0.4876,,,,
+rate,all,yunet+s20,1.0,race,East Asian,1550,678.0,0.4374,0.4129,0.4622,,,,
+rate,all,yunet+s20,1.0,race,Latino_Hispanic,1623,585.0,0.3604,0.3374,0.3841,,,,
+rate,all,yunet+s20,1.0,race,Middle Eastern,1209,581.0,0.4806,0.4525,0.5087,,,,
+rate,all,yunet+s20,1.0,race,Southeast Asian,1415,533.0,0.3767,0.3518,0.4022,,,,
+rate,all,yunet+s20,1.0,race,Indian,1516,601.0,0.3964,0.3721,0.4213,,,,
+rate,all,yunet+s20,1.0,race,Black,1556,799.0,0.5135,0.4887,0.5383,,,,
+contrast,all,yunet+s20,1.0,tone_bin,dark vs very_light,4887,,0.4865,,,0.5846,-0.0981,0.83,8.353357695914009e-06
+contrast,all,yunet+s20,1.0,race,Black vs White,3641,,0.5135,,,0.4662,0.0473,1.1,0.004880670037215465
+trend,all,yunet+s20,1.0,ita_continuous,spearman,10954,,,,,,,0.0653,7.746574213865995e-12
+rate,all,yunet+s30,1.0,tone_bin,very_light,585,168.0,0.2872,0.252,0.3251,,,,
+rate,all,yunet+s30,1.0,tone_bin,light,564,102.0,0.1809,0.1513,0.2147,,,,
+rate,all,yunet+s30,1.0,tone_bin,intermediate,781,145.0,0.1857,0.16,0.2144,,,,
+rate,all,yunet+s30,1.0,tone_bin,tan,1299,219.0,0.1686,0.1492,0.1899,,,,
+rate,all,yunet+s30,1.0,tone_bin,brown,3423,481.0,0.1405,0.1293,0.1526,,,,
+rate,all,yunet+s30,1.0,tone_bin,dark,4302,869.0,0.202,0.1903,0.2143,,,,
+rate,all,yunet+s30,1.0,race,White,2085,428.0,0.2053,0.1885,0.2231,,,,
+rate,all,yunet+s30,1.0,race,East Asian,1550,289.0,0.1865,0.1678,0.2066,,,,
+rate,all,yunet+s30,1.0,race,Latino_Hispanic,1623,256.0,0.1577,0.1408,0.1763,,,,
+rate,all,yunet+s30,1.0,race,Middle Eastern,1209,270.0,0.2233,0.2007,0.2477,,,,
+rate,all,yunet+s30,1.0,race,Southeast Asian,1415,205.0,0.1449,0.1275,0.1642,,,,
+rate,all,yunet+s30,1.0,race,Indian,1516,232.0,0.153,0.1358,0.172,,,,
+rate,all,yunet+s30,1.0,race,Black,1556,304.0,0.1954,0.1764,0.2158,,,,
+contrast,all,yunet+s30,1.0,tone_bin,dark vs very_light,4887,,0.202,,,0.2872,-0.0852,0.7,4.387532888596963e-06
+contrast,all,yunet+s30,1.0,race,Black vs White,3641,,0.1954,,,0.2053,-0.0099,0.95,0.4774772743301538
+trend,all,yunet+s30,1.0,ita_continuous,spearman,10954,,,,,,,0.0248,0.009576543294692189
 rate,all,yunet06,0.15,tone_bin,very_light,585,4.0,0.0068,0.0027,0.0174,,,,
 rate,all,yunet06,0.15,tone_bin,light,564,1.0,0.0018,0.0003,0.01,,,,
 rate,all,yunet06,0.15,tone_bin,intermediate,781,1.0,0.0013,0.0002,0.0072,,,,
@@ -671,6 +767,38 @@ rate,adult,haar+n,0.25,race,Black,1072,441.0,0.4114,0.3823,0.4411,,,,
 contrast,adult,haar+n,0.25,tone_bin,dark vs very_light,3700,,0.345,,,0.2173,0.1278,1.59,5.6212538876455345e-08
 contrast,adult,haar+n,0.25,race,Black vs White,2750,,0.4114,,,0.2384,0.173,1.73,1.8662647426809824e-21
 trend,adult,haar+n,0.25,ita_continuous,spearman,8218,,,,,,,0.1778,2.3541519951487513e-59
+rate,adult,haar+s20,1.0,tone_bin,very_light,428,183.0,0.4276,0.3815,0.4749,,,,
+rate,adult,haar+s20,1.0,tone_bin,light,419,150.0,0.358,0.3136,0.405,,,,
+rate,adult,haar+s20,1.0,tone_bin,intermediate,575,208.0,0.3617,0.3235,0.4018,,,,
+rate,adult,haar+s20,1.0,tone_bin,tan,958,327.0,0.3413,0.312,0.3719,,,,
+rate,adult,haar+s20,1.0,tone_bin,brown,2566,1064.0,0.4147,0.3957,0.4338,,,,
+rate,adult,haar+s20,1.0,tone_bin,dark,3272,1938.0,0.5923,0.5754,0.609,,,,
+rate,adult,haar+s20,1.0,race,White,1678,764.0,0.4553,0.4316,0.4792,,,,
+rate,adult,haar+s20,1.0,race,East Asian,1136,543.0,0.478,0.4491,0.5071,,,,
+rate,adult,haar+s20,1.0,race,Latino_Hispanic,1211,478.0,0.3947,0.3676,0.4225,,,,
+rate,adult,haar+s20,1.0,race,Middle Eastern,998,456.0,0.4569,0.4262,0.4879,,,,
+rate,adult,haar+s20,1.0,race,Southeast Asian,994,452.0,0.4547,0.424,0.4858,,,,
+rate,adult,haar+s20,1.0,race,Indian,1129,484.0,0.4287,0.4001,0.4578,,,,
+rate,adult,haar+s20,1.0,race,Black,1072,693.0,0.6465,0.6174,0.6745,,,,
+contrast,adult,haar+s20,1.0,tone_bin,dark vs very_light,3700,,0.5923,,,0.4276,0.1647,1.39,1.2985087828058783e-10
+contrast,adult,haar+s20,1.0,race,Black vs White,2750,,0.6465,,,0.4553,0.1912,1.42,8.760877724621402e-23
+trend,adult,haar+s20,1.0,ita_continuous,spearman,8218,,,,,,,0.2096,3.053709336498144e-82
+rate,adult,haar+s30,1.0,tone_bin,very_light,428,95.0,0.222,0.1852,0.2637,,,,
+rate,adult,haar+s30,1.0,tone_bin,light,419,93.0,0.222,0.1848,0.2642,,,,
+rate,adult,haar+s30,1.0,tone_bin,intermediate,575,126.0,0.2191,0.1872,0.2547,,,,
+rate,adult,haar+s30,1.0,tone_bin,tan,958,197.0,0.2056,0.1812,0.2324,,,,
+rate,adult,haar+s30,1.0,tone_bin,brown,2566,627.0,0.2443,0.2281,0.2613,,,,
+rate,adult,haar+s30,1.0,tone_bin,dark,3272,1219.0,0.3726,0.3561,0.3893,,,,
+rate,adult,haar+s30,1.0,race,White,1678,458.0,0.2729,0.2522,0.2948,,,,
+rate,adult,haar+s30,1.0,race,East Asian,1136,334.0,0.294,0.2683,0.3212,,,,
+rate,adult,haar+s30,1.0,race,Latino_Hispanic,1211,277.0,0.2287,0.206,0.2532,,,,
+rate,adult,haar+s30,1.0,race,Middle Eastern,998,259.0,0.2595,0.2333,0.2876,,,,
+rate,adult,haar+s30,1.0,race,Southeast Asian,994,262.0,0.2636,0.2371,0.2918,,,,
+rate,adult,haar+s30,1.0,race,Indian,1129,287.0,0.2542,0.2297,0.2804,,,,
+rate,adult,haar+s30,1.0,race,Black,1072,480.0,0.4478,0.4182,0.4777,,,,
+contrast,adult,haar+s30,1.0,tone_bin,dark vs very_light,3700,,0.3726,,,0.222,0.1506,1.68,3.596529913620381e-10
+contrast,adult,haar+s30,1.0,race,Black vs White,2750,,0.4478,,,0.2729,0.1748,1.64,7.94288542434453e-21
+trend,adult,haar+s30,1.0,ita_continuous,spearman,8218,,,,,,,0.1683,2.782845789294435e-53
 rate,adult,haar3,0.15,tone_bin,very_light,428,70.0,0.1636,0.1315,0.2016,,,,
 rate,adult,haar3,0.15,tone_bin,light,419,56.0,0.1337,0.1044,0.1696,,,,
 rate,adult,haar3,0.15,tone_bin,intermediate,575,85.0,0.1478,0.1212,0.1792,,,,
@@ -927,6 +1055,38 @@ rate,adult,mtcnn+n,0.25,race,Black,1072,33.0,0.0308,0.022,0.0429,,,,
 contrast,adult,mtcnn+n,0.25,tone_bin,dark vs very_light,3700,,0.022,,,0.0491,-0.0271,0.45,0.0025136788371676244
 contrast,adult,mtcnn+n,0.25,race,Black vs White,2750,,0.0308,,,0.0179,0.0129,1.72,0.03573369407731238
 trend,adult,mtcnn+n,0.25,ita_continuous,spearman,8218,,,,,,,0.0319,0.003772589433359581
+rate,adult,mtcnn+s20,1.0,tone_bin,very_light,428,12.0,0.028,0.0161,0.0484,,,,
+rate,adult,mtcnn+s20,1.0,tone_bin,light,419,2.0,0.0048,0.0013,0.0172,,,,
+rate,adult,mtcnn+s20,1.0,tone_bin,intermediate,575,1.0,0.0017,0.0003,0.0098,,,,
+rate,adult,mtcnn+s20,1.0,tone_bin,tan,958,7.0,0.0073,0.0035,0.015,,,,
+rate,adult,mtcnn+s20,1.0,tone_bin,brown,2566,8.0,0.0031,0.0016,0.0061,,,,
+rate,adult,mtcnn+s20,1.0,tone_bin,dark,3272,26.0,0.0079,0.0054,0.0116,,,,
+rate,adult,mtcnn+s20,1.0,race,White,1678,15.0,0.0089,0.0054,0.0147,,,,
+rate,adult,mtcnn+s20,1.0,race,East Asian,1136,14.0,0.0123,0.0074,0.0206,,,,
+rate,adult,mtcnn+s20,1.0,race,Latino_Hispanic,1211,1.0,0.0008,0.0001,0.0047,,,,
+rate,adult,mtcnn+s20,1.0,race,Middle Eastern,998,7.0,0.007,0.0034,0.0144,,,,
+rate,adult,mtcnn+s20,1.0,race,Southeast Asian,994,6.0,0.006,0.0028,0.0131,,,,
+rate,adult,mtcnn+s20,1.0,race,Indian,1129,3.0,0.0027,0.0009,0.0078,,,,
+rate,adult,mtcnn+s20,1.0,race,Black,1072,10.0,0.0093,0.0051,0.0171,,,,
+contrast,adult,mtcnn+s20,1.0,tone_bin,dark vs very_light,3700,,0.0079,,,0.028,-0.0201,0.28,0.0007923781805007475
+contrast,adult,mtcnn+s20,1.0,race,Black vs White,2750,,0.0093,,,0.0089,0.0004,1.04,1.0
+trend,adult,mtcnn+s20,1.0,ita_continuous,spearman,8218,,,,,,,-0.0021,0.8511048493898681
+rate,adult,mtcnn+s30,1.0,tone_bin,very_light,428,9.0,0.021,0.0111,0.0395,,,,
+rate,adult,mtcnn+s30,1.0,tone_bin,light,419,1.0,0.0024,0.0004,0.0134,,,,
+rate,adult,mtcnn+s30,1.0,tone_bin,intermediate,575,3.0,0.0052,0.0018,0.0152,,,,
+rate,adult,mtcnn+s30,1.0,tone_bin,tan,958,5.0,0.0052,0.0022,0.0122,,,,
+rate,adult,mtcnn+s30,1.0,tone_bin,brown,2566,4.0,0.0016,0.0006,0.004,,,,
+rate,adult,mtcnn+s30,1.0,tone_bin,dark,3272,31.0,0.0095,0.0067,0.0134,,,,
+rate,adult,mtcnn+s30,1.0,race,White,1678,13.0,0.0077,0.0045,0.0132,,,,
+rate,adult,mtcnn+s30,1.0,race,East Asian,1136,12.0,0.0106,0.0061,0.0184,,,,
+rate,adult,mtcnn+s30,1.0,race,Latino_Hispanic,1211,2.0,0.0017,0.0005,0.006,,,,
+rate,adult,mtcnn+s30,1.0,race,Middle Eastern,998,8.0,0.008,0.0041,0.0157,,,,
+rate,adult,mtcnn+s30,1.0,race,Southeast Asian,994,3.0,0.003,0.001,0.0088,,,,
+rate,adult,mtcnn+s30,1.0,race,Indian,1129,4.0,0.0035,0.0014,0.0091,,,,
+rate,adult,mtcnn+s30,1.0,race,Black,1072,11.0,0.0103,0.0057,0.0183,,,,
+contrast,adult,mtcnn+s30,1.0,tone_bin,dark vs very_light,3700,,0.0095,,,0.021,-0.0116,0.45,0.04248697459439
+contrast,adult,mtcnn+s30,1.0,race,Black vs White,2750,,0.0103,,,0.0077,0.0025,1.32,0.5313523941199205
+trend,adult,mtcnn+s30,1.0,ita_continuous,spearman,8218,,,,,,,0.0188,0.08824834970982862
 rate,adult,yunet,0.15,tone_bin,very_light,428,107.0,0.25,0.2113,0.2931,,,,
 rate,adult,yunet,0.15,tone_bin,light,419,66.0,0.1575,0.1258,0.1955,,,,
 rate,adult,yunet,0.15,tone_bin,intermediate,575,88.0,0.153,0.1259,0.1848,,,,
@@ -1039,6 +1199,38 @@ rate,adult,yunet+n,0.25,race,Black,1072,466.0,0.4347,0.4053,0.4646,,,,
 contrast,adult,yunet+n,0.25,tone_bin,dark vs very_light,3700,,0.4367,,,0.5678,-0.131,0.77,3.786642719804272e-07
 contrast,adult,yunet+n,0.25,race,Black vs White,2750,,0.4347,,,0.4291,0.0056,1.01,0.7823728593939974
 trend,adult,yunet+n,0.25,ita_continuous,spearman,8218,,,,,,,0.0598,5.923863414494819e-08
+rate,adult,yunet+s20,1.0,tone_bin,very_light,428,250.0,0.5841,0.5369,0.6299,,,,
+rate,adult,yunet+s20,1.0,tone_bin,light,419,178.0,0.4248,0.3784,0.4726,,,,
+rate,adult,yunet+s20,1.0,tone_bin,intermediate,575,239.0,0.4157,0.3761,0.4564,,,,
+rate,adult,yunet+s20,1.0,tone_bin,tan,958,344.0,0.3591,0.3293,0.39,,,,
+rate,adult,yunet+s20,1.0,tone_bin,brown,2566,952.0,0.371,0.3525,0.3899,,,,
+rate,adult,yunet+s20,1.0,tone_bin,dark,3272,1561.0,0.4771,0.46,0.4942,,,,
+rate,adult,yunet+s20,1.0,race,White,1678,759.0,0.4523,0.4286,0.4762,,,,
+rate,adult,yunet+s20,1.0,race,East Asian,1136,520.0,0.4577,0.429,0.4868,,,,
+rate,adult,yunet+s20,1.0,race,Latino_Hispanic,1211,419.0,0.346,0.3197,0.3732,,,,
+rate,adult,yunet+s20,1.0,race,Middle Eastern,998,458.0,0.4589,0.4282,0.4899,,,,
+rate,adult,yunet+s20,1.0,race,Southeast Asian,994,368.0,0.3702,0.3408,0.4007,,,,
+rate,adult,yunet+s20,1.0,race,Indian,1129,452.0,0.4004,0.3722,0.4292,,,,
+rate,adult,yunet+s20,1.0,race,Black,1072,548.0,0.5112,0.4813,0.541,,,,
+contrast,adult,yunet+s20,1.0,tone_bin,dark vs very_light,3700,,0.4771,,,0.5841,-0.107,0.82,3.73789289768785e-05
+contrast,adult,yunet+s20,1.0,race,Black vs White,2750,,0.5112,,,0.4523,0.0589,1.13,0.0029196290480027823
+trend,adult,yunet+s20,1.0,ita_continuous,spearman,8218,,,,,,,0.062,1.8924515169944958e-08
+rate,adult,yunet+s30,1.0,tone_bin,very_light,428,137.0,0.3201,0.2777,0.3657,,,,
+rate,adult,yunet+s30,1.0,tone_bin,light,419,78.0,0.1862,0.1518,0.2262,,,,
+rate,adult,yunet+s30,1.0,tone_bin,intermediate,575,113.0,0.1965,0.1661,0.231,,,,
+rate,adult,yunet+s30,1.0,tone_bin,tan,958,161.0,0.1681,0.1457,0.1931,,,,
+rate,adult,yunet+s30,1.0,tone_bin,brown,2566,366.0,0.1426,0.1296,0.1567,,,,
+rate,adult,yunet+s30,1.0,tone_bin,dark,3272,665.0,0.2032,0.1898,0.2174,,,,
+rate,adult,yunet+s30,1.0,race,White,1678,343.0,0.2044,0.1858,0.2244,,,,
+rate,adult,yunet+s30,1.0,race,East Asian,1136,233.0,0.2051,0.1826,0.2296,,,,
+rate,adult,yunet+s30,1.0,race,Latino_Hispanic,1211,183.0,0.1511,0.132,0.1724,,,,
+rate,adult,yunet+s30,1.0,race,Middle Eastern,998,214.0,0.2144,0.1901,0.241,,,,
+rate,adult,yunet+s30,1.0,race,Southeast Asian,994,149.0,0.1499,0.1291,0.1734,,,,
+rate,adult,yunet+s30,1.0,race,Indian,1129,192.0,0.1701,0.1493,0.1931,,,,
+rate,adult,yunet+s30,1.0,race,Black,1072,206.0,0.1922,0.1697,0.2168,,,,
+contrast,adult,yunet+s30,1.0,tone_bin,dark vs very_light,3700,,0.2032,,,0.3201,-0.1169,0.63,1.3296615930070222e-07
+contrast,adult,yunet+s30,1.0,race,Black vs White,2750,,0.1922,,,0.2044,-0.0122,0.94,0.46320002786906855
+trend,adult,yunet+s30,1.0,ita_continuous,spearman,8218,,,,,,,0.02,0.06934213216299777
 rate,adult,yunet06,0.15,tone_bin,very_light,428,4.0,0.0093,0.0036,0.0238,,,,
 rate,adult,yunet06,0.15,tone_bin,light,419,1.0,0.0024,0.0004,0.0134,,,,
 rate,adult,yunet06,0.15,tone_bin,intermediate,575,1.0,0.0017,0.0003,0.0098,,,,
