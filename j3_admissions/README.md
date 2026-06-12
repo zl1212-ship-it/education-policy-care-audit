@@ -1,9 +1,7 @@
 # J3 — Test-optional admissions audit (measurement vs access)
 
-Replication code and data for the test-optional admissions audit.
-Manuscript text is kept in the private `paper/blinded-manuscript` folder, not here; the findings
-narrative (`results.md`) is gitignored until publication. Everything in this directory is
-reproducible from public IPEDS data.
+Replication code and data for the test-optional admissions audit. Everything in this
+directory is reproducible from public IPEDS data.
 
 ## Treatment (fully reproducible from the federal record)
 

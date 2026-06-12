@@ -29,9 +29,6 @@ while manuscripts are under review; each directory README documents the build, n
 **Start with the README inside each directory.** It documents the estimator or audit design,
 the data sources, and the exact script run order (panels first, then analysis, then figures). Figure scripts write into a gitignored `paper/` folder and create it if absent.
 
-Per-pipeline findings narratives (`results.md`) are kept private until publication; the
-numbers behind them regenerate from the committed scripts and data.
-
 ## Frozen tags
 
 Submitted manuscripts cite frozen snapshots so later data refreshes never silently change a

@@ -1,7 +1,6 @@
 # J4 — Predictive-advising adoption audit (completion gaps)
 
 Replication code and data for the predictive-advising adoption audit.
-Manuscript is kept in the private `blinded-manuscript` repo, not here.
 
 ## What the pipeline estimates
 
