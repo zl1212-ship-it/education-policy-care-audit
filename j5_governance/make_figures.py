@@ -32,7 +32,7 @@ def save(fig, name):
     fig.tight_layout()
     fig.savefig(os.path.join(OUT, name + ".pdf"))
     fig.savefig(os.path.join(OUT, name + ".png"), dpi=200)
-    # AJE requires figures as separate TIFF or EPS files (high resolution)
+    # journal submission systems want figures as separate high-resolution TIFF/EPS files
     fig.savefig(os.path.join(OUT, name + ".tiff"), dpi=600, pil_kwargs={"compression": "tiff_lzw"})
     plt.close(fig)
 

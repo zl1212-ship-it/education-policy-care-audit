@@ -25,8 +25,8 @@ plus never-/not-yet-treated controls). This file is the recon log; fill it befor
 
 ## Decision gate
 
-- **PASS** → enough credible dates → Strand A staggered DiD → EEPA.
-- **FAIL** → pivot to Strand B allocation-audit design → Big Data & Society.
+- **PASS** → enough credible dates → Strand A staggered DiD.
+- **FAIL** → pivot to Strand B allocation-audit design.
 
 ## Recon results (run 2026-06-06)
 
