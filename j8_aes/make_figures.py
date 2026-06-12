@@ -12,7 +12,7 @@
 
 Inputs : data/results_gaps.csv, data/results_decision.csv,
          data/results_benchmark.csv
-Outputs: ../paper/blinded-manuscript/j8_figure{1,2,3}.{pdf,png,tiff}
+Outputs: ../paper/blinded-manuscript/J8/j8_figure{1,2,3}.{pdf,png,tiff}
 Run after analyze_gaps.py and analyze_benchmark.py.
 """
 import os
@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript")
+OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript", "J8")
 os.makedirs(OUT, exist_ok=True)  # gitignored on a fresh clone
 plt.rcParams.update({"font.size": 11, "font.family": "serif"})
 

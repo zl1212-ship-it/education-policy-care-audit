@@ -18,7 +18,7 @@ build_panel.py       # essay-level panels: ids, human scores, demographics (no e
 run_scorers.py       # 3 AES families, out-of-fold + leave-one-prompt-out machine scores
 analyze_gaps.py      # machine-minus-human gaps by subgroup; SMD; decision layer
 analyze_benchmark.py # human second-rater benchmark + analytic-dimension mechanism
-make_figures.py      # figures -> ../paper/blinded-manuscript/
+make_figures.py      # figures -> ../paper/blinded-manuscript/J8/
 make_tables.py       # tables  -> data/table_*.csv
 ```
 
