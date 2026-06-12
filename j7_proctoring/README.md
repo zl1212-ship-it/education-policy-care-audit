@@ -148,16 +148,20 @@ documentation).** Four of five document an automatic event when no face is detec
 "warn[s] students when their face cannot be detected"; Honorlock "AI will flag the
 incident"; ExamSoft's "Applicant Missing" incident category), so for those four the
 per-check flag-rate ratio is mechanically the detector's miss-rate ratio measured
-above. All five document a human in the loop, but for four of five the terminal
-reviewer is the instructor: the skewed flag is not filtered out, it is delivered to
-the grader as a suspicion record. None of the archived pages acknowledges that face
-detection can perform differently by skin tone; the two that address the bias
-controversy at all (Proctorio, Honorlock) deflect by distinguishing detection from
-recognition, which is nonresponsive here because the measured gap sits in detection
-itself. Two vendors (Respondus, ExamSoft) instruct students to secure lighting
-("Turn on lights to illuminate your face"), conceding the mechanism the exposure
-sweep manipulates while assigning the remedy to the student; the sweep shows the
-remedy does not equalize, because at any fixed dimness darker faces fail first.
+above. All five document a human in the loop, but for three of five the terminal
+reviewer is the instructor (Honorlock and ProctorU screen via a vendor proctor
+first): the skewed flag is not filtered out, it is delivered to the grader or a
+proctor as a suspicion record. Only one of five (Respondus) mentions skin tone at
+all, and only as an unverified claim of being "tested for fairness to ensure...skin
+tone don't impact" results; two others (Proctorio, Honorlock) deflect by
+distinguishing detection from recognition, nonresponsive here because the measured
+gap sits in detection itself; the other two are silent. Two vendors (Respondus,
+ExamSoft) instruct students to secure lighting ("Turn on lights to illuminate your
+face"), conceding the mechanism the exposure sweep manipulates while assigning the
+remedy to the student; the sweep shows the remedy does not equalize, because at any
+fixed dimness darker faces fail first. Codes checked by an independent second coder
+(Cohen's kappa = 0.96); recoding corrected three codes of record (see commit
+afdaf89).
 
 ## Target journals
 Computers & Education (primary); Internet and Higher Education; AI & Society.
