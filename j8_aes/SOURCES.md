@@ -28,15 +28,15 @@
     language proficiency using the ELLIPSE corpus. *International Journal of
     Learner Corpus Research*, 9(2), 248-269.
 
-Both corpora are pinned by file (fetch_corpora.py); pin the ELLIPSE git ref to
-a commit SHA at manuscript freeze (the PERSUADE Drive files are versioned by
-the release README).
+Both corpora are pinned (fetch_corpora.py): the ELLIPSE git ref is pinned to
+commit `dc3b8f0b` and the PERSUADE Drive files are versioned by the release
+README.
 
 ## Models (run_scorers.py)
 
 - `sentence-transformers/all-MiniLM-L6-v2` (Hugging Face) — frozen encoder for
   the `embed` family; mean-pooled last hidden state, 512-token truncation.
-  Pin the revision at manuscript freeze.
+  Revision pinned to `1110a243` in run_scorers.py.
 - `handfeat` and `tfidf` families are defined entirely in `run_scorers.py`
   (scikit-learn ridge regression on transparent features / TF-IDF n-grams);
   the macOS `/usr/share/dict/words` list supplies the out-of-vocabulary

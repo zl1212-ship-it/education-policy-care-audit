@@ -59,7 +59,8 @@ CACHE = HERE / "data" / "cache"
 SEED = 8
 N_FOLDS = 5
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-EMBED_REVISION = "main"  # TODO: pin to a commit SHA at manuscript freeze
+# pinned 2026-06-12 so the encoder cannot drift under the analysis
+EMBED_REVISION = "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
 FAMILIES = ["handfeat", "tfidf", "embed"]
 
 WORDS = re.compile(r"[A-Za-z']+")

@@ -19,7 +19,8 @@ Sources (both CC BY-NC-SA 4.0, released by the Learning Agency Lab):
 
 Output: data/raw/ (gitignored; reproducible by rerunning this script).
 Stdlib only. Zip passwords below are public documentation, not secrets.
-Pin ELLIPSE_REF to a commit SHA before the manuscript freeze.
+ELLIPSE_REF is pinned to a commit SHA; the PERSUADE Drive files are versioned
+by the release README.
 """
 from __future__ import annotations
 
@@ -32,7 +33,8 @@ from pathlib import Path
 RAW = Path(__file__).parent / "data" / "raw"
 
 ELLIPSE_REPO = "scrosseye/ELLIPSE-Corpus"
-ELLIPSE_REF = "main"  # TODO: pin to a commit SHA at manuscript freeze
+# pinned 2026-06-12 so the corpus cannot drift under the analysis
+ELLIPSE_REF = "dc3b8f0b3b4332fc9f64302c4ccfc4ed582f4b43"
 ELLIPSE_FILES = {
     "ELLIPSE_Final_github_train.csv": None,
     "ELLIPSE_Final_github_test.zip": b"ellipse_test",
