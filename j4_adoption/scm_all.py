@@ -1,5 +1,5 @@
 """
-Consolidated synthetic-control diagnostics for the revision. Runs four cases and saves,
+Consolidated synthetic-control diagnostics. Runs four cases and saves,
 for each, the treated/synthetic series, the full placebo gap matrix (for a spaghetti plot),
 donor count, top donor weights, the MSPE-ratio placebo distribution, and the permutation
 p-value. Cases:

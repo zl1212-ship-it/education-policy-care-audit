@@ -1,5 +1,5 @@
 """
-Revision item 2: does test-optional raise application volume (and reported selectivity)?
+Does test-optional adoption raise application volume (and reported selectivity)?
 This turns the "legitimacy by metric / benefits institutions, not students" claim from rhetoric
 into a tested DiD. Outcome: 100*ln(applicants), so the ATT reads as an approximate percent change;
 admit rate (reported selectivity) is already in Table 1. Same C&S machinery as analyze_pell.py.

@@ -1,5 +1,5 @@
 """
-Revision #4 (Reviewer 3): coverage / missingness by outcome and treatment status, 2009-2019.
+Coverage / missingness by outcome and treatment status, 2009-2019.
 Computed from the existing panels (no API pull). Shows that the admissions-reported outcomes
 (applications, admit rate, score submission) have lower and selection-prone coverage because
 open-admission and less-selective institutions do not report them, while the enrollment-reported

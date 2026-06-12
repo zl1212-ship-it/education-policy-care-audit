@@ -11,7 +11,7 @@ degree-seeking entering class -- the admissions flow the reform is meant to move
 
 Shares use a DOMESTIC, KNOWN-RACE denominator: domestic_total = total (race 99) minus nonresident
 (international, code 8) minus unknown race (code 9). This prevents an expansion of international
-enrollment from mechanically diluting the URM share (Reviewer 3). The nonresident and unknown
+enrollment from mechanically diluting the URM share. The nonresident and unknown
 shares (over the all-students total) are stored separately as diagnostics.
 
 Urban race codes: 1 White, 2 Black, 3 Hispanic, 4 Asian, 5 Am.Indian/Alaska,
@@ -76,7 +76,7 @@ def main():
                 continue
             nonres = rc.get(8, 0.0); unknown = rc.get(9, 0.0)
             # Composition shares use a DOMESTIC, KNOWN-RACE denominator: total minus nonresident
-            # (international, code 8) and unknown race (code 9). Reviewer 3's concern is that the
+            # (international, code 8) and unknown race (code 9). The concern is that the
             # all-students denominator (race=99) mechanically dilutes URM share when adopters expand
             # international enrollment, which could manufacture a null. dom = tot - nonres - unknown.
             dom = tot - nonres - unknown

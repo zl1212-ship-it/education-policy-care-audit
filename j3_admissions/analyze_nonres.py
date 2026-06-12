@@ -1,5 +1,5 @@
 """
-Mechanism check for Reviewer 3's URM-denominator concern: did test-optional adopters expand
+Mechanism check for the URM-denominator concern: did test-optional adopters expand
 international (nonresident) enrollment, which under an all-students denominator would have diluted
 the URM share? Staggered DiD on the nonresident share of the entering class.
 """
@@ -42,4 +42,4 @@ adm = adm.merge(comp[["unitid", "year", "share_nonres"]], on=["unitid", "year"],
 adm["G"] = adm["adoption_year"].fillna(0).astype(int)
 o, se = cs(adm, "share_nonres")
 print(f"Nonresident (international) share DiD: ATT {o:+.3f}pp  SE {se:.3f}  z={o/se:+.2f}")
-print("(>0 and significant would confirm the dilution mechanism Reviewer 3 raised)")
+print("(>0 and significant would confirm the dilution mechanism build_composition.py guards against)")

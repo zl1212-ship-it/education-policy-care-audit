@@ -1,7 +1,7 @@
 """Pass-2 robustness for the completion disparate-impact audit:
 (1) parallel ABSOLUTE percentage-point-gap audit; (2) ratio vs. absolute-gap
 concentration by completion and selectivity tier; (3) cohort-size sensitivity.
-Addresses the central reviewer concern that a ratio metric is mechanically more
+Addresses the central methodological concern that a ratio metric is mechanically more
 likely to fail at low-baseline institutions. Real IPEDS data."""
 import os, csv, urllib.request, json, time
 import statistics as st

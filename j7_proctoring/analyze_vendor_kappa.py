@@ -12,7 +12,7 @@ Two modes.
 
   python3 analyze_vendor_kappa.py
       Reads every filled pass saved as data/vendor_corpus_<name>.csv (for example
-      _esa, _friend, _codex), plus the AI-assisted codes of record, and computes
+      _coder_a, _coder_b, _codex), plus the AI-assisted codes of record, and computes
       pairwise percent agreement and Cohen's kappa. Each pass is labeled human or
       LLM from its filename; the human-human pair is the inter-rater statistic to
       report, and any pair involving an LLM is a cross-check only, never pooled
@@ -147,7 +147,7 @@ def analyze():
 
     if len(passes) < 2:
         sys.exit("Need at least one filled pass besides the AI record. Save coder "
-                 "files as data/vendor_corpus_<name>.csv (e.g. _esa, _friend, "
+                 "files as data/vendor_corpus_<name>.csv (e.g. _coder_a, _coder_b, "
                  "_codex), then rerun.")
 
     names = list(passes)

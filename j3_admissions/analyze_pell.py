@@ -1,6 +1,6 @@
 """
 Pell-share (income/SES) outcome: staggered DiD + MDE/equivalence + within-sector + persistence.
-Same Callaway-Sant'Anna machinery as reviewer_revisions.py. Answers the reviewers' "hard wound":
+Same Callaway-Sant'Anna machinery as supplementary_analyses.py. The design's central equity test:
 test-optional's core equity claim is about low-income students, so the entering-class Pell share
 is the most policy-relevant outcome.
 """

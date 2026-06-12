@@ -69,4 +69,4 @@ Candidate sources (to be vetted in the availability recon — see `adoption_sour
 
 Every adoption record carries its source (URL / FOIA reference / contract ID) in the
 `source_url` / `source_quote` columns. If coverage proves insufficient for credible DiD,
-the design pivots to a Big Data & Society allocation-audit framing.
+the design pivots to an allocation-audit framing.

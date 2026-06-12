@@ -7,7 +7,7 @@ reference. We download FairTest's public hard-copy list (a post-pandemic superse
 what share of the 237 pre-COVID IPEDS-coded adopters appear on it. High concordance bounds the
 false-positive rate of the reqt_test_scores-based coding.
 
-Writes data/revision_fairtest.csv (matched flag per adopter) and prints the concordance rate.
+Writes data/suppl_fairtest.csv (matched flag per adopter) and prints the concordance rate.
 """
 import os, re, csv, urllib.request, json, time
 import pypdf
@@ -55,7 +55,7 @@ def main():
         hit = bool(core) and (core in blob or all(t in tokenset for t in toks))
         rows.append({"unitid": u, "name": nm, "on_fairtest": int(hit)})
 
-    with open(os.path.join(DATA, "revision_fairtest.csv"), "w", newline="") as f:
+    with open(os.path.join(DATA, "suppl_fairtest.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["unitid", "name", "on_fairtest"]); w.writeheader(); w.writerows(rows)
 
     n = len(rows); m = sum(r["on_fairtest"] for r in rows)

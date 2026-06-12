@@ -1,5 +1,5 @@
 """
-Revision analyses answering the peer-review points:
+Supplementary analyses backing the headline results:
   (2) MDE + equivalence (TOST) for every outcome -- distinguish informative null from underpowered.
   (3) Covariate concern: re-estimate the staggered DiD WITHIN sector (controls drawn only from the
       treated unit's own control type), since adoption is strongly selected on sector.
@@ -8,7 +8,7 @@ Revision analyses answering the peer-review points:
   (D) Baseline descriptive statistics, treated (pre-COVID adopters) vs never-adopters.
 
 All reuse the same Callaway-Sant'Anna cell/agg machinery as analyze_did.py.
-Outputs printed and written to data/revision_*.csv.
+Outputs printed and written to data/suppl_*.csv.
 """
 import os, numpy as np, pandas as pd
 
@@ -117,7 +117,7 @@ def main():
                      "equiv_at_2pp": "yes" if tost90_hi < 2 else "no"})
         print(f"  {oc:16s} ATT {att:+.2f} SE {se:.2f} | MDE(80%)={mde:.2f}pp | "
               f"equivalent to 0 within +/-{tost90_hi:.2f}pp | <=2pp equiv: {'YES' if tost90_hi<2 else 'no'}")
-    pd.DataFrame(rows).to_csv(os.path.join(DATA, "revision_mde_tost.csv"), index=False)
+    pd.DataFrame(rows).to_csv(os.path.join(DATA, "suppl_mde_tost.csv"), index=False)
 
     # ---------- (3) within-sector CS for composition ----------
     print("\n=== (3) Within-sector staggered DiD (controls same sector as treated) ===")
@@ -131,7 +131,7 @@ def main():
             out.append({"outcome": oc, "sector": lab, "att": round(o, 3), "se": round(se, 3),
                         "z": round(z, 2), "n_treated": ntr})
             print(f"  {oc:14s} [{lab:17s}] ATT {o:+.3f} SE {se:.3f} z={z:+.2f} (n_tr={ntr})")
-    pd.DataFrame(out).to_csv(os.path.join(DATA, "revision_within_sector.csv"), index=False)
+    pd.DataFrame(out).to_csv(os.path.join(DATA, "suppl_within_sector.csv"), index=False)
 
     # ---------- (T) TWFE benchmark ----------
     print("\n=== (T) TWFE benchmark (biased under staggering; contrast with C&S) ===")
@@ -141,7 +141,7 @@ def main():
         tw.append({"outcome": oc, "twfe_att": round(b, 3), "se": round(se, 3),
                    "z": round(b / se, 2)})
         print(f"  {oc:16s} TWFE {b:+.3f} SE {se:.3f} z={b/se:+.2f}")
-    pd.DataFrame(tw).to_csv(os.path.join(DATA, "revision_twfe.csv"), index=False)
+    pd.DataFrame(tw).to_csv(os.path.join(DATA, "suppl_twfe.csv"), index=False)
 
     # ---------- (R) persistence >= 2 years ----------
     print("\n=== (R) Treatment-persistence robustness (reqt==3 must persist >=2 yrs) ===")
@@ -180,8 +180,8 @@ def main():
                      "pct_private": round(100 * (b.control == 2).mean(), 0),
                      "share_urm": round(b.share_urm.mean(), 1)})
     dd = pd.DataFrame(desc); print(dd.to_string(index=False))
-    dd.to_csv(os.path.join(DATA, "revision_descriptives.csv"), index=False)
-    print("\nwrote data/revision_*.csv")
+    dd.to_csv(os.path.join(DATA, "suppl_descriptives.csv"), index=False)
+    print("\nwrote data/suppl_*.csv")
 
 
 if __name__ == "__main__":

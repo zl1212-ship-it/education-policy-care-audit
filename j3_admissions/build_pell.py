@@ -1,6 +1,6 @@
 """
-Build the entering-class Pell-share panel (institution-year), 2009-2019, the income/SES equity
-outcome the reviewers asked for. Source: IPEDS Student Financial Aid for first-time, full-time
+Build the entering-class Pell-share panel (institution-year), 2009-2019, the design's central income/SES
+equity outcome. Source: IPEDS Student Financial Aid for first-time, full-time
 degree-seeking undergraduates (Urban Institute `sfa-ftft`), type_of_aid = 5 (Pell grant),
 percent_of_students. This is the share of the entering full-time class receiving a Pell grant, the
 standard institution-level proxy for low-income access.

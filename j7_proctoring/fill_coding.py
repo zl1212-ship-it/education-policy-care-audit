@@ -1,8 +1,8 @@
 """Interactive terminal filler for a vendor-coding pass (friendly second-coder UI).
 
 Usage:
-    python3 fill_coding.py esa        # -> data/vendor_corpus_esa.csv
-    python3 fill_coding.py friend     # -> data/vendor_corpus_friend.csv
+    python3 fill_coding.py coder_a    # -> data/vendor_corpus_coder_a.csv
+    python3 fill_coding.py coder_b    # -> data/vendor_corpus_coder_b.csv
 
 It walks you through all 30 cells one at a time. For each cell it shows the
 vendor, the question, the evidence passage from the vendor's documentation, and
@@ -73,7 +73,7 @@ def show_docs(slugs):
 
 def main():
     if len(sys.argv) < 2:
-        sys.exit("usage: python3 fill_coding.py <your_name>   e.g. esa  or  friend")
+        sys.exit("usage: python3 fill_coding.py <coder_label>   e.g. coder_a  or  coder_b")
     name = sys.argv[1].strip().lower()
     out = HERE / "data" / f"vendor_corpus_{name}.csv"
 
@@ -124,7 +124,7 @@ def main():
     print(f"\nSaved {out.name}. {len(df) - blank}/{len(df)} cells filled"
           + (f", {blank} still blank (rerun to finish)." if blank else ", all done."))
     if not blank:
-        print("Next: when both esa and friend are done, run "
+        print("Next: when both human passes are done, run "
               "`python3 analyze_vendor_kappa.py`.")
 
 

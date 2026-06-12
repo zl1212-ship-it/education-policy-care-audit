@@ -2,7 +2,7 @@
 
 5 vendors x 6 dimensions. For each cell, read the evidence and pick ONE option.
 This file is just to read through; fill the answers in the terminal with
-`python3 fill_coding.py esa` (you) or `python3 fill_coding.py friend` (your friend).
+`python3 fill_coding.py coder_a` (first coder) or `python3 fill_coding.py coder_b` (second coder).
 
 ---
 

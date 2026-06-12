@@ -1,5 +1,5 @@
 """
-Matching diagnostics for the revision: post-matching balance and a matched event study.
+Matching diagnostics: post-matching balance and a matched event study.
 Rebuilds the matched comparison (treated 2018/2019 cohorts matched to their 5 nearest
 never-treated neighbors on 2011-2017 retention level and slope), reports balance on level
 and slope, and computes the Callaway-Sant'Anna event-study coefficients on the matched

@@ -1,10 +1,10 @@
 """
-Revision items 4 and 5.
-(4) Heterogeneity: report group-level ATT (URM and Pell) by selectivity tier (baseline admit rate)
+Heterogeneity and URM-definition sensitivity.
+(a) Heterogeneity: report group-level ATT (URM and Pell) by selectivity tier (baseline admit rate)
     and by baseline minority-enrollment tier (a minority-serving proxy; IPEDS exposes no formal MSI
     flag beyond HBCU/tribal, which almost no adopter is). Treated subgroup vs the full not-yet/never
     control pool. Answers "does the pooled null average over offsetting heterogeneity?"
-(5) URM definition sensitivity: recompute URM excluding "two or more races" (race code 7) and
+(b) URM definition sensitivity: recompute URM excluding "two or more races" (race code 7) and
     re-estimate the DiD, since the two-or-more category is a contested component of URM.
 Same Callaway-Sant'Anna machinery as the other scripts.
 """
@@ -118,7 +118,7 @@ def main():
             z = o / se if se else np.nan
             print(f"  {oc:11s} [{lab:28s}] ATT {o:+.2f} SE {se:.2f} z={z:+.2f} (n_tr={n})")
             rows.append({"outcome": oc, "group": lab, "att": round(o, 3), "se": round(se, 3), "z": round(z, 2), "n": n})
-    pd.DataFrame(rows).to_csv(os.path.join(DATA, "revision_heterogeneity.csv"), index=False)
+    pd.DataFrame(rows).to_csv(os.path.join(DATA, "suppl_heterogeneity.csv"), index=False)
 
     print("\n=== (5) URM excluding two-or-more races ===")
     adm = add_urm_excl(adm)
@@ -126,8 +126,8 @@ def main():
     print(f"  URM (excl. two-or-more) ATT {o:+.3f} SE {se:.3f} z={o/se:+.2f} (n_tr={n})")
     print(f"  (main URM incl. two-or-more was +0.55, SE 0.41)")
     pd.DataFrame([{"outcome": "urm_excl_twomore", "att": round(o, 4), "se": round(se, 4), "z": round(o/se, 2), "n": n}]
-                 ).to_csv(os.path.join(DATA, "revision_urm_excl.csv"), index=False)
-    print("\nwrote data/revision_heterogeneity.csv and revision_urm_excl.csv")
+                 ).to_csv(os.path.join(DATA, "suppl_urm_excl.csv"), index=False)
+    print("\nwrote data/suppl_heterogeneity.csv and suppl_urm_excl.csv")
 
 
 if __name__ == "__main__":

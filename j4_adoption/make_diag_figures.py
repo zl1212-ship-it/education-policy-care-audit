@@ -1,5 +1,5 @@
 """
-Diagnostic figures for the revision.
+Diagnostic figures for the matching and SCM robustness set.
 Figure 2: synthetic-control placebo "spaghetti" plots for Georgia State (graduation) and the
           California State system (retention) -- treated gap (bold) against all placebo gaps.
 Figure 3: Georgia State six-year graduation rate by race over time, showing that the gains and

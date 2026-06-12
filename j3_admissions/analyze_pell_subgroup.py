@@ -1,5 +1,5 @@
 """
-Editor revision #5: own-robustness for the one positive coefficient that survives multiple-comparison
+Own-robustness for the one positive coefficient that survives multiple-comparison
 correction, the Pell share at less-selective institutions (+1.75, z=3.0 in Table het). Reports that
 subgroup's event study (pre-adoption trend) and its persistence-restricted estimate, so the
 "carries the same pre-trend caveat" claim is backed rather than asserted. Treated subgroup
