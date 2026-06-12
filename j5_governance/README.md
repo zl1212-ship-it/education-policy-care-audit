@@ -1,4 +1,4 @@
-# J5 — Where the Rules Are Made
+# J5 — State board authority and representation audit
 
 A representation audit of American state education governance. Who holds the authority to make
 the rules for public schools, and how democratically representative are the bodies that hold it?

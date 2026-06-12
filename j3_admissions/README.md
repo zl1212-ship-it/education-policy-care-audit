@@ -1,4 +1,4 @@
-# J3 — The Measure Moved, the Boundary Did Not (test-optional admissions and the construction of merit)
+# J3 — Test-optional admissions audit (measurement vs access)
 
 Replication code and data for the test-optional admissions audit.
 Manuscript text is kept in the private `paper/blinded-manuscript` folder, not here; the findings

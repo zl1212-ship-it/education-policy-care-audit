@@ -13,15 +13,18 @@ are unrelated artifacts of different pipelines.
 
 ## The papers
 
-| Directory | Paper | What it audits | Primary public sources |
-|---|---|---|---|
-| repo root | *Funding Without Care* | Doctoral stipend adequacy relative to the local living wage at 22 elite R1 universities | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
-| [`j2_audit/`](j2_audit/) | *A National Disparate-Impact Audit of College Completion Equity* | Completion outcomes by race and income against the EEOC four-fifths rule | IPEDS Graduation Rates / Outcome Measures (Urban Institute API) |
-| [`j3_admissions/`](j3_admissions/) | *The Measure Moved, the Boundary Did Not* | Whether test-optional admissions changed the measurement of merit or the composition of access | IPEDS admissions and enrollment panels |
-| [`j4_adoption/`](j4_adoption/) | *Did Predictive Advising Drive Georgia State's Turnaround?* | The causal effect of adopting predictive-advising systems on completion gaps | Dated vendor/system contracts + IPEDS outcomes |
-| [`j5_governance/`](j5_governance/) | *Where the Rules Are Made* | Authority versus democratic representation across the 50 state boards of education | NASBE State Education Governance Matrix + NCES |
-| [`j6_detection/`](j6_detection/) | *How Universities Govern a Biased Writing Detector* | AI-writing-detector false-positive rates by language background, and the university policies that give the flag force | Public human-written essay corpora + 50 flagship integrity policies |
-| [`j7_proctoring/`](j7_proctoring/) | *The Camera That Cannot See Everyone* | Face-detection miss rates by skin tone in the presence-check step of remote proctoring, and how vendors turn a miss into a consequence | FairFace validation set + open detectors + vendor documentation |
+| Directory | What it audits | Primary public sources |
+|---|---|---|
+| repo root (J1) | Doctoral stipend adequacy relative to the local living wage at 22 elite R1 universities | PhD Stipends, USASpending.gov, IPEDS, NSF SED |
+| [`j2_audit/`](j2_audit/) | Completion outcomes by race and income against the EEOC four-fifths rule | IPEDS Graduation Rates / Outcome Measures (Urban Institute API) |
+| [`j3_admissions/`](j3_admissions/) | Whether test-optional admissions changed the measurement of merit or the composition of access | IPEDS admissions and enrollment panels |
+| [`j4_adoption/`](j4_adoption/) | The causal effect of adopting predictive-advising systems on completion gaps | Dated vendor/system contracts + IPEDS outcomes |
+| [`j5_governance/`](j5_governance/) | Authority versus democratic representation across the 50 state boards of education | NASBE State Education Governance Matrix + NCES |
+| [`j6_detection/`](j6_detection/) | AI-writing-detector false-positive rates by language background, and the university policies that give the flag force | Public human-written essay corpora + 50 flagship integrity policies |
+| [`j7_proctoring/`](j7_proctoring/) | Face-detection miss rates by skin tone in the presence-check step of remote proctoring, and how vendors turn a miss into a consequence | FairFace validation set + open detectors + vendor documentation |
+
+Paper titles and venues are deliberately not listed while manuscripts are under review;
+each directory README identifies its study by question and design.
 
 **Start with the README inside each directory.** It states the research question, the
 identification or audit design, and the exact script run order (panels first, then analysis,
@@ -33,11 +36,11 @@ numbers behind them regenerate from the committed scripts and data.
 ## Frozen tags
 
 Submitted manuscripts cite frozen snapshots so later data refreshes never silently change a
-reported number. `paper-data-v1` and `paper-data-v2` freeze the panel behind *Funding Without
-Care* (v2 matches the current manuscript). Pipelines commit their assembled panels, so any
+reported number. `paper-data-v1` and `paper-data-v2` freeze the J1 stipend panel (v2 matches
+the current manuscript). Pipelines commit their assembled panels, so any
 commit reachable from a paper's access date reproduces that paper's inputs.
 
-## J1 — Funding Without Care (repo root)
+## J1 — Doctoral stipend adequacy audit (repo root)
 
 The first paper predates the per-directory layout, so its pipeline lives at the repository
 root; the frozen tags and the manuscript's reproduction instructions reference these paths.

@@ -1,5 +1,5 @@
 """
-J5 analysis: accountability without representation in state education governance.
+J5 analysis: authority versus representation in state education governance.
 
 Reads data/governance_panel.csv and produces every number cited in the paper:
   1. Regime distribution and ENROLLMENT-WEIGHTED student exposure (who cannot elect their board).

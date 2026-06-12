@@ -1,4 +1,4 @@
-# J7 — The Camera That Cannot See Everyone
+# J7 — Remote-proctoring face-detection audit
 
 An algorithm audit of the face-detection step that remote-proctoring systems use to
 decide whether an examinee is present. Online exams point a webcam at a student and
