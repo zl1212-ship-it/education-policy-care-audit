@@ -1,0 +1,193 @@
+corpus,dimension,family,protocol,group,n,mean_gap,smd,qwk,raw_differential,conditional_differential
+persuade,ell_status,handfeat,oof,No,22451,-0.0166,-0.0157,0.7944,,
+persuade,ell_status,handfeat,oof,Yes,2244,0.3659,0.3992,0.5989,,
+persuade,ell_status,handfeat,oof,Yes - No,2244,,,,"+0.383 [+0.353, +0.415]","+0.140 [+0.113, +0.168]"
+persuade,ell_status,handfeat,lopo,No,22451,-0.0135,-0.0127,0.7826,,
+persuade,ell_status,handfeat,lopo,Yes,2244,0.378,0.414,0.583,,
+persuade,ell_status,handfeat,lopo,Yes - No,2244,,,,"+0.392 [+0.361, +0.425]","+0.142 [+0.115, +0.168]"
+persuade,ell_status,tfidf,oof,No,22451,0.0067,0.0061,0.8491,,
+persuade,ell_status,tfidf,oof,Yes,2244,0.0728,0.0791,0.7757,,
+persuade,ell_status,tfidf,oof,Yes - No,2244,,,,"+0.066 [+0.040, +0.093]","-0.109 [-0.131, -0.086]"
+persuade,ell_status,tfidf,lopo,No,22451,-0.1668,-0.1569,0.769,,
+persuade,ell_status,tfidf,lopo,Yes,2244,0.1332,0.1529,0.6319,,
+persuade,ell_status,tfidf,lopo,Yes - No,2244,,,,"+0.300 [+0.270, +0.331]","+0.048 [+0.025, +0.071]"
+persuade,ell_status,embed,oof,No,22451,-0.0182,-0.0173,0.7828,,
+persuade,ell_status,embed,oof,Yes,2244,0.2248,0.2376,0.6985,,
+persuade,ell_status,embed,oof,Yes - No,2244,,,,"+0.243 [+0.214, +0.272]","+0.008 [-0.018, +0.034]"
+persuade,ell_status,embed,lopo,No,22451,0.1016,0.0998,0.6345,,
+persuade,ell_status,embed,lopo,Yes,2244,0.564,0.6163,0.4408,,
+persuade,ell_status,embed,lopo,Yes - No,2244,,,,"+0.462 [+0.425, +0.501]","+0.121 [+0.089, +0.150]"
+persuade,economically_disadvantaged,handfeat,oof,Not economically disadvantaged,11116,-0.1274,-0.1183,0.8207,,
+persuade,economically_disadvantaged,handfeat,oof,Economically disadvantaged,9643,0.0595,0.0604,0.7605,,
+persuade,economically_disadvantaged,handfeat,oof,Economically disadvantaged - Not economically disadvantaged,9643,,,,"+0.187 [+0.170, +0.203]","-0.019 [-0.034, -0.002]"
+persuade,economically_disadvantaged,handfeat,lopo,Not economically disadvantaged,11116,-0.1434,-0.1334,0.8127,,
+persuade,economically_disadvantaged,handfeat,lopo,Economically disadvantaged,9643,0.0517,0.0525,0.7536,,
+persuade,economically_disadvantaged,handfeat,lopo,Economically disadvantaged - Not economically disadvantaged,9643,,,,"+0.195 [+0.178, +0.213]","-0.015 [-0.032, +0.002]"
+persuade,economically_disadvantaged,tfidf,oof,Not economically disadvantaged,11116,-0.0068,-0.0062,0.855,,
+persuade,economically_disadvantaged,tfidf,oof,Economically disadvantaged,9643,0.0282,0.0285,0.8249,,
+persuade,economically_disadvantaged,tfidf,oof,Economically disadvantaged - Not economically disadvantaged,9643,,,,"+0.035 [+0.021, +0.050]","-0.131 [-0.146, -0.116]"
+persuade,economically_disadvantaged,tfidf,lopo,Not economically disadvantaged,11116,-0.2384,-0.2192,0.7881,,
+persuade,economically_disadvantaged,tfidf,lopo,Economically disadvantaged,9643,-0.086,-0.0896,0.7401,,
+persuade,economically_disadvantaged,tfidf,lopo,Economically disadvantaged - Not economically disadvantaged,9643,,,,"+0.152 [+0.133, +0.170]","-0.065 [-0.082, -0.049]"
+persuade,economically_disadvantaged,embed,oof,Not economically disadvantaged,11116,-0.0567,-0.0533,0.7877,,
+persuade,economically_disadvantaged,embed,oof,Economically disadvantaged,9643,0.0689,0.0695,0.7727,,
+persuade,economically_disadvantaged,embed,oof,Economically disadvantaged - Not economically disadvantaged,9643,,,,"+0.126 [+0.108, +0.143]","-0.093 [-0.111, -0.076]"
+persuade,economically_disadvantaged,embed,lopo,Not economically disadvantaged,11116,-0.0152,-0.0149,0.6325,,
+persuade,economically_disadvantaged,embed,lopo,Economically disadvantaged,9643,0.2762,0.2869,0.5684,,
+persuade,economically_disadvantaged,embed,lopo,Economically disadvantaged - Not economically disadvantaged,9643,,,,"+0.291 [+0.267, +0.315]","-0.046 [-0.064, -0.025]"
+persuade,student_disability_status,handfeat,oof,Not identified as having disability,18135,-0.0732,-0.0688,0.8118,,
+persuade,student_disability_status,handfeat,oof,Identified as having disability,2688,0.1755,0.1693,0.7573,,
+persuade,student_disability_status,handfeat,oof,Identified as having disability - Not identified as having disability,2688,,,,"+0.249 [+0.221, +0.275]","+0.021 [-0.003, +0.045]"
+persuade,student_disability_status,handfeat,lopo,Not identified as having disability,18135,-0.088,-0.0828,0.8046,,
+persuade,student_disability_status,handfeat,lopo,Identified as having disability,2688,0.1802,0.1744,0.75,,
+persuade,student_disability_status,handfeat,lopo,Identified as having disability - Not identified as having disability,2688,,,,"+0.268 [+0.239, +0.297]","+0.037 [+0.013, +0.062]"
+persuade,student_disability_status,tfidf,oof,Not identified as having disability,18135,0.0012,0.0011,0.8522,,
+persuade,student_disability_status,tfidf,oof,Identified as having disability,2688,0.0651,0.0613,0.8432,,
+persuade,student_disability_status,tfidf,oof,Identified as having disability - Not identified as having disability,2688,,,,"+0.064 [+0.040, +0.087]","-0.108 [-0.129, -0.089]"
+persuade,student_disability_status,tfidf,lopo,Not identified as having disability,18135,-0.2009,-0.1887,0.7836,,
+persuade,student_disability_status,tfidf,lopo,Identified as having disability,2688,0.0572,0.0567,0.7591,,
+persuade,student_disability_status,tfidf,lopo,Identified as having disability - Not identified as having disability,2688,,,,"+0.258 [+0.231, +0.287]","+0.012 [-0.009, +0.034]"
+persuade,student_disability_status,embed,oof,Not identified as having disability,18135,-0.0146,-0.0138,0.7931,,
+persuade,student_disability_status,embed,oof,Identified as having disability,2688,0.1104,0.1029,0.7833,,
+persuade,student_disability_status,embed,oof,Identified as having disability - Not identified as having disability,2688,,,,"+0.125 [+0.099, +0.150]","-0.084 [-0.109, -0.059]"
+persuade,student_disability_status,embed,lopo,Not identified as having disability,18135,0.0707,0.0694,0.6324,,
+persuade,student_disability_status,embed,lopo,Identified as having disability,2688,0.4516,0.4505,0.5481,,
+persuade,student_disability_status,embed,lopo,Identified as having disability - Not identified as having disability,2688,,,,"+0.381 [+0.347, +0.419]","+0.058 [+0.028, +0.086]"
+persuade,gender,handfeat,oof,M,12854,0.0085,0.008,0.7843,,
+persuade,gender,handfeat,oof,F,13141,-0.007,-0.0067,0.7727,,
+persuade,gender,handfeat,oof,F - M,13141,,,,"-0.015 [-0.032, +0.000]","+0.059 [+0.047, +0.071]"
+persuade,gender,handfeat,lopo,M,12854,0.0115,0.0109,0.7727,,
+persuade,gender,handfeat,lopo,F,13141,-0.005,-0.0048,0.7596,,
+persuade,gender,handfeat,lopo,F - M,13141,,,,"-0.016 [-0.031, +0.001]","+0.060 [+0.047, +0.073]"
+persuade,gender,tfidf,oof,M,12854,0.0225,0.0209,0.8488,,
+persuade,gender,tfidf,oof,F,13141,0.0033,0.0031,0.8437,,
+persuade,gender,tfidf,oof,F - M,13141,,,,"-0.019 [-0.033, -0.006]","+0.037 [+0.025, +0.050]"
+persuade,gender,tfidf,lopo,M,12854,-0.1373,-0.1318,0.765,,
+persuade,gender,tfidf,lopo,F,13141,-0.1665,-0.1587,0.7531,,
+persuade,gender,tfidf,lopo,F - M,13141,,,,"-0.029 [-0.048, -0.012]","+0.052 [+0.039, +0.065]"
+persuade,gender,embed,oof,M,12854,0.0217,0.0205,0.787,,
+persuade,gender,embed,oof,F,13141,-0.0167,-0.0161,0.7672,,
+persuade,gender,embed,oof,F - M,13141,,,,"-0.038 [-0.054, -0.022]","+0.033 [+0.020, +0.046]"
+persuade,gender,embed,lopo,M,12854,0.1256,0.1241,0.6297,,
+persuade,gender,embed,lopo,F,13141,0.1008,0.1006,0.5925,,
+persuade,gender,embed,lopo,F - M,13141,,,,"-0.025 [-0.046, -0.003]","+0.086 [+0.072, +0.100]"
+persuade,race_ethnicity,handfeat,oof,White,11571,-0.0592,-0.0572,0.7844,,
+persuade,race_ethnicity,handfeat,oof,Hispanic/Latino,6560,0.0928,0.0926,0.7461,,
+persuade,race_ethnicity,handfeat,oof,Black/African American,4958,0.0399,0.0386,0.7627,,
+persuade,race_ethnicity,handfeat,oof,Asian/Pacific Islander,1743,-0.0435,-0.0387,0.791,,
+persuade,race_ethnicity,handfeat,oof,Hispanic/Latino - White,6560,,,,"+0.152 [+0.132, +0.173]","+0.027 [+0.011, +0.044]"
+persuade,race_ethnicity,handfeat,oof,Black/African American - White,4958,,,,"+0.099 [+0.076, +0.122]","-0.016 [-0.034, +0.003]"
+persuade,race_ethnicity,handfeat,oof,Asian/Pacific Islander - White,1743,,,,"+0.016 [-0.020, +0.051]","+0.168 [+0.142, +0.194]"
+persuade,race_ethnicity,handfeat,lopo,White,11571,-0.0562,-0.0542,0.7738,,
+persuade,race_ethnicity,handfeat,lopo,Hispanic/Latino,6560,0.1003,0.0999,0.7321,,
+persuade,race_ethnicity,handfeat,lopo,Black/African American,4958,0.0398,0.0386,0.7471,,
+persuade,race_ethnicity,handfeat,lopo,Asian/Pacific Islander,1743,-0.0556,-0.0497,0.7793,,
+persuade,race_ethnicity,handfeat,lopo,Hispanic/Latino - White,6560,,,,"+0.156 [+0.134, +0.176]","+0.029 [+0.012, +0.047]"
+persuade,race_ethnicity,handfeat,lopo,Black/African American - White,4958,,,,"+0.096 [+0.072, +0.120]","-0.022 [-0.041, -0.003]"
+persuade,race_ethnicity,handfeat,lopo,Asian/Pacific Islander - White,1743,,,,"+0.001 [-0.033, +0.034]","+0.158 [+0.131, +0.183]"
+persuade,race_ethnicity,tfidf,oof,White,11571,-0.0039,-0.0036,0.8399,,
+persuade,race_ethnicity,tfidf,oof,Hispanic/Latino,6560,0.0231,0.0226,0.8276,,
+persuade,race_ethnicity,tfidf,oof,Black/African American,4958,0.0421,0.0396,0.846,,
+persuade,race_ethnicity,tfidf,oof,Asian/Pacific Islander,1743,-0.0003,-0.0003,0.8702,,
+persuade,race_ethnicity,tfidf,oof,Hispanic/Latino - White,6560,,,,"+0.027 [+0.008, +0.044]","-0.067 [-0.081, -0.052]"
+persuade,race_ethnicity,tfidf,oof,Black/African American - White,4958,,,,"+0.046 [+0.027, +0.064]","-0.040 [-0.058, -0.023]"
+persuade,race_ethnicity,tfidf,oof,Asian/Pacific Islander - White,1743,,,,"+0.004 [-0.026, +0.034]","+0.124 [+0.097, +0.150]"
+persuade,race_ethnicity,tfidf,lopo,White,11571,-0.2033,-0.196,0.7514,,
+persuade,race_ethnicity,tfidf,lopo,Hispanic/Latino,6560,-0.0918,-0.0931,0.7321,,
+persuade,race_ethnicity,tfidf,lopo,Black/African American,4958,-0.086,-0.0842,0.7551,,
+persuade,race_ethnicity,tfidf,lopo,Asian/Pacific Islander,1743,-0.2168,-0.1872,0.7907,,
+persuade,race_ethnicity,tfidf,lopo,Hispanic/Latino - White,6560,,,,"+0.112 [+0.091, +0.131]","-0.019 [-0.035, -0.002]"
+persuade,race_ethnicity,tfidf,lopo,Black/African American - White,4958,,,,"+0.117 [+0.092, +0.140]","-0.003 [-0.022, +0.016]"
+persuade,race_ethnicity,tfidf,lopo,Asian/Pacific Islander - White,1743,,,,"-0.013 [-0.049, +0.021]","+0.134 [+0.106, +0.162]"
+persuade,race_ethnicity,embed,oof,White,11571,-0.0453,-0.0439,0.7638,,
+persuade,race_ethnicity,embed,oof,Hispanic/Latino,6560,0.0519,0.0517,0.7661,,
+persuade,race_ethnicity,embed,oof,Black/African American,4958,0.0754,0.0719,0.7925,,
+persuade,race_ethnicity,embed,oof,Asian/Pacific Islander,1743,-0.0729,-0.0658,0.768,,
+persuade,race_ethnicity,embed,oof,Hispanic/Latino - White,6560,,,,"+0.097 [+0.076, +0.117]","-0.029 [-0.046, -0.011]"
+persuade,race_ethnicity,embed,oof,Black/African American - White,4958,,,,"+0.121 [+0.097, +0.144]","+0.008 [-0.011, +0.027]"
+persuade,race_ethnicity,embed,oof,Asian/Pacific Islander - White,1743,,,,"-0.028 [-0.064, +0.009]","+0.172 [+0.147, +0.196]"
+persuade,race_ethnicity,embed,lopo,White,11571,0.0761,0.0763,0.6182,,
+persuade,race_ethnicity,embed,lopo,Hispanic/Latino,6560,0.2185,0.2245,0.5774,,
+persuade,race_ethnicity,embed,lopo,Black/African American,4958,0.1384,0.1392,0.6097,,
+persuade,race_ethnicity,embed,lopo,Asian/Pacific Islander,1743,-0.0928,-0.0883,0.5679,,
+persuade,race_ethnicity,embed,lopo,Hispanic/Latino - White,6560,,,,"+0.142 [+0.116, +0.169]","-0.036 [-0.056, -0.016]"
+persuade,race_ethnicity,embed,lopo,Black/African American - White,4958,,,,"+0.062 [+0.033, +0.092]","-0.098 [-0.119, -0.076]"
+persuade,race_ethnicity,embed,lopo,Asian/Pacific Islander - White,1743,,,,"-0.169 [-0.215, -0.125]","+0.101 [+0.072, +0.131]"
+ellipse,SES,handfeat,oof,Not economically disadvantaged,1974,-0.0134,-0.0253,0.4003,,
+ellipse,SES,handfeat,oof,Economically disadvantaged,4507,0.0063,0.013,0.3602,,
+ellipse,SES,handfeat,oof,Economically disadvantaged - Not economically disadvantaged,4507,,,,"+0.020 [-0.011, +0.051]","-0.012 [-0.025, +0.003]"
+ellipse,SES,handfeat,lopo,Not economically disadvantaged,1974,-0.0109,-0.0205,0.3968,,
+ellipse,SES,handfeat,lopo,Economically disadvantaged,4507,0.0076,0.0156,0.356,,
+ellipse,SES,handfeat,lopo,Economically disadvantaged - Not economically disadvantaged,4507,,,,"+0.018 [-0.010, +0.052]","-0.013 [-0.027, +0.001]"
+ellipse,SES,tfidf,oof,Not economically disadvantaged,1974,-0.0113,-0.0195,0.6247,,
+ellipse,SES,tfidf,oof,Economically disadvantaged,4507,0.0186,0.0351,0.5911,,
+ellipse,SES,tfidf,oof,Economically disadvantaged - Not economically disadvantaged,4507,,,,"+0.030 [+0.005, +0.052]","+0.005 [-0.011, +0.022]"
+ellipse,SES,tfidf,lopo,Not economically disadvantaged,1974,-0.0287,-0.0498,0.6098,,
+ellipse,SES,tfidf,lopo,Economically disadvantaged,4507,0.0059,0.0112,0.5758,,
+ellipse,SES,tfidf,lopo,Economically disadvantaged - Not economically disadvantaged,4507,,,,"+0.035 [+0.007, +0.062]","+0.010 [-0.008, +0.028]"
+ellipse,SES,embed,oof,Not economically disadvantaged,1974,-0.0216,-0.0377,0.5738,,
+ellipse,SES,embed,oof,Economically disadvantaged,4507,0.0107,0.0199,0.5516,,
+ellipse,SES,embed,oof,Economically disadvantaged - Not economically disadvantaged,4507,,,,"+0.032 [+0.006, +0.059]","+0.003 [-0.016, +0.020]"
+ellipse,SES,embed,lopo,Not economically disadvantaged,1974,-0.0147,-0.0253,0.5404,,
+ellipse,SES,embed,lopo,Economically disadvantaged,4507,0.0197,0.0362,0.5136,,
+ellipse,SES,embed,lopo,Economically disadvantaged - Not economically disadvantaged,4507,,,,"+0.034 [+0.005, +0.061]","+0.004 [-0.016, +0.023]"
+ellipse,gender,handfeat,oof,Male,3636,-0.0009,-0.0019,0.3919,,
+ellipse,gender,handfeat,oof,Female,2846,0.002,0.0038,0.347,,
+ellipse,gender,handfeat,oof,Female - Male,2846,,,,"+0.003 [-0.023, +0.031]","+0.055 [+0.041, +0.067]"
+ellipse,gender,handfeat,lopo,Male,3636,0.0007,0.0013,0.3905,,
+ellipse,gender,handfeat,lopo,Female,2846,0.0037,0.0073,0.3399,,
+ellipse,gender,handfeat,lopo,Female - Male,2846,,,,"+0.003 [-0.024, +0.030]","+0.055 [+0.042, +0.068]"
+ellipse,gender,tfidf,oof,Male,3636,0.0104,0.0196,0.5958,,
+ellipse,gender,tfidf,oof,Female,2846,0.0083,0.0149,0.6077,,
+ellipse,gender,tfidf,oof,Female - Male,2846,,,,"-0.002 [-0.025, +0.022]","+0.037 [+0.022, +0.053]"
+ellipse,gender,tfidf,lopo,Male,3636,-0.0043,-0.0081,0.5827,,
+ellipse,gender,tfidf,lopo,Female,2846,-0.0049,-0.0088,0.5893,,
+ellipse,gender,tfidf,lopo,Female - Male,2846,,,,"-0.001 [-0.025, +0.024]","+0.040 [+0.024, +0.056]"
+ellipse,gender,embed,oof,Male,3636,0.0016,0.003,0.5528,,
+ellipse,gender,embed,oof,Female,2846,-0.0001,-0.0003,0.5634,,
+ellipse,gender,embed,oof,Female - Male,2846,,,,"-0.002 [-0.027, +0.023]","+0.042 [+0.025, +0.059]"
+ellipse,gender,embed,lopo,Male,3636,0.0086,0.0158,0.521,,
+ellipse,gender,embed,lopo,Female,2846,0.0101,0.0179,0.5207,,
+ellipse,gender,embed,lopo,Female - Male,2846,,,,"+0.002 [-0.021, +0.029]","+0.046 [+0.029, +0.063]"
+ellipse,race_ethnicity,handfeat,oof,White,471,-0.0366,-0.0686,0.4133,,
+ellipse,race_ethnicity,handfeat,oof,Hispanic/Latino,4635,0.0102,0.0206,0.3781,,
+ellipse,race_ethnicity,handfeat,oof,Black/African American,515,-0.0252,-0.0512,0.3295,,
+ellipse,race_ethnicity,handfeat,oof,Asian/Pacific Islander,792,-0.0168,-0.0335,0.2907,,
+ellipse,race_ethnicity,handfeat,oof,Hispanic/Latino - White,4635,,,,"+0.047 [-0.006, +0.102]","-0.022 [-0.052, +0.005]"
+ellipse,race_ethnicity,handfeat,oof,Black/African American - White,515,,,,"+0.011 [-0.060, +0.084]","+0.034 [-0.004, +0.069]"
+ellipse,race_ethnicity,handfeat,oof,Asian/Pacific Islander - White,792,,,,"+0.020 [-0.049, +0.091]","+0.070 [+0.041, +0.101]"
+ellipse,race_ethnicity,handfeat,lopo,White,471,-0.0336,-0.0631,0.4115,,
+ellipse,race_ethnicity,handfeat,lopo,Hispanic/Latino,4635,0.0119,0.024,0.3732,,
+ellipse,race_ethnicity,handfeat,lopo,Black/African American,515,-0.0242,-0.0491,0.3201,,
+ellipse,race_ethnicity,handfeat,lopo,Asian/Pacific Islander,792,-0.0157,-0.0313,0.2948,,
+ellipse,race_ethnicity,handfeat,lopo,Hispanic/Latino - White,4635,,,,"+0.045 [-0.006, +0.103]","-0.024 [-0.053, +0.004]"
+ellipse,race_ethnicity,handfeat,lopo,Black/African American - White,515,,,,"+0.009 [-0.062, +0.073]","+0.032 [-0.002, +0.068]"
+ellipse,race_ethnicity,handfeat,lopo,Asian/Pacific Islander - White,792,,,,"+0.018 [-0.050, +0.080]","+0.069 [+0.036, +0.097]"
+ellipse,race_ethnicity,tfidf,oof,White,471,-0.0105,-0.0184,0.6103,,
+ellipse,race_ethnicity,tfidf,oof,Hispanic/Latino,4635,0.0154,0.0284,0.6104,,
+ellipse,race_ethnicity,tfidf,oof,Black/African American,515,0.0021,0.004,0.5291,,
+ellipse,race_ethnicity,tfidf,oof,Asian/Pacific Islander,792,-0.0042,-0.0079,0.5666,,
+ellipse,race_ethnicity,tfidf,oof,Hispanic/Latino - White,4635,,,,"+0.026 [-0.023, +0.072]","-0.025 [-0.056, +0.007]"
+ellipse,race_ethnicity,tfidf,oof,Black/African American - White,515,,,,"+0.013 [-0.044, +0.073]","+0.028 [-0.013, +0.069]"
+ellipse,race_ethnicity,tfidf,oof,Asian/Pacific Islander - White,792,,,,"+0.006 [-0.048, +0.060]","+0.043 [+0.006, +0.077]"
+ellipse,race_ethnicity,tfidf,lopo,White,471,-0.036,-0.0635,0.5889,,
+ellipse,race_ethnicity,tfidf,lopo,Hispanic/Latino,4635,0.0026,0.0047,0.591,,
+ellipse,race_ethnicity,tfidf,lopo,Black/African American,515,-0.0056,-0.0105,0.5314,,
+ellipse,race_ethnicity,tfidf,lopo,Asian/Pacific Islander,792,-0.022,-0.0407,0.5656,,
+ellipse,race_ethnicity,tfidf,lopo,Hispanic/Latino - White,4635,,,,"+0.038 [-0.009, +0.089]","-0.014 [-0.046, +0.018]"
+ellipse,race_ethnicity,tfidf,lopo,Black/African American - White,515,,,,"+0.030 [-0.032, +0.093]","+0.048 [+0.006, +0.089]"
+ellipse,race_ethnicity,tfidf,lopo,Asian/Pacific Islander - White,792,,,,"+0.014 [-0.041, +0.072]","+0.053 [+0.019, +0.091]"
+ellipse,race_ethnicity,embed,oof,White,471,-0.0362,-0.062,0.6489,,
+ellipse,race_ethnicity,embed,oof,Hispanic/Latino,4635,0.0093,0.0172,0.56,,
+ellipse,race_ethnicity,embed,oof,Black/African American,515,-0.0187,-0.0352,0.5067,,
+ellipse,race_ethnicity,embed,oof,Asian/Pacific Islander,792,-0.0176,-0.0328,0.4941,,
+ellipse,race_ethnicity,embed,oof,Hispanic/Latino - White,4635,,,,"+0.045 [+0.002, +0.093]","-0.005 [-0.043, +0.027]"
+ellipse,race_ethnicity,embed,oof,Black/African American - White,515,,,,"+0.018 [-0.047, +0.082]","+0.024 [-0.018, +0.068]"
+ellipse,race_ethnicity,embed,oof,Asian/Pacific Islander - White,792,,,,"+0.019 [-0.038, +0.077]","+0.051 [+0.013, +0.085]"
+ellipse,race_ethnicity,embed,lopo,White,471,-0.0503,-0.085,0.5859,,
+ellipse,race_ethnicity,embed,lopo,Hispanic/Latino,4635,0.0206,0.0376,0.5223,,
+ellipse,race_ethnicity,embed,lopo,Black/African American,515,-0.0073,-0.0134,0.4617,,
+ellipse,race_ethnicity,embed,lopo,Asian/Pacific Islander,792,-0.0139,-0.0256,0.4872,,
+ellipse,race_ethnicity,embed,lopo,Hispanic/Latino - White,4635,,,,"+0.071 [+0.024, +0.122]","+0.017 [-0.025, +0.056]"
+ellipse,race_ethnicity,embed,lopo,Black/African American - White,515,,,,"+0.043 [-0.025, +0.104]","+0.049 [+0.000, +0.097]"
+ellipse,race_ethnicity,embed,lopo,Asian/Pacific Islander - White,792,,,,"+0.036 [-0.028, +0.095]","+0.069 [+0.026, +0.112]"

@@ -1,0 +1,13 @@
+corpus,family,protocol,qwk,pearson_r,rmse,n
+ellipse,handfeat,oof,0.3742,0.4886,0.5559,6482
+ellipse,handfeat,lopo,0.3703,0.4834,0.5578,6482
+ellipse,tfidf,oof,0.6027,0.6713,0.4723,6482
+ellipse,tfidf,lopo,0.5873,0.6514,0.4838,6482
+ellipse,embed,oof,0.5592,0.623,0.5,6482
+ellipse,embed,lopo,0.5225,0.5735,0.5298,6482
+persuade,handfeat,oof,0.7809,0.8067,0.6858,25995
+persuade,handfeat,lopo,0.7686,0.7943,0.7051,25995
+persuade,tfidf,oof,0.8477,0.8643,0.5838,25995
+persuade,tfidf,lopo,0.7613,0.7956,0.7193,25995
+persuade,embed,oof,0.7793,0.8041,0.6899,25995
+persuade,embed,lopo,0.6153,0.6582,0.8842,25995

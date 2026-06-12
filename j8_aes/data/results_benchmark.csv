@@ -1,0 +1,44 @@
+analysis,second_opinion,dimension,group,value,ci_lo,ci_hi,n
+second_opinion,human,SES,Economically disadvantaged - Not economically disadvantaged,0.0185,-0.0159,0.0523,4499
+second_opinion,handfeat,SES,Economically disadvantaged - Not economically disadvantaged,0.031,-0.0045,0.0647,4499
+second_opinion,tfidf,SES,Economically disadvantaged - Not economically disadvantaged,0.041,0.0101,0.0737,4499
+second_opinion,embed,SES,Economically disadvantaged - Not economically disadvantaged,0.0434,0.0151,0.0747,4499
+abs_disagreement,human,SES,Economically disadvantaged - Not economically disadvantaged,-0.0042,-0.0297,0.0214,4499
+second_opinion,human,gender,Female - Male,-0.0273,-0.0602,0.0047,2839
+second_opinion,handfeat,gender,Female - Male,-0.0124,-0.0411,0.0195,2839
+second_opinion,tfidf,gender,Female - Male,-0.0172,-0.0443,0.0133,2839
+second_opinion,embed,gender,Female - Male,-0.0163,-0.0457,0.0146,2839
+abs_disagreement,human,gender,Female - Male,-0.0166,-0.0411,0.0071,2839
+second_opinion,human,race_ethnicity,Hispanic/Latino - White,0.0668,0.0022,0.1289,4625
+second_opinion,handfeat,race_ethnicity,Hispanic/Latino - White,0.0813,0.0141,0.1428,4625
+second_opinion,tfidf,race_ethnicity,Hispanic/Latino - White,0.0602,0.0061,0.1152,4625
+second_opinion,embed,race_ethnicity,Hispanic/Latino - White,0.0776,0.021,0.1342,4625
+abs_disagreement,human,race_ethnicity,Hispanic/Latino - White,-0.0441,-0.0887,0.008,4625
+second_opinion,human,race_ethnicity,Black/African American - White,0.0151,-0.069,0.0986,514
+second_opinion,handfeat,race_ethnicity,Black/African American - White,0.0193,-0.0689,0.1004,514
+second_opinion,tfidf,race_ethnicity,Black/African American - White,0.0198,-0.0591,0.0966,514
+second_opinion,embed,race_ethnicity,Black/African American - White,0.0228,-0.053,0.1006,514
+abs_disagreement,human,race_ethnicity,Black/African American - White,-0.0374,-0.0994,0.023,514
+second_opinion,human,race_ethnicity,Asian/Pacific Islander - White,0.0024,-0.079,0.0779,791
+second_opinion,handfeat,race_ethnicity,Asian/Pacific Islander - White,0.0252,-0.0549,0.0992,791
+second_opinion,tfidf,race_ethnicity,Asian/Pacific Islander - White,0.0108,-0.0572,0.0723,791
+second_opinion,embed,race_ethnicity,Asian/Pacific Islander - White,0.0212,-0.0434,0.0886,791
+abs_disagreement,human,race_ethnicity,Asian/Pacific Islander - White,-0.0213,-0.0778,0.0382,791
+dimension_partial_corr,handfeat,Cohesion,all,0.1177,,,6482
+dimension_partial_corr,handfeat,Syntax,all,0.1149,,,6482
+dimension_partial_corr,handfeat,Vocabulary,all,0.2369,,,6482
+dimension_partial_corr,handfeat,Phraseology,all,0.1171,,,6482
+dimension_partial_corr,handfeat,Grammar,all,-0.0705,,,6482
+dimension_partial_corr,handfeat,Conventions,all,0.0518,,,6482
+dimension_partial_corr,tfidf,Cohesion,all,0.1084,,,6482
+dimension_partial_corr,tfidf,Syntax,all,0.1311,,,6482
+dimension_partial_corr,tfidf,Vocabulary,all,0.2025,,,6482
+dimension_partial_corr,tfidf,Phraseology,all,0.1794,,,6482
+dimension_partial_corr,tfidf,Grammar,all,0.1223,,,6482
+dimension_partial_corr,tfidf,Conventions,all,0.1463,,,6482
+dimension_partial_corr,embed,Cohesion,all,0.1092,,,6482
+dimension_partial_corr,embed,Syntax,all,0.131,,,6482
+dimension_partial_corr,embed,Vocabulary,all,0.1609,,,6482
+dimension_partial_corr,embed,Phraseology,all,0.1326,,,6482
+dimension_partial_corr,embed,Grammar,all,0.0925,,,6482
+dimension_partial_corr,embed,Conventions,all,0.1979,,,6482
