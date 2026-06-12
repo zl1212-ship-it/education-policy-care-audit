@@ -1,0 +1,155 @@
+institution,year,observed_mean,n_reports,extrapolated,H_s
+Stanford University,2019,42842.82608695652,23,False,42842.83
+Stanford University,2020,43688.41025641026,39,False,43688.41
+Stanford University,2021,47745.857142857145,14,False,47745.86
+Stanford University,2022,48597.818181818184,22,False,48597.82
+Stanford University,2023,52377.5,18,False,52377.5
+Stanford University,2024,51909.6,5,False,51909.6
+Stanford University,2025,57143.333333333336,6,False,57143.33
+Harvard University,2019,38009.3,20,False,38009.3
+Harvard University,2020,34585.41176470588,34,False,34585.41
+Harvard University,2021,36716.166666666664,6,False,36716.17
+Harvard University,2022,37342.53846153846,13,False,37342.54
+Harvard University,2023,44133.1,10,False,44133.1
+Harvard University,2024,50200.0,10,False,50200.0
+Harvard University,2025,51300.0,10,False,51300.0
+Massachusetts Institute of Technology,2019,35768.6,25,False,35768.6
+Massachusetts Institute of Technology,2020,38339.59259259259,27,False,38339.59
+Massachusetts Institute of Technology,2021,39413.17391304348,23,False,39413.17
+Massachusetts Institute of Technology,2022,42278.666666666664,18,False,42278.67
+Massachusetts Institute of Technology,2023,46800.5,4,False,46800.5
+Massachusetts Institute of Technology,2024,48269.71428571428,7,False,48269.71
+Massachusetts Institute of Technology,2025,44688.0,4,False,44688.0
+California Institute of Technology,2019,37916.666666666664,6,False,37916.67
+California Institute of Technology,2020,36400.0,6,False,36400.0
+California Institute of Technology,2021,37750.0,6,False,37750.0
+California Institute of Technology,2022,26183.555555555555,9,False,26183.56
+California Institute of Technology,2023,45000.0,1,False,45000.0
+California Institute of Technology,2024,46500.0,3,False,46500.0
+California Institute of Technology,2025,47581.333333333336,3,False,47581.33
+Princeton University,2019,34238.78947368421,19,False,34238.79
+Princeton University,2020,34612.71428571428,28,False,34612.71
+Princeton University,2021,42087.333333333336,6,False,42087.33
+Princeton University,2022,47264.583333333336,24,False,47264.58
+Princeton University,2023,46883.63636363636,11,False,46883.64
+Princeton University,2024,49808.6,10,False,49808.6
+Princeton University,2025,54923.42857142857,7,False,54923.43
+Yale University,2019,34132.8125,16,False,34132.81
+Yale University,2020,34010.18518518518,27,False,34010.19
+Yale University,2021,36800.0,8,False,36800.0
+Yale University,2022,38963.92,25,False,38963.92
+Yale University,2023,43202.454545454544,11,False,43202.45
+Yale University,2024,46115.0,9,False,46115.0
+Yale University,2025,52016.454545454544,11,False,52016.45
+Columbia University,2019,34310.78571428572,14,False,34310.79
+Columbia University,2020,34977.44117647059,34,False,34977.44
+Columbia University,2021,37857.0,11,False,37857.0
+Columbia University,2022,39940.9,20,False,39940.9
+Columbia University,2023,45129.916666666664,12,False,45129.92
+Columbia University,2024,39791.09090909091,11,False,39791.09
+Columbia University,2025,34529.42857142857,7,False,34529.43
+University of Chicago,2019,33438.166666666664,18,False,33438.17
+University of Chicago,2020,35374.393939393936,33,False,35374.39
+University of Chicago,2021,34095.0,14,False,34095.0
+University of Chicago,2022,35586.818181818184,22,False,35586.82
+University of Chicago,2023,41771.666666666664,12,False,41771.67
+University of Chicago,2024,44929.41176470588,17,False,44929.41
+University of Chicago,2025,46350.0,1,False,46350.0
+University of Pennsylvania,2019,31026.074074074073,27,False,31026.07
+University of Pennsylvania,2020,33270.739130434784,46,False,33270.74
+University of Pennsylvania,2021,34899.81481481482,27,False,34899.81
+University of Pennsylvania,2022,37427.48648648649,37,False,37427.49
+University of Pennsylvania,2023,42403.75,16,False,42403.75
+University of Pennsylvania,2024,42175.833333333336,18,False,42175.83
+University of Pennsylvania,2025,43582.0,7,False,43582.0
+Cornell University,2019,37276.6,15,False,37276.6
+Cornell University,2020,36075.71428571428,42,False,36075.71
+Cornell University,2021,36587.833333333336,12,False,36587.83
+Cornell University,2022,39284.53333333333,30,False,39284.53
+Cornell University,2023,44712.77777777778,18,False,44712.78
+Cornell University,2024,39403.875,8,False,39403.88
+Cornell University,2025,47886.555555555555,9,False,47886.56
+Johns Hopkins University,2019,36382.53846153846,13,False,36382.54
+Johns Hopkins University,2020,32231.85714285714,28,False,32231.86
+Johns Hopkins University,2021,35630.46153846154,13,False,35630.46
+Johns Hopkins University,2022,33961.2,15,False,33961.2
+Johns Hopkins University,2023,35334.0,16,False,35334.0
+Johns Hopkins University,2024,45811.11111111111,9,False,45811.11
+Johns Hopkins University,2025,50500.0,6,False,50500.0
+Duke University,2019,29191.65,20,False,29191.65
+Duke University,2020,32555.962962962964,27,False,32555.96
+Duke University,2021,33210.71428571428,14,False,33210.71
+Duke University,2022,35137.8125,16,False,35137.81
+Duke University,2023,38590.90909090909,11,False,38590.91
+Duke University,2024,38000.0,10,False,38000.0
+Duke University,2025,43024.42857142857,7,False,43024.43
+Northwestern University,2019,31424.352941176472,17,False,31424.35
+Northwestern University,2020,31531.842105263157,38,False,31531.84
+Northwestern University,2021,34898.333333333336,18,False,34898.33
+Northwestern University,2022,33947.09523809524,21,False,33947.1
+Northwestern University,2023,37561.76470588235,17,False,37561.76
+Northwestern University,2024,42705.125,8,False,42705.12
+Northwestern University,2025,47310.22222222222,9,False,47310.22
+University of Michigan,2019,28669.545454545456,33,False,28669.55
+University of Michigan,2020,28523.55,40,False,28523.55
+University of Michigan,2021,30380.615384615383,26,False,30380.62
+University of Michigan,2022,30440.037037037036,27,False,30440.04
+University of Michigan,2023,31367.636363636364,22,False,31367.64
+University of Michigan,2024,39396.0,12,False,39396.0
+University of Michigan,2025,40930.72727272727,11,False,40930.73
+University of Texas at Austin,2019,25676.285714285714,21,False,25676.29
+University of Texas at Austin,2020,26033.918367346938,49,False,26033.92
+University of Texas at Austin,2021,31643.333333333332,15,False,31643.33
+University of Texas at Austin,2022,27415.08695652174,46,False,27415.09
+University of Texas at Austin,2023,29547.428571428572,21,False,29547.43
+University of Texas at Austin,2024,31723.809523809523,21,False,31723.81
+University of Texas at Austin,2025,36885.3,10,False,36885.3
+University of Washington,2019,30549.14285714286,21,False,30549.14
+University of Washington,2020,30595.375,24,False,30595.38
+University of Washington,2021,30243.235294117647,17,False,30243.24
+University of Washington,2022,30368.1,30,False,30368.1
+University of Washington,2023,31337.0,11,False,31337.0
+University of Washington,2024,32131.75,4,False,32131.75
+University of Washington,2025,39009.6,5,False,39009.6
+University of Illinois Urbana-Champaign,2019,20486.916666666668,24,False,20486.92
+University of Illinois Urbana-Champaign,2020,24224.0,48,False,24224.0
+University of Illinois Urbana-Champaign,2021,21286.130434782608,23,False,21286.13
+University of Illinois Urbana-Champaign,2022,24165.88888888889,36,False,24165.89
+University of Illinois Urbana-Champaign,2023,28869.916666666668,12,False,28869.92
+University of Illinois Urbana-Champaign,2024,26548.133333333335,15,False,26548.13
+University of Illinois Urbana-Champaign,2025,30433.416666666668,12,False,30433.42
+Ohio State University,2019,22078.695652173912,23,False,22078.7
+Ohio State University,2020,22498.32,25,False,22498.32
+Ohio State University,2021,26174.428571428572,14,False,26174.43
+Ohio State University,2022,26477.916666666668,36,False,26477.92
+Ohio State University,2023,24702.071428571428,14,False,24702.07
+Ohio State University,2024,31419.875,8,False,31419.88
+Ohio State University,2025,30476.0,11,False,30476.0
+Penn State University,2019,27530.04,25,False,27530.04
+Penn State University,2020,28175.208333333332,48,False,28175.21
+Penn State University,2021,27586.714285714286,21,False,27586.71
+Penn State University,2022,28094.79591836735,49,False,28094.8
+Penn State University,2023,32453.733333333334,15,False,32453.73
+Penn State University,2024,28891.153846153848,13,False,28891.15
+Penn State University,2025,26756.5,8,False,26756.5
+"University of California, Berkeley",2019,34051.93548387097,31,False,34051.94
+"University of California, Berkeley",2020,34232.95,40,False,34232.95
+"University of California, Berkeley",2021,35319.90909090909,22,False,35319.91
+"University of California, Berkeley",2022,38079.3,30,False,38079.3
+"University of California, Berkeley",2023,42216.92307692308,13,False,42216.92
+"University of California, Berkeley",2024,36114.0,9,False,36114.0
+"University of California, Berkeley",2025,39451.692307692305,13,False,39451.69
+"University of California, Los Angeles",2019,28290.227272727272,22,False,28290.23
+"University of California, Los Angeles",2020,29981.5625,32,False,29981.56
+"University of California, Los Angeles",2021,31527.21052631579,19,False,31527.21
+"University of California, Los Angeles",2022,29643.05,20,False,29643.05
+"University of California, Los Angeles",2023,30110.625,8,False,30110.62
+"University of California, Los Angeles",2024,31277.777777777777,9,False,31277.78
+"University of California, Los Angeles",2025,20357.14285714286,7,False,20357.14
+"University of California, San Diego",2019,28366.0625,16,False,28366.06
+"University of California, San Diego",2020,31236.5,64,False,31236.5
+"University of California, San Diego",2021,29692.19230769231,26,False,29692.19
+"University of California, San Diego",2022,32925.32142857143,28,False,32925.32
+"University of California, San Diego",2023,33775.625,8,False,33775.62
+"University of California, San Diego",2024,38261.75,4,False,38261.75
+"University of California, San Diego",2025,39310.0,4,False,39310.0

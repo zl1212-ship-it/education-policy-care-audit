@@ -47,19 +47,23 @@ cost_index) * N_g))`. It is a transparency artefact for the funding context.
 | `ipeds_grad_enrollment.csv` | Graduate enrolment, IPEDS via Urban Institute (2019–2022) |
 | `sed_doctorates.csv` | Research doctorates awarded, NSF SED (2019–2023) |
 | `governance_matrix.csv` | Assembled institution-year panel used by the paper |
+| `stipend_sensitivity.py` | Extrapolation-sensitivity check → `stipend_sensitivity.csv` (all 154 US cells observed) |
+| `stipend_validation.py` | Validates crowd-sourced reports against published institutional floors → `stipend_validation_table.csv` |
+| `stipend_validation.csv` | Officially published minimum stipend rates (10 institutions, source URLs + access dates) |
 
 ## Reproduce
 
 ```bash
 git clone https://github.com/zl1212-ship-it/education-policy-care-audit
 cd education-policy-care-audit
-git checkout paper-data-v1          # frozen snapshot matching the manuscript
+git checkout paper-data-v2          # frozen snapshot matching the manuscript
+# (paper-data-v1 matches the originally submitted version, before the validation files)
 
 pip install requests
 python build_matrix.py              # rebuilds governance_matrix.csv from source
 ```
 
-The tag `paper-data-v1` is the frozen, version-tagged snapshot the paper cites; checking it out
+The tag `paper-data-v2` is the frozen, version-tagged snapshot the paper cites; checking it out
 reproduces the exact figures reported, independent of any later data refresh.
 
 ## Sources
