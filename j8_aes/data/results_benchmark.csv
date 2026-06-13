@@ -4,26 +4,41 @@ second_opinion,handfeat,SES,Economically disadvantaged - Not economically disadv
 second_opinion,tfidf,SES,Economically disadvantaged - Not economically disadvantaged,0.041,0.0101,0.0737,4499
 second_opinion,embed,SES,Economically disadvantaged - Not economically disadvantaged,0.0434,0.0151,0.0747,4499
 abs_disagreement,human,SES,Economically disadvantaged - Not economically disadvantaged,-0.0042,-0.0297,0.0214,4499
-second_opinion,human,gender,Female - Male,-0.0273,-0.0602,0.0047,2839
-second_opinion,handfeat,gender,Female - Male,-0.0124,-0.0411,0.0195,2839
-second_opinion,tfidf,gender,Female - Male,-0.0172,-0.0443,0.0133,2839
-second_opinion,embed,gender,Female - Male,-0.0163,-0.0457,0.0146,2839
-abs_disagreement,human,gender,Female - Male,-0.0166,-0.0411,0.0071,2839
-second_opinion,human,race_ethnicity,Hispanic/Latino - White,0.0668,0.0022,0.1289,4625
-second_opinion,handfeat,race_ethnicity,Hispanic/Latino - White,0.0813,0.0141,0.1428,4625
-second_opinion,tfidf,race_ethnicity,Hispanic/Latino - White,0.0602,0.0061,0.1152,4625
-second_opinion,embed,race_ethnicity,Hispanic/Latino - White,0.0776,0.021,0.1342,4625
-abs_disagreement,human,race_ethnicity,Hispanic/Latino - White,-0.0441,-0.0887,0.008,4625
-second_opinion,human,race_ethnicity,Black/African American - White,0.0151,-0.069,0.0986,514
-second_opinion,handfeat,race_ethnicity,Black/African American - White,0.0193,-0.0689,0.1004,514
-second_opinion,tfidf,race_ethnicity,Black/African American - White,0.0198,-0.0591,0.0966,514
-second_opinion,embed,race_ethnicity,Black/African American - White,0.0228,-0.053,0.1006,514
-abs_disagreement,human,race_ethnicity,Black/African American - White,-0.0374,-0.0994,0.023,514
-second_opinion,human,race_ethnicity,Asian/Pacific Islander - White,0.0024,-0.079,0.0779,791
-second_opinion,handfeat,race_ethnicity,Asian/Pacific Islander - White,0.0252,-0.0549,0.0992,791
-second_opinion,tfidf,race_ethnicity,Asian/Pacific Islander - White,0.0108,-0.0572,0.0723,791
-second_opinion,embed,race_ethnicity,Asian/Pacific Islander - White,0.0212,-0.0434,0.0886,791
-abs_disagreement,human,race_ethnicity,Asian/Pacific Islander - White,-0.0213,-0.0778,0.0382,791
+machine_minus_human_paired,handfeat,SES,Economically disadvantaged - Not economically disadvantaged,0.0124,-0.021,0.0472,4499
+machine_minus_human_paired,tfidf,SES,Economically disadvantaged - Not economically disadvantaged,0.0225,-0.0074,0.0534,4499
+machine_minus_human_paired,embed,SES,Economically disadvantaged - Not economically disadvantaged,0.0249,-0.008,0.0544,4499
+second_opinion,human,gender,Female - Male,-0.0273,-0.059,0.0053,2839
+second_opinion,handfeat,gender,Female - Male,-0.0124,-0.0455,0.0221,2839
+second_opinion,tfidf,gender,Female - Male,-0.0172,-0.0467,0.0102,2839
+second_opinion,embed,gender,Female - Male,-0.0163,-0.0451,0.0113,2839
+abs_disagreement,human,gender,Female - Male,-0.0166,-0.0416,0.008,2839
+machine_minus_human_paired,handfeat,gender,Female - Male,0.0149,-0.0162,0.0449,2839
+machine_minus_human_paired,tfidf,gender,Female - Male,0.0101,-0.0178,0.0363,2839
+machine_minus_human_paired,embed,gender,Female - Male,0.011,-0.0161,0.0412,2839
+second_opinion,human,race_ethnicity,Hispanic/Latino - White,0.0668,0.0038,0.1278,4625
+second_opinion,handfeat,race_ethnicity,Hispanic/Latino - White,0.0813,0.0145,0.1438,4625
+second_opinion,tfidf,race_ethnicity,Hispanic/Latino - White,0.0602,0.0063,0.1156,4625
+second_opinion,embed,race_ethnicity,Hispanic/Latino - White,0.0776,0.018,0.1356,4625
+abs_disagreement,human,race_ethnicity,Hispanic/Latino - White,-0.0441,-0.0928,0.0011,4625
+machine_minus_human_paired,handfeat,race_ethnicity,Hispanic/Latino - White,0.0145,-0.0486,0.0757,4625
+machine_minus_human_paired,tfidf,race_ethnicity,Hispanic/Latino - White,-0.0066,-0.0638,0.0502,4625
+machine_minus_human_paired,embed,race_ethnicity,Hispanic/Latino - White,0.0108,-0.0466,0.0639,4625
+second_opinion,human,race_ethnicity,Black/African American - White,0.0151,-0.0681,0.0914,514
+second_opinion,handfeat,race_ethnicity,Black/African American - White,0.0193,-0.0633,0.1079,514
+second_opinion,tfidf,race_ethnicity,Black/African American - White,0.0198,-0.0567,0.0976,514
+second_opinion,embed,race_ethnicity,Black/African American - White,0.0228,-0.0527,0.0968,514
+abs_disagreement,human,race_ethnicity,Black/African American - White,-0.0374,-0.1027,0.027,514
+machine_minus_human_paired,handfeat,race_ethnicity,Black/African American - White,0.0041,-0.0697,0.0826,514
+machine_minus_human_paired,tfidf,race_ethnicity,Black/African American - White,0.0047,-0.066,0.0748,514
+machine_minus_human_paired,embed,race_ethnicity,Black/African American - White,0.0077,-0.0677,0.0782,514
+second_opinion,human,race_ethnicity,Asian/Pacific Islander - White,0.0024,-0.0752,0.0815,791
+second_opinion,handfeat,race_ethnicity,Asian/Pacific Islander - White,0.0252,-0.0533,0.0985,791
+second_opinion,tfidf,race_ethnicity,Asian/Pacific Islander - White,0.0108,-0.0621,0.0775,791
+second_opinion,embed,race_ethnicity,Asian/Pacific Islander - White,0.0212,-0.0483,0.0926,791
+abs_disagreement,human,race_ethnicity,Asian/Pacific Islander - White,-0.0213,-0.0792,0.0348,791
+machine_minus_human_paired,handfeat,race_ethnicity,Asian/Pacific Islander - White,0.0228,-0.053,0.1001,791
+machine_minus_human_paired,tfidf,race_ethnicity,Asian/Pacific Islander - White,0.0084,-0.0555,0.0815,791
+machine_minus_human_paired,embed,race_ethnicity,Asian/Pacific Islander - White,0.0187,-0.0493,0.0849,791
 dimension_partial_corr,handfeat,Cohesion,all,0.1177,,,6482
 dimension_partial_corr,handfeat,Syntax,all,0.1149,,,6482
 dimension_partial_corr,handfeat,Vocabulary,all,0.2369,,,6482
