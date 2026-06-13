@@ -6,9 +6,12 @@
   Figure 2: the decision layer -- demotion rate (human-passed essays the
             machine fails) for ELL vs non-ELL writers at the pass mark, per
             family, with the differential.
-  Figure 3: the second-opinion benchmark -- how a second opinion differs by
-            writer SES when the second opinion is a human rater vs each
-            machine family (ELLIPSE double-rated essays), with 95% CIs.
+  Figure 3: the second-opinion benchmark (ELLIPSE double-rated essays),
+            two panels. (a) signed second-opinion differential across every
+            subgroup contrast, for a human rater and each machine family,
+            showing the human rater's own tilt on the race contrasts.
+            (b) the direct paired test, (machine differential) minus (human
+            differential), whose CIs all cross zero.
 
 Inputs : data/results_gaps.csv, data/results_decision.csv,
          data/results_benchmark.csv
@@ -39,10 +42,10 @@ CUT = 4
 
 def save(fig, name):
     fig.tight_layout()
-    fig.savefig(os.path.join(OUT, name + ".pdf"))
-    fig.savefig(os.path.join(OUT, name + ".png"), dpi=200)
+    fig.savefig(os.path.join(OUT, name + ".pdf"), bbox_inches="tight")
+    fig.savefig(os.path.join(OUT, name + ".png"), dpi=200, bbox_inches="tight")
     fig.savefig(os.path.join(OUT, name + ".tiff"), dpi=600,
-                pil_kwargs={"compression": "tiff_lzw"})
+                bbox_inches="tight", pil_kwargs={"compression": "tiff_lzw"})
     plt.close(fig)
 
 
@@ -130,31 +133,65 @@ ax.spines[["top", "right"]].set_visible(False)
 save(fig, "j8_figure2")
 
 
-# ---------- Figure 3: second-opinion benchmark (ELLIPSE) ----------
-fig, ax = plt.subplots(figsize=(7.0, 4.0))
-order = ["human", "handfeat", "tfidf", "embed"]
-disp = {"human": "Second human rater", "handfeat": "Machine: hand features",
-        "tfidf": "Machine: TF-IDF", "embed": "Machine: embedding"}
-sub = bench[(bench.analysis == "second_opinion") & (bench.dimension == "SES")]
-vals = [float(sub[sub.second_opinion == o].value.iloc[0]) for o in order]
-los = [float(sub[sub.second_opinion == o].ci_lo.iloc[0]) for o in order]
-his = [float(sub[sub.second_opinion == o].ci_hi.iloc[0]) for o in order]
-ypos = np.arange(len(order))
-colors = [NON] + [ELL] * 3
-ax.errorbar(vals, ypos,
-            xerr=[np.array(vals) - np.array(los),
-                  np.array(his) - np.array(vals)],
-            fmt="none", ecolor="0.45", capsize=3)
-ax.scatter(vals, ypos, c=colors, s=55, zorder=3)
-ax.axvline(0, color="0.3", lw=0.8, ls="--")
-ax.set_yticks(ypos)
-ax.set_yticklabels([disp[o] for o in order], fontsize=9.5)
-ax.invert_yaxis()
-ax.set_xlabel("Second-opinion differential by SES (score points, 95% CI)")
-ax.set_title("A human second opinion is group-neutral; the machines tilt\n"
-             "(ELLIPSE double-rated essays, all writers English learners)",
-             fontsize=10.5)
-ax.spines[["top", "right"]].set_visible(False)
+# ---------- Figure 3: second-opinion benchmark (ELLIPSE), honest two-panel ----------
+# Contrasts shown, top to bottom; the race contrasts are included so the human
+# rater's own tilt is visible, not only the SES contrast where it is null.
+CONTRASTS = [
+    ("SES", "Economically disadvantaged - Not economically disadvantaged",
+     "Economic disadvantage"),
+    ("gender", "Female - Male", "Gender (F - M)"),
+    ("race_ethnicity", "Hispanic/Latino - White", "Hispanic/Latino - White"),
+    ("race_ethnicity", "Black/African American - White",
+     "Black - White"),
+    ("race_ethnicity", "Asian/Pacific Islander - White", "Asian/PI - White"),
+]
+fams = ["human", "handfeat", "tfidf", "embed"]
+fam_disp = {"human": "Human rater 2", "handfeat": "Hand features",
+            "tfidf": "TF-IDF", "embed": "Embedding"}
+fam_col = {"human": NON, "handfeat": "#7b3294", "tfidf": "#e08214",
+           "embed": "#c51b7d"}
+off = {"human": 0.27, "handfeat": 0.09, "tfidf": -0.09, "embed": -0.27}
+
+fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 4.6), sharey=True)
+
+
+def forest(ax, analysis, fams_here, title, xlabel):
+    base = np.arange(len(CONTRASTS))
+    for fam in fams_here:
+        xs, ys, lo, hi = [], [], [], []
+        for k, (dim, grp, _) in enumerate(CONTRASTS):
+            r = bench[(bench.analysis == analysis)
+                      & (bench.second_opinion == fam)
+                      & (bench.dimension == dim) & (bench.group == grp)]
+            if not len(r):
+                continue
+            xs.append(float(r.value.iloc[0]))
+            ys.append(base[k] + off[fam])
+            lo.append(float(r.ci_lo.iloc[0]))
+            hi.append(float(r.ci_hi.iloc[0]))
+        xs = np.array(xs)
+        ax.errorbar(xs, ys, xerr=[xs - np.array(lo), np.array(hi) - xs],
+                    fmt="o", ms=4.5, color=fam_col[fam], ecolor=fam_col[fam],
+                    elinewidth=1.1, capsize=2, label=fam_disp[fam])
+    ax.axvline(0, color="0.3", lw=0.9, ls="--")
+    ax.set_yticks(base)
+    ax.set_yticklabels([c[2] for c in CONTRASTS], fontsize=9)
+    ax.invert_yaxis()
+    ax.set_xlabel(xlabel, fontsize=9.5)
+    ax.set_title(title, fontsize=10)
+    ax.spines[["top", "right"]].set_visible(False)
+
+
+forest(a1, "second_opinion", fams,
+       "(a) Second-opinion differential, by source",
+       "Second $-$ first rating differential (points, 95% CI)")
+forest(a2, "machine_minus_human_paired", ["handfeat", "tfidf", "embed"],
+       "(b) Machine tilt minus human tilt (paired)",
+       "(machine $-$ human) differential (points, 95% CI)")
+handles, labels = a1.get_legend_handles_labels()
+fig.legend(handles, labels, frameon=False, fontsize=9, ncol=4,
+           loc="lower center", bbox_to_anchor=(0.5, -0.02))
+fig.subplots_adjust(bottom=0.22)
 save(fig, "j8_figure3")
 
 print("Wrote j8_figure{1,2,3}.{pdf,png,tiff} to", os.path.normpath(OUT))

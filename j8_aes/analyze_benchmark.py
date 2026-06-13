@@ -20,6 +20,12 @@ human rater or (b) the machine.
                     essays are intrinsically harder to rate (higher rater
                     noise), which would caution against any second-opinion
                     comparison.
+  machine vs human  the DIRECT paired test: (machine differential) minus
+                    (human differential) on the same essays, with a bootstrap
+                    CI. A machine CI that excludes zero next to a human CI that
+                    includes zero does NOT establish that the machine tilts
+                    more (Gelman and Stern, 2006); only this difference does.
+                    Computed for every dimension, not only SES.
 
 Dimension mechanism: correlation between the machine residual
 (machine - Overall) and each human analytic score (Cohesion, Syntax,
@@ -62,6 +68,27 @@ def _boot_diff_ci(rng, a: np.ndarray, b: np.ndarray) -> tuple:
     """CI for mean(a) - mean(b) with independent within-group resampling."""
     vals = [a[rng.integers(0, len(a), len(a))].mean()
             - b[rng.integers(0, len(b), len(b))].mean() for _ in range(B)]
+    return float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))
+
+
+def _boot_paired_ci(rng, fidx, ridx, machine, human, r1) -> tuple:
+    """CI for (machine differential) - (human differential), the DIRECT test of
+    whether the machine's second-opinion tilt exceeds a human rater's.
+
+    Both differentials are recomputed on the SAME resampled essays each
+    replicate, so the comparison is paired rather than two independent CIs.
+    Comparing "machine CI excludes zero" with "human CI includes zero" is the
+    Gelman and Stern (2006) error; this statistic tests the difference itself.
+    """
+    vals = []
+    for _ in range(B):
+        fb = fidx[rng.integers(0, len(fidx), len(fidx))]
+        rb = ridx[rng.integers(0, len(ridx), len(ridx))]
+        machine_diff = ((machine[fb] - r1[fb]).mean()
+                        - (machine[rb] - r1[rb]).mean())
+        human_diff = ((human[fb] - r1[fb]).mean()
+                      - (human[rb] - r1[rb]).mean())
+        vals.append(machine_diff - human_diff)
     return float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))
 
 
@@ -113,6 +140,24 @@ def main() -> int:
                 value=round(float(diff), 4), ci_lo=round(lo, 4),
                 ci_hi=round(hi, 4), n=int(f_sel.sum())))
 
+            # Direct paired test: does the machine's tilt exceed the human
+            # rater's on the SAME essays? (avoids the Gelman-Stern error)
+            fidx = np.where(f_sel)[0]
+            ridx = np.where(ref_sel)[0]
+            human = second["human"]
+            for fam in FAMILIES:
+                machine = second[fam]
+                d = ((machine[f_sel] - r1[f_sel]).mean()
+                     - (machine[ref_sel] - r1[ref_sel]).mean()) - (
+                     (human[f_sel] - r1[f_sel]).mean()
+                     - (human[ref_sel] - r1[ref_sel]).mean())
+                lo, hi = _boot_paired_ci(rng, fidx, ridx, machine, human, r1)
+                rows.append(dict(
+                    analysis="machine_minus_human_paired", second_opinion=fam,
+                    dimension=dim, group=f"{focal} - {ref}",
+                    value=round(float(d), 4), ci_lo=round(lo, 4),
+                    ci_hi=round(hi, 4), n=int(f_sel.sum())))
+
     # Dimension mechanism on the full released corpus.
     panel = pd.read_csv(DATA / "panel_ellipse.csv").merge(
         scores, on="text_id_kaggle", how="inner")
@@ -131,12 +176,22 @@ def main() -> int:
     out.to_csv(DATA / "results_benchmark.csv", index=False)
     print(f"Wrote results_benchmark.csv ({len(out)} rows)")
 
-    print("\n=== Second-opinion differential, SES "
-          "(econ. disadvantaged - not), ELLIPSE double-rated essays ===")
-    ses = out[(out.analysis == "second_opinion") & (out.dimension == "SES")]
-    for _, r in ses.iterrows():
-        print(f"  {r.second_opinion:<9} {r.value:+.3f}  "
-              f"[{r.ci_lo:+.3f}, {r.ci_hi:+.3f}]")
+    print("\n=== Second-opinion differential, all dimensions, "
+          "ELLIPSE double-rated essays ===")
+    so = out[out.analysis == "second_opinion"]
+    for dim in CONTRASTS:
+        for _, r in so[so.dimension == dim].iterrows():
+            flag = "" if (r.ci_lo <= 0 <= r.ci_hi) else "  <-- excludes 0"
+            print(f"  {dim:<14} {r.second_opinion:<9} {r.value:+.3f}  "
+                  f"[{r.ci_lo:+.3f}, {r.ci_hi:+.3f}]{flag}")
+
+    print("\n=== DIRECT test: (machine differential) - (human differential), "
+          "paired, all CIs should be read for whether they exclude 0 ===")
+    mh = out[out.analysis == "machine_minus_human_paired"]
+    for _, r in mh.iterrows():
+        flag = "" if (r.ci_lo <= 0 <= r.ci_hi) else "  <-- excludes 0"
+        print(f"  {r.dimension:<14} {r.second_opinion:<9} {r.value:+.3f}  "
+              f"[{r.ci_lo:+.3f}, {r.ci_hi:+.3f}]{flag}")
 
     print("\n=== Machine residual vs analytic dimension "
           "(partial corr, Overall held fixed) ===")
