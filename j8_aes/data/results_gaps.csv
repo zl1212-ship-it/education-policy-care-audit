@@ -659,6 +659,116 @@ persuade,embed,lopo,race_ethnicity,Black/African American - White,raw_differenti
 persuade,embed,lopo,race_ethnicity,Black/African American - White,conditional_differential,-0.0977,-0.1191,-0.076,4958
 persuade,embed,lopo,race_ethnicity,Asian/Pacific Islander - White,raw_differential,-0.1689,-0.215,-0.1246,1743
 persuade,embed,lopo,race_ethnicity,Asian/Pacific Islander - White,conditional_differential,0.1014,0.0722,0.1308,1743
+persuade,finetuned,oof,ell_status,No,mean_human,3.3528,,,22451
+persuade,finetuned,oof,ell_status,No,mean_machine,3.521,,,22451
+persuade,finetuned,oof,ell_status,No,mean_gap,0.1682,,,22451
+persuade,finetuned,oof,ell_status,No,smd,0.1563,,,22451
+persuade,finetuned,oof,ell_status,No,qwk,0.7621,,,22451
+persuade,finetuned,oof,ell_status,No,exact,0.284,,,22451
+persuade,finetuned,oof,ell_status,No,pearson_r,0.789,,,22451
+persuade,finetuned,oof,ell_status,No,rmse,0.7384,,,22451
+persuade,finetuned,oof,ell_status,Yes,mean_human,2.6912,,,2244
+persuade,finetuned,oof,ell_status,Yes,mean_machine,2.9928,,,2244
+persuade,finetuned,oof,ell_status,Yes,mean_gap,0.3016,,,2244
+persuade,finetuned,oof,ell_status,Yes,smd,0.3185,,,2244
+persuade,finetuned,oof,ell_status,Yes,qwk,0.6884,,,2244
+persuade,finetuned,oof,ell_status,Yes,exact,0.2772,,,2244
+persuade,finetuned,oof,ell_status,Yes,pearson_r,0.735,,,2244
+persuade,finetuned,oof,ell_status,Yes,rmse,0.7557,,,2244
+persuade,finetuned,oof,ell_status,Yes - No,raw_differential,0.1334,0.1025,0.1611,2244
+persuade,finetuned,oof,ell_status,Yes - No,conditional_differential,-0.0865,-0.1128,-0.0586,2244
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,mean_human,3.6478,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,mean_machine,3.7703,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,mean_gap,0.1225,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,smd,0.1134,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,qwk,0.769,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,exact,0.2782,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,pearson_r,0.7933,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,rmse,0.7262,,,11116
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,mean_human,2.9787,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,mean_machine,3.184,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,mean_gap,0.2052,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,smd,0.2062,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,qwk,0.7442,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,exact,0.304,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,pearson_r,0.7744,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,rmse,0.7099,,,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged - Not economically disadvantaged,raw_differential,0.0828,0.0639,0.1016,9643
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged - Not economically disadvantaged,conditional_differential,-0.1328,-0.1505,-0.1166,9643
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,mean_human,3.4172,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,mean_machine,3.5662,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,mean_gap,0.149,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,smd,0.1393,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,qwk,0.7713,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,exact,0.2884,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,pearson_r,0.7961,,,18135
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,rmse,0.7173,,,18135
+persuade,finetuned,oof,student_disability_status,Identified as having disability,mean_human,2.7876,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,mean_machine,3.0274,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,mean_gap,0.2398,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,smd,0.2246,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,qwk,0.7651,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,exact,0.3021,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,pearson_r,0.7974,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability,rmse,0.7279,,,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability - Not identified as having disability,raw_differential,0.0909,0.0612,0.1195,2688
+persuade,finetuned,oof,student_disability_status,Identified as having disability - Not identified as having disability,conditional_differential,-0.1039,-0.1286,-0.0796,2688
+persuade,finetuned,oof,gender,M,mean_human,3.2009,,,12854
+persuade,finetuned,oof,gender,M,mean_machine,3.4152,,,12854
+persuade,finetuned,oof,gender,M,mean_gap,0.2142,,,12854
+persuade,finetuned,oof,gender,M,smd,0.1994,,,12854
+persuade,finetuned,oof,gender,M,qwk,0.762,,,12854
+persuade,finetuned,oof,gender,M,exact,0.2886,,,12854
+persuade,finetuned,oof,gender,M,pearson_r,0.7927,,,12854
+persuade,finetuned,oof,gender,M,rmse,0.7381,,,12854
+persuade,finetuned,oof,gender,F,mean_human,3.4265,,,13141
+persuade,finetuned,oof,gender,F,mean_machine,3.5802,,,13141
+persuade,finetuned,oof,gender,F,mean_gap,0.1536,,,13141
+persuade,finetuned,oof,gender,F,smd,0.1447,,,13141
+persuade,finetuned,oof,gender,F,qwk,0.7493,,,13141
+persuade,finetuned,oof,gender,F,exact,0.2767,,,13141
+persuade,finetuned,oof,gender,F,pearson_r,0.7765,,,13141
+persuade,finetuned,oof,gender,F,rmse,0.7479,,,13141
+persuade,finetuned,oof,gender,F - M,raw_differential,-0.0606,-0.077,-0.0439,13141
+persuade,finetuned,oof,gender,F - M,conditional_differential,0.0095,-0.0055,0.0249,13141
+persuade,finetuned,oof,race_ethnicity,White,mean_human,3.4285,,,11571
+persuade,finetuned,oof,race_ethnicity,White,mean_machine,3.5826,,,11571
+persuade,finetuned,oof,race_ethnicity,White,mean_gap,0.1541,,,11571
+persuade,finetuned,oof,race_ethnicity,White,smd,0.1466,,,11571
+persuade,finetuned,oof,race_ethnicity,White,qwk,0.7463,,,11571
+persuade,finetuned,oof,race_ethnicity,White,exact,0.278,,,11571
+persuade,finetuned,oof,race_ethnicity,White,pearson_r,0.7721,,,11571
+persuade,finetuned,oof,race_ethnicity,White,rmse,0.7456,,,11571
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,mean_human,3.086,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,mean_machine,3.2977,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,mean_gap,0.2117,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,smd,0.2071,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,qwk,0.7378,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,exact,0.291,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,pearson_r,0.7689,,,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,rmse,0.7398,,,6560
+persuade,finetuned,oof,race_ethnicity,Black/African American,mean_human,3.1226,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,mean_machine,3.3632,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,mean_gap,0.2406,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,smd,0.2284,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,qwk,0.7501,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,exact,0.29,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,pearson_r,0.786,,,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American,rmse,0.7428,,,4958
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,mean_human,3.9185,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,mean_machine,4.0173,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,mean_gap,0.0988,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,smd,0.0861,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,qwk,0.7928,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,exact,0.2651,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,pearson_r,0.825,,,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,rmse,0.7276,,,1743
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino - White,raw_differential,0.0576,0.0341,0.0792,6560
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino - White,conditional_differential,-0.0607,-0.0799,-0.0423,6560
+persuade,finetuned,oof,race_ethnicity,Black/African American - White,raw_differential,0.0864,0.0634,0.1085,4958
+persuade,finetuned,oof,race_ethnicity,Black/African American - White,conditional_differential,-0.0179,-0.038,0.0031,4958
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,raw_differential,-0.0554,-0.0908,-0.0198,1743
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,conditional_differential,0.1373,0.1104,0.1665,1743
 ellipse,handfeat,oof,SES,Not economically disadvantaged,mean_human,3.133,,,1974
 ellipse,handfeat,oof,SES,Not economically disadvantaged,mean_machine,3.1196,,,1974
 ellipse,handfeat,oof,SES,Not economically disadvantaged,mean_gap,-0.0134,,,1974
@@ -1103,3 +1213,77 @@ ellipse,embed,lopo,race_ethnicity,Black/African American - White,raw_differentia
 ellipse,embed,lopo,race_ethnicity,Black/African American - White,conditional_differential,0.0494,0.0003,0.0969,515
 ellipse,embed,lopo,race_ethnicity,Asian/Pacific Islander - White,raw_differential,0.0363,-0.0277,0.0954,792
 ellipse,embed,lopo,race_ethnicity,Asian/Pacific Islander - White,conditional_differential,0.0693,0.0264,0.1121,792
+ellipse,finetuned,oof,SES,Not economically disadvantaged,mean_human,3.133,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,mean_machine,3.3524,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,mean_gap,0.2194,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,smd,0.347,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,qwk,0.6355,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,exact,0.3541,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,pearson_r,0.6976,,,1974
+ellipse,finetuned,oof,SES,Not economically disadvantaged,rmse,0.544,,,1974
+ellipse,finetuned,oof,SES,Economically disadvantaged,mean_human,3.0919,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,mean_machine,3.3297,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,mean_gap,0.2378,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,smd,0.4121,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,qwk,0.5867,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,exact,0.375,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,pearson_r,0.6619,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged,rmse,0.5354,,,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged - Not economically disadvantaged,raw_differential,0.0185,-0.0057,0.046,4507
+ellipse,finetuned,oof,SES,Economically disadvantaged - Not economically disadvantaged,conditional_differential,-0.0017,-0.0238,0.0209,4507
+ellipse,finetuned,oof,gender,Male,mean_human,3.0743,,,3636
+ellipse,finetuned,oof,gender,Male,mean_machine,3.3079,,,3636
+ellipse,finetuned,oof,gender,Male,mean_gap,0.2337,,,3636
+ellipse,finetuned,oof,gender,Male,smd,0.4017,,,3636
+ellipse,finetuned,oof,gender,Male,qwk,0.5819,,,3636
+ellipse,finetuned,oof,gender,Male,exact,0.3672,,,3636
+ellipse,finetuned,oof,gender,Male,pearson_r,0.6595,,,3636
+ellipse,finetuned,oof,gender,Male,rmse,0.5382,,,3636
+ellipse,finetuned,oof,gender,Female,mean_human,3.1428,,,2846
+ellipse,finetuned,oof,gender,Female,mean_machine,3.3732,,,2846
+ellipse,finetuned,oof,gender,Female,mean_gap,0.2304,,,2846
+ellipse,finetuned,oof,gender,Female,smd,0.3784,,,2846
+ellipse,finetuned,oof,gender,Female,qwk,0.6262,,,2846
+ellipse,finetuned,oof,gender,Female,exact,0.3707,,,2846
+ellipse,finetuned,oof,gender,Female,pearson_r,0.6896,,,2846
+ellipse,finetuned,oof,gender,Female,rmse,0.5377,,,2846
+ellipse,finetuned,oof,gender,Female - Male,raw_differential,-0.0033,-0.0272,0.0222,2846
+ellipse,finetuned,oof,gender,Female - Male,conditional_differential,0.0295,0.0102,0.0501,2846
+ellipse,finetuned,oof,race_ethnicity,White,mean_human,3.1624,,,471
+ellipse,finetuned,oof,race_ethnicity,White,mean_machine,3.392,,,471
+ellipse,finetuned,oof,race_ethnicity,White,mean_gap,0.2296,,,471
+ellipse,finetuned,oof,race_ethnicity,White,smd,0.3666,,,471
+ellipse,finetuned,oof,race_ethnicity,White,qwk,0.6258,,,471
+ellipse,finetuned,oof,race_ethnicity,White,exact,0.3694,,,471
+ellipse,finetuned,oof,race_ethnicity,White,pearson_r,0.6902,,,471
+ellipse,finetuned,oof,race_ethnicity,White,rmse,0.5493,,,471
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,mean_human,3.0659,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,mean_machine,3.2943,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,mean_gap,0.2284,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,smd,0.3887,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,qwk,0.6046,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,exact,0.3737,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,pearson_r,0.6755,,,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino,rmse,0.5304,,,4635
+ellipse,finetuned,oof,race_ethnicity,Black/African American,mean_human,3.1951,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,mean_machine,3.441,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,mean_gap,0.2458,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,smd,0.4198,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,qwk,0.5666,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,exact,0.3456,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,pearson_r,0.6435,,,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American,rmse,0.555,,,515
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,mean_human,3.2298,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,mean_machine,3.4785,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,mean_gap,0.2487,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,smd,0.4186,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,qwk,0.5715,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,exact,0.3548,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,pearson_r,0.6471,,,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander,rmse,0.5637,,,792
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino - White,raw_differential,-0.0012,-0.0492,0.0457,4635
+ellipse,finetuned,oof,race_ethnicity,Hispanic/Latino - White,conditional_differential,-0.0393,-0.0807,0.0011,4635
+ellipse,finetuned,oof,race_ethnicity,Black/African American - White,raw_differential,0.0162,-0.0487,0.0809,515
+ellipse,finetuned,oof,race_ethnicity,Black/African American - White,conditional_differential,0.0254,-0.0273,0.0763,515
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,raw_differential,0.0191,-0.0379,0.0736,792
+ellipse,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,conditional_differential,0.0467,0.0026,0.094,792

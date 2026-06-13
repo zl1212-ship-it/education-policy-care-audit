@@ -32,10 +32,11 @@ OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript", "J8")
 os.makedirs(OUT, exist_ok=True)  # gitignored on a fresh clone
 plt.rcParams.update({"font.size": 11, "font.family": "serif"})
 
-FAMILIES = ["handfeat", "tfidf", "embed"]
+FAMILIES = ["handfeat", "tfidf", "embed", "finetuned"]
 FAMILY_LABEL = {"handfeat": "Hand features\n+ ridge",
                 "tfidf": "TF-IDF\n+ ridge",
-                "embed": "Embedding\n+ ridge"}
+                "embed": "Frozen\nembedding",
+                "finetuned": "Fine-tuned\ntransformer"}
 ELL, NON = "#b2182b", "#2166ac"  # focal red, reference blue
 CUT = 4
 
@@ -81,7 +82,8 @@ a1.set_title("(a) Signed gap by group, out-of-fold", fontsize=10)
 a1.legend(frameon=False, fontsize=9)
 a1.spines[["top", "right"]].set_visible(False)
 
-SHORT = {"handfeat": "Hand features", "tfidf": "TF-IDF", "embed": "Embedding"}
+SHORT = {"handfeat": "Hand features", "tfidf": "TF-IDF", "embed": "Frozen embed",
+         "finetuned": "Fine-tuned"}
 ypos = np.arange(len(FAMILIES) * 2)
 labels, vals, los, his = [], [], [], []
 for f in FAMILIES:
@@ -145,18 +147,27 @@ CONTRASTS = [
      "Black - White"),
     ("race_ethnicity", "Asian/Pacific Islander - White", "Asian/PI - White"),
 ]
-fams = ["human", "handfeat", "tfidf", "embed"]
+fams = ["human", "handfeat", "tfidf", "embed", "finetuned"]
 fam_disp = {"human": "Human rater 2", "handfeat": "Hand features",
-            "tfidf": "TF-IDF", "embed": "Embedding"}
+            "tfidf": "TF-IDF", "embed": "Frozen embedding",
+            "finetuned": "Fine-tuned transformer"}
 fam_col = {"human": NON, "handfeat": "#7b3294", "tfidf": "#e08214",
-           "embed": "#c51b7d"}
-off = {"human": 0.27, "handfeat": 0.09, "tfidf": -0.09, "embed": -0.27}
+           "embed": "#c51b7d", "finetuned": "#1b7837"}
 
-fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 4.6), sharey=True)
+fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 5.0), sharey=True)
+
+
+def _offsets(fams_here):
+    """Even vertical offsets within a contrast row, top source highest."""
+    n = len(fams_here)
+    span = 0.62
+    pos = np.linspace(span / 2, -span / 2, n)
+    return {f: pos[i] for i, f in enumerate(fams_here)}
 
 
 def forest(ax, analysis, fams_here, title, xlabel):
     base = np.arange(len(CONTRASTS))
+    off = _offsets(fams_here)
     for fam in fams_here:
         xs, ys, lo, hi = [], [], [], []
         for k, (dim, grp, _) in enumerate(CONTRASTS):
@@ -171,8 +182,8 @@ def forest(ax, analysis, fams_here, title, xlabel):
             hi.append(float(r.ci_hi.iloc[0]))
         xs = np.array(xs)
         ax.errorbar(xs, ys, xerr=[xs - np.array(lo), np.array(hi) - xs],
-                    fmt="o", ms=4.5, color=fam_col[fam], ecolor=fam_col[fam],
-                    elinewidth=1.1, capsize=2, label=fam_disp[fam])
+                    fmt="o", ms=4.0, color=fam_col[fam], ecolor=fam_col[fam],
+                    elinewidth=1.0, capsize=2, label=fam_disp[fam])
     ax.axvline(0, color="0.3", lw=0.9, ls="--")
     ax.set_yticks(base)
     ax.set_yticklabels([c[2] for c in CONTRASTS], fontsize=9)
@@ -185,11 +196,11 @@ def forest(ax, analysis, fams_here, title, xlabel):
 forest(a1, "second_opinion", fams,
        "(a) Second-opinion differential, by source",
        "Second $-$ first rating differential (points, 95% CI)")
-forest(a2, "machine_minus_human_paired", ["handfeat", "tfidf", "embed"],
+forest(a2, "machine_minus_human_paired", ["handfeat", "tfidf", "embed", "finetuned"],
        "(b) Machine tilt minus human tilt (paired)",
        "(machine $-$ human) differential (points, 95% CI)")
 handles, labels = a1.get_legend_handles_labels()
-fig.legend(handles, labels, frameon=False, fontsize=9, ncol=4,
+fig.legend(handles, labels, frameon=False, fontsize=9, ncol=5,
            loc="lower center", bbox_to_anchor=(0.5, -0.02))
 fig.subplots_adjust(bottom=0.22)
 save(fig, "j8_figure3")

@@ -67,7 +67,7 @@ import numpy as np
 import pandas as pd
 
 DATA = Path(__file__).parent / "data"
-FAMILIES = ["handfeat", "tfidf", "embed"]
+FAMILIES = ["handfeat", "tfidf", "embed", "finetuned"]  # all have out-of-fold
 SEED = 8
 B = 1000
 

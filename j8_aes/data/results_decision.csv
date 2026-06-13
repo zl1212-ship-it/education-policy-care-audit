@@ -377,3 +377,66 @@ persuade,embed,lopo,race_ethnicity,Asian/Pacific Islander - White,4,,,-0.0805,,1
 persuade,embed,lopo,race_ethnicity,Asian/Pacific Islander,5,0.3551,0.1933,0.6187,0.0899,1743,,
 persuade,embed,lopo,race_ethnicity,White,5,0.1801,0.1061,0.667,0.0563,11571,,
 persuade,embed,lopo,race_ethnicity,Asian/Pacific Islander - White,5,,,-0.0482,,1743,-0.0905,-0.0042
+persuade,finetuned,oof,ell_status,Yes,3,0.5579,0.6889,0.0639,0.377,2244,,
+persuade,finetuned,oof,ell_status,No,3,0.7496,0.8244,0.0383,0.4136,22451,,
+persuade,finetuned,oof,ell_status,Yes - No,3,,,0.0256,,2244,0.0129,0.0401
+persuade,finetuned,oof,ell_status,Yes,4,0.2041,0.3057,0.1987,0.1786,2244,,
+persuade,finetuned,oof,ell_status,No,4,0.4302,0.5204,0.1328,0.2587,22451,,
+persuade,finetuned,oof,ell_status,Yes - No,4,,,0.0658,,2244,0.0299,0.1024
+persuade,finetuned,oof,ell_status,Yes,5,0.033,0.0472,0.5135,0.0323,2244,,
+persuade,finetuned,oof,ell_status,No,5,0.1708,0.1706,0.3526,0.0725,22451,,
+persuade,finetuned,oof,ell_status,Yes - No,5,,,0.1609,,2244,0.0492,0.2782
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,3,0.6437,0.7401,0.057,0.3737,9643,,
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,3,0.8238,0.8749,0.0265,0.414,11116,,
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged - Not economically disadvantaged,3,,,0.0305,,9643,0.0236,0.0369
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,4,0.289,0.3674,0.1898,0.1874,9643,,
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,4,0.5362,0.6257,0.0978,0.3061,11116,,
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged - Not economically disadvantaged,4,,,0.092,,9643,0.076,0.1084
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged,5,0.0846,0.0869,0.4252,0.0418,9643,,
+persuade,finetuned,oof,economically_disadvantaged,Not economically disadvantaged,5,0.245,0.2477,0.3048,0.1025,11116,,
+persuade,finetuned,oof,economically_disadvantaged,Economically disadvantaged - Not economically disadvantaged,5,,,0.1204,,9643,0.085,0.1582
+persuade,finetuned,oof,student_disability_status,Identified as having disability,3,0.5495,0.6436,0.0677,0.2915,2688,,
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,3,0.7681,0.8369,0.036,0.4161,18135,,
+persuade,finetuned,oof,student_disability_status,Identified as having disability - Not identified as having disability,3,,,0.0317,,2688,0.0182,0.045
+persuade,finetuned,oof,student_disability_status,Identified as having disability,4,0.2411,0.3307,0.1466,0.1647,2688,,
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,4,0.4475,0.531,0.1262,0.2533,18135,,
+persuade,finetuned,oof,student_disability_status,Identified as having disability - Not identified as having disability,4,,,0.0204,,2688,-0.0071,0.0507
+persuade,finetuned,oof,student_disability_status,Identified as having disability,5,0.083,0.0904,0.3318,0.0381,2688,,
+persuade,finetuned,oof,student_disability_status,Not identified as having disability,5,0.1831,0.1847,0.3336,0.0767,18135,,
+persuade,finetuned,oof,student_disability_status,Identified as having disability - Not identified as having disability,5,,,-0.0018,,2688,-0.0643,0.0617
+persuade,finetuned,oof,gender,F,3,0.7785,0.8499,0.0347,0.4442,13141,,
+persuade,finetuned,oof,gender,M,3,0.7031,0.7882,0.0419,0.386,12854,,
+persuade,finetuned,oof,gender,F - M,3,,,-0.0072,,13141,-0.0124,-0.0021
+persuade,finetuned,oof,gender,F,4,0.4602,0.5471,0.1326,0.2739,13141,,
+persuade,finetuned,oof,gender,M,4,0.3775,0.4862,0.1224,0.2489,12854,,
+persuade,finetuned,oof,gender,F - M,4,,,0.0102,,13141,-0.0024,0.0229
+persuade,finetuned,oof,gender,F,5,0.1803,0.1784,0.3613,0.0771,13141,,
+persuade,finetuned,oof,gender,M,5,0.1401,0.1456,0.3726,0.067,12854,,
+persuade,finetuned,oof,gender,F - M,5,,,-0.0112,,13141,-0.0412,0.0196
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,3,0.6777,0.7782,0.0472,0.4111,6560,,
+persuade,finetuned,oof,race_ethnicity,White,3,0.7799,0.847,0.0336,0.424,11571,,
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino - White,3,,,0.0137,,6560,0.0059,0.0212
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,4,0.3398,0.4253,0.1741,0.2191,6560,,
+persuade,finetuned,oof,race_ethnicity,White,4,0.459,0.5541,0.1331,0.2888,11571,,
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino - White,4,,,0.0409,,6560,0.024,0.0589
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino,5,0.1047,0.109,0.4207,0.054,6560,,
+persuade,finetuned,oof,race_ethnicity,White,5,0.1801,0.1757,0.3695,0.0758,11571,,
+persuade,finetuned,oof,race_ethnicity,Hispanic/Latino - White,5,,,0.0512,,6560,0.006,0.0898
+persuade,finetuned,oof,race_ethnicity,Black/African American,3,0.6858,0.7755,0.0476,0.3896,4958,,
+persuade,finetuned,oof,race_ethnicity,White,3,0.7799,0.847,0.0336,0.424,11571,,
+persuade,finetuned,oof,race_ethnicity,Black/African American - White,3,,,0.0141,,4958,0.0059,0.0217
+persuade,finetuned,oof,race_ethnicity,Black/African American,4,0.3538,0.473,0.1009,0.2397,4958,,
+persuade,finetuned,oof,race_ethnicity,White,4,0.459,0.5541,0.1331,0.2888,11571,,
+persuade,finetuned,oof,race_ethnicity,Black/African American - White,4,,,-0.0322,,4958,-0.0487,-0.017
+persuade,finetuned,oof,race_ethnicity,Black/African American,5,0.1174,0.1287,0.4227,0.069,4958,,
+persuade,finetuned,oof,race_ethnicity,White,5,0.1801,0.1757,0.3695,0.0758,11571,,
+persuade,finetuned,oof,race_ethnicity,Black/African American - White,5,,,0.0532,,4958,0.0111,0.0973
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,3,0.86,0.9076,0.0173,0.4467,1743,,
+persuade,finetuned,oof,race_ethnicity,White,3,0.7799,0.847,0.0336,0.424,11571,,
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,3,,,-0.0162,,1743,-0.0233,-0.0079
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,4,0.6242,0.7131,0.0551,0.3282,1743,,
+persuade,finetuned,oof,race_ethnicity,White,4,0.459,0.5541,0.1331,0.2888,11571,,
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,4,,,-0.078,,1743,-0.0937,-0.061
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander,5,0.3551,0.3477,0.2488,0.1254,1743,,
+persuade,finetuned,oof,race_ethnicity,White,5,0.1801,0.1757,0.3695,0.0758,11571,,
+persuade,finetuned,oof,race_ethnicity,Asian/Pacific Islander - White,5,,,-0.1207,,1743,-0.1588,-0.0804

@@ -11,3 +11,5 @@ persuade,tfidf,oof,0.8477,0.8643,0.5838,25995
 persuade,tfidf,lopo,0.7613,0.7956,0.7193,25995
 persuade,embed,oof,0.7793,0.8041,0.6899,25995
 persuade,embed,lopo,0.6153,0.6582,0.8842,25995
+ellipse,finetuned,oof,0.6034,0.6744,0.538,6482
+persuade,finetuned,oof,0.7576,0.7862,0.7431,25995

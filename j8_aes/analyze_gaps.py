@@ -63,7 +63,9 @@ import pandas as pd
 from sklearn.metrics import cohen_kappa_score
 
 DATA = Path(__file__).parent / "data"
-FAMILIES = ["handfeat", "tfidf", "embed"]
+# finetuned is the fine-tuned transformer (run_finetuned.py); out-of-fold only,
+# so (family, protocol) pairs whose prediction column is absent are skipped.
+FAMILIES = ["handfeat", "tfidf", "embed", "finetuned"]
 PROTOCOLS = ["oof", "lopo"]
 SEED = 8
 B = 1000
@@ -149,6 +151,8 @@ def audit_corpus(corpus, panel, scores, key, human_col, out_rows, dec_rows):
     for fam in FAMILIES:
         for proto in PROTOCOLS:
             pred_col = f"pred_{fam}_{proto}"
+            if pred_col not in df.columns:
+                continue  # e.g. finetuned has out-of-fold only, no lopo
             for dim, (focals, ref) in CONTRASTS[corpus].items():
                 sub = df.dropna(subset=[dim, pred_col])
                 ref_rows = sub[sub[dim] == ref]

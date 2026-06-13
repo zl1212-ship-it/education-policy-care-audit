@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 
 DATA = Path(__file__).parent / "data"
-FAMILIES = ["handfeat", "tfidf", "embed"]
+FAMILIES = ["handfeat", "tfidf", "embed", "finetuned"]
 
 
 def table1() -> pd.DataFrame:
