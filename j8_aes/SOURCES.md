@@ -34,9 +34,12 @@ README.
 
 ## Models (run_scorers.py)
 
-- `sentence-transformers/all-MiniLM-L6-v2` (Hugging Face) — frozen encoder for
-  the `embed` family; mean-pooled last hidden state, 512-token truncation.
-  Revision pinned to `1110a243` in run_scorers.py.
+- `sentence-transformers/all-MiniLM-L6-v2` (Hugging Face) — used two ways:
+  frozen for the `embed` family (mean-pooled last hidden state, 512-token
+  truncation, run_scorers.py) and fine-tuned end to end with a mean-pooled
+  regression head for the `finetuned` family (256-token truncation,
+  run_finetuned.py). Revision pinned to `1110a243` in both. The shared encoder
+  makes `embed` vs `finetuned` a frozen-vs-fine-tuned contrast.
 - `handfeat` and `tfidf` families are defined entirely in `run_scorers.py`
   (scikit-learn ridge regression on transparent features / TF-IDF n-grams);
   the macOS `/usr/share/dict/words` list supplies the out-of-vocabulary

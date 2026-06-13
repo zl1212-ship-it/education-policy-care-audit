@@ -16,20 +16,25 @@ between two trained human raters.
 fetch_corpora.py     # download PERSUADE 2.0 + ELLIPSE releases -> data/raw/ (gitignored)
 build_panel.py       # essay-level panels: ids, human scores, demographics (no essay text)
 run_scorers.py       # 3 AES families, out-of-fold + leave-one-prompt-out machine scores
+run_finetuned.py     # 4th family: fine-tuned transformer (out-of-fold); appends pred col
 analyze_gaps.py      # machine-minus-human gaps by subgroup; SMD; decision layer
-analyze_benchmark.py # human second-rater benchmark + analytic-dimension mechanism
+analyze_benchmark.py # placebo-controlled rater-substitution benchmark + dimension mechanism
 make_figures.py      # figures -> ../paper/blinded-manuscript/J8/
 make_tables.py       # tables  -> data/table_*.csv
 ```
 
 ## Scoring protocol
 
-- Families: `handfeat` (transparent hand-crafted features + ridge), `tfidf`
-  (word/char n-gram TF-IDF + ridge), `embed` (frozen MiniLM embeddings +
-  ridge head). All trained only to reproduce the corpus's human scores.
-- Protocols: `oof` (5-fold out-of-fold, fixed seed) and `lopo`
-  (leave-one-prompt-out transfer). `data/scorer_quality.csv` records QWK,
-  Pearson r, and RMSE per family/protocol so gap results are read against
+- Families span how much text representation the engine learns from the scoring
+  data: `handfeat` (transparent hand-crafted features + ridge), `tfidf`
+  (word/char n-gram TF-IDF + ridge), `embed` (frozen MiniLM embeddings + ridge
+  head), and `finetuned` (the same MiniLM encoder fine-tuned end to end with a
+  regression head). All trained only to reproduce the corpus's human scores.
+- Protocols: `oof` (5-fold out-of-fold, fixed seed) for all four families and
+  `lopo` (leave-one-prompt-out transfer) for the first three; the fine-tuned
+  engine is out-of-fold only (refitting a transformer per prompt is too costly,
+  and oof is the protocol the benchmark uses). `data/scorer_quality.csv` records
+  QWK, Pearson r, and RMSE per family/protocol so gap results are read against
   engine quality.
 
 ## Data
