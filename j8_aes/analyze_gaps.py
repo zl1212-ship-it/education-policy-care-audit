@@ -1,23 +1,36 @@
-"""Machine-minus-human score gaps by writer subgroup (the core audit).
+"""Differential rater-substitution effect on scores and decisions (the core audit).
 
-What this measures
-------------------
-For every essay we have a HUMAN score and an out-of-fold MACHINE score from
-each AES family (run_scorers.py). The audit quantity is the signed residual
+Estimand
+--------
+Holding a single essay fixed, replace the rater (human -> machine) and measure
+the effect on the score and on the pass/fail decision, and how that effect
+differs by the writer's group (ELL, SES, race, ...). For every essay we have a
+HUMAN score and an out-of-fold MACHINE score from each AES family
+(run_scorers.py). The per-essay quantity is the signed residual
 
     gap = machine score - human score
 
-and how its mean differs between a focal and a reference group (e.g. ELL vs
-non-ELL writers). If the machine reproduced its human training signal
-group-neutrally, the mean gap would be the same across groups. Metrics:
+the within-essay difference between the two raters. The group estimand is how
+its mean differs between a focal and a reference group.
 
+Identification
+--------------
+Within-essay design: the SAME text is scored two ways, so the gap is a property
+of the rater, not of the writing. The raw differential alone still confounds a
+group effect with regression-to-the-mean shrinkage (any imperfect model inflates
+scores for low-scoring groups). The CONDITIONAL differential removes that by
+comparing only essays human raters scored identically, so the group contrast is
+made at held-fixed human-assessed quality. Caveat: the human score is itself
+measured with error, so conditioning on it holds quality fixed strongly but not
+perfectly (the analyze_benchmark.py placebo addresses what the error leaves).
+Scope: this identifies the effect of substituting the measuring instrument on
+scores and decisions, NOT any effect on students' latent ability or on real
+downstream outcomes, which would require actual deployment.
+
+Metrics:
   raw differential   mean gap (focal) - mean gap (reference).
-  conditional        the same differential computed within human-score strata
-  differential       and averaged over the focal group's strata weights, so
-                     essays are compared only to essays human raters scored
-                     identically. This separates a group effect from
-                     regression-to-the-mean shrinkage, which mechanically
-                     inflates machine scores for any low-scoring group.
+  conditional        the same differential within human-score strata, averaged
+  differential       over the focal group's strata weights (quality held fixed).
   SMD                standardized mean difference between machine and human
                      scores within each group, per the Williamson, Xi &
                      Breyer (2012) industry evaluation framework
@@ -26,14 +39,14 @@ group-neutrally, the mean gap would be the same across groups. Metrics:
                      the machine measures some groups more noisily.
 
 Inference: nonparametric bootstrap over essays within group (B=1000,
-percentile 95% CIs, fixed seed). Identification: this is an audit of a
-measurement instrument on fixed public corpora, not a causal claim about
-students. Models were trained on the pooled population (as deployed engines
-are); subgroup analysis restricts to essays with the relevant label.
+percentile 95% CIs, fixed seed). Models were trained on the pooled population
+(as deployed engines are); subgroup analysis restricts to essays with the
+relevant label.
 
 A decision layer converts scores into pass/fail at integer cutoffs
 (PERSUADE holistic scale 1-6) and reports demotion rates: the share of
-essays a human rater passed that the machine fails.
+essays a human rater passed that the machine fails. This is the
+rater-substitution effect on the decision the score feeds.
 
 Input : data/panel_persuade.csv, data/machine_scores_persuade.csv,
         data/panel_ellipse.csv,  data/machine_scores_ellipse.csv

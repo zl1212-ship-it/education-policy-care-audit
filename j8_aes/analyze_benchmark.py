@@ -1,41 +1,58 @@
-"""Human-rater disagreement benchmark and dimension mechanism (ELLIPSE).
+"""Placebo-controlled benchmark for the rater-substitution effect (ELLIPSE).
 
-What this measures
-------------------
-The gap audit (analyze_gaps.py) can be read two ways: the machine is biased,
-or some groups' essays are simply harder to score. ELLIPSE ships the two
-independent human ratings behind each released essay, which identifies a
-benchmark: treat one rater as the first opinion and ask how a SECOND OPINION
-differs by writer subgroup when that second opinion is (a) another trained
-human rater or (b) the machine.
+Estimand
+--------
+The differential rater-substitution effect: holding a single essay fixed (its
+latent quality is whatever it is), replace the rater who scores it, a human,
+with a machine, and ask how the score changes and whether that change differs
+by the writer's group. This script estimates the group-differential version of
+that effect on the second-opinion scale, with a human-rater placebo.
 
-  human benchmark   mean(rater2 - rater1) by subgroup, and its focal-minus-
+Identification
+--------------
+Within-essay design. Each essay is its own control: the SAME text is scored two
+ways, so any machine-minus-human difference is a property of the rater, not of
+the writing. true quality is held fixed by construction.
+
+ELLIPSE ships two independent human ratings per released essay, which supplies a
+PLACEBO. Take rater 1 as the first opinion. Substituting a second human rater in
+the second-opinion slot is the placebo treatment; substituting a machine is the
+treatment. If some groups' essays are simply harder to score, both substitutions
+move together and the placebo absorbs it. The contrast of interest is therefore
+a DIFFERENCE-IN-DIFFERENCES: [machine second-opinion group differential] minus
+[human second-opinion group differential], on the same essays. The statistic
+machine_minus_human_paired computed below IS that DiD estimate.
+
+  human (placebo)   mean(rater2 - rater1) by subgroup and its focal-minus-
                     reference differential. Rater order is arbitrary, so this
-                    centers near zero; the question is whether it differs BY
-                    GROUP (it should not, if human disagreement is noise).
+                    centers near zero; a nonzero group differential would mean
+                    human second opinions are themselves group-patterned.
   machine           mean(machine - rater1) by subgroup and the same
-                    differential, on the SAME double-rated essays, using the
-                    out-of-fold machine scores.
+                    differential, on the SAME double-rated essays, out-of-fold.
   |disagreement|    mean |rater1 - rater2| by subgroup: whether some groups'
-                    essays are intrinsically harder to rate (higher rater
-                    noise), which would caution against any second-opinion
-                    comparison.
-  machine vs human  the DIRECT paired test: (machine differential) minus
-                    (human differential) on the same essays, with a bootstrap
-                    CI. A machine CI that excludes zero next to a human CI that
-                    includes zero does NOT establish that the machine tilts
-                    more (Gelman and Stern, 2006); only this difference does.
-                    Computed for every dimension, not only SES.
+                    essays are intrinsically noisier to rate (a falsification
+                    check on the placebo).
+  machine_minus_    the DiD estimate: (machine differential) minus (human
+  human_paired      differential), recomputed on the SAME resampled essays each
+                    replicate so it is paired. Comparing a machine CI that
+                    excludes zero with a human CI that includes zero is NOT a
+                    test of their difference (Gelman and Stern, 2006); this DiD
+                    is. Computed for every dimension, not only SES.
 
-Dimension mechanism: correlation between the machine residual
-(machine - Overall) and each human analytic score (Cohesion, Syntax,
-Vocabulary, Phraseology, Grammar, Conventions), partialling out Overall:
-which proficiency dimensions does the machine systematically under- or
-over-credit?
+Dimension mechanism (descriptive): partial correlation between the machine
+residual (machine - Overall) and each human analytic score (Cohesion, Syntax,
+Vocabulary, Phraseology, Grammar, Conventions), holding Overall fixed. This
+names where the machine and the human reading part company; it is correlational,
+not a proven causal mechanism.
+
+Scope: this identifies the causal effect of substituting the measuring
+instrument (human -> machine) on the score and, in analyze_gaps.py, on the
+pass/fail decision. It does NOT identify any effect on a student's latent
+ability or on real downstream outcomes (placement, graduation), which would
+require the engine to be deployed and students followed.
 
 Inference: bootstrap percentile CIs (B=1000, fixed seed), essays resampled
-within group. Same caveat as the gap audit: measurement audit on a fixed
-public corpus, no causal claim.
+within group; the DiD resamples both contrasts on the same draw.
 
 Input : data/rater_pairs.csv, data/panel_ellipse.csv,
         data/machine_scores_ellipse.csv
