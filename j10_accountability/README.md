@@ -56,6 +56,8 @@ weight_dose.py        # real-state-weights dose-response: each state's published
                       #   poverty control on the slope)
 validate_growth.py    # benchmark the growth proxy against WA's official median SGP
                       #   -> data/results_growth_validation.csv
+validate_label.py     # benchmark the reconstructed bottom-5% list against WA's official
+                      #   same-year comprehensive-support list -> data/results_label_validation.csv
 analyze_gradient.py   # poverty gradient of the identification label (prevalence by
                       #   poverty decile; logit) -> data/results_gradient.csv
 build_rdd_states.py   # per curated state (WA official-flag, CT reconstructed-rule):
