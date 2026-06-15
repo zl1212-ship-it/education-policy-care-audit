@@ -12,3 +12,6 @@ binary_exposure_hi_vs_lo,high_exp:post,net_restrictiveness,-0.002,p=0.992 n_inst
 wealth_type_controls,exp x post | +priv/R1/lnEnroll x post,ai_governance_intensity,-0.0137,"p=0.948 CI[-0.422,0.395]"
 wealth_type_controls,exp x post | +priv/R1/lnEnroll x post,net_restrictiveness,-0.0534,"p=0.574 CI[-0.239,0.132]"
 wealth_type_controls,exp x post | +priv/R1/lnEnroll x post,restrictive_idx,-0.0335,"p=0.805 CI[-0.299,0.232]"
+alt_exposure_writing_share,writing-share x post,ai_governance_intensity,-0.2331,"p=0.034 CI[-0.449,-0.017] n_inst=47"
+alt_exposure_writing_share,writing-share x post,net_restrictiveness,-0.0354,"p=0.177 CI[-0.087,0.016] n_inst=47"
+alt_exposure_writing_share,writing-share x post,restrictive_idx,-0.1342,"p=0.040 CI[-0.262,-0.006] n_inst=47"

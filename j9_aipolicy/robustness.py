@@ -126,6 +126,28 @@ def audit_export(p):
     print(f"Wrote {AUDIT} ({len(out)} snapshots for hand check)")
 
 
+def alt_exposure(rows, p):
+    """Replicate the exposure null with a second, conceptually distinct proxy:
+    the share of degrees in writing-reliant fields (build_exposure2.py)."""
+    e2p = DATA / "exposure2.csv"
+    if not e2p.exists():
+        return
+    e2 = pd.read_csv(e2p).dropna(subset=["writing_share"])
+    mu, sd = e2["writing_share"].mean(), e2["writing_share"].std(ddof=0)
+    q = p.merge(e2[["unitid", "writing_share"]], on="unitid", how="inner").copy()
+    q["exp2"] = (q["writing_share"] - mu) / sd
+    q["exp2Xpost"] = q["exp2"] * q["post"]
+    for outcome in PRIMARY + ["restrictive_idx"]:
+        r = smf.ols("y ~ C(unitid) + C(eq) + exp2Xpost",
+                    data=q.assign(y=q[outcome].astype(float))).fit(
+            cov_type="cluster", cov_kwds={"groups": q["unitid"]})
+        ci = r.conf_int().loc["exp2Xpost"]
+        rows.append({"check": "alt_exposure_writing_share", "param": "writing-share x post",
+                     "outcome": outcome, "value": round(r.params["exp2Xpost"], 4),
+                     "extra": f"p={r.pvalues['exp2Xpost']:.3f} CI[{ci[0]:.3f},{ci[1]:.3f}] "
+                              f"n_inst={q['unitid'].nunique()}"})
+
+
 def validate_lexicon(p):
     """Face-validity audit: for a random sample of snapshots, record each AI-scoped
     provision that fires with its matched span and surrounding context, so the codes
@@ -186,6 +208,7 @@ def main():
     loo(rows, p)
     binary_exposure(rows, p)
     wealth_type_controls(rows, p)
+    alt_exposure(rows, p)
     validate_lexicon(p)
     pd.DataFrame(rows).to_csv(OUT, index=False)
     audit_export(p)
