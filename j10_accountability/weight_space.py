@@ -127,6 +127,21 @@ def main():
     df["identify_freq"] = hits / args.draws
     df["flip"] = ((df["identify_freq"] > 0) & (df["identify_freq"] < 1)).astype(int)
 
+    # mechanical baseline: how much of the flipping is just cutoff fuzz that any 5% rule
+    # produces? Re-run with only SMALL perturbations of the baseline weights (each weight
+    # wiggled by up to +/- 0.05, renormalized). Flipping under tiny perturbations is the
+    # mechanical part; the gap up to the full-envelope flip rate is what the breadth of
+    # real state designs adds.
+    narrow_hits = np.zeros(len(df), dtype=int)
+    for _ in range(args.draws):
+        wn = np.clip(W_BASELINE + rng.uniform(-0.05, 0.05, 4), 0, None)
+        wn = wn / wn.sum()
+        narrow_hits += identify(composite(values, mask, wn), state, is_high, grad)
+    narrow_freq = narrow_hits / args.draws
+    base = df["identified_baseline"].to_numpy() == 1
+    full_flip = float((df["flip"].to_numpy()[base]).mean())
+    narrow_flip = float((((narrow_freq > 0) & (narrow_freq < 1))[base]).mean())
+
     cols = ["ncessch", "state", "is_high", "enrollment", "econ_disadv_share",
             "poverty_decile", "achievement", "grad", "quality", "growth_proxy",
             "composite", "pct_within_state", "identified_baseline",
@@ -139,6 +154,8 @@ def main():
     print(f"label_instability.csv: {len(df):,} Title I schools, "
           f"{n_id:,} identified at baseline, {n_flip:,} ever flip across "
           f"{args.draws} weight draws ({n_flip / max(n_id,1):.1%} of baseline count)")
+    print(f"flip among baseline-identified: full envelope {full_flip:.1%} vs "
+          f"narrow perturbation {narrow_flip:.1%} (the gap is the breadth of real designs)")
     print(f"weight_draws.csv: {args.draws} draws -> {OUT_DRAWS}")
 
 
