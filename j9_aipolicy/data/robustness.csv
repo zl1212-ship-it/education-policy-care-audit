@@ -1,11 +1,14 @@
 check,param,outcome,value,extra
-window_sensitivity,window=200,net_restrictiveness,0.0147,n=68
-window_sensitivity,window=200,ai_governance_intensity,0.6912,n=68
-window_sensitivity,window=400,net_restrictiveness,-0.0294,n=68
-window_sensitivity,window=400,ai_governance_intensity,0.7647,n=68
-window_sensitivity,window=800,net_restrictiveness,-0.0294,n=68
-window_sensitivity,window=800,ai_governance_intensity,0.8235,n=68
-leave_one_out,min/full/max,ai_governance_intensity,0.2068,min=0.1377 max=0.3208 full_p=0.277
-leave_one_out,min/full/max,net_restrictiveness,-0.0328,min=-0.0502 max=0.0001 full_p=0.547
-binary_exposure_hi_vs_lo,high_exp:post,ai_governance_intensity,0.6389,p=0.193 n_inst=32
-binary_exposure_hi_vs_lo,high_exp:post,net_restrictiveness,-0.0456,p=0.778 n_inst=32
+window_sensitivity,window=200,net_restrictiveness,0.1029,n=68
+window_sensitivity,window=200,ai_governance_intensity,0.5441,n=68
+window_sensitivity,window=400,net_restrictiveness,0.0588,n=68
+window_sensitivity,window=400,ai_governance_intensity,0.5882,n=68
+window_sensitivity,window=800,net_restrictiveness,0.0588,n=68
+window_sensitivity,window=800,ai_governance_intensity,0.6176,n=68
+leave_one_out,min/full/max,ai_governance_intensity,0.2039,min=0.1326 max=0.3032 full_p=0.234
+leave_one_out,min/full/max,net_restrictiveness,-0.0152,min=-0.0421 max=0.0217 full_p=0.823
+binary_exposure_hi_vs_lo,high_exp:post,ai_governance_intensity,0.6131,p=0.160 n_inst=32
+binary_exposure_hi_vs_lo,high_exp:post,net_restrictiveness,-0.002,p=0.992 n_inst=32
+wealth_type_controls,exp x post | +priv/R1/lnEnroll x post,ai_governance_intensity,-0.0137,"p=0.948 CI[-0.422,0.395]"
+wealth_type_controls,exp x post | +priv/R1/lnEnroll x post,net_restrictiveness,-0.0534,"p=0.574 CI[-0.239,0.132]"
+wealth_type_controls,exp x post | +priv/R1/lnEnroll x post,restrictive_idx,-0.0335,"p=0.805 CI[-0.299,0.232]"

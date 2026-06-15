@@ -8,7 +8,7 @@ Arizona State University,104151,AZ,Public,R1,2022Q2,-2,0,0.145,80065.0,0,0.0,108
 Arizona State University,104151,AZ,Public,R1,2022Q3,-1,0,0.145,80065.0,0,0.0,1057.0,0,0,0,0,0,0,0,0,0,0,0,0
 Arizona State University,104151,AZ,Public,R1,2022Q4,0,1,0.145,80065.0,0,0.0,1057.0,0,0,0,0,0,0,0,0,0,0,0,0
 Arizona State University,104151,AZ,Public,R1,2023Q1,1,1,0.145,80065.0,0,0.0,801.0,0,0,0,0,0,0,0,0,0,0,0,0
-Arizona State University,104151,AZ,Public,R1,2023Q2,2,1,0.145,80065.0,1,37.0,1001.0,0,0,1,0,1,1,0,0,1,2,-1,3
+Arizona State University,104151,AZ,Public,R1,2023Q2,2,1,0.145,80065.0,1,37.0,1001.0,0,0,1,0,1,0,0,0,1,1,0,2
 Arizona State University,104151,AZ,Public,R1,2023Q3,3,1,0.145,80065.0,1,54.0,1191.0,1,0,1,0,1,1,0,0,2,2,0,4
 Arizona State University,104151,AZ,Public,R1,2023Q4,4,1,0.145,80065.0,1,54.0,1191.0,1,0,1,0,1,1,0,0,2,2,0,4
 Arizona State University,104151,AZ,Public,R1,2024Q1,5,1,0.145,80065.0,1,54.0,1191.0,1,0,1,0,1,1,0,0,2,2,0,4
@@ -16,21 +16,21 @@ Arizona State University,104151,AZ,Public,R1,2024Q2,6,1,0.145,80065.0,1,54.0,118
 Arizona State University,104151,AZ,Public,R1,2024Q3,7,1,0.145,80065.0,1,54.0,1189.0,1,0,1,0,1,1,0,0,2,2,0,4
 Arizona State University,104151,AZ,Public,R1,2024Q4,8,1,0.145,80065.0,1,54.0,1189.0,1,0,1,0,1,1,0,0,2,2,0,4
 California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q1,-7,0,0.0151,22000.0,0,0.0,9735.0,0,0,0,0,0,0,0,0,0,0,0,0
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q2,-6,0,0.0151,22000.0,1,5.0,9399.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q3,-5,0,0.0151,22000.0,1,5.0,9357.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q4,-4,0,0.0151,22000.0,1,5.0,9357.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q1,-3,0,0.0151,22000.0,1,5.0,9357.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q2,-2,0,0.0151,22000.0,1,5.0,9534.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q3,-1,0,0.0151,22000.0,1,5.0,10144.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q4,0,1,0.0151,22000.0,1,5.0,10144.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q1,1,1,0.0151,22000.0,1,5.0,10146.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q2,2,1,0.0151,22000.0,1,5.0,10146.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q3,3,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q4,4,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q1,5,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q2,6,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q3,7,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,1,0,0,0,0,1,0,1,1
-California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q4,8,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,1,0,0,0,0,1,0,1,1
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q2,-6,0,0.0151,22000.0,1,5.0,9399.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q3,-5,0,0.0151,22000.0,1,5.0,9357.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2021Q4,-4,0,0.0151,22000.0,1,5.0,9357.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q1,-3,0,0.0151,22000.0,1,5.0,9357.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q2,-2,0,0.0151,22000.0,1,5.0,9534.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q3,-1,0,0.0151,22000.0,1,5.0,10144.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2022Q4,0,1,0.0151,22000.0,1,5.0,10144.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q1,1,1,0.0151,22000.0,1,5.0,10146.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q2,2,1,0.0151,22000.0,1,5.0,10146.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q3,3,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2023Q4,4,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q1,5,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q2,6,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q3,7,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,0,0,0,0,0,0,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,CA,Public,M,2024Q4,8,1,0.0151,22000.0,1,5.0,10191.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Davis,110644,CA,Public,R1,2021Q1,-7,0,0.1546,39679.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Davis,110644,CA,Public,R1,2021Q2,-6,0,0.1546,39679.0,0,0.0,1144.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Davis,110644,CA,Public,R1,2021Q3,-5,0,0.1546,39679.0,0,0.0,1144.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -60,9 +60,9 @@ University of California-Irvine,110653,CA,Public,R1,2023Q2,2,1,0.1699,35937.0,0,
 University of California-Irvine,110653,CA,Public,R1,2023Q3,3,1,0.1699,35937.0,0,0.0,327.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Irvine,110653,CA,Public,R1,2023Q4,4,1,0.1699,35937.0,0,0.0,327.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Irvine,110653,CA,Public,R1,2024Q1,5,1,0.1699,35937.0,0,0.0,327.0,0,0,0,0,0,0,0,0,0,0,0,0
-University of California-Irvine,110653,CA,Public,R1,2024Q2,6,1,0.1699,35937.0,1,42.0,1696.0,0,1,0,1,0,1,0,0,2,1,1,3
-University of California-Irvine,110653,CA,Public,R1,2024Q3,7,1,0.1699,35937.0,1,42.0,1700.0,0,1,0,1,0,1,0,0,2,1,1,3
-University of California-Irvine,110653,CA,Public,R1,2024Q4,8,1,0.1699,35937.0,1,42.0,1700.0,0,1,0,1,0,1,0,0,2,1,1,3
+University of California-Irvine,110653,CA,Public,R1,2024Q2,6,1,0.1699,35937.0,1,42.0,1696.0,0,1,0,0,0,0,0,0,1,0,1,1
+University of California-Irvine,110653,CA,Public,R1,2024Q3,7,1,0.1699,35937.0,1,42.0,1700.0,0,1,0,0,0,0,0,0,1,0,1,1
+University of California-Irvine,110653,CA,Public,R1,2024Q4,8,1,0.1699,35937.0,1,42.0,1700.0,0,1,0,0,0,0,0,0,1,0,1,1
 University of California-Los Angeles,110662,CA,Public,R1,2021Q1,-7,0,0.1415,46430.0,0,0.0,189.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Los Angeles,110662,CA,Public,R1,2021Q2,-6,0,0.1415,46430.0,0,0.0,212.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of California-Los Angeles,110662,CA,Public,R1,2021Q3,-5,0,0.1415,46430.0,0,0.0,209.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -88,12 +88,12 @@ University of California-San Diego,110680,CA,Public,R1,2022Q2,-2,0,0.2044,42006.
 University of California-San Diego,110680,CA,Public,R1,2022Q3,-1,0,0.2044,42006.0,1,4.0,3613.0,0,0,1,0,0,0,1,0,1,1,0,2
 University of California-San Diego,110680,CA,Public,R1,2022Q4,0,1,0.2044,42006.0,1,4.0,3613.0,0,0,1,0,0,0,1,0,1,1,0,2
 University of California-San Diego,110680,CA,Public,R1,2023Q1,1,1,0.2044,42006.0,1,3.0,3613.0,0,0,1,0,0,0,1,0,1,1,0,2
-University of California-San Diego,110680,CA,Public,R1,2023Q2,2,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,1,1,1,0,3,3,0,6
-University of California-San Diego,110680,CA,Public,R1,2023Q3,3,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,1,1,1,0,3,3,0,6
-University of California-San Diego,110680,CA,Public,R1,2023Q4,4,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,1,1,1,0,3,3,0,6
-University of California-San Diego,110680,CA,Public,R1,2024Q1,5,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,1,1,1,0,3,3,0,6
-University of California-San Diego,110680,CA,Public,R1,2024Q2,6,1,0.2044,42006.0,1,51.0,4927.0,1,0,1,1,1,1,1,0,3,3,0,6
-University of California-San Diego,110680,CA,Public,R1,2024Q3,7,1,0.2044,42006.0,1,51.0,4927.0,1,0,1,1,1,1,1,0,3,3,0,6
+University of California-San Diego,110680,CA,Public,R1,2023Q2,2,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,0,0,1,0,3,1,2,4
+University of California-San Diego,110680,CA,Public,R1,2023Q3,3,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,0,0,1,0,3,1,2,4
+University of California-San Diego,110680,CA,Public,R1,2023Q4,4,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,0,0,1,0,3,1,2,4
+University of California-San Diego,110680,CA,Public,R1,2024Q1,5,1,0.2044,42006.0,1,44.0,4559.0,1,0,1,1,0,0,1,0,3,1,2,4
+University of California-San Diego,110680,CA,Public,R1,2024Q2,6,1,0.2044,42006.0,1,51.0,4927.0,1,0,1,1,0,0,1,0,3,1,2,4
+University of California-San Diego,110680,CA,Public,R1,2024Q3,7,1,0.2044,42006.0,1,51.0,4927.0,1,0,1,1,0,0,1,0,3,1,2,4
 University of California-San Diego,110680,CA,Public,R1,2024Q4,8,1,0.2044,42006.0,1,30.0,3613.0,0,0,1,0,0,0,1,0,1,1,0,2
 Santa Clara University,122931,CA,Private,M,2021Q1,-7,0,0.1422,9178.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 Santa Clara University,122931,CA,Private,M,2021Q2,-6,0,0.1422,9178.0,0,0.0,798.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -205,8 +205,8 @@ Georgia State University,139940,GA,Public,R1,2023Q3,3,1,0.0739,36516.0,1,10.0,27
 Georgia State University,139940,GA,Public,R1,2023Q4,4,1,0.0739,36516.0,1,10.0,2790.0,0,0,0,0,0,0,1,0,0,1,-1,1
 Georgia State University,139940,GA,Public,R1,2024Q1,5,1,0.0739,36516.0,1,10.0,2802.0,0,0,0,0,0,0,1,0,0,1,-1,1
 Georgia State University,139940,GA,Public,R1,2024Q2,6,1,0.0739,36516.0,1,10.0,2802.0,0,0,0,0,0,0,1,0,0,1,-1,1
-Georgia State University,139940,GA,Public,R1,2024Q3,7,1,0.0739,36516.0,1,22.0,2802.0,0,0,0,0,0,1,1,0,0,2,-2,2
-Georgia State University,139940,GA,Public,R1,2024Q4,8,1,0.0739,36516.0,1,22.0,2503.0,0,0,0,0,0,1,1,0,0,2,-2,2
+Georgia State University,139940,GA,Public,R1,2024Q3,7,1,0.0739,36516.0,1,22.0,2802.0,0,0,0,0,0,0,1,0,0,1,-1,1
+Georgia State University,139940,GA,Public,R1,2024Q4,8,1,0.0739,36516.0,1,22.0,2503.0,0,0,0,0,0,0,1,0,0,1,-1,1
 University of Illinois Chicago,145600,IL,Public,R1,2021Q1,-7,0,0.1263,33747.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Illinois Chicago,145600,IL,Public,R1,2021Q2,-6,0,0.1263,33747.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Illinois Chicago,145600,IL,Public,R1,2021Q3,-5,0,0.1263,33747.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -217,12 +217,12 @@ University of Illinois Chicago,145600,IL,Public,R1,2022Q3,-1,0,0.1263,33747.0,0,
 University of Illinois Chicago,145600,IL,Public,R1,2022Q4,0,1,0.1263,33747.0,0,0.0,3839.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Illinois Chicago,145600,IL,Public,R1,2023Q1,1,1,0.1263,33747.0,0,0.0,3839.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Illinois Chicago,145600,IL,Public,R1,2023Q2,2,1,0.1263,33747.0,0,0.0,3839.0,0,0,0,0,0,0,0,0,0,0,0,0
-University of Illinois Chicago,145600,IL,Public,R1,2023Q3,3,1,0.1263,33747.0,1,212.0,6048.0,1,1,1,1,1,1,0,0,4,2,2,6
-University of Illinois Chicago,145600,IL,Public,R1,2023Q4,4,1,0.1263,33747.0,1,213.0,6009.0,1,1,1,1,1,1,0,0,4,2,2,6
-University of Illinois Chicago,145600,IL,Public,R1,2024Q1,5,1,0.1263,33747.0,1,213.0,6012.0,1,1,1,1,1,1,0,0,4,2,2,6
-University of Illinois Chicago,145600,IL,Public,R1,2024Q2,6,1,0.1263,33747.0,1,208.0,5963.0,1,1,1,1,1,1,0,0,4,2,2,6
-University of Illinois Chicago,145600,IL,Public,R1,2024Q3,7,1,0.1263,33747.0,1,208.0,5963.0,1,1,1,1,1,1,0,0,4,2,2,6
-University of Illinois Chicago,145600,IL,Public,R1,2024Q4,8,1,0.1263,33747.0,1,208.0,5963.0,1,1,1,1,1,1,0,0,4,2,2,6
+University of Illinois Chicago,145600,IL,Public,R1,2023Q3,3,1,0.1263,33747.0,1,212.0,6048.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Illinois Chicago,145600,IL,Public,R1,2023Q4,4,1,0.1263,33747.0,1,213.0,6009.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Illinois Chicago,145600,IL,Public,R1,2024Q1,5,1,0.1263,33747.0,1,213.0,6012.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Illinois Chicago,145600,IL,Public,R1,2024Q2,6,1,0.1263,33747.0,1,208.0,5963.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Illinois Chicago,145600,IL,Public,R1,2024Q3,7,1,0.1263,33747.0,1,208.0,5963.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Illinois Chicago,145600,IL,Public,R1,2024Q4,8,1,0.1263,33747.0,1,208.0,5963.0,1,1,1,0,1,1,0,0,3,2,1,5
 Northwestern University,147767,IL,Private,R1,2021Q1,-7,0,0.207,23161.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 Northwestern University,147767,IL,Private,R1,2021Q2,-6,0,0.207,23161.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 Northwestern University,147767,IL,Private,R1,2021Q3,-5,0,0.207,23161.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -252,9 +252,9 @@ University of Notre Dame,152080,IN,Private,R1,2023Q2,2,1,0.1313,13105.0,0,0.0,64
 University of Notre Dame,152080,IN,Private,R1,2023Q3,3,1,0.1313,13105.0,0,0.0,640.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Notre Dame,152080,IN,Private,R1,2023Q4,4,1,0.1313,13105.0,1,3.0,627.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Notre Dame,152080,IN,Private,R1,2024Q1,5,1,0.1313,13105.0,1,3.0,627.0,0,0,0,0,0,0,0,0,0,0,0,0
-University of Notre Dame,152080,IN,Private,R1,2024Q2,6,1,0.1313,13105.0,1,30.0,924.0,1,0,1,1,1,1,0,0,3,2,1,5
-University of Notre Dame,152080,IN,Private,R1,2024Q3,7,1,0.1313,13105.0,1,31.0,823.0,1,1,1,1,1,1,0,0,4,2,2,6
-University of Notre Dame,152080,IN,Private,R1,2024Q4,8,1,0.1313,13105.0,1,31.0,823.0,1,1,1,1,1,1,0,0,4,2,2,6
+University of Notre Dame,152080,IN,Private,R1,2024Q2,6,1,0.1313,13105.0,1,30.0,924.0,1,0,1,0,1,1,0,0,2,2,0,4
+University of Notre Dame,152080,IN,Private,R1,2024Q3,7,1,0.1313,13105.0,1,31.0,823.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Notre Dame,152080,IN,Private,R1,2024Q4,8,1,0.1313,13105.0,1,31.0,823.0,1,1,1,0,1,1,0,0,3,2,1,5
 Tulane University of Louisiana,160755,LA,Private,R1,2021Q1,-7,0,0.1005,14027.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 Tulane University of Louisiana,160755,LA,Private,R1,2021Q2,-6,0,0.1005,14027.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 Tulane University of Louisiana,160755,LA,Private,R1,2021Q3,-5,0,0.1005,14027.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -329,12 +329,12 @@ Harvard University,166027,MA,Private,R1,2022Q3,-1,0,0.2514,30631.0,0,0.0,247.0,0
 Harvard University,166027,MA,Private,R1,2022Q4,0,1,0.2514,30631.0,0,0.0,247.0,0,0,0,0,0,0,0,0,0,0,0,0
 Harvard University,166027,MA,Private,R1,2023Q1,1,1,0.2514,30631.0,0,0.0,249.0,0,0,0,0,0,0,0,0,0,0,0,0
 Harvard University,166027,MA,Private,R1,2023Q2,2,1,0.2514,30631.0,0,0.0,249.0,0,0,0,0,0,0,0,0,0,0,0,0
-Harvard University,166027,MA,Private,R1,2023Q3,3,1,0.2514,30631.0,1,42.0,1636.0,1,1,1,0,1,1,0,0,3,2,1,5
-Harvard University,166027,MA,Private,R1,2023Q4,4,1,0.2514,30631.0,1,42.0,1640.0,1,1,1,0,1,1,0,0,3,2,1,5
-Harvard University,166027,MA,Private,R1,2024Q1,5,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,1,0,0,3,2,1,5
-Harvard University,166027,MA,Private,R1,2024Q2,6,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,1,0,0,3,2,1,5
-Harvard University,166027,MA,Private,R1,2024Q3,7,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,1,0,0,3,2,1,5
-Harvard University,166027,MA,Private,R1,2024Q4,8,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,1,0,0,3,2,1,5
+Harvard University,166027,MA,Private,R1,2023Q3,3,1,0.2514,30631.0,1,42.0,1636.0,1,1,1,0,1,0,0,0,3,1,2,4
+Harvard University,166027,MA,Private,R1,2023Q4,4,1,0.2514,30631.0,1,42.0,1640.0,1,1,1,0,1,0,0,0,3,1,2,4
+Harvard University,166027,MA,Private,R1,2024Q1,5,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,0,0,0,3,1,2,4
+Harvard University,166027,MA,Private,R1,2024Q2,6,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,0,0,0,3,1,2,4
+Harvard University,166027,MA,Private,R1,2024Q3,7,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,0,0,0,3,1,2,4
+Harvard University,166027,MA,Private,R1,2024Q4,8,1,0.2514,30631.0,1,52.0,1794.0,1,1,1,0,1,0,0,0,3,1,2,4
 Massachusetts Institute of Technology,166683,MA,Private,R1,2021Q1,-7,0,0.2963,11858.0,0,0.0,416.0,0,0,0,0,0,0,0,0,0,0,0,0
 Massachusetts Institute of Technology,166683,MA,Private,R1,2021Q2,-6,0,0.2963,11858.0,1,8.0,2002.0,0,0,0,0,0,0,0,0,0,0,0,0
 Massachusetts Institute of Technology,166683,MA,Private,R1,2021Q3,-5,0,0.2963,11858.0,1,8.0,2014.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -407,8 +407,8 @@ Cornell University,190415,NY,Private,R1,2022Q1,-3,0,0.2485,25898.0,0,0.0,802.0,0
 Cornell University,190415,NY,Private,R1,2022Q2,-2,0,0.2485,25898.0,0,0.0,802.0,0,0,0,0,0,0,0,0,0,0,0,0
 Cornell University,190415,NY,Private,R1,2022Q3,-1,0,0.2485,25898.0,0,0.0,802.0,0,0,0,0,0,0,0,0,0,0,0,0
 Cornell University,190415,NY,Private,R1,2022Q4,0,1,0.2485,25898.0,0,0.0,802.0,0,0,0,0,0,0,0,0,0,0,0,0
-Cornell University,190415,NY,Private,R1,2023Q1,1,1,0.2485,25898.0,1,37.0,1476.0,1,0,1,0,1,1,0,0,2,2,0,4
-Cornell University,190415,NY,Private,R1,2023Q2,2,1,0.2485,25898.0,1,37.0,1482.0,1,0,1,0,1,1,0,0,2,2,0,4
+Cornell University,190415,NY,Private,R1,2023Q1,1,1,0.2485,25898.0,1,37.0,1476.0,1,0,1,0,1,0,0,0,2,1,1,3
+Cornell University,190415,NY,Private,R1,2023Q2,2,1,0.2485,25898.0,1,37.0,1482.0,1,0,1,0,1,0,0,0,2,1,1,3
 Cornell University,190415,NY,Private,R1,2023Q3,3,1,0.2485,25898.0,1,93.0,2087.0,1,1,1,0,1,1,0,0,3,2,1,5
 Cornell University,190415,NY,Private,R1,2023Q4,4,1,0.2485,25898.0,1,93.0,2087.0,1,1,1,0,1,1,0,0,3,2,1,5
 Cornell University,190415,NY,Private,R1,2024Q1,5,1,0.2485,25898.0,1,96.0,2087.0,1,1,1,0,1,1,0,0,3,2,1,5
@@ -445,8 +445,8 @@ New York University,193900,NY,Private,R1,2023Q3,3,1,0.333,59144.0,0,0.0,1943.0,0
 New York University,193900,NY,Private,R1,2023Q4,4,1,0.333,59144.0,0,0.0,1943.0,0,0,0,0,0,0,0,0,0,0,0,0
 New York University,193900,NY,Private,R1,2024Q1,5,1,0.333,59144.0,0,0.0,1939.0,0,0,0,0,0,0,0,0,0,0,0,0
 New York University,193900,NY,Private,R1,2024Q2,6,1,0.333,59144.0,0,0.0,1939.0,0,0,0,0,0,0,0,0,0,0,0,0
-New York University,193900,NY,Private,R1,2024Q3,7,1,0.333,59144.0,1,1.0,1940.0,0,0,1,0,0,1,0,0,1,1,0,2
-New York University,193900,NY,Private,R1,2024Q4,8,1,0.333,59144.0,1,1.0,1940.0,0,0,1,0,0,1,0,0,1,1,0,2
+New York University,193900,NY,Private,R1,2024Q3,7,1,0.333,59144.0,1,1.0,1940.0,0,0,1,0,0,0,0,0,1,0,1,1
+New York University,193900,NY,Private,R1,2024Q4,8,1,0.333,59144.0,1,1.0,1940.0,0,0,1,0,0,0,0,0,1,0,1,1
 Stony Brook University,196097,NY,Public,R1,2021Q1,-7,0,0.1399,25710.0,0,0.0,143.0,0,0,0,0,0,0,0,0,0,0,0,0
 Stony Brook University,196097,NY,Public,R1,2021Q2,-6,0,0.1399,25710.0,0,0.0,3289.0,0,0,0,0,0,0,0,0,0,0,0,0
 Stony Brook University,196097,NY,Public,R1,2021Q3,-5,0,0.1399,25710.0,0,0.0,3289.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -461,8 +461,8 @@ Stony Brook University,196097,NY,Public,R1,2023Q3,3,1,0.1399,25710.0,0,0.0,3289.
 Stony Brook University,196097,NY,Public,R1,2023Q4,4,1,0.1399,25710.0,0,0.0,3289.0,0,0,0,0,0,0,0,0,0,0,0,0
 Stony Brook University,196097,NY,Public,R1,2024Q1,5,1,0.1399,25710.0,0,0.0,3289.0,0,0,0,0,0,0,0,0,0,0,0,0
 Stony Brook University,196097,NY,Public,R1,2024Q2,6,1,0.1399,25710.0,1,1.0,3289.0,0,0,1,0,0,0,1,0,1,1,0,2
-Stony Brook University,196097,NY,Public,R1,2024Q3,7,1,0.1399,25710.0,1,6.0,3289.0,0,0,1,0,0,1,1,0,1,2,-1,3
-Stony Brook University,196097,NY,Public,R1,2024Q4,8,1,0.1399,25710.0,1,6.0,3289.0,0,0,1,0,0,1,1,0,1,2,-1,3
+Stony Brook University,196097,NY,Public,R1,2024Q3,7,1,0.1399,25710.0,1,6.0,3289.0,0,0,1,0,0,0,1,0,1,1,0,2
+Stony Brook University,196097,NY,Public,R1,2024Q4,8,1,0.1399,25710.0,1,6.0,3289.0,0,0,1,0,0,0,1,0,1,1,0,2
 Davidson College,198385,NC,Private,BAC,2021Q1,-7,0,0.1002,1927.0,0,0.0,1076.0,0,0,0,0,0,0,0,0,0,0,0,0
 Davidson College,198385,NC,Private,BAC,2021Q2,-6,0,0.1002,1927.0,0,0.0,1078.0,0,0,0,0,0,0,0,0,0,0,0,0
 Davidson College,198385,NC,Private,BAC,2021Q3,-5,0,0.1002,1927.0,0,0.0,1094.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -534,15 +534,15 @@ Oregon State University,209542,OR,Public,R1,2021Q4,-4,0,0.0682,34292.0,1,38.0,23
 Oregon State University,209542,OR,Public,R1,2022Q1,-3,0,0.0682,34292.0,1,38.0,23987.0,0,1,0,0,0,0,0,0,1,0,1,1
 Oregon State University,209542,OR,Public,R1,2022Q2,-2,0,0.0682,34292.0,1,38.0,24346.0,0,1,0,0,0,0,0,0,1,0,1,1
 Oregon State University,209542,OR,Public,R1,2022Q3,-1,0,0.0682,34292.0,1,38.0,24346.0,0,1,0,0,0,0,0,0,1,0,1,1
-Oregon State University,209542,OR,Public,R1,2022Q4,0,1,0.0682,34292.0,1,38.0,24349.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2023Q1,1,1,0.0682,34292.0,1,38.0,24445.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2023Q2,2,1,0.0682,34292.0,1,38.0,24445.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2023Q3,3,1,0.0682,34292.0,1,38.0,24445.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2023Q4,4,1,0.0682,34292.0,1,39.0,24954.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2024Q1,5,1,0.0682,34292.0,1,37.0,24954.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2024Q2,6,1,0.0682,34292.0,1,37.0,25482.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2024Q3,7,1,0.0682,34292.0,1,37.0,25996.0,0,1,0,0,0,1,0,0,1,1,0,2
-Oregon State University,209542,OR,Public,R1,2024Q4,8,1,0.0682,34292.0,1,37.0,25996.0,0,1,0,0,0,1,0,0,1,1,0,2
+Oregon State University,209542,OR,Public,R1,2022Q4,0,1,0.0682,34292.0,1,38.0,24349.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2023Q1,1,1,0.0682,34292.0,1,38.0,24445.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2023Q2,2,1,0.0682,34292.0,1,38.0,24445.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2023Q3,3,1,0.0682,34292.0,1,38.0,24445.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2023Q4,4,1,0.0682,34292.0,1,39.0,24954.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2024Q1,5,1,0.0682,34292.0,1,37.0,24954.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2024Q2,6,1,0.0682,34292.0,1,37.0,25482.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2024Q3,7,1,0.0682,34292.0,1,37.0,25996.0,0,1,0,0,0,0,0,0,1,0,1,1
+Oregon State University,209542,OR,Public,R1,2024Q4,8,1,0.0682,34292.0,1,37.0,25996.0,0,1,0,0,0,0,0,0,1,0,1,1
 Carnegie Mellon University,211440,PA,Private,R1,2021Q1,-7,0,0.4402,16002.0,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
 Carnegie Mellon University,211440,PA,Private,R1,2021Q2,-6,0,0.4402,16002.0,0,0.0,1607.0,0,0,0,0,0,0,0,0,0,0,0,0
 Carnegie Mellon University,211440,PA,Private,R1,2021Q3,-5,0,0.4402,16002.0,0,0.0,1607.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -604,9 +604,9 @@ University of Pennsylvania,215062,PA,Private,R1,2023Q2,2,1,0.2458,28201.0,0,0.0,
 University of Pennsylvania,215062,PA,Private,R1,2023Q3,3,1,0.2458,28201.0,0,0.0,560.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Pennsylvania,215062,PA,Private,R1,2023Q4,4,1,0.2458,28201.0,0,0.0,560.0,0,0,0,0,0,0,0,0,0,0,0,0
 University of Pennsylvania,215062,PA,Private,R1,2024Q1,5,1,0.2458,28201.0,0,0.0,560.0,0,0,0,0,0,0,0,0,0,0,0,0
-University of Pennsylvania,215062,PA,Private,R1,2024Q2,6,1,0.2458,28201.0,1,15.0,1002.0,0,0,0,1,0,1,0,0,1,1,0,2
-University of Pennsylvania,215062,PA,Private,R1,2024Q3,7,1,0.2458,28201.0,1,15.0,1002.0,0,0,0,1,0,1,0,0,1,1,0,2
-University of Pennsylvania,215062,PA,Private,R1,2024Q4,8,1,0.2458,28201.0,1,15.0,1002.0,0,0,0,1,0,1,0,0,1,1,0,2
+University of Pennsylvania,215062,PA,Private,R1,2024Q2,6,1,0.2458,28201.0,1,15.0,1002.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,PA,Private,R1,2024Q3,7,1,0.2458,28201.0,1,15.0,1002.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,PA,Private,R1,2024Q4,8,1,0.2458,28201.0,1,15.0,1002.0,0,0,0,0,0,0,0,0,0,0,0,0
 Temple University,216339,PA,Public,R1,2021Q1,-7,0,0.058,33196.0,0,0.0,214.0,0,0,0,0,0,0,0,0,0,0,0,0
 Temple University,216339,PA,Public,R1,2021Q2,-6,0,0.058,33196.0,0,0.0,214.0,0,0,0,0,0,0,0,0,0,0,0,0
 Temple University,216339,PA,Public,R1,2021Q3,-5,0,0.058,33196.0,0,0.0,214.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -617,12 +617,12 @@ Temple University,216339,PA,Public,R1,2022Q3,-1,0,0.058,33196.0,0,0.0,200.0,0,0,
 Temple University,216339,PA,Public,R1,2022Q4,0,1,0.058,33196.0,0,0.0,200.0,0,0,0,0,0,0,0,0,0,0,0,0
 Temple University,216339,PA,Public,R1,2023Q1,1,1,0.058,33196.0,0,0.0,200.0,0,0,0,0,0,0,0,0,0,0,0,0
 Temple University,216339,PA,Public,R1,2023Q2,2,1,0.058,33196.0,0,0.0,200.0,0,0,0,0,0,0,0,0,0,0,0,0
-Temple University,216339,PA,Public,R1,2023Q3,3,1,0.058,33196.0,1,74.0,2422.0,1,1,1,1,1,1,0,0,4,2,2,6
-Temple University,216339,PA,Public,R1,2023Q4,4,1,0.058,33196.0,1,74.0,2422.0,1,1,1,1,1,1,0,0,4,2,2,6
-Temple University,216339,PA,Public,R1,2024Q1,5,1,0.058,33196.0,1,74.0,2422.0,1,1,1,1,1,1,0,0,4,2,2,6
-Temple University,216339,PA,Public,R1,2024Q2,6,1,0.058,33196.0,1,81.0,2423.0,1,1,1,1,1,1,0,0,4,2,2,6
-Temple University,216339,PA,Public,R1,2024Q3,7,1,0.058,33196.0,1,81.0,2423.0,1,1,1,1,1,1,0,0,4,2,2,6
-Temple University,216339,PA,Public,R1,2024Q4,8,1,0.058,33196.0,1,81.0,2423.0,1,1,1,1,1,1,0,0,4,2,2,6
+Temple University,216339,PA,Public,R1,2023Q3,3,1,0.058,33196.0,1,74.0,2422.0,1,1,1,1,1,0,0,0,4,1,3,5
+Temple University,216339,PA,Public,R1,2023Q4,4,1,0.058,33196.0,1,74.0,2422.0,1,1,1,1,1,0,0,0,4,1,3,5
+Temple University,216339,PA,Public,R1,2024Q1,5,1,0.058,33196.0,1,74.0,2422.0,1,1,1,1,1,0,0,0,4,1,3,5
+Temple University,216339,PA,Public,R1,2024Q2,6,1,0.058,33196.0,1,81.0,2423.0,1,1,1,1,1,0,0,0,4,1,3,5
+Temple University,216339,PA,Public,R1,2024Q3,7,1,0.058,33196.0,1,81.0,2423.0,1,1,1,1,1,0,0,0,4,1,3,5
+Temple University,216339,PA,Public,R1,2024Q4,8,1,0.058,33196.0,1,81.0,2423.0,1,1,1,1,1,0,0,0,4,1,3,5
 Vanderbilt University,221999,TN,Private,R1,2021Q1,-7,0,0.125,13710.0,0,0.0,7103.0,0,0,0,0,0,0,0,0,0,0,0,0
 Vanderbilt University,221999,TN,Private,R1,2021Q2,-6,0,0.125,13710.0,0,0.0,7103.0,0,0,0,0,0,0,0,0,0,0,0,0
 Vanderbilt University,221999,TN,Private,R1,2021Q3,-5,0,0.125,13710.0,0,0.0,7316.0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -697,12 +697,12 @@ George Mason University,232186,VA,Public,R1,2022Q3,-1,0,0.1003,39049.0,0,0.0,541
 George Mason University,232186,VA,Public,R1,2022Q4,0,1,0.1003,39049.0,0,0.0,541.0,0,0,0,0,0,0,0,0,0,0,0,0
 George Mason University,232186,VA,Public,R1,2023Q1,1,1,0.1003,39049.0,0,0.0,541.0,0,0,0,0,0,0,0,0,0,0,0,0
 George Mason University,232186,VA,Public,R1,2023Q2,2,1,0.1003,39049.0,0,0.0,541.0,0,0,0,0,0,0,0,0,0,0,0,0
-George Mason University,232186,VA,Public,R1,2023Q3,3,1,0.1003,39049.0,1,9.0,709.0,0,0,0,1,0,0,0,0,1,0,1,1
-George Mason University,232186,VA,Public,R1,2023Q4,4,1,0.1003,39049.0,1,9.0,709.0,0,0,0,1,0,0,0,0,1,0,1,1
-George Mason University,232186,VA,Public,R1,2024Q1,5,1,0.1003,39049.0,1,9.0,709.0,0,0,0,1,0,0,0,0,1,0,1,1
-George Mason University,232186,VA,Public,R1,2024Q2,6,1,0.1003,39049.0,1,13.0,955.0,1,0,1,1,1,1,0,0,3,2,1,5
-George Mason University,232186,VA,Public,R1,2024Q3,7,1,0.1003,39049.0,1,21.0,909.0,1,0,1,1,1,1,0,0,3,2,1,5
-George Mason University,232186,VA,Public,R1,2024Q4,8,1,0.1003,39049.0,1,21.0,908.0,1,0,1,1,1,1,0,0,3,2,1,5
+George Mason University,232186,VA,Public,R1,2023Q3,3,1,0.1003,39049.0,1,9.0,709.0,0,0,0,0,0,0,0,0,0,0,0,0
+George Mason University,232186,VA,Public,R1,2023Q4,4,1,0.1003,39049.0,1,9.0,709.0,0,0,0,0,0,0,0,0,0,0,0,0
+George Mason University,232186,VA,Public,R1,2024Q1,5,1,0.1003,39049.0,1,9.0,709.0,0,0,0,0,0,0,0,0,0,0,0,0
+George Mason University,232186,VA,Public,R1,2024Q2,6,1,0.1003,39049.0,1,13.0,955.0,1,0,1,0,0,0,0,0,2,0,2,2
+George Mason University,232186,VA,Public,R1,2024Q3,7,1,0.1003,39049.0,1,21.0,909.0,1,0,1,0,0,0,0,0,2,0,2,2
+George Mason University,232186,VA,Public,R1,2024Q4,8,1,0.1003,39049.0,1,21.0,908.0,1,0,1,0,0,0,0,0,2,0,2,2
 James Madison University,232423,VA,Public,M,2021Q1,-7,0,0.0123,22224.0,0,0.0,411.0,0,0,0,0,0,0,0,0,0,0,0,0
 James Madison University,232423,VA,Public,M,2021Q2,-6,0,0.0123,22224.0,0,0.0,6253.0,0,0,0,0,0,0,0,0,0,0,0,0
 James Madison University,232423,VA,Public,M,2021Q3,-5,0,0.0123,22224.0,0,0.0,6253.0,0,0,0,0,0,0,0,0,0,0,0,0

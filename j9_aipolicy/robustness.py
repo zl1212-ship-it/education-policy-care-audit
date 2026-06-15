@@ -126,12 +126,67 @@ def audit_export(p):
     print(f"Wrote {AUDIT} ({len(out)} snapshots for hand check)")
 
 
+def validate_lexicon(p):
+    """Face-validity audit: for a random sample of snapshots, record each AI-scoped
+    provision that fires with its matched span and surrounding context, so the codes
+    can be read against the text. Output: data/audit_spans.csv."""
+    idx = pd.read_csv(SNAP_INDEX)
+    idx = idx[idx["bytes"].notna() & (idx["bytes"] > 0)
+              & idx["unitid"].isin(p["unitid"].unique())]
+    sample = idx.sample(min(60, len(idx)), random_state=7)
+    out = []
+    for r in sample.itertuples(index=False):
+        path = HERE / r.local_path
+        if not path.exists():
+            continue
+        text = bp.extract_text(path)
+        centers = [(m.start() + m.end()) / 2 for m in bp.AI_TERMS.finditer(text)]
+        if not centers:
+            continue
+        for name, pat in bp.PROVISIONS.items():
+            for m in pat.finditer(text):
+                c = (m.start() + m.end()) / 2
+                if any(abs(c - a) <= bp.WINDOW for a in centers):
+                    out.append({"institution": r.institution, "timestamp": r.timestamp,
+                                "provision": name, "match": m.group(0),
+                                "context": text[max(0, m.start() - 70):m.end() + 70].strip()})
+                    break
+        if len(out) >= 50:
+            break
+    pd.DataFrame(out).to_csv(DATA / "audit_spans.csv", index=False)
+    print(f"Wrote {DATA / 'audit_spans.csv'} ({len(out)} flagged-provision passages for the face-validity read)")
+
+
+def wealth_type_controls(rows, p):
+    """Is the exposure null just wealth/type collinearity? Re-estimate exposure x post
+    while controlling for private x post, R1 x post, and log-enrollment x post."""
+    p = p.copy()
+    p["priv"] = (p["control"] == "Private").astype(float)
+    p["r1"] = (p["carnegie"] == "R1").astype(float)
+    p["lne"] = np.log(p["total_enroll"])
+    p["lne"] = p["lne"] - p.drop_duplicates("unitid")["lne"].mean()
+    p["expXpost"] = p["exposure"] * p["post"]
+    for c in ("priv", "r1", "lne"):
+        p[c + "Xpost"] = p[c] * p["post"]
+    f = "y ~ C(unitid) + C(eq) + expXpost + privXpost + r1Xpost + lneXpost"
+    for outcome in PRIMARY + ["restrictive_idx"]:
+        r = smf.ols(f, data=p.assign(y=p[outcome].astype(float))).fit(
+            cov_type="cluster", cov_kwds={"groups": p["unitid"]})
+        ci = r.conf_int().loc["expXpost"]
+        rows.append({"check": "wealth_type_controls",
+                     "param": "exp x post | +priv/R1/lnEnroll x post", "outcome": outcome,
+                     "value": round(r.params["expXpost"], 4),
+                     "extra": f"p={r.pvalues['expXpost']:.3f} CI[{ci[0]:.3f},{ci[1]:.3f}]"})
+
+
 def main():
     p = _load_panel()
     rows = []
     window_sensitivity(rows)
     loo(rows, p)
     binary_exposure(rows, p)
+    wealth_type_controls(rows, p)
+    validate_lexicon(p)
     pd.DataFrame(rows).to_csv(OUT, index=False)
     audit_export(p)
     print(f"Wrote {OUT}")

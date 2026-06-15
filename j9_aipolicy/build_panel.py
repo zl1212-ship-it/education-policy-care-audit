@@ -53,17 +53,23 @@ PROVISIONS = {
         r"plagiar|academic misconduct|academic dishonest|integrity violation|"
         r"cheating|unauthorized assistance|misrepresent", re.I),
     "sanction": re.compile(
-        r"sanction|penalt|failing grade|\bfail\b|suspension|suspended|expulsion|"
-        r"expelled|disciplinary|dismiss", re.I),
+        r"sanction|penalt|failing grade|fail the (?:course|assignment|class)|"
+        r"grade of (?:zero|f\b)|zero on the (?:assignment|exam)|suspension|suspended|"
+        r"expulsion|expelled|disciplinary (?:action|probation|sanction|measure|consequence|charge)|"
+        r"dismissal", re.I),
     # permissive / procedural / protective
     "permitted_use": re.compile(
-        r"(?<!not )permitted|may use|are allowed|is allowed|encouraged|"
-        r"with permission|instructor'?s? discretion|at the discretion|"
+        r"(?<!not )(?<!no )permitted|you may use|students? may use|"
+        r"may use (?:ai|generative|chat|these|the|such|it)|are allowed to use|is allowed|"
+        r"encouraged to use|with permission|instructor'?s? discretion|at the discretion|"
         r"depends on the (?:course|instructor)|with the approval|when authorized|"
         r"appropriate use|responsible use", re.I),
     "disclosure": re.compile(
-        r"disclos|\bcite\b|citation|acknowledg|attribut|document (?:your|the|all) use|"
-        r"transparen|declare (?:the|any|your) use|properly credit", re.I),
+        r"disclos|acknowledge[ds]?\s+(?:the\s+|any\s+|their\s+|its\s+|your\s+)?use|"
+        r"cit(?:e|ing|ation)s?\s+(?:the\s+|any\s+|its\s+)?(?:use|tool|ai|source)|"
+        r"document\s+(?:your|the|all|its|their)\s+use|declare\s+(?:the|any|your|its)\s+use|"
+        r"properly\s+(?:cite|credit|attribute)|"
+        r"with\s+(?:proper\s+)?(?:attribution|disclosure|acknowledgment|acknowledgement)", re.I),
     "appeal": re.compile(
         r"\bappeal|\bhearing\b|grievance|\bcontest\b|review board|"
         r"right to respond|due process|reconsideration", re.I),

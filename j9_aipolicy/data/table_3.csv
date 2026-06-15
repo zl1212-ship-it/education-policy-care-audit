@@ -3,8 +3,8 @@ ai_addressed,0.6383,0.4468
 prohibition,0.2128,0.2128
 detector_surveillance,0.234,0.2128
 misconduct_framing,0.3404,0.3191
-sanction,0.1702,0.1489
-permitted_use,0.234,0.234
-disclosure,0.4043,0.4043
+sanction,0.0426,0.0426
+permitted_use,0.2128,0.2128
+disclosure,0.2128,0.2128
 appeal,0.0851,0.0426
 l2_protection,0.0426,0.0213
