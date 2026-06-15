@@ -50,9 +50,9 @@ desc = pd.read_csv(os.path.join(DATA, "results_descriptive.csv"))
 
 # ---------- Figure 1: event-study coefficients ----------
 fig, axes = plt.subplots(1, 2, figsize=(11, 4.2))
-specs = [("ai_governance_intensity", "AI-governance intensity (0-8)"),
-         ("net_restrictiveness", "Net restrictiveness ($-$4 to +4)")]
-for ax, (outcome, ylab) in zip(axes, specs):
+specs = [("ai_governance_intensity", "AI-governance intensity (0-8)", "AI-governance intensity"),
+         ("net_restrictiveness", "Net restrictiveness ($-$4 to +4)", "Net restrictiveness")]
+for ax, (outcome, ylab, title) in zip(axes, specs):
     g = es[(es["outcome"] == outcome) & (es["kind"] == "event_coef")].sort_values("event_q")
     x = g["event_q"].to_numpy()
     y = g["coef"].to_numpy()
@@ -67,7 +67,7 @@ for ax, (outcome, ylab) in zip(axes, specs):
                 fmt="o-", color=BLUE, ecolor="0.55", capsize=2, ms=4, lw=1.0)
     ax.set_xlabel("Quarters from shock (2022Q4 = 0)")
     ax.set_ylabel(f"Per-SD-exposure effect\non {ylab}", fontsize=9.5)
-    ax.set_title(outcome.replace("_", " "), fontsize=10)
+    ax.set_title(title, fontsize=10)
     ax.spines[["top", "right"]].set_visible(False)
 axes[0].legend(frameon=False, fontsize=9)
 save(fig, "j9_figure1")
@@ -108,7 +108,7 @@ a1.set_yticks(ypos)
 a1.set_yticklabels([PROV_LABEL[c] for c in provs], fontsize=9)
 a1.invert_yaxis()
 a1.set_xlabel("Endpoint prevalence (% of institutions)")
-a1.set_title("(a) Provisions on the current page", fontsize=10)
+a1.set_title("(a) Provisions at the endpoint", fontsize=10)
 a1.spines[["top", "right"]].set_visible(False)
 from matplotlib.patches import Patch
 a1.legend(handles=[Patch(color=RED, label="Restrictive"),
@@ -127,4 +127,18 @@ a2.set_title("(b) Endpoint regime", fontsize=10)
 a2.spines[["top", "right"]].set_visible(False)
 save(fig, "j9_figure3")
 
-print("Wrote j9_figure{1,2,3}.{pdf,png} to", os.path.normpath(OUT))
+
+# ---------- Figure 4: convergence of AI policy language ----------
+conv = pd.read_csv(os.path.join(DATA, "results_convergence.csv"))
+conv = conv[conv["mean_cosine"].notna()]
+fig, ax = plt.subplots(figsize=(7.6, 4.4))
+ax.axvline(-0.5, color=RED, lw=1.0, ls="--", label="ChatGPT shock")
+ax.plot(conv["event_q"], conv["mean_cosine"], "o-", color=BLUE, ms=4, lw=1.3)
+ax.set_xlabel("Quarters from shock (2022Q4 = 0)")
+ax.set_ylabel("Mean pairwise TF-IDF cosine similarity")
+ax.set_title("Convergence of AI policy language across institutions", fontsize=10.5)
+ax.legend(frameon=False, fontsize=9)
+ax.spines[["top", "right"]].set_visible(False)
+save(fig, "j9_figure4")
+
+print("Wrote j9_figure{1,2,3,4}.{pdf,png} to", os.path.normpath(OUT))
