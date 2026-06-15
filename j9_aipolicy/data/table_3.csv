@@ -1,0 +1,10 @@
+metric,endpoint_rate,baseline_to_endpoint_delta
+ai_addressed,0.5,0.42310000000000003
+prohibition,0.1154,0.1154
+detector_surveillance,0.1538,0.1538
+misconduct_framing,0.3462,0.3077
+sanction,0.1154,0.1154
+permitted_use,0.1154,0.1154
+disclosure,0.3077,0.3077
+appeal,0.1154,0.0769
+l2_protection,0.0385,0.0385

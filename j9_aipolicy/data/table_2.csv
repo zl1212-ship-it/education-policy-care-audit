@@ -1,0 +1,6 @@
+outcome,did_coef,did_se,did_p,late_q6_8_coef,late_q6_8_p,placebo_coef,placebo_p
+ai_addressed,-0.0445,0.043,0.3003,-0.0694,0.3903,-0.0015,0.8124
+ai_governance_intensity,-0.1806,0.1336,0.1764,-0.3356,0.2026,0.0028,0.6827
+net_restrictiveness,-0.0638,0.0407,0.1163,-0.1429,0.0781,0.0,
+procedural_idx,-0.0584,0.0559,0.2962,-0.0964,0.3877,0.0014,0.6827
+restrictive_idx,-0.1222,0.0814,0.1332,-0.2392,0.1343,0.0014,0.6827

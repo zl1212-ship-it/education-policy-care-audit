@@ -1,0 +1,94 @@
+institution,unitid,page_type,url,n_captures,n_post_captures,first_capture,last_capture,has_post,n_versions
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,125,71,20210121204232,20241224114630,1,20
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/node/32,0,0,,,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,40,25,20210127074155,20241017013339,1,20
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,11,6,20210309160912,20240307150938,1,11
+Harvard University,166027,ai,https://oue.fas.harvard.edu/ai-guidance,0,0,,,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,113,55,20210116024621,20250101001748,1,20
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,36,15,20210122055742,20241027170830,1,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,10,10,20230911184647,20240612213609,1,10
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,6,6,20230911205544,20240413121744,1,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,10,10,20230911195624,20240416163430,1,10
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,7,2,20220302053404,20230314213401,1,7
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,10,0,20210413192102,20220815144218,0,9
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/%E2%80%A2,1,0,20220308054309,20220308054309,0,1
+New York University,193900,integrity,http://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,24,9,20210109223110,20240712184351,1,19
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html?_ga=2.220805082.31752403.1698064636-2117958522.1693929179,1,1,20240318195345,20240318195345,1,1
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,29,22,20210414033321,20240926134500,1,7
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,9,2,20210125210717,20230324153705,1,5
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/index.php,3,1,20210420141316,20230602115850,1,3
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,5,5,20240119003616,20240916150058,1,5
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/faq/,4,4,20240305040049,20241210045906,1,3
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/news/,2,2,20240304131111,20240819055831,1,2
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/generative-ai/academic-integrity/,2,2,20240916150405,20241223155759,1,2
+Emory University,139658,ai,http://ai.emory.edu/,29,25,20211021122246,20241231232424,1,8
+Emory University,139658,ai,http://ai.emory.edu/index.html,24,23,20210923092411,20241229005233,1,6
+Emory University,139658,ai,https://ai.emory.edu//search.html,1,1,20240707053347,20240707053347,1,1
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/ai-recommendations-for-instructors/,3,3,20240623085355,20240910054105,1,3
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/policy-update-ai-editing-tools-fall-2024/,3,3,20240913112710,20241127002656,1,3
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/generative-ai-policy-for-students-august-2023/,4,4,20240606101345,20241104103804,1,4
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,54,23,20210226221211,20241222231245,1,20
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/home/,2,0,20210127061218,20210622223527,0,2
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/search/,1,0,20220719110230,20220719110230,0,1
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,35,19,20210412205116,20241227034655,1,20
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/3/,1,1,20240526233936,20240526233936,1,1
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/5/,1,1,20230420020603,20230420020603,1,1
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,8,2,20210413004748,20240726130202,1,8
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/?ver=1584641406,1,1,20230411002529,20230411002529,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,26,26,20230804030728,20241107113525,1,18
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,12,12,20230928191654,20241231024744,1,11
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,8,8,20230828195331,20240828190315,1,7
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,8,8,20230928205833,20240828182605,1,8
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,11,0,20210125052838,20210821181515,0,10
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,148,76,20210106190309,20240806170258,1,20
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,61,13,20210107011856,20230314235324,1,20
+Washington University in St Louis,179867,ai,https://ctl.wustl.edu/resources/generative-ai-and-teaching/,0,0,,,0,0
+Washington University in St Louis,179867,ai,https://ctl.wustl.edu/resources/generative-ai-and-teaching/?utm_source=rss&utm_medium=rss&utm_campaign=generative-ai-and-teaching,0,0,,,0,0
+University of California-Los Angeles,110662,integrity,https://www.deanofstudents.ucla.edu/Academic-Integrity,31,15,20210118062901,20241217211512,1,20
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/excel-integrity/gen-ai/,2,2,20240506032051,20241217192233,1,2
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/excel-integrity/ai-training/,0,0,,,0,0
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/process/airb/faq-ai-reviews.html,0,0,,,0,0
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,89,49,20210413061801,20241221010021,1,20
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/faq/,4,3,20220629211835,20241217220913,1,4
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/Barley,2,1,20211217030738,20230403173532,1,1
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,15,7,20210413155901,20241001144327,1,15
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity?utm_source=sja&utm_medium=redirect-page,5,1,20210506130027,20230110182903,1,5
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,10,4,20210413062854,20231130145431,1,8
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,6,6,20240521084055,20241231105209,1,6
+Texas A & M University,228723,integrity,http://aggiehonor.tamu.edu/,61,26,20210102050625,20241226173236,1,20
+Texas A & M University,228723,integrity,http://aggiehonor.tamu.edu/FAQs,0,0,,,0,0
+Texas A & M University,228723,integrity,http://aggiehonor.tamu.edu/About,0,0,,,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,13,2,20210122200643,20241220163805,1,12
+Texas A & M University,228723,ai,https://ai.tamu.edu/index.html,2,2,20241122195034,20241220183509,1,1
+Texas A & M University,228723,ai,https://ai.tamu.edu/robots.txt,1,0,20220316082121,20220316082121,0,1
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,21,16,20210414114153,20240919100803,1,7
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html?_ga=2.227389087.306282186.1585319450-1939771541.1585319450,1,1,20240302062833,20240302062833,1,1
+Arizona State University,104151,ai,https://provost.asu.edu/academic-integrity/officers/ai-officer-lisa-murphy,1,1,20240728201356,20240728201356,1,1
+Arizona State University,104151,ai,https://provost.asu.edu/academic-integrity/officers/ai-officer-travis-leybeck,1,1,20240727223623,20240727223623,1,1
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,58,28,20210113184519,20250101054923,1,20
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,18,8,20210113184605,20241208115524,1,18
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,6,6,20230923035200,20240811092152,1,6
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,9,9,20230612183024,20240619084153,1,8
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/faqs,5,5,20230923052340,20241007055621,1,4
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/community-of-practice,4,4,20230927152612,20240619073829,1,3
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,12,0,20210120094836,20220616151954,0,12
+Virginia Polytechnic Institute and State University,233921,ai,https://honorsystem.vt.edu/icai-webinar.html,2,0,20210305000543,20210613012329,0,2
+Virginia Polytechnic Institute and State University,233921,ai,https://honorsystem.vt.edu/ai-online-tips.html,1,1,20240709210947,20240709210947,1,1
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,33,16,20210117183526,20241125032505,1,18
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/?q=no,0,0,,,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/?q=node/2,3,2,20210919005610,20230926212528,1,2
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-module/,5,5,20231208171022,20241208163428,1,5
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,12,7,20210413194250,20241229184633,1,11
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,45,24,20210128051006,20241207131110,1,20
+University of Pittsburgh,215266,ai,https://teaching.pitt.edu/resources/teaching-with-generative-ai/,4,4,20240502053239,20241111003610,1,4
+Stony Brook University,196097,ai,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,1,1,20240922220938,20240922220938,1,1
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,28,18,20210102202049,20240922220753,1,18
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/index.ht,1,0,20221014100429,20221014100429,0,1
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/policies,1,0,20210426220102,20210426220102,0,1
+San Diego State University,122409,ai,https://its.sdsu.edu/ai,2,2,20231205081930,20231216193542,1,2
+San Diego State University,122409,ai,https://its.sdsu.edu/ai/publications,1,1,20240404075346,20240404075346,1,1
+San Diego State University,122409,ai,https://its.sdsu.edu/ai?utm_source=salesforce&utm_medium=email,1,1,20240819122909,20240819122909,1,1
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/,4,0,20210302115049,20210802204334,0,4
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,12,7,20210414081750,20240413084051,1,12
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,9,4,20210414073246,20230928200732,1,8
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,28,12,20210227125551,20240303081953,1,20

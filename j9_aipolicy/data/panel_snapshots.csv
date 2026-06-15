@@ -1,0 +1,655 @@
+institution,unitid,page_type,original_url,timestamp,ai_addressed,n_ai_terms,text_len,prohibition,prohibition_present,detector_surveillance,detector_surveillance_present,misconduct_framing,misconduct_framing_present,sanction,sanction_present,permitted_use,permitted_use_present,disclosure,disclosure_present,appeal,appeal_present,l2_protection,l2_protection_present,restrictive_idx,procedural_idx,net_restrictiveness,ai_governance_intensity
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20210113184519,0,0,720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20210219104254,0,0,598,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20210413110708,0,0,599,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20210723154930,0,0,596,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20210822110128,0,0,595,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20211119205104,0,0,603,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20211203153745,0,0,603,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20220107061034,0,0,603,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20220222225233,0,0,616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20220418012605,0,0,599,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20220715131234,0,0,592,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20220930000812,0,0,533,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20221229055212,0,0,502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20230218031905,0,0,342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20230318152546,0,0,342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20230630102658,0,0,342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20240325031939,0,0,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20240825161151,0,0,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,20241229001811,0,0,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20210113184605,0,0,1185,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20210117024604,0,0,1185,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20210413174435,0,0,1064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20210414030257,0,0,1064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20210514032928,0,0,1064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20211022024620,0,0,1068,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20211124203048,0,0,1068,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20220121031915,0,0,1081,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20220715131251,0,0,1057,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20220810194449,0,0,1057,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20230208031442,0,0,965,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20230318152546,0,0,801,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20230528123145,0,0,801,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20231210163202,0,0,801,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20240529081730,0,0,799,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20240825161151,0,0,799,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20241007044003,0,0,799,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/impact,20241208115524,0,0,799,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,ai,https://provost.asu.edu/academic-integrity/officers/ai-officer-lisa-murphy,20240728201356,0,0,86,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,ai,https://provost.asu.edu/academic-integrity/officers/ai-officer-travis-leybeck,20240727223623,0,0,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,20230923035200,0,0,290,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,20240221011622,0,0,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,20240704113630,0,0,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,20240705173107,0,0,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,20240715172622,0,0,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity/pledge,20240811092152,0,0,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,20230612183024,1,37,1001,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,2,-1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,20230705190247,1,37,1001,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,1,2,-1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,20240123204024,1,45,1115,0,0,0,0,1,1,0,0,1,1,2,1,0,0,0,0,1,2,-1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,20240228204157,1,45,1113,0,0,0,0,1,1,0,0,1,1,2,1,0,0,0,0,1,2,-1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,20240324185538,1,45,1113,0,0,0,0,1,1,0,0,1,1,2,1,0,0,0,0,1,2,-1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,20240619084153,1,45,1113,0,0,0,0,1,1,0,0,1,1,2,1,0,0,0,0,1,2,-1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/community-of-practice,20230927152612,1,7,290,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/community-of-practice,20240221015159,1,7,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/community-of-practice,20240605165329,1,7,288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/faqs,20230923052340,1,54,1191,1,1,0,0,1,1,0,0,0,0,4,1,0,0,0,0,2,1,1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/faqs,20231210000057,1,54,1191,1,1,0,0,1,1,0,0,0,0,4,1,0,0,0,0,2,1,1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/faqs,20240516215321,1,54,1189,1,1,0,0,1,1,0,0,0,0,4,1,0,0,0,0,2,1,1,3
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai/faqs,20241007055621,1,54,1189,1,1,0,0,1,1,0,0,0,0,4,1,0,0,0,0,2,1,1,3
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20210413155901,0,0,1144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20210921230128,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20210926230800,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20211124174747,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20220127025328,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20220816004141,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20220927022856,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20221006021709,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20230204150542,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20230927091624,0,0,1115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20240331030511,0,0,1083,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20240805093726,0,0,1098,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20240826003644,0,0,1098,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20240921083109,0,0,1098,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,20241001144327,0,0,1098,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity?utm_source=sja&utm_medium=redirect-page,20210506130027,0,0,1144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity?utm_source=sja&utm_medium=redirect-page,20220127021714,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity?utm_source=sja&utm_medium=redirect-page,20220411084721,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity?utm_source=sja&utm_medium=redirect-page,20221002012407,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20210413062854,1,1,335,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20210812220304,1,1,341,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20220302224620,1,1,341,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20220928231902,1,1,297,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20230127132328,1,1,296,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20230206065954,0,0,327,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20230608092355,0,0,327,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,20231130145431,0,0,327,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,20240521084055,1,42,1692,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,2,1,1,3
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,20240614212927,1,42,1696,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,2,1,1,3
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,20240621101045,1,42,1696,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,2,1,1,3
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,20240829091252,1,42,1700,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,2,1,1,3
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,20240913042727,1,42,1700,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,2,1,1,3
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,20241231105209,1,42,1705,0,0,2,1,0,0,1,1,0,0,2,1,0,0,0,0,2,1,1,3
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20210413175118,0,0,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20210924143226,0,0,209,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20211230051219,0,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20220121091626,0,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20220228073130,0,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20220427012032,0,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20220601225328,0,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20220628145126,0,0,210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20230119063222,0,0,209,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20230206215449,0,0,209,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20231128154241,0,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20240106010819,0,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20240326200606,0,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20240418194300,0,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20240721190056,0,0,177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,20241217211512,0,0,211,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://www.deanofstudents.ucla.edu/Academic-Integrity,20210118062901,0,0,189,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://www.deanofstudents.ucla.edu/academic-integrity,20240413092124,0,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://www.deanofstudents.ucla.edu/academic-integrity,20240724091523,0,0,172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-Los Angeles,110662,integrity,https://www.deanofstudents.ucla.edu/academic-integrity,20241214135607,0,0,211,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20210413061801,1,2,269,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20211120071326,1,4,272,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20220212063749,1,4,277,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20220405002736,1,4,315,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20220520005444,1,4,312,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20220618031835,1,4,293,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20220625143214,1,4,293,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20221020203842,1,4,256,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230120215341,1,2,291,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230201144422,1,2,361,0,0,0,0,6,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230216001901,1,3,378,0,0,0,0,6,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230301165515,1,3,358,0,0,0,0,6,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230320224937,1,3,348,0,0,0,0,6,1,0,0,0,0,0,0,3,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230620231336,1,3,362,0,0,0,0,6,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20230721045149,1,3,360,0,0,0,0,6,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20231211064127,1,4,292,0,0,0,0,7,1,0,0,0,0,0,0,1,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20240406051838,1,9,419,0,0,0,0,13,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20240917034333,1,9,443,0,0,0,0,13,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20241108165152,1,9,472,0,0,0,0,13,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,20241214170353,1,11,482,0,0,0,0,13,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/Barley,20211217030738,1,2,3613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/excel-integrity/gen-ai/,20240506032051,1,26,598,0,0,0,0,15,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/excel-integrity/gen-ai/,20241217192233,1,30,742,0,0,0,0,15,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/faq/,20230403173530,1,44,4559,3,1,0,0,18,1,5,1,2,1,5,1,13,1,0,0,3,3,0,6
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/faq/,20240506032102,1,51,4927,4,1,0,0,25,1,6,1,2,1,5,1,14,1,0,0,3,3,0,6
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/faq/,20241217220913,1,7,425,0,0,0,0,12,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+San Diego State University,122409,ai,https://its.sdsu.edu/ai,20231205081930,1,47,892,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,-1,1
+San Diego State University,122409,ai,https://its.sdsu.edu/ai,20231216193542,1,45,876,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,-1,1
+San Diego State University,122409,ai,https://its.sdsu.edu/ai/publications,20240404075346,1,18,585,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+San Diego State University,122409,ai,https://its.sdsu.edu/ai?utm_source=salesforce&utm_medium=email,20240819122909,1,50,1016,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,-1,1
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20210413192102,0,0,1023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20210512072503,0,0,1023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20210729080845,0,0,1026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20211028103421,0,0,1026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20211101182400,0,0,1026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20220303055638,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20220331115154,0,0,1036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20220519143746,0,0,1036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,20220815144218,0,0,1036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/%E2%80%A2,20220308054309,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20210128051006,0,0,606,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20210415165526,0,0,605,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20210918194910,0,0,617,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20211121153120,0,0,609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20220121214003,0,0,609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20220303022349,0,0,613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20220705185004,0,0,634,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20221107175620,0,0,698,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20221127112956,0,0,698,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20230204024051,0,0,685,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20230503090946,0,0,687,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20230609013838,0,0,687,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20230804075909,1,6,764,0,0,4,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20231014010826,1,4,793,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20231130013234,1,4,747,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20240405004226,1,4,814,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20240523060853,1,3,810,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20240703002914,1,3,810,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20240912234842,1,3,796,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,20241207131110,1,3,803,0,0,2,1,1,1,0,0,0,0,0,0,1,1,0,0,2,1,1,3
+Emory University,139658,ai,http://ai.emory.edu/,20211021122246,0,0,516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,http://ai.emory.edu/,20220517082615,0,0,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,http://ai.emory.edu/,20220818113449,0,0,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,http://ai.emory.edu/index.html,20210923092411,0,0,516,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/,20221103170702,0,0,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/,20230325095643,0,0,531,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/,20230927235754,0,0,529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/,20240328114314,1,3,555,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/,20240603191159,1,3,487,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu//search.html,20240707053347,0,0,54,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/index.html,20230209060522,0,0,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/index.html,20230529221349,0,0,529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/index.html,20240104183859,0,0,536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/index.html,20240225084501,1,3,555,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/index.html,20240603163938,1,3,487,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20210120094836,0,0,2328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20210412221813,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20210413170029,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20210415095406,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20210614233949,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20210724172058,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20211021170232,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20211216210518,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20220116094312,0,0,2329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20220208151825,0,0,2331,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20220526205116,0,0,2331,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,20220616151954,0,0,2331,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210125052838,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210127214657,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210221191647,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210227210418,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210327211528,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210413084856,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210420205942,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210421204429,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210621184109,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,20210821181515,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20220302053404,0,0,1096,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20220319195532,0,0,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20220524083347,0,0,1104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20220920222024,0,0,1061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20220927041526,0,0,1061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20230208001208,0,0,1113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,20230314213401,1,2,1120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20210226221211,0,0,625,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20210503140631,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20210607110044,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20211004120643,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20220106194226,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20220126205020,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20220308061749,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20220428014250,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20220526210105,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20220801153009,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20221003122200,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20230110162336,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20230531075151,0,0,640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20240102140011,1,3,602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20240205150152,1,3,604,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20240606100314,1,4,612,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20240903130428,1,4,618,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20240917094542,1,4,609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,20241222231245,1,4,610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/ai-recommendations-for-instructors/,20240623085355,1,30,924,2,1,0,0,2,1,1,1,2,1,5,1,0,0,0,0,3,2,1,5
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/ai-recommendations-for-instructors/,20240708134445,1,30,924,2,1,0,0,2,1,1,1,2,1,5,1,0,0,0,0,3,2,1,5
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/ai-recommendations-for-instructors/,20240910054105,1,31,823,3,1,0,0,1,1,1,1,3,1,5,1,0,0,0,0,3,2,1,5
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/generative-ai-policy-for-students-august-2023/,20240606101345,1,14,425,0,0,0,0,3,1,0,0,2,1,0,0,0,0,0,0,1,1,0,2
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/generative-ai-policy-for-students-august-2023/,20240708153657,1,14,425,0,0,0,0,3,1,0,0,2,1,0,0,0,0,0,0,1,1,0,2
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/generative-ai-policy-for-students-august-2023/,20240913123810,1,10,415,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/generative-ai-policy-for-students-august-2023/,20241104103804,1,10,420,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/home/,20210127061218,0,0,625,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/home/,20210622223527,0,0,627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/policy-update-ai-editing-tools-fall-2024/,20240913112710,1,17,330,2,1,2,1,2,1,0,0,2,1,3,1,0,0,0,0,3,2,1,5
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/policy-update-ai-editing-tools-fall-2024/,20241104103635,1,17,335,2,1,2,1,2,1,0,0,2,1,3,1,0,0,0,0,3,2,1,5
+University of Notre Dame,152080,ai,https://honorcode.nd.edu/policy-update-ai-editing-tools-fall-2024/,20241127002656,1,17,330,2,1,2,1,2,1,0,0,2,1,3,1,0,0,0,0,3,2,1,5
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/search/,20220719110230,0,0,85,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,http://www.bu.edu/academics/policies/academic-conduct-code/,20210421122734,0,0,7020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20210412205116,0,0,7020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20210524024009,0,0,6986,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20210817163429,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20220121175311,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20220206115925,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20220303222403,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20220316141453,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20220519232622,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20230209094023,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20230326061434,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20240223195224,1,2,7285,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20240227124404,1,2,7285,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20240411130916,1,2,7283,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20240421212503,1,2,7292,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20240820065812,1,2,7288,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20240822013158,1,2,7288,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20241126231153,1,2,7288,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,20241227034655,1,2,7288,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/3/,20240526233936,1,2,7292,0,0,0,0,4,1,0,0,0,0,3,1,0,0,0,0,1,1,0,2
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/5/,20230420020603,0,0,6987,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20210309160912,0,0,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20210508020317,0,0,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20210621012232,0,0,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20220307153102,0,0,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20220526181658,0,0,247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20230207121505,0,0,249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20230303220605,0,0,249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20230804152617,0,0,248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20231214191455,0,0,233,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20231217021040,0,0,233,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,20240307150938,0,0,230,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20210405190121,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20210709214505,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20210915045444,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20220520224249,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20220810072528,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20221005192912,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20230520214821,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20231005192537,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/,20240507210736,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/node/30,20221120213210,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/node/30,20231005224449,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/node/30,20240507211557,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,http://integrity.mit.edu/node/30,20240706204624,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20210121204232,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20210508233546,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20211007013457,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20211128143008,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20220128150942,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20230128141918,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20230326051108,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20230719140318,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20231121001941,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,20240822085300,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20210127074155,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20210128004403,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20210406050346,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20211006131152,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20211220042418,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20220408080547,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20221006120953,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20230220235857,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20230421204851,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20230625020235,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20230719140704,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20230820221428,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20231018095818,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20231121002235,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20240407160717,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/node/30,20241006055453,0,0,416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20210106190309,0,0,2353,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20210323200432,0,0,2353,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20210427162922,0,0,2354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20210728200853,0,0,2356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20211026214500,0,0,2356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20220301234617,0,0,2356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20220803010334,0,0,2360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20221004181645,0,0,2360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20221203223534,0,0,2360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20230124231930,0,0,2360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20230328174559,0,0,2363,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20230719202437,0,0,2371,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20230911214342,0,0,2370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20231108015009,0,0,2370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20240102172958,0,0,2370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20240301213130,0,0,2370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20240423175443,0,0,2370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20240625190341,0,0,2370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,20240806170258,1,3,2588,0,0,0,0,3,1,0,0,1,1,4,1,0,0,0,0,1,2,-1,3
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20210107011856,0,0,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20210420204236,0,0,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20210922055858,0,0,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220309092050,0,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220427022358,0,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220518022718,0,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220608090549,0,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220629075248,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220720095122,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220810053411,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220824073958,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20220921010937,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20221012003334,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20221102171617,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20221123041544,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20221214054145,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20221227205040,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20230125051320,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20230214232246,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/embed/,20230314235324,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20210116024621,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20210609174711,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20211007234641,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20211210012601,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20220121021600,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20220526082514,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,http://www.college.columbia.edu/academics/academicintegrity,20240408163545,0,0,904,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20210417120330,0,0,907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20220615122917,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20220802083947,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20220815031724,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20221215034505,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20230201120050,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20230513210942,0,0,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20231216175150,0,0,911,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20241003230903,0,0,901,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20241115042130,0,0,901,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20241205201239,0,0,901,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20241213035300,0,0,901,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,20250101001748,0,0,901,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20230804030728,1,70,1709,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20230918020829,1,83,1875,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20230920195544,1,83,1875,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20230928031028,1,86,1907,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20231022033724,1,83,1875,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240106095949,1,83,1877,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240123183837,1,83,1877,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240203164002,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240226100254,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240303164635,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240501022643,1,85,1882,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240604184452,1,85,1896,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240717115147,1,85,1878,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240811185603,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240824024008,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240904173640,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20240918131332,1,85,1874,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,20241102003951,1,87,1867,0,0,0,0,0,0,0,0,3,1,2,1,0,0,0,0,0,2,-2,2
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20230928205833,1,93,1828,7,1,3,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20231023010200,1,93,1828,7,1,3,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20240206024007,1,96,1879,7,1,4,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20240303151224,1,96,1879,7,1,4,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20240510215229,1,96,1901,7,1,4,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20240603174555,1,96,1901,7,1,4,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20240614071827,1,96,1901,7,1,4,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,integrity,https://teaching.cornell.edu/generative-artificial-intelligence/ai-academic-integrity,20240828182605,1,96,1879,7,1,4,1,1,1,0,0,11,1,32,1,0,0,0,0,3,2,1,5
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20231014233437,1,30,1027,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20231022033755,1,30,1027,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20240206023952,1,31,1039,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20240303162937,1,31,1039,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20240614071948,1,31,1061,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20240828193053,1,31,1039,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20241008094517,1,32,1047,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20241020001915,1,33,1018,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20241213045411,1,34,1023,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-accessibility,20241231024744,1,34,1023,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20230828195331,1,81,2087,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20230928191655,1,81,2087,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20231022033727,1,81,2087,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20240418032034,1,82,2107,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20240614072211,1,82,2121,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20240715120745,1,82,2103,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence/ai-assignment-design,20240828190315,1,82,2099,2,1,0,0,0,0,0,0,2,1,28,1,0,0,0,0,1,2,-1,3
+New York University,193900,integrity,http://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20210109223110,0,0,1953,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,http://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20210412210624,0,0,1935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20210618051742,0,0,1945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20210920225105,0,0,1945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20211025202652,0,0,1945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20211108042458,0,0,1945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20211129150023,0,0,1945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20220111135839,0,0,1945,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20220219114213,0,0,1943,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20220528070134,0,0,1942,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20220817133637,0,0,1941,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20221002081454,0,0,1947,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20221209153258,0,0,1951,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20230329093251,0,0,1957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20230929095933,0,0,1943,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20240225123540,0,0,1939,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,20240712184351,1,1,1940,0,0,0,0,3,1,0,0,0,0,2,1,0,0,0,0,1,1,0,2
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html?,20240318195340,0,0,1939,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html?_ga=2.220805082.31752403.1698064636-2117958522.1693929179,20240318195345,0,0,1939,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20210102202049,0,0,143,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20210414114949,0,0,147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20210508013824,0,0,147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20210917060041,0,0,152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20220107001716,0,0,162,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20220504190953,0,0,152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20221025221112,0,0,139,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20230201011730,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20230321140450,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20230401200758,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20230802104605,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20230902022155,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20240102163704,0,0,137,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20240202051941,0,0,137,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20240402133256,0,0,136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20240602010718,1,1,142,0,0,0,0,4,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20240702204937,1,1,143,0,0,0,0,4,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,20240909123731,1,1,143,0,0,0,0,4,1,0,0,0,0,0,0,2,1,0,0,1,1,0,2
+Stony Brook University,196097,ai,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,20240922220938,1,6,238,0,0,0,0,3,1,0,0,0,0,2,1,2,1,0,0,1,2,-1,3
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/index.ht,20221014100429,0,0,152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/policies,20210426220102,0,0,3289,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210227125551,0,0,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210408074949,0,0,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210414222048,0,0,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210430034025,0,0,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210520234941,0,0,1078,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210601072629,0,0,1078,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20210924155948,0,0,1094,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20211021021955,0,0,1094,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20211106122547,0,0,1094,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20220224230314,0,0,1095,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20220519044502,0,0,1111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20221208185200,0,0,1125,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20230327031615,0,0,1139,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20230401174729,0,0,1102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20230429220026,0,0,1107,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20230513190926,0,0,1107,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20231001143611,0,0,1098,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20231021080637,0,0,1100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,20240226215141,0,0,1099,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20230911184647,1,114,2447,1,1,6,1,10,1,1,1,2,1,4,1,0,0,1,1,4,3,1,7
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20230912000647,1,114,2447,1,1,6,1,10,1,1,1,2,1,4,1,0,0,1,1,4,3,1,7
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20230923073759,1,114,2452,1,1,6,1,10,1,1,1,2,1,4,1,0,0,1,1,4,3,1,7
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20231003042627,1,114,2463,1,1,6,1,10,1,1,1,2,1,4,1,0,0,1,1,4,3,1,7
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20240116012856,1,131,2621,3,1,6,1,14,1,1,1,2,1,5,1,0,0,1,1,4,3,1,7
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20240202023347,1,123,2428,4,1,6,1,11,1,0,0,2,1,5,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20240301141644,1,123,2431,4,1,6,1,11,1,0,0,2,1,5,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20240303101444,1,123,2431,4,1,6,1,11,1,0,0,2,1,5,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20240315074933,1,123,2431,4,1,6,1,11,1,0,0,2,1,5,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,20240612213609,1,133,2572,4,1,6,1,11,1,0,0,2,1,5,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,20230911205544,1,95,2290,0,0,0,0,3,1,0,0,1,1,2,1,0,0,1,1,1,3,-2,4
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,20230923140221,1,95,2290,0,0,0,0,3,1,0,0,1,1,2,1,0,0,1,1,1,3,-2,4
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,20231026122203,1,95,2290,0,0,0,0,3,1,0,0,1,1,2,1,0,0,1,1,1,3,-2,4
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,20240202172615,1,95,2244,0,0,0,0,3,1,0,0,1,1,2,1,0,0,1,1,1,3,-2,4
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,20240315073616,1,95,2247,0,0,0,0,3,1,0,0,1,1,2,1,0,0,1,1,1,3,-2,4
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-and-assignment-design/,20240413121744,1,95,2247,0,0,0,0,3,1,0,0,1,1,2,1,0,0,1,1,1,3,-2,4
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20230911195624,1,76,2068,3,1,8,1,7,1,0,0,5,1,13,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20230912002308,1,76,2068,3,1,8,1,7,1,0,0,5,1,13,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20230923153001,1,76,2068,3,1,8,1,7,1,0,0,5,1,13,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20231026140300,1,76,2061,3,1,8,1,7,1,0,0,5,1,13,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20231204054842,1,79,2098,4,1,8,1,7,1,0,0,5,1,13,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20240119085349,1,79,2095,4,1,8,1,7,1,0,0,5,1,13,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20240205045730,1,83,2019,4,1,8,1,4,1,0,0,5,1,12,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20240305133726,1,83,2022,4,1,8,1,4,1,0,0,5,1,12,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20240413120230,1,83,2022,4,1,8,1,4,1,0,0,5,1,12,1,0,0,1,1,3,3,0,6
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/artificial-intelligence-policies-in-syllabi-guidelines-and-considerations/,20240416163430,1,83,2022,4,1,8,1,4,1,0,0,5,1,12,1,0,0,1,1,3,3,0,6
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-module/,20231208171022,0,0,1576,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-module/,20240523071708,0,0,1581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-module/,20240607012329,0,0,1581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-module/,20240809225512,0,0,1581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-module/,20241208163428,0,0,1581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20210413194250,0,0,1175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20210518222327,0,0,1175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20211104143822,0,0,1183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20220330072326,0,0,1183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20230329152014,0,0,1346,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20231208144937,0,0,1356,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20240614205122,0,0,1352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20240826170015,0,0,1352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20240917142252,0,0,1352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20241008202538,0,0,1352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/,20241229184633,0,0,1352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20210414033321,0,0,1607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20220428134212,0,0,1625,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20220808163145,0,0,1625,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20230306085346,0,0,1630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20230912201854,0,0,1630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20240807172331,0,0,1645,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,20240831030219,0,0,1646,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,20210122055742,0,0,557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,20210820150533,0,0,552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,20220818133245,0,0,560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,20230926035425,0,0,560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,20240529083256,0,0,563,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,20240606120140,0,0,533,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pittsburgh,215266,ai,http://teaching.pitt.edu/resources/teaching-with-generative-ai/,20240721010548,1,80,2185,0,0,0,0,1,1,0,0,8,1,6,1,0,0,0,0,1,2,-1,3
+University of Pittsburgh,215266,ai,https://teaching.pitt.edu/resources/teaching-with-generative-ai,20240715044650,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Pittsburgh,215266,ai,https://teaching.pitt.edu/resources/teaching-with-generative-ai/,20240502053239,1,80,2141,0,0,0,0,1,1,0,0,8,1,6,1,0,0,0,0,1,2,-1,3
+University of Pittsburgh,215266,ai,https://teaching.pitt.edu/resources/teaching-with-generative-ai/,20241111003610,0,0,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,20240119003616,1,14,482,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,20240303160405,1,14,486,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,20240621080726,1,14,488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,20240711042038,1,14,488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,20240916150058,1,15,481,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/generative-ai/academic-integrity/,20240916150405,1,103,2767,5,1,13,1,7,1,1,1,0,0,8,1,0,0,2,1,4,2,2,6
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/generative-ai/academic-integrity/,20241223155759,1,103,2756,5,1,13,1,7,1,1,1,0,0,8,1,0,0,2,1,4,2,2,6
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/faq/,20240305040049,1,65,1999,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/faq/,20240818133941,1,65,1999,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/faq/,20241210045906,1,65,1988,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/news/,20240819055831,1,5,293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,20210125210717,0,0,7103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,20210418214103,0,0,7103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,20220120005940,0,0,7316,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,20221003082714,0,0,7627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,20230323071057,0,0,7627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/index.php,20210420141316,0,0,7103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/index.php,20210921142227,0,0,7316,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/index.php,20230602115850,0,0,7627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20210413004748,0,0,387,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20220121001405,0,0,387,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20220219002857,0,0,387,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20220331060937,0,0,387,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20220922022405,0,0,434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20230409003146,0,0,437,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/,20240726130202,0,0,376,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,http://honor.rice.edu/honor-system-handbook/?ver=1584641406,20230411002529,0,0,437,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Rice University,227757,integrity,https://honor.rice.edu/honor-system-handbook/,20221020183343,0,0,434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,http://aggiehonor.tamu.edu/,20210102050625,0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,http://aggiehonor.tamu.edu/,20210205002749,0,0,421,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,http://ai.tamu.edu/,20210213215624,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20210413060057,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20210512225600,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20210829213508,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20211106220811,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20220121232323,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20220207031126,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20220404060112,0,0,220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20220705181343,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20220831174617,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20230201162159,0,0,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20230302163156,0,0,263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20230606075637,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20230911063656,0,0,425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20240112052314,0,0,656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20240519063303,0,0,660,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20240707030414,0,0,709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20240826192740,0,0,709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,20241226173236,0,0,734,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210122200643,0,0,189,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210204062916,0,0,105,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210207032619,0,0,110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210323002244,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210620040233,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210628023328,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210726200833,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210803113820,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210807161719,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20210831123605,0,0,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/,20241122174540,1,45,616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/index.html,20241122195034,1,45,616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Texas A & M University,228723,ai,https://ai.tamu.edu/robots.txt,20220316082121,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/,20210302115049,0,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/,20210415155954,0,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/,20210514123757,0,0,400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/,20210802204334,0,0,400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20210414081750,0,0,6263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20210611110415,0,0,6253,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20211024082053,0,0,6247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20220522095008,0,0,6246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20221003200931,0,0,6768,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20221201134035,0,0,6766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20230207040631,0,0,6766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20230213191902,0,0,6766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20230608173614,0,0,6771,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20231201054426,0,0,6767,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20240212144257,0,0,6768,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/code.shtml,20240413084051,0,0,6768,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20210414073246,0,0,542,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20210917122200,0,0,531,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20220121193646,0,0,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20220627104934,0,0,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20221208083732,0,0,497,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20230213191946,0,0,491,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/test.shtml,20230322182425,0,0,491,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20210117183526,0,0,1230,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20210401171757,0,0,1230,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20210501061406,0,0,1234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20211101051923,0,0,1283,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20220120160055,0,0,653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20220126044344,0,0,682,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20220331030314,0,0,682,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20220702041108,0,0,683,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20221006202324,0,0,614,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20221203154351,0,0,614,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20230311051454,0,0,613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20230531074854,0,0,621,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20231018131520,0,0,621,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20240423174411,0,0,704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20240523121754,0,0,704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20240708144935,0,0,694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20241112025946,0,0,594,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/,20241125032505,0,0,594,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/?q=node/2,20210919005610,0,0,1283,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://honorsystem.vt.edu/?q=node/2,20230531073333,0,0,621,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,ai,https://honorsystem.vt.edu/ai-online-tips.html,20240709210947,0,0,1418,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,ai,https://honorsystem.vt.edu/icai-webinar.html,20210305000543,0,0,411,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Virginia Polytechnic Institute and State University,233921,ai,https://honorsystem.vt.edu/icai-webinar.html,20210613012329,0,0,415,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20210414114153,0,0,1775,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20220121210210,0,0,1775,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20221202034926,0,0,1775,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20230602040946,0,0,1792,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20230819202442,0,0,1796,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20230828090251,0,0,1796,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,20240919100803,0,0,1796,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html?_ga=2.227389087.306282186.1585319450-1939771541.1585319450,20240302062833,0,0,1796,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

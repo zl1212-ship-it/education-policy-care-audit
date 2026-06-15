@@ -1,0 +1,6 @@
+control,carnegie,n_institutions,mean_intl_share,mean_snapshots,mean_pre_snapshots
+Private,BAC,1,0.1002,19.0,11.0
+Private,R1,13,0.2649,18.8,9.2
+Public,M,1,0.0123,23.0,13.0
+Public,R1,11,0.1335,23.5,10.5
+ALL,,26,0.1933,21.0,10.0
