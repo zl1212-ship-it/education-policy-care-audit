@@ -11,3 +11,7 @@ j7_proctoring/data/*.log
 j8_aes/data/raw/
 # embedding/feature caches; regenerate with run_scorers.py
 j8_aes/data/cache/
+# archived policy-page HTML (text stays out of git); regenerate with fetch_snapshots.py
+j9_aipolicy/data/snapshots_raw/
+# cached raw API pulls (CCD/EDFacts/CRDC) + per-state report-card downloads; regenerate with the fetchers
+j10_accountability/data/raw/
