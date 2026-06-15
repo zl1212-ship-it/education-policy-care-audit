@@ -33,7 +33,9 @@ OUTCOMES = ["got_funds", "award", "next_score"]
 
 
 def rdd_robustness(rows):
+    # primary stratum = elementary/middle (homogeneous running variable; analyze_rdd.py)
     df = pd.read_csv(PANEL, dtype={"ncessch": str})
+    df = df[df["is_high"] == 0].copy()
     h0 = 1.0
     for oc in OUTCOMES:
         # bandwidth sweep

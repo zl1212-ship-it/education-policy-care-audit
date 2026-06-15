@@ -28,8 +28,9 @@ def table_gradient():
 
 
 def table_rdd():
+    # primary specification = elementary/middle stratum at the default bandwidth
     r = pd.read_csv(D / "results_rdd.csv")
-    keep = r[r["specification"] == "h=1.0"].pivot_table(
+    keep = r[r["specification"] == "elem_middle h=1.0"].pivot_table(
         index="outcome", columns="statistic", values="value")
     cols = [c for c in ["tau", "se", "t", "n", "n_treated_in_window"] if c in keep.columns]
     keep = keep[cols].dropna(subset=["tau"]).round(4).reset_index()

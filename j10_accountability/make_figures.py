@@ -79,6 +79,7 @@ def _binscatter(ax, df, outcome, h=1.0, nbins=20):
 
 def fig_rdd_outcome():
     d = pd.read_csv(PANEL)
+    d = d[d["is_high"] == 0]  # primary stratum: elementary/middle (analyze_rdd.py)
     fig, axes = plt.subplots(1, 2, figsize=(11, 4))
     _binscatter(axes[0], d, "got_funds")
     axes[0].set_title("Improvement funding")
@@ -88,14 +89,15 @@ def fig_rdd_outcome():
     axes[1].set_ylabel("next-cycle score")
     for ax in axes:
         ax.set_xlabel("accountability index, centered at the identification cutoff")
-    fig.suptitle("At the identification line, crossing it does not jump the consequences "
-                 "(left of dashed line = identified)")
+    fig.suptitle("At the margin, crossing the identification line brings no gain in funding "
+                 "or next-cycle scores (left of dashed line = identified)")
     fig.tight_layout()
     save(fig, "fig_rdd_outcome")
 
 
 def fig_rdd_density():
     d = pd.read_csv(PANEL)
+    d = d[d["is_high"] == 0]  # primary stratum: elementary/middle
     r = d.loc[d["running"].between(-2, 2), "running"]
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.hist(r, bins=30, color="#55a868", edgecolor="white")

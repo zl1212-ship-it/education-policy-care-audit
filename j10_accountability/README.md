@@ -68,9 +68,18 @@ make_tables.py        # tables  -> data/table_*.csv
   the public ESSA rule (lowest 5% of Title I schools by the summative composite) to
   show the label is formula-made; it is not claimed to reproduce any state's
   official list exactly.
+- The primary RDD runs within **elementary/middle schools**, where the running
+  variable is a homogeneous achievement/growth composite. High schools carry a
+  graduation-based score and behave differently on the outcomes, so they are reported
+  as a separate stratum; a pooled covariate-adjusted specification is also reported.
+  Stratifying restores covariate balance at the cutoff (the pooled sample shows a
+  school-level imbalance that the stratum removes).
 - Poverty heterogeneity is pre-registered as the primary moderator: the estimand is
   whether the RDD effect, and the density of schools at the margin, differ across
   the poverty distribution.
+- Outcomes: the **next-cycle accountability score** is the cleanly-timed causal outcome.
+  Improvement funding (1003) is reported with a timing caveat, since these are multi-year
+  grants whose receipt in a given year can reflect a prior identification cycle.
 
 ## Data
 
