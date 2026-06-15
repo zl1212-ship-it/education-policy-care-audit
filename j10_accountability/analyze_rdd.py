@@ -45,7 +45,6 @@ OUTCOMES = {
     "next_score": "next-cycle accountability score",
 }
 COVARIATES = ["enrollment", "achievement", "is_high", "econ_disadv_share"]
-GRID = [0.5, 0.75, 1.0, 1.5, 2.0]
 
 
 def llr(df, outcome, h, kernel="tri", poly=1, donut=0.0, covars=None):
@@ -99,91 +98,91 @@ def mccrary(df, h, b=0.2):
     return dict(log_diff=float(log_diff), z=float(log_diff / se) if se else np.nan)
 
 
-def battery(sub, tag, h0, rows):
-    """Full RDD battery on one stratum; specification carries the stratum tag."""
+def battery(sub, tag, h0, grid, state, rows):
+    """Full RDD battery on one stratum; rows carry (state, outcome, spec, stat, value)."""
     def add(outcome, spec, stat, val):
-        rows.append((outcome, f"{tag} {spec}", stat, val))
+        rows.append((state, outcome, f"{tag} {spec}", stat, val))
 
     for oc in OUTCOMES:
-        if oc not in sub.columns:
+        if oc not in sub.columns or sub[oc].notna().sum() < 10:
             continue
         r = llr(sub, oc, h0)
-        add(oc, f"h={h0}", "tau", r["tau"])
-        add(oc, f"h={h0}", "se", r["se"])
-        add(oc, f"h={h0}", "t", r["tau"] / r["se"] if r["se"] else np.nan)
-        add(oc, f"h={h0}", "n", r["n"])
-        add(oc, f"h={h0}", "n_treated_in_window", r["n_left"])
-        for h in GRID:
-            if h == h0:
-                continue
+        add(oc, "primary", "tau", r["tau"])
+        add(oc, "primary", "se", r["se"])
+        add(oc, "primary", "t", r["tau"] / r["se"] if r["se"] else np.nan)
+        add(oc, "primary", "n", r["n"])
+        add(oc, "primary", "n_treated_in_window", r["n_left"])
+        add(oc, "primary", "bandwidth", h0)
+        for h in grid:
             rr = llr(sub, oc, h)
             add(oc, f"h={h}", "tau", rr["tau"])
             add(oc, f"h={h}", "se", rr["se"])
 
-    m = mccrary(sub, max(h0, 1.0))
-    add("running_density", f"h={max(h0,1.0)}", "mccrary_z", m["z"])
+    m = mccrary(sub, h0 * 2)
+    add("running_density", "primary", "mccrary_z", m["z"])
 
     for cov in COVARIATES:
         if cov in sub.columns and sub[cov].nunique(dropna=True) > 1 and sub[cov].notna().sum() > 50:
             r = llr(sub, cov, h0)
-            add(f"cov:{cov}", f"h={h0}", "tau", r["tau"])
-            add(f"cov:{cov}", f"h={h0}", "t", r["tau"] / r["se"] if r["se"] else np.nan)
+            add(f"cov:{cov}", "primary", "tau", r["tau"])
+            add(f"cov:{cov}", "primary", "t", r["tau"] / r["se"] if r["se"] else np.nan)
 
     if sub["econ_disadv_share"].notna().sum() > 50:
         med = sub["econ_disadv_share"].median()
         for grp, g in (("high_poverty", sub[sub.econ_disadv_share >= med]),
                        ("low_poverty", sub[sub.econ_disadv_share < med])):
             for oc in ("got_funds", "next_score"):
+                if oc not in sub.columns or sub[oc].notna().sum() < 10:
+                    continue
                 r = llr(g, oc, h0)
-                add(f"{oc}|{grp}", f"h={h0}", "tau", r["tau"])
-                add(f"{oc}|{grp}", f"h={h0}", "se", r["se"])
-                add(f"{oc}|{grp}", f"h={h0}", "n_treated_in_window", r["n_left"])
+                add(f"{oc}|{grp}", "primary", "tau", r["tau"])
+                add(f"{oc}|{grp}", "primary", "se", r["se"])
+                add(f"{oc}|{grp}", "primary", "n_treated_in_window", r["n_left"])
         near = sub[sub["running"].abs() <= h0]
-        add("margin_density", f"h={h0}", "share_near_cutoff_high_poverty",
+        add("margin_density", "primary", "share_near_cutoff_high_poverty",
             float((near.econ_disadv_share >= med).mean()))
-        add("margin_density", f"h={h0}", "n_near_cutoff", int(len(near)))
+        add("margin_density", "primary", "n_near_cutoff", int(len(near)))
     return m
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--bandwidth", type=float, default=1.0)
-    args = ap.parse_args()
-    df = pd.read_csv(PANEL, dtype={"ncessch": str})
-    h0 = args.bandwidth
+    df_all = pd.read_csv(PANEL, dtype={"ncessch": str})
     rows = []
+    summary = {}
+    for state, df in df_all.groupby("state"):
+        # bandwidth is scale-aware: each state's index has its own units, so the primary
+        # window is half the running-variable SD (keeps WA near h=1.0, scales CT to ~6).
+        h0 = round(0.5 * df["running"].std(), 2)
+        grid = sorted({round(f * h0, 3) for f in (0.5, 0.75, 1.0, 1.5, 2.0)})
+        # PRIMARY stratum: elementary/middle, a homogeneous achievement/growth running
+        # variable; high schools (graduation-based score) are reported separately.
+        mid = df[df["is_high"] == 0].copy()
+        m_mid = battery(mid, "elem_middle", h0, grid, state, rows)
+        if (df["is_high"] == 1).sum() >= 30:
+            battery(df[df["is_high"] == 1].copy(), "high", h0, grid, state, rows)
+        battery(df, "pooled", h0, grid, state, rows)
+        for oc in OUTCOMES:  # pooled covariate-adjusted (control is_high)
+            if oc in df.columns and df[oc].notna().sum() >= 10:
+                r = llr(df, oc, h0, covars=["is_high"])
+                rows.append((state, oc, "pooled+cov", "tau", r["tau"]))
+                rows.append((state, oc, "pooled+cov", "se", r["se"]))
+        summary[state] = (h0, len(mid), m_mid["z"], df["design"].iloc[0])
 
-    # PRIMARY stratum: elementary/middle schools, where the running variable is a
-    # homogeneous achievement/growth composite (high schools add a graduation-based
-    # score and behave differently on the outcomes, so they are reported separately).
-    mid = df[df["is_high"] == 0].copy()
-    m_mid = battery(mid, "elem_middle", h0, rows)
-    battery(df[df["is_high"] == 1].copy(), "high", h0, rows)
-    battery(df, "pooled", h0, rows)
-
-    # pooled covariate-adjusted (control for is_high), as a robustness on the full sample
-    for oc in OUTCOMES:
-        r = llr(df, oc, h0, covars=["is_high"])
-        rows.append((oc, f"pooled+cov h={h0}", "tau", r["tau"]))
-        rows.append((oc, f"pooled+cov h={h0}", "se", r["se"]))
-
-    out = pd.DataFrame(rows, columns=["outcome", "specification", "statistic", "value"])
+    out = pd.DataFrame(rows, columns=["state", "outcome", "specification",
+                                      "statistic", "value"])
     out.to_csv(OUT, index=False)
 
-    # console summary (primary stratum)
-    def show(oc, tag="elem_middle"):
-        s = out[(out.outcome == oc) & (out.specification == f"{tag} h={h0}")
-                ].set_index("statistic")["value"]
-        if "tau" in s.index:
-            print(f"  {oc:<26} tau={float(s['tau']):+.4g}  se={float(s['se']):.4g}")
-    print(f"WA sharp RDD, PRIMARY = elementary/middle (n={len(mid)}), bandwidth {h0}:")
-    for oc in OUTCOMES:
-        if oc in df.columns:
-            show(oc)
-    mid_cov = out[(out.specification == f"elem_middle h={h0}") &
+    for state, (h0, nmid, mz, design) in summary.items():
+        print(f"{state} RDD ({design}), elem/middle n={nmid}, h0={h0}:")
+        for oc in OUTCOMES:
+            s = out[(out.state == state) & (out.outcome == oc) &
+                    (out.specification == "elem_middle primary")].set_index("statistic")["value"]
+            if "tau" in s.index and pd.notna(s["tau"]):
+                print(f"  {oc:<22} tau={float(s['tau']):+.4g}  se={float(s['se']):.4g}")
+        cov = out[(out.state == state) & (out.specification == "elem_middle primary") &
                   out.outcome.str.startswith("cov:") & (out.statistic == "t")]
-    print(f"  covariate-continuity |t| max = {mid_cov['value'].abs().max():.2f} (was 2.34 pooled)")
-    print(f"  McCrary z = {m_mid['z']:.2f}")
+        if len(cov):
+            print(f"  covariate |t| max = {cov['value'].abs().max():.2f}  McCrary z = {mz:.2f}")
     print(f"-> {OUT}")
 
 

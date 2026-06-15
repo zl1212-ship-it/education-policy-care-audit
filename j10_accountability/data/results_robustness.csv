@@ -1,73 +1,98 @@
 analysis,specification,statistic,value
-rdd:got_funds,bandwidth h=0.5,tau,-0.2687271813330629
-rdd:got_funds,bandwidth h=0.5,se,0.18706230272391347
-rdd:got_funds,bandwidth h=0.75,tau,-0.24929310244460345
-rdd:got_funds,bandwidth h=0.75,se,0.15675516165610104
-rdd:got_funds,bandwidth h=1.0,tau,-0.2801610158772026
-rdd:got_funds,bandwidth h=1.0,se,0.13689359626083972
-rdd:got_funds,bandwidth h=1.25,tau,-0.2767311783585813
-rdd:got_funds,bandwidth h=1.25,se,0.12474091174327939
-rdd:got_funds,bandwidth h=1.5,tau,-0.26392423627660005
-rdd:got_funds,bandwidth h=1.5,se,0.1187087652165248
-rdd:got_funds,bandwidth h=2.0,tau,-0.24082772999766366
-rdd:got_funds,bandwidth h=2.0,se,0.11001779436688011
-rdd:got_funds,local quadratic h=1.0,tau,-0.2286786902781698
-rdd:got_funds,local quadratic h=1.0,se,0.1943338879606132
-rdd:got_funds,donut 0.1 h=1.0,tau,-0.24471211085385167
-rdd:got_funds,donut 0.1 h=1.0,se,0.186944109298776
-rdd:got_funds,donut 0.2 h=1.0,tau,-0.08962210397476002
-rdd:got_funds,donut 0.2 h=1.0,se,0.23838661187499008
-rdd:got_funds,h=1.0,mde_80pct,0.3833020695303512
-rdd:award,bandwidth h=0.5,tau,-12010.634625124885
-rdd:award,bandwidth h=0.5,se,8286.438752553448
-rdd:award,bandwidth h=0.75,tau,-10351.661834416302
-rdd:award,bandwidth h=0.75,se,6949.344627714067
-rdd:award,bandwidth h=1.0,tau,-11753.548959854746
-rdd:award,bandwidth h=1.0,se,6050.713323927636
-rdd:award,bandwidth h=1.25,tau,-11944.835335576872
-rdd:award,bandwidth h=1.25,se,5495.814805614142
-rdd:award,bandwidth h=1.5,tau,-11539.33882208955
-rdd:award,bandwidth h=1.5,se,5223.004019213741
-rdd:award,bandwidth h=2.0,tau,-10403.234613839028
-rdd:award,bandwidth h=2.0,se,4844.959435247918
-rdd:award,local quadratic h=1.0,tau,-9786.59670031898
-rdd:award,local quadratic h=1.0,se,8601.54653184045
-rdd:award,donut 0.1 h=1.0,tau,-9475.14295501093
-rdd:award,donut 0.1 h=1.0,se,8179.180830016148
-rdd:award,donut 0.2 h=1.0,tau,-4798.652026692604
-rdd:award,donut 0.2 h=1.0,se,10397.232538995842
-rdd:award,h=1.0,mde_80pct,16941.997306997382
-rdd:next_score,bandwidth h=0.5,tau,0.09633878288230813
-rdd:next_score,bandwidth h=0.5,se,0.3221434891801857
-rdd:next_score,bandwidth h=0.75,tau,-0.11681184923957183
-rdd:next_score,bandwidth h=0.75,se,0.26620735449924665
-rdd:next_score,bandwidth h=1.0,tau,-0.17327545241947961
-rdd:next_score,bandwidth h=1.0,se,0.23182590097765807
-rdd:next_score,bandwidth h=1.25,tau,-0.1702139083007795
-rdd:next_score,bandwidth h=1.25,se,0.21082123411964312
-rdd:next_score,bandwidth h=1.5,tau,-0.15842159270087464
-rdd:next_score,bandwidth h=1.5,se,0.20000925163918395
-rdd:next_score,bandwidth h=2.0,tau,-0.15070660752066942
-rdd:next_score,bandwidth h=2.0,se,0.18223690118745514
-rdd:next_score,local quadratic h=1.0,tau,0.011401223489027529
-rdd:next_score,local quadratic h=1.0,se,0.33424881405344736
-rdd:next_score,donut 0.1 h=1.0,tau,-0.3032481349877047
-rdd:next_score,donut 0.1 h=1.0,se,0.2939101026442084
-rdd:next_score,donut 0.2 h=1.0,tau,-0.583135364433643
-rdd:next_score,donut 0.2 h=1.0,se,0.4274516763914207
-rdd:next_score,h=1.0,mde_80pct,0.6491125227374426
-placebo:got_funds,fake cutoff q=0.25,tau,-0.12342716514463584
-placebo:got_funds,fake cutoff q=0.25,se,0.08988573132748989
-placebo:next_score,fake cutoff q=0.25,tau,-0.13702744863655647
-placebo:next_score,fake cutoff q=0.25,se,0.23189603675555953
-placebo:got_funds,fake cutoff q=0.5,tau,-0.010966622332891071
-placebo:got_funds,fake cutoff q=0.5,se,0.07138775487464172
-placebo:next_score,fake cutoff q=0.5,tau,-0.23818973920461262
-placebo:next_score,fake cutoff q=0.5,se,0.2447201827240501
-placebo:got_funds,fake cutoff q=0.75,tau,0.04866283265871136
-placebo:got_funds,fake cutoff q=0.75,se,0.036696373093252355
-placebo:next_score,fake cutoff q=0.75,tau,-0.09436406194713101
-placebo:next_score,fake cutoff q=0.75,se,0.21221207053698993
+rdd:CT:next_score,bandwidth 0.5xh0,tau,2.224977772722816
+rdd:CT:next_score,bandwidth 0.5xh0,se,10.64435875667469
+rdd:CT:next_score,bandwidth 0.75xh0,tau,3.924050749015833
+rdd:CT:next_score,bandwidth 0.75xh0,se,8.936501610325315
+rdd:CT:next_score,bandwidth 1.0xh0,tau,5.197996530029132
+rdd:CT:next_score,bandwidth 1.0xh0,se,7.756625221514677
+rdd:CT:next_score,bandwidth 1.25xh0,tau,6.329484909307019
+rdd:CT:next_score,bandwidth 1.25xh0,se,7.08401068479583
+rdd:CT:next_score,bandwidth 1.5xh0,tau,7.3038808139665825
+rdd:CT:next_score,bandwidth 1.5xh0,se,6.6742658286159235
+rdd:CT:next_score,bandwidth 2.0xh0,tau,8.9491343194145
+rdd:CT:next_score,bandwidth 2.0xh0,se,6.300926114439635
+rdd:CT:next_score,local quadratic,tau,1.4240317916821503
+rdd:CT:next_score,local quadratic,se,10.794953794099017
+rdd:CT:next_score,donut 0.1xh0,tau,8.184768545592163
+rdd:CT:next_score,donut 0.1xh0,se,6.8600914894513245
+rdd:CT:next_score,donut 0.2xh0,tau,6.259788778081934
+rdd:CT:next_score,donut 0.2xh0,se,6.350449010692707
+rdd:CT:next_score,primary,mde_80pct,21.718550620241096
+placebo:CT:next_score,fake cutoff q=0.25,tau,3.139653640421308
+placebo:CT:next_score,fake cutoff q=0.25,se,2.380346321382714
+placebo:CT:next_score,fake cutoff q=0.5,tau,-1.1157859806607544
+placebo:CT:next_score,fake cutoff q=0.5,se,1.764414674504222
+placebo:CT:next_score,fake cutoff q=0.75,tau,-1.6797152437826486
+placebo:CT:next_score,fake cutoff q=0.75,se,1.8281706227631538
+rdd:WA:got_funds,bandwidth 0.5xh0,tau,-0.24401523586934015
+rdd:WA:got_funds,bandwidth 0.5xh0,se,0.1790132452419751
+rdd:WA:got_funds,bandwidth 0.75xh0,tau,-0.25523016511813246
+rdd:WA:got_funds,bandwidth 0.75xh0,se,0.1490412916153078
+rdd:WA:got_funds,bandwidth 1.0xh0,tau,-0.2829903164380974
+rdd:WA:got_funds,bandwidth 1.0xh0,se,0.13064052099530382
+rdd:WA:got_funds,bandwidth 1.25xh0,tau,-0.2692778714054067
+rdd:WA:got_funds,bandwidth 1.25xh0,se,0.12108576307320795
+rdd:WA:got_funds,bandwidth 1.5xh0,tau,-0.25235509658254807
+rdd:WA:got_funds,bandwidth 1.5xh0,se,0.11523244944815114
+rdd:WA:got_funds,bandwidth 2.0xh0,tau,-0.23585973553940573
+rdd:WA:got_funds,bandwidth 2.0xh0,se,0.1076406684768931
+rdd:WA:got_funds,local quadratic,tau,-0.24348517544928633
+rdd:WA:got_funds,local quadratic,se,0.1853921499901017
+rdd:WA:got_funds,donut 0.1xh0,tau,-0.25254026327837753
+rdd:WA:got_funds,donut 0.1xh0,se,0.173775431827808
+rdd:WA:got_funds,donut 0.2xh0,tau,-0.1302279869585301
+rdd:WA:got_funds,donut 0.2xh0,se,0.2166050692792681
+rdd:WA:got_funds,primary,mde_80pct,0.36579345878685066
+rdd:WA:award,bandwidth 0.5xh0,tau,-10718.46633320278
+rdd:WA:award,bandwidth 0.5xh0,se,7944.604266236225
+rdd:WA:award,bandwidth 0.75xh0,tau,-10525.911061658051
+rdd:WA:award,bandwidth 0.75xh0,se,6602.786034887152
+rdd:WA:award,bandwidth 1.0xh0,tau,-12028.27458299729
+rdd:WA:award,bandwidth 1.0xh0,se,5764.649127875926
+rdd:WA:award,bandwidth 1.25xh0,tau,-11730.55353856046
+rdd:WA:award,bandwidth 1.25xh0,se,5329.43092867673
+rdd:WA:award,bandwidth 1.5xh0,tau,-11075.858392172344
+rdd:WA:award,bandwidth 1.5xh0,se,5071.036393928483
+rdd:WA:award,bandwidth 2.0xh0,tau,-10040.520511738874
+rdd:WA:award,bandwidth 2.0xh0,se,4742.304603565187
+rdd:WA:award,local quadratic,tau,-10072.317829659187
+rdd:WA:award,local quadratic,se,8205.615421250077
+rdd:WA:award,donut 0.1xh0,tau,-10287.13288841765
+rdd:WA:award,donut 0.1xh0,se,7584.890521221539
+rdd:WA:award,donut 0.2xh0,tau,-6992.7608592185015
+rdd:WA:award,donut 0.2xh0,se,9441.46520330011
+rdd:WA:award,primary,mde_80pct,16141.017558052592
+rdd:WA:next_score,bandwidth 0.5xh0,tau,0.03832651440450574
+rdd:WA:next_score,bandwidth 0.5xh0,se,0.3080212281724479
+rdd:WA:next_score,bandwidth 0.75xh0,tau,-0.14399870758036037
+rdd:WA:next_score,bandwidth 0.75xh0,se,0.25270873406778743
+rdd:WA:next_score,bandwidth 1.0xh0,tau,-0.18005411184554582
+rdd:WA:next_score,bandwidth 1.0xh0,se,0.22103687051009271
+rdd:WA:next_score,bandwidth 1.25xh0,tau,-0.16609878138491932
+rdd:WA:next_score,bandwidth 1.25xh0,se,0.2044231024426469
+rdd:WA:next_score,bandwidth 1.5xh0,tau,-0.15085049590341815
+rdd:WA:next_score,bandwidth 1.5xh0,se,0.1933142800122878
+rdd:WA:next_score,bandwidth 2.0xh0,tau,-0.14592703489700531
+rdd:WA:next_score,bandwidth 2.0xh0,se,0.1766290933489063
+rdd:WA:next_score,local quadratic,tau,-0.04060842480212429
+rdd:WA:next_score,local quadratic,se,0.3168056722422804
+rdd:WA:next_score,donut 0.1xh0,tau,-0.295263487403602
+rdd:WA:next_score,donut 0.1xh0,se,0.27335981890038197
+rdd:WA:next_score,donut 0.2xh0,tau,-0.5130014277876946
+rdd:WA:next_score,donut 0.2xh0,se,0.3823016488444807
+rdd:WA:next_score,primary,mde_80pct,0.6189032374282596
+placebo:WA:got_funds,fake cutoff q=0.25,tau,-0.11655941617706711
+placebo:WA:got_funds,fake cutoff q=0.25,se,0.08463220625802587
+placebo:WA:next_score,fake cutoff q=0.25,tau,-0.1285020421868538
+placebo:WA:next_score,fake cutoff q=0.25,se,0.21721611414779432
+placebo:WA:got_funds,fake cutoff q=0.5,tau,-0.013977006706787462
+placebo:WA:got_funds,fake cutoff q=0.5,se,0.06749491950757984
+placebo:WA:next_score,fake cutoff q=0.5,tau,-0.22805825712332384
+placebo:WA:next_score,fake cutoff q=0.5,se,0.2321508631305879
+placebo:WA:got_funds,fake cutoff q=0.75,tau,0.04313486844699557
+placebo:WA:got_funds,fake cutoff q=0.75,se,0.03428445026978299
+placebo:WA:next_score,fake cutoff q=0.75,tau,-0.08618384538186155
+placebo:WA:next_score,fake cutoff q=0.75,se,0.2008276776473967
 weight:population,all Title I,mean_poverty,0.6168095040869476
 weight:bottom_3pct,threshold,n_identified,1947.0
 weight:bottom_3pct,threshold,mean_poverty_identified,0.7911816791989155

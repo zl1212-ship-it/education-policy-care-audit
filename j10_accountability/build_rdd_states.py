@@ -20,6 +20,7 @@ Run:  python3 build_rdd_states.py            # all wired states
       python3 build_rdd_states.py --states WA
 """
 import argparse
+import hashlib
 import json
 import sys
 import time
@@ -47,6 +48,15 @@ STATES = {
         "funds_id": "wyhw-h6xs",     # Report Card 1003 Funds 2023-24 (post-identification funding)
         "year": "2023",
         "next_year": "2024",
+        "design": "official_flag",   # treatment = state's published comprehensive-support flag
+    },
+    "CT": {
+        "domain": "data.ct.gov",
+        "nga_id": "h28j-iix5",       # Next Generation Accountability System: outcomeratepct = index 0-100
+        "year": "2022",
+        "next_year": "2023",
+        "design": "reconstructed_rule",  # no official flag column; cutoff = CT's published
+                                         # lowest-5%-of-Title-I rule applied to the index
     },
 }
 
@@ -57,7 +67,10 @@ def socrata(domain, rid, select=None, where=None, limit=60000):
         url += "&$select=" + select.replace(" ", "%20")
     if where:
         url += "&$where=" + where.replace(" ", "%20")
-    cache = RAW / f"{domain}_{rid}.json"
+    # cache key includes the query: the same resource is pulled with different filters
+    # (e.g. one year vs the next), so keying on the resource id alone would collide.
+    qhash = hashlib.md5(url.encode()).hexdigest()[:8]
+    cache = RAW / f"{domain}_{rid}_{qhash}.json"
     if cache.exists():
         return pd.DataFrame(json.loads(cache.read_text()))
     for attempt in range(4):
@@ -138,15 +151,68 @@ def build_panel_WA(spec, frame, ind):
     panel["got_funds"] = panel["got_funds"].fillna(0).astype(int)
     panel["award"] = panel["award"].fillna(0.0)
     panel["state"] = "WA"
+    panel["design"] = spec["design"]
     panel["sharpness"] = sharp
-    keep = ["state", "ncessch", "school_code", "school_name", "score", "running",
-            "cutoff", "treat", "titlei", "grad_rate", "econ_disadv_share",
+    keep = ["state", "design", "ncessch", "school_code", "school_name", "score",
+            "running", "cutoff", "treat", "titlei", "grad_rate", "econ_disadv_share",
             "achievement", "enrollment", "is_high", "next_score", "award",
             "got_funds", "sharpness"]
     return panel[[c for c in keep if c in panel.columns]]
 
 
-BUILDERS = {"WA": build_panel_WA}
+def crosswalk_seasch(frame, state):
+    """NCES ncessch <-> state school code via the CCD seasch (part after the dash)."""
+    s = frame[frame["state"] == state].copy()
+    s["school_code"] = s["seasch"].astype(str).str.split("-").str[-1].str.zfill(7)
+    return s[["ncessch", "school_code", "enrollment", "is_high", "title_i_eligible"]]
+
+
+def build_panel_CT(spec, frame, ind):
+    """Connecticut Next Generation Accountability index, reconstructed-rule RDD.
+
+    CT publishes a continuous accountability index (outcomeratepct, 0-100) but not a
+    machine-readable comprehensive-support flag, so the cutoff is reconstructed from
+    CT's own published rule (lowest 5% of Title I schools by the index) and the outcome
+    is the next-year index. Treatment is below the reconstructed line by construction
+    (sharp); the test is whether next-year performance jumps at the line."""
+    y, ny = spec["year"], spec["next_year"]
+
+    def pull(year):
+        df = socrata(spec["domain"], spec["nga_id"],
+                     where=f"category='SchoolTot' AND fallofyear='{year}'")
+        df = df[["schoolcode", "schoolname", "outcomeratepct"]].copy()
+        df["index"] = pd.to_numeric(df["outcomeratepct"], errors="coerce")
+        df["school_code"] = df["schoolcode"].astype(str).str.zfill(7)
+        return df.dropna(subset=["index"])
+
+    cur = pull(y)
+    nxt = pull(ny)[["school_code", "index"]].rename(columns={"index": "next_score"})
+
+    cw = crosswalk_seasch(frame, "CT")
+    pov = ind[["ncessch", "econ_disadv_share", "achievement"]]
+    p = (cur.merge(cw, on="school_code", how="inner")
+            .merge(nxt, on="school_code", how="left")
+            .merge(pov, on="ncessch", how="left"))
+
+    # CT's rule applies to Title I schools; reconstruct the lowest-5% cutoff among them
+    p = p[p["title_i_eligible"] == 1].dropna(subset=["index"]).copy()
+    p["score"] = p["index"]
+    c = p["score"].quantile(0.05)
+    p["cutoff"] = c
+    p["running"] = p["score"] - c
+    p["treat"] = (p["score"] < c).astype(int)
+    p["state"] = "CT"
+    p["design"] = spec["design"]
+    p["titlei"] = True
+    p["sharpness"] = 1.0  # treatment is the reconstructed rule, sharp by construction
+    p["school_name"] = p["schoolname"]
+    keep = ["state", "design", "ncessch", "school_code", "school_name", "score",
+            "running", "cutoff", "treat", "titlei", "econ_disadv_share", "achievement",
+            "enrollment", "is_high", "next_score", "sharpness"]
+    return p[[c for c in keep if c in p.columns]]
+
+
+BUILDERS = {"WA": build_panel_WA, "CT": build_panel_CT}
 
 
 def main():

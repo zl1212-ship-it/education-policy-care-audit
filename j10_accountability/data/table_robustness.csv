@@ -1,31 +1,41 @@
 analysis,specification,mde_80pct,se,tau
-rdd:award,bandwidth h=0.5,,8286.4388,-12010.6346
-rdd:award,bandwidth h=0.75,,6949.3446,-10351.6618
-rdd:award,bandwidth h=1.0,,6050.7133,-11753.549
-rdd:award,bandwidth h=1.25,,5495.8148,-11944.8353
-rdd:award,bandwidth h=1.5,,5223.004,-11539.3388
-rdd:award,bandwidth h=2.0,,4844.9594,-10403.2346
-rdd:award,donut 0.1 h=1.0,,8179.1808,-9475.143
-rdd:award,donut 0.2 h=1.0,,10397.2325,-4798.652
-rdd:award,h=1.0,16941.9973,,
-rdd:award,local quadratic h=1.0,,8601.5465,-9786.5967
-rdd:got_funds,bandwidth h=0.5,,0.1871,-0.2687
-rdd:got_funds,bandwidth h=0.75,,0.1568,-0.2493
-rdd:got_funds,bandwidth h=1.0,,0.1369,-0.2802
-rdd:got_funds,bandwidth h=1.25,,0.1247,-0.2767
-rdd:got_funds,bandwidth h=1.5,,0.1187,-0.2639
-rdd:got_funds,bandwidth h=2.0,,0.11,-0.2408
-rdd:got_funds,donut 0.1 h=1.0,,0.1869,-0.2447
-rdd:got_funds,donut 0.2 h=1.0,,0.2384,-0.0896
-rdd:got_funds,h=1.0,0.3833,,
-rdd:got_funds,local quadratic h=1.0,,0.1943,-0.2287
-rdd:next_score,bandwidth h=0.5,,0.3221,0.0963
-rdd:next_score,bandwidth h=0.75,,0.2662,-0.1168
-rdd:next_score,bandwidth h=1.0,,0.2318,-0.1733
-rdd:next_score,bandwidth h=1.25,,0.2108,-0.1702
-rdd:next_score,bandwidth h=1.5,,0.2,-0.1584
-rdd:next_score,bandwidth h=2.0,,0.1822,-0.1507
-rdd:next_score,donut 0.1 h=1.0,,0.2939,-0.3032
-rdd:next_score,donut 0.2 h=1.0,,0.4275,-0.5831
-rdd:next_score,h=1.0,0.6491,,
-rdd:next_score,local quadratic h=1.0,,0.3342,0.0114
+rdd:CT:next_score,bandwidth 0.5xh0,,10.6444,2.225
+rdd:CT:next_score,bandwidth 0.75xh0,,8.9365,3.9241
+rdd:CT:next_score,bandwidth 1.0xh0,,7.7566,5.198
+rdd:CT:next_score,bandwidth 1.25xh0,,7.084,6.3295
+rdd:CT:next_score,bandwidth 1.5xh0,,6.6743,7.3039
+rdd:CT:next_score,bandwidth 2.0xh0,,6.3009,8.9491
+rdd:CT:next_score,donut 0.1xh0,,6.8601,8.1848
+rdd:CT:next_score,donut 0.2xh0,,6.3504,6.2598
+rdd:CT:next_score,local quadratic,,10.795,1.424
+rdd:CT:next_score,primary,21.7186,,
+rdd:WA:award,bandwidth 0.5xh0,,7944.6043,-10718.4663
+rdd:WA:award,bandwidth 0.75xh0,,6602.786,-10525.9111
+rdd:WA:award,bandwidth 1.0xh0,,5764.6491,-12028.2746
+rdd:WA:award,bandwidth 1.25xh0,,5329.4309,-11730.5535
+rdd:WA:award,bandwidth 1.5xh0,,5071.0364,-11075.8584
+rdd:WA:award,bandwidth 2.0xh0,,4742.3046,-10040.5205
+rdd:WA:award,donut 0.1xh0,,7584.8905,-10287.1329
+rdd:WA:award,donut 0.2xh0,,9441.4652,-6992.7609
+rdd:WA:award,local quadratic,,8205.6154,-10072.3178
+rdd:WA:award,primary,16141.0176,,
+rdd:WA:got_funds,bandwidth 0.5xh0,,0.179,-0.244
+rdd:WA:got_funds,bandwidth 0.75xh0,,0.149,-0.2552
+rdd:WA:got_funds,bandwidth 1.0xh0,,0.1306,-0.283
+rdd:WA:got_funds,bandwidth 1.25xh0,,0.1211,-0.2693
+rdd:WA:got_funds,bandwidth 1.5xh0,,0.1152,-0.2524
+rdd:WA:got_funds,bandwidth 2.0xh0,,0.1076,-0.2359
+rdd:WA:got_funds,donut 0.1xh0,,0.1738,-0.2525
+rdd:WA:got_funds,donut 0.2xh0,,0.2166,-0.1302
+rdd:WA:got_funds,local quadratic,,0.1854,-0.2435
+rdd:WA:got_funds,primary,0.3658,,
+rdd:WA:next_score,bandwidth 0.5xh0,,0.308,0.0383
+rdd:WA:next_score,bandwidth 0.75xh0,,0.2527,-0.144
+rdd:WA:next_score,bandwidth 1.0xh0,,0.221,-0.1801
+rdd:WA:next_score,bandwidth 1.25xh0,,0.2044,-0.1661
+rdd:WA:next_score,bandwidth 1.5xh0,,0.1933,-0.1509
+rdd:WA:next_score,bandwidth 2.0xh0,,0.1766,-0.1459
+rdd:WA:next_score,donut 0.1xh0,,0.2734,-0.2953
+rdd:WA:next_score,donut 0.2xh0,,0.3823,-0.513
+rdd:WA:next_score,local quadratic,,0.3168,-0.0406
+rdd:WA:next_score,primary,0.6189,,

@@ -33,39 +33,39 @@ OUTCOMES = ["got_funds", "award", "next_score"]
 
 
 def rdd_robustness(rows):
-    # primary stratum = elementary/middle (homogeneous running variable; analyze_rdd.py)
-    df = pd.read_csv(PANEL, dtype={"ncessch": str})
-    df = df[df["is_high"] == 0].copy()
-    h0 = 1.0
-    for oc in OUTCOMES:
-        # bandwidth sweep
-        for h in (0.5, 0.75, 1.0, 1.25, 1.5, 2.0):
-            r = llr(df, oc, h)
-            rows.append((f"rdd:{oc}", f"bandwidth h={h}", "tau", r["tau"]))
-            rows.append((f"rdd:{oc}", f"bandwidth h={h}", "se", r["se"]))
-        # local quadratic
-        r = llr(df, oc, h0, poly=2)
-        rows.append((f"rdd:{oc}", "local quadratic h=1.0", "tau", r["tau"]))
-        rows.append((f"rdd:{oc}", "local quadratic h=1.0", "se", r["se"]))
-        # donut
-        for dn in (0.1, 0.2):
-            r = llr(df, oc, h0, donut=dn)
-            rows.append((f"rdd:{oc}", f"donut {dn} h=1.0", "tau", r["tau"]))
-            rows.append((f"rdd:{oc}", f"donut {dn} h=1.0", "se", r["se"]))
-        # minimum detectable effect (2.8 * SE ~ 80% power, 5% two-sided)
-        r = llr(df, oc, h0)
-        rows.append((f"rdd:{oc}", "h=1.0", "mde_80pct", 2.8 * r["se"]))
+    # per state (own scale), primary stratum = elementary/middle; bandwidth scaled to the
+    # running-variable SD (mirrors analyze_rdd.py).
+    full = pd.read_csv(PANEL, dtype={"ncessch": str})
+    for st, df in full[full["is_high"] == 0].groupby("state"):
+        h0 = round(0.5 * df["running"].std(), 2)
+        for oc in OUTCOMES:
+            if oc not in df.columns or df[oc].notna().sum() < 10:
+                continue
+            for f in (0.5, 0.75, 1.0, 1.25, 1.5, 2.0):
+                r = llr(df, oc, round(f * h0, 3))
+                rows.append((f"rdd:{st}:{oc}", f"bandwidth {f}xh0", "tau", r["tau"]))
+                rows.append((f"rdd:{st}:{oc}", f"bandwidth {f}xh0", "se", r["se"]))
+            r = llr(df, oc, h0, poly=2)
+            rows.append((f"rdd:{st}:{oc}", "local quadratic", "tau", r["tau"]))
+            rows.append((f"rdd:{st}:{oc}", "local quadratic", "se", r["se"]))
+            for dn in (0.1, 0.2):
+                r = llr(df, oc, h0, donut=dn * h0)
+                rows.append((f"rdd:{st}:{oc}", f"donut {dn}xh0", "tau", r["tau"]))
+                rows.append((f"rdd:{st}:{oc}", f"donut {dn}xh0", "se", r["se"]))
+            r = llr(df, oc, h0)
+            rows.append((f"rdd:{st}:{oc}", "primary", "mde_80pct", 2.8 * r["se"]))
 
-    # placebo cutoffs on the control side (recenter at fake lines, no real treatment)
-    ctrl = df[df["running"] > 0].copy()
-    for q in (0.25, 0.5, 0.75):
-        fake = ctrl["running"].quantile(q)
-        p = ctrl.copy()
-        p["running"] = p["running"] - fake
-        for oc in ("got_funds", "next_score"):
-            r = llr(p, oc, 1.0)
-            rows.append((f"placebo:{oc}", f"fake cutoff q={q}", "tau", r["tau"]))
-            rows.append((f"placebo:{oc}", f"fake cutoff q={q}", "se", r["se"]))
+        # placebo cutoffs on the control side (fake lines, no real treatment)
+        ctrl = df[df["running"] > 0].copy()
+        for q in (0.25, 0.5, 0.75):
+            p = ctrl.copy()
+            p["running"] = p["running"] - ctrl["running"].quantile(q)
+            for oc in ("got_funds", "next_score"):
+                if oc not in df.columns or df[oc].notna().sum() < 10:
+                    continue
+                r = llr(p, oc, h0)
+                rows.append((f"placebo:{st}:{oc}", f"fake cutoff q={q}", "tau", r["tau"]))
+                rows.append((f"placebo:{st}:{oc}", f"fake cutoff q={q}", "se", r["se"]))
 
 
 def weight_threshold_robustness(rows):
@@ -92,12 +92,11 @@ def main():
     out.to_csv(OUT, index=False)
 
     # console summary of the RDD stability + placebo
-    print("RDD bandwidth stability (tau):")
-    for oc in OUTCOMES:
-        taus = out[(out.analysis == f"rdd:{oc}") &
-                   out.specification.str.startswith("bandwidth") &
-                   (out.statistic == "tau")]["value"]
-        print(f"  {oc:<12} range [{taus.min():+.3g}, {taus.max():+.3g}]")
+    print("RDD bandwidth stability (tau range across the sweep):")
+    rdd = out[out.analysis.str.startswith("rdd:") &
+              out.specification.str.startswith("bandwidth") & (out.statistic == "tau")]
+    for key, g in rdd.groupby("analysis"):
+        print(f"  {key.replace('rdd:',''):<18} [{g.value.min():+.3g}, {g.value.max():+.3g}]")
     pl = out[out.analysis.str.startswith("placebo")].pivot_table(
         index=["analysis", "specification"], columns="statistic", values="value")
     pl["t"] = (pl["tau"] / pl["se"]).abs()

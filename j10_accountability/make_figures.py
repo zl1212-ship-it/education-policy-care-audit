@@ -77,34 +77,58 @@ def _binscatter(ax, df, outcome, h=1.0, nbins=20):
     ax.axvline(0, color="k", ls="--", lw=1)
 
 
+def _h0(df):
+    return round(0.5 * df["running"].std(), 2)
+
+
 def fig_rdd_outcome():
+    # Washington (official-flag design): funding and next-cycle score, elementary/middle
     d = pd.read_csv(PANEL)
-    d = d[d["is_high"] == 0]  # primary stratum: elementary/middle (analyze_rdd.py)
+    d = d[(d["state"] == "WA") & (d["is_high"] == 0)]
+    h = _h0(d)
     fig, axes = plt.subplots(1, 2, figsize=(11, 4))
-    _binscatter(axes[0], d, "got_funds")
+    _binscatter(axes[0], d, "got_funds", h=h)
     axes[0].set_title("Improvement funding")
     axes[0].set_ylabel("received 1003 funds (share)")
-    _binscatter(axes[1], d, "next_score")
+    _binscatter(axes[1], d, "next_score", h=h)
     axes[1].set_title("Next-cycle accountability score")
     axes[1].set_ylabel("next-cycle score")
     for ax in axes:
         ax.set_xlabel("accountability index, centered at the identification cutoff")
-    fig.suptitle("At the margin, crossing the identification line brings no gain in funding "
-                 "or next-cycle scores (left of dashed line = identified)")
+    fig.suptitle("Washington: at the margin, crossing the identification line brings no gain "
+                 "in funding or next-cycle scores (left of dashed = identified)")
     fig.tight_layout()
     save(fig, "fig_rdd_outcome")
 
 
-def fig_rdd_density():
+def fig_rdd_crossstate():
+    # the common causal outcome (next-cycle score) at the cutoff in both states/designs
     d = pd.read_csv(PANEL)
-    d = d[d["is_high"] == 0]  # primary stratum: elementary/middle
-    r = d.loc[d["running"].between(-2, 2), "running"]
+    states = [("WA", "official flag"), ("CT", "reconstructed rule")]
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+    for ax, (st, design) in zip(axes, states):
+        sub = d[(d["state"] == st) & (d["is_high"] == 0)]
+        _binscatter(ax, sub, "next_score", h=_h0(sub))
+        ax.set_title(f"{st} ({design})")
+        ax.set_xlabel("accountability index, centered at the cutoff")
+        ax.set_ylabel("next-cycle score")
+    fig.suptitle("No jump in next-cycle performance at the identification line, in either state")
+    fig.tight_layout()
+    save(fig, "fig_rdd_crossstate")
+
+
+def fig_rdd_density():
+    # Washington running-variable density (no manipulation at the cutoff)
+    d = pd.read_csv(PANEL)
+    d = d[(d["state"] == "WA") & (d["is_high"] == 0)]
+    h = _h0(d) * 2
+    r = d.loc[d["running"].between(-h, h), "running"]
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.hist(r, bins=30, color="#55a868", edgecolor="white")
     ax.axvline(0, color="k", ls="--", lw=1)
     ax.set_xlabel("accountability index, centered at the identification cutoff")
     ax.set_ylabel("schools")
-    ax.set_title("No bunching at the cutoff (running-variable density)")
+    ax.set_title("Washington: no bunching at the cutoff (running-variable density)")
     save(fig, "fig_rdd_density")
 
 
@@ -113,6 +137,7 @@ def main():
     fig_weight_instability()
     fig_poverty_gradient()
     fig_rdd_outcome()
+    fig_rdd_crossstate()
     fig_rdd_density()
 
 

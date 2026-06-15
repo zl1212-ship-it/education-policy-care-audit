@@ -28,12 +28,19 @@ def table_gradient():
 
 
 def table_rdd():
-    # primary specification = elementary/middle stratum at the default bandwidth
+    # primary specification = elementary/middle stratum, per state (each state has its
+    # own running-variable scale and bandwidth).
     r = pd.read_csv(D / "results_rdd.csv")
-    keep = r[r["specification"] == "elem_middle h=1.0"].pivot_table(
-        index="outcome", columns="statistic", values="value")
-    cols = [c for c in ["tau", "se", "t", "n", "n_treated_in_window"] if c in keep.columns]
+    keep = r[r["specification"] == "elem_middle primary"].pivot_table(
+        index=["state", "outcome"], columns="statistic", values="value")
+    cols = [c for c in ["tau", "se", "t", "n", "n_treated_in_window", "bandwidth"]
+            if c in keep.columns]
     keep = keep[cols].dropna(subset=["tau"]).round(4).reset_index()
+    # the first-stage treat jump is meaningful only where treatment is the official flag;
+    # drop it for reconstructed-rule states (sharp by construction).
+    design = pd.read_csv(D / "rdd_panel.csv").drop_duplicates("state").set_index("state")["design"]
+    recon = set(design[design == "reconstructed_rule"].index)
+    keep = keep[~((keep["outcome"] == "treat") & keep["state"].isin(recon))]
     keep.to_csv(D / "table_rdd.csv", index=False)
     return keep
 

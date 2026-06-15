@@ -28,9 +28,13 @@ pipeline assembles a school-level running-variable panel and estimates a
 regression discontinuity at the identification line. The core comparison is
 whether the discontinuity differs for high-poverty versus low-poverty schools. The
 RDD runs only in states that genuinely supply a cutoff; states without a single
-continuous index are not forced into one. A staggered difference-in-differences on
-formula-revision dates is kept as a fallback design where no clean discontinuity
-exists.
+continuous index are not forced into one. Two states are wired: Washington, where
+treatment is the state's official comprehensive-support flag, and Connecticut, where
+no machine-readable flag exists so the cutoff is reconstructed from the state's own
+published lowest-five-percent rule. Each state keeps its own index scale, so the
+bandwidth is set per state (half the running-variable standard deviation), and states
+are never pooled. A staggered difference-in-differences on formula-revision dates is
+kept as a fallback design where no clean discontinuity exists.
 
 ## Pipeline
 
@@ -45,10 +49,10 @@ weight_space.py       # composite + within-state Title I percentile + reconstruc
                       #   -> data/label_instability.csv, data/weight_draws.csv
 analyze_gradient.py   # poverty gradient of the identification label (prevalence by
                       #   poverty decile; logit) -> data/results_gradient.csv
-build_rdd_states.py   # per curated state: continuous index + identification flag +
-                      #   downstream outcome -> data/rdd_panel.csv (state files cached)
-analyze_rdd.py        # RDD at the identification line; poverty heterogeneity;
-                      #   validity battery -> data/results_rdd.csv
+build_rdd_states.py   # per curated state (WA official-flag, CT reconstructed-rule):
+                      #   continuous index + treatment + outcome -> data/rdd_panel.csv
+analyze_rdd.py        # RDD at the identification line, per state (own scale + bandwidth);
+                      #   poverty heterogeneity; validity battery -> data/results_rdd.csv
 robustness.py         # bandwidth/polynomial/donut/placebo-cutoff, leave-one-state-out,
                       #   alternate poverty measure, alternate composite weights
 make_figures.py       # figures -> ../paper/blinded-manuscript/J10/

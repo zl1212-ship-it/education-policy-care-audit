@@ -37,15 +37,32 @@ agency. No login or API key is used anywhere.
 
 ## State layer (RDD)
 
-- **State education agency report cards / accountability files.** For each state in
-  the RDD set, the continuous summative accountability index per school, the official
-  identification flag (Comprehensive Support and Improvement and related categories),
-  and at least one downstream outcome are taken from the state's published
-  accountability data files. The curated per-state file URLs, the index column, the
-  identification column, and the cutoff convention are recorded in `build_rdd_states.py`
-  with the access date. A state enters the RDD only when it publishes a single
-  continuous index with a hard identification cutoff; otherwise it is excluded from the
-  causal layer (it still contributes to the national descriptive layer).
+Each state is a spec in `build_rdd_states.py` (open-data resource ids, column mapping,
+cutoff convention, access via the state Socrata portal). A state enters the RDD only when
+it publishes a continuous accountability index per school with a hard identification
+cutoff and a downstream outcome. Two designs are distinguished by the `design` column:
+`official_flag` (treatment is the state's published identification) and
+`reconstructed_rule` (no machine-readable flag, so the cutoff is reconstructed from the
+state's own published lowest-5%-of-Title-I rule applied to the index).
+
+- **Washington (`official_flag`).** WA School Improvement Framework (WSIF) on
+  `data.wa.gov`: the 2023 Run (`gvbz-svet`) gives the continuous composite `_2023_score`
+  (running variable), the official `_2023_annual_identification` (treatment, comprehensive
+  support), and `_2023_titlei`; the 2024 Annual run (`8v2t-vz3j`) gives the next-cycle
+  `_2024_score`; the Report Card 1003 Funds 2023-24 file (`wyhw-h6xs`) gives the
+  school-improvement funding outcome.
+
+- **Connecticut (`reconstructed_rule`).** Next Generation Accountability System on
+  `data.ct.gov` (`h28j-iix5`): `outcomeratepct` (total points over possible, 0-100) is
+  the continuous accountability index; school-year rows (`category='SchoolTot'`) across
+  years give the next-year index as the outcome. CT does not publish a machine-readable
+  comprehensive-support flag, so the cutoff is the fifth percentile of the index among
+  Title I schools (CT's published rule) and treatment is below that line.
+
+- **NCES crosswalk.** State school codes are matched to NCES `ncessch` through the CCD
+  state school id (`seasch`): the code after the dash equals the WA WSIF `school_code` and
+  (zero-padded to seven digits) the CT NGA `schoolcode`. This carries the poverty measure
+  from `indicators.csv` into the state panel.
 
 ## The identification rule
 
