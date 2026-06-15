@@ -1,0 +1,15 @@
+outcome,statistic,value
+concentration,intercept,1.6823635126991516
+concentration,slope_growth_share,-0.7541975768544704
+concentration,slope_se,0.2692540283221054
+concentration,slope_t,-2.8010632990501922
+concentration,slope_p,0.005093452712766083
+concentration,r2,0.19345344699760358
+concentration,n_states,39.0
+poverty_gradient,intercept,0.404200333889479
+poverty_gradient,slope_growth_share,-0.3977806041995112
+poverty_gradient,slope_se,0.09140659686494494
+poverty_gradient,slope_t,-4.351771292691708
+poverty_gradient,slope_p,1.3504208988912762e-05
+poverty_gradient,r2,0.146546187001526
+poverty_gradient,n_states,39.0

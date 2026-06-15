@@ -117,6 +117,25 @@ def fig_rdd_crossstate():
     save(fig, "fig_rdd_crossstate")
 
 
+def fig_state_dose():
+    # real-state-weights dose-response: growth weight vs poverty concentration of the label
+    d = pd.read_csv(HERE / "data" / "state_dose.csv").dropna(subset=["concentration"])
+    fig, ax = plt.subplots(figsize=(7, 5))
+    ax.scatter(d["growth_share"], d["concentration"], s=28, color="#4c72b0", zorder=3)
+    for _, r in d.iterrows():
+        ax.annotate(r["state"], (r["growth_share"], r["concentration"]),
+                    fontsize=7, xytext=(2, 2), textcoords="offset points", color="#333")
+    b, a = np.polyfit(d["growth_share"], d["concentration"], 1)
+    xs = np.linspace(d["growth_share"].min(), d["growth_share"].max(), 50)
+    ax.plot(xs, a + b * xs, color="#c44e52", lw=2)
+    ax.axhline(1.0, color="gray", ls=":", lw=1)
+    ax.set_xlabel("weight on growth relative to achievement (growth / (achievement + growth))")
+    ax.set_ylabel("poverty concentration of the failing label\n(mean poverty of labelled / mean poverty of all)")
+    ax.set_title("States that weight growth more label fewer high-poverty schools\n"
+                 f"(real ESSA formula weights, {len(d)} states; slope {b:+.2f})")
+    save(fig, "fig_state_dose")
+
+
 def fig_rdd_density():
     # Washington running-variable density (no manipulation at the cutoff)
     d = pd.read_csv(PANEL)
@@ -136,6 +155,7 @@ def main():
     print(f"writing figures -> {OUTDIR}")
     fig_weight_instability()
     fig_poverty_gradient()
+    fig_state_dose()
     fig_rdd_outcome()
     fig_rdd_crossstate()
     fig_rdd_density()

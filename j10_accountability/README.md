@@ -17,9 +17,12 @@ absenteeism). It forms a transparent composite, ranks schools within their own
 state among Title I schools, and reconstructs the ESSA "lowest-performing"
 identification rule (bottom five percent of Title I schools). It then re-computes
 that label under a Monte-Carlo sweep of alternative weight vectors and reads how
-the label redistributes across the school poverty distribution. A school's poverty
-intensity is measured from the economically-disadvantaged share of its tested
-students (the free/reduced-lunch count is unusable under Community Eligibility, so
+the label redistributes across the school poverty distribution. The same exercise is
+repeated with the weights states actually adopted (a dose-response): applying each
+state's published ESSA formula weights to its own schools, states that lean on growth
+rather than achievement levels produce a less poverty-concentrated failing label. A
+school's poverty intensity is measured from the economically-disadvantaged share of its
+tested students (the free/reduced-lunch count is unusable under Community Eligibility, so
 it is carried only as a secondary check where present).
 
 **State layer (causal).** Where a state publishes a continuous accountability
@@ -47,6 +50,9 @@ build_indicators.py   # achievement (math/read % proficient), ACGR graduation,
 weight_space.py       # composite + within-state Title I percentile + reconstructed
                       #   bottom-5% identification flag + Monte-Carlo reweighting
                       #   -> data/label_instability.csv, data/weight_draws.csv
+weight_dose.py        # real-state-weights dose-response: each state's published ESSA
+                      #   weights (NCES Table 1.13) -> poverty concentration of the label
+                      #   -> data/state_dose.csv, data/results_dose.csv
 analyze_gradient.py   # poverty gradient of the identification label (prevalence by
                       #   poverty decile; logit) -> data/results_gradient.csv
 build_rdd_states.py   # per curated state (WA official-flag, CT reconstructed-rule):
@@ -99,6 +105,9 @@ make_tables.py        # tables  -> data/table_*.csv
   poverty composition of the identified set under those weights.
 - `data/results_gradient.csv` - identification prevalence by poverty decile and the
   logit poverty gradient.
+- `data/state_dose.csv` - one row per state: its published ESSA weights (mapped and
+  renormalized), the growth-versus-achievement share, and the poverty concentration of
+  the label those weights produce. `data/results_dose.csv` - the dose-response regression.
 - `data/rdd_panel.csv` - one row per (state, school): centered running variable,
   identification flag, outcome, poverty intensity, predetermined covariates.
 - `data/results_rdd.csv` - RDD point estimates (pooled and by poverty), bandwidths,

@@ -64,6 +64,22 @@ state's own published lowest-5%-of-Title-I rule applied to the index).
   (zero-padded to seven digits) the CT NGA `schoolcode`. This carries the poverty measure
   from `indicators.csv` into the state panel.
 
+## Real state formula weights (the dose-response)
+
+- **NCES Table 1.13, "State-level accountability and reporting on Every Student Succeeds
+  Act (ESSA) plans, by state: 2018"**
+  (https://nces.ed.gov/programs/statereform/tab1_13.asp). The elementary/middle column
+  gives each state's published indicator weights (academic achievement, growth,
+  graduation, school quality/student success, English-language proficiency). These are
+  transcribed verbatim into the `NCES_WEIGHTS` table in `weight_dose.py` (points or
+  percentages as published; Kentucky's ranges entered as midpoints; states with no
+  summative rating, e.g. California and New York, omitted). The dose-response applies each
+  state's own weights to its Title I elementary/middle schools. English-language
+  proficiency and residual "other" weight have no school-level indicator in this pipeline
+  and are dropped before renormalizing, which preserves the achievement-versus-growth
+  balance that drives the redistribution. The transcription is the only hand-entered table
+  in the repo; it is sourced cell-by-cell to the NCES table above.
+
 ## The identification rule
 
 - **ESSA "lowest-performing" / Comprehensive Support and Improvement (CSI).** Federal
