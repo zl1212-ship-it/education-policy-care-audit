@@ -148,7 +148,10 @@ def main():
     sd = pd.DataFrame(rows).sort_values("growth_share")
     sd.to_csv(OUT_STATE, index=False)
 
-    # dose-response: poverty concentration of the labelled set on the growth share
+    # dose-response: poverty concentration of the labelled set on the growth share. This is
+    # a cross-state association (one observation per state, n<=39), not a within-state causal
+    # estimate; a coarse control for the state's own mean school poverty guards against the
+    # association merely reflecting that growth-leaning states are less poor on average.
     d = sd.dropna(subset=["concentration", "growth_share"])
     reg = []
     for yname in ("concentration", "poverty_gradient"):
@@ -159,6 +162,16 @@ def main():
                 (yname, "slope_se", m.bse[1]), (yname, "slope_t", m.tvalues[1]),
                 (yname, "slope_p", m.pvalues[1]), (yname, "r2", m.rsquared),
                 (yname, "n_states", int(m.nobs))]
+    # concentration with the state-mean-poverty control
+    dc = d.dropna(subset=["concentration", "mean_poverty_base"])
+    Xc = sm.add_constant(dc[["growth_share", "mean_poverty_base"]].to_numpy())
+    mc = sm.OLS(dc["concentration"].to_numpy(), Xc).fit(cov_type="HC1")
+    reg += [("concentration_ctrl", "slope_growth_share", mc.params[1]),
+            ("concentration_ctrl", "slope_se", mc.bse[1]),
+            ("concentration_ctrl", "slope_p", mc.pvalues[1]),
+            ("concentration_ctrl", "ctrl_mean_poverty", mc.params[2]),
+            ("concentration_ctrl", "r2", mc.rsquared),
+            ("concentration_ctrl", "n_states", int(mc.nobs))]
     pd.DataFrame(reg, columns=["outcome", "statistic", "value"]).to_csv(OUT_REG, index=False)
 
     corr = d["growth_share"].corr(d["concentration"])

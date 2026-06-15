@@ -1,0 +1,6 @@
+state,statistic,value
+WA,n_schools,1095.0
+WA,pearson_r,0.3128219735183949
+WA,pearson_p,2.7637166192952954e-26
+WA,spearman_rho,0.3134054903723782
+WA,spearman_p,2.2107692975252294e-26

@@ -52,7 +52,10 @@ weight_space.py       # composite + within-state Title I percentile + reconstruc
                       #   -> data/label_instability.csv, data/weight_draws.csv
 weight_dose.py        # real-state-weights dose-response: each state's published ESSA
                       #   weights (NCES Table 1.13) -> poverty concentration of the label
-                      #   -> data/state_dose.csv, data/results_dose.csv
+                      #   -> data/state_dose.csv, data/results_dose.csv (with a state-mean-
+                      #   poverty control on the slope)
+validate_growth.py    # benchmark the growth proxy against WA's official median SGP
+                      #   -> data/results_growth_validation.csv
 analyze_gradient.py   # poverty gradient of the identification label (prevalence by
                       #   poverty decile; logit) -> data/results_gradient.csv
 build_rdd_states.py   # per curated state (WA official-flag, CT reconstructed-rule):
@@ -84,9 +87,10 @@ make_tables.py        # tables  -> data/table_*.csv
   as a separate stratum; a pooled covariate-adjusted specification is also reported.
   Stratifying restores covariate balance at the cutoff (the pooled sample shows a
   school-level imbalance that the stratum removes).
-- Poverty heterogeneity is pre-registered as the primary moderator: the estimand is
-  whether the RDD effect, and the density of schools at the margin, differ across
-  the poverty distribution.
+- Poverty and the margin: the schools within the estimation window are almost all
+  high-poverty (about 89% in WA; only 3 low-poverty WA schools and 0 in CT fall in the
+  window), so a high- versus low-poverty contrast of the RDD effect is not estimable. The
+  poverty composition of the margin is reported as the finding, not as a tested contrast.
 - Outcomes: the **next-cycle accountability score** is the cleanly-timed causal outcome.
   Improvement funding (1003) is reported with a timing caveat, since these are multi-year
   grants whose receipt in a given year can reflect a prior identification cycle.

@@ -13,3 +13,9 @@ poverty_gradient,slope_t,-4.351771292691708
 poverty_gradient,slope_p,1.3504208988912762e-05
 poverty_gradient,r2,0.146546187001526
 poverty_gradient,n_states,39.0
+concentration_ctrl,slope_growth_share,-0.671508442943672
+concentration_ctrl,slope_se,0.2376745348338612
+concentration_ctrl,slope_p,0.004723228534245409
+concentration_ctrl,ctrl_mean_poverty,-0.7657316984529694
+concentration_ctrl,r2,0.38128316662482176
+concentration_ctrl,n_states,39.0
