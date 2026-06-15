@@ -111,8 +111,8 @@ def fig_rdd_crossstate():
         _binscatter(ax, sub, "next_score", h=_h0(sub))
         ax.set_title(f"{st} ({design})")
         ax.set_xlabel("accountability index, centered at the cutoff")
-        ax.set_ylabel("next-cycle score")
-    fig.suptitle("No jump in next-cycle performance at the identification line, in either state")
+        ax.set_ylabel("next cycle score")
+    fig.suptitle("No jump in next cycle performance at the identification line, in either state")
     fig.tight_layout()
     save(fig, "fig_rdd_crossstate")
 
@@ -131,8 +131,8 @@ def fig_state_dose():
     ax.axhline(1.0, color="gray", ls=":", lw=1)
     ax.set_xlabel("weight on growth relative to achievement (growth / (achievement + growth))")
     ax.set_ylabel("poverty concentration of the failing label\n(mean poverty of labelled / mean poverty of all)")
-    ax.set_title("States that weight growth more label fewer high-poverty schools\n"
-                 f"(real ESSA formula weights, {len(d)} states; slope {b:+.2f})")
+    ax.set_title("States that weight growth more label fewer high poverty schools\n"
+                 f"(real ESSA formula weights, {len(d)} states, slope {b:+.2f})")
     save(fig, "fig_state_dose")
 
 
