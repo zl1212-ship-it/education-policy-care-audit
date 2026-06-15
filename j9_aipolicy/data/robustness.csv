@@ -1,11 +1,11 @@
 check,param,outcome,value,extra
-window_sensitivity,window=200,net_restrictiveness,0.1515,n=33
-window_sensitivity,window=200,ai_governance_intensity,0.8788,n=33
-window_sensitivity,window=400,net_restrictiveness,0.0606,n=33
-window_sensitivity,window=400,ai_governance_intensity,0.9697,n=33
-window_sensitivity,window=800,net_restrictiveness,0.0909,n=33
-window_sensitivity,window=800,ai_governance_intensity,1.0,n=33
-leave_one_out,min/full/max,ai_governance_intensity,-0.1806,min=-0.2524 max=-0.1086 full_p=0.176
-leave_one_out,min/full/max,net_restrictiveness,-0.0638,min=-0.0773 max=-0.0317 full_p=0.116
-binary_exposure_hi_vs_lo,high_exp:post,ai_governance_intensity,-0.4568,p=0.155 n_inst=18
-binary_exposure_hi_vs_lo,high_exp:post,net_restrictiveness,-0.1852,p=0.091 n_inst=18
+window_sensitivity,window=200,net_restrictiveness,0.0147,n=68
+window_sensitivity,window=200,ai_governance_intensity,0.6912,n=68
+window_sensitivity,window=400,net_restrictiveness,-0.0294,n=68
+window_sensitivity,window=400,ai_governance_intensity,0.7647,n=68
+window_sensitivity,window=800,net_restrictiveness,-0.0294,n=68
+window_sensitivity,window=800,ai_governance_intensity,0.8235,n=68
+leave_one_out,min/full/max,ai_governance_intensity,0.2068,min=0.1377 max=0.3208 full_p=0.277
+leave_one_out,min/full/max,net_restrictiveness,-0.0328,min=-0.0502 max=0.0001 full_p=0.547
+binary_exposure_hi_vs_lo,high_exp:post,ai_governance_intensity,0.6389,p=0.193 n_inst=32
+binary_exposure_hi_vs_lo,high_exp:post,net_restrictiveness,-0.0456,p=0.778 n_inst=32

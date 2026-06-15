@@ -48,9 +48,30 @@ ASSET = re.compile(r"\.(png|jpe?g|css|js|pdf|gif|svg|ico|woff2?|axd|xml|json|mp4
 AI_TOKENS = re.compile(r"(generative.?ai|chat.?gpt|artificial.?intelligence|gen.?ai|/ai/|ai-|-ai\b|\bai\b|gpt)", re.I)
 INTEG_TOKENS = re.compile(r"(integrity|honor|conduct|misconduct|plagiar|academic-honest|honesty|honor-code)", re.I)
 MAX_AI_PAGES, MAX_INTEG_PAGES = 3, 3
+MAX_PAGES_PER_INST = 6
+
+# Host stems probed under each institution's base domain so the integrity and AI
+# pages can be discovered without guessing an exact URL (a curated seed URL only
+# has to get the host right; a wrong path is recovered by prefix discovery).
+INTEG_STEMS = ["studentconduct", "integrity", "academicintegrity", "deanofstudents",
+               "catalog", "honor"]
+AI_STEMS = ["teaching", "provost", "ctl"]
 
 
-def _get(url, timeout=60, retries=3, backoff=3):
+def candidate_prefixes(domain, integrity_url, guidance_url):
+    cands = [u for u in (integrity_url, guidance_url) if u]
+    if domain:
+        cands += [f"https://{h}.{domain}/" for h in INTEG_STEMS + AI_STEMS]
+        cands.append(f"https://www.{domain}/academic-integrity")
+    seen, out = set(), []
+    for c in cands:
+        if c not in seen:
+            seen.add(c)
+            out.append(c)
+    return out
+
+
+def _get(url, timeout=45, retries=2, backoff=2):
     last = None
     for i in range(retries):
         try:
@@ -120,6 +141,33 @@ def slug(url):
     return re.sub(r"[^A-Za-z0-9]+", "_", s).strip("_")[:80]
 
 
+def reindex_from_disk(frame_by_uid):
+    """Rebuild the capture index by scanning every downloaded file, so partial or
+    incremental (--only-missing) runs still yield a complete index of all data on
+    disk. File path is snapshots_raw/<unitid>/<page_type>/<slug>__<ts>.html."""
+    rows = []
+    for f in sorted(RAW.rglob("*.html")):
+        if f.stat().st_size == 0:
+            continue
+        uid = f.parent.parent.name
+        page_type = f.parent.name
+        name = f.stem  # <slug>__<ts>
+        ts = name.rsplit("__", 1)[-1]
+        if not (len(ts) == 14 and ts.isdigit()):
+            continue
+        meta = frame_by_uid.get(uid, {})
+        rows.append({
+            "institution": meta.get("institution", ""), "unitid": uid,
+            "state": meta.get("state", ""), "control": meta.get("control", ""),
+            "carnegie": meta.get("carnegie", ""), "page_type": page_type,
+            "timestamp": ts, "statuscode": "200", "digest": "",
+            "original_url": name.rsplit("__", 1)[0],
+            "archived_url": "", "local_path": str(f.relative_to(HERE)),
+            "bytes": f.stat().st_size,
+        })
+    return rows
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--pilot", action="store_true")
@@ -127,32 +175,43 @@ def main():
     ap.add_argument("--sleep", type=float, default=0.3, help="seconds between downloads")
     ap.add_argument("--cdx-sleep", type=float, default=1.2, help="seconds between CDX calls")
     ap.add_argument("--probe", action="store_true", help="discovery + coverage only")
+    ap.add_argument("--only-missing", action="store_true",
+                    help="skip institutions whose snapshots are already downloaded")
     args = ap.parse_args()
 
     with open(FRAME, newline="", encoding="utf-8") as f:
         frame = [r for r in csv.DictReader(f)]
     if args.pilot:
         frame = [r for r in frame if r["pilot"] == "1"]
+    frame_by_uid = {str(r["unitid"]): r for r in frame}
+
+    def already_done(uid):
+        d = RAW / str(uid)
+        return d.is_dir() and any(p.stat().st_size > 0 for p in d.rglob("*.html"))
 
     RAW.mkdir(parents=True, exist_ok=True)
-    index_rows, coverage_rows = [], []
+    coverage_rows, processed_uids = [], set()
     for r in frame:
         inst, uid = r["institution"], r["unitid"]
+        if args.only_missing and already_done(uid):
+            continue
+        processed_uids.add(str(uid))
         pages = []  # (page_type, url)
-        for base in (r["integrity_url"], r.get("guidance_url", "")):
-            if not base:
-                continue
+        for base in candidate_prefixes(r.get("domain", ""), r["integrity_url"],
+                                       r.get("guidance_url", "")):
             try:
                 pages += discover_pages(base)
             except Exception as e:
                 print(f"  ! discover failed {inst} <{base}>: {type(e).__name__}")
             time.sleep(args.cdx_sleep)
-        # dedup pages by url, keep first label
-        seen, uniq = set(), []
+        # dedup by url (keep first label), cap per institution (AI pages first)
+        seen, ai_pages, integ_pages = set(), [], []
         for ptype, url in pages:
-            if url not in seen:
-                seen.add(url)
-                uniq.append((ptype, url))
+            if url in seen:
+                continue
+            seen.add(url)
+            (ai_pages if ptype == "ai" else integ_pages).append((ptype, url))
+        uniq = (ai_pages[:MAX_AI_PAGES] + integ_pages[:MAX_INTEG_PAGES])[:MAX_PAGES_PER_INST]
         print(f"  {inst:<44} pages={len(uniq)}")
         for ptype, url in uniq:
             try:
@@ -171,39 +230,36 @@ def main():
             outdir.mkdir(parents=True, exist_ok=True)
             for ts, sc, digest, original in versions:
                 dest = outdir / f"{slug(url)}__{ts}.html"
-                nbytes = None
                 if dest.exists() and dest.stat().st_size > 0:
-                    nbytes = dest.stat().st_size
-                else:
-                    try:
-                        html = _get(WB.format(ts=ts, url=original))
-                        dest.write_bytes(html)
-                        nbytes = len(html)
-                        time.sleep(args.sleep)
-                    except Exception as e:
-                        print(f"        ! snapshot {ts} failed: {type(e).__name__}")
-                index_rows.append({
-                    "institution": inst, "unitid": uid, "state": r["state"],
-                    "control": r["control"], "carnegie": r["carnegie"],
-                    "page_type": ptype, "timestamp": ts, "statuscode": sc,
-                    "digest": digest, "original_url": original,
-                    "archived_url": WB.format(ts=ts, url=original),
-                    "local_path": str(dest.relative_to(HERE)), "bytes": nbytes,
-                })
+                    continue
+                try:
+                    html = _get(WB.format(ts=ts, url=original))
+                    dest.write_bytes(html)
+                    time.sleep(args.sleep)
+                except Exception as e:
+                    print(f"        ! snapshot {ts} failed: {type(e).__name__}")
 
     cov_cols = ["institution", "unitid", "page_type", "url", "n_captures",
                 "n_post_captures", "first_capture", "last_capture", "has_post", "n_versions"]
+    # merge: keep prior coverage for institutions not processed this run
+    prior = []
+    if COVERAGE.exists():
+        with open(COVERAGE, newline="", encoding="utf-8") as f:
+            prior = [row for row in csv.DictReader(f)
+                     if str(row.get("unitid")) not in processed_uids]
     with open(COVERAGE, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cov_cols)
         w.writeheader()
-        w.writerows(coverage_rows)
-    print(f"\nWrote {COVERAGE} ({len(coverage_rows)} page rows)")
+        w.writerows(prior + coverage_rows)
+    print(f"\nWrote {COVERAGE} ({len(prior) + len(coverage_rows)} page rows; "
+          f"{len(processed_uids)} institutions processed this run)")
     if args.probe:
         return 0
 
     cols = ["institution", "unitid", "state", "control", "carnegie", "page_type",
             "timestamp", "statuscode", "digest", "original_url", "archived_url",
             "local_path", "bytes"]
+    index_rows = reindex_from_disk(frame_by_uid)
     with open(INDEX, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()

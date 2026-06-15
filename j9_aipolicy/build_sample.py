@@ -120,6 +120,53 @@ INSTITUTIONS = [
     ("Houston Community College", "TX", "Public", "AC", "https://www.hccs.edu/about-hcc/policies/", "https://www.hccs.edu/resources-for/faculty-and-staff/generative-ai/", False),
 ]
 
+# Expansion batch (round A). These carry only a base DOMAIN; fetch_snapshots.py
+# discovers the integrity and AI-guidance pages by prefix-probing a template of
+# common host stems under the domain, so no exact URL needs to be guessed. Tuple:
+# (institution, state, control, carnegie, domain)
+NEW_INSTITUTIONS = [
+    # --- more Private R1 ---
+    ("University of Rochester", "NY", "Private", "R1", "rochester.edu"),
+    ("Case Western Reserve University", "OH", "Private", "R1", "case.edu"),
+    ("Tulane University of Louisiana", "LA", "Private", "R1", "tulane.edu"),
+    ("Lehigh University", "PA", "Private", "R1", "lehigh.edu"),
+    ("Brandeis University", "MA", "Private", "R1", "brandeis.edu"),
+    ("Syracuse University", "NY", "Private", "R1", "syracuse.edu"),
+    ("Boston College", "MA", "Private", "R1", "bc.edu"),
+    ("George Washington University", "DC", "Private", "R1", "gwu.edu"),
+    ("Drexel University", "PA", "Private", "R1", "drexel.edu"),
+    ("University of Miami", "FL", "Private", "R1", "miami.edu"),
+    ("Yeshiva University", "NY", "Private", "R2", "yu.edu"),
+    # --- more Public R1/R2 (non-flagship) ---
+    ("University at Albany", "NY", "Public", "R1", "albany.edu"),
+    ("Binghamton University", "NY", "Public", "R1", "binghamton.edu"),
+    ("Wayne State University", "MI", "Public", "R1", "wayne.edu"),
+    ("University of Illinois Chicago", "IL", "Public", "R1", "uic.edu"),
+    ("George Mason University", "VA", "Public", "R1", "gmu.edu"),
+    ("Kent State University", "OH", "Public", "R1", "kent.edu"),
+    ("University of Texas at Dallas", "TX", "Public", "R1", "utdallas.edu"),
+    ("University of Texas at Arlington", "TX", "Public", "R1", "uta.edu"),
+    ("University of Central Florida", "FL", "Public", "R1", "ucf.edu"),
+    ("University of South Florida", "FL", "Public", "R1", "usf.edu"),
+    ("Portland State University", "OR", "Public", "R2", "pdx.edu"),
+    ("Georgia State University", "GA", "Public", "R1", "gsu.edu"),
+    ("Virginia Commonwealth University", "VA", "Public", "R1", "vcu.edu"),
+    # --- more Private baccalaureate / liberal arts ---
+    ("Pomona College", "CA", "Private", "BAC", "pomona.edu"),
+    ("Vassar College", "NY", "Private", "BAC", "vassar.edu"),
+    ("Colby College", "ME", "Private", "BAC", "colby.edu"),
+    ("Bates College", "ME", "Private", "BAC", "bates.edu"),
+    ("Colgate University", "NY", "Private", "BAC", "colgate.edu"),
+    ("Hamilton College", "NY", "Private", "BAC", "hamilton.edu"),
+    ("Wesleyan University", "CT", "Private", "BAC", "wesleyan.edu"),
+    ("Bucknell University", "PA", "Private", "BAC", "bucknell.edu"),
+    # --- more Private Master's / regional ---
+    ("Villanova University", "PA", "Private", "M", "villanova.edu"),
+    ("Santa Clara University", "CA", "Private", "M", "scu.edu"),
+    ("Ithaca College", "NY", "Private", "M", "ithaca.edu"),
+    ("American University", "DC", "Private", "R2", "american.edu"),
+]
+
 STATE_FIPS = {
     "AL": 1, "AK": 2, "AZ": 4, "AR": 5, "CA": 6, "CO": 8, "CT": 9, "DE": 10,
     "FL": 12, "GA": 13, "HI": 15, "ID": 16, "IL": 17, "IN": 18, "IA": 19,
@@ -143,6 +190,14 @@ def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=90) as r:
         return json.loads(r.read())
+
+
+def domain_of(url):
+    if not url:
+        return ""
+    host = re.sub(r"^https?://", "", url).split("/")[0]
+    labels = host.split(".")
+    return ".".join(labels[-2:]) if len(labels) >= 2 else host
 
 
 def norm(s):
@@ -185,8 +240,14 @@ def intl_share(unitid):
 
 
 def main():
+    # unify the curated rows (with seed URLs) and the expansion rows (domain only)
+    records = [(inst, st, control, carn, integ, guid, int(pilot), domain_of(integ))
+               for inst, st, control, carn, integ, guid, pilot in INSTITUTIONS]
+    records += [(inst, st, control, carn, "", "", 0, domain)
+                for inst, st, control, carn, domain in NEW_INSTITUTIONS]
+
     cache, rows, missing = {}, [], []
-    for inst, st, control, carnegie, url, guidance_url, pilot in INSTITUTIONS:
+    for inst, st, control, carnegie, url, guidance_url, pilot, domain in records:
         fips = STATE_FIPS.get(st)
         ctrl_code = CONTROL_CODE[control]
         uid, total, nra, share = None, None, None, None
@@ -200,15 +261,16 @@ def main():
             missing.append(inst)
         rows.append({
             "institution": inst, "state": st, "control": control,
-            "carnegie": carnegie, "integrity_url": url, "guidance_url": guidance_url,
-            "pilot": int(pilot), "unitid": uid, "exposure_year": EXPOSURE_YEAR,
-            "total_enroll": total, "nonresident_alien": nra, "intl_share": share,
+            "carnegie": carnegie, "domain": domain, "integrity_url": url,
+            "guidance_url": guidance_url, "pilot": int(pilot), "unitid": uid,
+            "exposure_year": EXPOSURE_YEAR, "total_enroll": total,
+            "nonresident_alien": nra, "intl_share": share,
         })
         tag = f"intl={share:.1%}" if share is not None else "(intl n/a)"
         print(f"  {inst:<46} {control:<7} {carnegie:<3} uid={str(uid):<7} {tag}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    cols = ["institution", "state", "control", "carnegie", "integrity_url",
+    cols = ["institution", "state", "control", "carnegie", "domain", "integrity_url",
             "guidance_url", "pilot", "unitid", "exposure_year", "total_enroll",
             "nonresident_alien", "intl_share"]
     with open(OUT, "w", newline="", encoding="utf-8") as f:
