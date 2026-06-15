@@ -74,25 +74,49 @@ def main():
     X = vec.fit_transform(docs["doc"])
     docs = docs.reset_index(drop=True)
 
-    conv = []
-    for q, sub in docs.groupby("event_q"):
-        if len(sub) < 3:
-            conv.append({"event_q": q, "n_addressing": len(sub), "mean_cosine": np.nan})
-            continue
-        M = X[sub.index.to_numpy()]
-        S = cosine_similarity(M)
-        iu = np.triu_indices_from(S, k=1)
-        conv.append({"event_q": q, "n_addressing": len(sub),
-                     "mean_cosine": round(float(S[iu].mean()), 4)})
-    conv = pd.DataFrame(conv).sort_values("event_q")
+    def quarter_cos(frame):
+        """mean pairwise cosine per event quarter for the given institution-quarter rows."""
+        out = {}
+        for q, sub in frame.groupby("event_q"):
+            if sub["unitid"].nunique() >= 3:
+                S = cosine_similarity(X[sub.index.to_numpy()])
+                out[q] = float(S[np.triu_indices_from(S, k=1)].mean())
+        return out
+
+    def post_slope(frame):
+        c = quarter_cos(frame)
+        pts = pd.DataFrame([(q, v) for q, v in c.items() if q >= 0], columns=["q", "c"])
+        return smf.ols("c ~ q", pts).fit().params["q"] if len(pts) >= 4 else np.nan
+
+    # full-sample similarity by quarter
+    allcos = quarter_cos(docs)
+    nby = docs.groupby("event_q")["unitid"].nunique().to_dict()
+    # incumbent cohort: institutions already addressing AI in the first 3 post quarters,
+    # so a rising similarity among THEM cannot be a composition (new-entrant) artifact
+    incumbents = set(docs[(docs["event_q"].between(0, 2))]["unitid"].unique())
+    inccos = quarter_cos(docs[docs["unitid"].isin(incumbents)])
+    conv = pd.DataFrame({"event_q": sorted(set(allcos) | set(inccos))})
+    conv["n_addressing"] = conv["event_q"].map(nby)
+    conv["mean_cosine"] = conv["event_q"].map(lambda q: round(allcos.get(q, np.nan), 4))
+    conv["incumbent_cosine"] = conv["event_q"].map(
+        lambda q: round(inccos[q], 4) if q in inccos else np.nan)
     conv.to_csv(DATA / "results_convergence.csv", index=False)
 
-    # convergence trend across post-shock quarters with enough institutions
-    post = conv[(conv["event_q"] >= 0) & conv["mean_cosine"].notna()]
-    slope = pval = np.nan
-    if len(post) >= 4:
-        r = smf.ols("mean_cosine ~ event_q", data=post).fit()
-        slope, pval = r.params["event_q"], r.pvalues["event_q"]
+    # honest inference: cluster bootstrap over institutions (resample the institution
+    # set, so pairwise non-independence is respected; no self-pairs), full and incumbent
+    slope = post_slope(docs)
+    inc_slope = post_slope(docs[docs["unitid"].isin(incumbents)])
+    rng = np.random.default_rng(7)
+    uids = docs["unitid"].unique()
+    bs = []
+    for _ in range(800):
+        keepset = set(rng.choice(uids, len(uids), replace=True))
+        s = post_slope(docs[docs["unitid"].isin(keepset)])
+        if not np.isnan(s):
+            bs.append(s)
+    bs = np.array(bs)
+    ci_lo, ci_hi, share_pos = (np.percentile(bs, 2.5), np.percentile(bs, 97.5),
+                               float(np.mean(bs > 0)))
 
     # most widely shared phrases across endpoint (last observed) AI docs
     endpoint = docs.sort_values("event_q").groupby("unitid").tail(1)
@@ -107,10 +131,11 @@ def main():
     shared.to_csv(DATA / "shared_phrases.csv", index=False)
 
     print(f"Institution-quarter AI documents: {len(docs)} across {docs['unitid'].nunique()} institutions")
-    print("\nmean pairwise cosine similarity among AI-addressing institutions, by event quarter:")
+    print("\nmean pairwise cosine by event quarter (full sample / incumbent cohort):")
     print(conv.to_string(index=False))
-    print(f"\npost-shock convergence trend: slope={slope:+.4f} per quarter (p={pval:.3f})"
-          if not np.isnan(slope) else "\n(insufficient post-shock quarters for a trend)")
+    print(f"\npost-shock slope: full={slope:+.4f}/qtr, incumbent cohort (n={len(incumbents)})={inc_slope:+.4f}/qtr")
+    print(f"institution cluster-bootstrap 95% CI for full slope: [{ci_lo:+.4f}, {ci_hi:+.4f}]; "
+          f"share of resamples > 0: {share_pos:.2f}")
     print(f"\nmost widely shared endpoint phrases (>= 3 institutions):")
     print(shared.head(12).to_string(index=False))
     return 0
