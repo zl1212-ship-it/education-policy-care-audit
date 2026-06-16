@@ -1,17 +1,19 @@
 """
 Uncertainty for the detector-layer headline (J6).
 
-Estimands, at decision threshold 0.50 over the seven released detector scores:
-the pooled false-accusation rate per group (mean of the seven per-detector rates),
-the non-native/native ratio of pooled rates (the fold gap), and the share of essays
-flagged by all seven detectors at once.
+Estimands, at each decision threshold (0.25 permissive and 0.50 strict) over the
+seven released detector scores: the pooled false-accusation rate per group (mean of
+the seven per-detector rates), the non-native/native ratio of pooled rates (the fold
+gap), and the share of essays flagged by all seven detectors at once. The 0.25
+operating point is the permissive headline; the 0.50 point is the strict-threshold
+sensitivity check. Both thresholds carry full bootstrap intervals.
 
 Inference: the same essay is scored by all seven detectors, so scores are dependent
 within essay. I therefore bootstrap over essays (10,000 resamples within each group,
 percentile 95% intervals) for the pooled rates and their ratio, and report Wilson
 95% intervals for the unanimous-flag shares (for the native group, where the count
 is zero, the one-sided Clopper-Pearson upper bound). Results are written to
-data/inference_results.csv.
+data/inference_results.csv, tagged by threshold.
 """
 import numpy as np
 import pandas as pd
@@ -19,20 +21,18 @@ import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DETECTORS = ["HFOpenAI", "GPTZero", "Crossplag", "ZeroGPT", "OriginalityAI", "Quil", "Sapling"]
-TAU = 0.50
+THRESHOLDS = [0.25, 0.50]  # 0.25 permissive headline; 0.50 strict-threshold sensitivity check
 B = 10_000
-rng = np.random.default_rng(20260610)
 
 df = pd.read_csv(os.path.join(HERE, "data", "essays_panel.csv"))
 df = df[df.l1_status.isin(["non-native", "native"])]
-flags = {g: (df[df.l1_status == g][DETECTORS].to_numpy() > TAU) for g in ["non-native", "native"]}
 
 
 def pooled(mat):
     return mat.mean(axis=0).mean()
 
 
-def boot(mat):
+def boot(mat, rng):
     n = mat.shape[0]
     idx = rng.integers(0, n, size=(B, n))
     return mat[idx].mean(axis=1).mean(axis=1)
@@ -45,40 +45,47 @@ def wilson(k, n, z=1.96):
     return f, c
 
 
-nn, na = flags["non-native"], flags["native"]
-bnn, bna = boot(nn), boot(na)
-ratio = bnn / np.where(bna == 0, np.nan, bna)
+def headline_rows(tau):
+    rng = np.random.default_rng(20260610)  # fixed seed per threshold for reproducibility
+    flags = {g: (df[df.l1_status == g][DETECTORS].to_numpy() > tau) for g in ["non-native", "native"]}
+    nn, na = flags["non-native"], flags["native"]
+    bnn, bna = boot(nn, rng), boot(na, rng)
+    ratio = bnn / np.where(bna == 0, np.nan, bna)
 
-rows = []
-for name, mat, bs in [("pooled_rate_nonnative", nn, bnn), ("pooled_rate_native", na, bna)]:
-    lo, hi = np.percentile(bs, [2.5, 97.5])
-    rows.append([name, pooled(mat), lo, hi, mat.shape[0]])
-lo, hi = np.nanpercentile(ratio, [2.5, 97.5])
-rows.append(["fold_gap", pooled(nn) / pooled(na), lo, hi, len(df)])
+    rows = []
+    for name, mat, bs in [("pooled_rate_nonnative", nn, bnn), ("pooled_rate_native", na, bna)]:
+        lo, hi = np.percentile(bs, [2.5, 97.5])
+        rows.append([tau, name, pooled(mat), lo, hi, mat.shape[0]])
+    lo, hi = np.nanpercentile(ratio, [2.5, 97.5])
+    rows.append([tau, "fold_gap", pooled(nn) / pooled(na), lo, hi, len(df)])
 
-for name, mat in [("unanimous_share_nonnative", nn), ("unanimous_share_native", na)]:
-    k, n = int(mat.all(axis=1).sum()), mat.shape[0]
-    if k == 0:
-        rows.append([name, 0.0, 0.0, 1 - 0.025 ** (1 / n), n])  # Clopper-Pearson upper
-    else:
-        f, c = wilson(k, n)
-        rows.append([name, k / n, f, c, n])
+    for name, mat in [("unanimous_share_nonnative", nn), ("unanimous_share_native", na)]:
+        k, n = int(mat.all(axis=1).sum()), mat.shape[0]
+        if k == 0:
+            rows.append([tau, name, 0.0, 0.0, 1 - 0.025 ** (1 / n), n])  # Clopper-Pearson upper
+        else:
+            f, c = wilson(k, n)
+            rows.append([tau, name, k / n, f, c, n])
+    return rows
 
-out = pd.DataFrame(rows, columns=["quantity", "estimate", "ci_lo", "ci_hi", "n"])
+
+rows = [r for tau in THRESHOLDS for r in headline_rows(tau)]
+out = pd.DataFrame(rows, columns=["threshold", "quantity", "estimate", "ci_lo", "ci_hi", "n"])
 out.to_csv(os.path.join(HERE, "data", "inference_results.csv"), index=False)
 print(out.to_string(index=False))
 
 
 # ---- current-classifier extension: consistency check + independent-pair pooled rates ----
+TAU_EXT = 0.50  # the 2026 re-score extension is reported at the strict threshold
 cur = pd.read_csv(os.path.join(HERE, "data", "detector_scores_current.csv"))
 m = df.merge(cur.drop(columns=["l1_status"]), on="essay_id")
 r = m["HFOpenAI"].corr(m["roberta-base-openai-detector"])
 ind = ["roberta-base-ai-text-detection-v1", "chatgpt-detector-roberta"]
-ext = [["consistency_r_HFOpenAI_vs_local_rerun", r, "", "", len(m)]]
+ext = [[TAU_EXT, "consistency_r_HFOpenAI_vs_local_rerun", r, "", "", len(m)]]
 for g in ["non-native", "native"]:
     sub = m[m.l1_status == g]
-    ext.append([f"independent2_pooled_rate_{g.replace('-','')}",
-                sum((sub[c] > TAU).mean() for c in ind) / 2, "", "", len(sub)])
+    ext.append([TAU_EXT, f"independent2_pooled_rate_{g.replace('-','')}",
+                sum((sub[c] > TAU_EXT).mean() for c in ind) / 2, "", "", len(sub)])
 ext = pd.DataFrame(ext, columns=out.columns)
 pd.concat([out, ext]).to_csv(os.path.join(HERE, "data", "inference_results.csv"), index=False)
 print(ext.to_string(index=False))
