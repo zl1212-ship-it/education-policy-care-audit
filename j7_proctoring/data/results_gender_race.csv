@@ -1,0 +1,289 @@
+kind,sample,detector,exposure,race,gender,n,misses,miss_rate,wilson_lo,wilson_hi,a,b,rate_a,rate_b,risk_diff,ratio,p_fisher
+cell,adult,haar,1.0,White,Female,756,159.0,0.2103,0.1828,0.2408,,,,,,,
+cell,adult,haar,1.0,White,Male,922,222.0,0.2408,0.2143,0.2694,,,,,,,
+cell,adult,haar,1.0,East Asian,Female,592,109.0,0.1841,0.155,0.2173,,,,,,,
+cell,adult,haar,1.0,East Asian,Male,544,154.0,0.2831,0.2469,0.3224,,,,,,,
+cell,adult,haar,1.0,Latino_Hispanic,Female,605,93.0,0.1537,0.1272,0.1846,,,,,,,
+cell,adult,haar,1.0,Latino_Hispanic,Male,606,122.0,0.2013,0.1713,0.2351,,,,,,,
+cell,adult,haar,1.0,Middle Eastern,Female,306,57.0,0.1863,0.1466,0.2337,,,,,,,
+cell,adult,haar,1.0,Middle Eastern,Male,692,144.0,0.2081,0.1795,0.2399,,,,,,,
+cell,adult,haar,1.0,Southeast Asian,Female,486,93.0,0.1914,0.1589,0.2287,,,,,,,
+cell,adult,haar,1.0,Southeast Asian,Male,508,116.0,0.2283,0.194,0.2668,,,,,,,
+cell,adult,haar,1.0,Indian,Female,557,99.0,0.1777,0.1482,0.2117,,,,,,,
+cell,adult,haar,1.0,Indian,Male,572,128.0,0.2238,0.1915,0.2597,,,,,,,
+cell,adult,haar,1.0,Black,Female,537,178.0,0.3315,0.293,0.3724,,,,,,,
+cell,adult,haar,1.0,Black,Male,535,213.0,0.3981,0.3575,0.4402,,,,,,,
+contrast,adult,haar,1.0,,,1459,,,,,Black Female,White Male,0.3315,0.2408,0.0907,1.38,0.00020501731694506486
+contrast,adult,haar,1.0,,,1072,,,,,Black Female,Black Male,0.3315,0.3981,-0.0667,0.83,0.026328021086307624
+contrast,adult,haar,1.0,,,1678,,,,,White Female,White Male,0.2103,0.2408,-0.0305,0.87,0.14347473581973838
+contrast,adult,haar,1.0,,,1293,,,,,Black Female,White Female,0.3315,0.2103,0.1212,1.58,1.3305055883697508e-06
+cell,adult,haar,0.15,White,Female,756,182.0,0.2407,0.2116,0.2725,,,,,,,
+cell,adult,haar,0.15,White,Male,922,255.0,0.2766,0.2487,0.3063,,,,,,,
+cell,adult,haar,0.15,East Asian,Female,592,115.0,0.1943,0.1644,0.2281,,,,,,,
+cell,adult,haar,0.15,East Asian,Male,544,179.0,0.329,0.2909,0.3696,,,,,,,
+cell,adult,haar,0.15,Latino_Hispanic,Female,605,117.0,0.1934,0.1639,0.2268,,,,,,,
+cell,adult,haar,0.15,Latino_Hispanic,Male,606,144.0,0.2376,0.2055,0.2731,,,,,,,
+cell,adult,haar,0.15,Middle Eastern,Female,306,73.0,0.2386,0.1942,0.2894,,,,,,,
+cell,adult,haar,0.15,Middle Eastern,Male,692,180.0,0.2601,0.2288,0.2941,,,,,,,
+cell,adult,haar,0.15,Southeast Asian,Female,486,105.0,0.216,0.1818,0.2548,,,,,,,
+cell,adult,haar,0.15,Southeast Asian,Male,508,135.0,0.2657,0.2292,0.3058,,,,,,,
+cell,adult,haar,0.15,Indian,Female,557,116.0,0.2083,0.1766,0.2439,,,,,,,
+cell,adult,haar,0.15,Indian,Male,572,161.0,0.2815,0.2462,0.3197,,,,,,,
+cell,adult,haar,0.15,Black,Female,537,215.0,0.4004,0.3598,0.4424,,,,,,,
+cell,adult,haar,0.15,Black,Male,535,251.0,0.4692,0.4272,0.5115,,,,,,,
+contrast,adult,haar,0.15,,,1459,,,,,Black Female,White Male,0.4004,0.2766,0.1238,1.45,1.3675395076274145e-06
+contrast,adult,haar,0.15,,,1072,,,,,Black Female,Black Male,0.4004,0.4692,-0.0688,0.85,0.026507067650455948
+contrast,adult,haar,0.15,,,1678,,,,,White Female,White Male,0.2407,0.2766,-0.0358,0.87,0.10496843997649272
+contrast,adult,haar,0.15,,,1293,,,,,Black Female,White Female,0.4004,0.2407,0.1596,1.66,1.2064342404266778e-09
+cell,adult,yunet,1.0,White,Female,756,76.0,0.1005,0.0811,0.124,,,,,,,
+cell,adult,yunet,1.0,White,Male,922,122.0,0.1323,0.112,0.1557,,,,,,,
+cell,adult,yunet,1.0,East Asian,Female,592,54.0,0.0912,0.0706,0.1171,,,,,,,
+cell,adult,yunet,1.0,East Asian,Male,544,68.0,0.125,0.0998,0.1554,,,,,,,
+cell,adult,yunet,1.0,Latino_Hispanic,Female,605,45.0,0.0744,0.0561,0.0981,,,,,,,
+cell,adult,yunet,1.0,Latino_Hispanic,Male,606,55.0,0.0908,0.0704,0.1163,,,,,,,
+cell,adult,yunet,1.0,Middle Eastern,Female,306,36.0,0.1176,0.0862,0.1586,,,,,,,
+cell,adult,yunet,1.0,Middle Eastern,Male,692,86.0,0.1243,0.1018,0.151,,,,,,,
+cell,adult,yunet,1.0,Southeast Asian,Female,486,31.0,0.0638,0.0453,0.0891,,,,,,,
+cell,adult,yunet,1.0,Southeast Asian,Male,508,46.0,0.0906,0.0686,0.1187,,,,,,,
+cell,adult,yunet,1.0,Indian,Female,557,40.0,0.0718,0.0532,0.0963,,,,,,,
+cell,adult,yunet,1.0,Indian,Male,572,61.0,0.1066,0.0839,0.1346,,,,,,,
+cell,adult,yunet,1.0,Black,Female,537,51.0,0.095,0.073,0.1227,,,,,,,
+cell,adult,yunet,1.0,Black,Male,535,87.0,0.1626,0.1338,0.1963,,,,,,,
+contrast,adult,yunet,1.0,,,1459,,,,,Black Female,White Male,0.095,0.1323,-0.0373,0.72,0.03574719918351586
+contrast,adult,yunet,1.0,,,1072,,,,,Black Female,Black Male,0.095,0.1626,-0.0676,0.58,0.001000127328797978
+contrast,adult,yunet,1.0,,,1678,,,,,White Female,White Male,0.1005,0.1323,-0.0318,0.76,0.048011096416306034
+contrast,adult,yunet,1.0,,,1293,,,,,Black Female,White Female,0.095,0.1005,-0.0056,0.94,0.7765748436915405
+cell,adult,yunet,0.15,White,Female,756,116.0,0.1534,0.1295,0.1809,,,,,,,
+cell,adult,yunet,0.15,White,Male,922,168.0,0.1822,0.1586,0.2084,,,,,,,
+cell,adult,yunet,0.15,East Asian,Female,592,87.0,0.147,0.1207,0.1778,,,,,,,
+cell,adult,yunet,0.15,East Asian,Male,544,98.0,0.1801,0.1501,0.2146,,,,,,,
+cell,adult,yunet,0.15,Latino_Hispanic,Female,605,65.0,0.1074,0.0852,0.1346,,,,,,,
+cell,adult,yunet,0.15,Latino_Hispanic,Male,606,88.0,0.1452,0.1194,0.1755,,,,,,,
+cell,adult,yunet,0.15,Middle Eastern,Female,306,50.0,0.1634,0.1262,0.209,,,,,,,
+cell,adult,yunet,0.15,Middle Eastern,Male,692,122.0,0.1763,0.1497,0.2065,,,,,,,
+cell,adult,yunet,0.15,Southeast Asian,Female,486,44.0,0.0905,0.0681,0.1194,,,,,,,
+cell,adult,yunet,0.15,Southeast Asian,Male,508,70.0,0.1378,0.1105,0.1705,,,,,,,
+cell,adult,yunet,0.15,Indian,Female,557,70.0,0.1257,0.1007,0.1558,,,,,,,
+cell,adult,yunet,0.15,Indian,Male,572,95.0,0.1661,0.1378,0.1988,,,,,,,
+cell,adult,yunet,0.15,Black,Female,537,99.0,0.1844,0.1538,0.2194,,,,,,,
+cell,adult,yunet,0.15,Black,Male,535,137.0,0.2561,0.2209,0.2947,,,,,,,
+contrast,adult,yunet,0.15,,,1459,,,,,Black Female,White Male,0.1844,0.1822,0.0021,1.01,0.9440681132725087
+contrast,adult,yunet,0.15,,,1072,,,,,Black Female,Black Male,0.1844,0.2561,-0.0717,0.72,0.0050646728472967546
+contrast,adult,yunet,0.15,,,1678,,,,,White Female,White Male,0.1534,0.1822,-0.0288,0.84,0.13229075454306058
+contrast,adult,yunet,0.15,,,1293,,,,,Black Female,White Female,0.1844,0.1534,0.0309,1.2,0.1501025825103971
+cell,adult,mtcnn,1.0,White,Female,756,4.0,0.0053,0.0021,0.0135,,,,,,,
+cell,adult,mtcnn,1.0,White,Male,922,2.0,0.0022,0.0006,0.0079,,,,,,,
+cell,adult,mtcnn,1.0,East Asian,Female,592,7.0,0.0118,0.0057,0.0242,,,,,,,
+cell,adult,mtcnn,1.0,East Asian,Male,544,8.0,0.0147,0.0075,0.0287,,,,,,,
+cell,adult,mtcnn,1.0,Latino_Hispanic,Female,605,1.0,0.0017,0.0003,0.0093,,,,,,,
+cell,adult,mtcnn,1.0,Latino_Hispanic,Male,606,0.0,0.0,0.0,0.0063,,,,,,,
+cell,adult,mtcnn,1.0,Middle Eastern,Female,306,1.0,0.0033,0.0006,0.0183,,,,,,,
+cell,adult,mtcnn,1.0,Middle Eastern,Male,692,4.0,0.0058,0.0023,0.0148,,,,,,,
+cell,adult,mtcnn,1.0,Southeast Asian,Female,486,3.0,0.0062,0.0021,0.018,,,,,,,
+cell,adult,mtcnn,1.0,Southeast Asian,Male,508,0.0,0.0,0.0,0.0075,,,,,,,
+cell,adult,mtcnn,1.0,Indian,Female,557,1.0,0.0018,0.0003,0.0101,,,,,,,
+cell,adult,mtcnn,1.0,Indian,Male,572,1.0,0.0017,0.0003,0.0098,,,,,,,
+cell,adult,mtcnn,1.0,Black,Female,537,2.0,0.0037,0.001,0.0135,,,,,,,
+cell,adult,mtcnn,1.0,Black,Male,535,7.0,0.0131,0.0064,0.0268,,,,,,,
+contrast,adult,mtcnn,1.0,,,1459,,,,,Black Female,White Male,0.0037,0.0022,0.0016,1.72,0.6281404726074553
+contrast,adult,mtcnn,1.0,,,1072,,,,,Black Female,Black Male,0.0037,0.0131,-0.0094,0.28,0.10741100608160743
+contrast,adult,mtcnn,1.0,,,1678,,,,,White Female,White Male,0.0053,0.0022,0.0031,2.44,0.41822715225641716
+contrast,adult,mtcnn,1.0,,,1293,,,,,Black Female,White Female,0.0037,0.0053,-0.0016,0.7,1.0
+cell,adult,mtcnn,0.15,White,Female,756,20.0,0.0265,0.0172,0.0405,,,,,,,
+cell,adult,mtcnn,0.15,White,Male,922,23.0,0.0249,0.0167,0.0372,,,,,,,
+cell,adult,mtcnn,0.15,East Asian,Female,592,15.0,0.0253,0.0154,0.0414,,,,,,,
+cell,adult,mtcnn,0.15,East Asian,Male,544,18.0,0.0331,0.021,0.0517,,,,,,,
+cell,adult,mtcnn,0.15,Latino_Hispanic,Female,605,9.0,0.0149,0.0078,0.028,,,,,,,
+cell,adult,mtcnn,0.15,Latino_Hispanic,Male,606,3.0,0.005,0.0017,0.0145,,,,,,,
+cell,adult,mtcnn,0.15,Middle Eastern,Female,306,10.0,0.0327,0.0178,0.0591,,,,,,,
+cell,adult,mtcnn,0.15,Middle Eastern,Male,692,17.0,0.0246,0.0154,0.039,,,,,,,
+cell,adult,mtcnn,0.15,Southeast Asian,Female,486,8.0,0.0165,0.0084,0.0321,,,,,,,
+cell,adult,mtcnn,0.15,Southeast Asian,Male,508,11.0,0.0217,0.0121,0.0384,,,,,,,
+cell,adult,mtcnn,0.15,Indian,Female,557,5.0,0.009,0.0038,0.0208,,,,,,,
+cell,adult,mtcnn,0.15,Indian,Male,572,14.0,0.0245,0.0146,0.0407,,,,,,,
+cell,adult,mtcnn,0.15,Black,Female,537,16.0,0.0298,0.0184,0.0478,,,,,,,
+cell,adult,mtcnn,0.15,Black,Male,535,33.0,0.0617,0.0443,0.0854,,,,,,,
+contrast,adult,mtcnn,0.15,,,1459,,,,,Black Female,White Male,0.0298,0.0249,0.0048,1.19,0.6151530573139773
+contrast,adult,mtcnn,0.15,,,1072,,,,,Black Female,Black Male,0.0298,0.0617,-0.0319,0.48,0.012987828450278061
+contrast,adult,mtcnn,0.15,,,1678,,,,,White Female,White Male,0.0265,0.0249,0.0015,1.06,0.8774567384853642
+contrast,adult,mtcnn,0.15,,,1293,,,,,Black Female,White Female,0.0298,0.0265,0.0033,1.13,0.7341074776910806
+cell,adult,mediapipe,1.0,White,Female,756,0.0,0.0,0.0,0.0051,,,,,,,
+cell,adult,mediapipe,1.0,White,Male,922,1.0,0.0011,0.0002,0.0061,,,,,,,
+cell,adult,mediapipe,1.0,East Asian,Female,592,0.0,0.0,-0.0,0.0064,,,,,,,
+cell,adult,mediapipe,1.0,East Asian,Male,544,2.0,0.0037,0.001,0.0133,,,,,,,
+cell,adult,mediapipe,1.0,Latino_Hispanic,Female,605,0.0,0.0,0.0,0.0063,,,,,,,
+cell,adult,mediapipe,1.0,Latino_Hispanic,Male,606,1.0,0.0017,0.0003,0.0093,,,,,,,
+cell,adult,mediapipe,1.0,Middle Eastern,Female,306,0.0,0.0,0.0,0.0124,,,,,,,
+cell,adult,mediapipe,1.0,Middle Eastern,Male,692,0.0,0.0,0.0,0.0055,,,,,,,
+cell,adult,mediapipe,1.0,Southeast Asian,Female,486,0.0,0.0,0.0,0.0078,,,,,,,
+cell,adult,mediapipe,1.0,Southeast Asian,Male,508,0.0,0.0,0.0,0.0075,,,,,,,
+cell,adult,mediapipe,1.0,Indian,Female,557,0.0,0.0,0.0,0.0068,,,,,,,
+cell,adult,mediapipe,1.0,Indian,Male,572,0.0,0.0,0.0,0.0067,,,,,,,
+cell,adult,mediapipe,1.0,Black,Female,537,0.0,0.0,0.0,0.0071,,,,,,,
+cell,adult,mediapipe,1.0,Black,Male,535,0.0,0.0,0.0,0.0071,,,,,,,
+contrast,adult,mediapipe,1.0,,,1459,,,,,Black Female,White Male,0.0,0.0011,-0.0011,0.0,1.0
+contrast,adult,mediapipe,1.0,,,1072,,,,,Black Female,Black Male,0.0,0.0,0.0,inf,1.0
+contrast,adult,mediapipe,1.0,,,1678,,,,,White Female,White Male,0.0,0.0011,-0.0011,0.0,1.0
+contrast,adult,mediapipe,1.0,,,1293,,,,,Black Female,White Female,0.0,0.0,0.0,inf,1.0
+cell,adult,mediapipe,0.15,White,Female,756,1.0,0.0013,0.0002,0.0075,,,,,,,
+cell,adult,mediapipe,0.15,White,Male,922,0.0,0.0,0.0,0.0041,,,,,,,
+cell,adult,mediapipe,0.15,East Asian,Female,592,0.0,0.0,-0.0,0.0064,,,,,,,
+cell,adult,mediapipe,0.15,East Asian,Male,544,0.0,0.0,0.0,0.007,,,,,,,
+cell,adult,mediapipe,0.15,Latino_Hispanic,Female,605,0.0,0.0,0.0,0.0063,,,,,,,
+cell,adult,mediapipe,0.15,Latino_Hispanic,Male,606,0.0,0.0,0.0,0.0063,,,,,,,
+cell,adult,mediapipe,0.15,Middle Eastern,Female,306,1.0,0.0033,0.0006,0.0183,,,,,,,
+cell,adult,mediapipe,0.15,Middle Eastern,Male,692,1.0,0.0014,0.0003,0.0081,,,,,,,
+cell,adult,mediapipe,0.15,Southeast Asian,Female,486,0.0,0.0,0.0,0.0078,,,,,,,
+cell,adult,mediapipe,0.15,Southeast Asian,Male,508,0.0,0.0,0.0,0.0075,,,,,,,
+cell,adult,mediapipe,0.15,Indian,Female,557,0.0,0.0,0.0,0.0068,,,,,,,
+cell,adult,mediapipe,0.15,Indian,Male,572,0.0,0.0,0.0,0.0067,,,,,,,
+cell,adult,mediapipe,0.15,Black,Female,537,0.0,0.0,0.0,0.0071,,,,,,,
+cell,adult,mediapipe,0.15,Black,Male,535,0.0,0.0,0.0,0.0071,,,,,,,
+contrast,adult,mediapipe,0.15,,,1459,,,,,Black Female,White Male,0.0,0.0,0.0,inf,1.0
+contrast,adult,mediapipe,0.15,,,1072,,,,,Black Female,Black Male,0.0,0.0,0.0,inf,1.0
+contrast,adult,mediapipe,0.15,,,1678,,,,,White Female,White Male,0.0013,0.0,0.0013,inf,0.4505363528009535
+contrast,adult,mediapipe,0.15,,,1293,,,,,Black Female,White Female,0.0,0.0013,-0.0013,0.0,1.0
+cell,all,haar,1.0,White,Female,963,204.0,0.2118,0.1872,0.2388,,,,,,,
+cell,all,haar,1.0,White,Male,1122,270.0,0.2406,0.2165,0.2665,,,,,,,
+cell,all,haar,1.0,East Asian,Female,773,143.0,0.185,0.1592,0.2139,,,,,,,
+cell,all,haar,1.0,East Asian,Male,777,202.0,0.26,0.2304,0.2919,,,,,,,
+cell,all,haar,1.0,Latino_Hispanic,Female,830,137.0,0.1651,0.1414,0.1918,,,,,,,
+cell,all,haar,1.0,Latino_Hispanic,Male,793,165.0,0.2081,0.1813,0.2377,,,,,,,
+cell,all,haar,1.0,Middle Eastern,Female,396,73.0,0.1843,0.1492,0.2255,,,,,,,
+cell,all,haar,1.0,Middle Eastern,Male,813,171.0,0.2103,0.1837,0.2397,,,,,,,
+cell,all,haar,1.0,Southeast Asian,Female,680,118.0,0.1735,0.1469,0.2038,,,,,,,
+cell,all,haar,1.0,Southeast Asian,Male,735,168.0,0.2286,0.1997,0.2603,,,,,,,
+cell,all,haar,1.0,Indian,Female,763,128.0,0.1678,0.1429,0.1959,,,,,,,
+cell,all,haar,1.0,Indian,Male,753,165.0,0.2191,0.191,0.2501,,,,,,,
+cell,all,haar,1.0,Black,Female,757,241.0,0.3184,0.2862,0.3524,,,,,,,
+cell,all,haar,1.0,Black,Male,799,311.0,0.3892,0.356,0.4235,,,,,,,
+contrast,all,haar,1.0,,,1879,,,,,Black Female,White Male,0.3184,0.2406,0.0777,1.32,0.0002609208107188756
+contrast,all,haar,1.0,,,1556,,,,,Black Female,Black Male,0.3184,0.3892,-0.0709,0.82,0.00357125558818294
+contrast,all,haar,1.0,,,2085,,,,,White Female,White Male,0.2118,0.2406,-0.0288,0.88,0.12852417344210276
+contrast,all,haar,1.0,,,1720,,,,,Black Female,White Female,0.3184,0.2118,0.1065,1.5,7.473056333802496e-07
+cell,all,haar,0.15,White,Female,963,230.0,0.2388,0.213,0.2668,,,,,,,
+cell,all,haar,0.15,White,Male,1122,311.0,0.2772,0.2518,0.3041,,,,,,,
+cell,all,haar,0.15,East Asian,Female,773,149.0,0.1928,0.1665,0.2221,,,,,,,
+cell,all,haar,0.15,East Asian,Male,777,227.0,0.2921,0.2613,0.3251,,,,,,,
+cell,all,haar,0.15,Latino_Hispanic,Female,830,165.0,0.1988,0.1731,0.2273,,,,,,,
+cell,all,haar,0.15,Latino_Hispanic,Male,793,196.0,0.2472,0.2184,0.2784,,,,,,,
+cell,all,haar,0.15,Middle Eastern,Female,396,92.0,0.2323,0.1934,0.2764,,,,,,,
+cell,all,haar,0.15,Middle Eastern,Male,813,211.0,0.2595,0.2306,0.2907,,,,,,,
+cell,all,haar,0.15,Southeast Asian,Female,680,139.0,0.2044,0.1758,0.2363,,,,,,,
+cell,all,haar,0.15,Southeast Asian,Male,735,194.0,0.2639,0.2334,0.297,,,,,,,
+cell,all,haar,0.15,Indian,Female,763,150.0,0.1966,0.1699,0.2263,,,,,,,
+cell,all,haar,0.15,Indian,Male,753,201.0,0.2669,0.2366,0.2997,,,,,,,
+cell,all,haar,0.15,Black,Female,757,288.0,0.3804,0.3465,0.4156,,,,,,,
+cell,all,haar,0.15,Black,Male,799,375.0,0.4693,0.435,0.504,,,,,,,
+contrast,all,haar,0.15,,,1879,,,,,Black Female,White Male,0.3804,0.2772,0.1033,1.37,3.31238045253976e-06
+contrast,all,haar,0.15,,,1556,,,,,Black Female,Black Male,0.3804,0.4693,-0.0889,0.81,0.00040416528649530144
+contrast,all,haar,0.15,,,2085,,,,,White Female,White Male,0.2388,0.2772,-0.0383,0.86,0.05064053857912583
+contrast,all,haar,0.15,,,1720,,,,,Black Female,White Female,0.3804,0.2388,0.1416,1.59,2.633069944843306e-10
+cell,all,yunet,1.0,White,Female,963,89.0,0.0924,0.0757,0.1124,,,,,,,
+cell,all,yunet,1.0,White,Male,1122,143.0,0.1275,0.1092,0.1482,,,,,,,
+cell,all,yunet,1.0,East Asian,Female,773,68.0,0.088,0.07,0.11,,,,,,,
+cell,all,yunet,1.0,East Asian,Male,777,81.0,0.1042,0.0847,0.1277,,,,,,,
+cell,all,yunet,1.0,Latino_Hispanic,Female,830,67.0,0.0807,0.0641,0.1012,,,,,,,
+cell,all,yunet,1.0,Latino_Hispanic,Male,793,70.0,0.0883,0.0705,0.1101,,,,,,,
+cell,all,yunet,1.0,Middle Eastern,Female,396,43.0,0.1086,0.0816,0.1431,,,,,,,
+cell,all,yunet,1.0,Middle Eastern,Male,813,91.0,0.1119,0.0921,0.1355,,,,,,,
+cell,all,yunet,1.0,Southeast Asian,Female,680,37.0,0.0544,0.0397,0.0741,,,,,,,
+cell,all,yunet,1.0,Southeast Asian,Male,735,56.0,0.0762,0.0591,0.0977,,,,,,,
+cell,all,yunet,1.0,Indian,Female,763,44.0,0.0577,0.0432,0.0765,,,,,,,
+cell,all,yunet,1.0,Indian,Male,753,73.0,0.0969,0.0778,0.1202,,,,,,,
+cell,all,yunet,1.0,Black,Female,757,66.0,0.0872,0.0691,0.1094,,,,,,,
+cell,all,yunet,1.0,Black,Male,799,114.0,0.1427,0.1201,0.1686,,,,,,,
+contrast,all,yunet,1.0,,,1879,,,,,Black Female,White Male,0.0872,0.1275,-0.0403,0.68,0.006989909797752552
+contrast,all,yunet,1.0,,,1556,,,,,Black Female,Black Male,0.0872,0.1427,-0.0555,0.61,0.0006356000415420819
+contrast,all,yunet,1.0,,,2085,,,,,White Female,White Male,0.0924,0.1275,-0.035,0.73,0.011873237973953605
+contrast,all,yunet,1.0,,,1720,,,,,Black Female,White Female,0.0872,0.0924,-0.0052,0.94,0.7349040570393419
+cell,all,yunet,0.15,White,Female,963,138.0,0.1433,0.1226,0.1669,,,,,,,
+cell,all,yunet,0.15,White,Male,1122,202.0,0.18,0.1587,0.2036,,,,,,,
+cell,all,yunet,0.15,East Asian,Female,773,110.0,0.1423,0.1194,0.1687,,,,,,,
+cell,all,yunet,0.15,East Asian,Male,777,120.0,0.1544,0.1307,0.1815,,,,,,,
+cell,all,yunet,0.15,Latino_Hispanic,Female,830,98.0,0.1181,0.0979,0.1418,,,,,,,
+cell,all,yunet,0.15,Latino_Hispanic,Male,793,115.0,0.145,0.1222,0.1712,,,,,,,
+cell,all,yunet,0.15,Middle Eastern,Female,396,63.0,0.1591,0.1264,0.1984,,,,,,,
+cell,all,yunet,0.15,Middle Eastern,Male,813,136.0,0.1673,0.1432,0.1945,,,,,,,
+cell,all,yunet,0.15,Southeast Asian,Female,680,55.0,0.0809,0.0627,0.1038,,,,,,,
+cell,all,yunet,0.15,Southeast Asian,Male,735,88.0,0.1197,0.0982,0.1452,,,,,,,
+cell,all,yunet,0.15,Indian,Female,763,82.0,0.1075,0.0874,0.1314,,,,,,,
+cell,all,yunet,0.15,Indian,Male,753,117.0,0.1554,0.1313,0.183,,,,,,,
+cell,all,yunet,0.15,Black,Female,757,130.0,0.1717,0.1465,0.2002,,,,,,,
+cell,all,yunet,0.15,Black,Male,799,187.0,0.234,0.206,0.2646,,,,,,,
+contrast,all,yunet,0.15,,,1879,,,,,Black Female,White Male,0.1717,0.18,-0.0083,0.95,0.6662798818512756
+contrast,all,yunet,0.15,,,1556,,,,,Black Female,Black Male,0.1717,0.234,-0.0623,0.73,0.00248747532204369
+contrast,all,yunet,0.15,,,2085,,,,,White Female,White Male,0.1433,0.18,-0.0367,0.8,0.023963892633777295
+contrast,all,yunet,0.15,,,1720,,,,,Black Female,White Female,0.1717,0.1433,0.0284,1.2,0.10851340800630085
+cell,all,mtcnn,1.0,White,Female,963,5.0,0.0052,0.0022,0.0121,,,,,,,
+cell,all,mtcnn,1.0,White,Male,1122,2.0,0.0018,0.0005,0.0065,,,,,,,
+cell,all,mtcnn,1.0,East Asian,Female,773,7.0,0.0091,0.0044,0.0186,,,,,,,
+cell,all,mtcnn,1.0,East Asian,Male,777,8.0,0.0103,0.0052,0.0202,,,,,,,
+cell,all,mtcnn,1.0,Latino_Hispanic,Female,830,1.0,0.0012,0.0002,0.0068,,,,,,,
+cell,all,mtcnn,1.0,Latino_Hispanic,Male,793,0.0,0.0,0.0,0.0048,,,,,,,
+cell,all,mtcnn,1.0,Middle Eastern,Female,396,2.0,0.0051,0.0014,0.0182,,,,,,,
+cell,all,mtcnn,1.0,Middle Eastern,Male,813,5.0,0.0062,0.0026,0.0143,,,,,,,
+cell,all,mtcnn,1.0,Southeast Asian,Female,680,3.0,0.0044,0.0015,0.0129,,,,,,,
+cell,all,mtcnn,1.0,Southeast Asian,Male,735,0.0,0.0,0.0,0.0052,,,,,,,
+cell,all,mtcnn,1.0,Indian,Female,763,1.0,0.0013,0.0002,0.0074,,,,,,,
+cell,all,mtcnn,1.0,Indian,Male,753,3.0,0.004,0.0014,0.0116,,,,,,,
+cell,all,mtcnn,1.0,Black,Female,757,3.0,0.004,0.0013,0.0116,,,,,,,
+cell,all,mtcnn,1.0,Black,Male,799,8.0,0.01,0.0051,0.0196,,,,,,,
+contrast,all,mtcnn,1.0,,,1879,,,,,Black Female,White Male,0.004,0.0018,0.0022,2.22,0.39788079804525234
+contrast,all,mtcnn,1.0,,,1556,,,,,Black Female,Black Male,0.004,0.01,-0.006,0.4,0.22678681762511607
+contrast,all,mtcnn,1.0,,,2085,,,,,White Female,White Male,0.0052,0.0018,0.0034,2.91,0.2596706834701239
+contrast,all,mtcnn,1.0,,,1720,,,,,Black Female,White Female,0.004,0.0052,-0.0012,0.76,1.0
+cell,all,mtcnn,0.15,White,Female,963,24.0,0.0249,0.0168,0.0368,,,,,,,
+cell,all,mtcnn,0.15,White,Male,1122,26.0,0.0232,0.0159,0.0337,,,,,,,
+cell,all,mtcnn,0.15,East Asian,Female,773,20.0,0.0259,0.0168,0.0396,,,,,,,
+cell,all,mtcnn,0.15,East Asian,Male,777,21.0,0.027,0.0177,0.041,,,,,,,
+cell,all,mtcnn,0.15,Latino_Hispanic,Female,830,14.0,0.0169,0.0101,0.0281,,,,,,,
+cell,all,mtcnn,0.15,Latino_Hispanic,Male,793,9.0,0.0113,0.006,0.0214,,,,,,,
+cell,all,mtcnn,0.15,Middle Eastern,Female,396,11.0,0.0278,0.0156,0.049,,,,,,,
+cell,all,mtcnn,0.15,Middle Eastern,Male,813,18.0,0.0221,0.014,0.0347,,,,,,,
+cell,all,mtcnn,0.15,Southeast Asian,Female,680,9.0,0.0132,0.007,0.025,,,,,,,
+cell,all,mtcnn,0.15,Southeast Asian,Male,735,11.0,0.015,0.0084,0.0266,,,,,,,
+cell,all,mtcnn,0.15,Indian,Female,763,6.0,0.0079,0.0036,0.017,,,,,,,
+cell,all,mtcnn,0.15,Indian,Male,753,16.0,0.0212,0.0131,0.0342,,,,,,,
+cell,all,mtcnn,0.15,Black,Female,757,23.0,0.0304,0.0203,0.0452,,,,,,,
+cell,all,mtcnn,0.15,Black,Male,799,48.0,0.0601,0.0456,0.0788,,,,,,,
+contrast,all,mtcnn,0.15,,,1879,,,,,Black Female,White Male,0.0304,0.0232,0.0072,1.31,0.37660250821026353
+contrast,all,mtcnn,0.15,,,1556,,,,,Black Female,Black Male,0.0304,0.0601,-0.0297,0.51,0.005111835662485282
+contrast,all,mtcnn,0.15,,,2085,,,,,White Female,White Male,0.0249,0.0232,0.0017,1.08,0.8860356160069628
+contrast,all,mtcnn,0.15,,,1720,,,,,Black Female,White Female,0.0304,0.0249,0.0055,1.22,0.551981022368315
+cell,all,mediapipe,1.0,White,Female,963,0.0,0.0,-0.0,0.004,,,,,,,
+cell,all,mediapipe,1.0,White,Male,1122,1.0,0.0009,0.0002,0.005,,,,,,,
+cell,all,mediapipe,1.0,East Asian,Female,773,0.0,0.0,0.0,0.0049,,,,,,,
+cell,all,mediapipe,1.0,East Asian,Male,777,2.0,0.0026,0.0007,0.0093,,,,,,,
+cell,all,mediapipe,1.0,Latino_Hispanic,Female,830,1.0,0.0012,0.0002,0.0068,,,,,,,
+cell,all,mediapipe,1.0,Latino_Hispanic,Male,793,1.0,0.0013,0.0002,0.0071,,,,,,,
+cell,all,mediapipe,1.0,Middle Eastern,Female,396,0.0,0.0,0.0,0.0096,,,,,,,
+cell,all,mediapipe,1.0,Middle Eastern,Male,813,0.0,0.0,0.0,0.0047,,,,,,,
+cell,all,mediapipe,1.0,Southeast Asian,Female,680,0.0,0.0,0.0,0.0056,,,,,,,
+cell,all,mediapipe,1.0,Southeast Asian,Male,735,0.0,0.0,0.0,0.0052,,,,,,,
+cell,all,mediapipe,1.0,Indian,Female,763,0.0,0.0,0.0,0.005,,,,,,,
+cell,all,mediapipe,1.0,Indian,Male,753,0.0,0.0,0.0,0.0051,,,,,,,
+cell,all,mediapipe,1.0,Black,Female,757,1.0,0.0013,0.0002,0.0074,,,,,,,
+cell,all,mediapipe,1.0,Black,Male,799,0.0,0.0,0.0,0.0048,,,,,,,
+contrast,all,mediapipe,1.0,,,1879,,,,,Black Female,White Male,0.0013,0.0009,0.0004,1.48,1.0
+contrast,all,mediapipe,1.0,,,1556,,,,,Black Female,Black Male,0.0013,0.0,0.0013,inf,0.48650385604113106
+contrast,all,mediapipe,1.0,,,2085,,,,,White Female,White Male,0.0,0.0009,-0.0009,0.0,1.0
+contrast,all,mediapipe,1.0,,,1720,,,,,Black Female,White Female,0.0013,0.0,0.0013,inf,0.4401162790697674
+cell,all,mediapipe,0.15,White,Female,963,1.0,0.001,0.0002,0.0059,,,,,,,
+cell,all,mediapipe,0.15,White,Male,1122,1.0,0.0009,0.0002,0.005,,,,,,,
+cell,all,mediapipe,0.15,East Asian,Female,773,0.0,0.0,0.0,0.0049,,,,,,,
+cell,all,mediapipe,0.15,East Asian,Male,777,0.0,0.0,0.0,0.0049,,,,,,,
+cell,all,mediapipe,0.15,Latino_Hispanic,Female,830,1.0,0.0012,0.0002,0.0068,,,,,,,
+cell,all,mediapipe,0.15,Latino_Hispanic,Male,793,1.0,0.0013,0.0002,0.0071,,,,,,,
+cell,all,mediapipe,0.15,Middle Eastern,Female,396,1.0,0.0025,0.0004,0.0142,,,,,,,
+cell,all,mediapipe,0.15,Middle Eastern,Male,813,1.0,0.0012,0.0002,0.0069,,,,,,,
+cell,all,mediapipe,0.15,Southeast Asian,Female,680,0.0,0.0,0.0,0.0056,,,,,,,
+cell,all,mediapipe,0.15,Southeast Asian,Male,735,0.0,0.0,0.0,0.0052,,,,,,,
+cell,all,mediapipe,0.15,Indian,Female,763,0.0,0.0,0.0,0.005,,,,,,,
+cell,all,mediapipe,0.15,Indian,Male,753,0.0,0.0,0.0,0.0051,,,,,,,
+cell,all,mediapipe,0.15,Black,Female,757,2.0,0.0026,0.0007,0.0096,,,,,,,
+cell,all,mediapipe,0.15,Black,Male,799,0.0,0.0,0.0,0.0048,,,,,,,
+contrast,all,mediapipe,0.15,,,1879,,,,,Black Female,White Male,0.0026,0.0009,0.0018,2.96,0.5687501439819544
+contrast,all,mediapipe,0.15,,,1556,,,,,Black Female,Black Male,0.0026,0.0,0.0026,inf,0.23652534737433772
+contrast,all,mediapipe,0.15,,,2085,,,,,White Female,White Male,0.001,0.0009,0.0001,1.17,1.0
+contrast,all,mediapipe,0.15,,,1720,,,,,Black Female,White Female,0.0026,0.001,0.0016,2.54,0.5858182008505498

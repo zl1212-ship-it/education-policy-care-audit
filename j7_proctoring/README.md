@@ -26,6 +26,8 @@ fetch_face_data.py    # FairFace validation set (padding=1.25), HF mirror, revis
 build_face_panel.py   # + ITA skin-tone measure (CIELAB) and Del Bino tone bins -> data/face_panel.csv
 run_detectors.py      # 4 open detectors x exposure conditions -> data/detection_outcomes.csv
 analyze_detection.py  # miss rates by tone bin / race, contrasts, trend tests -> data/results_summary.csv
+analyze_gender_race.py # detection miss by gender x race cells + intersection contrasts -> data/results_gender_race.csv
+time_threshold_sim.py # per-frame to per-session flag-rate ratio, Markov-session sim -> data/results_time_threshold.csv
 verify_identity.py    # LFW 1:1 verification (MTCNN+FaceNet, YuNet+SFace), probe-side dimming
 analyze_verification.py # FNMR / cannot-verify by ITA tercile at fixed FMR -> data/verification_results.csv
 build_vendor_corpus.py# fetch + archive vendor documentation (registry-driven, provenance headers)
@@ -39,6 +41,10 @@ make_figures.py       # Figures 1-3 -> ../paper/blinded-manuscript/j7_figure{1,2
 - `data/detection_outcomes.csv` — long: image x detector x exposure, faces found, top confidence, detected.
 - `data/results_summary.csv` — per-stratum miss rates (Wilson CIs), darkest-vs-lightest and
   Black-vs-White contrasts (risk diff, fold ratio, Fisher exact), ITA trend.
+- `data/results_gender_race.csv` — miss rate per gender x race cell (Wilson CIs) plus the
+  Black-women/White-men, within-race gender, and race-within-women contrasts (Fisher exact).
+- `data/results_time_threshold.csv` — Markov-session simulation of the per-image to per-session
+  step: per-session no-face flag rate and Black/White ratio by frame persistence and threshold length.
 - `data/verification_outcomes.csv` — long: LFW pair x verifier x exposure, cascade detect
   flags + cosine similarity (enrollment side native, probe side dimmed).
 - `data/verification_results.csv` — FNMR and cannot-verify rates by ITA tercile at the
