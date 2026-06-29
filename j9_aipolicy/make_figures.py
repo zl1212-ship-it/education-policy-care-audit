@@ -99,9 +99,13 @@ save(fig, "j9_figure2")
 end = desc[desc["section"] == "endpoint"].set_index("metric")["value"]
 fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 4.4),
                              gridspec_kw={"width_ratios": [1.4, 1]})
-provs = RESTRICTIVE + PROCEDURAL
-rates = [float(end.get(c + "_rate", np.nan)) * 100 for c in provs]
-cols = [RED] * len(RESTRICTIVE) + [BLUE] * len(PROCEDURAL)
+# sort within each family by endpoint prevalence (descending), restrictive then procedural
+rate = lambda c: float(end.get(c + "_rate", np.nan)) * 100
+restr = sorted(RESTRICTIVE, key=rate, reverse=True)
+proc = sorted(PROCEDURAL, key=rate, reverse=True)
+provs = restr + proc
+rates = [rate(c) for c in provs]
+cols = [RED] * len(restr) + [BLUE] * len(proc)
 ypos = np.arange(len(provs))
 a1.barh(ypos, rates, color=cols)
 a1.set_yticks(ypos)
