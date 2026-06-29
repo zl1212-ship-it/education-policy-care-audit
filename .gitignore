@@ -15,3 +15,6 @@ j8_aes/data/cache/
 j9_aipolicy/data/snapshots_raw/
 # cached raw API pulls (CCD/EDFacts/CRDC) + per-state report-card downloads; regenerate with the fetchers
 j10_accountability/data/raw/
+
+# GCP service-account key files: NEVER commit; keep them outside the repo (e.g. ~/.gcp/)
+moonlit-cistern-500918-i3-*.json
