@@ -3,8 +3,8 @@ window_sensitivity,window=200,net_restrictiveness,0.1029,n=68
 window_sensitivity,window=200,ai_governance_intensity,0.5441,n=68
 window_sensitivity,window=400,net_restrictiveness,0.0588,n=68
 window_sensitivity,window=400,ai_governance_intensity,0.5882,n=68
-window_sensitivity,window=800,net_restrictiveness,0.0588,n=68
-window_sensitivity,window=800,ai_governance_intensity,0.6176,n=68
+window_sensitivity,window=800,net_restrictiveness,0.0441,n=68
+window_sensitivity,window=800,ai_governance_intensity,0.6324,n=68
 leave_one_out,min/full/max,ai_governance_intensity,0.2039,min=0.1326 max=0.3032 full_p=0.234
 leave_one_out,min/full/max,net_restrictiveness,-0.0152,min=-0.0421 max=0.0217 full_p=0.823
 binary_exposure_hi_vs_lo,high_exp:post,ai_governance_intensity,0.6131,p=0.160 n_inst=32

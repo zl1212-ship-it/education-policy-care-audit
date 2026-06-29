@@ -1,0 +1,63 @@
+institution,unitid,page_type,url,n_captures,n_post_captures,first_capture,last_capture,has_post,n_versions
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,67,54,20220802113308,20241231085301,1,16
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,9,3,20210306141843,20240118100221,1,9
+Griffith University,9000002,ai,https://www.griffith.edu.au/academic-integrity/why-ai-matters,4,2,20210124164337,20231215040526,1,4
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,29,19,20210227161621,20241127005543,1,16
+University of Sydney,9000003,ai,https://www.sydney.edu.au/students/academic-integrity/artificial-intelligence.html,3,3,20241005212702,20241218144522,1,3
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,18,9,20210307144759,20241103050422,1,13
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,9,9,20230216153805,20241022194404,1,9
+McMaster University,9000005,integrity,https://www.mcmaster.ca/academicintegrity/,47,14,20210107060719,20241123052522,1,2
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,34,15,20210417080055,20240803102807,1,16
+Queen's University,9000006,ai,https://www.queensu.ca/academicintegrity/ai-queens,2,0,20210428113235,20211201165745,0,2
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,36,29,20220613233556,20241203111612,1,16
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,12,12,20230203212608,20241203111612,1,12
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,45,26,20211005185614,20241121114732,1,16
+University of British Columbia,9000008,ai,https://academicintegrity.ubc.ca/2023/02/15/the-opportunities-of-chatgpt/,3,3,20230714035310,20240530224518,1,3
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,14,3,20210125003140,20230526134335,1,14
+University of Manitoba,9000010,integrity,https://umanitoba.ca/academicintegrity/month/,3,1,20210918171907,20240327072103,1,2
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,65,38,20210125102137,20241108035139,1,16
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,10,10,20230402123307,20241203150516,1,10
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,39,22,20210123133911,20241109014453,1,16
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,8,8,20230408231917,20241009004731,1,8
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,16,9,20210304085146,20241208174702,1,16
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,30,8,20210126224526,20241208145751,1,16
+Imperial College London,9000014,ai,https://www.imperial.ac.uk/students/academic-support/ai-and-study-guidance-hub/,1,1,20240720073849,20240720073849,1,1
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,9,6,20220626170907,20241111032054,1,9
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,76,33,20210116124740,20241212124326,1,16
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,12,7,20210730141259,20240919212754,1,12
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,100,49,20210108141704,20250101091623,1,16
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,6,1,20210226215559,20230808105708,1,6
+University of Manchester,9000020,integrity,https://www.regulations.manchester.ac.uk/academic/academic-malpractice/,8,7,20220527024710,20260124090505,1,5
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,9,7,20211028102859,20260123115322,1,6
+University of Bristol,9000024,integrity,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,16,10,20210619090537,20251008060157,1,12
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,12,11,20221005112051,20260307052612,1,12
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,10,1,20210414114031,20221208032220,1,10
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,23,11,20210120043640,20250905220158,1,16
+McGill University,9000032,integrity,https://academicintegrity.mcgill.ca/,0,0,,,0,0
+University of Alberta,9000033,integrity,https://academicintegrity.ualberta.ca/,0,0,,,0,0
+Western University,9000034,integrity,https://academicintegrity.uwo.ca/,0,0,,,0,0
+University of Calgary,9000035,integrity,https://academicintegrity.ucalgary.ca/,0,0,,,0,0
+University of Ottawa,9000036,integrity,https://academicintegrity.uottawa.ca/,0,0,,,0,0
+Dalhousie University,9000037,integrity,https://academicintegrity.dal.ca/,0,0,,,0,0
+University of Saskatchewan,9000038,integrity,https://academicintegrity.usask.ca/,0,0,,,0,0
+Simon Fraser University,9000039,integrity,https://academicintegrity.sfu.ca/,0,0,,,0,0
+University of Victoria,9000040,integrity,https://academicintegrity.uvic.ca/,0,0,,,0,0
+York University,9000041,integrity,https://academicintegrity.yorku.ca/,0,0,,,0,0
+Concordia University,9000042,integrity,https://academicintegrity.concordia.ca/,0,0,,,0,0
+Carleton University,9000043,integrity,https://academicintegrity.carleton.ca/,0,0,,,0,0
+Memorial University of Newfoundland,9000044,integrity,https://academicintegrity.mun.ca/,0,0,,,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,131,84,20210105090404,20260601061257,1,16
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,28,19,20210226132238,20251128154259,1,16
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,12,12,20250815065051,20260602093833,1,12
+Monash University,9000048,integrity,https://www.monash.edu/students/admin/policies/academic-integrity,0,0,,,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,9,9,20250926012554,20260521210123,1,9
+University of Alberta,9000049,integrity,https://www.ualberta.ca/en/campus-life/academic-success/academic-integrity/index.html,3,3,20240906163523,20240925150712,1,3
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,89,60,20210119232905,20260218235240,1,16
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,30,18,20210102204835,20250920175009,1,16
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,23,19,20220527115626,20250214120227,1,16
+Simon Fraser University,9000053,integrity,https://www.sfu.ca/students/academicintegrity.html,19,6,20210110232315,20240117010856,1,13
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,25,19,20220404161846,20260307050017,1,16
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,77,36,20210116213214,20250725015113,1,16
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,9,8,20220929145056,20260215142307,1,9
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,7,2,20210407174517,20250727172755,1,7
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,26,13,20210113145425,20260113054445,1,16

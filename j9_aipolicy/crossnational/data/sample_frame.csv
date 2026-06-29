@@ -1,0 +1,39 @@
+institution,state,control,carnegie,country,domain,integrity_url,guidance_url,pilot,unitid,exposure_year,total_enroll,nonresident_alien,intl_share
+Curtin University,AU,Public,R2,AU,curtin.edu.au,https://www.curtin.edu.au/about/governance/academic-integrity/,,1,9000001,2022,,,0.2477
+Griffith University,AU,Public,R2,AU,griffith.edu.au,https://www.griffith.edu.au/academic-integrity,https://www.griffith.edu.au/academic-integrity/why-ai-matters,1,9000002,2022,,,0.1611
+University of Sydney,AU,Public,R1,AU,sydney.edu.au,https://www.sydney.edu.au/students/academic-integrity.html,https://www.sydney.edu.au/students/academic-integrity/artificial-intelligence.html,1,9000003,2022,,,0.4749
+University of Wollongong,AU,Public,R2,AU,uow.edu.au,https://www.uow.edu.au/about/governance/academic-integrity/,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,1,9000004,2022,,,0.3867
+McMaster University,CA,Public,R1,CA,mcmaster.ca,https://www.mcmaster.ca/academicintegrity/,,1,9000005,2022,,,
+Queen's University,CA,Public,R1,CA,queensu.ca,https://www.queensu.ca/academicintegrity/,https://www.queensu.ca/academicintegrity/ai-queens,1,9000006,2022,,,
+Toronto Metropolitan University,CA,Public,R2,CA,torontomu.ca,https://www.torontomu.ca/academicintegrity/,https://www.torontomu.ca/academicintegrity/ai/,1,9000007,2022,,,
+University of British Columbia,CA,Public,R1,CA,ubc.ca,https://academicintegrity.ubc.ca/,https://academicintegrity.ubc.ca/2023/02/15/the-opportunities-of-chatgpt/,1,9000008,2022,,,
+University of Guelph,CA,Public,R2,CA,uoguelph.ca,https://academicintegrity.uoguelph.ca/,,1,9000009,2022,,,
+University of Manitoba,CA,Public,R1,CA,umanitoba.ca,https://umanitoba.ca/academicintegrity/month/,,1,9000010,2022,,,
+University of Toronto,CA,Public,R1,CA,utoronto.ca,https://www.academicintegrity.utoronto.ca/,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,1,9000011,2022,,,
+University of Waterloo,CA,Public,R1,CA,uwaterloo.ca,https://uwaterloo.ca/academic-integrity/,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,1,9000012,2022,,,
+University of Windsor,CA,Public,R2,CA,uwindsor.ca,https://www.uwindsor.ca/academic-integrity/,,1,9000013,2022,,,
+Imperial College London,UK,Public,R1,UK,imperial.ac.uk,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,https://www.imperial.ac.uk/students/academic-support/ai-and-study-guidance-hub/,1,9000014,2021,,,0.5272
+University College London,UK,Public,R1,UK,ucl.ac.uk,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,,1,9000015,2021,,,0.5156
+University of Cambridge,UK,Public,R1,UK,cam.ac.uk,https://www.plagiarism.admin.cam.ac.uk/,,1,9000016,2021,,,0.3187
+University of Edinburgh,UK,Public,R1,UK,ed.ac.uk,https://www.ed.ac.uk/students/academic-life/conduct,,1,9000017,2021,,,0.4376
+University of Oxford,UK,Public,R1,UK,ox.ac.uk,https://www.ox.ac.uk/students/academic/conduct,,1,9000018,2021,,,0.3395
+University of St Andrews,UK,Public,R2,UK,st-andrews.ac.uk,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,,1,9000019,2021,,,0.459
+University of Manchester,UK,Public,R1,UK,manchester.ac.uk,https://www.regulations.manchester.ac.uk/academic/academic-malpractice/,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,1,9000020,2021,,,0.3915
+University of Bristol,UK,Public,R1,UK,bristol.ac.uk,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,,1,9000024,2021,,,0.2851
+University of Birmingham,UK,Public,R1,UK,birmingham.ac.uk,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,,1,9000026,2021,,,0.2515
+University of Nottingham,UK,Public,R1,UK,nottingham.ac.uk,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,,1,9000028,2021,,,0.2224
+Cardiff University,UK,Public,R1,UK,cardiff.ac.uk,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,,1,9000031,2021,,,0.2216
+University of Melbourne,AU,Public,R1,AU,unimelb.edu.au,https://academicintegrity.unimelb.edu.au/,,1,9000045,2022,,,0.3839
+University of Queensland,AU,Public,R1,AU,uq.edu.au,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,,1,9000046,2022,,,0.3769
+University of New South Wales,AU,Public,R1,AU,unsw.edu.au,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,,1,9000047,2022,,,0.3573
+McGill University,CA,Public,R1,CA,mcgill.ca,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,,1,9000048,2022,,,
+University of Alberta,CA,Public,R1,CA,ualberta.ca,https://www.ualberta.ca/en/campus-life/academic-success/academic-integrity/index.html,,1,9000049,2022,,,
+University of Calgary,CA,Public,R1,CA,ucalgary.ca,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,,1,9000050,2022,,,
+Western University,CA,Public,R1,CA,uwo.ca,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,,1,9000051,2022,,,
+University of Ottawa,CA,Public,R1,CA,uottawa.ca,https://www.uottawa.ca/current-students/academic-integrity,,1,9000052,2022,,,
+Simon Fraser University,CA,Public,R1,CA,sfu.ca,https://www.sfu.ca/students/academicintegrity.html,,1,9000053,2022,,,
+University of Adelaide,AU,Public,R1,AU,adelaide.edu.au,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,,1,9000054,2022,,,0.2814
+Australian National University,AU,Public,R1,AU,anu.edu.au,https://www.anu.edu.au/students/academic-skills/academic-integrity,,1,9000055,2022,,,0.356
+University of Glasgow,UK,Public,R1,UK,gla.ac.uk,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,,1,9000056,2021,,,0.4046
+Durham University,UK,Public,R1,UK,durham.ac.uk,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,,1,9000057,2021,,,0.3039
+University of Southampton,UK,Public,R1,UK,southampton.ac.uk,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,,1,9000058,2021,,,0.3629

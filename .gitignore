@@ -13,6 +13,10 @@ j8_aes/data/raw/
 j8_aes/data/cache/
 # archived policy-page HTML (text stays out of git); regenerate with fetch_snapshots.py
 j9_aipolicy/data/snapshots_raw/
+# cross-national archived policy-page HTML; regenerate with patient_scale.py / patient_round.py
+j9_aipolicy/crossnational/data/snapshots_raw/
+# raw HESA Figure-7 download (18 MB); regenerate with uk_hesa_get.py
+j9_aipolicy/crossnational/uk_hesa.csv
 # cached raw API pulls (CCD/EDFacts/CRDC) + per-state report-card downloads; regenerate with the fetchers
 j10_accountability/data/raw/
 

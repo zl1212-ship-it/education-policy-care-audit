@@ -1,0 +1,561 @@
+institution,unitid,state,control,carnegie,quarter,event_q,post,intl_share,total_enroll,ai_addressed,n_ai_terms,text_len,prohibition_present,detector_surveillance_present,misconduct_framing_present,sanction_present,permitted_use_present,disclosure_present,appeal_present,l2_protection_present,restrictive_idx,procedural_idx,net_restrictiveness,ai_governance_intensity
+Curtin University,9000001,AU,Public,R2,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2022Q2,-2,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2022Q3,-1,0,,,0,0.0,1450.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2022Q4,0,1,,,0,0.0,1510.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2023Q1,1,1,,,0,0.0,1518.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2023Q2,2,1,,,0,0.0,1522.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2023Q3,3,1,,,0,0.0,1645.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2023Q4,4,1,,,0,0.0,1645.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2024Q1,5,1,,,0,0.0,1661.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2024Q2,6,1,,,0,0.0,1661.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2024Q3,7,1,,,0,0.0,1709.0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,AU,Public,R2,2024Q4,8,1,,,1,1.0,1706.0,0,0,0,1,0,0,0,0,1,0,1,1
+Griffith University,9000002,AU,Public,R2,2021Q1,-7,0,,,0,0.0,2566.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2021Q2,-6,0,,,0,0.0,2467.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2021Q3,-5,0,,,0,0.0,678.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2021Q4,-4,0,,,0,0.0,678.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2022Q1,-3,0,,,0,0.0,677.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2022Q2,-2,0,,,0,0.0,677.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2022Q3,-1,0,,,0,0.0,677.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2022Q4,0,1,,,0,0.0,716.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2023Q1,1,1,,,0,0.0,632.0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,AU,Public,R2,2023Q2,2,1,,,1,4.0,651.0,0,0,1,1,0,0,0,0,2,0,2,2
+Griffith University,9000002,AU,Public,R2,2023Q3,3,1,,,1,4.0,651.0,0,0,1,1,0,0,0,0,2,0,2,2
+Griffith University,9000002,AU,Public,R2,2023Q4,4,1,,,1,6.0,677.0,0,0,1,1,0,0,0,0,2,0,2,2
+Griffith University,9000002,AU,Public,R2,2024Q1,5,1,,,1,6.0,677.0,0,0,1,1,0,0,0,0,2,0,2,2
+Griffith University,9000002,AU,Public,R2,2024Q2,6,1,,,1,6.0,677.0,0,0,1,1,0,0,0,0,2,0,2,2
+Griffith University,9000002,AU,Public,R2,2024Q3,7,1,,,1,6.0,677.0,0,0,1,1,0,0,0,0,2,0,2,2
+Griffith University,9000002,AU,Public,R2,2024Q4,8,1,,,1,6.0,677.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Sydney,9000003,AU,Public,R1,2021Q1,-7,0,,,0,0.0,1390.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2021Q2,-6,0,,,0,0.0,1390.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2021Q3,-5,0,,,0,0.0,1398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2021Q4,-4,0,,,0,0.0,1398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2022Q1,-3,0,,,0,0.0,1398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2022Q2,-2,0,,,0,0.0,1406.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2022Q3,-1,0,,,0,0.0,1406.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2022Q4,0,1,,,0,0.0,1398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2023Q1,1,1,,,0,0.0,1398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2023Q2,2,1,,,1,1.0,1546.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2023Q3,3,1,,,1,1.0,1546.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,AU,Public,R1,2023Q4,4,1,,,1,1.0,1596.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,AU,Public,R1,2024Q1,5,1,,,1,1.0,1591.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,AU,Public,R1,2024Q2,6,1,,,1,1.0,1588.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,AU,Public,R1,2024Q3,7,1,,,1,1.0,1583.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,AU,Public,R1,2024Q4,8,1,,,1,55.0,1549.0,0,1,1,1,1,1,0,0,3,2,1,5
+University of Wollongong,9000004,AU,Public,R2,2021Q1,-7,0,,,0,0.0,707.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2021Q2,-6,0,,,0,0.0,707.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2021Q3,-5,0,,,0,0.0,707.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2021Q4,-4,0,,,0,0.0,707.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2022Q1,-3,0,,,0,0.0,756.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2022Q2,-2,0,,,0,0.0,756.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2022Q3,-1,0,,,0,0.0,756.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2022Q4,0,1,,,0,0.0,757.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,AU,Public,R2,2023Q1,1,1,,,1,17.0,828.0,0,1,1,1,1,0,0,0,3,1,2,4
+University of Wollongong,9000004,AU,Public,R2,2023Q2,2,1,,,1,17.0,828.0,0,1,1,1,1,0,0,0,3,1,2,4
+University of Wollongong,9000004,AU,Public,R2,2023Q3,3,1,,,1,17.0,840.0,0,1,1,1,1,0,0,0,3,1,2,4
+University of Wollongong,9000004,AU,Public,R2,2023Q4,4,1,,,1,17.0,840.0,0,1,1,1,1,0,0,0,3,1,2,4
+University of Wollongong,9000004,AU,Public,R2,2024Q1,5,1,,,1,17.0,956.0,0,1,1,1,1,0,0,0,3,1,2,4
+University of Wollongong,9000004,AU,Public,R2,2024Q2,6,1,,,1,17.0,958.0,0,1,1,1,1,0,0,0,3,1,2,4
+University of Wollongong,9000004,AU,Public,R2,2024Q3,7,1,,,1,9.0,1940.0,1,1,1,0,1,1,0,0,3,2,1,5
+University of Wollongong,9000004,AU,Public,R2,2024Q4,8,1,,,1,7.0,1895.0,1,1,1,0,1,1,0,0,3,2,1,5
+McMaster University,9000005,CA,Public,R1,2021Q1,-7,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2021Q2,-6,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2021Q3,-5,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2021Q4,-4,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2022Q1,-3,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2022Q2,-2,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2022Q3,-1,0,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2022Q4,0,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2023Q1,1,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2023Q2,2,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2023Q3,3,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2023Q4,4,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2024Q1,5,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2024Q2,6,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2024Q3,7,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,CA,Public,R1,2024Q4,8,1,,,0,0.0,363.0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,CA,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,CA,Public,R1,2021Q2,-6,0,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2021Q3,-5,0,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2021Q4,-4,0,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2022Q1,-3,0,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2022Q2,-2,0,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2022Q3,-1,0,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2022Q4,0,1,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2023Q1,1,1,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2023Q2,2,1,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2023Q3,3,1,,,1,3.0,573.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2023Q4,4,1,,,1,3.0,832.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2024Q1,5,1,,,1,3.0,835.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2024Q2,6,1,,,1,3.0,835.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2024Q3,7,1,,,1,3.0,850.0,0,1,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,CA,Public,R1,2024Q4,8,1,,,1,3.0,850.0,0,1,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,CA,Public,R2,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2022Q2,-2,0,,,0,0.0,577.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2022Q3,-1,0,,,0,0.0,424.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2022Q4,0,1,,,0,0.0,427.0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,CA,Public,R2,2023Q1,1,1,,,1,33.0,921.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2023Q2,2,1,,,1,32.0,893.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2023Q3,3,1,,,1,41.0,1180.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2023Q4,4,1,,,1,41.0,1180.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2024Q1,5,1,,,1,53.0,1474.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2024Q2,6,1,,,1,51.0,1510.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2024Q3,7,1,,,1,51.0,1514.0,1,1,1,0,1,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,CA,Public,R2,2024Q4,8,1,,,1,51.0,1510.0,1,1,1,0,1,0,0,0,3,1,2,4
+University of British Columbia,9000008,CA,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2021Q4,-4,0,,,0,0.0,256.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2022Q1,-3,0,,,0,0.0,326.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2022Q2,-2,0,,,0,0.0,374.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2022Q3,-1,0,,,0,0.0,374.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2022Q4,0,1,,,0,0.0,417.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,CA,Public,R1,2023Q1,1,1,,,1,2.0,421.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,CA,Public,R1,2023Q2,2,1,,,1,2.0,433.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,CA,Public,R1,2023Q3,3,1,,,1,21.0,1164.0,1,0,1,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,CA,Public,R1,2023Q4,4,1,,,1,21.0,1164.0,1,0,1,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,CA,Public,R1,2024Q1,5,1,,,1,22.0,1170.0,1,0,1,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,CA,Public,R1,2024Q2,6,1,,,1,22.0,1170.0,1,0,1,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,CA,Public,R1,2024Q3,7,1,,,1,22.0,1170.0,1,0,1,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,CA,Public,R1,2024Q4,8,1,,,1,22.0,1170.0,1,0,1,0,0,0,0,0,2,0,2,2
+University of Guelph,9000009,CA,Public,R2,2021Q1,-7,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2021Q2,-6,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2021Q3,-5,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2021Q4,-4,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2022Q1,-3,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2022Q2,-2,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2022Q3,-1,0,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2022Q4,0,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2023Q1,1,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2023Q2,2,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2023Q3,3,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2023Q4,4,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2024Q1,5,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2024Q2,6,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2024Q3,7,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,CA,Public,R2,2024Q4,8,1,,,0,0.0,286.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2021Q3,-5,0,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2021Q4,-4,0,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2022Q1,-3,0,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2022Q2,-2,0,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2022Q3,-1,0,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2022Q4,0,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2023Q1,1,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2023Q2,2,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2023Q3,3,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2023Q4,4,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2024Q1,5,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2024Q2,6,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2024Q3,7,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,CA,Public,R1,2024Q4,8,1,,,0,0.0,1643.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2021Q1,-7,0,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2021Q2,-6,0,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2021Q3,-5,0,,,0,0.0,328.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2021Q4,-4,0,,,0,0.0,322.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2022Q1,-3,0,,,0,0.0,375.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2022Q2,-2,0,,,0,0.0,256.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2022Q3,-1,0,,,0,0.0,256.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2022Q4,0,1,,,0,0.0,256.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2023Q1,1,1,,,0,0.0,256.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,CA,Public,R1,2023Q2,2,1,,,1,17.0,703.0,1,0,1,1,0,1,0,0,3,1,2,4
+University of Toronto,9000011,CA,Public,R1,2023Q3,3,1,,,1,17.0,703.0,1,0,1,1,0,1,0,0,3,1,2,4
+University of Toronto,9000011,CA,Public,R1,2023Q4,4,1,,,1,17.0,703.0,1,0,1,1,0,1,0,0,3,1,2,4
+University of Toronto,9000011,CA,Public,R1,2024Q1,5,1,,,1,17.0,709.0,1,0,1,1,0,1,0,0,3,1,2,4
+University of Toronto,9000011,CA,Public,R1,2024Q2,6,1,,,1,15.0,585.0,1,0,1,1,0,0,0,0,3,0,3,3
+University of Toronto,9000011,CA,Public,R1,2024Q3,7,1,,,1,15.0,585.0,1,0,1,1,0,0,0,0,3,0,3,3
+University of Toronto,9000011,CA,Public,R1,2024Q4,8,1,,,1,15.0,585.0,1,0,1,1,0,0,0,0,3,0,3,3
+University of Waterloo,9000012,CA,Public,R1,2021Q1,-7,0,,,0,0.0,614.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2021Q2,-6,0,,,0,0.0,663.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2021Q3,-5,0,,,0,0.0,663.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2021Q4,-4,0,,,0,0.0,777.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2022Q1,-3,0,,,0,0.0,759.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2022Q2,-2,0,,,0,0.0,759.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2022Q3,-1,0,,,0,0.0,759.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2022Q4,0,1,,,0,0.0,759.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,CA,Public,R1,2023Q1,1,1,,,1,4.0,825.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,CA,Public,R1,2023Q2,2,1,,,1,23.0,865.0,0,0,1,0,1,1,0,0,1,2,-1,3
+University of Waterloo,9000012,CA,Public,R1,2023Q3,3,1,,,1,23.0,865.0,0,0,1,0,1,1,0,0,1,2,-1,3
+University of Waterloo,9000012,CA,Public,R1,2023Q4,4,1,,,1,31.0,938.0,0,0,1,0,1,1,0,0,1,2,-1,3
+University of Waterloo,9000012,CA,Public,R1,2024Q1,5,1,,,1,34.0,994.0,0,0,1,0,1,1,0,0,1,2,-1,3
+University of Waterloo,9000012,CA,Public,R1,2024Q2,6,1,,,1,38.0,1046.0,0,0,1,0,1,1,0,0,1,2,-1,3
+University of Waterloo,9000012,CA,Public,R1,2024Q3,7,1,,,1,61.0,1754.0,0,0,1,0,1,1,0,0,1,2,-1,3
+University of Waterloo,9000012,CA,Public,R1,2024Q4,8,1,,,1,58.0,1726.0,0,0,1,0,1,1,1,0,1,3,-2,4
+University of Windsor,9000013,CA,Public,R2,2021Q1,-7,0,,,0,0.0,454.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2021Q2,-6,0,,,0,0.0,405.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2021Q3,-5,0,,,0,0.0,408.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2021Q4,-4,0,,,0,0.0,408.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2022Q1,-3,0,,,0,0.0,421.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2022Q2,-2,0,,,0,0.0,421.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2022Q3,-1,0,,,0,0.0,421.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2022Q4,0,1,,,0,0.0,415.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2023Q1,1,1,,,0,0.0,415.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2023Q2,2,1,,,0,0.0,410.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2023Q3,3,1,,,0,0.0,410.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2023Q4,4,1,,,0,0.0,410.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2024Q1,5,1,,,0,0.0,405.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2024Q2,6,1,,,0,0.0,405.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2024Q3,7,1,,,0,0.0,405.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,CA,Public,R2,2024Q4,8,1,,,0,0.0,405.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2021Q1,-7,0,,,0,0.0,1045.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2021Q2,-6,0,,,0,0.0,1045.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2021Q3,-5,0,,,0,0.0,1063.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2021Q4,-4,0,,,0,0.0,2502.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2022Q1,-3,0,,,0,0.0,2502.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2022Q2,-2,0,,,0,0.0,2517.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2022Q3,-1,0,,,0,0.0,2517.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2022Q4,0,1,,,0,0.0,2517.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2023Q1,1,1,,,0,0.0,2502.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2023Q2,2,1,,,0,0.0,2502.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2023Q3,3,1,,,0,0.0,2502.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2023Q4,4,1,,,0,0.0,2539.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2024Q1,5,1,,,0,0.0,2539.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2024Q2,6,1,,,0,0.0,2523.0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,UK,Public,R1,2024Q3,7,1,,,1,16.0,2878.0,0,1,0,0,0,0,0,0,1,0,1,1
+Imperial College London,9000014,UK,Public,R1,2024Q4,8,1,,,1,16.0,2878.0,0,1,0,0,0,0,0,0,1,0,1,1
+University College London,9000015,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2022Q2,-2,0,,,0,0.0,380.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2022Q3,-1,0,,,0,0.0,380.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2022Q4,0,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2023Q1,1,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2023Q2,2,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2023Q3,3,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2023Q4,4,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2024Q1,5,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2024Q2,6,1,,,0,0.0,385.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2024Q3,7,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,UK,Public,R1,2024Q4,8,1,,,0,0.0,388.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2021Q1,-7,0,,,0,0.0,447.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2021Q2,-6,0,,,0,0.0,451.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2021Q3,-5,0,,,0,0.0,451.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2021Q4,-4,0,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2022Q1,-3,0,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2022Q2,-2,0,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2022Q3,-1,0,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2022Q4,0,1,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2023Q1,1,1,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,UK,Public,R1,2023Q2,2,1,,,1,1.0,402.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,UK,Public,R1,2023Q3,3,1,,,1,1.0,402.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,UK,Public,R1,2023Q4,4,1,,,1,1.0,402.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,UK,Public,R1,2024Q1,5,1,,,1,1.0,393.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,UK,Public,R1,2024Q2,6,1,,,1,1.0,393.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,UK,Public,R1,2024Q3,7,1,,,1,1.0,393.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,UK,Public,R1,2024Q4,8,1,,,1,1.0,393.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Edinburgh,9000017,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2021Q3,-5,0,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2021Q4,-4,0,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2022Q1,-3,0,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2022Q2,-2,0,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2022Q3,-1,0,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2022Q4,0,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2023Q1,1,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2023Q2,2,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2023Q3,3,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2023Q4,4,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2024Q1,5,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2024Q2,6,1,,,0,0.0,266.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2024Q3,7,1,,,0,0.0,267.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,UK,Public,R1,2024Q4,8,1,,,0,0.0,267.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2021Q1,-7,0,,,0,0.0,4234.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2021Q2,-6,0,,,0,0.0,4298.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2021Q3,-5,0,,,0,0.0,4298.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2021Q4,-4,0,,,0,0.0,4304.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2022Q1,-3,0,,,0,0.0,4239.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2022Q2,-2,0,,,0,0.0,4217.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2022Q3,-1,0,,,0,0.0,4197.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2022Q4,0,1,,,0,0.0,4197.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2023Q1,1,1,,,0,0.0,4199.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2023Q2,2,1,,,0,0.0,4191.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2023Q3,3,1,,,0,0.0,4191.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2023Q4,4,1,,,0,0.0,4188.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2024Q1,5,1,,,0,0.0,4192.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2024Q2,6,1,,,0,0.0,4192.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2024Q3,7,1,,,0,0.0,4193.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,UK,Public,R1,2024Q4,8,1,,,0,0.0,4111.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2021Q1,-7,0,,,0,0.0,361.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2021Q2,-6,0,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2021Q3,-5,0,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2021Q4,-4,0,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2022Q1,-3,0,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2022Q2,-2,0,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2022Q3,-1,0,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2022Q4,0,1,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2023Q1,1,1,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2023Q2,2,1,,,0,0.0,354.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2023Q3,3,1,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2023Q4,4,1,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2024Q1,5,1,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2024Q2,6,1,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2024Q3,7,1,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,UK,Public,R2,2024Q4,8,1,,,0,0.0,350.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2021Q4,-4,0,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2022Q1,-3,0,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2022Q2,-2,0,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2022Q3,-1,0,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2022Q4,0,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2023Q1,1,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2023Q2,2,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2023Q3,3,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2023Q4,4,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2024Q1,5,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2024Q2,6,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2024Q3,7,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,UK,Public,R1,2024Q4,8,1,,,0,0.0,413.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2021Q2,-6,0,,,0,0.0,746.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2021Q3,-5,0,,,0,0.0,749.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2021Q4,-4,0,,,0,0.0,749.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2022Q1,-3,0,,,0,0.0,749.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2022Q2,-2,0,,,0,0.0,758.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2022Q3,-1,0,,,0,0.0,758.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2022Q4,0,1,,,0,0.0,754.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2023Q1,1,1,,,0,0.0,754.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,UK,Public,R1,2023Q2,2,1,,,1,1.0,754.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Bristol,9000024,UK,Public,R1,2023Q3,3,1,,,1,1.0,754.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Bristol,9000024,UK,Public,R1,2023Q4,4,1,,,1,1.0,754.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Bristol,9000024,UK,Public,R1,2024Q1,5,1,,,1,1.0,754.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Bristol,9000024,UK,Public,R1,2024Q2,6,1,,,1,3.0,876.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Bristol,9000024,UK,Public,R1,2024Q3,7,1,,,1,3.0,876.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Bristol,9000024,UK,Public,R1,2024Q4,8,1,,,1,3.0,879.0,0,0,1,1,0,0,0,0,2,0,2,2
+University of Birmingham,9000026,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2022Q2,-2,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2022Q3,-1,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2022Q4,0,1,,,0,0.0,1181.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2023Q1,1,1,,,0,0.0,1181.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,UK,Public,R1,2023Q2,2,1,,,1,1.0,1214.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Birmingham,9000026,UK,Public,R1,2023Q3,3,1,,,1,1.0,1214.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Birmingham,9000026,UK,Public,R1,2023Q4,4,1,,,1,1.0,1214.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Birmingham,9000026,UK,Public,R1,2024Q1,5,1,,,1,1.0,1217.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Birmingham,9000026,UK,Public,R1,2024Q2,6,1,,,1,1.0,1217.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Birmingham,9000026,UK,Public,R1,2024Q3,7,1,,,1,1.0,1217.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Birmingham,9000026,UK,Public,R1,2024Q4,8,1,,,1,7.0,1329.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Nottingham,9000028,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2021Q2,-6,0,,,0,0.0,5320.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2021Q3,-5,0,,,0,0.0,5320.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2021Q4,-4,0,,,0,0.0,4283.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2022Q1,-3,0,,,0,0.0,4281.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2022Q2,-2,0,,,0,0.0,4281.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2022Q3,-1,0,,,0,0.0,4302.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2022Q4,0,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2023Q1,1,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2023Q2,2,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2023Q3,3,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2023Q4,4,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2024Q1,5,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2024Q2,6,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2024Q3,7,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,UK,Public,R1,2024Q4,8,1,,,0,0.0,4483.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2021Q1,-7,0,,,0,0.0,820.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2021Q2,-6,0,,,0,0.0,841.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2021Q3,-5,0,,,0,0.0,853.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2021Q4,-4,0,,,0,0.0,853.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2022Q1,-3,0,,,0,0.0,859.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2022Q2,-2,0,,,0,0.0,935.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2022Q3,-1,0,,,0,0.0,941.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2022Q4,0,1,,,0,0.0,941.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2023Q1,1,1,,,0,0.0,914.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2023Q2,2,1,,,0,0.0,914.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2023Q3,3,1,,,0,0.0,914.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2023Q4,4,1,,,0,0.0,914.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2024Q1,5,1,,,0,0.0,918.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2024Q2,6,1,,,0,0.0,919.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2024Q3,7,1,,,0,0.0,919.0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,UK,Public,R1,2024Q4,8,1,,,0,0.0,919.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2021Q1,-7,0,,,0,0.0,2902.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2021Q2,-6,0,,,0,0.0,2902.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2021Q3,-5,0,,,0,0.0,2902.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2021Q4,-4,0,,,0,0.0,2709.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2022Q1,-3,0,,,0,0.0,2709.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2022Q2,-2,0,,,0,0.0,2709.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2022Q3,-1,0,,,0,0.0,2714.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2022Q4,0,1,,,0,0.0,2714.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2023Q1,1,1,,,0,0.0,839.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,AU,Public,R1,2023Q2,2,1,,,1,1.0,858.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,AU,Public,R1,2023Q3,3,1,,,1,1.0,858.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,AU,Public,R1,2023Q4,4,1,,,1,1.0,860.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,AU,Public,R1,2024Q1,5,1,,,1,1.0,860.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,AU,Public,R1,2024Q2,6,1,,,1,1.0,860.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,AU,Public,R1,2024Q3,7,1,,,1,1.0,860.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,AU,Public,R1,2024Q4,8,1,,,1,1.0,860.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Queensland,9000046,AU,Public,R1,2021Q1,-7,0,,,0,0.0,2572.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2021Q2,-6,0,,,0,0.0,2572.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2021Q3,-5,0,,,0,0.0,2572.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2021Q4,-4,0,,,0,0.0,2572.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2022Q1,-3,0,,,0,0.0,1964.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2022Q2,-2,0,,,0,0.0,1964.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2022Q3,-1,0,,,0,0.0,1964.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2022Q4,0,1,,,0,0.0,2123.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2023Q1,1,1,,,0,0.0,2146.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,AU,Public,R1,2023Q2,2,1,,,1,11.0,2451.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Queensland,9000046,AU,Public,R1,2023Q3,3,1,,,1,11.0,2451.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Queensland,9000046,AU,Public,R1,2023Q4,4,1,,,1,11.0,2451.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Queensland,9000046,AU,Public,R1,2024Q1,5,1,,,1,11.0,2465.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Queensland,9000046,AU,Public,R1,2024Q2,6,1,,,1,11.0,3291.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Queensland,9000046,AU,Public,R1,2024Q3,7,1,,,1,11.0,3291.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Queensland,9000046,AU,Public,R1,2024Q4,8,1,,,1,11.0,3291.0,0,1,1,0,1,0,0,0,2,1,1,3
+University of Calgary,9000050,CA,Public,R1,2021Q1,-7,0,,,0,0.0,905.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2021Q2,-6,0,,,0,0.0,905.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2021Q3,-5,0,,,0,0.0,905.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2021Q4,-4,0,,,0,0.0,1024.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2022Q1,-3,0,,,0,0.0,1024.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2022Q2,-2,0,,,0,0.0,1551.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2022Q3,-1,0,,,0,0.0,1376.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2022Q4,0,1,,,0,0.0,1379.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2023Q1,1,1,,,0,0.0,1379.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2023Q2,2,1,,,0,0.0,1408.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2023Q3,3,1,,,0,0.0,1408.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2023Q4,4,1,,,0,0.0,1408.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2024Q1,5,1,,,0,0.0,1387.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2024Q2,6,1,,,0,0.0,1387.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2024Q3,7,1,,,0,0.0,1387.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,CA,Public,R1,2024Q4,8,1,,,1,11.0,1506.0,0,0,1,0,0,0,0,0,1,0,1,1
+Western University,9000051,CA,Public,R1,2021Q1,-7,0,,,0,0.0,311.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2021Q2,-6,0,,,0,0.0,340.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2021Q3,-5,0,,,0,0.0,311.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2021Q4,-4,0,,,0,0.0,311.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2022Q1,-3,0,,,0,0.0,311.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2022Q2,-2,0,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2022Q3,-1,0,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2022Q4,0,1,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2023Q1,1,1,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2023Q2,2,1,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2023Q3,3,1,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2023Q4,4,1,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2024Q1,5,1,,,0,0.0,357.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2024Q2,6,1,,,0,0.0,375.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2024Q3,7,1,,,0,0.0,375.0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,CA,Public,R1,2024Q4,8,1,,,0,0.0,375.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2022Q2,-2,0,,,0,0.0,3713.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2022Q3,-1,0,,,0,0.0,3713.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2022Q4,0,1,,,0,0.0,3932.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2023Q1,1,1,,,0,0.0,3932.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2023Q2,2,1,,,0,0.0,3932.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2023Q3,3,1,,,0,0.0,3932.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,CA,Public,R1,2023Q4,4,1,,,1,74.0,5092.0,1,0,1,1,1,1,0,0,3,2,1,5
+University of Ottawa,9000052,CA,Public,R1,2024Q1,5,1,,,1,74.0,5060.0,1,0,1,1,1,1,0,0,3,2,1,5
+University of Ottawa,9000052,CA,Public,R1,2024Q2,6,1,,,1,74.0,5062.0,1,0,1,1,1,1,0,0,3,2,1,5
+University of Ottawa,9000052,CA,Public,R1,2024Q3,7,1,,,1,74.0,5048.0,1,0,1,1,1,1,0,0,3,2,1,5
+University of Ottawa,9000052,CA,Public,R1,2024Q4,8,1,,,1,74.0,4939.0,1,0,1,1,1,1,0,0,3,2,1,5
+Simon Fraser University,9000053,CA,Public,R1,2021Q1,-7,0,,,0,0.0,333.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2021Q2,-6,0,,,0,0.0,337.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2021Q3,-5,0,,,0,0.0,337.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2021Q4,-4,0,,,0,0.0,337.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2022Q1,-3,0,,,0,0.0,337.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2022Q2,-2,0,,,0,0.0,337.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2022Q3,-1,0,,,0,0.0,337.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2022Q4,0,1,,,0,0.0,339.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2023Q1,1,1,,,0,0.0,339.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2023Q2,2,1,,,0,0.0,339.0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,CA,Public,R1,2023Q3,3,1,,,1,1.0,347.0,0,0,1,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,CA,Public,R1,2023Q4,4,1,,,1,1.0,347.0,0,0,1,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,CA,Public,R1,2024Q1,5,1,,,1,1.0,347.0,0,0,1,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,CA,Public,R1,2024Q2,6,1,,,1,1.0,347.0,0,0,1,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,CA,Public,R1,2024Q3,7,1,,,1,1.0,347.0,0,0,1,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,CA,Public,R1,2024Q4,8,1,,,1,1.0,347.0,0,0,1,0,0,0,0,0,1,0,1,1
+University of Adelaide,9000054,AU,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2022Q2,-2,0,,,0,0.0,169.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2022Q3,-1,0,,,0,0.0,440.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2022Q4,0,1,,,0,0.0,607.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2023Q1,1,1,,,1,12.0,423.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2023Q2,2,1,,,1,15.0,441.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2023Q3,3,1,,,1,15.0,441.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2023Q4,4,1,,,1,15.0,441.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2024Q1,5,1,,,1,4.0,289.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2024Q2,6,1,,,1,4.0,289.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2024Q3,7,1,,,1,4.0,289.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,AU,Public,R1,2024Q4,8,1,,,1,4.0,289.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2021Q1,-7,0,,,0,0.0,868.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2021Q2,-6,0,,,0,0.0,833.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2021Q3,-5,0,,,0,0.0,870.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2021Q4,-4,0,,,0,0.0,884.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2022Q1,-3,0,,,0,0.0,939.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2022Q2,-2,0,,,0,0.0,923.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2022Q3,-1,0,,,0,0.0,923.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2022Q4,0,1,,,0,0.0,912.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2023Q1,1,1,,,0,0.0,925.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2023Q2,2,1,,,0,0.0,925.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2023Q3,3,1,,,0,0.0,885.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2023Q4,4,1,,,0,0.0,885.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2024Q1,5,1,,,0,0.0,513.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2024Q2,6,1,,,0,0.0,510.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2024Q3,7,1,,,0,0.0,510.0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,AU,Public,R1,2024Q4,8,1,,,0,0.0,452.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2021Q2,-6,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2021Q3,-5,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2021Q4,-4,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2022Q1,-3,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2022Q2,-2,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2022Q3,-1,0,,,0,0.0,722.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2022Q4,0,1,,,0,0.0,722.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2023Q1,1,1,,,0,0.0,722.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2023Q2,2,1,,,0,0.0,674.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2023Q3,3,1,,,0,0.0,674.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2023Q4,4,1,,,0,0.0,674.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,UK,Public,R1,2024Q1,5,1,,,1,2.0,703.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Glasgow,9000056,UK,Public,R1,2024Q2,6,1,,,1,2.0,703.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Glasgow,9000056,UK,Public,R1,2024Q3,7,1,,,1,2.0,703.0,0,0,1,0,1,0,0,0,1,1,0,2
+University of Glasgow,9000056,UK,Public,R1,2024Q4,8,1,,,1,2.0,668.0,0,0,1,0,1,0,0,0,1,1,0,2
+Durham University,9000057,UK,Public,R1,2021Q1,-7,0,,,0,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2021Q2,-6,0,,,0,0.0,3438.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2021Q3,-5,0,,,0,0.0,3438.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2021Q4,-4,0,,,0,0.0,3622.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2022Q1,-3,0,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2022Q2,-2,0,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2022Q3,-1,0,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2022Q4,0,1,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2023Q1,1,1,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2023Q2,2,1,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2023Q3,3,1,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2023Q4,4,1,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2024Q1,5,1,,,0,0.0,3629.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2024Q2,6,1,,,0,0.0,3663.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2024Q3,7,1,,,0,0.0,3663.0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,UK,Public,R1,2024Q4,8,1,,,0,0.0,3663.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2021Q1,-7,0,,,0,0.0,385.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2021Q2,-6,0,,,0,0.0,380.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2021Q3,-5,0,,,0,0.0,380.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2021Q4,-4,0,,,0,0.0,380.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2022Q1,-3,0,,,0,0.0,381.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2022Q2,-2,0,,,0,0.0,381.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2022Q3,-1,0,,,0,0.0,386.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2022Q4,0,1,,,0,0.0,399.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2023Q1,1,1,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2023Q2,2,1,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2023Q3,3,1,,,0,0.0,398.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2023Q4,4,1,,,0,0.0,396.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2024Q1,5,1,,,0,0.0,396.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2024Q2,6,1,,,0,0.0,396.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2024Q3,7,1,,,0,0.0,396.0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,UK,Public,R1,2024Q4,8,1,,,0,0.0,381.0,0,0,0,0,0,0,0,0,0,0,0,0

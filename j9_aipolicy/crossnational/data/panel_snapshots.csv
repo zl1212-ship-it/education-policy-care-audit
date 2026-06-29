@@ -1,0 +1,538 @@
+institution,unitid,page_type,original_url,timestamp,ai_addressed,n_ai_terms,text_len,prohibition,prohibition_present,detector_surveillance,detector_surveillance_present,misconduct_framing,misconduct_framing_present,sanction,sanction_present,permitted_use,permitted_use_present,disclosure,disclosure_present,appeal,appeal_present,l2_protection,l2_protection_present,restrictive_idx,procedural_idx,net_restrictiveness,ai_governance_intensity
+Curtin University,9000001,integrity,http://www.curtin.edu.au/about/governance/academic-integrity/,20230927181848,0,0,1645,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20220802113308,0,0,1460,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20220812154058,0,0,1450,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20221024224543,0,0,1487,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20221204155855,0,0,1510,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20230306103413,0,0,1518,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20230331222122,0,0,1526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20230528200941,0,0,1522,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20231117023507,0,0,1613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20240109103646,0,0,1600,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20240327232112,0,0,1661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20240501234444,0,0,1661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20240722082525,0,0,1692,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20240908232145,0,0,1709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20241126232936,1,1,1706,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,1
+Curtin University,9000001,integrity,https://www.curtin.edu.au/about/governance/academic-integrity/,20241231085301,1,1,1712,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,1
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20210306141843,0,0,2566,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20210623081533,0,0,678,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20220119132405,0,0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20220324122206,0,0,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20221113224519,0,0,716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20221115070746,0,0,716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20230306041530,0,0,632,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20230425012503,0,0,632,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,integrity,https://www.griffith.edu.au/academic-integrity,20240118100221,0,0,650,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,ai,https://www.griffith.edu.au/academic-integrity/why-ai-matters,20210124164337,0,0,2467,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,ai,https://www.griffith.edu.au/academic-integrity/why-ai-matters,20210924184110,0,0,624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Griffith University,9000002,ai,https://www.griffith.edu.au/academic-integrity/why-ai-matters,20230522013513,1,4,651,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+Griffith University,9000002,ai,https://www.griffith.edu.au/academic-integrity/why-ai-matters,20231215040526,1,6,677,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20210227161621,0,0,1390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20210725190624,0,0,1398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20211125132139,0,0,1398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20220120191019,0,0,1398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20220521025229,0,0,1406,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20221108113700,0,0,1398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20230201155824,0,0,1398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20230605202315,1,1,1546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20231204000300,1,1,1596,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20240224154509,1,1,1591,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20240423142840,1,1,1588,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20240620041815,1,1,1588,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20240723113847,1,1,1583,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20240802060719,1,1,1583,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20241007224532,1,1,1275,0,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,2,0,2,2
+University of Sydney,9000003,integrity,https://www.sydney.edu.au/students/academic-integrity.html,20241127005543,1,1,1272,0,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,2,0,2,2
+University of Sydney,9000003,ai,https://www.sydney.edu.au/students/academic-integrity/artificial-intelligence.html,20241005212702,1,55,1571,0,0,7,1,4,1,1,1,7,1,1,1,0,0,0,0,3,2,1,5
+University of Sydney,9000003,ai,https://www.sydney.edu.au/students/academic-integrity/artificial-intelligence.html,20241015230733,1,55,1571,0,0,7,1,4,1,1,1,7,1,1,1,0,0,0,0,3,2,1,5
+University of Sydney,9000003,ai,https://www.sydney.edu.au/students/academic-integrity/artificial-intelligence.html,20241218144522,1,55,1549,0,0,7,1,4,1,1,1,7,1,1,1,0,0,0,0,3,2,1,5
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20210307144759,0,0,707,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20210420100852,0,0,707,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20220301235725,0,0,746,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20220307153210,0,0,756,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20221017203537,0,0,757,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20221104054001,0,0,757,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20230307065603,1,2,761,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20231105060948,1,2,783,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20240308163648,1,2,956,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20240519091458,1,2,958,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20240803014950,0,0,957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20241015155949,0,0,957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,integrity,https://www.uow.edu.au/about/governance/academic-integrity/,20241103050422,0,0,957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20230216153805,1,17,825,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20230307065552,1,17,825,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20230330060612,1,17,828,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20230331205550,1,17,828,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20230924145559,1,17,840,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20240403193659,1,17,840,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20240424103432,1,17,837,0,0,1,1,10,1,1,1,1,1,0,0,0,0,0,0,3,1,2,4
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20240725110335,1,9,1940,4,1,1,1,4,1,0,0,5,1,1,1,0,0,0,0,3,2,1,5
+University of Wollongong,9000004,ai,https://www.uow.edu.au/about/governance/academic-integrity/students/ai_chatgpt/,20241022194404,1,7,1895,4,1,1,1,4,1,0,0,5,1,1,1,0,0,0,0,3,2,1,5
+McMaster University,9000005,integrity,https://www.mcmaster.ca/academicintegrity/,20210107060719,0,0,378,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McMaster University,9000005,integrity,https://www.mcmaster.ca/academicintegrity/,20210126183743,0,0,363,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20210417080055,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20210810105459,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20210910093417,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20211021012944,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20211110051939,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20220110042530,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20220125160935,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20220210042131,0,0,479,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20220310114020,0,0,476,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20220710071422,0,0,462,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20220910131925,0,0,453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20221210135639,0,0,453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20230411163524,0,0,455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20231206201634,0,0,832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20240304160127,0,0,835,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,integrity,https://www.queensu.ca/academicintegrity/,20240718224747,0,0,850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Queen's University,9000006,ai,https://www.queensu.ca/academicintegrity/ai-queens,20210428113235,1,3,573,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Queen's University,9000006,ai,https://www.queensu.ca/academicintegrity/ai-queens,20211201165745,1,3,573,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20220613233556,0,0,577,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20220711090905,0,0,577,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20220925202611,0,0,424,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20221208231106,0,0,427,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20230521173954,1,1,380,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20230616020533,1,1,380,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20230805033825,1,1,383,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20230928032949,1,1,500,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20240116212236,1,5,420,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20240131073907,1,5,420,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20240410144541,1,5,420,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20240713224116,1,5,421,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20240811163149,1,5,424,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20240903204558,1,5,424,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20241113001352,1,5,561,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,integrity,https://www.torontomu.ca/academicintegrity/,20241203111612,1,5,561,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20230203212608,1,33,921,2,1,5,1,4,1,0,0,1,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20230224011454,1,33,921,2,1,5,1,4,1,0,0,1,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20230315153811,1,33,921,2,1,5,1,4,1,0,0,1,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20230403212318,1,32,893,2,1,3,1,5,1,0,0,1,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20230924141806,1,41,1180,2,1,3,1,5,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20240222211636,1,53,1474,5,1,3,1,9,1,0,0,1,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20240623082833,1,51,1510,5,1,3,1,11,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20240812144300,1,51,1514,5,1,3,1,11,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20240913170208,1,51,1514,5,1,3,1,11,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20241013185336,1,51,1510,5,1,3,1,11,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20241113004829,1,51,1510,5,1,3,1,11,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+Toronto Metropolitan University,9000007,ai,https://www.torontomu.ca/academicintegrity/ai/,20241203111612,1,51,1510,5,1,3,1,11,1,0,0,2,1,0,0,0,0,0,0,3,1,2,4
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20211005185614,0,0,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20211018191313,0,0,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20220216214222,0,0,326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20220615013243,0,0,374,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20220805203243,0,0,374,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20221002152444,0,0,421,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20221126170728,0,0,417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20230327161227,1,2,421,0,0,0,0,4,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20230515103010,1,2,439,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20230613000651,1,2,433,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20230903203753,1,3,432,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20240111200443,1,3,414,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20240304041017,1,3,414,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20240616114848,1,3,414,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20240812143618,1,3,407,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,integrity,https://academicintegrity.ubc.ca/,20241121114732,1,3,410,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of British Columbia,9000008,ai,https://academicintegrity.ubc.ca/2023/02/15/the-opportunities-of-chatgpt/,20230714035310,1,21,1164,1,1,0,0,3,1,0,0,0,0,0,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,ai,https://academicintegrity.ubc.ca/2023/02/15/the-opportunities-of-chatgpt/,20240201153725,1,22,1170,1,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,2,0,2,2
+University of British Columbia,9000008,ai,https://academicintegrity.ubc.ca/2023/02/15/the-opportunities-of-chatgpt/,20240530224518,1,22,1170,1,1,0,0,2,1,0,0,0,0,0,0,0,0,0,0,2,0,2,2
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210125003140,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210302224916,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210413061948,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210504160343,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210509191854,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210525035207,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20210803101824,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20211018195130,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20220303190019,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20220518025715,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20221007114308,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20230127204334,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20230520113504,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Guelph,9000009,integrity,https://academicintegrity.uoguelph.ca/,20230526134335,0,0,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,integrity,https://umanitoba.ca/academicintegrity/month/,20210918171907,0,0,1643,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manitoba,9000010,integrity,https://umanitoba.ca/academicintegrity/month/,20240327072103,0,0,1643,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20210125102137,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20210414004316,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20210925224023,0,0,328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20211204220355,0,0,322,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20220303012842,0,0,375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20220624085735,0,0,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20221001111622,0,0,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20230307174218,0,0,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20230411031143,0,0,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20230829141617,0,0,129,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20240108155517,0,0,129,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20240302195618,0,0,118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20240504215306,0,0,118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20240614161022,0,0,118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20240905204935,0,0,118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,integrity,https://www.academicintegrity.utoronto.ca/,20241108035139,0,0,118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20230402123307,1,17,703,1,1,0,0,3,1,3,1,0,0,1,1,0,0,0,0,3,1,2,4
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20230709205932,1,17,703,1,1,0,0,3,1,3,1,0,0,1,1,0,0,0,0,3,1,2,4
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20231211063636,1,17,703,1,1,0,0,3,1,3,1,0,0,1,1,0,0,0,0,3,1,2,4
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20240108154008,1,17,705,1,1,0,0,3,1,3,1,0,0,1,1,0,0,0,0,3,1,2,4
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20240120105422,1,17,703,1,1,0,0,3,1,3,1,0,0,1,1,0,0,0,0,3,1,2,4
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20240225224256,1,17,709,1,1,0,0,3,1,3,1,0,0,1,1,0,0,0,0,3,1,2,4
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20240521140323,1,15,585,1,1,0,0,3,1,3,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20240614171150,1,15,585,1,1,0,0,3,1,3,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20240908232357,1,15,585,1,1,0,0,3,1,3,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of Toronto,9000011,ai,https://www.academicintegrity.utoronto.ca/perils-and-pitfalls/using-chatgpt-or-other-ai-tool-on-a-marked-assessment/,20241203150516,1,15,585,1,1,0,0,3,1,3,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of Waterloo,9000012,integrity,http://uwaterloo.ca/academic-integrity/,20220305032606,0,0,759,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity,20240522000036,1,5,757,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity,20241001185214,1,3,607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity,20241109014453,1,3,626,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,-1,1
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20210123133911,0,0,614,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20210425044255,0,0,663,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20210510165601,0,0,663,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20211122140606,0,0,777,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20220228185755,0,0,759,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20220503024233,0,0,754,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20230306185035,1,4,825,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20230324203005,1,4,825,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20230420230513,1,4,825,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20230530085839,1,4,815,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20240121172033,1,6,738,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,integrity,https://uwaterloo.ca/academic-integrity/,20240222005350,1,6,743,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20230408231917,1,23,875,0,0,0,0,2,1,0,0,2,1,3,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20230604175008,1,23,865,0,0,0,0,2,1,0,0,2,1,3,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20231101062340,1,31,938,0,0,0,0,2,1,0,0,2,1,3,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20240216081050,1,34,994,0,0,0,0,2,1,0,0,2,1,3,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20240415192218,1,38,1046,0,0,0,0,2,1,0,0,2,1,3,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20240827231157,1,61,1754,0,0,0,0,1,1,0,0,4,1,7,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20241007205330,1,58,1726,0,0,0,0,1,1,0,0,4,1,7,1,0,0,0,0,1,2,-1,3
+University of Waterloo,9000012,ai,https://uwaterloo.ca/academic-integrity/artificial-intelligence-and-chatgpt,20241009004731,1,58,1726,0,0,0,0,1,1,0,0,4,1,7,1,0,0,0,0,1,2,-1,3
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20210304085146,0,0,454,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20210410230328,0,0,454,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20210616222052,0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20210622140357,0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20210923140657,0,0,408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20220122195726,0,0,421,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20220302054225,0,0,421,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20221219053830,0,0,415,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20230320182204,0,0,415,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20230608052011,0,0,410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20240114094752,0,0,402,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20240123201648,0,0,414,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20240211061133,0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20240226000700,0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20240301195644,0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Windsor,9000013,integrity,https://www.uwindsor.ca/academic-integrity/,20241208174702,0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20210126224526,0,0,1045,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20210415043141,0,0,1044,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20210425032433,0,0,1044,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20211005213231,0,0,1131,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20211219020844,0,0,2502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,http://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20220120063612,0,0,2502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20210507171734,0,0,1045,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20210723201505,0,0,1063,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20211103082923,0,0,1133,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20220123003349,0,0,2502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20220529001750,0,0,2517,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20230105213016,0,0,2490,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20230131013408,0,0,2500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20231003084142,0,0,2539,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20240524022107,0,0,2523,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,integrity,https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/complaints-appeals-and-discipline/,20241208145751,0,0,2304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Imperial College London,9000014,ai,https://www.imperial.ac.uk/students/academic-support/ai-and-study-guidance-hub/,20240720073849,1,16,2878,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20220626170907,0,0,380,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20220627120507,0,0,380,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20221129015142,0,0,388,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20230128165614,0,0,388,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20240418111052,0,0,385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20240520160142,0,0,385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20240924082323,0,0,388,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20241017150236,0,0,388,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University College London,9000015,integrity,https://www.ucl.ac.uk/students/academic-support/study-skills/discipline-specific-skills-and-interests,20241111032054,0,0,388,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20210116124740,0,0,447,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20210416235656,0,0,451,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20210618235641,0,0,451,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20211102184044,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20220121154331,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20220301222924,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20220320092019,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20220601014159,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20220830103801,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20221218131808,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20230521173015,1,1,402,0,0,0,0,9,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20230623062932,1,1,402,0,0,0,0,9,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20240222115823,1,1,393,0,0,0,0,9,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20240508210620,1,1,393,0,0,0,0,9,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20241004043207,1,1,393,0,0,0,0,9,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Cambridge,9000016,integrity,https://www.plagiarism.admin.cam.ac.uk/,20241212124326,1,1,393,0,0,0,0,9,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20210730141259,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20211028021218,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20220216172138,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20220518033023,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20220927111942,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20221211124758,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20230606194740,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20231111040219,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20231208160343,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20240125111013,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20240126143600,0,0,266,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Edinburgh,9000017,integrity,https://www.ed.ac.uk/students/academic-life/conduct,20240919212754,0,0,267,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20210108141704,0,0,4234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20210419180425,0,0,4299,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20210628113408,0,0,4298,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20211016085509,0,0,4300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20211214115214,0,0,4304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20220214144938,0,0,4239,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20220604114711,0,0,4217,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20220904111654,0,0,4197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20230101094507,0,0,4199,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20230401141648,0,0,4188,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20230607023019,0,0,4191,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20231128031946,0,0,4188,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20240301194914,0,0,4192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20240701204031,0,0,4193,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20241001053459,0,0,4111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Oxford,9000018,integrity,https://www.ox.ac.uk/students/academic/conduct,20250101091623,0,0,4105,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,20210226215559,0,0,361,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,20210517191215,0,0,354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,20210924152032,0,0,354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,20220302034414,0,0,354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,20221026143722,0,0,354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of St Andrews,9000019,integrity,https://www.st-andrews.ac.uk/students/academic/academic-advising/glossary/academic-misconduct/,20230808105708,0,0,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,integrity,http://www.regulations.manchester.ac.uk/academic/academic-malpractice/,20220527024710,0,0,315,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,integrity,https://www.regulations.manchester.ac.uk/academic/academic-malpractice/,20240413215834,0,0,315,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,integrity,https://www.regulations.manchester.ac.uk/academic/academic-malpractice/,20250430171538,1,2,348,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,integrity,https://www.regulations.manchester.ac.uk/academic/academic-malpractice/,20250521123409,1,2,348,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,integrity,https://www.regulations.manchester.ac.uk/academic/academic-malpractice/,20260124090505,1,2,348,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,20211028102859,0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,20230205132612,0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,20240222171930,0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,20240519143016,0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,20251001202411,0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Manchester,9000020,ai,https://www.studentsupport.manchester.ac.uk/study-support/academic-support/assessments-and-exams/avoiding-academic-malpractice/,20260123115322,0,0,409,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,integrity,http://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20220517085034,0,0,758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,integrity,http://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20221203000922,0,0,754,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,integrity,https://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20210926054820,0,0,749,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,integrity,https://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20230521005205,1,1,751,0,0,0,0,5,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20240527150725,1,3,870,0,0,0,0,6,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20250114052726,1,3,887,0,0,0,0,6,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://bristol.ac.uk/students/support/academic-advice/academic-integrity/,20250615141811,1,3,936,0,0,0,0,6,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,20210619090537,0,0,746,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Bristol,9000024,integrity,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,20231128123934,1,1,751,0,0,0,0,5,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,20240614031038,1,3,876,0,0,0,0,6,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,20241217192023,1,3,879,0,0,0,0,6,1,1,1,0,0,0,0,0,0,0,0,2,0,2,2
+University of Bristol,9000024,integrity,https://www.bristol.ac.uk/students/support/academic-advice/academic-integrity/,20251008060157,1,5,948,0,0,0,0,9,1,1,1,0,0,0,0,1,1,0,0,2,1,1,3
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20221005112051,0,0,1187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20221211223340,0,0,1181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20230205070133,0,0,1181,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20230601191039,1,1,1214,0,0,0,0,3,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20230602142930,1,1,1214,0,0,0,0,3,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20240225112438,1,1,1217,0,0,0,0,3,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20241210170601,1,7,1329,0,0,0,0,8,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20250429070918,1,7,1318,0,0,0,0,8,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20250802224710,1,7,1322,0,0,0,0,8,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20251206084031,1,7,1331,0,0,0,0,8,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20260114072724,1,7,1331,0,0,0,0,8,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Birmingham,9000026,integrity,https://intranet.birmingham.ac.uk/student/academic-support/academic-integrity-support-and-advice.aspx,20260307052612,1,7,1331,0,0,0,0,8,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20210414114031,0,0,5316,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20210420062024,0,0,5320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20210728181921,0,0,5320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20211022101909,0,0,4283,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20220128174522,0,0,4283,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20220305124607,0,0,4281,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20220812183549,0,0,4302,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20220903100831,0,0,4302,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20220916065219,0,0,4302,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Nottingham,9000028,integrity,https://www.nottingham.ac.uk/academicservices/currentstudents/academic-misconduct.aspx,20221208032220,0,0,4483,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20210120043640,0,0,820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20210414165156,0,0,841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20210418175946,0,0,841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20210727221005,0,0,853,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20220120051157,0,0,859,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20220121210438,0,0,859,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20220527031603,0,0,935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20220719082548,0,0,941,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20230201124517,0,0,914,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20230531003045,0,0,914,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20240307213334,0,0,915,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20240520061425,0,0,919,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20240724030329,0,0,919,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20250621111536,0,0,747,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations,20250905220158,0,0,740,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cardiff University,9000031,integrity,https://www.cardiff.ac.uk/public-information/policies-and-procedures/academic-regulations/,20240218090155,0,0,918,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20210105090404,0,0,2902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20210512122613,0,0,2902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20211129092300,0,0,2709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20220308081322,0,0,2709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20220703151604,0,0,2714,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20221020222649,0,0,2714,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20230307145304,0,0,839,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20230510095719,1,1,858,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20231006160056,1,1,860,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20231217215323,1,1,860,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20240407142007,1,1,860,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20240709203130,1,1,860,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20241015035602,1,1,860,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20250303224529,1,1,661,0,0,0,0,7,1,0,0,0,0,1,1,0,0,0,0,1,1,0,2
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20250730081728,1,1,661,0,0,0,0,7,1,0,0,0,0,1,1,0,0,0,0,1,1,0,2
+University of Melbourne,9000045,integrity,https://academicintegrity.unimelb.edu.au/,20260601061257,1,6,613,0,0,1,1,4,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20210226132238,0,0,2572,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20220307053514,0,0,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20220407055357,0,0,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20221018152120,0,0,2123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20221025102107,0,0,2123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20230127140950,0,0,2123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20230228202326,0,0,2146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20230523005943,1,11,2451,0,0,9,1,7,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20240106020446,1,11,2465,0,0,9,1,7,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20240401145825,1,11,3291,0,0,9,1,7,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20250130133804,1,15,3509,0,0,10,1,3,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20250325082807,1,15,3512,0,0,10,1,3,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20250526141941,1,15,3512,0,0,10,1,3,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20251103041734,1,13,3482,0,0,9,1,3,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20251116005801,1,13,3482,0,0,9,1,3,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of Queensland,9000046,integrity,https://my.uq.edu.au/information-and-services/manage-my-program/student-integrity-and-conduct/academic-integrity-and-student-conduct,20251128154259,1,13,3482,0,0,9,1,3,1,0,0,1,1,0,0,0,0,0,0,2,1,1,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20250815065051,1,1,4579,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20250907192614,1,1,4595,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20251029133654,1,1,4603,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20251106234928,1,1,4631,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20251118013040,1,1,4613,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20251124051648,1,1,4613,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20251128191110,1,1,4613,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20251221220511,1,1,4645,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20260119161448,1,1,4633,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20260308131530,1,1,4649,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20260321005518,1,1,4665,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+University of New South Wales,9000047,integrity,https://www.unsw.edu.au/student/managing-your-studies/academic-skills-support/toolkit/plagiarism,20260602093833,1,1,4694,0,0,2,1,5,1,1,1,0,0,0,0,0,0,0,0,3,0,3,3
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20250926012554,0,0,621,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260116225342,0,0,621,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260119080929,0,0,621,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260228085601,0,0,619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260417154400,0,0,619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260513062854,0,0,619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260514053929,0,0,619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260516095329,0,0,619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+McGill University,9000048,integrity,https://www.mcgill.ca/deanofstudents/student-rights-and-conduct/academic-integrity,20260521210123,0,0,619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Alberta,9000049,integrity,https://www.ualberta.ca/en/campus-life/academic-success/academic-integrity/index.html,20240906163523,1,1,1885,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Alberta,9000049,integrity,https://www.ualberta.ca/en/campus-life/academic-success/academic-integrity/index.html,20240917091810,1,1,1889,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Alberta,9000049,integrity,https://www.ualberta.ca/en/campus-life/academic-success/academic-integrity/index.html,20240925150712,1,1,1889,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://ucalgary.ca/student-services/student-success/learning/academic-integrity,20210119232905,0,0,905,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://ucalgary.ca/student-services/student-success/learning/academic-integrity,20210423142457,0,0,905,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://ucalgary.ca/student-services/student-success/learning/academic-integrity,20230929055505,0,0,1387,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://ucalgary.ca/student-services/student-success/learning/academic-integrity,20250907193942,1,11,1509,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20211028134444,0,0,1024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20220528195658,0,0,1551,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20220828194553,0,0,1376,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20221208164319,0,0,1379,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20230428215333,0,0,1408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20240130140340,0,0,1385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20240614182943,0,0,1359,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20240828203211,0,0,1361,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20241230075201,1,11,1506,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20250209054513,1,11,1509,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20250617211723,1,11,1513,0,0,0,0,3,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Calgary,9000050,integrity,https://www.ucalgary.ca/student-services/student-success/learning/academic-integrity,20260218235240,1,12,1521,0,0,0,0,3,1,0,0,0,0,0,0,0,0,1,1,1,1,0,2
+Western University,9000051,integrity,https://uwo.ca/univsec//academic_policies/rights_responsibilities.html,20221023035250,0,0,332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://uwo.ca/univsec/academic_policies/rights_responsibilities.html,20220625173735,0,0,357,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://uwo.ca/univsec/academic_policies/rights_responsibilities.html,20240618125128,0,0,375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20210102204835,0,0,311,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20210414134719,0,0,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20210703152930,0,0,311,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20220519083811,0,0,347,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20220616152253,0,0,357,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20220927073834,0,0,332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20231123050132,0,0,332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20240120194739,0,0,332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20240524130311,0,0,375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20250326210315,0,0,347,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20250801144335,0,0,463,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20250827104231,0,0,463,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Western University,9000051,integrity,https://www.uwo.ca/univsec/academic_policies/rights_responsibilities.html,20250920175009,0,0,470,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20221201080340,0,0,3924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20230204064956,0,0,3920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20230205070656,0,0,3920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20231208232757,1,74,5092,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20240122042115,1,74,5092,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20240220120850,1,74,5060,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20240628223334,1,74,5062,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20240724131021,1,74,5062,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20240908224539,1,74,5048,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20241127035024,1,74,4939,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20241209040715,1,74,4939,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20250118103110,1,74,4939,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www.uottawa.ca/current-students/academic-integrity,20250214120227,1,74,4888,1,1,0,0,1,1,3,1,4,1,4,1,0,0,0,0,3,2,1,5
+University of Ottawa,9000052,integrity,https://www2.uottawa.ca/current-students/academic-integrity,20220527115626,0,0,3713,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,integrity,https://www2.uottawa.ca/current-students/academic-integrity,20220614212822,0,0,3713,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Ottawa,9000052,integrity,https://www2.uottawa.ca/current-students/academic-integrity,20220930085751,0,0,3932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20210110232315,0,0,333,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20220121045503,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20220627050539,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20220706204816,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20221005075519,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20230205162704,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20230830213509,1,1,345,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,integrity,http://www.sfu.ca/students/academicintegrity.html,20240117010856,1,1,347,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+Simon Fraser University,9000053,integrity,https://www.sfu.ca/students/academicintegrity.html,20210414111654,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,https://www.sfu.ca/students/academicintegrity.html,20210513041542,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,https://www.sfu.ca/students/academicintegrity.html,20210827010150,0,0,337,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,https://www.sfu.ca/students/academicintegrity.html,20221205225104,0,0,339,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Simon Fraser University,9000053,integrity,https://www.sfu.ca/students/academicintegrity.html,20230921093512,1,1,347,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20220404161846,0,0,169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20220707143730,0,0,440,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20221006021531,0,0,607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20221029140922,0,0,607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20230314064724,1,12,423,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20230529101412,1,15,441,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20240227234543,1,4,289,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20250110093609,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20250320092219,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20250412175527,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20250618002516,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20250910121855,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20251114204331,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20251212144135,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20260219163634,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Adelaide,9000054,integrity,https://www.adelaide.edu.au/student/academic-skills/academic-integrity-for-students,20260307050017,1,5,313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20210116213214,0,0,889,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20210327002325,0,0,868,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20210515203212,0,0,833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20210830220809,0,0,870,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20211030045946,0,0,884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20220130075135,0,0,888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20220327141900,0,0,939,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20220613100351,0,0,923,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20221203055745,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20230310160958,0,0,925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20230928134440,0,0,885,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20240205104239,0,0,513,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20240623100720,0,0,510,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20241102180525,0,0,452,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20250313104017,0,0,460,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Australian National University,9000055,integrity,https://www.anu.edu.au/students/academic-skills/academic-integrity,20250725015113,0,0,440,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20220929145056,0,0,722,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20230607024452,0,0,674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20240217050109,1,2,703,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20240303093443,1,2,703,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20241114050115,1,2,668,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20250209213700,1,2,668,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20250710141511,1,2,668,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20251014170305,1,2,665,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+University of Glasgow,9000056,integrity,https://www.gla.ac.uk/myglasgow/sld/plagiarism/,20260215142307,1,2,665,0,0,0,0,4,1,0,0,1,1,0,0,0,0,0,0,1,1,0,2
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20210407174517,0,0,3438,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20211207235855,0,0,3622,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20220201113417,0,0,3629,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20220625132725,0,0,3629,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20220812095420,0,0,3629,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20240401104723,0,0,3663,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Durham University,9000057,integrity,https://www.durham.ac.uk/departments/academic/common-awards/policies-processes/assessment/academic-misconduct/,20250727172755,1,10,3898,2,1,1,1,9,1,1,1,5,1,2,1,0,0,0,0,4,2,2,6
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20210113145425,0,0,255,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20210303084924,0,0,385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20210518105101,0,0,380,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20210801200000,0,0,380,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20220119120154,0,0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20220928030229,0,0,386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20221006140606,0,0,386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20221209215026,0,0,399,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20230325104858,0,0,398,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20231130104337,0,0,396,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20231208112223,0,0,396,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20240526180025,0,0,396,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20241010012345,0,0,221,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20250516045031,0,0,217,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page,20260113054445,0,0,217,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+University of Southampton,9000058,integrity,https://www.southampton.ac.uk/quality/assessment/academic_integrity.page?,20220309032613,0,0,381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
