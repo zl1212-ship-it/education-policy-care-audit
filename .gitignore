@@ -15,6 +15,8 @@ j8_aes/data/cache/
 j9_aipolicy/data/snapshots_raw/
 # cross-national archived policy-page HTML; regenerate with patient_scale.py / patient_round.py
 j9_aipolicy/crossnational/data/snapshots_raw/
+# local off-repo backup of the raw snapshot corpus (tarballs); kept private, never committed to this public repo
+/snapshots_archive/
 # raw HESA Figure-7 download (18 MB); regenerate with uk_hesa_get.py
 j9_aipolicy/crossnational/uk_hesa.csv
 # local safety backups of the pre-2026-refresh US index/coverage
