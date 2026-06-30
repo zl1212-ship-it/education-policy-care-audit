@@ -14,7 +14,8 @@ MTCNN, MediaPipe; the verification cascades are "MTCNN + InceptionResnet" and
 "YuNet + SFace".
 
 Inputs : data/results_summary.csv, data/verification_results.csv
-Outputs: ../paper/blinded-manuscript/j7_figure{1,2,3}.{pdf,png,tiff}
+Outputs: ../paper/blinded-manuscript/J7/j7_figure{1,2,3}.{pdf,png,tiff}
+         (written into J7/ so the manuscript build, which reads figures from there, never diverges)
 Run after analyze_detection.py and analyze_verification.py.
 """
 import os
@@ -27,7 +28,7 @@ import matplotlib.pyplot as plt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript")
+OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript", "J7")
 os.makedirs(OUT, exist_ok=True)  # gitignored on a fresh clone
 plt.rcParams.update({"font.size": 11, "font.family": "serif"})
 
