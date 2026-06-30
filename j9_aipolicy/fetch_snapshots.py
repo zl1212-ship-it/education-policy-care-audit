@@ -37,7 +37,7 @@ RAW = HERE / "data" / "snapshots_raw"
 INDEX = HERE / "data" / "snapshot_index.csv"
 COVERAGE = HERE / "data" / "coverage.csv"
 
-FROM, TO = "20210101", "20250101"
+FROM, TO = "20210101", "20260701"
 SHOCK = "20221130000000"
 CDX = "http://web.archive.org/cdx/search/cdx"
 WB = "http://web.archive.org/web/{ts}id_/{url}"

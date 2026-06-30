@@ -41,8 +41,8 @@ sysmap = snaps.groupby("uid")["sys"].first().to_dict()
 print("institutions:", snaps["uid"].nunique(), "snapshots:", len(snaps))
 
 # institution x event-quarter AI doc (as-of latest snapshot per page on/before quarter end)
-qs = [pd.Period("2022Q4", freq="Q") + k for k in range(-7, 9)]
-qends = {k: (pd.Period("2022Q4", freq="Q") + k).to_timestamp(how="end").normalize() for k in range(-7, 9)}
+qs = [pd.Period("2022Q4", freq="Q") + k for k in range(-7, 14)]
+qends = {k: (pd.Period("2022Q4", freq="Q") + k).to_timestamp(how="end").normalize() for k in range(-7, 14)}
 cache = {}
 def text_of(path):
     if path not in cache:
@@ -66,7 +66,7 @@ vec = TfidfVectorizer(ngram_range=(1, 2), min_df=3, stop_words="english", max_fe
 X = vec.fit_transform(docs["doc"])
 
 rows = []
-for k in range(-7, 9):
+for k in range(-7, 14):
     sub = docs[docs["event_q"] == k]
     if sub["uid"].nunique() < 4:
         continue
@@ -99,7 +99,7 @@ if len(postdf) >= 4:
 # ---- inference: institution-cluster bootstrap on the post-shock slope ----
 def quarter_allcos(Xmat, dfsub):
     o = {}
-    for k in range(-7, 9):
+    for k in range(-7, 14):
         s = dfsub[dfsub["event_q"] == k]
         if s["uid"].nunique() >= 4:
             S = cosine_similarity(Xmat[s.index.to_numpy()])

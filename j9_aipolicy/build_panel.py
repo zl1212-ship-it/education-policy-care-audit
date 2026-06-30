@@ -206,7 +206,7 @@ def main():
     # --- quarterly forward-fill per page, then union (max) across pages ---
     PRESENCE = [n + "_present" for n in RESTRICTIVE + PROCEDURAL]
     carry = ["ai_addressed", "n_ai_terms", "text_len"] + PRESENCE
-    qends = pd.period_range("2021Q1", "2024Q4", freq="Q").to_timestamp(how="end").normalize()
+    qends = pd.period_range("2021Q1", "2026Q1", freq="Q").to_timestamp(how="end").normalize()
     panel_rows = []
     for uid in keep:
         lo, hi = inst_first.get(uid), inst_last.get(uid)

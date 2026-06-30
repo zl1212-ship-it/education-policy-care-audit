@@ -17,6 +17,10 @@ j9_aipolicy/data/snapshots_raw/
 j9_aipolicy/crossnational/data/snapshots_raw/
 # raw HESA Figure-7 download (18 MB); regenerate with uk_hesa_get.py
 j9_aipolicy/crossnational/uk_hesa.csv
+# local safety backups of the pre-2026-refresh US index/coverage
+j9_aipolicy/data/*_pre2026.csv
+# stray copy of the AU exposure workbook at repo root (canonical copy is in j9_aipolicy/crossnational/)
+/2022 Section 2 - All students.xlsx
 # cached raw API pulls (CCD/EDFacts/CRDC) + per-state report-card downloads; regenerate with the fetchers
 j10_accountability/data/raw/
 

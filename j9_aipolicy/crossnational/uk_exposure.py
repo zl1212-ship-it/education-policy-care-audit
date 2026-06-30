@@ -23,6 +23,20 @@ MATCH = {
     "University of Glasgow": "university of glasgow",
     "Durham University": "durham",
     "University of Southampton": "university of southampton",
+    "University of Leeds": "university of leeds",
+    "University of Sheffield": "university of sheffield",
+    "Newcastle University": "newcastle university",
+    "University of Liverpool": "university of liverpool",
+    "University of Warwick": "university of warwick",
+    "University of York": "university of york",
+    "University of Exeter": "university of exeter",
+    "Queen Mary University of London": "queen mary",
+    "King's College London": "king s college",
+    "London School of Economics": "london school of economics",
+    "Queen's University Belfast": "queen s university belfast",
+    "University of Bath": "university of bath",
+    "Lancaster University": "university of lancaster",
+    "University of Leicester": "university of leicester",
 }
 
 
