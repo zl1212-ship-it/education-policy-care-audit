@@ -1,0 +1,31 @@
+country,year,program,tier,region,benchmark_type,stipend_annual_local,benchmark_annual_local,currency,adequacy_ratio
+AU,2021,RTP stipend base rate,national_floor,national,statutory_min_wage,28597.0,40172.08,AUD,0.712
+AU,2023,RTP stipend base rate,national_floor,national,statutory_min_wage,29863.0,45902.48,AUD,0.651
+AU,2024,RTP stipend base rate,national_floor,national,statutory_min_wage,32192.0,47621.600000000006,AUD,0.676
+AU,2025,RTP stipend base rate,national_floor,national,statutory_min_wage,33637.0,49301.200000000004,AUD,0.682
+CA,2023,CGS-D (Canada Graduate Scholarship doctoral),national_selective,Toronto,basic_needs_livingwage,35000.0,45591.0,CAD,0.768
+CA,2023,PGS-D (NSERC Postgraduate Scholarship doctoral),national_broad,Toronto,basic_needs_livingwage,21000.0,45591.0,CAD,0.461
+CA,2024,CGS-D (Canada Graduate Scholarship doctoral),national_selective,Toronto,basic_needs_livingwage,40000.0,47320.0,CAD,0.845
+CA,2024,CGS-D (Canada Graduate Scholarship doctoral),national_selective,Vancouver,basic_needs_livingwage,40000.0,49231.0,CAD,0.812
+CA,2024,PGS-D (NSERC Postgraduate Scholarship doctoral),national_broad,Toronto,basic_needs_livingwage,40000.0,47320.0,CAD,0.845
+CA,2024,PGS-D (NSERC Postgraduate Scholarship doctoral),national_broad,Vancouver,basic_needs_livingwage,40000.0,49231.0,CAD,0.812
+CA,2025,CGS-D (Canada Graduate Scholarship doctoral),national_selective,Toronto,basic_needs_livingwage,40000.0,49504.0,CAD,0.808
+CA,2025,PGS-D (NSERC Postgraduate Scholarship doctoral),national_broad,Toronto,basic_needs_livingwage,40000.0,49504.0,CAD,0.808
+JP,2019,JSPS DC research fellowship,national_selective,Tokyo,statutory_min_wage,2400000.0,2107040.0,JPY,1.139
+JP,2024,JSPS DC research fellowship,national_selective,Tokyo,statutory_min_wage,2400000.0,2419040.0,JPY,0.992
+UK,2019,UKRI minimum doctoral stipend,national_floor,London,basic_needs_livingwage,15009.0,20962.5,GBP,0.716
+UK,2019,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,15009.0,18135.0,GBP,0.828
+UK,2020,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,15285.0,18525.0,GBP,0.825
+UK,2021,UKRI minimum doctoral stipend,national_floor,London,basic_needs_livingwage,15609.0,21547.5,GBP,0.724
+UK,2021,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,15609.0,19305.0,GBP,0.809
+UK,2022,UKRI minimum doctoral stipend,national_floor,London,basic_needs_livingwage,17668.0,23302.5,GBP,0.758
+UK,2022,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,17668.0,21255.0,GBP,0.831
+UK,2023,UKRI minimum doctoral stipend,national_floor,London,basic_needs_livingwage,18622.0,25642.5,GBP,0.726
+UK,2023,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,18622.0,23400.0,GBP,0.796
+UK,2024,UKRI minimum doctoral stipend,national_floor,London,basic_needs_livingwage,19237.0,27007.5,GBP,0.712
+UK,2024,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,19237.0,24570.0,GBP,0.783
+UK,2025,UKRI minimum doctoral stipend,national_floor,London,basic_needs_livingwage,20780.0,28860.0,GBP,0.72
+UK,2025,UKRI minimum doctoral stipend,national_floor,national,basic_needs_livingwage,20780.0,26227.5,GBP,0.792
+US,2024,22 R1 cohort mean (n=22 institutions),institution_set,cohort,basic_needs_livingwage,,,USD,1.317
+US,2024,cohort maximum (Princeton University),institution_set,flagship_high,basic_needs_livingwage,,,USD,1.544
+US,2024,cohort minimum (University of Illinois Urbana-Champaign),institution_set,flagship_low,basic_needs_livingwage,,,USD,1.046
