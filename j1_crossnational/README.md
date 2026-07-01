@@ -50,9 +50,10 @@ writes `crossnational_ratios.csv`.
 
 - US and UK carry a full 2019-2025 series. Canada is encoded at its long-frozen
   pre-2024 values and the post-2024 harmonised value (the increase took effect
-  2024-09-01). Australia carries the years verified against a second source
-  (2021, 2023, 2024, 2025); the intervening years await the Department of
-  Education historical-rates table and are deliberately left out rather than
-  filled with unverified figures. Japan is a two-point series (2019, 2024).
+  2024-09-01). Australia carries the full 2019-2025 series from the Department of
+  Education historical-rates table; 2021, 2023, 2024, and 2025 are additionally
+  confirmed against a second source, and 2019, 2020, and 2022 rest on the
+  historical-rates table alone (see SOURCES.md). Japan is a two-point series
+  (2019, 2024).
 - The 2024 anchor year is the only year on fully single-source footing for all
   five regimes; it is the basis for the headline cross-national snapshot.

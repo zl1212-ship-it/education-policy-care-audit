@@ -1,5 +1,8 @@
 country,year,program,tier,region,benchmark_type,stipend_annual_local,benchmark_annual_local,currency,adequacy_ratio
+AU,2019,RTP stipend base rate,national_floor,national,statutory_min_wage,27596.0,38512.23999999999,AUD,0.717
+AU,2020,RTP stipend base rate,national_floor,national,statutory_min_wage,28092.0,39203.84,AUD,0.717
 AU,2021,RTP stipend base rate,national_floor,national,statutory_min_wage,28597.0,40172.08,AUD,0.712
+AU,2022,RTP stipend base rate,national_floor,national,statutory_min_wage,28854.0,42246.88,AUD,0.683
 AU,2023,RTP stipend base rate,national_floor,national,statutory_min_wage,29863.0,45902.48,AUD,0.651
 AU,2024,RTP stipend base rate,national_floor,national,statutory_min_wage,32192.0,47621.600000000006,AUD,0.676
 AU,2025,RTP stipend base rate,national_floor,national,statutory_min_wage,33637.0,49301.200000000004,AUD,0.682

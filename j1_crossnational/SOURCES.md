@@ -18,8 +18,13 @@ this file summarises the canonical source per series.
 - **Australia, RTP stipend base rate**: Department of Education historical
   stipend rates,
   <https://www.education.gov.au/research-block-grants/resources/historical-stipend-rates-postgraduate-scholarships>.
-  Encoded years verified against a second source: 2021 (28,597), 2023 (29,863),
-  2024 (32,192), 2025 (33,637).
+  Full 2019-2025 series encoded from the historical-rates table: 2019 (27,596),
+  2020 (28,092), 2021 (28,597), 2022 (28,854), 2023 (29,863), 2024 (32,192),
+  2025 (33,637). 2021, 2023, 2024, and 2025 are additionally confirmed against a
+  second source; 2019, 2020, and 2022 rest on the Department of Education
+  historical-rates table alone (a live second-source confirmation is pending, as
+  the table did not load during assembly), and they fit the confirmed 2021 anchor
+  and the published indexation sequence.
 - **Japan, JSPS DC research fellowship**: 200,000 yen/month, JSPS,
   <https://www.jsps.go.jp/english/e-pd/>.
 
