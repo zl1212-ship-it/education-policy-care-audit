@@ -53,7 +53,8 @@ writes `crossnational_ratios.csv`.
   2024-09-01). Australia carries the full 2019-2025 series from the Department of
   Education historical-rates table; 2021, 2023, 2024, and 2025 are additionally
   confirmed against a second source, and 2019, 2020, and 2022 rest on the
-  historical-rates table alone (see SOURCES.md). Japan is a two-point series
-  (2019, 2024).
+  historical-rates table alone (see SOURCES.md). Japan carries the full
+  2019-2025 series (JSPS DC stipend fixed at 200,000 yen/month against the Tokyo
+  prefectural minimum wage each year).
 - The 2024 anchor year is the only year on fully single-source footing for all
   five regimes; it is the basis for the headline cross-national snapshot.

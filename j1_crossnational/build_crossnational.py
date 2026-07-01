@@ -56,7 +56,7 @@ def build_intl(stip, lw):
     )
     merged["adequacy_ratio"] = (
         merged["stipend_annual_local"] / merged["benchmark_annual_local"]
-    ).round(3)
+    ).round(4)
     return merged
 
 
@@ -75,11 +75,11 @@ def us_rows():
                 source_benchmark="MIT Living Wage Calculator (single adult)")
     return pd.DataFrame([
         {**tmpl, "program": f"22 R1 cohort mean (n={n_inst} institutions)",
-         "region": "cohort", "adequacy_ratio": round(r.mean(), 3)},
+         "region": "cohort", "adequacy_ratio": round(r.mean(), 4)},
         {**tmpl, "program": f"cohort minimum ({lo_name})",
-         "region": "flagship_low", "adequacy_ratio": round(r.min(), 3)},
+         "region": "flagship_low", "adequacy_ratio": round(r.min(), 4)},
         {**tmpl, "program": f"cohort maximum ({hi_name})",
-         "region": "flagship_high", "adequacy_ratio": round(r.max(), 3)},
+         "region": "flagship_high", "adequacy_ratio": round(r.max(), 4)},
     ]), below, n_inst
 
 

@@ -39,8 +39,11 @@ this file summarises the canonical source per series.
   <https://www.livingwage.ca/rates>. Full-time convention 35 h/week.
 - **Australia, Fair Work national minimum wage**:
   <https://www.fairwork.gov.au/pay-and-wages/minimum-wages>. Standard week 38 h.
-- **Japan, Tokyo regional minimum wage** (MHLW / Tokyo Labour Bureau): 1,013 yen
-  (Oct 2019), 1,163 yen (Oct 2024), <https://www.mhlw.go.jp/>. Standard week 40 h.
+- **Japan, Tokyo regional minimum wage** (MHLW, prefectural rate): full 2019-2025
+  series in yen per hour: 1,013 (2019), 1,013 (2020, held at the 2019 level),
+  1,041 (2021), 1,072 (2022), 1,113 (2023), 1,163 (2024), 1,226 (2025).
+  <https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/>.
+  Standard week 40 h. JSPS DC stipend held at 200,000 yen/month throughout.
 - **US, MIT Living Wage Calculator** (single adult, county level): applied in
   the repository-root pipeline; the resulting per-institution ratios are read in
   from `../lw_ratio_by_institution.csv`.
