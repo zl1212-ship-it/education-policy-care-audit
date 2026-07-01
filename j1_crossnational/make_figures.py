@@ -96,11 +96,13 @@ def fig_trend(df):
     uk_l = series("UK", "London")
     au = series("AU", "national")
     ca = series("CA", "Toronto", "CGS-D")
+    jp = series("JP", "Tokyo")
 
     ax.plot(uk_n["year"], uk_n["adequacy_ratio"], "-o", color=TIER_A, label="UK UKRI min (national)")
     ax.plot(uk_l["year"], uk_l["adequacy_ratio"], "--o", color=TIER_A, alpha=0.7, label="UK UKRI min (London)")
     ax.plot(au["year"], au["adequacy_ratio"], "-s", color=TIER_B, label="Australia RTP (vs min wage)")
     ax.plot(ca["year"], ca["adequacy_ratio"], "-^", color="#7a3b8f", label="Canada CGS-D (Toronto)")
+    ax.plot(jp["year"], jp["adequacy_ratio"], "-D", color="#c0392b", label="Japan JSPS DC (vs Tokyo min wage)")
 
     # annotate the forced jump: Canada PGS-D 2023 -> 2024
     pgs23 = df[(df["country"] == "CA") & (df["program"].str.startswith("PGS-D")) &
