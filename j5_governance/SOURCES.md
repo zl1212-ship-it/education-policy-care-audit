@@ -71,7 +71,9 @@ All data are public and current as of June 2026. No values are imputed except wh
   against member biographies, Ballotpedia, and local news, collected July 2026.
 - **Coverage (report honestly):** occupation is identifiable for a **minority of seats** (182
   members across 41 boards; median board coverage ~36% of voting seats). **Ohio and Montana**
-  rosters were not machine-accessible and carry no rows (coverage n/a). Appointed boards turn over,
+  carry no rows: Ohio's roster was not machine-accessible; Montana's roster (bpe.mt.gov, re-checked
+  2026-07) lists names without occupations, so its members cannot be coded from the official source.
+  Appointed boards turn over,
   so a member is coded as of the roster date. These figures are a **descriptive supplement** to the
   formal-rule layer, not a precise census; `analyze_composition.py` reports every statistic with its
   coverage. No occupations are imputed; unidentifiable members are omitted, not guessed.

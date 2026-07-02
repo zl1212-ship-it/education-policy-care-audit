@@ -10,7 +10,8 @@ Two layers, both from public sources with provenance:
      its coverage and is a descriptive supplement to the rules, not a precise census.
 
 All statistics below are emitted by this script; nothing is hand-entered into prose. Ohio and
-Montana rosters were not machine-accessible and carry no member rows (coverage n/a).
+Montana carry no member rows (coverage n/a): Ohio's roster was not machine-accessible; Montana's
+official roster lists names without occupations, so its members cannot be coded from the source.
 
 Output: data/composition_results.csv
 """

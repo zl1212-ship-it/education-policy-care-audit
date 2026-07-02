@@ -22,6 +22,10 @@ spearman_rep_auth_noentrench,-0.247
 spearman_rep_entrench,-0.027
 spearman_rep_auth_licentrench,-0.134
 spearman_rep_auth_licentrench_p,0.367
+spearman_rep_auth4_csso,-0.017
+spearman_rep_auth4_csso_p,0.911
+n_board_selects_csso,21.0
+quadrant_auth4,23.0
 mean_rep_index,0.23
 mean_auth_index,0.755
 mean_gap,0.525

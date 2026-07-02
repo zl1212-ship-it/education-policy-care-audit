@@ -111,6 +111,16 @@ al = b[["auth_licensure_board", "constitutional"]].mean(axis=1)
 rho_le, p_le = stats.spearmanr(b.rep_index, al)
 print(f"  robustness: Spearman(Rep, Auth = licensure+entrenchment only) = {rho_le:+.3f} (p={p_le:.3f})")
 rec("spearman_rep_auth_licentrench", round(rho_le, 3)); rec("spearman_rep_auth_licentrench_p", round(p_le, 3))
+# variance check the other way: ADD a fourth uniformly-recorded power, whether the board (not the
+# governor or the public) selects the chief state school officer (NASBE csso_regime).
+b["auth_csso"] = (b.csso_regime == "board").astype(int)
+a4 = b[["auth_standards_board", "auth_licensure_board", "constitutional", "auth_csso"]].mean(axis=1)
+rho_a4, p_a4 = stats.spearmanr(b.rep_index, a4)
+q4 = int(((a4 > 0.5) & (b.rep_index < 0.5)).sum())
+print(f"  robustness: Spearman(Rep, Auth incl. board-selects-CSSO, 4 items) = {rho_a4:+.3f} (p={p_a4:.3f}); "
+      f"boards selecting CSSO: {int(b.auth_csso.sum())}/47; high-auth4/low-rep quadrant: {q4}/47")
+rec("spearman_rep_auth4_csso", round(rho_a4, 3)); rec("spearman_rep_auth4_csso_p", round(p_a4, 3))
+rec("n_board_selects_csso", int(b.auth_csso.sum())); rec("quadrant_auth4", q4)
 print(f"\n  mean Representation Index : {b.rep_index.mean():.3f}")
 print(f"  mean Authority Index      : {b.auth_index.mean():.3f}")
 print(f"  mean gap (auth - rep, descriptive heuristic): {b.gap.mean():.3f}")
