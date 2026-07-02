@@ -7,7 +7,7 @@ J5 figures (built from data/governance_panel.csv and data/results_summary.csv):
   Figure 3: (a) enrollment-weighted share of students by board regime (who cannot elect their
             board); (b) the demographic null -- representation does not track the share of
             students of color.
-Outputs: ../paper/blinded-manuscript/j5_figure{1,2,3}.{pdf,png}
+Outputs: ../paper/blinded-manuscript/J5/j5_figure{1,2,3}.{pdf,png,tiff}
 """
 import os
 import numpy as np
@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript")
+OUT = os.path.join(HERE, "..", "paper", "blinded-manuscript", "J5")
 os.makedirs(OUT, exist_ok=True)  # gitignored on a fresh clone
 plt.rcParams.update({"font.size": 11, "font.family": "serif"})
 
@@ -38,15 +38,15 @@ def save(fig, name):
 
 
 # ---------- Figure 1: authority vs representation ----------
-MARK = {"governor": ("o", "0.35", "Governor-appointed"),
-        "legislative": ("s", "0.0", "Legislature-appointed"),
-        "elected": ("^", "0.0", "Publicly elected"),
-        "hybrid": ("D", "0.55", "Hybrid")}
+MARK = {"governor": ("o", "#0072B2", "Governor-appointed"),
+        "legislative": ("s", "#D55E00", "Legislature-appointed"),
+        "elected": ("^", "#009E73", "Publicly elected"),
+        "hybrid": ("D", "#E69F00", "Hybrid")}
 fig, ax = plt.subplots(figsize=(7, 5.6))
 # quadrant plot: midpoint crosshairs (no diagonal; the two indices are not subtracted)
 ax.axvline(0.5, color="0.6", linewidth=1, linestyle="--", zorder=1)
 ax.axhline(0.5, color="0.6", linewidth=1, linestyle="--", zorder=1)
-ax.fill_between([-0.03, 0.5], 0.5, 1.06, color="0.92", zorder=0)   # high-authority, low-representation
+ax.fill_between([-0.03, 0.5], 0.5, 1.06, color="#eef3f8", zorder=0)   # high-authority, low-representation
 n_q = int(((b.auth_index > 0.5) & (b.rep_index < 0.5)).sum())
 jit = np.random.default_rng(3).normal(0, 0.006, len(b))
 for reg, (mk, col, lab) in MARK.items():
@@ -81,15 +81,15 @@ auth_items = [("Adopts academic\nstandards", res["pct_boards_set_standards"]),
               ("Constitutionally\nentrenched", res["pct_boards_constitutional"])]
 labels = [x[0] for x in auth_items] + [x[0] for x in rep_items]
 vals = [x[1] for x in auth_items] + [x[1] for x in rep_items]
-colors = ["0.25"] * 3 + ["0.7"] * 3
+colors = ["#0072B2"] * 3 + ["#E69F00"] * 3
 y = np.arange(len(labels))[::-1]
 ax.barh(y, vals, color=colors, edgecolor="black", linewidth=0.6)
 for yi, v in zip(y, vals):
     ax.text(v + 1.5, yi, f"{v:.0f}%", va="center", fontsize=9)
 ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=9)
 ax.axhline(2.5, color="black", linewidth=0.7)
-ax.text(62, 3.0, "AUTHORITY HELD", ha="left", fontsize=9.5, color="0.25", fontweight="bold")
-ax.text(40, 1.0, "REPRESENTATION OFFERED", ha="left", fontsize=9.5, color="0.5", fontweight="bold")
+ax.text(62, 3.0, "AUTHORITY HELD", ha="left", fontsize=9.5, color="#0072B2", fontweight="bold")
+ax.text(40, 1.0, "REPRESENTATION OFFERED", ha="left", fontsize=9.5, color="#c8860a", fontweight="bold")
 ax.set_xlim(0, 105); ax.set_xlabel("Share of 47 state boards (%)")
 ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
 ax.set_title("Figure 1. Boards hold pervasive authority but offer scarce representation", fontsize=11)
@@ -102,7 +102,7 @@ names = {"elected": "Publicly\nelected", "hybrid": "Hybrid", "governor": "Govern
          "legislative": "Legislature-\nappointed", "none": "No state\nboard"}
 sh = df.groupby("board_regime").enrollment_2021.sum() / df.enrollment_2021.sum() * 100
 vals = [sh.get(o, 0) for o in order]
-cols = ["0.2"] + ["0.55"] * 4
+cols = ["#009E73"] + ["#6baed6"] * 4
 ax[0].bar(range(len(order)), vals, color=cols, edgecolor="black", linewidth=0.6)
 for i, v in enumerate(vals):
     ax[0].text(i, v + 0.8, f"{v:.1f}%", ha="center", fontsize=9)
@@ -113,11 +113,11 @@ ax[0].annotate(f"{res['pct_students_no_elected_board']:.0f}% of students cannot\
 ax[0].spines["top"].set_visible(False); ax[0].spines["right"].set_visible(False)
 ax[0].set_title("(a) Who governs the governed", fontsize=10.5)
 
-ax[1].scatter(b.pct_students_of_color, b.rep_index, s=45, facecolor="0.6",
-              edgecolor="black", linewidths=0.6)
+ax[1].scatter(b.pct_students_of_color, b.rep_index, s=45, facecolor="#0072B2",
+              edgecolor="black", linewidths=0.6, alpha=0.85)
 z = np.polyfit(b.pct_students_of_color, b.rep_index, 1)
 xs = np.array([b.pct_students_of_color.min(), b.pct_students_of_color.max()])
-ax[1].plot(xs, np.polyval(z, xs), color="black", linewidth=1.3, linestyle="--")
+ax[1].plot(xs, np.polyval(z, xs), color="#D55E00", linewidth=1.4, linestyle="--")
 ax[1].set_xlabel("Students of color (% of state enrollment)")
 ax[1].set_ylabel("Representation Index")
 ax[1].text(0.04, 0.92, f"slope n.s. (p = {res['ols_soc_p']:.2f})", transform=ax[1].transAxes,
