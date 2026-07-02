@@ -105,6 +105,12 @@ rho_ent, p_ent = stats.spearmanr(b.rep_index, b.constitutional)
 print(f"  robustness: Spearman(Rep, Auth without entrenchment) = {rho_ne:+.3f} (p={p_ne:.3f}); "
       f"Spearman(Rep, entrenchment alone) = {rho_ent:+.3f} (p={p_ent:.3f})")
 rec("spearman_rep_auth_noentrench", round(rho_ne, 3)); rec("spearman_rep_entrench", round(rho_ent, 3))
+# dimensionality check: standards adoption is near-constant (91.5%), so the index's discrimination
+# comes from licensure + entrenchment; restricting to those two leaves the null in place.
+al = b[["auth_licensure_board", "constitutional"]].mean(axis=1)
+rho_le, p_le = stats.spearmanr(b.rep_index, al)
+print(f"  robustness: Spearman(Rep, Auth = licensure+entrenchment only) = {rho_le:+.3f} (p={p_le:.3f})")
+rec("spearman_rep_auth_licentrench", round(rho_le, 3)); rec("spearman_rep_auth_licentrench_p", round(p_le, 3))
 print(f"\n  mean Representation Index : {b.rep_index.mean():.3f}")
 print(f"  mean Authority Index      : {b.auth_index.mean():.3f}")
 print(f"  mean gap (auth - rep, descriptive heuristic): {b.gap.mean():.3f}")

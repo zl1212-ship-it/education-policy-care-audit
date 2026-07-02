@@ -48,6 +48,34 @@ All data are public and current as of June 2026. No values are imputed except wh
   Hampshire unmapped). This is a board-discretionary policy output (the board sets/approves the
   state's academic standards), used to test the representative-bureaucracy prediction.
 
+## 5. Board-composition rules (educator representation)
+`data/board_composition_rules_2026.csv`
+- **What:** for each of the 47 boards, whether state law **mandates** educator/stakeholder seats,
+  **bars** current educators/school employees from serving, and whether it seats a **voting** or
+  **advisory** teacher. Current as of July 2026.
+- **Source:** each row cites the governing statute where verified (e.g. NV `NRS 385.021`, OR
+  `ORS 326.021`, NH `RSA 21-N:10`, IN `Ind. Code 20-19-2-2`, MD `Md. Educ. 2-202` + 2019 SB529),
+  otherwise the NASBE *State Education Governance Matrix* (2024) and the Education Week compilation
+  "How Many Seats Do Teachers Get on the State Board of Ed.?" (2018), in the `rule_source` column.
+- **Caveat:** NASBE reports that eight states expressly prohibit teachers; seven are verified here
+  from statute (`educator_bar`). Voting-teacher seats (AZ, MD, MS, NV, TN, WY) reconcile the NASBE
+  2024 matrix (6 states) with EdWeek 2018 (4); MD (SB529, 2019) and NV (NRS 385.021, an appointed
+  voting seat reserved for a teacher) are the two additions, both confirmed against statute.
+
+## 6. Current board-member occupational background (partial census)
+`data/board_members_2026.csv`
+- **What:** one row per identified current board member: `occupation_note` (the biographical
+  detail), `occ_category`, `is_educator` (1 if a current/former teacher, principal, superintendent,
+  or education professor/administrator), the official roster URL in `source`, and `as_of` = 2026-07.
+- **Source:** official state board-of-education membership rosters (the `source` URL) cross-checked
+  against member biographies, Ballotpedia, and local news, collected July 2026.
+- **Coverage (report honestly):** occupation is identifiable for a **minority of seats** (182
+  members across 41 boards; median board coverage ~36% of voting seats). **Ohio and Montana**
+  rosters were not machine-accessible and carry no rows (coverage n/a). Appointed boards turn over,
+  so a member is coded as of the roster date. These figures are a **descriptive supplement** to the
+  formal-rule layer, not a precise census; `analyze_composition.py` reports every statistic with its
+  coverage. No occupations are imputed; unidentifiable members are omitted, not guessed.
+
 ## Coding rules
 Coded variables are derived from the raw NASBE strings in `build_governance_panel.py`; the raw
 columns are retained in the panel so every coded value is traceable to its source text.

@@ -20,6 +20,8 @@ meanrep_high_auth,0.209
 meanrep_max_auth,0.21
 spearman_rep_auth_noentrench,-0.247
 spearman_rep_entrench,-0.027
+spearman_rep_auth_licentrench,-0.134
+spearman_rep_auth_licentrench_p,0.367
 mean_rep_index,0.23
 mean_auth_index,0.755
 mean_gap,0.525
