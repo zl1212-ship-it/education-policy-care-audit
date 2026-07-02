@@ -31,9 +31,12 @@ ax.set_xlabel("Share of identified members with an education background (%)", fo
 ax.set_xlim(0, 100); ax.set_ylabel(""); ax.tick_params(labelsize=7.5)
 ax.set_title("Educator representation on state boards is bimodal and rule-driven", fontsize=11)
 ax.legend(handles=[Patch(color=col[k], label=k) for k in col], fontsize=8, loc="lower right", frameon=False)
-ax.text(0.5, -0.058, "Partial census; occupation identified for ~36% of seats (median per board); OH and MT not shown. "
-        "Mandate boards 80% vs 45% (p=0.003).", transform=ax.transAxes, ha="center", fontsize=7, color="#555")
+ax.text(0.5, -0.058, "Partial census; occupation identified for ~36% of seats (median per board); OH and MT not shown; "
+        "read for direction, not magnitude.", transform=ax.transAxes, ha="center", fontsize=7, color="#555")
 plt.tight_layout()
 for ext in ("png", "pdf"):
     plt.savefig(os.path.join(OUT, f"j5_figure4.{ext}"), dpi=300, bbox_inches="tight")
-print(f"wrote j5_figure4.png/pdf to {os.path.normpath(OUT)} ; boards plotted: {len(bl)}")
+# journal submission systems want figures as separate high-resolution TIFF files (as in make_figures.py)
+plt.savefig(os.path.join(OUT, "j5_figure4.tiff"), dpi=600, bbox_inches="tight",
+            pil_kwargs={"compression": "tiff_lzw"})
+print(f"wrote j5_figure4.png/pdf/tiff to {os.path.normpath(OUT)} ; boards plotted: {len(bl)}")
