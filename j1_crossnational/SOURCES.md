@@ -6,6 +6,13 @@ this file summarises the canonical source per series.
 
 ## Doctoral stipends
 
+- **US, self-reported doctoral stipends (PhDStipends.com)**: crowdsourced,
+  self-reported stipend entries fetched from the PhDStipends.com data endpoint
+  (<https://www.phdstipends.com/data/>) by `../scrape_stipends.py` into
+  `../phd_stipends.csv`. The US component scores these reports against the MIT
+  Living Wage Calculator at the campus-county level (see Cost-of-living
+  benchmarks below); the assembled per-institution ratios are read from
+  `../lw_ratio_by_institution.csv`.
 - **UK, UKRI minimum doctoral stipend** (2019/20-2024/25): UKRI published
   minimum-stipend table,
   <https://www.ukri.org/wp-content/uploads/2025/01/UKRI_290125_Minimum-stipend-levels-to-2024-25.csv>.
