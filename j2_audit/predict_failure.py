@@ -73,6 +73,32 @@ OR = np.exp(logit.params); ci = np.exp(logit.conf_int())
 for k in logit.params.index:
     print(f"  {k:18s} OR={OR[k]:6.2f}  p={logit.pvalues[k]:.3g}  [{ci.loc[k,0]:.2f}, {ci.loc[k,1]:.2f}]")
 
+# (1b) logit diagnostics: classification quality, fit, collinearity
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+print("\n=== DIAGNOSTICS: logit fit quality ===")
+(tn, fp), (fn, tp) = logit.pred_table()               # rows = actual, cols = predicted @0.5
+acc = (tn + tp) / (tn + fp + fn + tp)
+base = max(y.mean(), 1 - y.mean())                    # null model: always predict the modal class
+print(f"  accuracy @0.5 threshold = {acc:.3f}  vs null-model base rate = {base:.3f}")
+print(f"  sensitivity (fails correctly flagged) = {tp / (tp + fn):.3f}")
+print(f"  specificity (passes correctly cleared) = {tn / (tn + fp):.3f}")
+print(f"  McFadden pseudo-R2 = {logit.prsquared:.3f}")
+print("  VIF by design-matrix column (constant excluded):")
+# admit_rate and open_admission are coupled by construction: open_admission marks rows with no
+# applied count, and those same rows get admit_rate imputed to 1.0, so elevated VIF is expected.
+Xc = sm.add_constant(X)
+for i, k in enumerate(Xc.columns):
+    if k == "const": continue
+    print(f"    {k:18s} {variance_inflation_factor(Xc.values, i):6.2f}")
+
+# (1c) sensitivity: refit without open_admission (structurally coupled with admit_rate, see above)
+feat_s = [f for f in feat if f != "open_admission"]
+logit_s = sm.Logit(y, sm.add_constant(X[feat_s])).fit(disp=0)
+print("\n=== SENSITIVITY: logit without open_admission (odds ratios) ===")
+OR_s = np.exp(logit_s.params); ci_s = np.exp(logit_s.conf_int())
+for k in logit_s.params.index:
+    print(f"  {k:18s} OR={OR_s[k]:6.2f}  p={logit_s.pvalues[k]:.3g}  [{ci_s.loc[k,0]:.2f}, {ci_s.loc[k,1]:.2f}]")
+
 # (2) predictive performance + importances
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import cross_val_score
