@@ -25,4 +25,10 @@ cohort years 2018–2022. Every output regenerates from these scripts.
 | `pell_audit.py` | Same rule on income: Pell vs non-Pell 6-year completion (Outcome Measures) | stdout summary |
 | `predict_failure.py` | Logistic regression (odds ratios) + gradient boosting (5-fold CV AUC) on 2022 failure | `predict_features_2022.csv`, stdout |
 | `multiyear_predict.py` | Pooled logit 2018–2022 with year fixed effects; stability of correlates | stdout |
-| `robustness_audit.py` | Parallel absolute pp-gap audit; tier concentration; cohort-size sensitivity | stdout |
+| `robustness_audit.py` | Parallel absolute pp-gap audit; tier concentration; cohort-size sensitivity; strict highest-rate-group reference variant; pooled 2020–2022 entering-cohorts audit | stdout |
+
+Data note: in the API's 2021 grad-rates release, `cohort_rev` is coded -1 (missing) for all
+2-year institutions (`institution_level` 2, `subcohort` -2), so the 30-student cohort screen
+in `build_disparate_impact.py` excludes that sector and the 2021 panel (1,669 institution-years)
+covers 4-year institutions only; completion rates for the excluded institutions are present
+upstream under `cohort_adj_150pct`, and all other years are unaffected.

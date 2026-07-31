@@ -1,8 +1,11 @@
 """Pass-2 robustness for the completion disparate-impact audit:
 (1) parallel ABSOLUTE percentage-point-gap audit; (2) ratio vs. absolute-gap
-concentration by completion and selectivity tier; (3) cohort-size sensitivity.
-Addresses the central methodological concern that a ratio metric is mechanically more
-likely to fail at low-baseline institutions. Real IPEDS data."""
+concentration by completion and selectivity tier; (3) cohort-size sensitivity;
+(4) reference-group variant: strict EEOC highest-rate-group reference instead of
+the White reference; (5) pooled entering cohorts 2020-2022 (student-weighted rates)
+against the single-year 2022 audit. Addresses the central methodological concern
+that a ratio metric is mechanically more likely to fail at low-baseline
+institutions. Real IPEDS data."""
 import os, csv, urllib.request, json, time
 import statistics as st
 from collections import defaultdict
@@ -74,3 +77,48 @@ for MIN in (30, 50, 100):
         if 1 in m and 2 in m and coh[uid].get(1, 0) >= MIN and coh[uid].get(2, 0) >= MIN and m[1] > 0:
             tot += 1; fl += m[2]/m[1] < 0.80
     print(f"  cohort>={MIN}: N={tot}, fail={round(100*fl/tot)}%")
+
+# 4. reference-group variant: strict EEOC practice compares each group to the
+# HIGHEST-rate group, not to White. The panel build writes a subgroup's rate only
+# when its cohort met the 30-student minimum (blank otherwise), so a non-empty
+# rate already encodes eligibility; the max is taken over qualifying groups only.
+print("\n=== 4. Reference-group variant (Black, 2022): White vs. highest-rate reference ===")
+GROUPS = ("white", "black", "hispanic", "asian")
+nb = fw = fh = 0
+for (uid, yr), r in P.items():
+    if yr != "2022": continue
+    b = f(r["black_rate"])
+    if b is None: continue
+    hi = max(v for v in (f(r[g + "_rate"]) for g in GROUPS) if v is not None)
+    nb += 1; fw += f(r["black_di"]) < 0.80; fh += b/hi < 0.80
+print(f"  White reference:        N={nb}, fail={fw} ({round(100*fw/nb)}%)")
+print(f"  highest-rate reference: N={nb}, fail={fh} ({round(100*fh/nb)}%)")
+
+# 5. pooled entering cohorts 2020-2022: per institution-race, sum implied
+# completers (rate x cohort; completion_rate_150pct is on a 0-1 scale) and
+# cohorts across years, then audit the student-weighted pooled rates with the
+# same 30-student minimum applied to the POOLED cohorts of reference and subgroup.
+# Per (unitid, year, race) the largest revised cohort is kept, as in the panel build.
+print("\n=== 5. Pooled entering cohorts 2020-2022 (4/5ths on pooled rates) ===")
+comp = defaultdict(lambda: defaultdict(float)); pooled = defaultdict(lambda: defaultdict(int))
+for yy in (2020, 2021, 2022):
+    br = defaultdict(dict); bc = defaultdict(dict)
+    for rc in (1, 2, 3, 4):
+        for x in pull(f"grad-rates/{yy}/?sex=99&race={rc}"):
+            rt = x.get("completion_rate_150pct"); cz = x.get("cohort_rev") or 0
+            if rt is not None and (rc not in bc[x["unitid"]] or cz > bc[x["unitid"]][rc]):
+                br[x["unitid"]][rc] = rt; bc[x["unitid"]][rc] = cz
+    for uid, m in br.items():
+        for rc in m:
+            comp[uid][rc] += m[rc] * bc[uid][rc]; pooled[uid][rc] += bc[uid][rc]
+aud22 = {r["unitid"] for (u, yr), r in P.items() if yr == "2022" and f(r["black_rate"]) is not None}
+for rc, nm in ((2, "Black"), (3, "Hispanic"), (4, "Asian")):
+    tot = fl = nr = fr = 0
+    for uid, m in pooled.items():
+        if m.get(1, 0) >= 30 and m.get(rc, 0) >= 30 and comp[uid][1] > 0:
+            fail = (comp[uid][rc]/m[rc]) / (comp[uid][1]/m[1]) < 0.80
+            tot += 1; fl += fail
+            if rc == 2 and str(uid) in aud22: nr += 1; fr += fail
+    print(f"  {nm:<8} pooled: N={tot}, fail={fl} ({round(100*fl/tot)}%)")
+    if rc == 2:
+        print(f"  {nm:<8} single-year 2022: N={len(aud22)}; pooled restricted to those institutions: N={nr}, fail={fr} ({round(100*fr/nr)}%)")
