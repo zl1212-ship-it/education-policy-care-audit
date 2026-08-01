@@ -3,7 +3,9 @@
 concentration by completion and selectivity tier; (3) cohort-size sensitivity;
 (4) reference-group variant: strict EEOC highest-rate-group reference instead of
 the White reference; (5) pooled entering cohorts 2020-2022 (student-weighted rates)
-against the single-year 2022 audit. Addresses the central methodological concern
+against the single-year 2022 audit; (6) 2021 coverage sensitivity: the 30-student
+screen sized on cohort_adj_150pct, since the 2021 release codes cohort_rev as
+missing for the whole 2-year sector. Addresses the central methodological concern
 that a ratio metric is mechanically more likely to fail at low-baseline
 institutions. Real IPEDS data."""
 import os, csv, urllib.request, json, time
@@ -122,3 +124,21 @@ for rc, nm in ((2, "Black"), (3, "Hispanic"), (4, "Asian")):
     print(f"  {nm:<8} pooled: N={tot}, fail={fl} ({round(100*fl/tot)}%)")
     if rc == 2:
         print(f"  {nm:<8} single-year 2022: N={len(aud22)}; pooled restricted to those institutions: N={nr}, fail={fr} ({round(100*fr/nr)}%)")
+
+# 6. 2021 coverage sensitivity: the 2021 release codes cohort_rev = -1 (missing)
+# for the entire 2-year sector, so the panel's 2021 year is effectively 4-year
+# institutions only. Re-size the 30-student screen on cohort_adj_150pct, which
+# is populated for that sector, and recompute the 2021 audit at full coverage.
+print("\n=== 6. 2021 coverage sensitivity (screen sized on cohort_adj_150pct) ===")
+rate6 = defaultdict(dict); adj6 = defaultdict(dict)
+for rc in (1, 2, 3, 4):
+    for x in pull(f"grad-rates/2021/?sex=99&race={rc}"):
+        rt = x.get("completion_rate_150pct"); ca = x.get("cohort_adj_150pct") or 0
+        if rt is not None and ca > 0 and (rc not in adj6[x["unitid"]] or ca > adj6[x["unitid"]][rc]):
+            rate6[x["unitid"]][rc] = rt; adj6[x["unitid"]][rc] = ca
+for rc, nm in ((2, "Black"), (3, "Hispanic"), (4, "Asian")):
+    tot = fl = 0
+    for uid, m in rate6.items():
+        if 1 in m and rc in m and adj6[uid].get(1, 0) >= 30 and adj6[uid].get(rc, 0) >= 30 and m[1] > 0:
+            tot += 1; fl += m[rc] / m[1] < 0.80
+    print(f"  {nm:<8} N={tot}, fail={fl} ({round(100*fl/tot)}%)")

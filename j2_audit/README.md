@@ -31,4 +31,6 @@ Data note: in the API's 2021 grad-rates release, `cohort_rev` is coded -1 (missi
 2-year institutions (`institution_level` 2, `subcohort` -2), so the 30-student cohort screen
 in `build_disparate_impact.py` excludes that sector and the 2021 panel (1,669 institution-years)
 covers 4-year institutions only; completion rates for the excluded institutions are present
-upstream under `cohort_adj_150pct`, and all other years are unaffected.
+upstream under `cohort_adj_150pct`, and all other years are unaffected. `robustness_audit.py`
+section 6 re-sizes the 2021 screen on `cohort_adj_150pct`, restoring coverage in line with
+adjacent years.
