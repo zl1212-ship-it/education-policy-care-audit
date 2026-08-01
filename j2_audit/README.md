@@ -34,3 +34,10 @@ covers 4-year institutions only; completion rates for the excluded institutions 
 upstream under `cohort_adj_150pct`, and all other years are unaffected. `robustness_audit.py`
 section 6 re-sizes the 2021 screen on `cohort_adj_150pct`, restoring coverage in line with
 adjacent years.
+
+A second data note: `disparate_impact_panel.csv` is a frozen build, while parts of
+`robustness_audit.py`, `predict_failure.py`, and `multiyear_predict.py` re-query the live API
+at run time. Upstream IPEDS revisions can therefore shift live-pull results slightly against
+the frozen panel (e.g., the 2022 Black-White baseline reads 1,004/1,518 from the live API as of
+2026-07 vs 1,006/1,518 in the frozen panel), which matters most for shares near a rounding
+boundary.
