@@ -1,0 +1,225 @@
+"""Run open face detectors over the FairFace panel and record per-image outcomes.
+
+Detectors:
+- haar       OpenCV Haar cascade (Viola-Jones),
+             haarcascade_frontalface_default.xml as shipped with opencv-python.
+- yunet      YuNet (2023mar ONNX from the OpenCV model zoo); weights
+             sha256-verified below.
+- mediapipe  MediaPipe BlazeFace short-range model; weights sha256-verified below.
+- mtcnn      MTCNN (facenet-pytorch implementation).
+
+Outcome per image x detector x exposure: number of faces found, top confidence, and
+detected (1 if at least one face). Each FairFace image contains one face.
+
+Exposure: underexposure is simulated by scaling image intensity in linear-light
+space (sRGB decoded with gamma 2.2, scaled by the exposure factor, re-encoded).
+exposure=1.0 is the unmodified image.
+
+Score thresholds are library defaults; every detector setting is stated inline. Usage:
+    python3 run_detectors.py                      # all detectors, exposure 1.0
+    python3 run_detectors.py --exposures 1.0,0.5,0.35,0.25,0.15
+    python3 run_detectors.py --detectors yunet,mediapipe
+    python3 run_detectors.py --noise --exposures 0.25,0.15
+    python3 run_detectors.py --small-face 0.2
+
+Results merge into data/detection_outcomes.csv (re-runs overwrite matching
+file/detector/exposure rows).
+"""
+
+import argparse
+import hashlib
+import os
+import urllib.request
+
+import cv2
+import numpy as np
+import pandas as pd
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+RAW_DIR = os.path.join(HERE, "data", "raw", "fairface_val")
+PANEL_CSV = os.path.join(HERE, "data", "face_panel.csv")
+OUT_CSV = os.path.join(HERE, "data", "detection_outcomes.csv")
+MODEL_DIR = os.path.join(HERE, "models")
+
+YUNET_URL = ("https://github.com/opencv/opencv_zoo/raw/main/models/"
+             "face_detection_yunet/face_detection_yunet_2023mar.onnx")
+YUNET_SHA256 = "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+YUNET_PATH = os.path.join(MODEL_DIR, "face_detection_yunet_2023mar.onnx")
+
+BLAZE_URL = ("https://storage.googleapis.com/mediapipe-models/face_detector/"
+             "blaze_face_short_range/float16/1/blaze_face_short_range.tflite")
+BLAZE_SHA256 = "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f"
+BLAZE_PATH = os.path.join(MODEL_DIR, "blaze_face_short_range.tflite")
+
+GAMMA = 2.2
+
+
+def fetch_model(url, path, sha256):
+    os.makedirs(MODEL_DIR, exist_ok=True)
+    if not os.path.exists(path):
+        urllib.request.urlretrieve(url, path)
+    digest = hashlib.sha256(open(path, "rb").read()).hexdigest()
+    if digest != sha256:
+        raise RuntimeError(f"{os.path.basename(path)} sha256 mismatch: {digest}")
+    return path
+
+
+def underexpose(img_bgr, factor):
+    """Scale intensity in linear-light space; factor=1.0 returns the input."""
+    if factor >= 1.0:
+        return img_bgr
+    lin = np.power(img_bgr.astype(np.float32) / 255.0, GAMMA)
+    out = np.power(lin * factor, 1.0 / GAMMA) * 255.0
+    return np.clip(out, 0, 255).astype(np.uint8)
+
+
+def shrink_face(img_bgr, scale=0.2, bg=114):
+    """Shrink the crop to `scale` of frame size and pad it back to the original
+    size with neutral gray, so the face occupies about `scale` of the frame
+    instead of filling it."""
+    h, w = img_bgr.shape[:2]
+    sh, sw = max(1, int(h * scale)), max(1, int(w * scale))
+    small = cv2.resize(img_bgr, (sw, sh), interpolation=cv2.INTER_AREA)
+    canvas = np.full((h, w, 3), bg, np.uint8)
+    y0, x0 = (h - sh) // 2, (w - sw) // 2
+    canvas[y0:y0 + sh, x0:x0 + sw] = small
+    return canvas
+
+
+def add_sensor_noise(img_bgr, rng, read_sigma=3.0, shot_gain=0.5):
+    """Add sensor-style noise: a signal-dependent Poisson shot term plus a fixed
+    Gaussian read term, applied after underexposure. shot_gain is electrons per
+    intensity unit; lower means stronger shot noise. The transform preserves the
+    mean, so it adds noise without brightening or darkening the frame."""
+    lin = np.maximum(img_bgr.astype(np.float64), 0.0)
+    shot = rng.poisson(lin * shot_gain) / shot_gain
+    noisy = shot + rng.normal(0.0, read_sigma, img_bgr.shape)
+    return np.clip(noisy, 0, 255).astype(np.uint8)
+
+
+def det_haar(min_neighbors=5):
+    casc = cv2.CascadeClassifier(
+        cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+
+    def run(img):
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # OpenCV tutorial defaults: scaleFactor=1.1, minNeighbors=5. A lower
+        # minNeighbors accepts detections backed by fewer overlapping windows.
+        faces = casc.detectMultiScale(gray, 1.1, min_neighbors, minSize=(30, 30))
+        return len(faces), np.nan
+    return run
+
+
+def det_yunet(score_threshold=None):
+    args = {} if score_threshold is None else {"score_threshold": score_threshold}
+    det = cv2.FaceDetectorYN.create(
+        fetch_model(YUNET_URL, YUNET_PATH, YUNET_SHA256), "", (320, 320), **args)
+    # library defaults: score_threshold=0.9, nms_threshold=0.3
+
+    def run(img):
+        h, w = img.shape[:2]
+        det.setInputSize((w, h))
+        faces = det.detect(img)[1]
+        if faces is None:
+            return 0, np.nan
+        return len(faces), float(np.max(faces[:, -1]))
+    return run
+
+
+def det_mediapipe():
+    import mediapipe as mp
+    from mediapipe.tasks.python import BaseOptions, vision
+    opts = vision.FaceDetectorOptions(
+        base_options=BaseOptions(
+            model_asset_path=fetch_model(BLAZE_URL, BLAZE_PATH, BLAZE_SHA256)),
+        min_detection_confidence=0.5)  # library default
+    fd = vision.FaceDetector.create_from_options(opts)
+
+    def run(img):
+        mp_img = mp.Image(image_format=mp.ImageFormat.SRGB,
+                          data=cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+        res = fd.detect(mp_img)
+        if not res.detections:
+            return 0, np.nan
+        return (len(res.detections),
+                float(max(d.categories[0].score for d in res.detections)))
+    return run
+
+
+def det_mtcnn():
+    from facenet_pytorch import MTCNN
+    mtcnn = MTCNN(keep_all=True, device="cpu")  # default thresholds .6/.7/.7
+
+    def run(img):
+        boxes, probs = mtcnn.detect(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+        if boxes is None:
+            return 0, np.nan
+        return len(boxes), float(np.max(probs))
+    return run
+
+
+BUILDERS = {"yunet": det_yunet, "mediapipe": det_mediapipe,
+            "haar": det_haar, "mtcnn": det_mtcnn,
+            # same YuNet weights with score_threshold 0.6 (default 0.9)
+            "yunet06": lambda: det_yunet(score_threshold=0.6),
+            # Haar with minNeighbors 3 and 8 (default 5)
+            "haar3": lambda: det_haar(min_neighbors=3),
+            "haar8": lambda: det_haar(min_neighbors=8)}
+
+
+def merge_save(rows):
+    new = pd.DataFrame(rows)
+    if os.path.exists(OUT_CSV):
+        old = pd.read_csv(OUT_CSV)
+        key = ["file", "detector", "exposure"]
+        keep = old.merge(new[key].drop_duplicates(), on=key, how="left",
+                         indicator=True)
+        old = old[keep["_merge"].values == "left_only"]
+        new = pd.concat([old, new], ignore_index=True)
+    new.sort_values(["detector", "exposure", "file"]).to_csv(OUT_CSV, index=False)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--detectors", default=",".join(BUILDERS))
+    ap.add_argument("--exposures", default="1.0")
+    ap.add_argument("--noise", action="store_true",
+                    help="add sensor noise after underexposure; "
+                         "the detector is recorded with a +n suffix")
+    ap.add_argument("--small-face", type=float, default=0.0, metavar="SCALE",
+                    help="shrink the face to SCALE of the frame (e.g. 0.2); "
+                         "recorded with a +sNN suffix")
+    ap.add_argument("--seed", type=int, default=0)
+    args = ap.parse_args()
+    detectors = args.detectors.split(",")
+    exposures = [float(x) for x in args.exposures.split(",")]
+    rng = np.random.default_rng(args.seed)
+
+    files = pd.read_csv(PANEL_CSV)["file"].tolist()
+    for name in detectors:
+        run = BUILDERS[name]()
+        out_name = name
+        if args.small_face > 0:
+            out_name += f"+s{int(args.small_face*100)}"
+        if args.noise:
+            out_name += "+n"
+        for exp in exposures:
+            rows = []
+            for i, fname in enumerate(files):
+                img = underexpose(cv2.imread(os.path.join(RAW_DIR, fname)), exp)
+                if args.small_face > 0:
+                    img = shrink_face(img, scale=args.small_face)
+                if args.noise:
+                    img = add_sensor_noise(img, rng)
+                n, conf = run(img)
+                rows.append({"file": fname, "detector": out_name, "exposure": exp,
+                             "n_faces": n, "max_conf": np.nan if np.isnan(conf)
+                             else round(conf, 4), "detected": int(n > 0)})
+                if (i + 1) % 2000 == 0:
+                    print(f"{out_name} exp={exp}: {i + 1}/{len(files)}", flush=True)
+            merge_save(rows)
+            miss = 1.0 - np.mean([r["detected"] for r in rows])
+            print(f"done {out_name} exp={exp}: miss rate {miss:.3%}", flush=True)
+
+if __name__ == "__main__":
+    main()

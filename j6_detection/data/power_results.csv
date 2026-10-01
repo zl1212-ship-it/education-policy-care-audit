@@ -1,0 +1,7 @@
+metric,rho,n,alpha,power,note
+mde_rho,0.387,50,0.05,0.8,min |rho| detectable at 80% power
+power_at_rho,0.078,50,0.05,0.083,power to detect this |rho|
+power_at_rho,0.2,50,0.05,0.285,power to detect this |rho|
+power_at_rho,0.3,50,0.05,0.564,power to detect this |rho|
+power_at_rho,0.4,50,0.05,0.828,power to detect this |rho|
+power_at_rho,0.387,50,0.05,0.8,power to detect this |rho|

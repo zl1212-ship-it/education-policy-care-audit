@@ -1,0 +1,244 @@
+### PRIMARY https://teaching.washington.edu/course-design/ai/
+AI+Teaching - Teaching@UW
+Skip to content
+Current site
+All the UW
+Search scope
+Current site
+All the UW
+Enter search text
+University of Washington
+University of Washington
+Students
+Parents
+Faculty & Staff
+Alumni
+Menu
+Home
+Course design
+Start here
+Align your course
+Creating your syllabus
+Flipped, hybrid, and online teaching
+Large enrollment courses
+Developing community agreements
+Creating a culture of academic integrity
+AI+Teaching
+Assessment, rubrics, and grading
+Teaching during natural and public health crises
+Inclusion & access
+Start here
+Making course materials accessible
+Universal Design for Learning
+Making course content inclusive
+Fostering an inclusive class culture
+Addressing microaggressions in class
+Trauma-responsive teaching
+Addressing specific student needs
+Engaging students
+Start here
+Active and engaged teaching
+Growth-oriented teaching
+Relevant teaching
+Teaching the first day of class
+Promoting attendance and participation
+AI+Teaching
+Confronting misinformation
+Responding to disruptions in the classroom
+Addressing distressing current events
+Office hours / Student hours
+Particular types of engagement
+Reflect & iterate
+Start here
+Developing a reflective teaching practice
+UW’s elements of effective teaching
+Gathering student feedback
+Self-assessment
+Peer review and evaluation
+Teaching & learning scholarship
+Teaching awards
+Learn with us
+Start here
+Workshops and courses
+Consultations
+Reflection and Practice Series
+Teaching Online 101
+AI+Teaching Course
+Course Alignment Clinic
+Five for Flourishing
+Evidence-Based Teaching Fellowship
+Teaching@UW New Faculty Program
+Teaching@UW: Strategies for TAs
+About
+Teaching@UW network
+Partnerships and projects
+In the news
+Contact
+Teaching@UW
+Teaching@UW
+Course design
+AI+Teaching
+AI+Teaching
+Tools that use artificial intelligence (AI) have created opportunities and challenges across higher education. The speed and scale at which AI-powered tools can analyze data has already helped researchers advance human understanding in fields across the disciplinary spectrum. Generative AI tools are also supporting the processes that guide scholars’ research, writing, and creative production.
+Inside the classroom, AI-based tools are providing instructors and students with new ways to critically engage concepts and build skills. As with all technologies, there are affordances and drawbacks associated with using AI. This page provides information that can help you integrate AI in your teaching in ways that are intentional, discerning, and learner-centered.
+What is AI?
+Broadly speaking, AI refers to both a research field and a set of technologies that use computers and very large datasets to perform tasks, make predictions or recommendations, and solve problems that normally require human intelligence. As instructors, the type of AI that you are likely to integrate into your teaching is 
+generative AI
+. While you don’t need to be an expert in AI to use it in your teaching, here are some foundational terms that can help you better understand the nature of AI. 
+Types of AI Accordion
+Machine learning
+ This term refers to the practice of using algorithms and large datasets to train computers to recognize patterns and to apply what is known about those patterns to complete new tasks. Here’s an excerpt from how a generative AI tool responded when prompted to explain machine learning to a 16-year-old:  
+“Let’s say you want to create a program to recognize whether an email is spam or not. Instead of giving the computer a list of rules like “if the email contains the word ‘free’ then it’s spam,” you feed it lots of examples of emails labeled as spam and not spam. The computer then learns by itself what characteristics tend to be associated with spam emails and what makes an email likely to be safe….Machine learning algorithms use these examples to find patterns and make predictions or decisions without being explicitly programmed to do so.”
+(OpenAI (2024), ChatGPT (Feb 2 version) [Large language model], 
+Chat GPT
+Natural language processing (NLP)
+ This term refers to the ability of computers to analyze and generate responses in ways that mimic humans’ use of language. NLP is made possible through machine learning – computers are trained on huge datasets of text through which they identify patterns in things like syntax, semantic use, and sentiment. NLP enables computers to translate, summarize, or interpret text and speech in applications such as smart assistants like Siri, search engines in web browsers like Google, and autocorrect and spellcheck features in word processing applications like Microsoft Word. 
+Generative AI
+ In simple terms, generative AI draws upon the patterns identified through machine learning processes (see above) to generate new content. Whereas machine learning focuses on analyzing huge datasets to find patterns, generative AI draws on those patterns to generate text, images, music, and even videos. Generative AI tools use math (probability) to predict what word, image, sound, etc. would most likely appear next in a sequence. The output produced by generative AI is solely based on probability, rather than understanding and knowledge. 
+Large language model (LLM)
+ A large language model (LLM) is a form of generative AI that has been trained on vast amounts of texts. It can generate text-based responses that look and feel very human-like. These models use deep learning techniques, particularly neural networks with many layers, to perform tasks like text generation, translation, and summarization. 
+Please note
+: Currently, the only UW-supported generative AI tool is 
+Microsoft Copilot
+. The UW agreement with Microsoft provides added protections, including enhanced protection of user data and privacy, for all UW users. Instructors are encouraged to explore using Copilot, rather than other non-UW-supported generative AI tools.
+What AI is not: Dispelling the myth of artificial intelligence
+Because the responses are so quick and varied, it is easy to mistake generative AI output for actual human thought. But 
+generative AI’s outputs are not thoughtful and only appear to answer questions
+. As AI scholar 
+Kate Crawford notes
+, “AI is neither artificial nor intelligent” – AI systems don’t actually know anything. Generative AI doesn’t think. Instead it produces outputs that conform to the patterns evident in the datasets that trained them.
+AI’s ability to identify patterns has helped researchers in many fields. But as the work of computer scientist and activist, 
+Timnit Gebru
+ and others has made clear, because it works from patterns found in their training datasets, 
+generative AI may reproduce the values and bias encoded in those datasets
+. We need to remember this because
+ our students may be thinking of generative AI as a place to find “answers.” We need to prepare them to use generative AI thoughtfully.
+Talking with students about AI
+Your students are already using AI. Because no technology currently exists that can reliably identify when a student uses AI to complete an assignment, it is unlikely that you can prevent students from using AI. So adopting a policing approach to student use of AI will likely be both time-consuming and unsuccessful. Instead, because UW graduates will live and work in an AI world, it is important that we provide them with opportunities to better understand the issues associated with AI and its relationship to learning.
+The following strategies can help instructors think about how to communicate with students about AI, set expectations, and increase students’ motivation to develop their own skills and ideas.
+Set expectations
+ – Establish a policy for your course around the use of generative AI and communicate this with students through the syllabus and/or assignment prompts. Here are some 
+sample syllabus statements
+ you can use or adapt to help articulate your expectations for student use of AI in your course.
+Acknowledge that struggle is part of learning
+ – Talk with students about how intellectual struggle is an necessary part of learning. Learning happens only when we move outside what we already know. Explain to students that when they use generative AI as a shortcut to complete an assignment, they may miss an opportunity to become more effective thinkers, writers, researchers, and creators.
+Communicate the importance of all college learning
+ – Many students focus only on learning with clear connections to their intended career track and may be more willing to use shortcuts in courses they deem irrelevant. However, most students will change careers at least once in their lifetimes. Talk with students about how the relevance of your course may only become apparent years from now. The skills they learn in your course may transfer to other careers – even careers that do not yet exist!
+Discuss the 
+social, ethical, and practical issues surrounding AI
+ – The processes that support generative AI tools raise issues related to privacy, disinformation, environmental impact, bias, exploitation, and academic integrity, among other things. In addition, although AI-generated output appears authoritative and factual, it is frequently riddled with inaccuracy. Discussing with students the ethical and social concerns related to AI can help them see the social context of AI and can position them to make thoughtful decisions about their own use of AI-based tools.
+Teaching with AI
+Much of the conversation about AI has focused on teaching about and with AI so UW students graduate ready to succeed in an AI-infused workplace. This is certainly important. But as instructors we need to go beyond bolting AI onto our teaching to meet employers’ expectations – we need to 
+use AI in the service of learning
+.
+To that end, there are two basic pathways for integrating AI into your teaching practice – 1) using AI behind-the-scenes to assist you in the design of your course and development of your course materials, and 2) using AI to enhance student learning and engagement.
+Using AI in the course design process
+The list below contains just a few of the ways you might use AI as you develop your course. Note how often the word “draft” appears in this list. It’s important to remember that generative AI is an 
+assistive technology
+. 
+Because AI cannot distinguish fact from fiction, you should always refine AI-generated output
+.
+Draft 
+learning outcomes
+Draft module/unit descriptions
+Draft slides or other teaching materials
+Draft 
+discussion
+ prompts
+Draft 
+rubrics
+Brainstorm 
+authentic assessment
+ ideas
+Identify and analyze themes in 
+student feedback
+ (e.g., mid-quarter check-in survey). Note: To protect student privacy and comply with FERPA requirements, please only use UW’s version 
+Copilot
+ for this task.
+Using AI to enhance learning and engagement
+In some ways, generative AI’s shortcomings are its strengths in a teaching context – its penchant for inaccuracy makes it a great tool for prompting students to think critically. Instructors can also leverage AI’s generative capabilities to prompt students to analyze alternative scenarios, ask questions about information accuracy, and explore connections between concepts.
+Below are just a few examples of how instructors might use AI to facilitate learning. Many of these examples familiarize students with AI-based tools, but also prompt critical examination of their value, accuracy, strengths, and shortcomings. 
+AI and Learning Engagement Accordion
+Think-pair-AI-share
+ Students think (as individuals) about a question/concept, then pair up with a peer to discuss. The pair then plugs the question/concept into a generative AI tool and discusses or analyzes the output.
+Evaluating AI output
+ Co-develop a 
+rubric
+ with students that describes the components of an effective essay, lab report, précis, technical manual, blog post, etc. Students prompt an AI tool to generate three versions of the assignment on a given topic and then use the rubric to evaluate the quality of the AI-generated versions.
+Improving upon/adapting AI-generated output
+Students use generative AI to draft text or code in response to an assignment prompt. Students must then improve upon the AI-generated output. When students turn in their assignment, they must include both the AI-generated text and their improved version.
+Explaining the steps in an AI-generated solution
+Students use AI to solve a math problem. Working from the AI-generated solution, they then work in groups to explain or analyze the steps that the AI tool used to arrive at the solution.
+Visualizing concepts with AI
+ Students select a concept covered in lecture or course readings and then prompt an Al image generator to create an image that represents the connection between the concept and daily life. They must then explain how the Al-generated image conveys the concept and its relationship to daily life. Students might also analyze the strengths and shortcomings of AI image generators.
+Exploring AI in your field
+ Students explore current applications of AI in the discipline of the course or in their major. Within the context of the discipline (or their major), students examine both AI’s advantages and limitations.
+It is unrealistic and, perhaps, ill-advised to integrate AI into every assignment. Here are some strategies to help build student motivation for working on assignments without relying on generative AI.
+Assess process as much as (or more than) product
+ – Lowering the stakes of individual assignments reduces students’ motivation to seek out shortcuts or cheat. 
+Low- or no-stakes formative assessments
+ reinforce the notion that learning is a process, that practice is essential to learning, and that learning, not the grade, is what matters.
+Design assignments that connect course content, class discussion, and students’ lived experience.
+ It’s harder for AI-based tools to effectively connect the dots between these sources of knowledge. An added benefit is that students often find assignments that draw on their experiences inherently more interesting and relevant.
+AI+Teaching Faculty Learning Community
+Designed for instructors on all three UW campuses, the 
+AI+Teaching Faculty Learning Community
+ provides instructors with opportunities to:
+Explore the use of AI in teaching
+Discuss the implications of AI developments in teaching
+Share resources and learn how colleagues are using AI in their teaching
+The community meets at 
+3:30pm on Zoom the first Tuesday of each month
+.
+Join today
+What to do if you suspect academic misconduct
+Students are expected to practice high standards of academic and professional honesty and integrity. The University communicates with students about the importance of knowing and understanding the expectations of both the University and specific instructors regarding academic standards. If you have prohibited the use of AI-based tools and suspect that a student has engaged in academic misconduct, you can make a report to your campus Student Conduct office.
+UW Bothell Student Affairs
+UW Seattle Community Standards and Student Conduct
+UW Tacoma Student Conduct
+Information that is communicated to students regarding academic standards and the Student Conduct Code is available on the Office of Community Standards and Student Conduct 
+Academic misconduct page
+.
+Home
+Course design
+Align your course
+Creating effective assignments
+Learning outcomes
+Creating your syllabus
+Flipped, hybrid, and online teaching
+Flipping the classroom
+Designing and refining hybrid and online courses
+Asynchronous learning
+Regular and substantive interaction
+Teaching large enrollment courses
+Developing community agreements
+Creating a culture of academic integrity
+AI+Teaching
+Ethical and social issues related to AI
+Sample syllabus statements regarding student use of artificial intelligence
+Assessment, rubrics, and grading
+Creating assessments
+Rubrics
+Grading
+Constructing tests
+Teaching during natural and public health crises
+University of Washington
+Be boundless
+Connect with us:
+Facebook
+Twitter
+Instagram
+YouTube
+LinkedIn
+Pinterest
+TikTok
+Accessibility
+Contact Us
+Jobs
+Campus Safety
+My UW
+Rules Docket
+Privacy
+Terms
+Newsletter
+© 2026 University of Washington | Seattle, WA

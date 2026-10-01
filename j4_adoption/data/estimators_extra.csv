@@ -1,0 +1,5 @@
+estimator,sample,att_pp,ci_lo,ci_hi,n_treated,notes
+Sun-Abraham IW overall post ATT,full panel (736),0.624,-0.281,1.559,29,"cohort-size-weighted CATT(g,e) over all post horizons; e<=-7 binned; e=0..2 variant +0.74 pp CI [-0.12, +1.58]; never-treated controls; cluster bootstrap B=400"
+Stacked DiD (Cengiz et al.),"full panel, window [-4,+2]",-0.371,-1.2,0.458,29,"4 cohort stacks; clean controls = never-treated or adopting after g+2; stack-by-unit and stack-by-year FE; CI from institution-clustered CR1 SE; GSU stack lacks e=-4, UW-2019 stack lacks e=+2 (panel edges)"
+"Stacked DiD (Cengiz et al.), drop 2020","full panel, window [-4,+2]",-0.44,-1.171,0.292,29,COVID robustness: calendar year 2020 excluded from every stack
+dCdH DID_M instantaneous,full panel (736),0.673,-0.312,1.693,29,"switchers-vs-not-yet-switched at each adoption year, weighted by switcher count; no treatment reversals in this panel so DID_M = joiner cells and coincides with CS ATT(g,g); dynamics covered by CS/SA event studies; cluster bootstrap B=999"

@@ -1,0 +1,32 @@
+.DS_Store
+
+# large raw images from public datasets; regenerate with fetch_face_data.py
+j7_proctoring/data/raw/
+# third-party detector weights; run_detectors.py re-downloads and sha256-verifies them
+j7_proctoring/models/
+# external essay corpus; regenerate with fetch_anchor_data.py
+j6_detection/data/anchor/
+j7_proctoring/data/*.log
+# fetched documentation page text; regenerate with build_vendor_corpus.py
+j7_proctoring/data/vendor_raw/
+# archived policy-page HTML (text stays out of git); regenerate with fetch_snapshots.py
+j9_aipolicy/data/snapshots_raw/
+# cross-national archived policy-page HTML; regenerate with patient_scale.py / patient_round.py
+j9_aipolicy/crossnational/data/snapshots_raw/
+# local off-repo backup of the raw snapshot corpus (tarballs); kept private, never committed to this public repo
+/snapshots_archive/
+# raw HESA Figure-7 download (18 MB); regenerate with uk_hesa_get.py
+j9_aipolicy/crossnational/uk_hesa.csv
+# local safety backups of the pre-2026-refresh US index/coverage
+j9_aipolicy/data/*_pre2026.csv
+# stray copy of the AU exposure workbook at repo root (canonical copy is in j9_aipolicy/crossnational/)
+/2022 Section 2 - All students.xlsx
+# cached raw API pulls (CCD/EDFacts/CRDC) + per-state report-card downloads; regenerate with the fetchers
+j10_accountability/data/raw/
+
+# GCP service-account key files: NEVER commit; keep them outside the repo (e.g. ~/.gcp/)
+moonlit-cistern-500918-i3-*.json
+# j4: pre-fix grad-rate caches (subcohort rows mixed; see scm_all.py note)
+j4_adoption/data/quarantine_raw_grad_*.csv
+# local figure output folder; the figure scripts create it
+paper/

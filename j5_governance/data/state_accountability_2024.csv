@@ -1,0 +1,52 @@
+state,state_abbr,rating_category,rating_raw
+Alabama,AL,FederalTiers,Federal Tiers of Support
+Alaska,AK,Index,Index Rating System
+Arizona,AZ,Index,Index Rating System
+Arkansas,AR,Index,Index Rating System
+California,CA,Dashboard,Dashboard
+Colorado,CO,FederalTiers,Federal Tiers of Support
+Connecticut,CT,Index,Index Rating System 1-5
+Delaware,DE,Descriptive,Descriptive
+District of Columbia,DC,Index,Index Rating System
+Florida,FL,Index,Index Rating System
+Georgia,GA,FederalTiers,Federal Tiers of Support
+Hawaii,HI,Index,Index Rating System
+Idaho,ID,FederalTiers,Federal Tiers of Support
+Illinois,IL,Descriptive,Descriptive
+Indiana,IN,Descriptive,Descriptive
+Iowa,IA,Index,Index Rating System
+Kansas,KS,Descriptive,Descriptive
+Kentucky,KY,Index,Index Rating System
+Louisiana,LA,A-F,A-F Rating System
+Maine,ME,Descriptive,Descriptive
+Maryland,MD,Star,1-5 Stars
+Massachusetts,MA,Descriptive,Descriptive
+Michigan,MI,Index,Index Rating System
+Minnesota,MN,Descriptive,Descriptive
+Mississippi,MS,A-F,A-F Rating System
+Missouri,MO,Index,Index Rating System
+Montana,MT,FederalTiers,Federal Tiers of Support
+Nebraska,NE,Descriptive,Descriptive
+Nevada,NV,Star,1-5 Star
+New Hampshire,NH,FederalTiers,Federal Tiers of Support
+New Jersey,NJ,FederalTiers,Federal Tiers of Support
+New Mexico,NM,FederalTiers,Federal Tiers of Support
+New York,NY,FederalTiers,Federal Tiers of Support
+North Carolina,NC,A-F,A-F Rating System
+North Dakota,ND,FederalTiers,Federal Tiers of Support
+Ohio,OH,Star,1-5 Stars
+Oklahoma,OK,A-F,A-F Rating System
+Oregon,OR,FederalTiers,Federal Tiers of Support
+Pennsylvania,PA,FederalTiers,Federal Tiers of Support
+Rhode Island,RI,Star,1-5 Star
+South Carolina,SC,Descriptive,Descriptive
+South Dakota,SD,Index,Index Rating (1-100)
+Tennessee,TN,A-F,A-F Rating System
+Texas,TX,A-F,A-F Rating System
+Utah,UT,FederalTiers,Federal Tiers of Support
+Vermont,VT,Descriptive,Descriptive
+Virginia,VA,FederalTiers,Federal Tiers of Support
+Washington,WA,Index,Index Rating System 1-10
+West Virginia,WV,Descriptive,Descriptive
+Wisconsin,WI,Index,Index Rating System
+Wyoming,WY,Descriptive,Descriptive

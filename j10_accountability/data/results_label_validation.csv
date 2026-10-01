@@ -1,0 +1,9 @@
+statistic,value
+reconstructed_n,120.0
+official_n,247.0
+intersection,73.0
+precision,0.6083333333333333
+recall,0.29554655870445345
+jaccard,0.24829931972789115
+base_rate,0.10177173465183353
+precision_over_base_rate,5.977429149797571

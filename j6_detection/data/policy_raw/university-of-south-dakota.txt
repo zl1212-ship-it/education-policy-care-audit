@@ -1,0 +1,214 @@
+### PRIMARY https://www.usd.edu/About/Artificial-Intelligence
+Artificial Intelligence | University of South Dakota
+Skip to main site navigation
+Skip to main content
+Apply
+Visit
+Request Information
+Open the main 
+Menu
+Open the search panel
+Search
+Academics
+Undergraduate Programs
+Graduate Programs
+USD – Sioux Falls
+Colleges & Schools
+USD – Online
+Dual Credit
+Accelerated Programs
+Signature Programs
+Continuing Education
+Libraries
+Academic Calendars
+Admissions & Aid
+Undergraduate Admissions
+Graduate Admissions
+International Admissions
+Law School Admissions
+Medical School Admissions
+Military & Veterans' Admissions
+Visit USD
+Tuition & Costs
+Financial Aid
+Research
+Undergraduate Research
+Graduate Research
+Research Compliance
+Business & Entrepreneurship Research
+Health & Medicine Research
+Humanities & Culture Research
+Learning & Leadership Research
+Public Service & Law Research
+Science & Technology Research
+Faculty & Staff Directory
+Student Life
+Housing & Dining
+Activities & Involvement
+Health & Wellness
+Academic & Campus Support
+Career Services
+Special Events & Traditions
+Arts & Culture
+Security & Safety
+Athletics
+About
+At a Glance
+Vermillion Campus & Community
+Sioux Falls Campus & Community
+Campus Maps, Directions & Parking
+Mission & History
+Purpose & Leadership
+Artificial Intelligence
+Departments, Offices & Resources
+Accreditation & Consumer Information
+Contact Us
+Open the search panel
+Search
+Helpful Links
+A-Z Index
+myUSD
+News & Stories
+Calendars
+Coyote OneStop
+Academic Catalog
+Campus Map
+Coyote Athletics
+Online Bookstore
+Coyote Gear
+Support USD
+Resources For
+Current Students
+Faculty & Staff
+Parents & Families
+Apply
+Visit
+Request Information
+Home
+About
+Artificial Intelligence
+Artificial Intelligence 
+
+ The University of South Dakota provides this central resource to guide students, faculty, and staff in the ethical and innovative use of generative AI across our campus community.
+Understanding Generative AI: USD's Guidance and Commitment
+
+As the state’s designated public liberal arts institution, the University of South Dakota is uniquely positioned to promote the ethical and responsible use of Generative AI (GenAI). GenAI is a type of artificial intelligence that uses large datasets to generate content, alongside the technical expertise needed to use these tool effectively.
+Our students, faculty, staff and graduates live and operate in a world where using GenAI is a daily occurrence. We understand the role we must play in helping our stakeholders navigate this reality. 
+The information below is intended to outline USD’s position on GenAI and provide guidance for using this resource.
+
+At USD, we value original and creative thought. We educate for integrity, curiosity and critical thinking as we equip and inspire learners to create new ideas. We understand the importance of promoting technology literacy and setting our community up to be successful in the 21st century learning environment and workplace. To that end, USD teaches and empowers our students, faculty and staff to understand and, when appropriate, to utilize with care the latest developments in technology, including GenAI.
+
+GenAI is an interactive set of tools that, when used, should serve as a supplement to human activity, not a replacement. USD encourages transparency, accuracy and fairness in the context of GenAI use, with final decisions and strategies reflecting human judgment. Responsible GenAI use includes exercising ethical judgment and restraint, with careful consideration of appropriate boundaries and potential impacts on individuals and communities. All members of the USD community are expected to maintain professional and academic integrity when using these tools.
+NOTE: The information provided here should not be viewed as official policy; it is intended to provide guidance.
+The Value and Potential Uses of GenAI at USD
+Learning and Creativity
+GenAI can help brainstorm, iterate, and explore multiple angles when individuals actively question, verify and refine outputs rather than accept them outright. 
+Scientific Inquiry and Problem-Solving
+GenAI can help explore scientific questions, identify patterns, test hypotheses and make sense of non-sensitive data, as part of the learning process. It remains important to use human judgment to verify sources and results and to treat sensitive data with care.
+Interactivity as a Skill
+Effective GenAI requires that users develop clear goals, craft well-structured prompts, fact check output and reflect on their use of technology. In situations where using GenAI is acceptable, we recommend individuals use their critical thinking skills to assess, question and refine the GenAI answers. These interactive habits mirror the scholarly process and are integral to digital fluency. 
+Workforce Development
+Across sectors, employers expect graduates to understand where GenAI can effectively assist and where human expertise must lead. USD prepares students to use GenAI ethically and competently alongside professional competencies such as analytical reasoning, effective communication, collaboration and creative problem-solving.
+While preparing USD’s graduates to understand GenAI, USD uses Microsoft 365 Copilot as its approved GenAI chat, offering the power of GPT-4 and commercial data protection. We encourage faculty, staff and students to use this tool for GenAI chat functions. Individuals can view a list of AI tools approved for various uses and their security level in 
+Coyote One Stop.
+Independent Thought at USD
+Independent thinking and academic freedom remain central to learning. 
+The most meaningful learning emerges through analysis, synthesis and challenges. USD supports the freedom to explore, debate, critique and discuss ideas relevant to a course or field of study and expects that freedom to be exercised with professionalism and responsibility.
+AI is a university resource, not a technology mandate. 
+GenAI is a resource available to the university’s community, not a requirement for every academic or professional pursuit. Its role will vary across disciplines, courses, assignments and/or projects. USD’s priority is maintaining the integrity of learning and inquiry while upholding the academic standards and expectations of individual courses at USD.
+Accuracy benefits from human judgment.
+ Ethical and professional use of GenAI requires examining, verifying and reflecting on outputs according to discipline appropriate standards of evidence and inquiry. Treating GenAI as a drafting or exploratory partner, rather than an authority, strengthens habits of careful inquiry and scholarly rigor.
+Continuous Review
+
+GenAI presents new challenges to educational ethics and practice, requiring rigorous thought and ongoing conversation among educators. USD will review this guidance regularly and update it to reflect evolving technologies, BOR policy, scholarship, legal frameworks and stakeholder input.
+Principles for Responsible AI Use at USD
+
+1. Human-Centered Learning First
+Independent thinking and deep learning emerge from the responsible and ethical use of information and technology to explore, debate and critique ideas that help with the acquisition of skills and generation of ideas.
+2. Discipline-Guided Decisions
+AI use will vary both between and within disciplines. Faculty should make this determination in collaboration with peers and academic leadership, guided by disciplinary norms, accreditation requirements and course outcomes.
+3. Transparency and Attribution
+When AI meaningfully contributes to academic work, students, faculty and staff should disclose how it was used and cite sources or models where relevant (consistent with instructor/program guidance).
+4. Accuracy, Verification and Bias Awareness
+AI can be incorrect or biased. Users must validate claims with credible sources, note limitations and avoid overreliance on AI for facts, analysis or authorship.
+5. Privacy, Data Protection and Intellectual Property
+Do not enter confidential, personally identifiable or proprietary information into AI tools without explicit authorization and appropriate safeguards. Respect creators’ rights and licensing.
+6. Accessibility in Education
+If used, AI should be deployed 
+in ways that broaden access to all learning materials and support all learners.
+7. Human Judgement and Oversight
+AI outputs should not be considered a definitive conclusion. Users should treat AI
+‑
+generated judgments as starting points, apply professional judgment, consider context and remain accountable for final decisions.
+Attribution
+The first draft of this page was written with the assistance of GenAI to compile notes and meeting minutes into a continuous document. Content was reviewed and refined by USD faculty and staff over the course of several months through an iterative process and reviewed by the campus community and leadership to ensure accuracy and alignment with institutional priorities.
+
+ Generative AI FAQ
+ 
+Click to Open
+What is Generative AI?
+Generative Artificial Intelligence (GenAI) refers to tools that can generate content—such as text, images, code, audio or video—based on prompts or questions. Examples include ChatGPT, Microsoft Copilot, Google Gemini and others.
+
+These tools can support learning, creativity and productivity, but they also require responsible and ethical use. At the University of South Dakota, we encourage students to explore AI as a 
+learning partner
+, not a replacement for their own thinking.
+Click to Open
+What AI Tools are Approved and Supported at USD?
+While USD understands the need for innovation and improved outcomes, we must also uphold our commitment to security and regulatory compliance. GenAI tools must be reviewed and approved before use on campus. USD’s Information Technology Department provides information on which tools have passed review and what kinds of data or information are acceptable within each platform.
+
+View the 
+Coyote One Stop Article on approved GenAI Tools.
+Microsoft Copilot is the only tool on USD’s campus that is approved for full, integrated use. Other tools may be used as standalone platforms or for non-restricted data.
+Click to Open
+How Can I Communicate Authentically with AI?
+The USD community relies on trust, relationships and clear communication. While GenAI can help you start a draft or organize ideas, it cannot fully represent the nuance of human interaction.
+
+To keep communication authentic and effective, do not send AI-generated text “as-is.” Review output for tone, clarity and rewrite output in your own voice. 
+Student Information
+
+ Check out USD's best practices to learn how to use AI responsibly and ethically in your coursework.
+Learn More
+Faculty Information
+
+ Explore guidance on integrating generative AI into your teaching and research with USD’s ethical use frameworks.
+Learn More
+Staff & Administration Information
+
+ Review USD’s recommendations for using generative AI efficiently and securely in your daily operations.
+Learn More
+414 E. Clark Street
+
+Vermillion, SD 57069
+877-COYOTES
+877-269-6837
+Contact Us
+Maps & Directions
+Social Media Links
+Facebook
+Instagram
+LinkedIn
+Twitter
+YouTube
+University Resources
+Alumni
+Artificial Intelligence
+Employment
+Directory
+Policies
+Legal
+Accessibility
+Compliance
+Privacy
+EOAA/Title IX
+Terms of Use
+Helpful Links
+MYUSD portal
+About USD
+USD Athletics
+Request Information
+X
+
+ Please review our website privacy policy.
+ 
+Review Privacy Policy
+Confirm

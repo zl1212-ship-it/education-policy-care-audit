@@ -1,0 +1,183 @@
+### PRIMARY https://guides.lib.lsu.edu/c.php?g=1342179&p=9896719
+AI Resources and Suggestions for Instructors - Artificial Intelligence (AI) Literacy - Research Guides at Louisiana State University
+Skip to Main Content
+Louisiana State University
+Research Guides
+LSU Libraries
+Artificial Intelligence (AI) Literacy 
+AI Resources and Suggestions for Instructors
+Search this Guide
+
+ Search
+ 
+Artificial Intelligence (AI) Literacy : AI Resources and Suggestions for Instructors
+The purpose of this guide is to assist the LSU community with understanding Generative AI Chat Bots and other Large Language Learning models. The goal is to education both students and faculty on how to critically engage with these tools, identify when AI
+What is AI?
+Evaluating AI Content
+AI Resources and Suggestions for Instructors
+AI Resources and Suggestions for Students
+Additional Resources for AI 
+
+ AI Resources
+ 
+
+ LSU AI Policy
+ 
+
+ Instructional Resources
+ 
+
+ Useful Links
+ 
+
+ Tools
+ 
+
+ Videos
+ 
+In, general, unauthorized use of generative AI to complete academic work is considered Academic Misconduct: 
+According the the 
+LSU Code of Student Conduct Section 10.1 Academic Integrity 
+High standards of academic integrity are crucial for the University to fulfill its educational mission. To uphold these standards, procedures have been established to address Academic Misconduct. A Student is responsible for submitting work for evaluation that reflects the Student’s performance. If a Student has a question regarding the Instructor’s expectations for assignments, projects, tests, or other items submitted for a grade, it is the Student’s responsibility to seek clarification from the Instructor.
+In accordance with the LSU Faculty Handbook, an Instructor may not assign a disciplinary grade, such as an "F" or zero (0) on an assignment, test examination, or course as a sanction for admitted or suspected Academic Misconduct in lieu of referring the Student to SAA under the provisions of this Code. Any grade assigned because of Academic Misconduct must be in accordance with this Code.
+A Student found Responsible for Academic Misconduct may NOT drop the course in which the violation occurred. Any Student who drops the course without written permission from SAA will be re-enrolled in the class and then given the appropriate grade as provided in the Outcome. A Student may be charged with Academic Misconduct for the following acts or omissions:
+Collaboration.
+ Unauthorized communication or interaction between two or more individuals on any academic work by giving, receiving, or otherwise sharing information without permission of the Instructor.
+Copying. 
+Copying from another Student's academic work; assisting with copying by making answers or other completed assignments available, in whole or part, to another Student, whether or not the recipient’s intentions to copy were known to the Student prior to the sharing.
+Failure to Follow Course Requirements.
+ Failure to adhere to standards of conduct for academic integrity that are promulgated by an academic unit or Instructor.
+False information.
+ Falsifying or fabricating any information, data, or citation in any academic work including but not limited to documents intended to support medical excuses or absence from class or academic work.
+Misrepresentation. 
+Misleading an Instructor as to the condition under which the work was prepared including, but not limited to, undisclosed Artificial Intelligence (AI) use, substituting for another Student, or permitting another person to substitute for oneself on any academic work.
+Other Academic Misconduct.
+ Attempting to commit, or assisting someone in the commission or attempted commission of an offense defined in this section, or any other act that may create an unfair academic advantage. 
+Plagiarism.
+ Lack of appropriate citation, or the unacknowledged inclusion of someone else's words, structure, ideas, or data; failure to identify a source, or the submission of essentially the same work for two assignments without permission of the Instructor.
+Unauthorized Materials.
+ Using any material, technique, application, artificial intelligence (AI), or device on an academic assignment that is prohibited; having any forbidden or unauthorized material, technique, application, artificial intelligence (AI), or device available on any academic work will be considered a violation.
+
+ LSU Academic Integrity Tool Kit
+ 
+
+ LSU Online: Using Generative AI to Enhance Teaching and Learning.pdf
+ 
+
+ Weber-Wulff, D. (n.d.). Testing of Detection Tools for AI-Generated Text.
+ 
+
+ “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy.
+ 
+
+ Adapting College Writing for the Age of Large Language Models such as ChatGPT: Some Next Steps for Educators. 
+This link opens in a new window
+
+ AI: Considerations for Teaching and Learning 
+This link opens in a new window
+
+ Guidance for Instructors 
+This link opens in a new window
+
+ How to productively address AI-generated text in your classroom 
+This link opens in a new window
+
+ Prompt engineering for educators – making generative AI work for you 
+This link opens in a new window
+
+ Suggestions for dealing with Artificial Intelligence 
+This link opens in a new window
+AI & Higher Education
+
+ AI Will Transform Teaching and Learning. Let’s Get it Right 
+This link opens in a new window
+
+ Here Comes the Second Year of AI College 
+This link opens in a new window
+
+ Prior to (or instead of) using ChatGPT with your students 
+This link opens in a new window
+
+ Teaching AI Ethics 
+This link opens in a new window
+
+ Teaching in the Age of AI 
+This link opens in a new window
+
+ What I Mean When I Say Critical AI Literacy 
+This link opens in a new window
+Guides
+
+ AI Text Generators Sources to Stimulate Discussion Among Teachers 
+This link opens in a new window
+
+ ChatGPT through an Education Lens 
+This link opens in a new window
+
+ Generative AI & higher education: a selective guide to resources 
+This link opens in a new window
+
+ Quick Start Guide to AI and Writing 
+This link opens in a new window
+
+ AI and Information Literacy, University of Maryland 
+This link opens in a new window
+
+ Which Face is Real? 
+This link opens in a new window
+
+ Real or Fake Text 
+This link opens in a new window
+
+ Template Phrases for Critiquing AI Outputs 
+This link opens in a new window
+
+ Template Phrases for Reflecting on AI Feedback , Anna Mills (2023) 
+This link opens in a new window
+
+ Helpful Links On The Issue of AI Detection
+ 
+
+ AI writing detection update from Turnitin’s Chief Product Officer. 
+This link opens in a new window
+
+ CHATGPT: Is it possible to spot AI-generated text? 
+This link opens in a new window
+
+ Falsely Accused of AI Cheating? Help for Students & Educators 
+This link opens in a new window
+
+ Guidance on AI detection and why we’re disabling Turnitin’s AI detector 
+This link opens in a new window
+
+ Professor guide to AI text detection 
+This link opens in a new window
+
+ Teaching Center doesn’t endorse any generative AI detection tools 
+This link opens in a new window
+
+ Towards Transparency: How Can We Distinguish AI from Human Text Going Forward? 
+This link opens in a new window
+
+ Understanding AI Writing Tools and Their Uses for Teaching and Learning at UC Berkeley 
+This link opens in a new window
+<< 
+Previous:
+ Evaluating AI Content
+Next:
+ AI Resources and Suggestions for Students >>
+Last Updated:
+Jan 23, 2026 9:55 AM
+URL:
+https://guides.lib.lsu.edu/AIliteracy
+ Print Page
+Login to LibApps
+Tags: 
+AI
+Artificial Intelligence
+chatgpt
+generative ai
+Large Language Models
+LLM
+Technology
+Report a problem.

@@ -1,0 +1,12 @@
+### AUTHOR-RETRIEVED EVIDENCE (no programmatic fetch; page 403/JS/no-policy-page)
+Institution: University of Wyoming
+Source URL: https://www.uwyo.edu/acadaffairs/index.html
+Access date: 2026-06-09
+HTTP status: manual-2026-06-09
+
+Coded values: detector_admissibility=silent; l2_protection=none; burden_of_proof=-; decision_locus=delegated
+
+Supporting passage (verbatim from the author-retrieved page):
+uwyo.edu/acadaffairs index lists no AI guidance; no university-wide AI policy page located.
+
+Note: Author-confirmed 2026-06-09: no university-wide UWyo AI policy page located (Academic Affairs index has none). Absence coded silent/delegated/none.

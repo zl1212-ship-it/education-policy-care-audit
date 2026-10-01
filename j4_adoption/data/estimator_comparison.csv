@@ -1,0 +1,9 @@
+estimator,sample,att_pp,ci_lo,ci_hi,n_treated,notes
+TWFE static,full panel (736),-0.663,-1.578,0.253,29,"analyze_did.py spec; cluster by institution; p=0.156; biased under staggered timing (Goodman-Bacon), reported as benchmark only"
+TWFE static,matched (27 treated + 111 controls),0.825,-0.286,1.936,27,"wild_cluster.py spec; CI from institution-clustered SE; state-clustered SE 0.57; state-level WCR (Webb, B=999) p=0.327"
+Callaway-Sant'Anna overall post ATT,full panel (736),0.651,-0.293,1.576,29,cs_did.py replication (same seed); not-yet-treated controls; cluster bootstrap B=400
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),1.014,0.033,2.056,27,match_did.py replication (same seed); never-treated matched controls; cluster bootstrap B=400
+Sun-Abraham IW overall post ATT,matched (27 + 111),0.969,-0.042,1.991,27,"robustness.py replication (verbatim, same seed); mean of e=0..2; cluster bootstrap B=400"
+Sun-Abraham IW overall post ATT,full panel (736),0.624,-0.281,1.559,29,"cohort-size-weighted CATT(g,e) over all post horizons; e<=-7 binned; e=0..2 variant +0.74 pp CI [-0.12, +1.58]; never-treated controls; cluster bootstrap B=400"
+Stacked DiD (Cengiz et al.),"full panel, window [-4,+2]",-0.371,-1.2,0.458,29,"4 cohort stacks; clean controls = never-treated or adopting after g+2; stack-by-unit and stack-by-year FE; CI from institution-clustered CR1 SE; GSU stack lacks e=-4, UW-2019 stack lacks e=+2 (panel edges); drop-2020 variant -0.44 pp CI [-1.17, +0.29]"
+dCdH DID_M instantaneous,full panel (736),0.673,-0.312,1.693,29,"switchers-vs-not-yet-switched at each adoption year, weighted by switcher count; no treatment reversals in this panel so DID_M = joiner cells and coincides with CS ATT(g,g); dynamics covered by CS/SA event studies; cluster bootstrap B=999"

@@ -1,0 +1,10 @@
+provision,n,primary_rate,second_rate,raw_agreement,cohen_kappa,gwet_ac1
+prohibition,80,0.062,0.112,0.95,0.689,0.94
+detector_surveillance,80,0.062,0.062,1.0,1.0,1.0
+misconduct_framing,80,0.162,0.125,0.963,0.848,0.95
+sanction,80,0.012,0.088,0.925,0.233,0.917
+permitted_use,80,0.062,0.062,1.0,1.0,1.0
+disclosure,80,0.038,0.125,0.912,0.429,0.897
+appeal,80,0.05,0.05,1.0,1.0,1.0
+l2_protection,80,0.012,0.012,1.0,1.0,1.0
+POOLED,640,0.058,0.08,0.969,0.756,0.964

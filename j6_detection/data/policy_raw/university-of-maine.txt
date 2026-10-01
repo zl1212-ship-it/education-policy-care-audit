@@ -1,0 +1,169 @@
+### PRIMARY https://umaine.edu/communitystandards/resources-policies-and-forms/generative-ai-teaching-and-learning-guidelines/
+Generative AI Teaching and Learning Guidelines - Community Standards, Rights, and Responsibilities - University of Maine
+Skip to main navigation
+Skip to site navigation
+Skip to content
+Apply to UMaine
+A-Z
+Calendar
+Give
+Map
+News
+Careers
+myUMaine
+Community Standards, Rights, and Responsibilities
+Community Standards, Rights, and Responsibilities
+Home
+Resources, Policies, and Forms
+Hazing Prevention
+Freedom of Speech
+Staff
+About
+Become a Student
+Academics
+Research
+Athletics
+Search...
+Prospective Students
+Current Student
+Faculty & Staff
+Community Member
+myUMaine
+A-Z Directory
+News
+Calendar
+Careers
+Map
+Quicklinks
+Search...
+Home
+Resources, Policies, and Forms
+Hazing Prevention
+Freedom of Speech
+Staff
+Generative AI Teaching and Learning Guidelines
+Teaching, Learning, and Artificial Intelligence (AI)
+Table of Contents
+INTRODUCTION
+PURPOSE AND SCOPE
+GUIDELINES STATEMENT 
+RESPONSIBILITIES
+ACCESS AND EQUITY
+DATA PRIVACY AND SECURITY
+USE OF AI IN TEACHING AND LEARNING
+CITATION AND REFERENCING
+ACADEMIC INTEGRITY
+PROFESSIONAL DEVELOPMENT
+REVIEWING AND UPDATING THE GUIDELINES 
+INTRODUCTION
+In this document we discuss 
+generative artificial intelligence
+ (generative AI) services and tools. These tools and services can enhance and even automate the creation of content based on a body of existing data and queries. They can be used to create text, code, images, video, sounds, and more. These models use datasets and algorithms to discern patterns and structure to create new content that has a statistically similar structure. As we experiment with these new resources, we should also keep in mind associated privacy, security, legal, and ethical issues that may come with them.
+Many industries use generative AI. In addition, software developers and online service providers are embedding AI in more and more products. A growing number of educators from middle school through doctoral programs now perceive roles for generative AI in teaching and learning, particularly, in developing instructional materials as well as in students’ completion of assignments and assessments.
+I. PURPOSE AND SCOPE
+This document establishes guidelines for the ethical, secure, and responsible use of generative artificial intelligence technologies in the context of teaching and learning at the University of Maine. It provides a framework for all members of the UMaine teaching and learning community, which includes UMaine leadership, instructors, administrative staff, and students.
+II. GUIDELINES STATEMENT 
+The University of Maine is committed to using AI technologies in an ethical, transparent, and responsible manner. We acknowledge that AI technologies have the potential to significantly enhance student learning and engagement, but we also recognize the importance of protecting student privacy and ensuring that the use of these technologies is consistent with ethical considerations. We are equally committed to preparing students to identify and critically evaluate biases or stereotypes that AI may propagate.
+The use of AI technologies in our school aligns with our mission to provide a high-quality education that prepares our students for success in the 21st century. AI technologies have the potential to support personalized learning and help teachers identify areas where students need extra support. They can also support research and writing activities and provide opportunities for students to develop skills related to critical thinking, problem-solving, and digital literacy. The University recognizes that an education in the 21st century includes generative AI literacy as well as proficiency in the use of a range of generative AI systems.  
+III. RESPONSIBILITIES 
+The following individuals and groups are responsible for the implementation and maintenance of these guidelines:
+UMaine leadership: responsible for providing resources, guidance, and support for the implementation of these guidelines
+Instructors: responsible for implementing these guidelines in their courses, including providing clear instruction on the ethical and responsible use of AI technologies by their students and teaching assistants. 
+Administrative staff: responsible for ensuring that AI technologies are used in compliance with these guidelines, including data privacy and security policies.
+Students: responsible for using AI technologies in an ethical and responsible manner, as outlined in these guidelines and communicated to them by their instructors.
+IV. ACCESS AND EQUITY 
+Equal access to reliable and credible generative AI tools and services will be instrumental in creating an inclusive learning environment for all UMaine students. These tools empower instructors and students, and can enrich educational opportunities, but it is also important to note that these tools may also contain biased and erroneous information. Additionally, they have the potential to retain and reuse private information. (See 
+Data Privacy and Security
+, below.) 
+Generative AI services for use in instruction may, with requisite evaluation and approval, be licensed by the University, college, department, or be assigned at the course level as an instructional resource via the UMaine Bookstore. 
+It is also important to note that Generative AI can function as an accessibility resource, both for instructors and students. 
+V. DATA PRIVACY AND SECURITY 
+Existing University and University System data privacy and security policies also pertain to AI services when those services store or transmit information and data which may or should be protected. Consult Student Records for 
+responsibilities relating to official educational records of students
+. The UMS has a specific policy and guidelines with regard to: 
+Safeguarding FERPA Information when Using Cloud-based Resources in a Course Environment
+that governs the use of free and fee-based AI services as part of instruction. As vendors embed AI into their services, instructors must coordinate with UMS Information Technology (IT) to confirm that data protection protocols continue to be followed.
+VI. THE USE OF AI IN TEACHING AND LEARNING 
+Academic departments, programs, and faculty committees, such as the General Education Committee, should determine the ways in which to incorporate generative AI in the curriculum in accordance with their targeted course, major, and/or minor outcomes.
+Instructors should make clear statements in syllabi and/or relevant areas of online course shells in their learning management system about the ways students will use AI in the course as well as the ways the instructor will use AI. For example, instructor expectations and curricula relative to AI could fall into one of these 
+categories
+:
+Require students to use AI
+Expect students to use AI to develop content and material to complete assignments
+Expect students to use AI to help them generate ideas or approaches for assignments
+Expect students to use AI as a means of studying AI in order to understand its capacities, identify the datasets it uses, evaluate its algorithms, etc.
+Use minimally to proofread or copy edit assignments to check grammar, syntax, clarity, and consistency 
+Forbid use of AI
+Students must acknowledge the use of generative AI any time they use it in the context of their process. (See 
+Citation and Referencing
+, below.) As always, all student work should adhere to UMaine’s established academic honesty policy. (See 
+Academic Integrity
+, below)  
+If an instructor will require or expect students to use generative AI services in a class, the syllabus should indicate the type of tools or mediums they will use. Instructors should be clear about the costs of the use of the tool (if any) as well as any data privacy concerns that may be associated with the use of the tool. 
+Similarly, if the instructor uses generative AI services to prepare or teach any part of a course and/or to assess students’ assignments, the syllabus and/or the catalog description of the course should indicate the type of tools or mediums the instructor uses.
+Instructors should inform students if they use an AI tool to assess students’ work, and students should have the ability to opt-out and receive direct feedback from the instructor. Any third party tools that use AI to assess student work should be properly vetted. 
+VII. CITATION AND REFERENCING 
+As mentioned in section 
+VI. The Use of AI in Teaching and Learning
+, when AI tools are used by a student or an instructor in the context of their teaching and learning, they should acknowledge that use and it should be appropriately cited. Additionally:
+AI-generated material, whether it be quoted or paraphrased, should be cited according to the style assigned by the instructor. 
+The most frequently used citation styles (MLA, APA, etc.) now include guidance on how to create citations for AI-generated materials. Fogler Library links to them on their 
+How to Cite Your Sources Guide
+. Students and instructors citing AI-generated material can contact Fogler Library for further guidance.
+Failure to properly cite and acknowledge the use of AI-generated material will be considered plagiarism and subject to the disciplinary actions outlined in  the 
+Academic Integrity Policy
+.
+As an addendum to any assignment, instructors may require students to submit a document that explains how the student used generative AI in their work. At the discretion of the instructor, this document may contain a description of the tools used, how each tool was used, specific prompts that were entered into the tool, how the tool and its resources were evaluated, how the work of the tool was incorporated into the final product submitted by the student, and any other relevant information. 
+VIII. ACADEMIC INTEGRITY 
+The 
+UMS Academic Integrity Policy
+ is the established and defensible process to manage accountability for academic integrity violations.  Coupled with the 
+UMS Student Conduct Code
+ (identifies serious or multiple violations), accountability and imposition of effective educational interventions can be fully satisfied.  
+We also recognize that we work and study in an ever-changing educational landscape.  Technological advances, expectations to fully collaborate with research partners, and the blurred lines between collaboration and cheating are issues that require us to adapt.  Teaching and learning must adapt to account for the growing field of artificial intelligence, and we 
+encourage the ethical and transparent use of artificial intelligence tools to support learning. 
+Educational modules should be developed and deployed to assist students with violations in advancing their understanding of academic integrity related to AI.
+IX. PROFESSIONAL DEVELOPMENT  
+Investing in professional development for UMaine’s teaching and learning community is critical to ensure we have an effective integration of generative AI technologies into our teaching and learning practices. It will be important not only to provide equitable access to Generative AI technologies, but to teach our instructors and students how to use them in responsible ways. Issues of bias and fairness, privacy, transparency and social impact should be discussed throughout.
+It is expected that professional development opportunities will be provided by the Center of Innovation in Teaching and Learning (CITL) for UMaine’s instructors.
+Instructional opportunities for students can occur within their existing courses, but there should also be opportunities for students to learn how to work with these tools outside of class. Understanding how AI can be used as a tool for students within the context of their coursework will be important, but learning how AI will be incorporated into their discipline or future jobs will also be necessary. 
+UMaine will need to provide a variety of resources and support in order to facilitate ongoing learning and development related to AI technologies. These may be best delivered through Fogler Library, IT or other campus resources.  
+X. REVIEWING AND UPDATING THE GUIDELINES 
+The University Teaching Council (UTC) is charged with keeping these guidelines current. At least once a year, the UTC, or a task force it forms, will assess these guidelines and, through any approach agreed upon by the UTC membership, determine if changes in services, practices, or some other variable has given cause for recommending to the Faculty Senate and the Provost amendments or updates to these guidelines. Between updates, members of the UMaine community are invited to share observations, concerns, or recommendations with the UTC. 
+Community Standards, Rights, and Responsibilities
+5748 Memorial Union, Rm 315
+Orono, Maine
+04469
+
+ Tel: 
+207.581.1406
+
+ Fax: 
+communitystandards@maine.edu
+Home
+Resources, Policies, and Forms
+Hazing Prevention
+Freedom of Speech
+Staff
+⨉
+Facebook
+LinkedIn
+YouTube
+Instagram
+Apply
+Student Resources
+Nondiscrimination notice
+Privacy Policy
+Clery Safety and Security Report
+Emergency
+University of Maine
+ | 
+ 
+Orono
+, 
+ME
+04469
+ | 
+ 
+207.581.1865
+Top

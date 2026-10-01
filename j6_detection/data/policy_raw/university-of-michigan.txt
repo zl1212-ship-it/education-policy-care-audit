@@ -1,0 +1,12 @@
+### AUTHOR-RETRIEVED EVIDENCE (no programmatic fetch; page 403/JS/no-policy-page)
+Institution: University of Michigan
+Source URL: https://genai.umich.edu/resources/faculty
+Access date: 2026-06-09
+HTTP status: manual-2026-06-09
+
+Coded values: detector_admissibility=advisory; l2_protection=generic_fairness; burden_of_proof=-; decision_locus=delegated
+
+Supporting passage (verbatim from the author-retrieved page):
+'U-M does not recommend the use of AI-detection technology at this time given their high error rate'; 'This committee finds the detecting tools unreliable and capable of false positives, so we recommend against that approach'; 'cannot provide definitive proof of cheating'; 'Each instructor must clearly articulate their own expectations and policies for GenAI use'; values 'fairness, diversity, equity, inclusion, accessibility'
+
+Note: Author-retrieved via browser 2026-06-09 (genai.umich.edu/resources/faculty; 403 to urllib). Generic equity language only, not L2-specific -> generic_fairness.

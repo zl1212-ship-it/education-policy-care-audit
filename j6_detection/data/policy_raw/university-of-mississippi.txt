@@ -1,0 +1,12 @@
+### AUTHOR-RETRIEVED EVIDENCE (no programmatic fetch; page 403/JS/no-policy-page)
+Institution: University of Mississippi
+Source URL: https://olemiss.edu/
+Access date: 2026-06-09
+HTTP status: manual-2026-06-09
+
+Coded values: detector_admissibility=silent; l2_protection=none; burden_of_proof=-; decision_locus=delegated
+
+Supporting passage (verbatim from the author-retrieved page):
+No university-wide AI policy located on olemiss.edu (AI task force / AI Institute only); per search + author browse, responsibility falls on individual instructors.
+
+Note: Author-confirmed 2026-06-09: Ole Miss has no university-wide AI policy page; only an AI task force/Institute. Absence of institutional governance coded as silent (no detector rule) / delegated (instructor) / none.

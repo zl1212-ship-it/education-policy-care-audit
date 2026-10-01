@@ -1,0 +1,12 @@
+### AUTHOR-RETRIEVED EVIDENCE (no programmatic fetch; page 403/JS/no-policy-page)
+Institution: University of Virginia
+Source URL: https://honor.virginia.edu/resources/artificial-intelligence
+Access date: 2026-06-09
+HTTP status: manual-2026-06-09
+
+Coded values: detector_admissibility=silent; l2_protection=none; burden_of_proof=-; decision_locus=delegated
+
+Supporting passage (verbatim from the author-retrieved page):
+'FAC has created new templates faculty may use to communicate their course's Honor policy in their syllabi ... faculty are provided space to list specific ... acceptable and unacceptable AI uses for each of their courses'; page states no rule on AI detectors.
+
+Note: Verification attempted 2026-06-09: Honor case-process/FAQ pages return 403; could not confirm a detector standard-of-proof floor. Coded silent/delegated/none on the confirmed AI-stance page.

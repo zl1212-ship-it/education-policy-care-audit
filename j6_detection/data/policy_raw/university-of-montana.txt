@@ -1,0 +1,428 @@
+### PRIMARY https://www.umt.edu/teaching/teaching-gen-ai.php
+Teaching in the Age of Generative AI | University of Montana
+Skip to main content
+
+ About
+ 
+
+ Alumni
+ 
+
+ Athletics
+ 
+
+ MyUM
+ 
+
+ Give
+ 
+Apply
+Visit
+Request Info
+Home Page
+Academics
+Academics
+All Academic Programs
+Course Catalog
+Academic Calendar
+Advising Center (Undergraduate)
+Canvas
+Libraries
+Provost
+Registrar
+Colleges, Schools and Departments
+Admission and Aid
+Admission and Aid
+Tuition and Costs
+Financial Aid
+Scholarships
+Undergraduate Admissions
+Dual Enrollment
+Graduate
+Law
+Military and Veterans
+International
+Student Life
+Student Life
+Housing
+Dining
+Calendars
+Campus Recreation
+Club Sports
+Organizations
+Student Success Services
+University Center
+Jobs for Students
+Student Financial Services
+Research
+Research
+Undergraduate Research
+UM Centers and Institutes
+UM Impact
+Research Compliance
+Research Development
+Office of Sponsored Programs
+Broader Impacts Group
+Search Site
+Submit Search
+Open Search
+Close Search
+Search UM
+Submit Search
+Home
+Open Menu
+Close Menu
+Search Site
+Submit Search
+Academics
+Academics
+
+ All Academic Programs
+ 
+
+ Course Catalog
+ 
+
+ Academic Calendar
+ 
+
+ Advising Center (Undergraduate)
+ 
+
+ Canvas
+ 
+
+ Libraries
+ 
+
+ Provost
+ 
+
+ Registrar
+ 
+
+ Colleges, Schools and Departments
+ 
+Admission and Aid
+Admission and Aid
+
+ Tuition and Costs
+ 
+
+ Financial Aid
+ 
+
+ Scholarships
+ 
+
+ Undergraduate Admissions
+ 
+
+ Dual Enrollment
+ 
+
+ Graduate
+ 
+
+ Law
+ 
+
+ Military and Veterans
+ 
+
+ International
+ 
+Student Life
+Student Life
+
+ Housing
+ 
+
+ Dining
+ 
+
+ Calendars
+ 
+
+ Campus Recreation
+ 
+
+ Club Sports
+ 
+
+ Organizations
+ 
+
+ Student Success Services
+ 
+
+ University Center
+ 
+
+ Jobs for Students
+ 
+
+ Student Financial Services
+ 
+Research
+Research
+
+ Undergraduate Research
+ 
+
+ UM Centers and Institutes
+ 
+
+ UM Impact
+ 
+
+ Research Compliance
+ 
+
+ Research Development
+ 
+
+ Office of Sponsored Programs
+ 
+
+ Broader Impacts Group
+ 
+
+ Apply
+ 
+
+ Visit
+ 
+
+ Request Info
+ 
+
+ About
+ 
+
+ Alumni
+ 
+
+ Athletics
+ 
+
+ MyUM
+ 
+
+ Give
+ 
+
+ Teaching Resources at UM
+ 
+UM
+Teaching Resources at UM
+
+ Generative AI Resources
+ 
+Menu
+Home
+Student Support
+Instructional Support
+Generative AI Resources
+Assessment in the Context of AI
+Classroom Community and Disruption
+Frequently Asked Questions about Teaching
+Research & Write
+Connect & Engage With Colleagues
+Reach Out!
+Resources for Teaching with Generative AI
+Teaching in the Age of GenAI
+Over the past two years, the University of Montana has facilitated countless hours of conversation about the role GenAI of on campus. During each of those conversations, instructors persistently asked for information, guidelines, and policies around the use of GenAI in the classroom.
+ The resources on this page were developed in response to those requests. Over a period of months, faculty, staff, and administrators have created concise, straightforward guidelines, ideas, and language for talking about GenAI in classrooms across all programs and disciplines at UM. At the end of the process, GenAI was used to summarize and refine language throughout this website.
+ Since our goal was concision, we acknowledge that the resources do not capture the spirit of the campus conversations about generative AI that have been deep, ethically complex, and ever-changing.  Please know that the information here will continue to change as the needs of our campus change. We plan to continue campus-based conversations that strategize with gen AI in mind, and we hope that you will be an active voice in those conversations.
+  If you are looking for introductory information about GenAI (such as keywords), want more information about disinformation or ethical considerations, or are interested in exploring topics such as AI and Writing, Citing AI, or AI and Copyright, we encourage you to explore the Mansfield Library’s 
+regularly-updated guide to Artificial Intelligence
+.
+Why include a statement about GenAI in your syllabus?
+All instructors should include a brief statement in their course syllabus that addresses student use of generative AI (GenAI) tools like ChatGPT, Claude, Gemini, and others. Whether you welcome, limit, or discourage their use, having clear expectations benefits everyone - especially our students.
+Syllabus statements that address the use of GenAI tools:
+Promote academic integrity
+. A clear GenAI statement helps students understand the boundaries between acceptable assistance and academic dishonesty. With so many AI tools available, guidance from you is essential to avoid confusion and unintentional misuse.
+Reduce student anxiety
+. Many students are unsure whether they're “allowed” to use AI tools and how to do so ethically. Your guidance—whether restrictive or permissive—provides clarity and builds trust.
+Support equity
+. Not all students have equal familiarity with these technologies. A syllabus statement that makes course expectations transparent also supports more equitable GenAI access through increased student familiarity with available GenAI technologies and their appropriate use.
+Encourage Critical Thinking
+. When used thoughtfully, GenAI can support learning, creativity, and critical reflection. A well-crafted policy can open the door to discussing not just 
+if
+ students can use AI, but 
+how
+ they can engage with it meaningfully in your discipline.
+Align with Institutional Goals
+. As a university, we aim to foster both academic excellence and innovation. Including a GenAI statement in your syllabus aligns your course with broader conversations happening across campus—and signals that we are thinking carefully about the future of learning.
+Example Statements that Guide Student Use
+These are very basic guidelines for syllabus statements. Stronger statements will also include language tailored to the academic values of your discipline and pedagogy. For example, in a creative writing course, you might focus on originality and voice; in a coding class, collaboration with tools might be part of the process.
+ Creating a policy requires deep consideration by the instructor. It is important to remember that the nature of gen AI makes it very difficult to track and identify because it is being built in to systems students already use (or, in some cases are required to use) such as Adobe PDF reader, some library databases, and Microsoft (i.e., Copilot).
+Collaborative Exploration With GenAI Tools Encouraged.
+ Use this if GenAI is part of the curriculum or a learning objective. 
+“This course explores how AI can be a tool in the learning process. You will be encouraged to use generative AI tools to draft, brainstorm, research, revise, and reflect—but always with transparency. We will discuss how to use these tools critically and ethically in academic and professional contexts.”
+Use of GenAI Tools Encouraged with Attribution.
+ Use this if your course encourages experimenting with GenAI as a learning partner. 
+“Generative AI tools (e.g., ChatGPT, Claude) are welcome in this course as aids to your learning, provided you use them responsibly. You will be asked to acknowledge or cite any substantial AI contributions (e.g., generated text, code, research sources, or analysis) in your submissions, following our academic integrity guidelines.”
+GenAI Tools Allowed for Specific Tasks.
+ Use this if you want students to engage critically with generative AI. 
+“You may use generative AI tools for specific tasks in this course (e.g., summarizing texts, finding sources, generating initial coding ideas), but you must clearly document what tools you used and how. You are responsible for verifying the accuracy of any AI-generated content and ensuring that your work meets course standards.”
+Limited Use of GenAI Tools with Permission.
+ Use this if you're open to case-by-case use but want to monitor closely.
+ “Use of generative AI tools (e.g., ChatGPT, DALL·E, etc.) is permitted only with prior instructor approval. If you wish to use these tools to brainstorm ideas, locate sources, generate content, or get feedback, please consult with me first. Unauthorized use may be considered a violation of academic honesty.” 
+Use of GenAI Tools Discouraged.
+ Use this if your course prioritizes original writing, reasoning, or data analysis that should be unaided.
+“Use of generative AI tools (e.g., ChatGPT, Claude, Gemini) is discouraged for any assignment or activity in this course. All submitted work must be your own original effort. Use of these tools will be treated as a violation of academic integrity policies.”
+Example Statements that Communicate Instructor Use
+Using instructor statements creates transparency by openly communicating how, when, and why AI tools are used (or not used) in course design and instruction. This clarity helps students understand the role of AI in their learning environment, distinguishes responsible instructional use from inappropriate academic use, and models ethical, intentional engagement with emerging technologies.
+Example statements
+No Instructor Use of AI Tools
+ I have not used generative AI tools in the preparation, design, or delivery of this course. All course materials, assignments, and communications were developed without the assistance of AI. This decision reflects my commitment to modeling fully human-authored academic and pedagogical work in this learning environment.
+No Instructor Use – Writing Specific
+Your instructor will not use AI tools to assess any of your work in this class beyond tools embedded in the Canvas software to organize the course. All your work will be read carefully, and all feedback will be generated originally to personally inform and guide your learning. None of the content, resources, or assignment guidelines in this course were generated using AI.
+AI in Assignment Design
+ I have used AI tools to help brainstorm or refine assignment prompts in this course. While these tools assisted with clarity and variation, the pedagogical intent and academic integrity of all assignments remain my own.
+AI-Assisted Content Development
+ Some instructional materials for this course, such as discussion prompts, quiz questions, or lecture outlines, have been created or enhanced using generative AI tools. All AI-generated content has been reviewed and edited to ensure accuracy and alignment with course goals.
+AI for Efficiency in Course Management
+ To streamline course logistics, I occasionally use AI tools to draft routine communications (such as announcements or reminders). These messages are always reviewed before being sent.
+AI-Generated Feedback Examples
+ Some examples of feedback or model responses provided in this course may have been generated with the help of AI tools. I verify and adapt all examples to reflect course standards and expectations.
+Transparency in AI Use
+ I believe in modeling responsible AI use. When I use AI tools in course preparation or delivery, I will let you know. You are encouraged to ask questions about how AI fits into our classroom practice.
+Talking Points for Introducing GenAI and the Syllabus Policy
+Many instructors aren’t sure how to introduce the topic of gen AI in class. What follows is a simple outline of topics you might use for a short comment when introducing your syllabus or gen AI policy.
+What Is GenAI?
+“You’ve probably heard of tools like ChatGPT or Gemini—these are part of something called generative AI or LLM’s, Large Language models. They’re designed to create text, code, images, and more, based on prompts people type in.”
+Why Are We Talking About It in Class?
+“These tools are widely available now, and people are using them in all kinds of settings—from writing papers, to researching, to getting help with homework. At this university, you might have a different gen AI policy in each of your classes, so it’s important we talk about if and how they can be used in this course.”
+Why It’s Not Always Simple
+“Generative AI can be helpful, but it can also be misleading, biased, or inaccurate. Additionally, there are ethical questions about using it to do academic work and direct consequences/impacts to your learning. There are worthy conversations to be had about the processes and products of education – and about the environmental impacts of Gen AI. We’re all still figuring this out—including me.”
+What My Policy Is for This Class
+“You’ll see a short statement in the syllabus about how I expect you to use—or not use—AI in this class. It’s okay if you’re unsure what that means right now. I’m happy to talk more about it.”
+If You’re Ever Unsure—Ask
+“The most important thing is that we have an open line of communication. If you’re ever not sure what’s allowed, just ask me. Part of my job is to help you navigate it and understand its role in your learning.”
+What about AI Detection Tools?
+Updated content: February 2026 
+At this time, faculty should not use AI detection tools because UM does not have an enterprise contract with any AI detector. Without such a contract, the university cannot guarantee the privacy or security of student work, and uploading assignments to third-party tools constitutes an unfair and unapproved use of students’ intellectual property. 
+But there are other reasons to avoid using AI detectors. 
+While AI detectors may seem like a useful way to identify student misuse of generative AI tools (like ChatGPT), 
+these tools are unreliable and should not be used as sole evidence of misconduct
+.
+AI detectors frequently produce 
+false positives
+, flagging original student work—especially from multilingual writers, neurodivergent students, or those with non-standard writing styles—as “AI-generated.” Conversely, they can also 
+miss actual AI-generated content
+, especially if it has been edited.
+Because of these limitations:
+Detection results are not admissible proof
+ of academic dishonesty.
+Conversations and context matter
+ more than software scores.
+Fair and educational responses
+ should focus on transparency, student intent, and clarity of course policy.
+How to Address Suspected GenAI Misuse 
+In this transitional time, both students and instructors are still learning how to navigate GenAI in academic contexts. Treating AI misuse as a moment for learning, not just discipline, fosters integrity, clarity, and trust in your classroom.
+The purpose of the following procedure is to provide a fair, transparent, and educational response when a student may have used generative AI in violation of course expectations.
+Instructors are encouraged to connect with their colleagues and/or seek conversation and support from the 
+Associate Director of Academic Assessment and Faculty Support
+.
+Procedure for Addressing Suspected GenAI Misuse in the Classroom
+Pause and Assess Thoughtfully
+Before taking any action:
+
+Review your syllabus policy to confirm how clearly it was stated and whether the assignment’s AI expectations were specific.
+Reflect on your concern: Is it about the quality or voice of the work? An abrupt shift in writing style? A shift from previous assignments in the class? Something you notice about how they use sources?
+Reminder: Suspicion alone is not proof. Proceed with care and openness.
+ Initiate a Low-Stakes Conversation
+Schedule a private, non-confrontational meeting with the student. Frame the discussion as an opportunity to clarify their understanding and intentions.
+
+Sample Script: "I wanted to talk with you about your recent assignment. Some parts made me wonder if generative AI tools might have been used. I would like to further understand your process and clarify expectations going forward. Can you walk me through how you approached the assignment?"
+In this conversation:
+
+Invite the student to describe their process in detail.
+Ask if they used any outside tools (AI or otherwise).
+Gauge their understanding of your course’s AI policy.
+Reflect and Educate if Needed
+If the student admits to using GenAI but didn’t realize it was a problem:
+
+Treat this as a teachable moment, especially for a first-time or unclear-policy case.
+Clarify your expectations and offer to let the student revise or resubmit the work with proper guidance.
+If your syllabus was vague or didn’t specify AI use clearly, you might say:
+
+“Thanks for being honest. I realize we may not have discussed this thoroughly, so let’s consider this a chance to clarify expectations moving forward.”
+Document the Interaction
+For your own records, note:
+
+What prompted your concern?
+What was said in the meeting?
+Any outcome or follow-up plan?
+This protects both you and the student and helps identify broader patterns if they emerge.
+Determine Next Steps Based on Intent and Impact
+Scenario = Suggested Action
+Unintentional use + policy unclear = Education + no penalty or resubmission option
+Unintentional use + policy clear = Warning + resubmission or partial credit
+Intentional misuse = Proceed with the academic integrity process described in 
+UM’s Student Conduct Code
+NOTE
+: If you move forward with formal reporting, please make sure to familiarize yourself with the procedures described in 
+UM’s Student Conduct Code
+.
+Follow Up with Empathy
+Regardless of the outcome, follow up with the student:
+
+Reinforce your trust in them going forward.
+Encourage questions about AI use and course policies.
+Reiterate that learning—not punishment—is the primary goal.
+Reflect and Update Future Assignments
+Consider modifying your syllabus and/or future assignments to reduce ambiguity:
+
+Add process reflections (e.g., “Explain your steps…”)
+Require drafts or outlines
+Include questions about tool use and attribution
+Do You Want to Explore the Complexities of Gen AI?
+Artificial Intelligence (AI) presents transformative possibilities across disciplines but also raises urgent and complex challenges that demand critical attention from educators, researchers, and society at large.
+The following questions might guide your own exploration and critical reflection of Gen AI, but you might also consider them as potential angles for assignments for students.
+Social Complexities
+How will AI-driven automation impact employment, and who is most vulnerable to displacement?
+In what ways can AI reinforce or amplify social biases, especially in high-stakes decisions like hiring or policing?
+What role does AI play in the creation and spread of misinformation, and how might this affect public trust and democracy?
+Ethical Complexities
+Who is accountable when AI systems make decisions that cause harm, and how transparent are those decisions?
+How does AI-enabled surveillance challenge norms of privacy and consent in both public and private contexts?
+When should AI be allowed to make decisions traditionally reserved for human judgment—such as in healthcare or criminal justice?
+Environmental Complexities
+What are the environmental costs of developing and running large-scale AI models, particularly in terms of energy and water use?
+How does AI’s dependence on rare minerals and electronic hardware contribute to e-waste and ecological harm?
+32 Campus Drive
+
+ Missoula, MT 59812
+ 
+Amy Ratto Parks
+(406) 243-2133
+Amy.RattoParks@umontana.edu
+
+ Launch UM virtual tour.
+ 
+
+ 32 Campus Drive
+Missoula, MT 59812
+ 
+(406) 243-0211
+Contact Us
+Accessibility
+Campus Map
+Directory
+Employment
+Explore Enrollment
+Parking
+Safety and Support
+Contact Us
+facebook
+X/Twitter
+YouTube
+Instagram
+LinkedIn
+© 2026 University of Montana
+
+ Privacy Policy

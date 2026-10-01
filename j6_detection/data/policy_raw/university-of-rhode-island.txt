@@ -1,0 +1,190 @@
+### PRIMARY https://uri.libguides.com/ai/instructors
+Resources for instructors - Understanding & Using AI - LibGuides @ URI at University of Rhode Island
+Skip to Main Content
+University of Rhode Island
+
+ University Libraries 
+Facebook
+Twitter
+YouTube
+University of Rhode Island Libraries
+LibGuides @ URI
+Understanding & Using AI
+Resources for instructors
+Search for Databases and Guides
+
+ Search
+ 
+Understanding & Using AI: Resources for instructors
+A brief introduction to generative artificial intelligence covering how it works, types of tools, and tips for responsible AI-use.
+Getting Started
+Cautions & caveats
+How to use AI tools
+Types of tools
+Citing your use of AI tools
+Where to learn more
+Resources for instructors
+Introduction
+Faculty Senate Language on Faculty Copyright and AI
+Crafting AI policies
+Discussion prompts: Talking about AI in the classroom
+What about AI detectors?
+Suggested reading
+
+ Need Help?
+ 
+
+ Research Help
+ 
+Email Me
+Click on the black arrow to open the chat in a new window. 
+If we're not online, please email us at researchhelp@uri.edu. Please allow 1-2 business days for a response.
+Contact:
+Kingston: (401) 874-2653 
+Narragansett: (401) 874-6161
+Social:
+Facebook Page
+Twitter Page
+YouTube Page
+Instagram Page
+
+ Introduction
+ 
+This page is specifically geared toward instructors; it collects resources to help you craft AI policies, discuss AI use with your students, and find further readings if you want to dive deeper. 
+
+ Faculty Senate Language on Faculty Copyright and AI
+ 
+In February 2026, URI's Faculty Senate and the Office of the General Counsel created a syllabus statement allowing instructors to prohibit the distribution of course content and audio- or video-recordings of course-related activities to others, including AI tools. For your convenience, the full document is linked below.
+
+ URI Copyright Notice FINAL (2026)
+ 
+This link opens in a new window
+This is the final approved copyright language developed by the URI Faculty Senate Executive Committee and the Office of General Counsel, intended to be incorporated into syllabi as needed.
+
+ Syllabus Statements & Design (URI Office for the Advancement of Teaching and Learning) 
+This link opens in a new window
+This link opens in a new window
+
+ The Office for the Advancement of Teaching and Learning provides a variety of syllabus language examples that can be adapted as needed for courses. This includes language on AI use and language prohibiting providing access to course materials to AI tools.
+ 
+
+ Crafting AI policies
+ 
+Educators across disciplines are grappling with how to negotiate and set boundaries on AI-use in their classrooms. As you consider what policies, guidelines, and restrictions feel authentic and meaningful for your course context, you may find it helpful to browse language from other instructors for inspiration. Below, find URI's recommended language, as well as a collection of syllabus policies on AI use from instructors from across disciplines and around the world. 
+
+ Syllabus Statements & Design (URI Office for the Advancement of Teaching and Learning) 
+This link opens in a new window
+This link opens in a new window
+
+ On the "Optional Language for Your Syllabus" tab, there are several options for AI use policies, as well as a copyright policy statement if you wish to prohibit uploading of course materials to AI tools or other external services.
+ 
+
+ Syllabus Policies for AI Generative Tools (Lance Eaton) 
+This link opens in a new window
+
+ A multidisciplinary collection of syllabus policies created by instructors across disciplines at a range of institutions. Collected by Lance Eaton, Senior Associate Director of AI in Teaching and Learning at Northeastern University.
+ 
+
+ Discussion prompts: Talking about AI in the classroom
+ 
+Having frank and open conversations with students about AI can be helpful in building consensus in your class community. Below, you'll find some prompts to help you begin engaging students in these conversations in your own classroom.
+What does responsible AI-use mean to you? 
+What skills does a person need to be able to use AI ethically and effectively? How would you define AI-literacy?
+How (if at all) do you think AI should be incorporated into your college curriculum?
+Have you used AI tools to help you learn or master new content? Share how you've leveraged these tools to help you learn.
+In what ways do you see AI becoming relevant for your chosen career path or area of interest? How has this changed your perception of what skills you need to develop in order to succeed in your chosen career?
+In your own use of AI tools what capacities and limitations have you noticed? What have you found that AI tools do really well and what shortcomings have you discovered?
+What troubles you about AI? Do you have any concerns you've been grappling with? Jumping off points for discussion could include data privacy, algorithmic bias, labor, the digital divide, etc. 
+
+ What about AI detectors?
+ 
+As of June 2026, URI does not provide a subscription to any AI detection software. 
+If you are considering AI detection tools, it's important to establish the following before proceeding:
+Have you provided clear guidance to your students on the use of AI in your course?
+ Making expectations clear is key to helping students understand what role(s) AI can play in their work in the course. It is helpful to include written guidance with each assignment so the information is readily accessible.
+Acceptable levels of AI use
+: What level of AI assistance will you accept? Is the use of AI-assisted grammar tools acceptable in your course? 
+Reliability
+: Has the AI detection tool been evaluated for effectiveness by other users or researchers? Search for articles discussing any tool's reliability before making a decision.
+Protection of intellectual property
+:
+ 
+If you are planning on uploading student work to an AI detection tool, do you have permission to upload that work?
+What happens to that student's work once it has been uploaded? Does it become part of the training data without the student's consent?
+Protection of student information
+: Has the content been anonymized to avoid conflicts with regulations?
+Bias
+: Much of AI's training data is from content written by English speakers, and the algorithms prioritize certain language based on the programmers' preferences. If English is not a student's first language, and/or if they have used certain features built into the tools they're using to write or translate their words, will this assistance show up as AI-generated? 
+Evidence
+: Does the tool provide clear evidence for its claims in the output?
+Companies trying to sell AI detection software will make claims that may not be supported by evidence
+. Thoroughly vet any tools' claims before proceeding, and make sure that your use of AI detectors doesn't compromise students' ownership of their work or violate University policy.
+
+ Suggested reading
+ 
+
+ AI Detectors Don’t Work. Here’s What to Do Instead. (n.d.). MIT Sloan Teaching & Learning Technologies. 
+This link opens in a new window
+
+ Baron, N. (2023, October 3). Advice | AI in the Classroom Is a Problem. Professors Are the Solution. The Chronicle of Higher Education. 
+This link opens in a new window
+
+ Darby, F. (2023, June 27). Advice | 4 Steps to Help You Plan for ChatGPT in Your Classroom. The Chronicle of Higher Education. 
+This link opens in a new window
+
+ Lo, L. S. (2023). The CLEAR path: A framework for enhancing information literacy through prompt engineering. The Journal of Academic Librarianship, 49(4), 102720. 
+This link opens in a new window
+
+ Mintz, S. (2023, December 4). Why Higher Ed Needs to Be Disrupted. Inside Higher Ed. Retrieved January 5, 2024 
+This link opens in a new window
+
+ Mollick, E. (2023, September 16). Assigning AI: Seven Ways of Using AI in Class. 
+This link opens in a new window
+
+ Pindell, N. (n.d.). The Challenge of AI Checkers | Center for Transformative Teaching | Nebraska. Retrieved December 8, 2025 
+This link opens in a new window
+
+ Salman, J. (2023, June 8). How educators are using AI in the classroom. The Hechinger Report. 
+This link opens in a new window
+
+ Young, J. R. (2023, October 10). How to Help Students Avoid Getting Duped Online—And by AI Chatbots—EdSurge News. EdSurge. 
+This link opens in a new window
+<< 
+Previous:
+ Where to learn more
+Last Updated:
+Jun 9, 2026 1:23 PM
+URL:
+https://uri.libguides.com/ai
+ Print Page
+Login to LibApps
+Report a problem
+Subjects: 
+General & Reference
+University
+Leadership
+Diversity and Inclusion
+Global
+Campuses
+Safety
+Campus Life
+Housing
+Dining
+Athletics and Recreation
+Health and Wellness
+Events
+Academics
+Undergraduate
+Graduate
+Advising
+Libraries
+Internships
+Facebook
+Instagram
+Twitter
+YouTube
+Copyright © 
+University of Rhode Island
+ | University of Rhode Island, Kingston, RI 02881, USA | 1.401.874.1000
+URI is an equal opportunity employer committed to the principles of affirmative action. 
+Work at URI

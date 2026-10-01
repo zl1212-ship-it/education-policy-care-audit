@@ -1,0 +1,332 @@
+### PRIMARY https://www.colorado.edu/center/teaching-learning/technology-ai/teaching-learning-ai/ai-academic-integrity/academic-integrity-context-ai
+Academic Integrity in the Context of AI | Center for Teaching & Learning | University of Colorado Boulder
+ Skip to main content 
+Translate
+English
+Spanish
+Chinese
+French
+German
+Korean
+Lao
+Nepali
+Japanese
+Tibetan
+Search
+Enter the terms you wish to search for.
+This site
+All of Colorado.edu
+Other ways to search:
+Events Calendar
+Campus Map
+ Center for Teaching & Learning 
+Home
+Consultations
+Programs & Services
+Events
+Inclusivity
+Teaching Resources
+Technology & AI
+Newsletter
+CIRTL@CU
+About Us
+Our People
+Contact Us
+Newsletter
+Room Booking
+Annual Report
+Accessibility
+Breadcrumb
+Home
+Technology & AI
+Teaching, Learning, & AI
+AI & Academic Integrity
+Academic Integrity in the Context of AI
+Academic Integrity in the Context of AI
+Academic Integrity in the Context of AI
+Generative AI has intensified concerns about academic integrity, primarily by increasing uncertainty about how student work is produced and how misconduct should be interpreted. This page explains what academic integrity and academic misconduct mean, summarizes evidence on the prevalence of misconduct before and after widespread use of AI tools, and highlights what instructors can do to promote learning, trust, and ethical use of AI. 
+What Is Academic Integrity?
+Academic Integrity refers to a commitment to the core values of honesty, trust, fairness, respect, responsibility, and courage (
+International Center for Academic Integrity
+). These values enable: 
+Consistent and fair evaluation of student work
+Appropriate recognition for student effort and learning
+Credibility and trust in the learning process
+Academic integrity is therefore 
+not just about rule compliance
+, but also about 
+cultivating ethical reasoning and action.
+What Is Academic Misconduct?
+Academic misconduct refers to any action that violates principles of academic integrity. CU Boulder’s 
+honor code
+ considers any behavior that could result in an 
+unfair academic advantage
+ as academic misconduct. Examples include:
+Using unauthorized materials or tools (e.g., notes, study aids, generative AI tools) 
+Portraying another’s work as one’s own 
+Aiding misconduct by sharing homework with peers or uploading course materials on third-party sites without the instructor's permission.
+You can review this 
+short primer on CU Boulder’s Honor Code
+ to learn more.
+Is AI Increasing Academic Misconduct? What the Evidence Says 
+Academic misconduct is not a new problem. Research across multiple decades shows that 
+misconduct rates have consistently been higher than 45%
+, sometimes as high as 88% (
+Curtis, 2022
+). 
+Disruptions to assessment practices can temporarily change rates of academic misconduct. This includes: 
+COVID-19-related shifts:
+ Increased adoption of remote or asynchronous exams has been associated with academic misconduct, 
+often exceeding 54%
+. Nonetheless, these estimates are within the range of previously reported rates of academic misconduct. (
+Newton & Essex, 2024
+). 
+AI-related shifts:
+ Since the release of ChatGPT, some studies report that 
+unauthorized use of AI has increased fourfold
+, with up to 45% of students reporting using AI in ways that are explicitly prohibited by course policies (
+HEPI, 2026
+; 
+Turnitin
+; 
+Stone, 2025
+; 
+Wiley, 2024
+). 
+However, multiple studies indicate that the overall rate of misconduct has remained the same as that predating generative AI tools (
+Goodier, 2025
+; 
+Lee et al., 2024
+; 
+Stone, 2025
+; 
+Docherty, 2025
+). 
+Why Does Increased AI Use Not Always Translate to Misconduct?
+Several factors contribute to the gap between the increased use of AI in coursework and reported rates of academic misconduct.
+Instructors overestimate text being AI-generated  
+Distinguishing between human-generated and AI-generated text is notoriously difficult (
+Murray & Tersigni, 2024
+; 
+Voigt et al., 2026
+). Increased scrutiny and uncertainty around AI use can amplify perceptions of misconduct without corresponding to evidence of or actual academic misconduct.
+Limits of AI detection tools
+AI detectors are unreliable and introduce false positives. They are also heavily biased against non-native speakers of English (
+Weber-Wulff et al., 2023
+; 
+Liang et al., 2023
+; 
+Perkins et al., 2024
+). As a result, many suspected cases may be dismissed if students were falsely accused of using AI.
+Students rationalize their AI use
+Students may underestimate or justify the extent to which their AI use is reasonable, particularly if they perceive it as being socially undesirable (
+Adzima, 2025
+; 
+Ling et al., 2025
+). So even if used inappropriately, they are unlikely to cite or admit to unauthorized AI use.
+Traditional forms of academic misconduct have declined
+Studies have shown that students now seem to rely on AI to complete assessments instead of other types of academic misconduct, such as plagiarism from other sources, contract cheating, or copying work of peers, suggesting why academic misconduct rates have largely remained the same (
+Goodier, 2025
+).
+Students' actual use of AI 
+Although over 80% of students report using AI tools, the majority do so for initial ideation, troubleshooting, or when they get stuck. Thus, despite an increase in the usage of AI tools, students may not be submitting sections or entire academic works without modifying AI output (
+ETRA, 2026
+; 
+Stone, 2025
+).
+What Does This Mean for Instructors?
+The above evidence suggests that AI may be reshaping how students seek support, rather than the rates of misconduct itself. Research shows that academic misconduct generally tends to decline with increased institutional and instructional support (
+Curtis, 2022
+). Moreover, the reasons why students may engage in misconduct have largely remained unchanged. Given the ubiquity of AI tools, surveillance or prohibition alone is unlikely to work. Instead, 
+effective approaches should focus on addressing: 
+Why students engage in academic misconduct 
+Suspected misconduct while supporting learning
+, and
+Assessment design that reduces the incentives to cheat using AI
+ Recommended Resources 
+Bertram Gallant
+ T., 
+Rettinger
+, D.A. (2025). 
+The Opposite of Cheating: Teaching for Integrity in the Age of AI
+. The University of Oklahoma Press.
+ETRA
+ (2026). 
+Undergraduate perspectives on AI at CU Boulder
+. CU Boulder
+International Center for Academic Integrity
+. 
+Fundamental Values of Academic Integrity
+.
+Lang
+, J. M. (2013). 
+Cheating lessons: Learning from academic dishonesty
+. Harvard University Press.
+Rettinger
+, D.A., 
+Bertram Gallant
+, T. (2022). 
+Cheating academic integrity: lessons from 30 years of research
+. Jossey-Bass.
+Student Conduct & Conflict Resolution
+. 
+Student Honor Code and Code of Conduct
+. CU Boulder.
+Online Teaching Resources
+What Is Online Teaching?
+Course Design Tips for Online Teaching
+Tips for Teaching Online
+Online Considerations and Examples
+Time Management Tips for Online Teaching
+Learner Resources: Tips for Thriving in Asynchronous Online Learning
+Teaching & Technology
+BuffsCreate - Own Your Digital Identity
+Build Community Online
+Empower Your Teaching with Classroom Capture: Benefits for You and Your Students
+Leveraging Technology for Effective Teaching
+Supporting International Students in Online Classes
+Open Education
+Teaching, Learning, & AI
+AI & Academic Integrity
+Academic Integrity in the Context of AI
+Why Do Students Engage in Academic Misconduct?
+Addressing Academic Misconduct
+AI & Assessment
+AI Dialogue with Students
+AI Ethical Considerations
+AI Literacy Ambassadors Program
+AI Literacy in Teaching and Learning
+AI Syllabus Statements
+Considerations before Using AI in Teaching and Learning
+Supporting Student Learning while Reducing Overuse of Gen AI: Checklist of Evidence-based Strategies
+Teaching, Learning & AI Community of Practice (TLAI CoP)
+Teaching, Learning & AI Repository
+2026 AI Summer Design Studio, [Re]shaping your AI Narrative.
+About Us
+Our People
+Contact Us
+Newsletter
+Room Booking
+Annual Report
+Accessibility
+Center for Teaching & Learning
+Center for Academic Success & Engagement (CASE)
+E390 (3rd Floor), East Building
+1725 Euclid Avenue, Boulder, 
+200 UCB, 
+CO 80309
+CTL@colorado.EDU 
+University of Colorado Boulder
+© Regents of the University of Colorado
+Privacy
+ • 
+Legal & Trademarks
+ • 
+Campus Map
+University of Colorado Boulder
+© Regents of the University of Colorado
+
+
+### SECONDARY https://www.colorado.edu/studentlife/ai-honor-code
+AI and the Honor Code: 3 things to know | Division of Student Life | University of Colorado Boulder
+ Skip to main content 
+Translate
+English
+Spanish
+Chinese
+French
+German
+Korean
+Lao
+Nepali
+Japanese
+Tibetan
+Search
+Enter the terms you wish to search for.
+This site
+All of Colorado.edu
+Other ways to search:
+Events Calendar
+Campus Map
+ Division of Student Life 
+Home
+Engagement
+Leadership
+Community
+Health & Well-Being
+Support
+About Us
+Student Life Staff
+Student Events
+Families
+Staff & Faculty
+Student Life Jobs
+Student Emergency Fund
+AI and the Honor Code: 3 things to know 
+Published:8/28/2025
+ 8/28/2025 
+ • By 
+Student Conduct & Conflict Resolution
+ Listen to this article
+Curious about using AI tools like ChatGPT in your classes? You're not alone! As AI becomes part of everyday life, students, faculty and staff are figuring out how to use it in smart and ethical ways.
+That includes staying true to 
+CU Boulder’s Honor Code
+, which is all about academic integrity and personal responsibility.
+So, as you head into the semester, here are three important things to know about using AI tools in your coursework.
+1. Learn about Honor Code standards for AI use 
+Right now, there isn’t a one-size-fits-all policy on AI in curriculum, because every course and professor might approach AI tools differently. The goal is to help you learn how to use innovative tools like ChatGPT in ways that support your success, not replace your work.
+Here’s what that means for you:
+Your professors set the rules
+. Each instructor decides if, when and how AI can be used in their class. It’s up to you to ask questions and make sure you understand their expectations before using any AI tools for assignments.
+The Honor Code still applies
+. Using AI without permission—especially if it gives you an unfair academic advantage—is considered cheating. That includes things like having AI write your paper or using essay bots (free or paid) without approval.
+Plagiarism is still plagiarism
+. Whether it’s copying from a website or using AI to generate content, passing off someone else’s work as your own violates the Honor Code.
+2. Clarify AI guidelines for each course 
+Not sure if you can use AI in a class? Just ask your instructor. Every course might have different expectations when it comes to using tools like ChatGPT or other AI. If you're ever unsure, the best move is to check in with your instructor before using AI for any assignments. It’s a simple way to avoid mistakes and stay on the right side of the Honor Code.
+Student Conduct and Conflict Resolution
+ recognizes that AI can be a helpful and creative tool in education. But it must be used the right way—and that depends on your course and your professor’s guidelines.  
+3. Be aware of the consequences
+If you use AI tools in a way that doesn’t follow your course’s guidelines, it could lead to an Honor Code violation. And while that might sound intimidating, CU Boulder’s approach is about helping you learn from mistakes.
+Here’s what to keep in mind:
+Violations are handled case-by-case
+. If you're found responsible for breaking the Honor Code, you may go through a resolution process designed to help you reflect, learn, and grow in your academic journey. Review examples of 
+resolution outcomes
+.
+Professors decide academic outcomes
+. Your instructors have the final say on what happens academically if a violation occurs in their class.
+Bottom line: know the rules, ask questions and use AI responsibly. It’s all part of learning how to navigate new tools with integrity.
+Find support
+CU Boulder offers a wide variety of 
+tutoring and learning resources
+ to support you and your academic success.
+Academic Success and Achievement Program (ASAP)
+ASAP offers peer tutoring and study resources to all first-year students and students living on campus. ASAP also offers the Textbook Lending Library, allowing students to check out books for many general education and lower division classes.
+Disability Services
+If you’re planning to use testing accommodations through Disability Services, make sure you’re on the same page as your instructors about how they’ll be administered. Your dedicated access coordinator can help answer any additional questions or concerns.  
+The Writing Center
+The CU Boulder Writing Center is a free academic support service that offers writers from all academic disciplines and skill levels the opportunity to work one-on-one with professionally trained writing consultants.  
+Tags:
+Academic Help
+Find Support
+Related Articles
+Families
+Staff & Faculty
+Student Life Jobs
+Student Emergency Fund
+Division of Student Life
+Center for Community, Suite S430
+2249 Willard Loop Drive, Boulder, CO 80309
+031 UCB • 303-492-9048
+studentlife@colorado.edu
+CU Boulder acknowledges that it is located on the traditional territories and ancestral homelands of the Cheyenne, Arapaho, Ute and many other Native American nations. Their forced removal from these territories has caused devastating and lasting impacts. 
+Full CU Boulder land acknowledgment
+University of Colorado Boulder
+© Regents of the University of Colorado
+Privacy
+ • 
+Legal & Trademarks
+ • 
+Campus Map
+University of Colorado Boulder
+© Regents of the University of Colorado
