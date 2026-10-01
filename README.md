@@ -1,8 +1,8 @@
 # Education-Policy Audit Series: Replication Data and Code
 
 This repository holds the data-construction and analysis code for a set of independent
-education-policy audit pipelines. Every figure and number in the associated manuscripts is
-reproducible from public sources by running the scripts here; each manuscript's
+education-policy audit pipelines. Every figure and number in the associated papers is
+reproducible from public sources by running the scripts here; each paper's
 data-availability statement points to this repository.
 
 Each pipeline has its own directory and README (data sources, build steps, run order).
