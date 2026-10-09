@@ -31,7 +31,7 @@ parts = [r"""\documentclass[12pt]{article}
 \setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
 \begin{document}
 \begin{center}{\large\bfseries Supplementary material}\\[4pt]
-Naming the Offense, Not the Remedy: Convergent AI Rules and Thin Protections in Four University Systems after the ChatGPT Shock\end{center}
+Supplementary tables for the J9 AI-policy analysis\end{center}
 """]
 # ---------------- S1
 c = pd.read_csv(AN / "contamination_summary.csv"); c = c[c.subset == "all snapshots"].set_index("system")
