@@ -1,6 +1,6 @@
 # Revision analyses (one-page-per-type design, cleaned text, crawl density, convergence checks)
 
-These scripts extend the parent pipeline for the revised manuscript. They read the parent
+These scripts extend the parent pipeline for the current version of the analysis. They read the parent
 pipeline's committed files (`../data/`, `../crossnational/data/`) and write everything to
 `output/`. Raw page HTML and retrieved PDFs are not committed (gitignored, regenerable with the
 fetchers below); the assembled CSV products are.
@@ -36,6 +36,6 @@ fetchers below); the assembled CSV products are.
 8. `exposure_robustness.py`, `validation_r1.py`, `rebuild_panel_clean.py`: exposure robustness,
    validation of the codes on the cleaned text, event-study variants on the discovered pages.
 9. `make_figures_r1.py`, `make_supplement.py`, `numbers_manifest.py`: figures, supplementary
-   tables, and the list of every number the manuscript quotes.
+   tables, and the list of every number the paper quotes.
 
 Stdlib + pandas, numpy, scikit-learn, statsmodels, scipy, lxml, pypdf (Python 3.9).

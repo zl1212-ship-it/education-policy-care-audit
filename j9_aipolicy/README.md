@@ -85,7 +85,7 @@ access dates, and the shock date are in `SOURCES.md`.
 
 ## Revision (one-page-per-type design)
 
-The revised manuscript observes every system on one curated integrity page and, where one exists,
+The current version of the analysis observes every system on one curated integrity page and, where one exists,
 one AI guidance page, reads the text with navigation removed, retrieves linked policy PDFs, and
 measures crawl density. Those scripts and their CSV products are in `revision/` (see its README).
 Two fixes to this pipeline accompany them: the cross-national `build_panel.py` grid now runs to
