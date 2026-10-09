@@ -50,7 +50,7 @@ if (AN / "seed_top_terms.csv").exists():
     tt = pd.read_csv(AN / "seed_top_terms.csv")
     for rung in ("S7", "S7x"):
         if (tt.rung == rung).any():
-            parts.append(table(["System", "Terms with the highest mean TF-IDF relative to the other systems (rank 1 to 30)"], [[tex(SYSN[s]), tex(", ".join(tt[(tt.rung == rung) & (tt.system == s)].sort_values("rank").term.head(30)))] for s in SYS], f"S2c. Discriminating terms at the endpoint, variant {rung} ({'strict AI vocabulary' if rung == 'S7' else 'strict vocabulary with the AI-naming words removed'}).", "p{1.1in}p{5.2in}"))
+            parts.append(table(["System", "Terms with the highest mean TF-IDF relative to the other systems (rank 1 to 30)"], [[tex(SYSN[s]), tex(", ".join(tt[(tt.rung == rung) & (tt.system == s)].sort_values("rank").term.head(30)))] for s in SYS], f"S2{'c' if rung == 'S7' else 'd'}. Discriminating terms at the endpoint, variant {rung} ({'strict AI vocabulary' if rung == 'S7' else 'strict vocabulary with the AI-naming words removed'}).", "p{1.1in}p{5.2in}"))
 # ---------------- S3
 parts.append(r"\section*{S3. Page design and the endpoint prevalence of provisions}" + "\n")
 ps = pd.read_csv(AN / "pages_summary.csv")
@@ -101,22 +101,22 @@ if (AN / "seed_convergence_endpoint.csv").exists():
     for lab in ("integrity", "ai"):
         rr = [r for r in e.itertuples(index=False) if not pd.isna(getattr(r, f"{lab}_gap", np.nan))]
         if rr:
-            parts.append(table(["Variant", "$n$", "US", "Within", "Cross", "Gap", "$p$", "Gap, 300 w", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, int(getattr(r, f"{lab}_n")), int(getattr(r, f"{lab}_n_us")), f3(getattr(r, f"{lab}_within")), f3(getattr(r, f"{lab}_cross")), sg(getattr(r, f"{lab}_gap")), f3(getattr(r, f"{lab}_p")), sg(getattr(r, f"{lab}_gap_t300")), f3(getattr(r, f"{lab}_p_t300")), sg(getattr(r, f"{lab}_cw_gap", np.nan)), f3(getattr(r, f"{lab}_cw_p", np.nan)), sg(getattr(r, f"{lab}_usrest")), f3(getattr(r, f"{lab}_usrest_p"))] for r in rr], f"S4b. Endpoint tests on {lab} pages only.", "lrrrrrrrrrrrr"))
+            parts.append(table(["Variant", "$n$", "US", "Within", "Cross", "Gap", "$p$", "Gap, 300 w", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, int(getattr(r, f"{lab}_n")), int(getattr(r, f"{lab}_n_us")), f3(getattr(r, f"{lab}_within")), f3(getattr(r, f"{lab}_cross")), sg(getattr(r, f"{lab}_gap")), f3(getattr(r, f"{lab}_p")), sg(getattr(r, f"{lab}_gap_t300")), f3(getattr(r, f"{lab}_p_t300")), sg(getattr(r, f"{lab}_cw_gap", np.nan)), f3(getattr(r, f"{lab}_cw_p", np.nan)), sg(getattr(r, f"{lab}_usrest")), f3(getattr(r, f"{lab}_usrest_p"))] for r in rr], f"S4{'b' if lab == 'integrity' else 'c'}. Endpoint tests on {lab} pages only.", "lrrrrrrrrrrrr"))
 if (AN / "seed_per_system_gap.csv").exists():
     ps2 = pd.read_csv(AN / "seed_per_system_gap.csv")
-    parts.append(table(["Variant", "System", "$n$", "Same-country pairs", "Cross pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[tex(r.rung), r.system, int(r.n_inst), int(r.same_pairs), int(r.cross_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in ps2.itertuples(index=False)], "S4c. Per-system decomposition at the endpoint: mean similarity among pairs within the system minus pairs between that system and the others, with a permutation $p$.", "llrrrrrrr"))
+    parts.append(table(["Variant", "System", "$n$", "Same-country pairs", "Cross pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[tex(r.rung), r.system, int(r.n_inst), int(r.same_pairs), int(r.cross_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in ps2.itertuples(index=False)], "S4d. Per-system decomposition at the endpoint: mean similarity among pairs within the system minus pairs between that system and the others, with a permutation $p$.", "llrrrrrrr"))
 if (AN / "seed_system_pair_matrix.csv").exists():
     mx = pd.read_csv(AN / "seed_system_pair_matrix.csv")
     for pages_lab in ("all", "integrity", "ai"):
         m = mx[(mx.rung == "S7") & (mx.pages == pages_lab)]
         if len(m):
             m = m.pivot(index="sys_a", columns="sys_b", values="mean_cos").reindex(index=SYS, columns=SYS)
-            parts.append(table([""] + SYS, [[a] + [f3(m.loc[a, b]) for b in SYS] for a in SYS], f"S4d. Mean pairwise cosine similarity by system pair at the endpoint, variant S7, {pages_lab} pages.", "lrrrr"))
+            parts.append(table([""] + SYS, [[a] + [f3(m.loc[a, b]) for b in SYS] for a in SYS], "S4" + {'all': 'e', 'integrity': 'f', 'ai': 'g'}.get(pages_lab, 'e') + f". Mean pairwise cosine similarity by system pair at the endpoint, variant S7, {pages_lab} pages.", "lrrrr"))
 if (AN / "seed_placebo_text.csv").exists():
     pl = pd.read_csv(AN / "seed_placebo_text.csv")
-    parts.append(table(["Variant", "Text", "$n$", "Gap", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, tex(r.text), int(r.n_inst), sg(r.gap), f3(r.p), sg(getattr(r, "cw_gap", np.nan)), f3(getattr(r, "cw_p", np.nan)), sg(getattr(r, "usrest", np.nan)), f3(getattr(r, "usrest_p", np.nan))] for r in pl.itertuples(index=False)], "S4e. Placebo texts on the sample institutions, each cut to 600 words: the AI-scoped text, the non-AI text of the same endpoint pages, the pre-shock page text, and the paired difference (AI minus non-AI) for the same institution pairs.", "llrrrrrrr"))
+    parts.append(table(["Variant", "Text", "$n$", "Gap", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, tex(r.text), int(r.n_inst), sg(r.gap), f3(r.p), sg(getattr(r, "cw_gap", np.nan)), f3(getattr(r, "cw_p", np.nan)), sg(getattr(r, "usrest", np.nan)), f3(getattr(r, "usrest_p", np.nan))] for r in pl.itertuples(index=False)], "S4h. Placebo texts on the sample institutions, each cut to 600 words: the AI-scoped text, the non-AI text of the same endpoint pages, the pre-shock page text, and the paired difference (AI minus non-AI) for the same institution pairs.", "llrrrrrrr"))
 if (AN.parent / "draft" / "fig_convergence_balanced_r1.pdf").exists():
-    parts.append(r"\begin{figure}[H]\centering\includegraphics[width=0.85\textwidth]{fig_convergence_balanced_r1.pdf}\caption{S4f. Convergence by pair type on a balanced pool: institutions carrying AI text in every quarter from the fifth quarter after the shock to the end of the window.}\end{figure}" + "\n")
+    parts.append(r"\begin{figure}[H]\centering\includegraphics[width=0.85\textwidth]{fig_convergence_balanced_r1.pdf}\caption{S4i. Convergence by pair type on a balanced pool: institutions carrying AI text in every quarter from the fifth quarter after the shock to the end of the window.}\end{figure}" + "\n")
 # ---------------- S5
 if (AN / "density_summary.csv").exists():
     ds = pd.read_csv(AN / "density_summary.csv")
@@ -136,7 +136,7 @@ if (AN / "density_summary.csv").exists():
         if "subset" in tb.columns:
             for sub in tb.subset.unique():
                 t = tb[(tb.subset == sub) & (tb.event_q.between(1, 8))]
-                parts.append(table(["Quarter", "Turnbull mass", "Turnbull CDF", "Forward-fill mass", "Forward-fill CDF"], [[int(r.event_q), f3(r.turnbull_mass), f3(r.turnbull_cdf), f3(r.forward_fill_mass), f3(r.forward_fill_cdf)] for r in t.itertuples(index=False)], f"S5e. Adoption-time distribution, quarters 1 to 8: Turnbull estimate versus forward-fill, {'all adopters' if sub == 'all' else 'adopters with an observed pre-change capture'} ($n$ = {int(t.n_adopters.iloc[0])}).", "lrrrr"))
+                parts.append(table(["Quarter", "Turnbull mass", "Turnbull CDF", "Forward-fill mass", "Forward-fill CDF"], [[int(r.event_q), f3(r.turnbull_mass), f3(r.turnbull_cdf), f3(r.forward_fill_mass), f3(r.forward_fill_cdf)] for r in t.itertuples(index=False)], f"S5{'e' if sub == 'all' else 'f'}. Adoption-time distribution, quarters 1 to 8: Turnbull estimate versus forward-fill, {'all adopters' if sub == 'all' else 'adopters with an observed pre-change capture'} ($n$ = {int(t.n_adopters.iloc[0])}).", "lrrrr"))
 # ---------------- S6
 parts.append(r"\section*{S6. The exposure differential}" + "\n")
 if (AN / "exposure_robustness.csv").exists():
