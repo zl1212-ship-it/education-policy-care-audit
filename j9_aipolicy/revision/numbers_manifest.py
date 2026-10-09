@@ -1,13 +1,8 @@
 """Print every number the revised manuscript quotes, from the CSVs, so a data refresh can be
 checked line by line against the text (draft/main-r1.tex) and the response letter."""
-from pathlib import Path as _P
-REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
-PIPE = REV.parent                               # j9_aipolicy
-XN = PIPE / "crossnational"
-AN = REV / "output"; AN.mkdir(exist_ok=True)    # all outputs of the revision analyses
-WS = REV; RP = AN; OUT = AN
 from pathlib import Path
 import numpy as np, pandas as pd
+AN = Path(__file__).parent
 def f(x, d=2): return "" if pd.isna(x) else f"{x:.{d}f}"
 ss = pd.read_csv(AN / "seed_samples.csv", dtype=str); pg = pd.read_csv(AN / "seed_pages.csv", dtype=str); pg = pg[pg.in_sample == "1"]
 sc = pd.read_csv(AN / "scored_seed.csv", dtype=str); sc["page_key"] = sc.local_path.apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
@@ -34,7 +29,7 @@ for r in ep[ep.get('ai_gap', pd.Series(dtype=float)).notna()].itertuples(index=F
 ps_ = pd.read_csv(AN / "seed_per_system_gap.csv"); print("PER SYSTEM S7:\n", ps_[ps_.rung == "S7"].to_string(index=False))
 b = pd.read_csv(AN / "seed_convergence_balanced.csv"); b = b[b.rung == "S7"]
 if len(b): print("BALANCED S7 n", int(b.n_inst.iloc[0]), "\n", b.pivot(index="event_q", columns="group", values="mean_cos").round(3).loc[[5, 9, 13]].to_string())
-comp = pd.read_csv(AN / "seed_endpoint_composition.csv"); print("COMPOSITION S7 q13:", comp[comp.rung == "S7"].set_index("system").n_inst_q13.to_dict())
+comp = pd.read_csv(AN / "seed_endpoint_composition.csv"); print("COMPOSITION S7 q13:", comp[comp.rung == "S7"].set_index("system").n_inst_end.to_dict())
 mx = pd.read_csv(AN / "seed_system_pair_matrix.csv")
 for pg in ("all", "integrity", "ai"):
     m = mx[(mx.rung == "S7") & (mx.pages == pg)]
