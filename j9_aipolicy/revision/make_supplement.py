@@ -23,11 +23,13 @@ def f3(x): return "" if pd.isna(x) else f"{x:.3f}"
 def sg(x): return "" if pd.isna(x) else f"{x:+.3f}"
 def table(cols, rows, caption, spec=None):
     spec = spec or ("l" + "r" * (len(cols) - 1))
-    out = [r"\begin{table}[H]\centering\caption{" + caption + r"}\small" + "\n" + r"\begin{tabular}{" + spec + r"}\toprule" + "\n" + " & ".join(cols) + r" \\ \midrule" + "\n"]
+    wide = len(cols) >= 12; size = r"\footnotesize" if len(cols) >= 9 else r"\small"
+    out = [(r"\begin{landscape}" if wide else "") + r"\begin{table}[H]\centering\caption{" + caption + r"}" + size + "\n" + r"\fittable{\begin{tabular}{" + spec + r"}\toprule" + "\n" + " & ".join(cols) + r" \\ \midrule" + "\n"]
     for r in rows: out.append(" & ".join(str(x) for x in r) + r" \\" + "\n")
-    out.append(r"\bottomrule\end{tabular}\end{table}" + "\n"); return "".join(out)
-parts = [r"""\documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}\usepackage{mathptmx}\usepackage{booktabs,longtable,array,graphicx,float}\usepackage[hidelinks]{hyperref}
+    out.append(r"\bottomrule\end{tabular}}\end{table}" + (r"\end{landscape}" if wide else "") + "\n"); return "".join(out)
+parts = [r"""\documentclass[12pt]{article}\PassOptionsToPackage{hyphens}{url}
+\usepackage[margin=1in]{geometry}\usepackage{mathptmx}\usepackage{booktabs,longtable,array,graphicx,float,pdflscape}\usepackage{caption}\captionsetup{labelformat=empty,labelsep=none,justification=raggedright,singlelinecheck=false}\usepackage[hidelinks]{hyperref}
+\newsavebox{\tblbox}\newcommand{\fittable}[1]{\sbox{\tblbox}{#1}\ifdim\wd\tblbox>\linewidth\resizebox{\linewidth}{!}{\usebox{\tblbox}}\else\usebox{\tblbox}\fi}
 \setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
 \begin{document}
 \begin{center}{\large\bfseries Supplementary material}\\[4pt]
@@ -35,7 +37,7 @@ Supplementary tables for the J9 AI-policy analysis\end{center}
 """]
 # ---------------- S1
 c = pd.read_csv(AN / "contamination_summary.csv"); c = c[c.subset == "all snapshots"].set_index("system")
-parts.append(r"\section*{S1. Navigation boilerplate}" + "\n" + "Table S1a: for every archived snapshot, the share of words the extractor removes and the share of provision flags obtained without navigation removal that disappear once it is removed (full vocabulary, window 400). Table S1b: sixteen audited pages (four per system, random seed 0) with the words removed and the content rule that selected the main region; the removed blocks are listed in the replication folder (reports/validate\\_extract.md).\n")
+parts.append(r"\section*{S1. Navigation boilerplate}" + "\n" + "Table S1a: for every archived snapshot, the share of words the extractor keeps and the share of provision flags obtained without navigation removal that disappear once it is removed (full vocabulary, 400-character window). Table S1b: sixteen audited pages (four per system, random seed 0) with word counts before and after navigation removal and the content rule that selected the main region; the removed blocks are listed in the replication folder (output/validate\\_extract.md).\n")
 parts.append(table(["System", "Snapshots", "Words kept"] + [PN[p] for p in PROV], [[tex(SYSN[s]), int(c.loc[s].n_snapshots), f2(c.loc[s].words_kept_share)] + [f2(c.loc[s][f"{p}_lost_share"]) for p in PROV] for s in SYS], "S1a. Share of flags that came from navigation, by system (all snapshots)."))
 v = (AN / "validate_extract.md").read_text() if (AN / "validate_extract.md").exists() else ""
 audit = re.findall(r"## (\w\w) \| (.+?) \| (\w+) \| (\d+)\n\nURL: (.+?)  \nraw words (\d+), clean words (\d+), content rule `(.+?)`", v)
@@ -54,15 +56,35 @@ if (AN / "seed_top_terms.csv").exists():
 # ---------------- S3
 parts.append(r"\section*{S3. Page design and the endpoint prevalence of provisions}" + "\n")
 ps = pd.read_csv(AN / "pages_summary.csv")
-parts.append(table(["Page set", "System", "Institutions", "Mean", "Median", "Max", "AI pages (mean)"], [[tex(lab), s, int(r.inst), f2(r.pages_mean), f2(r.pages_median), int(r.pages_max), f2(r.ai_pages_mean)] for lab in ["all tracked", "non-junk and not inert", "policy-like (US: URL + content screen)"] for s in SYS for r in [ps[(ps.page_set == lab) & (ps.system == s)].iloc[0]] if len(ps[(ps.page_set == lab) & (ps.system == s)])], "S3a. Pages per institution by system under the automated discovery used as a robustness check.", "llrrrrr"))
+parts.append(table(["Page set", "System", "Institutions", "Mean", "Median", "Max", "AI pages (mean)"], [[tex(lab), s, int(r.inst), f2(r.pages_mean), f2(r.pages_median), int(r.pages_max), f2(r.ai_pages_mean)] for lab in ["all tracked", "non-junk and not inert", "policy-like (US: URL + content screen)"] for s in SYS for r in [ps[(ps.page_set == lab) & (ps.system == s)].iloc[0]] if len(ps[(ps.page_set == lab) & (ps.system == s)])], "S3a. Pages per institution by system under the submitted page design, kept as a robustness check: automated discovery under each United States institution's hosts, the committed curated pages elsewhere.", "llrrrrr"))
 if (AN / "seed_backfill_pages.csv").exists():
     pg = pd.read_csv(AN / "seed_pages.csv", dtype=str); pg = pg[(pg.in_sample == "1") & (pg.system == "US")]
     sc = pd.read_csv(AN / "scored_seed.csv", dtype={"unitid": str}); sc["page_key"] = sc.local_path.apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
     bf = pd.read_csv(AN / "seed_backfill_pages.csv", dtype=str); key2url = dict(zip(pd.read_csv(AN / "url_set.csv", dtype=str).page_key, pd.read_csv(AN / "url_set.csv", dtype=str).query_url.fillna("")))
+    if (AN / "pages_per_institution.csv").exists():
+        _pp = pd.read_csv(AN / "pages_per_institution.csv", dtype=str)
+        for _k, _u in zip(_pp.page_key, _pp.real_url.fillna("")):
+            if _u.startswith("http") and not (key2url.get(_k) or "").startswith("http"): key2url[_k] = _u
+    for _f in ("seed_snapshot_index.csv", "scored_raw_vs_clean.csv"):
+        _d = pd.read_csv(AN / _f, dtype=str)
+        for _lp, _u in zip(_d.local_path, _d.original_url.fillna("")):
+            _k = Path(_lp).stem.rsplit("__", 1)[0]
+            if _u.startswith("http") and not (key2url.get(_k) or "").startswith("http"): key2url[_k] = _u
+    _pipe = globals().get("PIPE") or AN.parents[4] / "j9_aipolicy"; _raw = _pipe / "data" / "snapshots_raw"
+    for _k in list(pg.page_key):
+        if (key2url.get(_k) or "").startswith("http"): continue
+        _hits = sorted(_raw.glob(f"*/*/{_k}__*.html")) if _raw.exists() else []
+        for _h in reversed(_hits):
+            try:
+                import lxml.html as _LH
+                _t = _LH.parse(str(_h)).getroot()
+                _c = _t.xpath('//link[@rel="canonical"]/@href') or _t.xpath('//meta[@property="og:url"]/@content')
+                if _c and str(_c[0]).strip().startswith("http"): key2url[_k] = str(_c[0]).strip().split("?")[0]; break
+            except Exception: continue
     pg["source"] = np.where(pg.page_key.isin(set(sc.page_key)), "curated", "screened discovery")
     pg["url"] = [key2url.get(k, "") or k for k in pg.page_key]
-    parts.append(r"\begin{longtable}{p{1.9in}p{0.55in}p{0.9in}p{3in}}\caption{S3b. United States pages in the sample, by source (curated page where archived; otherwise the screened page found by automated search).}\\ \toprule Institution & Type & Source & Address \\ \midrule \endhead" + "\n")
-    for r in pg.sort_values(["institution", "page_type"]).itertuples(index=False): parts.append(f"{tex(r.institution[:40])} & {r.page_type} & {r.source} & {tex(r.url[:70])} \\\\\n")
+    parts.append(r"\begin{longtable}{p{1.6in}p{0.55in}p{1.0in}p{2.6in}}\caption{S3b. United States pages in the sample, by source (curated page where archived; otherwise the screened page found by automated search). Pages whose original address was not recorded and whose archived copy carries no canonical address are listed by their page key, the address with punctuation replaced by underscores.}\\ \toprule Institution & Type & Source & Address \\ \midrule \endhead" + "\n")
+    for r in pg.sort_values(["institution", "page_type"]).itertuples(index=False): parts.append(f"{tex(r.institution[:40])} & {r.page_type} & {r.source} & \\path{{{r.url}}} \\\\\n")
     parts.append(r"\bottomrule\end{longtable}" + "\n")
 def prev_table(df, caption, label_col="rule"):
     rows = []
@@ -74,24 +96,25 @@ def prev_table(df, caption, label_col="rule"):
     return table(["Rule", "Sys.", "$n$", "AI", "Prohib.", "Detect.", "Miscond.", "Sanct.", "Permit.", "Disclos.", "Appeal", "Multil."], rows, caption, "p{2.2in}lrrrrrrrrrr")
 if (AN / "seed_prevalence.csv").exists():
     sp2 = pd.read_csv(AN / "seed_prevalence.csv")
-    parts.append(prev_table(sp2, "S3c. Endpoint prevalence under the one-page-per-type design: full vocabulary (clean), strict vocabulary (clean\\_strict, the manuscript's Table 2), strict vocabulary at windows 200 and 800, and with the policy documents linked from the endpoint pages as PDFs. The with-PDF appeal cell for the United States includes one lexical hit in the table of contents of a how-to guide that a reading rejects."))
+    parts.append(prev_table(sp2, "S3c. Endpoint prevalence under the one-page-per-type design: navigation not removed (raw), full vocabulary (clean), strict vocabulary (clean\_strict, the manuscript's Table 2), strict vocabulary at 200- and 800-character windows, and with the policy documents linked from the endpoint pages as PDFs."))
+    parts.append("Note on Table S3c. The with-PDF appeal cells for the United States contain no appeal pathway that survives a reading: under the strict vocabulary the one hit is the heading `Future considerations' of a how-to guide, which the PDF text extraction runs together into a string containing `reconsideration'; under the full vocabulary a second hit is the verb `appeals to' in a linked EDUCAUSE article captured before the shock.\n\n")
 if (AN / "policy_pdf_scores.csv").exists():
     pdf = pd.read_csv(AN / "policy_pdf_scores.csv", dtype={"unitid": str}); ss = pd.read_csv(AN / "seed_samples.csv", dtype=str); pdf = pdf[pdf.unitid.isin(set(ss.unitid))]
     pdf["year"] = pdf.timestamp.astype(str).str[:4]
     g = pdf.groupby("system").agg(documents=("pdf_url", "size"), institutions=("unitid", "nunique"), post_shock=("post_shock_capture", "sum"), with_strict_ai=("ai_addressed_clean_strict", "sum")).reindex(SYS).fillna(0).astype(int)
-    parts.append(table(["System", "Documents", "Institutions", "Captured after the shock", "With strict AI text"], [[tex(SYSN[s])] + [int(g.loc[s, c]) for c in g.columns] for s in SYS], "S3d. Linked policy documents retrieved from the archive (sample institutions): count, institutions, captures dated after 30 November 2022, and documents carrying strict AI vocabulary."))
+    parts.append(table(["System", "Documents", "Institutions", "Captured after the shock", "With strict AI text"], [[tex(SYSN[s])] + [int(g.loc[s, c]) for c in g.columns] for s in SYS], "S3d. Linked policy documents retrieved from the archive (sample institutions): count, institutions, captures dated on or after 30 November 2022, and documents carrying strict AI vocabulary."))
 if (AN / "seed_prevalence_by_source.csv").exists():
-    parts.append(prev_table(pd.read_csv(AN / "seed_prevalence_by_source.csv"), "S3e. United States endpoint prevalence by page source (curated versus screened discovered pages), strict vocabulary."))
+    parts.append(prev_table(pd.read_csv(AN / "seed_prevalence_by_source.csv"), "S3e. United States endpoint prevalence by page source: institutions observed on curated pages only, on screened discovered pages only, or on one page of each (both); strict vocabulary."))
 pr = pd.read_csv(AN / "prevalence_by_pagerule.csv"); rules = [x for x in pr.rule.unique() if x.startswith(("(a)", "(a2)", "(b)", "(h)", "(k)"))]
-parts.append(prev_table(pr[pr.rule.isin(rules)], "S3f. Endpoint prevalence under the automated discovery design (robustness): the submitted coding (a), the corrected filter (a2), navigation removed (b), strict vocabulary (h), policy pages matched one per type (k)."))
+parts.append(prev_table(pr[pr.rule.isin(rules)], "S3f. Endpoint prevalence under the submitted page design (automated discovery in the United States; robustness): the submitted coding (a, the submitted version's Table 2), the corrected filter (a2), navigation removed (b), strict vocabulary (h), policy pages matched one per type (k)."))
 if (AN / "unscoped_remedies.csv").exists():
     u = pd.read_csv(AN / "unscoped_remedies.csv")
-    parts.append(table(["System", "Institutions addressing AI", "Appeal language anywhere on the page", "Appeal within the AI window", "Multilingual language anywhere", "Multilingual within the AI window"], [[tex(SYSN[r.system]), int(r.n_inst_addressing_ai), f2(r.appeal_anywhere), f2(r.appeal_scoped), f2(r.l2_anywhere), f2(r.l2_scoped)] for r in u.itertuples(index=False)], "S3g. Remedy language on the AI-addressing endpoint pages: anywhere on the page versus within the AI-scoped window (share of institutions)."))
+    parts.append(table(["System", "Addressing AI ($n$)", "Appeal, anywhere", "Appeal, in window", "Multilingual, anywhere", "Multilingual, in window"], [[tex(SYSN[r.system]), int(r.n_inst_addressing_ai), f2(r.appeal_anywhere), f2(r.appeal_scoped), f2(r.l2_anywhere), f2(r.l2_scoped)] for r in u.itertuples(index=False)], "S3g. Remedy language on the AI-addressing endpoint pages: anywhere on the page versus within the AI-scoped window (share of institutions)."))
 if (AN / "second_coder_r1.csv").exists():
     s2 = pd.read_csv(AN / "second_coder_r1.csv")
     parts.append(table(["Provision", "$n$", "Prevalence (primary)", "Raw agreement", "Cohen's kappa", "Gwet's AC1"], [[tex(r.provision), int(r.n), f3(r.prevalence_primary), f3(r.raw_agreement), f3(r.cohen_kappa), f3(r.gwet_ac1)] for r in s2.itertuples(index=False)], "S3h. Agreement between the primary lexicon and an independently specified rule set on 80 random cleaned snapshots carrying strict AI text."))
 # ---------------- S4
-parts.append(r"\section*{S4. Convergence}" + "\n" + "Variants: S1 navigation removed; S4 fully normalized (spelling, roles and bodies, names and places, administrative vocabulary); S7 normalized with the strict AI vocabulary (the manuscript's figures); S7x additionally removes the AI-naming words themselves. Endpoint tests are computed on the last-quarter documents of the same TF-IDF fit as Figure 1; cut-to-300 and cut-to-600 versions refit the vectorizer on the truncated documents. $p$ values are from 2,000 label permutations.\n")
+parts.append(r"\section*{S4. Convergence}" + "\n" + "Variants: S1 navigation removed; S4 fully normalized (spelling, roles and bodies, names and places, administrative vocabulary); S7 normalized with the strict AI vocabulary (the manuscript's Figure 1); S7x additionally removes the AI-naming words themselves. Endpoint tests are computed on the last-quarter documents of the same TF-IDF fit as Figure 1; the 300-word cuts (Tables S4a to S4c) and the 600-word placebo texts (Table S4h) refit the vectorizer on the truncated documents. $p$ values are from 2,000 label permutations.\n")
 if (AN / "seed_convergence_endpoint.csv").exists():
     e = pd.read_csv(AN / "seed_convergence_endpoint.csv"); e0 = e[e.get("gap").notna()] if "gap" in e.columns else e
     rows = []
@@ -101,17 +124,18 @@ if (AN / "seed_convergence_endpoint.csv").exists():
     for lab in ("integrity", "ai"):
         rr = [r for r in e.itertuples(index=False) if not pd.isna(getattr(r, f"{lab}_gap", np.nan))]
         if rr:
-            parts.append(table(["Variant", "$n$", "US", "Within", "Cross", "Gap", "$p$", "Gap, 300 w", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, int(getattr(r, f"{lab}_n")), int(getattr(r, f"{lab}_n_us")), f3(getattr(r, f"{lab}_within")), f3(getattr(r, f"{lab}_cross")), sg(getattr(r, f"{lab}_gap")), f3(getattr(r, f"{lab}_p")), sg(getattr(r, f"{lab}_gap_t300")), f3(getattr(r, f"{lab}_p_t300")), sg(getattr(r, f"{lab}_cw_gap", np.nan)), f3(getattr(r, f"{lab}_cw_p", np.nan)), sg(getattr(r, f"{lab}_usrest")), f3(getattr(r, f"{lab}_usrest_p"))] for r in rr], f"S4{'b' if lab == 'integrity' else 'c'}. Endpoint tests on {lab} pages only.", "lrrrrrrrrrrrr"))
+            parts.append(table(["Variant", "$n$", "US", "Within", "Cross", "Gap", "$p$", "Gap, 300 w", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, int(getattr(r, f"{lab}_n")), int(getattr(r, f"{lab}_n_us")), f3(getattr(r, f"{lab}_within")), f3(getattr(r, f"{lab}_cross")), sg(getattr(r, f"{lab}_gap")), f3(getattr(r, f"{lab}_p")), sg(getattr(r, f"{lab}_gap_t300")), f3(getattr(r, f"{lab}_p_t300")), sg(getattr(r, f"{lab}_cw_gap", np.nan)), f3(getattr(r, f"{lab}_cw_p", np.nan)), sg(getattr(r, f"{lab}_usrest")), f3(getattr(r, f"{lab}_usrest_p"))] for r in rr], f"S4{'b' if lab == 'integrity' else 'c'}. Endpoint tests on {('AI guidance' if lab == 'ai' else 'integrity')} pages only.", "lrrrrrrrrrrrr"))
 if (AN / "seed_per_system_gap.csv").exists():
     ps2 = pd.read_csv(AN / "seed_per_system_gap.csv")
-    parts.append(table(["Variant", "System", "$n$", "Same-country pairs", "Cross pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[tex(r.rung), r.system, int(r.n_inst), int(r.same_pairs), int(r.cross_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in ps2.itertuples(index=False)], "S4d. Per-system decomposition at the endpoint: mean similarity among pairs within the system minus pairs between that system and the others, with a permutation $p$.", "llrrrrrrr"))
+    parts.append(table(["Variant", "System", "$n$", "Same-country pairs", "Cross pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[tex(r.rung), r.system, int(r.n_inst), int(r.same_pairs), int(r.cross_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in ps2.itertuples(index=False)], "S4d. Per-system decomposition at the endpoint: mean similarity among pairs within the system minus pairs between that system and the others, with a permutation $p$. Rows suffixed :integrity and :ai restrict the pool to that page type; a system appears only where it has at least three same-system pairs.", "llrrrrrrr"))
 if (AN / "seed_system_pair_matrix.csv").exists():
     mx = pd.read_csv(AN / "seed_system_pair_matrix.csv")
     for pages_lab in ("all", "integrity", "ai"):
         m = mx[(mx.rung == "S7") & (mx.pages == pages_lab)]
         if len(m):
+            small = {a: int(float(n)) for a, b, n in zip(m.sys_a, m.sys_b, m.n_pairs) if a == b and int(float(n)) <= 3} if "n_pairs" in m.columns else {}
             m = m.pivot(index="sys_a", columns="sys_b", values="mean_cos").reindex(index=SYS, columns=SYS)
-            parts.append(table([""] + SYS, [[a] + [f3(m.loc[a, b]) for b in SYS] for a in SYS], "S4" + {'all': 'e', 'integrity': 'f', 'ai': 'g'}.get(pages_lab, 'e') + f". Mean pairwise cosine similarity by system pair at the endpoint, variant S7, {pages_lab} pages.", "lrrrr"))
+            parts.append(table([""] + SYS, [[a] + [f3(m.loc[a, b]) for b in SYS] for a in SYS], "S4" + {'all': 'e', 'integrity': 'f', 'ai': 'g'}.get(pages_lab, 'e') + f". Mean pairwise cosine similarity by system pair at the endpoint, variant S7, {('AI guidance pages' if pages_lab == 'ai' else ('integrity pages' if pages_lab == 'integrity' else 'all pages'))}." + (" Diagonal cells for " + ", ".join(f"{k} ({v} pair{'s' if v != 1 else ''})" for k, v in small.items()) + " rest on three pairs or fewer." if small else ""), "lrrrr"))
 if (AN / "seed_placebo_text.csv").exists():
     pl = pd.read_csv(AN / "seed_placebo_text.csv")
     parts.append(table(["Variant", "Text", "$n$", "Gap", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, tex(r.text), int(r.n_inst), sg(r.gap), f3(r.p), sg(getattr(r, "cw_gap", np.nan)), f3(getattr(r, "cw_p", np.nan)), sg(getattr(r, "usrest", np.nan)), f3(getattr(r, "usrest_p", np.nan))] for r in pl.itertuples(index=False)], "S4h. Placebo texts on the sample institutions, each cut to 600 words: the AI-scoped text, the non-AI text of the same endpoint pages, the pre-shock page text, and the paired difference (AI minus non-AI) for the same institution pairs.", "llrrrrrrr"))
@@ -121,22 +145,22 @@ if (AN.parent / "draft" / "fig_convergence_balanced_r1.pdf").exists():
 if (AN / "density_summary.csv").exists():
     ds = pd.read_csv(AN / "density_summary.csv")
     parts.append(r"\section*{S5. Crawl density and interval-censored adoption}" + "\n")
-    parts.append(table(["System", "Period", "Mean captures", "Median", "Share of page-quarters with none", "Median days between captures"], [[r.system, tex(r.period), f2(r.mean_captures), f2(r.median_captures), f2(r.share_zero), f2(r.median_gap_days)] for r in ds.itertuples(index=False)], "S5a. Captures per page and quarter by system and period (daily-collapsed captures).", "llrrrr"))
+    parts.append(table(["System", "Period", "Mean captures", "Median", "Share of page-quarters with none", "Median days between captures"], [[r.system, tex(r.period), f2(r.mean_captures), f2(r.median_captures), f2(r.share_zero), f2(r.median_gap_days)] for r in ds.itertuples(index=False)], "S5a. Captures per page and quarter by system and period (daily-collapsed captures). The capture grid runs from 2021Q1 to 2026Q2, one quarter past the panel endpoint.", "llrrrr"))
     if (AN / "density_summary_by_pagetype.csv").exists():
         dp = pd.read_csv(AN / "density_summary_by_pagetype.csv")
         parts.append(table(["System", "Page type", "Mean captures", "Median", "Share with none"], [[r.system, r.page_type, f2(r.mean_captures), f2(r.median_captures), f2(r.share_zero)] for r in dp.itertuples(index=False)], "S5b. Captures per page and quarter by page type.", "llrrr"))
     if (AN / "density_exposure_correlation.csv").exists():
         dc = pd.read_csv(AN / "density_exposure_correlation.csv"); dc = dc[dc.density == "density_all"]
-        parts.append(table(["System", "$n$", "Pearson $r$", "$p$", "Spearman", "$p$"], [[r.system, int(r.n), f2(r.pearson_r), f3(r.pearson_p), f2(r.spearman_rho), f3(r.spearman_p)] for r in dc.itertuples(index=False)], "S5c. Capture density (mean captures per page-quarter) against the international share of enrollment, sample institutions.", "lrrrrr"))
+        parts.append(table(["System", "$n$", "Pearson $r$", "$p$", "Spearman", "$p$"], [[r.system, int(r.n), f2(r.pearson_r), f3(r.pearson_p), f2(r.spearman_rho), f3(r.spearman_p)] for r in dc.itertuples(index=False)], "S5c. Capture density (mean captures per page-quarter) against the international share of enrollment, sample institutions (the United States, the United Kingdom and Australia; no institution-level international share is published for Canada).", "lrrrrr"))
     if (AN / "adoption_summary.csv").exists():
         ad = pd.read_csv(AN / "adoption_summary.csv"); ad = ad[ad.flag == "clean_strict"]
-        parts.append(table(["System", "Adopters", "Left-censored", "Interval width (days, median)", "Lag mean $R$", "Lag mean midpoint", "Lag mean $L$", "Within 2 q. ($R$)", "Within 2 q. (midpoint)"], [[r.system, int(r.n_adopters), int(r.left_censored), f2(r.width_days_median), f2(r.lag_mean_q_R), f2(r.lag_mean_q_mid), f2(r.lag_mean_q_L), f2(r.share_within2q_q_R), f2(r.share_within2q_q_mid)] for r in ad.itertuples(index=False)], "S5d. Adoption timing under three conventions (strict vocabulary): the forward-fill convention $R$, the interval midpoint, and the left bound $L$; left-censored adopters have no capture of the page before the one carrying AI text.", "lrrrrrrrr"))
+        parts.append(table(["System", "Adopters", "Left-censored", "Interval width (days)", "Lag mean $R$", "Lag mean, midpoint", "Lag mean $L$", "Within 2 q. ($R$)", "Within 2 q. (mid)"], [[r.system, int(r.n_adopters), int(r.left_censored), f2(r.width_days_median), f2(r.lag_mean_q_R), f2(r.lag_mean_q_mid), f2(r.lag_mean_q_L), f2(r.share_within2q_q_R), f2(r.share_within2q_q_mid)] for r in ad.itertuples(index=False)], "S5d. Adoption timing under three conventions (strict vocabulary): the forward-fill convention $R$, the interval midpoint, and the left bound $L$; left-censored adopters have no capture of the page before the one carrying AI text.", "lrrrrrrrr"))
     if (AN / "adoption_turnbull.csv").exists():
         tb = pd.read_csv(AN / "adoption_turnbull.csv")
         if "subset" in tb.columns:
             for sub in tb.subset.unique():
                 t = tb[(tb.subset == sub) & (tb.event_q.between(1, 8))]
-                parts.append(table(["Quarter", "Turnbull mass", "Turnbull CDF", "Forward-fill mass", "Forward-fill CDF"], [[int(r.event_q), f3(r.turnbull_mass), f3(r.turnbull_cdf), f3(r.forward_fill_mass), f3(r.forward_fill_cdf)] for r in t.itertuples(index=False)], f"S5{'e' if sub == 'all' else 'f'}. Adoption-time distribution, quarters 1 to 8: Turnbull estimate versus forward-fill, {'all adopters' if sub == 'all' else 'adopters with an observed pre-change capture'} ($n$ = {int(t.n_adopters.iloc[0])}).", "lrrrr"))
+                parts.append(table(["Quarter", "Turnbull mass", "Turnbull CDF", "Forward-fill mass", "Forward-fill CDF"], [[int(r.event_q), f3(r.turnbull_mass), f3(r.turnbull_cdf), f3(r.forward_fill_mass), f3(r.forward_fill_cdf)] for r in t.itertuples(index=False)], f"S5{'e' if sub == 'all' else 'f'}. Adoption-time distribution, quarters 1 to 8: Turnbull estimate versus forward-fill (strict vocabulary), {'all adopters' if sub == 'all' else 'adopters with an observed pre-change capture'} ($n$ = {int(t.n_adopters.iloc[0])}).", "lrrrr"))
 # ---------------- S6
 parts.append(r"\section*{S6. The exposure differential}" + "\n")
 if (AN / "exposure_robustness.csv").exists():
@@ -147,8 +171,8 @@ if (AN / "exposure_robustness.csv").exists():
         parts.append(table(["Tercile", "$n$", "Governance intensity", "Restrictive index", "Procedural index", "Net restrictiveness", "Addresses AI"], [[r.terc, int(r.n), f2(r.ai_governance_intensity), f2(r.restrictive_idx), f2(r.procedural_idx), f2(r.net_restrictiveness), f2(r.ai_addressed)] for r in et.itertuples(index=False)], "S6b. United States endpoint means by exposure tercile (strict vocabulary).", "lrrrrrr"))
     if (AN / "exposure_corr.csv").exists():
         ec = pd.read_csv(AN / "exposure_corr.csv")
-        parts.append(table(["System", "$n$", "Outcome", "$r$", "95\\% interval", "Institutions with any such provision"], [[r.system, int(r.n), tex(r.outcome), f2(r.r), f"[{r.ci_lo:+.2f}, {r.ci_hi:+.2f}]", int(r.n_with_any_provision)] for r in ec.itertuples(index=False)], "S6c. Endpoint correlations between the international share and the provision indices, by system, with Fisher intervals.", "lrlrrr"))
+        parts.append(table(["System", "$n$", "Outcome", "$r$", "95\\% interval", "Institutions with any such provision"], [[r.system, int(r.n), tex(r.outcome), f2(r.r), f"[{r.ci_lo:+.2f}, {r.ci_hi:+.2f}]", int(r.n_with_any_provision)] for r in ec.itertuples(index=False)], "S6c. Endpoint correlations between the international share and the provision indices, by system (the United Kingdom, Australia and the United States; no institution-level international share is published for Canada), with Fisher intervals.", "lrlrrr"))
 ev = pd.read_csv(AN / "event_study_variants.csv"); ev = ev[ev.kind == "did_exposure_x_post"]
-parts.append(table(["Rule (automated discovery design)", "$n$", "Outcome", "Coef.", "SE", "$p$"], [[tex(r.variant), int(r.n_inst), tex(r.outcome), sg(r.coef), f3(r.se), f3(r.p)] for r in ev.itertuples(index=False)], "S6d. Exposure $\\times$ post coefficients under the automated discovery design (robustness); 25 coefficients are shown, so individual $p$ values near 0.05 should be read with that in mind.", "lrlrrr"))
+parts.append(table(["Rule (automated discovery design)", "$n$", "Outcome", "Coef.", "SE", "$p$"], [[tex(r.variant), int(r.n_inst), tex(r.outcome), sg(r.coef), f3(r.se), f3(r.p)] for r in ev.itertuples(index=False)], "S6d. Exposure $\\times$ post coefficients under the automated discovery design (robustness); 30 coefficients (six page rules by five outcomes) are shown, so individual $p$ values near 0.05 should be read with that in mind.", "lrlrrr"))
 parts.append(r"\end{document}" + "\n")
-OUT.write_text("".join(parts)); print("wrote", OUT)
+OUT.write_text((re.sub(r"(\\section\*\{[^}]*\})\n(\\begin\{landscape\})", r"\2\1", "".join(parts))).replace("original filter [Table 2]", "original filter [submitted Table 2]")); print("wrote", OUT)
