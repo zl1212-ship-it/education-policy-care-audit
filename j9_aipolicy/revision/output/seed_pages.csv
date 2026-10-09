@@ -1,0 +1,166 @@
+system,unitid,institution,page_type,page_key,n_caps,first,last,any_ai_strict,in_sample
+AU,9000001,Curtin University,integrity,www_curtin_edu_au_about_governance_academic_integrity,16,2022-08-02 11:33:08,2024-12-31 08:53:01,0,1
+AU,9000002,Griffith University,ai,www_griffith_edu_au_academic_integrity_why_ai_matters,4,2021-01-24 16:43:37,2023-12-15 04:05:26,1,1
+AU,9000002,Griffith University,integrity,www_griffith_edu_au_academic_integrity,9,2021-03-06 14:18:43,2024-01-18 10:02:21,0,1
+AU,9000003,University of Sydney,ai,www_sydney_edu_au_students_academic_integrity_artificial_intelligence_html,3,2024-10-05 21:27:02,2024-12-18 14:45:22,1,1
+AU,9000003,University of Sydney,integrity,www_sydney_edu_au_students_academic_integrity_html,16,2021-02-27 16:16:21,2024-11-27 00:55:43,1,1
+AU,9000004,University of Wollongong,ai,www_uow_edu_au_about_governance_academic_integrity_students_ai_chatgpt,9,2023-02-16 15:38:05,2024-10-22 19:44:04,1,1
+AU,9000004,University of Wollongong,integrity,www_uow_edu_au_about_governance_academic_integrity,13,2021-03-07 14:47:59,2024-11-03 05:04:22,0,1
+AU,9000045,University of Melbourne,integrity,academicintegrity_unimelb_edu_au,16,2021-01-05 09:04:04,2026-06-01 06:12:57,1,1
+AU,9000046,University of Queensland,integrity,my_uq_edu_au_information_and_services_manage_my_program_student_integrity_and_co,16,2021-02-26 13:22:38,2025-11-28 15:42:59,1,1
+AU,9000047,University of New South Wales,integrity,www_unsw_edu_au_student_managing_your_studies_academic_skills_support_toolkit_pl,12,2025-08-15 06:50:51,2026-06-02 09:38:33,0,0
+AU,9000054,University of Adelaide,integrity,www_adelaide_edu_au_student_academic_skills_academic_integrity_for_students,16,2022-04-04 16:18:46,2026-03-07 05:00:17,1,1
+AU,9000055,Australian National University,integrity,www_anu_edu_au_students_academic_skills_academic_integrity,16,2021-01-16 21:32:14,2025-07-25 01:51:13,0,1
+AU,9000060,University of Western Australia,integrity,www_uwa_edu_au_about_leadership_and_governance_integrity_and_standards_academic_,16,2024-09-01 19:39:37,2026-03-08 23:26:16,1,0
+AU,9000061,Macquarie University,integrity,students_mq_edu_au_study_assessment_exams_academic_integrity,16,2021-02-25 18:32:52,2026-06-02 06:23:09,1,1
+AU,9000062,University of Technology Sydney,integrity,www_uts_edu_au_for_students_current_students_support_academic_support_academic_i,11,2025-03-26 05:44:43,2026-05-21 05:07:17,0,0
+AU,9000063,Queensland University of Technology,integrity,www_mopp_qut_edu_au_C_C_05_03_jsp,16,2021-02-26 03:40:42,2023-12-04 06:07:16,0,1
+AU,9000064,RMIT University,integrity,www_rmit_edu_au_students_my_course_assessment_results_academic_integrity,16,2022-01-22 09:18:55,2026-06-02 08:29:16,1,1
+AU,9000065,Deakin University,integrity,www_deakin_edu_au_students_study_support_academic_integrity,16,2023-02-24 11:08:59,2025-12-13 12:43:44,0,0
+AU,9000070,Flinders University,integrity,students_flinders_edu_au_my_course_academic_integrity,16,2021-01-10 20:02:05,2026-05-21 02:20:51,1,1
+AU,9000100,Monash University,integrity,publicpolicydms_monash_edu_Monash_documents_1935748,13,2022-05-28 22:16:35,2026-05-21 03:33:22,1,1
+AU,9000101,La Trobe University,integrity,latrobe_libguides_com_academic_integrity,16,2021-04-18 20:56:00,2026-06-02 06:15:17,0,1
+AU,9000102,Swinburne University of Technology,integrity,www_swinburne_edu_au_student_login_academic_integrity,16,2021-01-12 00:09:57,2026-05-29 02:51:25,1,1
+AU,9000103,University of Newcastle,integrity,www_newcastle_edu_au_current_students_study_essentials_assessment_and_exams_acad,16,2021-03-01 14:15:09,2025-11-30 05:35:13,1,1
+AU,9000104,University of Tasmania,integrity,www_utas_edu_au_data_assets_pdf_file_0008_1371581_Student_Academic_Integrity_Ord,4,2021-12-18 23:59:14,2025-12-09 23:09:24,0,1
+AU,9000105,James Cook University,integrity,www_jcu_edu_au_students_learningcentre_during_the_study_period_academic_integrit,7,2024-02-04 19:20:25,2025-11-15 04:10:18,1,0
+AU,9000106,Western Sydney University,integrity,library_westernsydney_edu_au_students_academic_integrity,16,2022-07-16 13:24:45,2026-05-27 06:03:46,0,1
+AU,9000107,Murdoch University,integrity,www_murdoch_edu_au_mymurdoch_support_advice_student_admin_complaints_appeals_aca,14,2024-05-27 01:14:07,2026-02-10 00:26:53,0,0
+AU,9000108,University of South Australia,integrity,i_unisa_edu_au_students_student_support_services_study_support_academic_integrit,16,2021-02-24 03:52:19,2026-03-10 18:41:23,1,1
+CA,9000005,McMaster University,integrity,www_mcmaster_ca_academicintegrity,2,2021-01-07 06:07:19,2021-01-26 18:37:43,0,1
+CA,9000006,Queen's University,ai,www_queensu_ca_academicintegrity_ai_queens,2,2021-04-28 11:32:35,2021-12-01 16:57:45,0,1
+CA,9000006,Queen's University,integrity,www_queensu_ca_academicintegrity,16,2021-04-17 08:00:55,2024-07-18 22:47:47,0,1
+CA,9000007,Toronto Metropolitan University,ai,www_torontomu_ca_academicintegrity_ai,12,2023-02-03 21:26:08,2024-12-03 11:16:12,1,1
+CA,9000007,Toronto Metropolitan University,integrity,www_torontomu_ca_academicintegrity,16,2022-06-13 23:35:56,2024-12-03 11:16:12,0,1
+CA,9000008,University of British Columbia,ai,academicintegrity_ubc_ca_2023_02_15_the_opportunities_of_chatgpt,3,2023-07-14 03:53:10,2024-05-30 22:45:18,1,1
+CA,9000008,University of British Columbia,integrity,academicintegrity_ubc_ca,16,2021-10-05 18:56:14,2024-11-21 11:47:32,0,1
+CA,9000009,University of Guelph,integrity,academicintegrity_uoguelph_ca,14,2021-01-25 00:31:40,2023-05-26 13:43:35,0,1
+CA,9000010,University of Manitoba,integrity,umanitoba_ca_academicintegrity_month,2,2021-09-18 17:19:07,2024-03-27 07:21:03,0,1
+CA,9000011,University of Toronto,ai,www_academicintegrity_utoronto_ca_perils_and_pitfalls_using_chatgpt_or_other_ai_,10,2023-04-02 12:33:07,2024-12-03 15:05:16,1,1
+CA,9000011,University of Toronto,integrity,www_academicintegrity_utoronto_ca,16,2021-01-25 10:21:37,2024-11-08 03:51:39,0,1
+CA,9000012,University of Waterloo,ai,uwaterloo_ca_academic_integrity_artificial_intelligence_and_chatgpt,8,2023-04-08 23:19:17,2024-10-09 00:47:31,1,1
+CA,9000012,University of Waterloo,integrity,uwaterloo_ca_academic_integrity,16,2021-01-23 13:39:11,2024-11-09 01:44:53,1,1
+CA,9000013,University of Windsor,integrity,www_uwindsor_ca_academic_integrity,16,2021-03-04 08:51:46,2024-12-08 17:47:02,0,1
+CA,9000048,McGill University,integrity,www_mcgill_ca_deanofstudents_student_rights_and_conduct_academic_integrity,9,2025-09-26 01:25:54,2026-05-21 21:01:23,0,0
+CA,9000049,University of Alberta,integrity,www_ualberta_ca_en_campus_life_academic_success_academic_integrity_index_html,3,2024-09-06 16:35:23,2024-09-25 15:07:12,0,0
+CA,9000050,University of Calgary,integrity,www_ucalgary_ca_student_services_student_success_learning_academic_integrity,16,2021-01-19 23:29:05,2026-02-18 23:52:40,1,1
+CA,9000051,Western University,integrity,www_uwo_ca_univsec_academic_policies_rights_responsibilities_html,16,2021-01-02 20:48:35,2025-09-20 17:50:09,0,1
+CA,9000052,University of Ottawa,integrity,www_uottawa_ca_current_students_academic_integrity,16,2022-05-27 11:56:26,2025-02-14 12:02:27,1,1
+CA,9000053,Simon Fraser University,integrity,www_sfu_ca_students_academicintegrity_html,13,2021-01-10 23:23:15,2024-01-17 01:08:56,0,1
+CA,9000089,Dalhousie University,integrity,www_dal_ca_about_leadership_governance_academic_integrity_html,16,2024-02-29 15:39:17,2026-05-03 04:04:26,0,0
+CA,9000090,University of Saskatchewan,integrity,academic_integrity_usask_ca_students_php,14,2021-09-19 22:57:53,2025-11-05 05:40:42,1,1
+CA,9000091,York University,integrity,www_yorku_ca_unit_vpacad_academic_integrity,16,2022-07-18 15:00:22,2026-02-18 16:13:24,1,1
+CA,9000092,Carleton University,integrity,students_carleton_ca_services_academic_integrity,14,2021-04-14 20:16:33,2026-02-10 18:18:31,0,1
+CA,9000093,University of Victoria,integrity,www_uvic_ca_students_academics_academic_integrity_index_php,16,2021-02-03 04:40:50,2026-04-23 23:43:16,0,1
+CA,9000094,Concordia University,integrity,www_concordia_ca_conduct_academic_integrity_html,16,2021-01-17 13:34:07,2026-03-10 03:24:18,0,1
+CA,9000095,Memorial University of Newfoundland,integrity,www_mun_ca_undergrad_first_year_information_academic_integrity,16,2021-10-20 11:34:22,2026-03-12 16:08:24,0,1
+CA,9000096,University of New Brunswick,integrity,www_unb_ca_academics_calendar_undergraduate_current_regulations_universitywideac,3,2024-07-19 09:25:08,2026-04-13 17:13:01,1,0
+CA,9000097,Lakehead University,integrity,www_lakeheadu_ca_students_student_life_student_conduct_academic_integrity,16,2021-01-15 15:56:45,2026-03-09 05:59:43,0,1
+CA,9000098,University of Regina,integrity,academic_integrity_uregina_ca,16,2022-09-28 13:03:54,2026-03-16 21:14:41,0,1
+CA,9000099,Brock University,integrity,brocku_ca_academic_integrity,16,2021-01-01 21:14:55,2026-04-09 20:51:08,0,1
+UK,9000014,Imperial College London,ai,www_imperial_ac_uk_students_academic_support_ai_and_study_guidance_hub,1,2024-07-20 07:38:49,2024-07-20 07:38:49,1,1
+UK,9000014,Imperial College London,integrity,www_imperial_ac_uk_about_governance_academic_governance_academic_policy_complain,16,2021-01-26 22:45:26,2024-12-08 14:57:51,0,1
+UK,9000015,University College London,integrity,www_ucl_ac_uk_students_academic_support_study_skills_discipline_specific_skills_,9,2022-06-26 17:09:07,2024-11-11 03:20:54,0,1
+UK,9000016,University of Cambridge,integrity,www_plagiarism_admin_cam_ac_uk,16,2021-01-16 12:47:40,2024-12-12 12:43:26,0,1
+UK,9000017,University of Edinburgh,integrity,www_ed_ac_uk_students_academic_life_conduct,12,2021-07-30 14:12:59,2024-09-19 21:27:54,0,1
+UK,9000018,University of Oxford,integrity,www_ox_ac_uk_students_academic_conduct,16,2021-01-08 14:17:04,2025-01-01 09:16:23,0,1
+UK,9000019,University of St Andrews,integrity,www_st_andrews_ac_uk_students_academic_academic_advising_glossary_academic_misco,6,2021-02-26 21:55:59,2023-08-08 10:57:08,0,1
+UK,9000020,University of Manchester,ai,www_studentsupport_manchester_ac_uk_study_support_academic_support_assessments_a,6,2021-10-28 10:28:59,2026-01-23 11:53:22,0,1
+UK,9000020,University of Manchester,integrity,www_regulations_manchester_ac_uk_academic_academic_malpractice,5,2022-05-27 02:47:10,2026-01-24 09:05:05,1,1
+UK,9000024,University of Bristol,integrity,www_bristol_ac_uk_students_support_academic_advice_academic_integrity,12,2021-06-19 09:05:37,2025-10-08 06:01:57,0,1
+UK,9000026,University of Birmingham,integrity,intranet_birmingham_ac_uk_student_academic_support_academic_integrity_support_an,12,2022-10-05 11:20:51,2026-03-07 05:26:12,1,1
+UK,9000028,University of Nottingham,integrity,www_nottingham_ac_uk_academicservices_currentstudents_academic_misconduct_aspx,10,2021-04-14 11:40:31,2022-12-08 03:22:20,0,1
+UK,9000031,Cardiff University,integrity,www_cardiff_ac_uk_public_information_policies_and_procedures_academic_regulation,16,2021-01-20 04:36:40,2025-09-05 22:01:58,0,1
+UK,9000056,University of Glasgow,integrity,www_gla_ac_uk_myglasgow_sld_plagiarism,9,2022-09-29 14:50:56,2026-02-15 14:23:07,0,1
+UK,9000057,Durham University,integrity,www_durham_ac_uk_departments_academic_common_awards_policies_processes_assessmen,7,2021-04-07 17:45:17,2025-07-27 17:27:55,1,1
+UK,9000058,University of Southampton,integrity,www_southampton_ac_uk_quality_assessment_academic_integrity_page,16,2021-01-13 14:54:25,2026-01-13 05:44:45,0,1
+UK,9000075,University of Leeds,integrity,students_leeds_ac_uk_academic_integrity,9,2025-02-23 19:39:03,2026-05-08 08:35:09,0,0
+UK,9000076,University of Sheffield,integrity,www_sheffield_ac_uk_study_policies_academic_misconduct,12,2025-02-09 14:55:09,2026-03-10 06:43:44,1,0
+UK,9000077,University of Warwick,ai,warwick_ac_uk_students_academic_essentials_academic_integrity_artificial_intelli,2,2026-01-13 00:39:52,2026-05-13 07:35:13,1,0
+UK,9000077,University of Warwick,integrity,warwick_ac_uk_students_learning_experience_academic_integrity,11,2023-12-03 17:09:42,2025-09-26 03:57:40,1,0
+UK,9000078,King's College London,integrity,www_kcl_ac_uk_assets_policyzone_assessment_academic_misconduct_policy_pdf,5,2023-09-27 02:43:57,2026-06-17 04:50:55,1,0
+UK,9000079,Newcastle University,ai,www_ncl_ac_uk_academic_skills_kit_good_academic_practice_artificial_intelligence,14,2023-09-23 07:28:38,2026-04-28 08:52:42,1,1
+UK,9000079,Newcastle University,integrity,www_ncl_ac_uk_academic_skills_kit_good_academic_practice,16,2021-04-16 08:12:30,2026-03-05 13:44:27,1,1
+UK,9000080,University of Liverpool,integrity,www_liverpool_ac_uk_student_administration_and_support_division_a_z_conduct_disc,8,2023-05-28 19:20:49,2026-02-09 14:33:32,0,0
+UK,9000081,University of York,integrity,www_york_ac_uk_students_studying_skills_integrity,16,2021-01-25 01:22:10,2026-05-16 12:58:11,1,1
+UK,9000082,London School of Economics,integrity,info_lse_ac_uk_current_students_what_if_accused_of_plagiarism_or_cheating,3,2025-06-20 17:30:56,2026-03-03 11:55:08,0,0
+UK,9000083,University of Exeter,integrity,www_exeter_ac_uk_students_facultycases_academicconductandpractice,5,2024-06-20 17:38:45,2026-04-12 02:12:26,0,0
+UK,9000084,Queen Mary University of London,integrity,www_qmul_ac_uk_student_advice_and_signposting_hub_academic_support_academic_inte,6,2023-12-03 23:29:42,2025-09-09 09:49:59,0,0
+UK,9000085,Queen's University Belfast,integrity,www_qub_ac_uk_directorates_AcademicStudentAffairs_AcademicAffairs_AppealsComplai,12,2021-03-05 12:57:43,2025-12-17 02:39:27,0,1
+UK,9000086,University of Bath,integrity,www_bath_ac_uk_guides_academic_misconduct,16,2022-12-08 01:34:15,2026-05-11 13:20:12,0,0
+UK,9000087,Lancaster University,integrity,www_lancaster_ac_uk_student_and_education_services_exams_and_assessment_regulati,2,2022-01-22 02:02:29,2022-02-04 07:34:24,0,0
+UK,9000088,University of Leicester,integrity,le_ac_uk_policies_regulations_senate_regulations_senate_regulation_11_academic,10,2023-09-27 00:55:31,2025-09-17 00:59:03,1,0
+US,104151,Arizona State University,ai,provost_asu_edu_generative_ai,20,2023-06-12 18:30:24,2026-05-13 08:03:18,1,1
+US,104151,Arizona State University,integrity,provost_asu_edu_academic_integrity,20,2021-01-13 18:45:19,2026-05-11 21:12:54,0,1
+US,110644,University of California-Davis,integrity,ossja_ucdavis_edu_academic_integrity,16,2021-04-13 15:59:01,2025-04-04 20:17:11,0,1
+US,110653,University of California-Irvine,ai,dtei_uci_edu_generative_ai,16,2024-05-21 08:40:55,2026-06-22 06:01:22,1,1
+US,110653,University of California-Irvine,integrity,aisc_uci_edu_students_academic_integrity_index_php,8,2021-04-13 06:28:54,2023-11-30 14:54:31,0,1
+US,110662,University of California-Los Angeles,ai,teaching_ucla_edu_ai_workshops,1,2026-02-19 05:53:56,2026-02-19 05:53:56,1,1
+US,110662,University of California-Los Angeles,integrity,deanofstudents_ucla_edu_academic_integrity,20,2021-01-18 06:29:01,2026-05-19 12:27:55,0,1
+US,110680,University of California-San Diego,ai,academicintegrity_ucsd_edu_choose_integrity_gen_ai,2,2025-09-23 17:11:56,2025-11-17 20:04:33,1,1
+US,110680,University of California-San Diego,integrity,academicintegrity_ucsd_edu,20,2021-04-13 06:18:01,2026-04-12 17:21:59,0,1
+US,122409,San Diego State University,ai,its_sdsu_edu_ai_utm_source_salesforce_utm_medium_email,1,2024-08-19 12:29:09,2024-08-19 12:29:09,1,0
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,5,2021-04-20 08:09:16,2024-12-04 05:31:17,0,1
+US,123961,University of Southern California,ai,academicintegrity_usc_edu_faculty_resources_addressing_generative_ai,2,2025-12-09 05:26:45,2026-03-07 00:26:26,1,1
+US,123961,University of Southern California,integrity,sjacs_usc_edu_students_academic_integrity,9,2021-04-13 19:21:02,2022-08-15 14:42:18,0,1
+US,126818,Colorado State University,ai,tilt_colostate_edu_generative_ai_workshop_spring_series_2026,1,2026-01-23 17:50:29,2026-01-23 17:50:29,1,0
+US,130794,Yale University,ai,poorvucenter_yale_edu_AIguidance,20,2023-01-20 00:13:27,2025-05-17 08:19:07,1,0
+US,132903,University of Central Florida,ai,provost_ucf_edu_updates_new_opportunities_in_ai_leadership_and_development,4,2025-02-08 07:00:48,2025-09-16 01:33:06,1,0
+US,134097,Florida State University,integrity,fda_fsu_edu_academic_resources_academic_integrity_and_grievances_academic_honor_,16,2021-01-28 05:10:06,2026-05-30 17:04:05,0,1
+US,139658,Emory University,ai,ai_emory_edu,9,2021-10-21 12:22:46,2026-02-15 17:51:53,0,1
+US,139755,Georgia Institute of Technology,integrity,policylibrary_gatech_edu_student_affairs_academic_honor_code,12,2021-01-20 09:48:36,2022-06-16 15:19:54,0,0
+US,139940,Georgia State University,ai,provost_gsu_edu_2024_05_06_rating_ai_morality,1,2024-08-28 20:06:03,2024-08-28 20:06:03,1,0
+US,139940,Georgia State University,integrity,deanofstudents_gsu_edu_student_conduct_100,1,2025-01-31 19:10:10,2025-01-31 19:10:10,0,0
+US,144050,University of Chicago,ai,teaching_uchicago_edu_resources_programming_and_resources_ai,3,2025-12-20 18:26:29,2026-06-24 14:50:56,1,1
+US,144050,University of Chicago,integrity,college_uchicago_edu_advising_academic_integrity_student_conduct,10,2021-01-25 05:28:38,2021-08-21 18:15:15,0,1
+US,145600,University of Illinois Chicago,ai,teaching_uic_edu_ai_writing_tools,14,2023-07-17 19:10:36,2026-02-13 09:25:38,1,0
+US,147767,Northwestern University,integrity,www_northwestern_edu_provost_policies_procedures_academic_integrity_index_html,7,2022-03-02 05:34:04,2023-03-14 21:34:01,0,1
+US,152080,University of Notre Dame,ai,honorcode_nd_edu_ai_recommendations_for_instructors,3,2024-06-23 08:53:55,2024-09-10 05:41:05,1,1
+US,152080,University of Notre Dame,integrity,honorcode_nd_edu,16,2021-02-26 22:12:11,2026-01-10 03:45:31,0,1
+US,162928,Johns Hopkins University,integrity,studentaffairs_jhu_edu_policies_guidelines_undergrad_ethics,16,2021-03-07 00:00:08,2025-11-21 14:39:13,0,1
+US,164988,Boston University,integrity,www_bu_edu_academics_policies_academic_conduct_code,16,2021-04-12 20:51:16,2026-05-08 19:29:47,1,1
+US,166027,Harvard University,ai,oue_fas_harvard_edu_ai_guidance,16,2023-09-12 22:35:58,2025-07-01 11:23:45,1,1
+US,166027,Harvard University,integrity,honorcouncil_fas_harvard_edu_honor_code,11,2021-03-09 16:09:12,2024-03-07 15:09:38,0,1
+US,166683,Massachusetts Institute of Technology,integrity,integrity_mit_edu,16,2021-01-21 20:42:32,2026-05-28 10:10:30,0,1
+US,168148,Tufts University,ai,provost_tufts_edu_celt_events_artificial_intelligence_events,2,2024-11-03 09:45:51,2025-02-12 00:47:24,1,0
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,7,2025-01-21 16:16:08,2026-03-07 23:40:23,1,1
+US,171100,Michigan State University,integrity,www_deanofstudents_msu_edu_academic_integrity,2,2021-01-12 14:20:40,2021-01-20 07:59:03,0,1
+US,173258,Carleton College,integrity,www_carleton_edu_handbook_academics_policy_329_academic_integrity,2,2025-12-19 14:13:16,2026-03-02 03:32:06,1,0
+US,179867,Washington University in St Louis,ai,ctl_wustl_edu_resources_generative_ai_and_teaching,16,2024-07-02 20:14:38,2026-04-18 22:24:30,1,1
+US,179867,Washington University in St Louis,integrity,wustl_edu_about_compliance_policies_academic_policies_undergraduate_student_acad,16,2021-01-06 19:03:09,2024-08-06 17:02:58,1,1
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,13,2025-01-01 09:30:38,2026-05-06 20:37:36,1,1
+US,190150,Columbia University,integrity,www_college_columbia_edu_academics_academicintegrity,16,2021-01-16 02:46:21,2026-05-13 16:17:51,0,1
+US,190415,Cornell University,ai,teaching_cornell_edu_generative_artificial_intelligence,16,2023-08-04 03:07:28,2026-05-22 15:41:29,1,1
+US,190415,Cornell University,integrity,teaching_cornell_edu_promoting_academic_integrity_online_teaching,2,2022-01-14 22:54:47,2022-03-02 14:56:12,0,1
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,15,2021-03-24 07:55:19,2024-12-28 04:20:57,0,1
+US,193900,New York University,integrity,www_nyu_edu_about_policies_guidelines_compliance_policies_and_guidelines_academi,16,2021-01-09 22:31:10,2026-02-23 04:16:13,0,1
+US,196097,Stony Brook University,ai,www_stonybrook_edu_commcms_academic_integrity_generative_ai_index_php_accordion_,1,2024-09-22 22:09:38,2024-09-22 22:09:38,1,1
+US,196097,Stony Brook University,integrity,www_stonybrook_edu_commcms_academic_integrity,16,2021-01-02 20:20:49,2025-08-04 17:18:15,1,1
+US,197708,Yeshiva University,integrity,www_yu_edu_academic_integrity,12,2023-01-05 10:02:57,2025-01-01 02:26:21,1,0
+US,198385,Davidson College,integrity,www_davidson_edu_about_distinctly_davidson_honor_code,16,2021-02-27 12:55:51,2024-03-03 08:19:53,0,1
+US,198419,Duke University,ai,learninginnovation_duke_edu_ai_and_teaching_at_duke_2,10,2023-09-11 18:46:47,2024-06-12 21:36:09,1,1
+US,198419,Duke University,integrity,integrity_duke_edu,1,2021-05-05 23:23:20,2021-05-05 23:23:20,0,1
+US,199193,North Carolina State University,integrity,studentconduct_dasa_ncsu_edu_academic_integrity_module,5,2023-12-08 17:10:22,2024-12-08 16:34:28,0,0
+US,211440,Carnegie Mellon University,ai,www_cmu_edu_teaching_technology_aitools_index_html,7,2023-03-27 17:24:46,2026-04-13 07:36:35,1,1
+US,211440,Carnegie Mellon University,integrity,www_cmu_edu_policies_student_and_student_life_academic_integrity_html,11,2021-04-14 03:33:21,2025-10-06 14:37:12,0,1
+US,213543,Lehigh University,ai,provost_lehigh_edu_institutional_reports_generative_ai_lehigh,3,2025-07-11 04:58:10,2026-02-10 20:37:51,1,0
+US,215062,University of Pennsylvania,integrity,catalog_upenn_edu_pennbook_code_of_academic_integrity,7,2021-01-22 05:57:42,2025-12-11 20:59:28,0,1
+US,215266,University of Pittsburgh,ai,teaching_pitt_edu_resources_teaching_with_generative_ai,11,2024-05-02 05:32:39,2026-04-13 04:45:59,1,0
+US,215266,University of Pittsburgh,integrity,teaching_pitt_edu_resources_encouraging_academic_integrity_ref_stanfordreview_or,1,2025-11-07 01:13:02,2025-11-07 01:13:02,1,0
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,7,2025-01-25 20:22:48,2026-04-11 06:02:43,1,1
+US,216339,Temple University,integrity,bulletin_temple_edu_undergraduate_academic_policies_academic_rights_responsibili,8,2021-03-05 11:10:35,2025-12-12 07:21:44,0,1
+US,217156,Brown University,ai,provost_brown_edu_communications_michael_littman_appointed_browns_inaugural_asso,2,2025-10-31 17:54:19,2026-01-22 16:10:04,1,0
+US,217156,Brown University,integrity,studentconduct_brown_edu_faq,10,2025-03-25 08:26:26,2026-03-13 10:18:18,0,0
+US,221999,Vanderbilt University,ai,www_vanderbilt_edu_generative_ai,16,2024-01-19 00:36:16,2026-06-02 19:46:03,1,1
+US,221999,Vanderbilt University,integrity,www_vanderbilt_edu_student_handbook_the_honor_system,5,2021-01-25 21:07:17,2023-03-23 07:10:57,0,1
+US,227757,Rice University,ai,provost_rice_edu_communications_faculty_guidance_generative_ai,2,2023-12-04 15:52:32,2024-06-21 13:40:58,1,1
+US,227757,Rice University,integrity,honor_rice_edu_honor_system_handbook,12,2021-04-13 00:47:48,2026-05-02 04:33:29,0,1
+US,228723,Texas A & M University,ai,ai_tamu_edu,16,2021-01-22 20:06:43,2026-04-09 01:00:25,1,1
+US,228723,Texas A & M University,integrity,aggiehonor_tamu_edu,16,2021-01-02 05:06:25,2026-06-19 11:53:37,0,1
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,3,2024-06-17 17:32:20,2024-10-12 13:12:57,1,1
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,26,2021-02-27 07:48:43,2026-03-11 06:29:59,0,1
+US,232423,James Madison University,integrity,www_jmu_edu_honorcode,4,2021-03-02 11:50:49,2021-08-02 20:43:34,0,0
+US,233921,Virginia Polytechnic Institute and State University,integrity,www_honorsystem_vt_edu,16,2021-01-17 18:35:26,2026-01-24 17:48:43,0,1
+US,243744,Stanford University,ai,teachingcommons_stanford_edu_teaching_guides_artificial_intelligence_teaching_gu,16,2023-09-12 01:28:01,2026-06-11 09:51:38,1,1
+US,243744,Stanford University,integrity,communitystandards_stanford_edu_policies_and_guidance_honor_code,16,2021-01-02 01:03:53,2022-06-01 21:14:57,0,1
+US,243780,Purdue University,integrity,www_purdue_edu_odos_osrr_academic_integrity_index_html,8,2021-04-14 11:41:53,2025-04-27 07:16:36,0,1

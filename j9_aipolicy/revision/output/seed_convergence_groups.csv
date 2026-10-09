@@ -1,0 +1,209 @@
+rung,event_q,group,n_pairs,mean_cos
+S1,1,US-US,1,0.0712
+S1,1,Commonwealth same country,7,0.0938
+S1,1,Commonwealth cross country,8,0.0928
+S1,1,US-Commonwealth,12,0.0862
+S1,2,US-US,3,0.1019
+S1,2,Commonwealth same country,46,0.0868
+S1,2,Commonwealth cross country,59,0.0737
+S1,2,US-Commonwealth,45,0.0858
+S1,3,US-US,21,0.1973
+S1,3,Commonwealth same country,71,0.0968
+S1,3,Commonwealth cross country,100,0.094
+S1,3,US-Commonwealth,133,0.1136
+S1,4,US-US,28,0.184
+S1,4,Commonwealth same country,88,0.0943
+S1,4,Commonwealth cross country,122,0.096
+S1,4,US-Commonwealth,168,0.1097
+S1,5,US-US,55,0.1341
+S1,5,Commonwealth same country,88,0.0909
+S1,5,Commonwealth cross country,122,0.0927
+S1,5,US-Commonwealth,231,0.0947
+S1,6,US-US,120,0.1281
+S1,6,Commonwealth same country,96,0.0975
+S1,6,Commonwealth cross country,135,0.0943
+S1,6,US-Commonwealth,352,0.0957
+S1,7,US-US,136,0.1455
+S1,7,Commonwealth same country,105,0.0933
+S1,7,Commonwealth cross country,171,0.091
+S1,7,US-Commonwealth,408,0.0979
+S1,8,US-US,153,0.1475
+S1,8,Commonwealth same country,124,0.1056
+S1,8,Commonwealth cross country,227,0.1056
+S1,8,US-Commonwealth,486,0.1064
+S1,9,US-US,231,0.1609
+S1,9,Commonwealth same country,112,0.1142
+S1,9,Commonwealth cross country,213,0.1102
+S1,9,US-Commonwealth,572,0.1147
+S1,10,US-US,231,0.1575
+S1,10,Commonwealth same country,117,0.1149
+S1,10,Commonwealth cross country,234,0.1066
+S1,10,US-Commonwealth,594,0.1132
+S1,11,US-US,231,0.1817
+S1,11,Commonwealth same country,115,0.1156
+S1,11,Commonwealth cross country,236,0.108
+S1,11,US-Commonwealth,594,0.1225
+S1,12,US-US,276,0.1802
+S1,12,Commonwealth same country,123,0.1121
+S1,12,Commonwealth cross country,255,0.1035
+S1,12,US-Commonwealth,672,0.1191
+S1,13,US-US,253,0.1933
+S1,13,Commonwealth same country,123,0.1121
+S1,13,Commonwealth cross country,255,0.1035
+S1,13,US-Commonwealth,644,0.1232
+S4,1,US-US,1,0.0736
+S4,1,Commonwealth same country,7,0.0967
+S4,1,Commonwealth cross country,8,0.1052
+S4,1,US-Commonwealth,12,0.0925
+S4,2,US-US,3,0.108
+S4,2,Commonwealth same country,46,0.0911
+S4,2,Commonwealth cross country,59,0.0828
+S4,2,US-Commonwealth,45,0.0925
+S4,3,US-US,21,0.1998
+S4,3,Commonwealth same country,71,0.1033
+S4,3,Commonwealth cross country,100,0.1036
+S4,3,US-Commonwealth,133,0.1205
+S4,4,US-US,28,0.1878
+S4,4,Commonwealth same country,88,0.1013
+S4,4,Commonwealth cross country,122,0.1049
+S4,4,US-Commonwealth,168,0.1159
+S4,5,US-US,55,0.1391
+S4,5,Commonwealth same country,88,0.097
+S4,5,Commonwealth cross country,122,0.1025
+S4,5,US-Commonwealth,231,0.101
+S4,6,US-US,120,0.13
+S4,6,Commonwealth same country,96,0.1041
+S4,6,Commonwealth cross country,135,0.1045
+S4,6,US-Commonwealth,352,0.1014
+S4,7,US-US,136,0.1475
+S4,7,Commonwealth same country,105,0.0996
+S4,7,Commonwealth cross country,171,0.1009
+S4,7,US-Commonwealth,408,0.1036
+S4,8,US-US,153,0.15
+S4,8,Commonwealth same country,124,0.1129
+S4,8,Commonwealth cross country,227,0.115
+S4,8,US-Commonwealth,486,0.1125
+S4,9,US-US,231,0.1669
+S4,9,Commonwealth same country,112,0.1224
+S4,9,Commonwealth cross country,213,0.1201
+S4,9,US-Commonwealth,572,0.1227
+S4,10,US-US,231,0.1658
+S4,10,Commonwealth same country,117,0.1238
+S4,10,Commonwealth cross country,234,0.1171
+S4,10,US-Commonwealth,594,0.1222
+S4,11,US-US,231,0.192
+S4,11,Commonwealth same country,115,0.1229
+S4,11,Commonwealth cross country,236,0.1176
+S4,11,US-Commonwealth,594,0.1318
+S4,12,US-US,276,0.1911
+S4,12,Commonwealth same country,123,0.1196
+S4,12,Commonwealth cross country,255,0.1127
+S4,12,US-Commonwealth,672,0.1284
+S4,13,US-US,253,0.2074
+S4,13,Commonwealth same country,123,0.1195
+S4,13,Commonwealth cross country,255,0.1127
+S4,13,US-Commonwealth,644,0.1337
+S7,1,US-US,0,
+S7,1,Commonwealth same country,6,0.0816
+S7,1,Commonwealth cross country,4,0.0873
+S7,1,US-Commonwealth,5,0.1333
+S7,2,US-US,1,0.1433
+S7,2,Commonwealth same country,42,0.0834
+S7,2,Commonwealth cross country,49,0.0681
+S7,2,US-Commonwealth,28,0.0962
+S7,3,US-US,15,0.1951
+S7,3,Commonwealth same country,66,0.0921
+S7,3,Commonwealth cross country,87,0.0837
+S7,3,US-Commonwealth,108,0.1008
+S7,4,US-US,21,0.1666
+S7,4,Commonwealth same country,82,0.0884
+S7,4,Commonwealth cross country,108,0.0855
+S7,4,US-Commonwealth,140,0.0942
+S7,5,US-US,36,0.142
+S7,5,Commonwealth same country,82,0.0824
+S7,5,Commonwealth cross country,108,0.0845
+S7,5,US-Commonwealth,180,0.0888
+S7,6,US-US,78,0.1345
+S7,6,Commonwealth same country,89,0.0908
+S7,6,Commonwealth cross country,101,0.0946
+S7,6,US-Commonwealth,260,0.0908
+S7,7,US-US,91,0.1543
+S7,7,Commonwealth same country,96,0.0858
+S7,7,Commonwealth cross country,135,0.0887
+S7,7,US-Commonwealth,308,0.0918
+S7,8,US-US,105,0.1539
+S7,8,Commonwealth same country,112,0.0975
+S7,8,Commonwealth cross country,188,0.0979
+S7,8,US-Commonwealth,375,0.0998
+S7,9,US-US,153,0.1818
+S7,9,Commonwealth same country,100,0.1121
+S7,9,Commonwealth cross country,176,0.1035
+S7,9,US-Commonwealth,432,0.1125
+S7,10,US-US,153,0.1805
+S7,10,Commonwealth same country,104,0.1149
+S7,10,Commonwealth cross country,196,0.1034
+S7,10,US-Commonwealth,450,0.1126
+S7,11,US-US,171,0.1935
+S7,11,Commonwealth same country,102,0.1137
+S7,11,Commonwealth cross country,198,0.1045
+S7,11,US-Commonwealth,475,0.1217
+S7,12,US-US,210,0.1828
+S7,12,Commonwealth same country,109,0.1116
+S7,12,Commonwealth cross country,216,0.1014
+S7,12,US-Commonwealth,546,0.1172
+S7,13,US-US,231,0.181
+S7,13,Commonwealth same country,109,0.1115
+S7,13,Commonwealth cross country,216,0.1015
+S7,13,US-Commonwealth,572,0.1165
+S7x,1,US-US,0,
+S7x,1,Commonwealth same country,6,0.0525
+S7x,1,Commonwealth cross country,4,0.0606
+S7x,1,US-Commonwealth,5,0.1184
+S7x,2,US-US,1,0.1203
+S7x,2,Commonwealth same country,42,0.061
+S7x,2,Commonwealth cross country,49,0.0512
+S7x,2,US-Commonwealth,28,0.0714
+S7x,3,US-US,15,0.1144
+S7x,3,Commonwealth same country,66,0.0689
+S7x,3,Commonwealth cross country,87,0.062
+S7x,3,US-Commonwealth,108,0.0599
+S7x,4,US-US,21,0.1004
+S7x,4,Commonwealth same country,82,0.0654
+S7x,4,Commonwealth cross country,108,0.062
+S7x,4,US-Commonwealth,140,0.0573
+S7x,5,US-US,36,0.077
+S7x,5,Commonwealth same country,82,0.0605
+S7x,5,Commonwealth cross country,108,0.0595
+S7x,5,US-Commonwealth,180,0.054
+S7x,6,US-US,78,0.0707
+S7x,6,Commonwealth same country,89,0.0662
+S7x,6,Commonwealth cross country,101,0.0652
+S7x,6,US-Commonwealth,260,0.0563
+S7x,7,US-US,91,0.0839
+S7x,7,Commonwealth same country,96,0.0658
+S7x,7,Commonwealth cross country,135,0.0651
+S7x,7,US-Commonwealth,308,0.0583
+S7x,8,US-US,105,0.0822
+S7x,8,Commonwealth same country,112,0.0742
+S7x,8,Commonwealth cross country,188,0.072
+S7x,8,US-Commonwealth,375,0.0596
+S7x,9,US-US,153,0.0916
+S7x,9,Commonwealth same country,100,0.0868
+S7x,9,Commonwealth cross country,176,0.0758
+S7x,9,US-Commonwealth,432,0.0671
+S7x,10,US-US,153,0.0913
+S7x,10,Commonwealth same country,104,0.0859
+S7x,10,Commonwealth cross country,196,0.0715
+S7x,10,US-Commonwealth,450,0.0656
+S7x,11,US-US,171,0.1017
+S7x,11,Commonwealth same country,102,0.0847
+S7x,11,Commonwealth cross country,198,0.0735
+S7x,11,US-Commonwealth,475,0.0714
+S7x,12,US-US,210,0.0992
+S7x,12,Commonwealth same country,109,0.0836
+S7x,12,Commonwealth cross country,216,0.0722
+S7x,12,US-Commonwealth,546,0.0699
+S7x,13,US-US,231,0.0986
+S7x,13,Commonwealth same country,109,0.0835
+S7x,13,Commonwealth cross country,216,0.0723
+S7x,13,US-Commonwealth,572,0.0689

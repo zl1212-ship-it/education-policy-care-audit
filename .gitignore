@@ -30,3 +30,8 @@ moonlit-cistern-500918-i3-*.json
 j4_adoption/data/quarantine_raw_grad_*.csv
 # local figure output folder; the figure scripts create it
 paper/
+j9_aipolicy/revision/output/seed_snapshots_raw/
+j9_aipolicy/revision/output/policy_pdfs/
+j9_aipolicy/revision/output/figures/
+j9_aipolicy/revision/output/*.log
+j9_aipolicy/revision/output/*.stdout

@@ -1,0 +1,339 @@
+rung,system,term,n
+L3,US,faculty,4952
+L3,US,instructors,4442
+L3,US,staff,919
+L3,US,instructor,752
+L3,US,provost,437
+L3,US,center for teaching,415
+L3,US,professor,271
+L3,US,honor council,184
+L3,US,professors,179
+L3,US,office of the provost,160
+L3,US,vice provost,149
+L3,US,dean,144
+L3,US,panel,119
+L3,US,ferpa,117
+L3,US,committee,107
+L3,US,vice president,89
+L3,US,course instructor,83
+L3,US,chair,72
+L3,US,president,68
+L3,US,academic affairs,65
+L3,US,faculty members,56
+L3,US,vice chancellor,49
+L3,US,faculty member,49
+L3,US,council,47
+L3,US,teaching assistant,39
+L3,US,provost's,39
+L3,US,principal,38
+L3,US,review board,38
+L3,US,tutor,38
+L3,US,lecturer,31
+L3,US,academic advisor,28
+L3,US,teaching and learning center,20
+L3,US,tutors,20
+L3,US,advisor,17
+L3,US,associate dean,16
+L3,US,committees,16
+L3,US,office of student conduct,14
+L3,US,panels,13
+L3,US,regents,12
+L3,US,university senate,12
+L3,US,staff member,11
+L3,US,office of academic integrity,11
+L3,US,teaching assistants,8
+L3,US,academic calendar,8
+L3,US,academic integrity panel,7
+L3,US,senate,6
+L3,US,advisers,6
+L3,US,review boards,5
+L3,US,chancellor's,4
+L3,US,advisors,4
+L3,US,honor councils,4
+L3,US,program coordinator,3
+L3,US,faculty senate,3
+L3,US,program director,2
+L3,US,proctors,2
+L3,US,board of regents,2
+L3,US,department head,2
+L3,US,chancellor,2
+L3,US,staff members,1
+L3,US,dean of students,1
+L3,US,instructor's,1
+L3,US,student services,1
+L3,UK,staff,41
+L3,UK,module leader,38
+L3,UK,tutor,33
+L3,UK,module tutor,31
+L3,UK,academic tutor,12
+L3,UK,personal tutor,11
+L3,UK,committee,11
+L3,UK,council,8
+L3,UK,lecturers,7
+L3,UK,panel,5
+L3,UK,professor,5
+L3,UK,academic regulations,4
+L3,UK,staff member,3
+L3,UK,faculty,2
+L3,UK,tutors,2
+L3,AU,course coordinator,293
+L3,AU,course coordinators,161
+L3,AU,teqsa,87
+L3,AU,examiner,55
+L3,AU,unit coordinator,51
+L3,AU,staff,49
+L3,AU,teaching staff,45
+L3,AU,tertiary education quality and standards agency,43
+L3,AU,tutor,39
+L3,AU,tutors,24
+L3,AU,lecturers,21
+L3,AU,lecturer,21
+L3,AU,subject coordinator,19
+L3,AU,academic staff,14
+L3,AU,staff member,12
+L3,AU,council,11
+L3,AU,unit coordinators,9
+L3,AU,integrity officer,9
+L3,AU,instructors,8
+L3,AU,instructor,3
+L3,AU,subject coordinators,2
+L3,AU,academic board,1
+L3,AU,deputy vice-chancellor,1
+L3,CA,instructors,652
+L3,CA,instructor,563
+L3,CA,professor,335
+L3,CA,professors,316
+L3,CA,faculty,125
+L3,CA,council,40
+L3,CA,tutor,30
+L3,CA,senate,18
+L3,CA,vice-president,18
+L3,CA,lecturer,12
+L3,CA,staff,9
+L3,CA,center for teaching,6
+L3,CA,president,3
+L3,CA,faculty members,2
+L3,CA,course instructor,1
+L4,US,course,11504
+L4,US,courses,2827
+L4,US,https,2083
+L4,US,module,2005
+L4,US,harvard,1374
+L4,US,texas,1317
+L4,US,com,1289
+L4,US,modules,1113
+L4,US,program,1089
+L4,US,columbia,1046
+L4,US,edu,1002
+L4,US,campus,871
+L4,US,org,867
+L4,US,asu,796
+L4,US,college,717
+L4,US,uic,685
+L4,US,canvas,583
+L4,US,graduate,571
+L4,US,stanford,565
+L4,US,columbia university,548
+L4,US,undergraduate,542
+L4,US,vanderbilt,535
+L4,US,school,527
+L4,US,coursework,477
+L4,US,www,466
+L4,US,programs,436
+L4,US,semester,389
+L4,US,ed,353
+L4,US,temple,341
+L4,US,duke,335
+L4,US,degree,315
+L4,US,tamu,312
+L4,US,co,290
+L4,US,schools,237
+L4,US,cornell,227
+L4,US,pdf,225
+L4,US,units,220
+L4,US,departments,213
+L4,US,tufts,199
+L4,US,grading,188
+L4,US,graduates,188
+L4,US,united states,188
+L4,US,department,185
+L4,US,seminar,182
+L4,US,oxford,150
+L4,US,chicago,147
+L4,US,california,131
+L4,US,tutorial,131
+L4,US,brown,120
+L4,US,american,119
+L4,US,european,119
+L4,US,phd,115
+L4,US,honor code,110
+L4,US,uchicago,109
+L4,US,http,109
+L4,US,temple university,108
+L4,US,uc,106
+L4,US,queens,105
+L4,US,nd,103
+L4,US,le,101
+L4,US,degrees,101
+L4,US,america,100
+L4,US,university of pennsylvania,98
+L4,US,san diego,97
+L4,US,sdsu,97
+L4,US,thesis,93
+L4,US,yale,90
+L4,US,colleges,90
+L4,US,msu,90
+L4,US,london,85
+L4,US,uci,81
+L4,US,idaho,80
+L4,US,mit,77
+L4,US,vanderbilt's,73
+L4,US,economics,72
+L4,US,campuses,68
+L4,US,university of illinois chicago,68
+L4,US,pitt,63
+L4,US,georgia,61
+L4,US,unit,60
+L4,UK,course,247
+L4,UK,canvas,211
+L4,UK,newcastle university,146
+L4,UK,module,66
+L4,UK,warwick,66
+L4,UK,program,59
+L4,UK,opens in a new window,48
+L4,UK,pdf,27
+L4,UK,department,21
+L4,UK,le,16
+L4,UK,courses,15
+L4,UK,modules,15
+L4,UK,graduate,15
+L4,UK,departments,14
+L4,UK,co,14
+L4,UK,college,14
+L4,UK,department's,13
+L4,UK,warwick's,12
+L4,UK,degree,11
+L4,UK,tutorial,11
+L4,UK,nd,11
+L4,UK,moodle,10
+L4,UK,com,9
+L4,UK,newcastle,9
+L4,UK,imperial's,7
+L4,UK,programs,7
+L4,UK,schools,7
+L4,UK,undergraduates,6
+L4,UK,postgraduates,6
+L4,UK,postgraduate,6
+L4,UK,degrees,6
+L4,UK,https,4
+L4,UK,last updated,3
+L4,UK,imperial,3
+L4,UK,school,3
+L4,UK,ca,3
+L4,UK,campuses,2
+L4,UK,marking,2
+L4,UK,coursework,2
+L4,UK,economics,2
+L4,UK,ac,2
+L4,UK,mit,1
+L4,AU,course,419
+L4,AU,program,362
+L4,AU,uq,276
+L4,AU,rmit,245
+L4,AU,uow,92
+L4,AU,rmit's,72
+L4,AU,unisa,68
+L4,AU,pdf,63
+L4,AU,unit,59
+L4,AU,coursework,50
+L4,AU,au,45
+L4,AU,module,44
+L4,AU,canvas,42
+L4,AU,flinders,40
+L4,AU,degree,33
+L4,AU,australia,33
+L4,AU,https,30
+L4,AU,www,30
+L4,AU,gov,30
+L4,AU,modules,28
+L4,AU,learning management system,27
+L4,AU,edu,15
+L4,AU,university of adelaide,14
+L4,AU,jcu,14
+L4,AU,uwa,13
+L4,AU,unsw,12
+L4,AU,opens in a new window,12
+L4,AU,school,12
+L4,AU,monash university,11
+L4,AU,marking,11
+L4,AU,university of newcastle,10
+L4,AU,unit of study,9
+L4,AU,sydney,9
+L4,AU,last updated,9
+L4,AU,campus,9
+L4,AU,lecture,8
+L4,AU,courses,7
+L4,AU,tutorials,7
+L4,AU,semester,6
+L4,AU,myuni,6
+L4,AU,nd,5
+L4,AU,co,4
+L4,AU,university of wollongong,4
+L4,AU,swinburne,3
+L4,AU,undergraduates,2
+L4,AU,postgraduates,2
+L4,AU,degrees,1
+L4,AU,units,1
+L4,AU,programs,1
+L4,CA,external link,781
+L4,CA,opens in new window,397
+L4,CA,course,316
+L4,CA,courses,298
+L4,CA,https,75
+L4,CA,com,75
+L4,CA,uottawa,70
+L4,CA,montclair state university,54
+L4,CA,university of central florida,45
+L4,CA,marking,44
+L4,CA,york university,43
+L4,CA,cornell university,42
+L4,CA,undergraduate,41
+L4,CA,grading,40
+L4,CA,york,40
+L4,CA,toronto metropolitan university,36
+L4,CA,coursework,33
+L4,CA,university of ottawa,30
+L4,CA,ed,28
+L4,CA,waterloo,26
+L4,CA,phd,25
+L4,CA,university of waterloo,21
+L4,CA,pdf,20
+L4,CA,degree,20
+L4,CA,usask,20
+L4,CA,chicago,18
+L4,CA,module,17
+L4,CA,nd,16
+L4,CA,campus,15
+L4,CA,graduate,13
+L4,CA,mcmaster university,13
+L4,CA,university of regina,10
+L4,CA,le,10
+L4,CA,harvard,10
+L4,CA,florida,9
+L4,CA,ca,9
+L4,CA,ubc,9
+L4,CA,modules,9
+L4,CA,university of queensland,8
+L4,CA,co,8
+L4,CA,proctoring,6
+L4,CA,department,6
+L4,CA,uwaterloo,6
+L4,CA,australia,5
+L4,CA,ucalgary's,5
+L4,CA,college,4
+L4,CA,ontario,4
+L4,CA,semester,3
+L4,CA,vancouver,3
+L4,CA,australia's,3
+L4,CA,yorku,3
+L4,CA,thesis,1

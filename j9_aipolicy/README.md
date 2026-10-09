@@ -81,3 +81,13 @@ Snapshot HTML is never committed: `data/snapshots_raw/` is gitignored and fully
 reproducible from `data/snapshot_index.csv` by rerunning `fetch_snapshots.py`;
 the panel carries timestamps, digests, and coded counts only. Source APIs,
 access dates, and the shock date are in `SOURCES.md`.
+
+
+## Revision (one-page-per-type design)
+
+The revised manuscript observes every system on one curated integrity page and, where one exists,
+one AI guidance page, reads the text with navigation removed, retrieves linked policy PDFs, and
+measures crawl density. Those scripts and their CSV products are in `revision/` (see its README).
+Two fixes to this pipeline accompany them: the cross-national `build_panel.py` grid now runs to
+2026Q1, matching the committed panel, and the feasibility filter no longer depends on a single
+coverage file (four eligible United States institutions had been dropped).

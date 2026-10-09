@@ -1,0 +1,17 @@
+rung,system,n_inst_end
+S1,US,23
+S1,UK,7
+S1,AU,12
+S1,CA,9
+S4,US,23
+S4,UK,7
+S4,AU,12
+S4,CA,9
+S7,US,22
+S7,UK,6
+S7,AU,12
+S7,CA,8
+S7x,US,22
+S7x,UK,6
+S7x,AU,12
+S7x,CA,8

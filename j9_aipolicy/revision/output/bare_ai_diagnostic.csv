@@ -1,0 +1,1025 @@
+system,institution,page_type,timestamp,n_strict,n_bare,bare_only,ai_as_integrity,pre_shock
+US,Arizona State University,ai,20230612183024,29,32,0,0,0
+US,Arizona State University,ai,20230705190247,29,32,0,0,0
+US,Arizona State University,ai,20240123204024,37,39,0,0,0
+US,Arizona State University,ai,20240228204157,37,39,0,0,0
+US,Arizona State University,ai,20240324185538,37,39,0,0,0
+US,Arizona State University,ai,20240619084153,37,39,0,0,0
+US,Arizona State University,ai,20250119010314,38,56,0,0,0
+US,Arizona State University,ai,20250415160305,37,52,0,0,0
+US,Arizona State University,ai,20250520010035,37,52,0,0,0
+US,Arizona State University,ai,20250801214907,37,52,0,0,0
+US,Arizona State University,ai,20250829182254,37,52,0,0,0
+US,Arizona State University,ai,20250914032815,37,52,0,0,0
+US,Arizona State University,ai,20251004203422,37,52,0,0,0
+US,Arizona State University,ai,20251011210441,37,52,0,0,0
+US,Arizona State University,ai,20251101135204,31,33,0,0,0
+US,Arizona State University,ai,20260114145717,30,32,0,0,0
+US,Arizona State University,ai,20260410080451,30,32,0,0,0
+US,Arizona State University,ai,20230927152612,3,3,0,0,0
+US,Arizona State University,ai,20240221015159,3,3,0,0,0
+US,Arizona State University,ai,20240605165329,3,3,0,0,0
+US,Arizona State University,ai,20230923052340,38,36,0,0,0
+US,Arizona State University,ai,20231210000057,38,36,0,0,0
+US,Arizona State University,ai,20240516215321,38,36,0,0,0
+US,Arizona State University,ai,20241007055621,38,36,0,0,0
+US,California Polytechnic State University-San Luis Obispo,ai,20210414233404,1,0,0,0,1
+US,California Polytechnic State University-San Luis Obispo,ai,20211009025943,1,0,0,0,1
+US,California Polytechnic State University-San Luis Obispo,ai,20220110142937,1,0,0,0,1
+US,California Polytechnic State University-San Luis Obispo,ai,20220709035524,1,0,0,0,1
+US,California Polytechnic State University-San Luis Obispo,ai,20220926151447,1,0,0,0,1
+US,California Polytechnic State University-San Luis Obispo,ai,20240412120624,1,0,0,0,0
+US,California Polytechnic State University-San Luis Obispo,ai,20250502205630,1,0,0,0,0
+US,California Polytechnic State University-San Luis Obispo,ai,20240606065245,1,0,0,0,0
+US,University of California-Irvine,ai,20240521084055,23,24,0,0,0
+US,University of California-Irvine,ai,20240614212927,23,24,0,0,0
+US,University of California-Irvine,ai,20240621101045,23,24,0,0,0
+US,University of California-Irvine,ai,20240829091252,23,24,0,0,0
+US,University of California-Irvine,ai,20240913042727,23,24,0,0,0
+US,University of California-Irvine,ai,20241231105209,23,24,0,0,0
+US,University of California-Irvine,ai,20250126092950,23,24,0,0,0
+US,University of California-Irvine,ai,20250224101200,23,24,0,0,0
+US,University of California-Irvine,ai,20250304230616,23,24,0,0,0
+US,University of California-Irvine,ai,20250408211814,23,24,0,0,0
+US,University of California-Irvine,ai,20250519073638,24,25,0,0,0
+US,University of California-Irvine,ai,20250906001524,23,28,0,0,0
+US,University of California-Irvine,ai,20260130150559,6,30,0,0,0
+US,University of California-Irvine,ai,20260414003055,3,10,0,0,0
+US,University of California-Irvine,ai,20251002040608,0,7,1,0,0
+US,University of California-Irvine,integrity,20210413062854,0,1,1,0,1
+US,University of California-Los Angeles,ai,20260508175603,1,19,0,0,0
+US,University of California-Los Angeles,ai,20260317094112,2,10,0,0,0
+US,University of California-Los Angeles,ai,20260219055356,2,11,0,0,0
+US,University of California-San Diego,ai,20250923171156,14,46,0,1,0
+US,University of California-San Diego,ai,20251117200433,14,46,0,1,0
+US,University of California-San Diego,ai,20250610150249,0,21,1,1,0
+US,University of California-San Diego,ai,20250829162624,0,21,1,1,0
+US,University of California-San Diego,ai,20240506032051,10,1,0,0,0
+US,University of California-San Diego,ai,20241217192233,10,6,0,0,0
+US,University of California-San Diego,ai,20250610150249,14,46,0,1,0
+US,University of California-San Diego,ai,20250717213035,14,46,0,1,0
+US,University of California-San Diego,integrity,20211217030738,0,0,0,0,1
+US,University of California-San Diego,integrity,20240406051838,0,1,1,0,0
+US,University of California-San Diego,integrity,20240917034333,0,1,1,0,0
+US,University of California-San Diego,integrity,20241108165152,0,1,1,0,0
+US,University of California-San Diego,integrity,20241214170353,0,1,1,0,0
+US,University of California-San Diego,integrity,20250111000633,0,1,1,0,0
+US,University of California-San Diego,integrity,20250521144507,0,1,1,0,0
+US,University of California-San Diego,integrity,20250612005155,0,1,1,0,0
+US,University of California-San Diego,integrity,20250804155338,0,1,1,0,0
+US,University of California-San Diego,integrity,20230403173530,10,31,0,1,0
+US,University of California-San Diego,integrity,20240506032102,13,31,0,1,0
+US,San Diego State University,ai,20231205081930,3,41,0,0,0
+US,San Diego State University,ai,20231216193542,3,39,0,0,0
+US,San Diego State University,ai,20240404075346,3,15,0,0,0
+US,San Diego State University,ai,20240819122909,4,42,0,0,0
+US,San Jose State University,ai,20250409072700,2,3,0,0,0
+US,Santa Clara University,integrity,20231206174422,1,1,0,0,0
+US,Santa Clara University,integrity,20240619123927,1,1,0,0,0
+US,Santa Clara University,integrity,20250429101928,1,1,0,0,0
+US,Santa Clara University,integrity,20250610213652,1,1,0,0,0
+US,Santa Clara University,integrity,20250917133835,1,1,0,0,0
+US,Santa Clara University,integrity,20251111112119,1,1,0,0,0
+US,Santa Clara University,integrity,20251201143800,1,1,0,0,0
+US,Santa Clara University,integrity,20260311092314,1,1,0,0,0
+US,University of Southern California,ai,20251209052645,12,19,0,0,0
+US,University of Southern California,ai,20260307002626,12,19,0,0,0
+US,University of Southern California,ai,20260123012619,10,7,0,0,0
+US,Colorado State University,ai,20210126183720,3,9,0,0,1
+US,Colorado State University,ai,20211215034525,3,9,0,0,1
+US,Colorado State University,ai,20221020192957,3,9,0,0,1
+US,Colorado State University,ai,20231128231403,3,9,0,0,0
+US,Colorado State University,ai,20241009003722,3,9,0,0,0
+US,Colorado State University,ai,20250430133712,3,9,0,0,0
+US,Colorado State University,ai,20250829052516,3,9,0,0,0
+US,Colorado State University,ai,20251220013830,3,9,0,0,0
+US,Colorado State University,ai,20260213123140,3,9,0,0,0
+US,Colorado State University,ai,20260123175029,16,36,0,0,0
+US,Yale University,ai,20250428080327,2,22,0,0,0
+US,Yale University,ai,20250913193018,2,22,0,0,0
+US,Yale University,ai,20260115120337,2,22,0,0,0
+US,Yale University,ai,20260125021004,2,22,0,0,0
+US,University of Central Florida,ai,20250428215104,2,6,0,0,0
+US,University of Central Florida,ai,20260123105147,2,6,0,0,0
+US,University of Central Florida,ai,20250208070048,3,13,0,0,0
+US,University of Central Florida,ai,20250524003459,3,13,0,0,0
+US,University of Central Florida,ai,20250526054938,3,13,0,0,0
+US,University of Central Florida,ai,20250916013306,3,13,0,0,0
+US,Florida State University,integrity,20230804075909,0,1,1,0,0
+US,Florida State University,integrity,20231014010826,0,2,1,0,0
+US,Florida State University,integrity,20231130013234,0,2,1,0,0
+US,Florida State University,integrity,20240405004226,0,2,1,0,0
+US,Florida State University,integrity,20240523060853,0,2,1,0,0
+US,Florida State University,integrity,20240703002914,0,2,1,0,0
+US,Florida State University,integrity,20240912234842,0,2,1,0,0
+US,Florida State University,integrity,20241207131110,0,2,1,0,0
+US,Florida State University,integrity,20250119110504,0,2,1,0,0
+US,Florida State University,integrity,20250319124536,0,2,1,0,0
+US,Florida State University,integrity,20250324233515,0,2,1,0,0
+US,Florida State University,integrity,20250401180018,0,2,1,0,0
+US,Florida State University,integrity,20250410002548,0,2,1,0,0
+US,Florida State University,integrity,20250429111152,0,2,1,0,0
+US,Florida State University,integrity,20250521165442,0,2,1,0,0
+US,Florida State University,integrity,20250527003212,0,2,1,0,0
+US,Florida State University,integrity,20251001102350,0,2,1,0,0
+US,Florida State University,integrity,20251102001435,0,2,1,0,0
+US,Florida State University,integrity,20251116001236,0,2,1,0,0
+US,University of South Florida,ai,20250620235711,21,11,0,0,0
+US,University of South Florida,ai,20260615235722,24,8,0,0,0
+US,University of South Florida,ai,20250621014736,6,3,0,0,0
+US,Emory University,ai,20250106221952,0,3,1,0,0
+US,Emory University,ai,20240328114314,0,3,1,0,0
+US,Emory University,ai,20240603191159,0,3,1,0,0
+US,Emory University,ai,20240225084501,0,3,1,0,0
+US,Emory University,ai,20240603163938,0,3,1,0,0
+US,Emory University,ai,20250103125447,0,3,1,0,0
+US,Georgia Institute of Technology,ai,20250131092636,3,9,0,0,0
+US,Georgia Institute of Technology,ai,20250519234739,3,9,0,0,0
+US,Georgia Institute of Technology,ai,20251007153245,3,9,0,0,0
+US,Georgia Institute of Technology,ai,20251129035747,3,9,0,0,0
+US,Georgia Institute of Technology,ai,20260220172206,3,9,0,0,0
+US,Georgia State University,ai,20240828200603,9,10,0,0,0
+US,Georgia State University,ai,20241102060103,7,7,0,0,0
+US,Georgia State University,ai,20251210025736,4,19,0,0,0
+US,Georgia State University,ai,20210804210725,4,3,0,0,1
+US,University of Chicago,ai,20250130151657,2,6,0,0,0
+US,University of Chicago,ai,20250406162412,5,7,0,0,0
+US,University of Chicago,ai,20250514211839,5,7,0,0,0
+US,University of Chicago,ai,20251220182629,1,27,0,0,0
+US,University of Chicago,ai,20260522191418,5,55,0,0,0
+US,University of Chicago,ai,20260624145056,7,60,0,0,0
+US,University of Chicago,ai,20241208154400,11,24,0,0,0
+US,University of Chicago,ai,20250128170311,11,24,0,0,0
+US,University of Chicago,ai,20250403070403,14,26,0,0,0
+US,University of Chicago,ai,20250422130839,14,26,0,0,0
+US,University of Chicago,ai,20241208153904,6,38,0,0,0
+US,University of Illinois Chicago,ai,20230717191036,83,129,0,0,0
+US,University of Illinois Chicago,ai,20231207024147,83,129,0,0,0
+US,University of Illinois Chicago,ai,20231217024843,83,129,0,0,0
+US,University of Illinois Chicago,ai,20240108160716,83,129,0,0,0
+US,University of Illinois Chicago,ai,20240205024436,83,129,0,0,0
+US,University of Illinois Chicago,ai,20240421010803,84,129,0,0,0
+US,University of Illinois Chicago,ai,20240621095301,84,129,0,0,0
+US,University of Illinois Chicago,ai,20240725054359,84,129,0,0,0
+US,University of Illinois Chicago,ai,20250211234815,84,129,0,0,0
+US,University of Illinois Chicago,ai,20250512013044,84,129,0,0,0
+US,University of Illinois Chicago,ai,20250803043458,82,126,0,0,0
+US,University of Illinois Chicago,ai,20250811043713,82,126,0,0,0
+US,University of Illinois Chicago,ai,20251111070631,82,126,0,0,0
+US,University of Illinois Chicago,ai,20260213092538,82,126,0,0,0
+US,University of Illinois Chicago,ai,20240421012723,84,129,0,0,0
+US,University of Illinois Chicago,ai,20240523005712,84,129,0,0,0
+US,University of Illinois Chicago,ai,20240710065551,84,129,0,0,0
+US,University of Illinois Chicago,ai,20241207185127,0,7,1,0,0
+US,University of Illinois Chicago,ai,20260311123925,2,5,0,0,0
+US,University of Illinois Chicago,ai,20260311124951,2,5,0,0,0
+US,University of Notre Dame,ai,20240623085355,15,14,0,0,0
+US,University of Notre Dame,ai,20240708134445,15,14,0,0,0
+US,University of Notre Dame,ai,20240910054105,13,19,0,0,0
+US,University of Notre Dame,ai,20240606101345,8,8,0,0,0
+US,University of Notre Dame,ai,20240708153657,8,8,0,0,0
+US,University of Notre Dame,ai,20240913123810,3,5,0,0,0
+US,University of Notre Dame,ai,20241104103804,3,5,0,0,0
+US,University of Notre Dame,ai,20260110034724,3,5,0,0,0
+US,University of Notre Dame,ai,20250624172400,7,5,0,0,0
+US,University of Notre Dame,ai,20240913112710,1,12,0,0,0
+US,University of Notre Dame,ai,20241104103635,1,12,0,0,0
+US,University of Notre Dame,ai,20241127002656,1,12,0,0,0
+US,University of Notre Dame,ai,20260110034728,1,12,0,0,0
+US,Johns Hopkins University,ai,20240828193446,0,0,0,0,0
+US,Johns Hopkins University,ai,20250721193353,0,0,0,0,0
+US,Johns Hopkins University,ai,20240828193435,0,0,0,0,0
+US,Johns Hopkins University,ai,20250721193330,0,0,0,0,0
+US,Johns Hopkins University,ai,20240828193526,0,0,0,0,0
+US,Johns Hopkins University,ai,20250721193458,0,0,0,0,0
+US,Johns Hopkins University,integrity,20260511123946,1,0,0,0,0
+US,Boston University,integrity,20240526233936,2,0,0,0,0
+US,Boston University,integrity,20240119173316,2,0,0,0,0
+US,Boston University,integrity,20240223195224,2,0,0,0,0
+US,Boston University,integrity,20240227124404,2,0,0,0,0
+US,Boston University,integrity,20240328222404,2,0,0,0,0
+US,Boston University,integrity,20240411130916,2,0,0,0,0
+US,Boston University,integrity,20240415092640,2,0,0,0,0
+US,Boston University,integrity,20240421212503,2,0,0,0,0
+US,Boston University,integrity,20240820065812,2,0,0,0,0
+US,Boston University,integrity,20240822013158,2,0,0,0,0
+US,Boston University,integrity,20241126231153,2,0,0,0,0
+US,Boston University,integrity,20241227034655,2,0,0,0,0
+US,Boston University,integrity,20250121090444,2,0,0,0,0
+US,Boston University,integrity,20250226164552,2,0,0,0,0
+US,Boston University,integrity,20250403153416,2,0,0,0,0
+US,Boston University,integrity,20250511091954,2,0,0,0,0
+US,Boston University,integrity,20250521195940,2,0,0,0,0
+US,Boston University,integrity,20250620082442,2,0,0,0,0
+US,Boston University,integrity,20250909210322,2,0,0,0,0
+US,Boston University,integrity,20251115112626,2,0,0,0,0
+US,Boston University,integrity,20251225145231,2,0,0,0,0
+US,Boston University,integrity,20251229113059,2,0,0,0,0
+US,Boston University,integrity,20260102002949,2,0,0,0,0
+US,Boston University,integrity,20260117061534,2,0,0,0,0
+US,Boston University,integrity,20260121202132,2,0,0,0,0
+US,Boston University,integrity,20260125025301,2,0,0,0,0
+US,Harvard University,ai,20230912223558,29,20,0,0,0
+US,Harvard University,ai,20231026144011,29,20,0,0,0
+US,Harvard University,ai,20231029060415,29,20,0,0,0
+US,Harvard University,ai,20231109202452,29,20,0,0,0
+US,Harvard University,ai,20240106035435,31,27,0,0,0
+US,Harvard University,ai,20240120022143,31,27,0,0,0
+US,Harvard University,ai,20240209115738,32,27,0,0,0
+US,Harvard University,ai,20240327113839,32,27,0,0,0
+US,Harvard University,ai,20240417134040,32,27,0,0,0
+US,Harvard University,ai,20240612165142,32,27,0,0,0
+US,Harvard University,ai,20240716024824,32,27,0,0,0
+US,Harvard University,ai,20241111075959,32,27,0,0,0
+US,Harvard University,ai,20241112210819,32,27,0,0,0
+US,Harvard University,ai,20241113001534,32,27,0,0,0
+US,Harvard University,ai,20241207095841,32,27,0,0,0
+US,Harvard University,ai,20230807135316,14,17,0,0,0
+US,Harvard University,ai,20230830213653,14,17,0,0,0
+US,Harvard University,ai,20230913071251,14,17,0,0,0
+US,Harvard University,ai,20231109223304,14,17,0,0,0
+US,Harvard University,ai,20231114225834,14,17,0,0,0
+US,Harvard University,ai,20240320182358,14,17,0,0,0
+US,Harvard University,ai,20240611021958,14,17,0,0,0
+US,Harvard University,ai,20241002015508,14,17,0,0,0
+US,Harvard University,ai,20241107204918,14,17,0,0,0
+US,Harvard University,ai,20241110120702,14,17,0,0,0
+US,Harvard University,ai,20241126085023,14,17,0,0,0
+US,Harvard University,ai,20241130121842,14,17,0,0,0
+US,Harvard University,ai,20241207171836,14,17,0,0,0
+US,Harvard University,ai,20250201004755,14,17,0,0,0
+US,Harvard University,ai,20250329175752,14,17,0,0,0
+US,Harvard University,ai,20250428210737,14,17,0,0,0
+US,Harvard University,ai,20250430043621,14,17,0,0,0
+US,Harvard University,ai,20250609022524,14,17,0,0,0
+US,Harvard University,ai,20250818201832,16,18,0,0,0
+US,Harvard University,ai,20250905022054,16,18,0,0,0
+US,Harvard University,ai,20251019055833,16,18,0,0,0
+US,Harvard University,ai,20251027050301,16,18,0,0,0
+US,Harvard University,ai,20251103185052,16,18,0,0,0
+US,Harvard University,ai,20251104040709,16,18,0,0,0
+US,Harvard University,ai,20251125085451,16,18,0,0,0
+US,Harvard University,ai,20260108075611,16,18,0,0,0
+US,Harvard University,ai,20260328091807,16,18,0,0,0
+US,Harvard University,ai,20251103205438,16,18,0,0,0
+US,Massachusetts Institute of Technology,ai,20211216170018,4,2,0,0,1
+US,Massachusetts Institute of Technology,ai,20211216165509,4,2,0,0,1
+US,Massachusetts Institute of Technology,ai,20210412202009,4,2,0,0,1
+US,Massachusetts Institute of Technology,ai,20210907203009,4,2,0,0,1
+US,Massachusetts Institute of Technology,ai,20220414170010,4,2,0,0,1
+US,Massachusetts Institute of Technology,ai,20221007014730,4,2,0,0,1
+US,Massachusetts Institute of Technology,ai,20230316051448,4,2,0,0,0
+US,Massachusetts Institute of Technology,ai,20231007135405,4,2,0,0,0
+US,Massachusetts Institute of Technology,ai,20240302032455,4,2,0,0,0
+US,Massachusetts Institute of Technology,ai,20240913014905,3,3,0,0,0
+US,Massachusetts Institute of Technology,ai,20241202161940,3,3,0,0,0
+US,Northeastern University,ai,20250807041741,6,23,0,0,0
+US,Northeastern University,ai,20251112023513,6,23,0,0,0
+US,Northeastern University,ai,20250807030718,7,19,0,0,0
+US,Northeastern University,ai,20251216080922,7,19,0,0,0
+US,Northeastern University,ai,20240810101247,1,15,0,0,0
+US,Northeastern University,ai,20240810110237,1,15,0,0,0
+US,Northeastern University,ai,20240812115830,1,15,0,0,0
+US,Northeastern University,ai,20250213112542,1,15,0,0,0
+US,Williams College,ai,20241216154040,7,11,0,0,0
+US,Michigan State University,ai,20250104012455,7,6,0,0,0
+US,Michigan State University,ai,20250121142943,7,6,0,0,0
+US,Michigan State University,ai,20250429153721,7,6,0,0,0
+US,Michigan State University,ai,20250808192834,7,6,0,0,0
+US,Michigan State University,ai,20250913105749,7,6,0,0,0
+US,Michigan State University,ai,20251213105535,7,6,0,0,0
+US,Michigan State University,ai,20250121164024,3,3,0,0,0
+US,Michigan State University,ai,20250913101602,3,3,0,0,0
+US,Michigan State University,ai,20250121161608,6,9,0,0,0
+US,Michigan State University,ai,20250210105712,6,9,0,0,0
+US,Michigan State University,ai,20250522004029,6,9,0,0,0
+US,Michigan State University,ai,20250808205700,6,9,0,0,0
+US,Michigan State University,ai,20250913101023,6,9,0,0,0
+US,Michigan State University,ai,20251213105044,6,9,0,0,0
+US,Michigan State University,ai,20260307234023,6,9,0,0,0
+US,Carleton College,integrity,20251219141316,1,0,0,0,0
+US,Carleton College,integrity,20260302033206,1,0,0,0,0
+US,Washington University in St Louis,ai,20250113073909,14,45,0,0,0
+US,Washington University in St Louis,ai,20250209022300,14,45,0,0,0
+US,Washington University in St Louis,ai,20250215123219,14,45,0,0,0
+US,Washington University in St Louis,ai,20250511194652,15,46,0,0,0
+US,Washington University in St Louis,ai,20250523073535,15,46,0,0,0
+US,Washington University in St Louis,ai,20250907201658,18,77,0,0,0
+US,Washington University in St Louis,ai,20251128203523,18,77,0,0,0
+US,Washington University in St Louis,ai,20260119073947,18,77,0,0,0
+US,Washington University in St Louis,ai,20250209024346,14,45,0,0,0
+US,Washington University in St Louis,ai,20260306150805,0,2,1,0,0
+US,Washington University in St Louis,integrity,20240806170258,3,0,0,0,0
+US,Montclair State University,ai,20260121221344,1,0,0,0,0
+US,Columbia University,ai,20241109075506,24,54,0,0,0
+US,Columbia University,ai,20241211230432,24,54,0,0,0
+US,Columbia University,ai,20241212142432,24,54,0,0,0
+US,Columbia University,ai,20250101092243,24,54,0,0,0
+US,Columbia University,ai,20250811115926,24,54,0,0,0
+US,Columbia University,ai,20250101093038,60,96,0,1,0
+US,Columbia University,ai,20250214004753,60,96,0,1,0
+US,Columbia University,ai,20250427191340,60,96,0,1,0
+US,Columbia University,ai,20250503050312,60,96,0,1,0
+US,Columbia University,ai,20250505174027,60,96,0,1,0
+US,Columbia University,ai,20250514164533,60,96,0,1,0
+US,Columbia University,ai,20250605003807,60,96,0,1,0
+US,Columbia University,ai,20250707165501,60,96,0,1,0
+US,Columbia University,ai,20250723144536,60,96,0,1,0
+US,Columbia University,ai,20250815210957,60,96,0,1,0
+US,Columbia University,ai,20250927103555,60,96,0,1,0
+US,Columbia University,ai,20260218063555,60,96,0,1,0
+US,Columbia University,ai,20260506203736,67,106,0,1,0
+US,Columbia University,ai,20250204074559,2,4,0,0,0
+US,Cornell University,ai,20230804030728,51,45,0,0,0
+US,Cornell University,ai,20230918020829,51,46,0,0,0
+US,Cornell University,ai,20230920195544,51,46,0,0,0
+US,Cornell University,ai,20230928031028,51,46,0,0,0
+US,Cornell University,ai,20231022033724,51,46,0,0,0
+US,Cornell University,ai,20240106095949,51,46,0,0,0
+US,Cornell University,ai,20240123183837,51,46,0,0,0
+US,Cornell University,ai,20240203164002,52,47,0,0,0
+US,Cornell University,ai,20240226100254,52,47,0,0,0
+US,Cornell University,ai,20240303164635,52,47,0,0,0
+US,Cornell University,ai,20240501022643,52,47,0,0,0
+US,Cornell University,ai,20240604184452,52,47,0,0,0
+US,Cornell University,ai,20240717115147,52,47,0,0,0
+US,Cornell University,ai,20240811185603,52,47,0,0,0
+US,Cornell University,ai,20240824024008,52,47,0,0,0
+US,Cornell University,ai,20240904173640,52,47,0,0,0
+US,Cornell University,ai,20240918131332,52,47,0,0,0
+US,Cornell University,ai,20241102003951,51,46,0,0,0
+US,Cornell University,ai,20250115222008,51,46,0,0,0
+US,Cornell University,ai,20250221215434,51,46,0,0,0
+US,Cornell University,ai,20250307201112,51,46,0,0,0
+US,Cornell University,ai,20250328092521,51,46,0,0,0
+US,Cornell University,ai,20250414102329,51,46,0,0,0
+US,Cornell University,ai,20250605145535,51,46,0,0,0
+US,Cornell University,ai,20250809062211,51,46,0,0,0
+US,Cornell University,ai,20250819095414,45,38,0,0,0
+US,Cornell University,ai,20251021194347,45,38,0,0,0
+US,Cornell University,ai,20251027062335,45,38,0,0,0
+US,Cornell University,ai,20251104024004,45,38,0,0,0
+US,Cornell University,ai,20251209224034,45,38,0,0,0
+US,Cornell University,ai,20251224111158,45,38,0,0,0
+US,Cornell University,ai,20260127222851,45,38,0,0,0
+US,Cornell University,ai,20260215211006,45,38,0,0,0
+US,Cornell University,ai,20260305165636,46,40,0,0,0
+US,Cornell University,ai,20260306175233,46,40,0,0,0
+US,Cornell University,ai,20230928191654,13,20,0,0,0
+US,Cornell University,ai,20231014233437,13,20,0,0,0
+US,Cornell University,ai,20231022033755,13,20,0,0,0
+US,Cornell University,ai,20240206023952,13,20,0,0,0
+US,Cornell University,ai,20240303162937,13,20,0,0,0
+US,Cornell University,ai,20240614071948,13,20,0,0,0
+US,Cornell University,ai,20240828193053,13,20,0,0,0
+US,Cornell University,ai,20241008094517,13,20,0,0,0
+US,Cornell University,ai,20241020001915,13,20,0,0,0
+US,Cornell University,ai,20241213045411,13,20,0,0,0
+US,Cornell University,ai,20241231024744,13,20,0,0,0
+US,Cornell University,ai,20250421144044,13,20,0,0,0
+US,Cornell University,ai,20250523015855,13,20,0,0,0
+US,Cornell University,ai,20260507075021,4,2,0,0,0
+US,Cornell University,ai,20260520203916,4,2,0,0,0
+US,Cornell University,ai,20230828195331,30,37,0,0,0
+US,Cornell University,ai,20230928191655,30,37,0,0,0
+US,Cornell University,ai,20231022033727,30,37,0,0,0
+US,Cornell University,ai,20240418032034,30,37,0,0,0
+US,Cornell University,ai,20240614072211,30,37,0,0,0
+US,Cornell University,ai,20240715120745,30,37,0,0,0
+US,Cornell University,ai,20240828190315,30,37,0,0,0
+US,Cornell University,integrity,20230928205833,29,30,0,0,0
+US,Cornell University,integrity,20231023010200,29,30,0,0,0
+US,Cornell University,integrity,20240206024007,29,32,0,0,0
+US,Cornell University,integrity,20240303151224,29,32,0,0,0
+US,Cornell University,integrity,20240510215229,29,32,0,0,0
+US,Cornell University,integrity,20240603174555,29,32,0,0,0
+US,Cornell University,integrity,20240614071827,29,32,0,0,0
+US,Cornell University,integrity,20240828182605,29,32,0,0,0
+US,Cornell University,integrity,20250123095601,29,32,0,0,0
+US,Cornell University,integrity,20250316193747,29,32,0,0,0
+US,Cornell University,integrity,20250328030359,29,32,0,0,0
+US,Cornell University,integrity,20250514113237,29,32,0,0,0
+US,Cornell University,integrity,20250611175532,29,32,0,0,0
+US,Cornell University,integrity,20250824111258,26,32,0,0,0
+US,Cornell University,integrity,20250905212102,26,32,0,0,0
+US,Cornell University,integrity,20251002044303,26,32,0,0,0
+US,Cornell University,integrity,20251104025852,26,32,0,0,0
+US,Cornell University,integrity,20251209231302,26,32,0,0,0
+US,Cornell University,integrity,20260122081348,26,32,0,0,0
+US,Cornell University,integrity,20260216162539,26,32,0,0,0
+US,Cornell University,integrity,20260312152102,26,32,0,0,0
+US,Cornell University,integrity,20260522154118,26,32,0,0,0
+US,Cornell University,integrity,20260603143650,26,32,0,0,0
+US,Cornell University,integrity,20230115144725,21,13,0,0,0
+US,Cornell University,integrity,20230131035258,17,17,0,0,0
+US,Cornell University,integrity,20230201090807,17,17,0,0,0
+US,Cornell University,integrity,20230202080257,17,17,0,0,0
+US,Cornell University,integrity,20230316230541,17,17,0,0,0
+US,Cornell University,integrity,20230321231046,17,17,0,0,0
+US,Cornell University,integrity,20230606034339,17,17,0,0,0
+US,Cornell University,integrity,20230609053525,17,17,0,0,0
+US,Cornell University,integrity,20230614214733,17,17,0,0,0
+US,Cornell University,integrity,20230620141917,17,17,0,0,0
+US,Cornell University,integrity,20230629042352,17,17,0,0,0
+US,New York University,integrity,20240712184351,0,1,1,0,0
+US,Stony Brook University,ai,20240922220938,5,4,0,0,0
+US,Stony Brook University,integrity,20240602010718,1,1,0,0,0
+US,Stony Brook University,integrity,20240702204937,1,1,0,0,0
+US,Stony Brook University,integrity,20240909123731,1,1,0,0,0
+US,Yeshiva University,integrity,20231002174900,10,17,0,0,0
+US,Yeshiva University,integrity,20231101212745,10,17,0,0,0
+US,Yeshiva University,integrity,20240226072205,10,17,0,0,0
+US,Yeshiva University,integrity,20240605062801,10,17,0,0,0
+US,Yeshiva University,integrity,20240912122248,10,17,0,0,0
+US,Yeshiva University,integrity,20241206213153,10,17,0,0,0
+US,Yeshiva University,integrity,20250101022621,10,17,0,0,0
+US,Yeshiva University,integrity,20240818031547,21,16,0,0,0
+US,Duke University,ai,20230911184647,17,91,0,0,0
+US,Duke University,ai,20230912000647,17,91,0,0,0
+US,Duke University,ai,20230923073759,17,91,0,0,0
+US,Duke University,ai,20231003042627,17,91,0,0,0
+US,Duke University,ai,20240116012856,22,96,0,0,0
+US,Duke University,ai,20240202023347,26,93,0,0,0
+US,Duke University,ai,20240301141644,26,93,0,0,0
+US,Duke University,ai,20240303101444,26,93,0,0,0
+US,Duke University,ai,20240315074933,26,93,0,0,0
+US,Duke University,ai,20240612213609,28,99,0,0,0
+US,Duke University,ai,20230911205544,16,87,0,0,0
+US,Duke University,ai,20230923140221,16,87,0,0,0
+US,Duke University,ai,20231026122203,16,87,0,0,0
+US,Duke University,ai,20240202172615,22,86,0,0,0
+US,Duke University,ai,20240315073616,22,86,0,0,0
+US,Duke University,ai,20240413121744,22,86,0,0,0
+US,Duke University,ai,20230911195624,26,60,0,0,0
+US,Duke University,ai,20230912002308,26,60,0,0,0
+US,Duke University,ai,20230923153001,26,60,0,0,0
+US,Duke University,ai,20231026140300,26,60,0,0,0
+US,Duke University,ai,20231204054842,29,63,0,0,0
+US,Duke University,ai,20240119085349,29,63,0,0,0
+US,Duke University,ai,20240205045730,31,67,0,0,0
+US,Duke University,ai,20240305133726,31,67,0,0,0
+US,Duke University,ai,20240413120230,31,67,0,0,0
+US,Duke University,ai,20240416163430,31,67,0,0,0
+US,North Carolina State University,ai,20251219140840,9,8,0,0,0
+US,North Carolina State University,ai,20251219115235,4,5,0,0,0
+US,North Carolina State University,ai,20250324230939,9,8,0,0,0
+US,North Carolina State University,ai,20251114110433,12,13,0,0,0
+US,North Carolina State University,ai,20260615235859,12,15,0,0,0
+US,Case Western Reserve University,ai,20240707120345,2,0,0,0,0
+US,Kent State University,ai,20210507183001,7,0,0,0,1
+US,Kent State University,ai,20210922043000,7,0,0,0,1
+US,Kent State University,ai,20220120194401,7,0,0,0,1
+US,Kent State University,ai,20220626103240,7,0,0,0,1
+US,Kent State University,ai,20220926190129,7,0,0,0,1
+US,Kent State University,ai,20221203050325,7,0,0,0,0
+US,Kent State University,ai,20230331184333,7,0,0,0,0
+US,Kent State University,ai,20230929001321,9,1,0,0,0
+US,Kent State University,ai,20250327091620,7,1,0,0,0
+US,Kent State University,ai,20250715130255,7,1,0,0,0
+US,Kent State University,ai,20251208092853,7,1,0,0,0
+US,Kent State University,ai,20251211051432,7,1,0,0,0
+US,Kent State University,ai,20260218150155,7,1,0,0,0
+US,Kent State University,ai,20260603205610,6,0,0,0,0
+US,Oregon State University,ai,20210622144033,6,27,0,0,1
+US,Oregon State University,ai,20231004131540,6,28,0,0,0
+US,Oregon State University,ai,20240221045206,4,28,0,0,0
+US,Oregon State University,ai,20250422045729,4,35,0,0,0
+US,Oregon State University,ai,20251006024131,5,41,0,0,0
+US,Oregon State University,ai,20260115020057,7,49,0,0,0
+US,Oregon State University,ai,20250406191541,1,1,0,0,0
+US,Oregon State University,ai,20251006014555,1,1,0,0,0
+US,Oregon State University,ai,20250407123559,0,1,1,0,0
+US,Oregon State University,integrity,20221202002209,2,0,0,0,0
+US,Oregon State University,integrity,20230321114923,2,0,0,0,0
+US,Oregon State University,integrity,20231004141156,2,0,0,0,0
+US,Oregon State University,integrity,20231213053825,2,0,0,0,0
+US,Oregon State University,integrity,20240520221014,2,0,0,0,0
+US,Oregon State University,integrity,20240723213917,2,0,0,0,0
+US,Oregon State University,integrity,20250209025259,2,0,0,0,0
+US,Oregon State University,integrity,20250408183508,2,0,0,0,0
+US,Oregon State University,integrity,20250916110952,2,0,0,0,0
+US,Oregon State University,integrity,20251007173608,2,0,0,0,0
+US,Oregon State University,integrity,20260125034028,2,0,0,0,0
+US,Bucknell University,ai,20210419192904,1,0,0,0,1
+US,Bucknell University,ai,20210805101416,1,0,0,0,1
+US,Drexel University,ai,20250720054852,4,15,0,0,0
+US,Drexel University,ai,20250219022000,6,1,0,0,0
+US,Drexel University,ai,20210418201941,19,0,0,0,1
+US,Drexel University,ai,20210418201954,9,0,0,0,1
+US,Drexel University,ai,20211016205208,9,0,0,0,1
+US,Drexel University,ai,20220528031605,28,2,0,0,1
+US,Drexel University,ai,20220717054538,9,0,0,0,1
+US,Drexel University,ai,20221017205403,9,0,0,0,1
+US,Drexel University,ai,20230416210533,9,0,0,0,0
+US,Drexel University,ai,20240719112039,22,2,0,0,0
+US,Drexel University,ai,20250219102829,22,2,0,0,0
+US,Lehigh University,ai,20250711045810,1,1,0,0,0
+US,University of Pennsylvania,ai,20240616145033,2,0,0,0,0
+US,University of Pennsylvania,ai,20240723020236,2,0,0,0,0
+US,University of Pennsylvania,ai,20250320213300,2,0,0,0,0
+US,University of Pennsylvania,ai,20251002153511,2,0,0,0,0
+US,University of Pennsylvania,ai,20240616163020,3,2,0,0,0
+US,University of Pennsylvania,ai,20240723033510,3,2,0,0,0
+US,University of Pennsylvania,ai,20250322231145,3,2,0,0,0
+US,University of Pennsylvania,ai,20251002153511,3,2,0,0,0
+US,University of Pennsylvania,ai,20240616154757,6,7,0,0,0
+US,University of Pennsylvania,ai,20250202013737,6,7,0,0,0
+US,University of Pennsylvania,ai,20251002153511,6,8,0,0,0
+US,University of Pennsylvania,ai,20260615235925,8,21,0,0,0
+US,University of Pittsburgh,ai,20250410161756,12,7,0,0,0
+US,University of Pittsburgh,ai,20240502053239,30,63,0,0,0
+US,University of Pittsburgh,ai,20240721010548,30,63,0,0,0
+US,University of Pittsburgh,integrity,20250316193639,7,41,0,0,0
+US,University of Pittsburgh,integrity,20251107011302,7,41,0,0,0
+US,Temple University,ai,20250125202248,43,102,0,0,0
+US,Temple University,ai,20250324013043,43,102,0,0,0
+US,Temple University,ai,20250328133044,43,102,0,0,0
+US,Temple University,ai,20251210132427,43,104,0,0,0
+US,Temple University,ai,20251217030630,43,104,0,0,0
+US,Temple University,ai,20251219062608,43,104,0,0,0
+US,Temple University,ai,20260411060243,43,104,0,0,0
+US,Temple University,ai,20250213214931,43,102,0,0,0
+US,Temple University,ai,20250328130256,2,60,0,0,0
+US,Temple University,ai,20250525204102,2,60,0,0,0
+US,Temple University,ai,20250614051136,2,60,0,0,0
+US,Temple University,ai,20251016163621,2,60,0,0,0
+US,Temple University,ai,20230929180254,36,60,0,0,0
+US,Temple University,ai,20231004220629,36,60,0,0,0
+US,Temple University,ai,20231011193646,36,60,0,0,0
+US,Temple University,ai,20231012235452,36,60,0,0,0
+US,Temple University,ai,20240419064714,36,62,0,0,0
+US,Temple University,ai,20240423074807,36,62,0,0,0
+US,Brown University,ai,20251031175419,2,29,0,0,0
+US,Brown University,ai,20260122161004,2,29,0,0,0
+US,Brown University,ai,20251031155147,7,29,0,0,0
+US,Brown University,ai,20260210130456,7,29,0,0,0
+US,Vanderbilt University,ai,20240119003616,9,10,0,0,0
+US,Vanderbilt University,ai,20240303160405,9,10,0,0,0
+US,Vanderbilt University,ai,20240621080726,9,10,0,0,0
+US,Vanderbilt University,ai,20240711042038,9,10,0,0,0
+US,Vanderbilt University,ai,20240916150058,10,11,0,0,0
+US,Vanderbilt University,ai,20250118000849,10,11,0,0,0
+US,Vanderbilt University,ai,20250421012333,10,11,0,0,0
+US,Vanderbilt University,ai,20250916054103,10,11,0,0,0
+US,Vanderbilt University,ai,20251103042857,10,11,0,0,0
+US,Vanderbilt University,ai,20260115003026,10,11,0,0,0
+US,Vanderbilt University,ai,20260128093942,10,11,0,0,0
+US,Vanderbilt University,ai,20260214162516,10,11,0,0,0
+US,Vanderbilt University,ai,20260312000720,10,11,0,0,0
+US,Vanderbilt University,ai,20260419153330,10,11,0,0,0
+US,Vanderbilt University,ai,20260509163815,10,11,0,0,0
+US,Vanderbilt University,ai,20240305040049,54,44,0,0,0
+US,Vanderbilt University,ai,20240818133941,54,44,0,0,0
+US,Vanderbilt University,ai,20241210045906,54,44,0,0,0
+US,Vanderbilt University,ai,20240819055831,1,1,0,0,0
+US,Vanderbilt University,ai,20250321134635,1,1,0,0,0
+US,Vanderbilt University,ai,20250524123208,1,1,0,0,0
+US,Vanderbilt University,ai,20250810070552,1,1,0,0,0
+US,Vanderbilt University,ai,20250916002849,1,1,0,0,0
+US,Vanderbilt University,ai,20251117004218,1,1,0,0,0
+US,Vanderbilt University,ai,20260202125159,1,1,0,0,0
+US,Vanderbilt University,ai,20260308002634,1,1,0,0,0
+US,Vanderbilt University,integrity,20240916150405,76,89,0,0,0
+US,Vanderbilt University,integrity,20241223155759,76,89,0,0,0
+US,Vanderbilt University,integrity,20251207062638,76,89,0,0,0
+US,Vanderbilt University,integrity,20251215181801,76,89,0,0,0
+US,Rice University,ai,20251109123145,1,2,0,1,0
+US,Rice University,ai,20260215162907,1,2,0,1,0
+US,Rice University,ai,20260304144519,1,2,0,1,0
+US,Rice University,ai,20250613092146,0,11,1,0,0
+US,Rice University,ai,20250729182814,0,11,1,0,0
+US,Rice University,ai,20251206065237,0,11,1,0,0
+US,Rice University,ai,20260105120851,0,11,1,0,0
+US,Rice University,ai,20260502042328,0,11,1,0,0
+US,Rice University,ai,20260518155437,0,11,1,0,0
+US,Rice University,ai,20260603143650,0,11,1,0,0
+US,Rice University,ai,20250613092552,0,2,1,0,0
+US,Rice University,ai,20231204155232,12,5,0,0,0
+US,Rice University,ai,20240621134058,12,5,0,0,0
+US,Texas A & M University,ai,20241122174540,3,35,0,0,0
+US,Texas A & M University,ai,20250120162715,3,35,0,0,0
+US,Texas A & M University,ai,20250324231022,6,26,0,0,0
+US,Texas A & M University,ai,20250504123517,7,30,0,0,0
+US,Texas A & M University,ai,20250805175053,9,43,0,0,0
+US,Texas A & M University,ai,20251103190030,9,41,0,0,0
+US,Texas A & M University,ai,20260105032808,10,44,0,0,0
+US,Texas A & M University,ai,20260331174441,10,49,0,0,0
+US,Texas A & M University,ai,20241122195034,3,35,0,0,0
+US,Texas A & M University,ai,20250325001406,6,26,0,0,0
+US,Texas A & M University,ai,20250504134125,7,30,0,0,0
+US,Texas A & M University,ai,20250805175102,9,43,0,0,0
+US,Texas A & M University,ai,20250816235451,9,43,0,0,0
+US,Texas A & M University,ai,20251103185929,9,41,0,0,0
+US,Texas A & M University,ai,20260105130022,10,44,0,0,0
+US,Texas A & M University,ai,20250805175110,2,15,0,0,0
+US,Texas A & M University,ai,20251103190025,5,11,0,0,0
+US,Texas A & M University,ai,20260105033133,5,11,0,0,0
+US,Texas A & M University,ai,20260331174453,8,12,0,0,0
+US,Texas A & M University,integrity,20250910042254,0,4,1,0,0
+US,Texas A & M University,integrity,20251108203240,0,4,1,0,0
+US,Texas A & M University,integrity,20260403042530,0,4,1,0,0
+US,Texas A & M University,integrity,20260619115337,0,4,1,0,0
+US,University of Texas at Arlington,ai,20250811111826,3,3,0,0,0
+US,University of Texas at Arlington,ai,20251209202627,3,3,0,0,0
+US,University of Texas at Arlington,ai,20250805070810,2,2,0,0,0
+US,George Mason University,ai,20250620035628,18,28,0,0,0
+US,George Mason University,ai,20250703122214,18,28,0,0,0
+US,George Mason University,ai,20251011031401,18,28,0,0,0
+US,George Mason University,ai,20240716195742,4,16,0,0,0
+US,George Mason University,ai,20230921210955,0,7,1,0,0
+US,George Mason University,ai,20241229044930,0,7,1,0,0
+US,George Mason University,ai,20251113030502,0,7,1,0,0
+US,George Mason University,ai,20250524194958,3,17,0,0,0
+US,George Mason University,ai,20240617173220,6,9,0,0,0
+US,George Mason University,ai,20240818014542,6,9,0,0,0
+US,George Mason University,ai,20241012131257,6,9,0,0,0
+US,Stanford University,ai,20230912012801,13,24,0,0,0
+US,Stanford University,ai,20230912020340,10,25,0,0,0
+US,Stanford University,ai,20230912031414,13,34,0,0,0
+US,Stanford University,ai,20231017010744,13,24,0,0,0
+US,Stanford University,ai,20231017014315,13,34,0,0,0
+US,Stanford University,ai,20231017021756,10,25,0,0,0
+US,Stanford University,ai,20231031020142,13,24,0,0,0
+US,Stanford University,ai,20231031032617,13,34,0,0,0
+US,Stanford University,ai,20231031035737,10,25,0,0,0
+US,Stanford University,ai,20231121005908,13,24,0,0,0
+US,Stanford University,ai,20231121035845,10,25,0,0,0
+US,Stanford University,ai,20231128030304,13,34,0,0,0
+US,Stanford University,ai,20231205133342,13,24,0,0,0
+US,Stanford University,ai,20231205142331,10,25,0,0,0
+US,Stanford University,ai,20231226012238,13,34,0,0,0
+US,Stanford University,ai,20240109005253,13,24,0,0,0
+US,Stanford University,ai,20240116013421,10,25,0,0,0
+US,Stanford University,ai,20240116014102,13,34,0,0,0
+US,Stanford University,ai,20240130021417,13,26,0,0,0
+US,Stanford University,ai,20240131031635,13,34,0,0,0
+US,Stanford University,ai,20240206021659,10,25,0,0,0
+US,Stanford University,ai,20240220010724,13,26,0,0,0
+US,Stanford University,ai,20240220011905,10,25,0,0,0
+US,Stanford University,ai,20240220012931,13,34,0,0,0
+US,Stanford University,ai,20240307133809,13,34,0,0,0
+US,Stanford University,ai,20240319011122,10,25,0,0,0
+US,Stanford University,ai,20240402005937,13,27,0,0,0
+US,Stanford University,ai,20240402013619,13,35,0,0,0
+US,Stanford University,ai,20240410003009,10,26,0,0,0
+US,Stanford University,ai,20240430012144,13,35,0,0,0
+US,Stanford University,ai,20240430031928,13,27,0,0,0
+US,Stanford University,ai,20240521013830,10,26,0,0,0
+US,Stanford University,ai,20240524191418,13,27,0,0,0
+US,Stanford University,ai,20240723005023,13,27,0,0,0
+US,Stanford University,ai,20240723010841,10,26,0,0,0
+US,Stanford University,ai,20240820071848,13,35,0,0,0
+US,Stanford University,ai,20240919070458,10,26,0,0,0
+US,Stanford University,ai,20241001085745,13,27,0,0,0
+US,Stanford University,ai,20241001124557,13,35,0,0,0
+US,Stanford University,ai,20241023005731,10,26,0,0,0
+US,Stanford University,ai,20241105184050,13,27,0,0,0
+US,Stanford University,ai,20241106022910,13,35,0,0,0
+US,Stanford University,ai,20241224065606,14,29,0,0,0
+US,Stanford University,ai,20241225010334,13,35,0,0,0
+US,Stanford University,ai,20241225044915,10,26,0,0,0
+US,Stanford University,ai,20250110150217,14,29,0,0,0
+US,Stanford University,ai,20250119223359,14,29,0,0,0
+US,Stanford University,ai,20250130002658,14,29,0,0,0
+US,Stanford University,ai,20250210043026,14,29,0,0,0
+US,Stanford University,ai,20250216091309,14,29,0,0,0
+US,Stanford University,ai,20250316054643,14,29,0,0,0
+US,Stanford University,ai,20250427031326,14,29,0,0,0
+US,Stanford University,ai,20250520100040,14,29,0,0,0
+US,Stanford University,ai,20250624161258,14,29,0,0,0
+US,Stanford University,ai,20250629173619,14,29,0,0,0
+US,Stanford University,ai,20250805160856,14,29,0,0,0
+US,Stanford University,ai,20250912081635,14,29,0,0,0
+US,Stanford University,ai,20251017164401,15,32,0,0,0
+US,Stanford University,ai,20251018030335,15,32,0,0,0
+US,Stanford University,ai,20251024180641,15,32,0,0,0
+US,Stanford University,ai,20251214111759,15,32,0,0,0
+US,Stanford University,ai,20260122065028,15,32,0,0,0
+US,Stanford University,ai,20260312065438,15,32,0,0,0
+US,Stanford University,ai,20260411075220,15,32,0,0,0
+US,Stanford University,ai,20260610014558,15,32,0,0,0
+AU,Griffith University,ai,20230522013513,2,2,0,0,0
+AU,Griffith University,ai,20231215040526,4,4,0,0,0
+AU,University of Sydney,integrity,20230605202315,1,0,0,0,0
+AU,University of Sydney,integrity,20231204000300,1,0,0,0,0
+AU,University of Sydney,integrity,20240224154509,1,0,0,0,0
+AU,University of Sydney,integrity,20240423142840,1,0,0,0,0
+AU,University of Sydney,integrity,20240620041815,1,0,0,0,0
+AU,University of Sydney,integrity,20240723113847,1,0,0,0,0
+AU,University of Sydney,integrity,20240802060719,1,0,0,0,0
+AU,University of Sydney,ai,20241005212702,34,46,0,0,0
+AU,University of Sydney,ai,20241015230733,34,46,0,0,0
+AU,University of Sydney,ai,20241218144522,34,46,0,0,0
+AU,University of Wollongong,ai,20230216153805,3,8,0,0,0
+AU,University of Wollongong,ai,20230307065552,3,8,0,0,0
+AU,University of Wollongong,ai,20230330060612,3,8,0,0,0
+AU,University of Wollongong,ai,20230331205550,3,8,0,0,0
+AU,University of Wollongong,ai,20230924145559,6,7,0,0,0
+AU,University of Wollongong,ai,20240403193659,6,7,0,0,0
+AU,University of Wollongong,ai,20240424103432,6,7,0,0,0
+AU,University of Wollongong,ai,20240725110335,6,5,0,0,0
+AU,University of Wollongong,ai,20241022194404,4,3,0,0,0
+CA,Queen's University,ai,20210428113235,0,2,1,0,1
+CA,Queen's University,ai,20211201165745,0,2,1,0,1
+CA,Toronto Metropolitan University,ai,20230203212608,7,19,0,0,0
+CA,Toronto Metropolitan University,ai,20230224011454,7,19,0,0,0
+CA,Toronto Metropolitan University,ai,20230315153811,7,19,0,0,0
+CA,Toronto Metropolitan University,ai,20230403212318,10,18,0,0,0
+CA,Toronto Metropolitan University,ai,20230924141806,11,26,0,0,0
+CA,Toronto Metropolitan University,ai,20240222211636,16,36,0,0,0
+CA,Toronto Metropolitan University,ai,20240623082833,17,33,0,0,0
+CA,Toronto Metropolitan University,ai,20240812144300,17,33,0,0,0
+CA,Toronto Metropolitan University,ai,20240913170208,17,33,0,0,0
+CA,Toronto Metropolitan University,ai,20241013185336,17,33,0,0,0
+CA,Toronto Metropolitan University,ai,20241113004829,17,33,0,0,0
+CA,Toronto Metropolitan University,ai,20241203111612,17,33,0,0,0
+CA,University of British Columbia,ai,20230714035310,11,8,0,0,0
+CA,University of British Columbia,ai,20240201153725,11,8,0,0,0
+CA,University of British Columbia,ai,20240530224518,11,8,0,0,0
+CA,University of Toronto,ai,20230402123307,13,8,0,0,0
+CA,University of Toronto,ai,20230709205932,13,8,0,0,0
+CA,University of Toronto,ai,20231211063636,13,8,0,0,0
+CA,University of Toronto,ai,20240108154008,13,8,0,0,0
+CA,University of Toronto,ai,20240120105422,13,8,0,0,0
+CA,University of Toronto,ai,20240225224256,13,8,0,0,0
+CA,University of Toronto,ai,20240521140323,13,8,0,0,0
+CA,University of Toronto,ai,20240614171150,13,8,0,0,0
+CA,University of Toronto,ai,20240908232357,13,8,0,0,0
+CA,University of Toronto,ai,20241203150516,13,8,0,0,0
+CA,University of Waterloo,integrity,20240121172033,2,0,0,0,0
+CA,University of Waterloo,integrity,20240222005350,2,0,0,0,0
+CA,University of Waterloo,integrity,20240522000036,3,0,0,0,0
+CA,University of Waterloo,integrity,20241001185214,1,0,0,0,0
+CA,University of Waterloo,integrity,20241109014453,1,0,0,0,0
+CA,University of Waterloo,ai,20230408231917,9,8,0,0,0
+CA,University of Waterloo,ai,20230604175008,9,8,0,0,0
+CA,University of Waterloo,ai,20231101062340,9,8,0,0,0
+CA,University of Waterloo,ai,20240216081050,10,8,0,0,0
+CA,University of Waterloo,ai,20240415192218,12,10,0,0,0
+CA,University of Waterloo,ai,20240827231157,26,20,0,0,0
+CA,University of Waterloo,ai,20241007205330,25,20,0,0,0
+CA,University of Waterloo,ai,20241009004731,25,20,0,0,0
+UK,Imperial College London,ai,20240720073849,5,11,0,0,0
+UK,University of Manchester,integrity,20250430171538,1,1,0,0,0
+UK,University of Manchester,integrity,20250521123409,1,1,0,0,0
+UK,University of Manchester,integrity,20260124090505,1,1,0,0,0
+UK,University of Bristol,integrity,20240527150725,0,2,1,0,0
+UK,University of Bristol,integrity,20240614031038,0,2,1,0,0
+UK,University of Bristol,integrity,20241217192023,0,2,1,0,0
+UK,University of Bristol,integrity,20250114052726,0,2,1,0,0
+UK,University of Bristol,integrity,20250615141811,0,2,1,0,0
+UK,University of Bristol,integrity,20251008060157,0,2,1,0,0
+AU,University of Melbourne,integrity,20230510095719,1,0,0,0,0
+AU,University of Melbourne,integrity,20231006160056,1,0,0,0,0
+AU,University of Melbourne,integrity,20231217215323,1,0,0,0,0
+AU,University of Melbourne,integrity,20240407142007,1,0,0,0,0
+AU,University of Melbourne,integrity,20240709203130,1,0,0,0,0
+AU,University of Melbourne,integrity,20241015035602,1,0,0,0,0
+AU,University of Melbourne,integrity,20250303224529,1,0,0,0,0
+AU,University of Melbourne,integrity,20250730081728,1,0,0,0,0
+AU,University of Melbourne,integrity,20260601061257,2,3,0,0,0
+AU,University of Queensland,integrity,20230523005943,3,9,0,0,0
+AU,University of Queensland,integrity,20240106020446,3,9,0,0,0
+AU,University of Queensland,integrity,20240401145825,3,9,0,0,0
+AU,University of Queensland,integrity,20250130133804,4,12,0,0,0
+AU,University of Queensland,integrity,20250325082807,4,12,0,0,0
+AU,University of Queensland,integrity,20250526141941,4,12,0,0,0
+AU,University of Queensland,integrity,20251103041734,3,11,0,0,0
+AU,University of Queensland,integrity,20251116005801,3,11,0,0,0
+AU,University of Queensland,integrity,20251128154259,3,11,0,0,0
+AU,University of New South Wales,integrity,20250815065051,0,1,1,0,0
+AU,University of New South Wales,integrity,20250907192614,0,1,1,0,0
+AU,University of New South Wales,integrity,20251029133654,0,1,1,0,0
+AU,University of New South Wales,integrity,20251106234928,0,1,1,0,0
+AU,University of New South Wales,integrity,20251118013040,0,1,1,0,0
+AU,University of New South Wales,integrity,20251124051648,0,1,1,0,0
+AU,University of New South Wales,integrity,20251128191110,0,1,1,0,0
+AU,University of New South Wales,integrity,20251221220511,0,1,1,0,0
+AU,University of New South Wales,integrity,20260119161448,0,1,1,0,0
+AU,University of New South Wales,integrity,20260308131530,0,1,1,0,0
+AU,University of New South Wales,integrity,20260321005518,0,1,1,0,0
+AU,University of New South Wales,integrity,20260602093833,0,1,1,0,0
+CA,University of Calgary,integrity,20241230075201,7,5,0,0,0
+CA,University of Calgary,integrity,20250209054513,7,5,0,0,0
+CA,University of Calgary,integrity,20250617211723,7,5,0,0,0
+CA,University of Calgary,integrity,20250907193942,7,5,0,0,0
+CA,University of Calgary,integrity,20260218235240,7,5,0,0,0
+CA,University of Ottawa,integrity,20231208232757,7,51,0,0,0
+CA,University of Ottawa,integrity,20240122042115,7,51,0,0,0
+CA,University of Ottawa,integrity,20240220120850,7,51,0,0,0
+CA,University of Ottawa,integrity,20240628223334,7,51,0,0,0
+CA,University of Ottawa,integrity,20240724131021,7,51,0,0,0
+CA,University of Ottawa,integrity,20240908224539,7,51,0,0,0
+CA,University of Ottawa,integrity,20241127035024,7,51,0,0,0
+CA,University of Ottawa,integrity,20241209040715,7,51,0,0,0
+CA,University of Ottawa,integrity,20250118103110,7,51,0,0,0
+CA,University of Ottawa,integrity,20250214120227,7,51,0,0,0
+AU,University of Adelaide,integrity,20230314064724,5,7,0,0,0
+AU,University of Adelaide,integrity,20230529101412,5,7,0,0,0
+AU,University of Adelaide,integrity,20240227234543,2,1,0,0,0
+AU,University of Adelaide,integrity,20250110093609,2,1,0,0,0
+AU,University of Adelaide,integrity,20250320092219,2,1,0,0,0
+AU,University of Adelaide,integrity,20250412175527,2,1,0,0,0
+AU,University of Adelaide,integrity,20250618002516,2,1,0,0,0
+AU,University of Adelaide,integrity,20250910121855,2,1,0,0,0
+AU,University of Adelaide,integrity,20251114204331,2,1,0,0,0
+AU,University of Adelaide,integrity,20251212144135,2,1,0,0,0
+AU,University of Adelaide,integrity,20260219163634,2,1,0,0,0
+AU,University of Adelaide,integrity,20260307050017,2,1,0,0,0
+AU,University of Western Australia,integrity,20250324231540,1,3,0,0,0
+AU,University of Western Australia,integrity,20250327094642,1,3,0,0,0
+AU,University of Western Australia,integrity,20250405124839,1,3,0,0,0
+AU,University of Western Australia,integrity,20250428025933,1,3,0,0,0
+AU,University of Western Australia,integrity,20250430070820,1,3,0,0,0
+AU,University of Western Australia,integrity,20250807222732,1,3,0,0,0
+AU,University of Western Australia,integrity,20251007221501,1,3,0,0,0
+AU,University of Western Australia,integrity,20251115151211,1,3,0,0,0
+AU,University of Western Australia,integrity,20251119182100,1,3,0,0,0
+AU,University of Western Australia,integrity,20251120213859,1,3,0,0,0
+AU,University of Western Australia,integrity,20251214043803,1,3,0,0,0
+AU,University of Western Australia,integrity,20260208140336,1,3,0,0,0
+AU,University of Western Australia,integrity,20260308232616,1,7,0,0,0
+AU,Macquarie University,integrity,20231018160913,6,1,0,0,0
+AU,Macquarie University,integrity,20240314003415,6,1,0,0,0
+AU,Macquarie University,integrity,20240824063201,6,1,0,0,0
+AU,Macquarie University,integrity,20241016024347,6,1,0,0,0
+AU,RMIT University,integrity,20230925142519,5,25,0,0,0
+AU,RMIT University,integrity,20240226140816,7,25,0,0,0
+AU,RMIT University,integrity,20240518034724,7,25,0,0,0
+AU,RMIT University,integrity,20240726080926,7,25,0,0,0
+AU,RMIT University,integrity,20241103125312,8,27,0,0,0
+AU,RMIT University,integrity,20250116074219,8,27,0,0,0
+AU,RMIT University,integrity,20250328091504,8,27,0,0,0
+AU,RMIT University,integrity,20250425083406,8,27,0,0,0
+AU,RMIT University,integrity,20250920073014,6,26,0,0,0
+AU,RMIT University,integrity,20260209145756,6,26,0,0,0
+AU,RMIT University,integrity,20260602082916,1,3,0,0,0
+AU,Flinders University,integrity,20230602230549,5,3,0,0,0
+AU,Flinders University,integrity,20240203081848,5,3,0,0,0
+AU,Flinders University,integrity,20240606091923,5,3,0,0,0
+AU,Flinders University,integrity,20240818100038,5,3,0,0,0
+AU,Flinders University,integrity,20250209091436,5,3,0,0,0
+AU,Flinders University,integrity,20250612222638,5,3,0,0,0
+AU,Flinders University,integrity,20251122211516,5,3,0,0,0
+AU,Flinders University,integrity,20251202160822,5,3,0,0,0
+AU,Flinders University,integrity,20260112082705,5,3,0,0,0
+AU,Flinders University,integrity,20260521022051,5,3,0,0,0
+UK,University of Sheffield,integrity,20250209145509,1,0,0,0,0
+UK,University of Sheffield,integrity,20250429210535,1,0,0,0,0
+UK,University of Sheffield,integrity,20250514013410,1,0,0,0,0
+UK,University of Sheffield,integrity,20250526074822,1,0,0,0,0
+UK,University of Sheffield,integrity,20250803013640,1,0,0,0,0
+UK,University of Sheffield,integrity,20250923063348,1,0,0,0,0
+UK,University of Sheffield,integrity,20250928174151,1,0,0,0,0
+UK,University of Sheffield,integrity,20251006202404,1,0,0,0,0
+UK,University of Sheffield,integrity,20251107205415,1,0,0,0,0
+UK,University of Sheffield,integrity,20251115203344,1,0,0,0,0
+UK,University of Sheffield,integrity,20260113153541,1,0,0,0,0
+UK,University of Sheffield,integrity,20260310064344,1,0,0,0,0
+UK,University of Warwick,integrity,20231203170942,13,2,0,0,0
+UK,University of Warwick,integrity,20240223050107,3,2,0,0,0
+UK,University of Warwick,integrity,20240601133300,3,2,0,0,0
+UK,University of Warwick,integrity,20240623070439,3,2,0,0,0
+UK,University of Warwick,integrity,20240703154413,3,2,0,0,0
+UK,University of Warwick,integrity,20241008152441,3,2,0,0,0
+UK,University of Warwick,integrity,20250522171350,2,4,0,0,0
+UK,University of Warwick,integrity,20250622062505,2,4,0,0,0
+UK,University of Warwick,integrity,20250712072150,2,4,0,0,0
+UK,University of Warwick,integrity,20250917214142,2,4,0,0,0
+UK,University of Warwick,integrity,20250926035740,2,4,0,0,0
+UK,University of Warwick,ai,20260113003952,9,37,0,0,0
+UK,University of Warwick,ai,20260513073513,9,39,0,0,0
+UK,King's College London,integrity,20230927024357,2,0,0,0,0
+UK,King's College London,integrity,20250413090702,4,2,0,0,0
+UK,King's College London,integrity,20250619054641,4,2,0,0,0
+UK,King's College London,integrity,20260310170543,4,2,0,0,0
+UK,King's College London,integrity,20260617045055,4,2,0,0,0
+UK,Newcastle University,integrity,20230923111007,2,0,0,0,0
+UK,Newcastle University,integrity,20240123200833,2,0,0,0,0
+UK,Newcastle University,integrity,20240127180807,2,0,0,0,0
+UK,Newcastle University,integrity,20240413093527,2,0,0,0,0
+UK,Newcastle University,integrity,20240725191709,2,0,0,0,0
+UK,Newcastle University,integrity,20250217010311,2,0,0,0,0
+UK,Newcastle University,integrity,20250401072043,2,0,0,0,0
+UK,Newcastle University,integrity,20250703132413,2,0,0,0,0
+UK,Newcastle University,integrity,20250815083829,2,0,0,0,0
+UK,Newcastle University,integrity,20251210082901,2,0,0,0,0
+UK,Newcastle University,integrity,20260305134427,2,0,0,0,0
+UK,Newcastle University,ai,20230923072838,13,41,0,0,0
+UK,Newcastle University,ai,20240127180805,15,49,0,0,0
+UK,Newcastle University,ai,20240302225638,15,49,0,0,0
+UK,Newcastle University,ai,20240521203150,15,49,0,0,0
+UK,Newcastle University,ai,20240614053113,15,49,0,0,0
+UK,Newcastle University,ai,20240722225126,10,41,0,0,0
+UK,Newcastle University,ai,20250211082339,10,41,0,0,0
+UK,Newcastle University,ai,20250403131913,10,41,0,0,0
+UK,Newcastle University,ai,20250516011317,10,41,0,0,0
+UK,Newcastle University,ai,20250710133323,11,42,0,0,0
+UK,Newcastle University,ai,20251108062558,11,43,0,0,0
+UK,Newcastle University,ai,20251202172737,11,43,0,0,0
+UK,Newcastle University,ai,20260217014218,11,43,0,0,0
+UK,Newcastle University,ai,20260428085242,11,43,0,0,0
+UK,University of York,integrity,20241226163044,1,1,0,0,0
+UK,University of York,integrity,20250804042231,1,1,0,0,0
+UK,University of York,integrity,20250912193316,1,1,0,0,0
+UK,University of York,integrity,20251114154957,1,1,0,0,0
+UK,University of York,integrity,20260314234800,1,1,0,0,0
+UK,University of York,integrity,20260516125811,1,1,0,0,0
+UK,University of Leicester,integrity,20230927005531,1,0,0,0,0
+UK,University of Leicester,integrity,20231208192303,1,0,0,0,0
+UK,University of Leicester,integrity,20240412133258,1,0,0,0,0
+UK,University of Leicester,integrity,20240723043827,1,0,0,0,0
+UK,University of Leicester,integrity,20241002001150,1,0,0,0,0
+UK,University of Leicester,integrity,20241003055449,1,0,0,0,0
+UK,University of Leicester,integrity,20250212063807,1,0,0,0,0
+UK,University of Leicester,integrity,20250615110607,1,0,0,0,0
+UK,University of Leicester,integrity,20250907170303,1,0,0,0,0
+UK,University of Leicester,integrity,20250917005903,1,0,0,0,0
+CA,University of Saskatchewan,integrity,20240722012803,4,0,0,0,0
+CA,University of Saskatchewan,integrity,20240917044617,3,0,0,0,0
+CA,University of Saskatchewan,integrity,20250108002336,3,0,0,0,0
+CA,University of Saskatchewan,integrity,20250114221258,3,0,0,0,0
+CA,University of Saskatchewan,integrity,20250207111259,3,0,0,0,0
+CA,University of Saskatchewan,integrity,20250306002008,3,0,0,0,0
+CA,University of Saskatchewan,integrity,20250807071808,4,2,0,0,0
+CA,University of Saskatchewan,integrity,20251105054042,4,2,0,0,0
+CA,York University,integrity,20230609160055,1,1,0,0,0
+CA,York University,integrity,20241014182743,2,1,0,0,0
+CA,York University,integrity,20250427143335,3,5,0,0,0
+CA,York University,integrity,20250801040637,3,5,0,0,0
+CA,York University,integrity,20251213230834,0,1,1,0,0
+CA,York University,integrity,20251219073024,0,1,1,0,0
+CA,York University,integrity,20251220040452,0,1,1,0,0
+CA,York University,integrity,20251230153445,0,1,1,0,0
+CA,York University,integrity,20260128191209,0,1,1,0,0
+CA,York University,integrity,20260207114600,0,1,1,0,0
+CA,York University,integrity,20260218161324,0,1,1,0,0
+CA,University of New Brunswick,integrity,20260413171301,2,0,0,0,0
+AU,Monash University,integrity,20230321073107,6,0,0,0,0
+AU,Monash University,integrity,20230728024715,6,0,0,0,0
+AU,Monash University,integrity,20240803142652,6,0,0,0,0
+AU,Monash University,integrity,20240817140835,6,0,0,0,0
+AU,Monash University,integrity,20240918231816,6,0,0,0,0
+AU,Monash University,integrity,20241217192047,6,0,0,0,0
+AU,Monash University,integrity,20250411111647,6,0,0,0,0
+AU,Monash University,integrity,20250523164535,6,0,0,0,0
+AU,Monash University,integrity,20250808160138,6,0,0,0,0
+AU,Monash University,integrity,20260209153424,6,0,0,0,0
+AU,Monash University,integrity,20260521033322,6,0,0,0,0
+AU,Swinburne University of Technology,integrity,20210112000957,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20210311094436,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20210508190330,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20210909052635,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20220111225555,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20220306133853,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20220629215601,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20221017171453,2,4,0,0,1
+AU,Swinburne University of Technology,integrity,20230111230906,2,4,0,0,0
+AU,Swinburne University of Technology,integrity,20230411230156,2,4,0,0,0
+AU,Swinburne University of Technology,integrity,20231116093718,2,4,0,0,0
+AU,Swinburne University of Technology,integrity,20240413183248,2,4,0,0,0
+AU,Swinburne University of Technology,integrity,20241018130842,2,4,0,0,0
+AU,Swinburne University of Technology,integrity,20250318081748,4,5,0,0,0
+AU,Swinburne University of Technology,integrity,20251118132613,4,5,0,0,0
+AU,Swinburne University of Technology,integrity,20260529025125,4,5,0,0,0
+AU,University of Newcastle,integrity,20240407152116,8,9,0,0,0
+AU,University of Newcastle,integrity,20240605200940,11,8,0,0,0
+AU,University of Newcastle,integrity,20241102041456,11,8,0,0,0
+AU,University of Newcastle,integrity,20250313010707,11,8,0,0,0
+AU,University of Newcastle,integrity,20250409020358,11,8,0,0,0
+AU,University of Newcastle,integrity,20250428082528,11,8,0,0,0
+AU,University of Newcastle,integrity,20250512134335,11,8,0,0,0
+AU,University of Newcastle,integrity,20250713082416,11,8,0,0,0
+AU,University of Newcastle,integrity,20250826174359,11,8,0,0,0
+AU,University of Newcastle,integrity,20251130053513,11,8,0,0,0
+AU,James Cook University,integrity,20240204192025,1,7,0,0,0
+AU,James Cook University,integrity,20240224182621,1,7,0,0,0
+AU,James Cook University,integrity,20240303121149,1,7,0,0,0
+AU,James Cook University,integrity,20240305051000,1,7,0,0,0
+AU,James Cook University,integrity,20240530081434,1,7,0,0,0
+AU,James Cook University,integrity,20240716192049,1,7,0,0,0
+AU,James Cook University,integrity,20251115041018,2,8,0,0,0
+AU,Murdoch University,integrity,20240527011407,0,1,1,0,0
+AU,Murdoch University,integrity,20240528140507,0,1,1,0,0
+AU,Murdoch University,integrity,20240723225840,0,1,1,0,0
+AU,Murdoch University,integrity,20241102022621,0,1,1,0,0
+AU,Murdoch University,integrity,20241207175208,0,1,1,0,0
+AU,Murdoch University,integrity,20241208163414,0,1,1,0,0
+AU,Murdoch University,integrity,20250307181018,0,1,1,0,0
+AU,Murdoch University,integrity,20250324170609,0,1,1,0,0
+AU,Murdoch University,integrity,20250403183827,0,1,1,0,0
+AU,Murdoch University,integrity,20250616134606,0,1,1,0,0
+AU,Murdoch University,integrity,20250913235646,0,1,1,0,0
+AU,Murdoch University,integrity,20251014140121,0,1,1,0,0
+AU,Murdoch University,integrity,20251207211112,0,1,1,0,0
+AU,Murdoch University,integrity,20260210002653,0,1,1,0,0
+AU,University of South Australia,integrity,20230804043344,2,2,0,0,0
+AU,University of South Australia,integrity,20240405130615,4,3,0,0,0
+AU,University of South Australia,integrity,20240910003551,4,3,0,0,0
+AU,University of South Australia,integrity,20250121095345,4,3,0,0,0
+AU,University of South Australia,integrity,20250304105811,4,3,0,0,0
+AU,University of South Australia,integrity,20250804092109,4,3,0,0,0
+AU,University of South Australia,integrity,20251021064911,4,3,0,0,0
+AU,University of South Australia,integrity,20251031092651,4,3,0,0,0
+AU,University of South Australia,integrity,20251116090036,4,3,0,0,0
+AU,University of South Australia,integrity,20260310184123,4,3,0,0,0

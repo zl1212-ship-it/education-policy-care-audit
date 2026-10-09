@@ -1,0 +1,127 @@
+institution,unitid,page_type,url,n_captures,n_post_captures,first_capture,last_capture,has_post,n_versions,n_saved
+Arizona State University,104151,integrity,https://provost.asu.edu/academic-integrity,74,44,20210113184519,20260511211254,1,20,20
+Arizona State University,104151,ai,https://provost.asu.edu/generative-ai,23,23,20230612183024,20260513080318,1,20,20
+California Polytechnic State University-San Luis Obispo,110422,integrity,https://academicprograms.calpoly.edu/content/academicpolicies/academic-integrity,0,0,,,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,ai,https://ctlt.calpoly.edu/genai,0,0,,,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,integrity,https://academicprograms.calpoly.edu/content/academicpolicies/academic-integrity,0,0,,,0,0,0
+California Polytechnic State University-San Luis Obispo,110422,ai,https://ctlt.calpoly.edu/genai,0,0,,,0,0,0
+University of California-Davis,110644,integrity,https://ossja.ucdavis.edu/academic-integrity,16,8,20210413155901,20250404201711,1,16,16
+University of California-Davis,110644,ai,https://teachingcommons.ucdavis.edu/generative-ai,0,0,,,0,0,0
+University of California-Irvine,110653,integrity,https://aisc.uci.edu/students/academic-integrity/index.php,10,4,20210413062854,20231130145431,1,8,8
+University of California-Irvine,110653,ai,https://dtei.uci.edu/generative-ai/,16,16,20240521084055,20260622060122,1,16,16
+University of California-Los Angeles,110662,integrity,https://deanofstudents.ucla.edu/academic-integrity,48,32,20210118062901,20260519122755,1,20,20
+University of California-Los Angeles,110662,ai,https://teaching.ucla.edu/resources/ai_pedagogy/,0,0,,,0,0,0
+University of California-San Diego,110680,integrity,https://academicintegrity.ucsd.edu/,118,78,20210413061801,20260521063612,1,20,20
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/faculty/AI-guidelines.html,0,0,,,0,0,0
+University of Southern California,123961,integrity,https://sjacs.usc.edu/students/academic-integrity/,10,0,20210413192102,20220815144218,0,9,9
+University of Southern California,123961,ai,https://cet.usc.edu/generative-ai-resources/,0,0,,,0,0,0
+Colorado State University,126818,integrity,https://www.studentresolutioncenter.colostate.edu/avoiding-academic-misconduct/,0,0,,,0,0,0
+Colorado State University,126818,ai,https://tilt.colostate.edu/generative-ai/,0,0,,,0,0,0
+Yale University,130794,integrity,https://catalog.yale.edu/academic-regulations/honesty-plagiarism/,0,0,,,0,0,0
+Yale University,130794,ai,https://poorvucenter.yale.edu/AIguidance,42,42,20230120001327,20250517081907,1,20,20
+Florida State University,134097,ai,https://distance.fsu.edu/instructors/generative-ai-resources,0,0,,,0,0,0
+University of California-Davis,110644,ai,https://teachingcommons.ucdavis.edu/generative-ai,0,0,,,0,0,0
+University of California-San Diego,110680,ai,https://academicintegrity.ucsd.edu/faculty/AI-guidelines.html,0,0,,,0,0,0
+University of California-Los Angeles,110662,ai,https://teaching.ucla.edu/resources/ai_pedagogy/,0,0,,,0,0,0
+University of Southern California,123961,ai,https://cet.usc.edu/generative-ai-resources/,0,0,,,0,0,0
+Colorado State University,126818,integrity,https://www.studentresolutioncenter.colostate.edu/avoiding-academic-misconduct/,0,0,,,0,0,0
+Colorado State University,126818,ai,https://tilt.colostate.edu/generative-ai/,0,0,,,0,0,0
+Yale University,130794,integrity,https://catalog.yale.edu/academic-regulations/honesty-plagiarism/,0,0,,,0,0,0
+Florida State University,134097,integrity,https://fda.fsu.edu/academic-resources/academic-integrity-and-grievances/academic-honor-policy,74,53,20210128051006,20260530170405,1,16,16
+Florida State University,134097,ai,https://distance.fsu.edu/instructors/generative-ai-resources,0,0,,,0,0,0
+Emory University,139658,integrity,http://catalog.college.emory.edu/academic/policy/honor-code.html,0,0,,,0,0,0
+Emory University,139658,ai,https://ai.emory.edu/,56,52,20211021122246,20260215175153,1,9,9
+Emory University,139658,integrity,http://catalog.college.emory.edu/academic/policy/honor-code.html,0,0,,,0,0,0
+Georgia Institute of Technology,139755,integrity,https://policylibrary.gatech.edu/student-affairs/academic-honor-code,12,0,20210120094836,20220616151954,0,12,12
+Georgia Institute of Technology,139755,ai,https://ctl.gatech.edu/ai-teaching-learning,0,0,,,0,0,0
+University of Chicago,144050,integrity,https://college.uchicago.edu/advising/academic-integrity-student-conduct,11,0,20210125052838,20210821181515,0,10,10
+University of Chicago,144050,ai,https://academictech.uchicago.edu/2023/01/24/chatgpt-and-ai-in-the-classroom/,0,0,,,0,0,0
+Northwestern University,147767,integrity,https://www.northwestern.edu/provost/policies-procedures/academic-integrity/index.html,7,2,20220302053404,20230314213401,1,7,7
+Northwestern University,147767,ai,https://www.northwestern.edu/aiprinciples/,0,0,,,0,0,0
+University of Notre Dame,152080,integrity,https://honorcode.nd.edu/,57,26,20210226221211,20260110034531,1,16,16
+University of Notre Dame,152080,ai,https://provost.nd.edu/about/committees-and-initiatives/teaching-and-learning-with-generative-ai/,0,0,,,0,0,0
+Johns Hopkins University,162928,integrity,https://studentaffairs.jhu.edu/policies-guidelines/undergrad-ethics/,43,27,20210307000008,20251121143913,1,16,16
+Johns Hopkins University,162928,ai,https://cldt.jhu.edu/ai-and-teaching/,0,0,,,0,0,0
+Towson University,164076,integrity,https://www.towson.edu/provost/academicaffairs/academic-integrity.html,0,0,,,0,0,0
+Towson University,164076,ai,https://www.towson.edu/academics/resources/generative-ai/,0,0,,,0,0,0
+Boston University,164988,integrity,https://www.bu.edu/academics/policies/academic-conduct-code/,59,43,20210412205116,20260508192947,1,16,16
+Boston University,164988,ai,https://www.bu.edu/ctl/guides/using-generative-ai-in-courses/,0,0,,,0,0,0
+Harvard University,166027,integrity,https://honorcouncil.fas.harvard.edu/honor-code,11,6,20210309160912,20240307150938,1,11,11
+Harvard University,166027,ai,https://oue.fas.harvard.edu/ai-guidance,28,28,20230912223558,20250701112345,1,16,16
+Massachusetts Institute of Technology,166683,integrity,https://integrity.mit.edu/,155,101,20210121204232,20260528101030,1,16,16
+Massachusetts Institute of Technology,166683,ai,https://teaching.mit.edu/ai/,0,0,,,0,0,0
+Northeastern University,167358,integrity,https://catalog.northeastern.edu/undergraduate/academic-policies-procedures/academic-integrity-policy/,0,0,,,0,0,0
+Northeastern University,167358,ai,https://provost.northeastern.edu/aiguidance/,0,0,,,0,0,0
+Michigan State University,171100,integrity,https://ombud.msu.edu/academic-integrity,0,0,,,0,0,0
+Michigan State University,171100,ai,https://genai.msu.edu/,0,0,,,0,0,0
+Washington University in St Louis,179867,integrity,https://wustl.edu/about/compliance-policies/academic-policies/undergraduate-student-academic-integrity-policy/,149,77,20210106190309,20240806170258,1,16,16
+Washington University in St Louis,179867,ai,https://ctl.wustl.edu/resources/generative-ai-and-teaching/,19,19,20240702201438,20260418222430,1,16,16
+Columbia University,190150,integrity,https://www.college.columbia.edu/academics/academicintegrity,160,102,20210116024621,20260513161751,1,16,16
+Columbia University,190150,ai,https://provost.columbia.edu/content/office-senior-vice-provost/generative-ai,0,0,,,0,0,0
+Cornell University,190415,integrity,https://theuniversityfaculty.cornell.edu/academic-integrity/,0,0,,,0,0,0
+Cornell University,190415,ai,https://teaching.cornell.edu/generative-artificial-intelligence,52,52,20230804030728,20260522154129,1,16,16
+New York University,193900,integrity,https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/academic-integrity-for-students-at-nyu.html,42,27,20210109223110,20260223041613,1,16,16
+New York University,193900,ai,https://www.nyu.edu/faculty/teaching-and-learning-resources/instructional-technology/generative-ai.html,0,0,,,0,0,0
+Stony Brook University,196097,integrity,https://www.stonybrook.edu/commcms/academic_integrity/,38,28,20210102202049,20260629080510,1,16,16
+Stony Brook University,196097,ai,https://www.stonybrook.edu/cft/teaching-resources/generative-ai/,0,0,,,0,0,0
+Davidson College,198385,integrity,https://www.davidson.edu/about/distinctly-davidson/honor-code,28,12,20210227125551,20240303081953,1,16,16
+Davidson College,198385,ai,https://www.davidson.edu/offices-and-services/teaching-learning/generative-ai,0,0,,,0,0,0
+Duke University,198419,integrity,https://studentaffairs.duke.edu/conduct/z-policies/duke-community-standard,0,0,,,0,0,0
+Duke University,198419,ai,https://learninginnovation.duke.edu/ai-and-teaching-at-duke-2/,10,10,20230911184647,20240612213609,1,10,10
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity/,0,0,,,0,0,0
+North Carolina State University,199193,ai,https://teaching-resources.delta.ncsu.edu/generative_ai/,0,0,,,0,0,0
+Oregon State University,209542,integrity,https://studentlife.oregonstate.edu/studentconduct/academic-misconduct-0,0,0,,,0,0,0
+Oregon State University,209542,ai,https://ctl.oregonstate.edu/generative-ai-teaching,0,0,,,0,0,0
+Carnegie Mellon University,211440,integrity,https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html,50,43,20210414033321,20260521021553,1,11,11
+Carnegie Mellon University,211440,ai,https://www.cmu.edu/teaching/technology/aitools/index.html,12,12,20230327172446,20260413073635,1,7,7
+University of Pennsylvania,215062,integrity,https://catalog.upenn.edu/pennbook/code-of-academic-integrity/,46,25,20210122055742,20260607072832,1,7,7
+University of Pennsylvania,215062,ai,https://tll.seas.upenn.edu/generative-ai-resources/,0,0,,,0,0,0
+Temple University,216339,integrity,https://bulletin.temple.edu/undergraduate/academic-policies/academic-rights-responsibilities/,16,7,20210305111035,20251212072144,1,8,8
+Temple University,216339,ai,https://teaching.temple.edu/generative-ai,0,0,,,0,0,0
+Vanderbilt University,221999,integrity,https://www.vanderbilt.edu/student_handbook/the-honor-system/,9,2,20210125210717,20230324153705,1,5,5
+Vanderbilt University,221999,ai,https://www.vanderbilt.edu/generative-ai/,23,23,20240119003616,20260607193551,1,16,16
+University of Houston,225511,integrity,https://www.uh.edu/provost/policies/honesty/,0,0,,,0,0,0
+University of Houston,225511,ai,https://www.uh.edu/cte/resources/generative-ai/,0,0,,,0,0,0
+Rice University,227757,integrity,https://honor.rice.edu/honor-system-handbook,12,6,20210413004748,20260502043329,1,12,12
+Rice University,227757,ai,https://ai.rice.edu/,0,0,,,0,0,0
+Texas A & M University,228723,integrity,https://aggiehonor.tamu.edu/,79,44,20210102050625,20260619115337,1,16,16
+Texas A & M University,228723,ai,https://ai.tamu.edu/,24,13,20210122200643,20260409010025,1,16,16
+James Madison University,232423,integrity,https://www.jmu.edu/honorcode/,4,0,20210302115049,20210802204334,0,4,4
+James Madison University,232423,ai,https://www.jmu.edu/cfi/teaching-resources/ai.shtml,0,0,,,0,0,0
+Virginia Polytechnic Institute and State University,233921,integrity,https://www.honorsystem.vt.edu/,50,33,20210117183526,20260213093831,1,16,16
+Virginia Polytechnic Institute and State University,233921,ai,https://tlos.vt.edu/initiatives/generative-ai.html,0,0,,,0,0,0
+Stanford University,243744,integrity,https://communitystandards.stanford.edu/policies-and-guidance/honor-code,43,0,20210102010353,20220601211457,0,16,16
+Stanford University,243744,ai,https://teachingcommons.stanford.edu/teaching-guides/artificial-intelligence-teaching-guide,90,90,20230912012801,20260611095138,1,16,16
+Purdue University,243780,integrity,https://www.purdue.edu/odos/osrr/academic-integrity/index.html,22,17,20210414114153,20250427071636,1,8,8
+Purdue University,243780,ai,https://www.purdue.edu/innovativelearning/teaching-with-ai/,0,0,,,0,0,0
+Georgia Institute of Technology,139755,ai,https://ctl.gatech.edu/ai-teaching-learning,0,0,,,0,0,0
+University of Chicago,144050,ai,https://academictech.uchicago.edu/2023/01/24/chatgpt-and-ai-in-the-classroom/,0,0,,,0,0,0
+Northwestern University,147767,ai,https://www.northwestern.edu/aiprinciples/,0,0,,,0,0,0
+University of Notre Dame,152080,ai,https://provost.nd.edu/about/committees-and-initiatives/teaching-and-learning-with-generative-ai/,0,0,,,0,0,0
+Johns Hopkins University,162928,ai,https://cldt.jhu.edu/ai-and-teaching/,0,0,,,0,0,0
+Towson University,164076,integrity,https://www.towson.edu/provost/academicaffairs/academic-integrity.html,0,0,,,0,0,0
+Towson University,164076,ai,https://www.towson.edu/academics/resources/generative-ai/,0,0,,,0,0,0
+Boston University,164988,ai,https://www.bu.edu/ctl/guides/using-generative-ai-in-courses/,0,0,,,0,0,0
+Massachusetts Institute of Technology,166683,ai,https://teaching.mit.edu/ai/,0,0,,,0,0,0
+Northeastern University,167358,integrity,https://catalog.northeastern.edu/undergraduate/academic-policies-procedures/academic-integrity-policy/,0,0,,,0,0,0
+Northeastern University,167358,ai,https://provost.northeastern.edu/aiguidance/,0,0,,,0,0,0
+Michigan State University,171100,integrity,https://ombud.msu.edu/academic-integrity,0,0,,,0,0,0
+Michigan State University,171100,ai,https://genai.msu.edu/,0,0,,,0,0,0
+Columbia University,190150,ai,https://provost.columbia.edu/content/office-senior-vice-provost/generative-ai,0,0,,,0,0,0
+Cornell University,190415,integrity,https://theuniversityfaculty.cornell.edu/academic-integrity/,0,0,,,0,0,0
+New York University,193900,ai,https://www.nyu.edu/faculty/teaching-and-learning-resources/instructional-technology/generative-ai.html,0,0,,,0,0,0
+Stony Brook University,196097,ai,https://www.stonybrook.edu/cft/teaching-resources/generative-ai/,0,0,,,0,0,0
+Davidson College,198385,ai,https://www.davidson.edu/offices-and-services/teaching-learning/generative-ai,0,0,,,0,0,0
+Duke University,198419,integrity,https://studentaffairs.duke.edu/conduct/z-policies/duke-community-standard,0,0,,,0,0,0
+North Carolina State University,199193,integrity,https://studentconduct.dasa.ncsu.edu/academic-integrity/,0,0,,,0,0,0
+North Carolina State University,199193,ai,https://teaching-resources.delta.ncsu.edu/generative_ai/,0,0,,,0,0,0
+Oregon State University,209542,integrity,https://studentlife.oregonstate.edu/studentconduct/academic-misconduct-0,0,0,,,0,0,0
+Oregon State University,209542,ai,https://ctl.oregonstate.edu/generative-ai-teaching,0,0,,,0,0,0
+University of Pennsylvania,215062,ai,https://tll.seas.upenn.edu/generative-ai-resources/,0,0,,,0,0,0
+Temple University,216339,ai,https://teaching.temple.edu/generative-ai,0,0,,,0,0,0
+University of Houston,225511,integrity,https://www.uh.edu/provost/policies/honesty/,0,0,,,0,0,0
+University of Houston,225511,ai,https://www.uh.edu/cte/resources/generative-ai/,0,0,,,0,0,0
+Rice University,227757,ai,https://ai.rice.edu/,0,0,,,0,0,0
+James Madison University,232423,ai,https://www.jmu.edu/cfi/teaching-resources/ai.shtml,0,0,,,0,0,0
+Virginia Polytechnic Institute and State University,233921,ai,https://tlos.vt.edu/initiatives/generative-ai.html,0,0,,,0,0,0
+Purdue University,243780,ai,https://www.purdue.edu/innovativelearning/teaching-with-ai/,0,0,,,0,0,0

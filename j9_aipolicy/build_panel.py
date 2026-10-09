@@ -195,7 +195,17 @@ def main():
                                     format="%Y%m%d%H%M%S", errors="coerce")
     inst_first = cov.groupby("unitid")["first_ts"].min()
     inst_last = cov.groupby("unitid")["last_ts"].max()
-    inst_haspost = cov.groupby("unitid")["has_post"].max()
+    inst_haspost = cov.groupby("unitid")["has_post"].max().to_dict()
+    # the coverage file can miss institutions fetched in a later run; a page is also alive after
+    # the shock if any downloaded capture of it is dated on or after the shock, or if an earlier
+    # coverage file records a post-shock capture
+    for uid, hp in snaps[snaps["ts"] >= SHOCK].groupby("unitid").size().items():
+        inst_haspost[uid] = max(int(inst_haspost.get(uid, 0)), 1)
+    cov_pre = HERE / "data" / "coverage_pre2026.csv"
+    if cov_pre.exists():
+        cp = pd.read_csv(cov_pre, dtype={"unitid": "Int64"})
+        for uid, hp in cp[cp["n_captures"] > 0].groupby("unitid")["has_post"].max().items():
+            inst_haspost[uid] = max(int(inst_haspost.get(uid, 0)), int(hp))
     n_pre = snaps[snaps["ts"] < SHOCK].groupby("unitid").size()
     keep = [uid for uid in snaps["unitid"].unique()
             if n_pre.get(uid, 0) >= 1 and int(inst_haspost.get(uid, 0)) == 1]

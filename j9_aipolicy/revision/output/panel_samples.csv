@@ -1,0 +1,115 @@
+unitid,system,in_original_filter,in_corrected_filter,institution
+104151,US,1,1,Arizona State University
+110422,US,1,1,California Polytechnic State University-San Luis Obispo
+110644,US,1,1,University of California-Davis
+110653,US,1,1,University of California-Irvine
+110662,US,1,1,University of California-Los Angeles
+110680,US,1,1,University of California-San Diego
+122931,US,1,1,Santa Clara University
+123961,US,1,1,University of Southern California
+126818,US,1,1,Colorado State University
+130697,US,0,1,Wesleyan University
+130794,US,1,1,Yale University
+132903,US,1,1,University of Central Florida
+134097,US,1,1,Florida State University
+139658,US,1,1,Emory University
+139755,US,1,1,Georgia Institute of Technology
+139940,US,1,1,Georgia State University
+144050,US,1,1,University of Chicago
+145600,US,1,1,University of Illinois Chicago
+147767,US,0,1,Northwestern University
+152080,US,1,1,University of Notre Dame
+160755,US,1,1,Tulane University of Louisiana
+160977,US,1,1,Bates College
+162928,US,1,1,Johns Hopkins University
+164076,US,1,1,Towson University
+164988,US,1,1,Boston University
+166027,US,1,1,Harvard University
+166683,US,1,1,Massachusetts Institute of Technology
+167358,US,1,1,Northeastern University
+171100,US,1,1,Michigan State University
+172644,US,1,1,Wayne State University
+179867,US,1,1,Washington University in St Louis
+190150,US,1,1,Columbia University
+190415,US,1,1,Cornell University
+191515,US,1,1,Hamilton College
+193900,US,0,1,New York University
+196097,US,1,1,Stony Brook University
+198385,US,0,1,Davidson College
+198419,US,1,1,Duke University
+199193,US,1,1,North Carolina State University
+203447,US,1,1,Kent State University
+209542,US,1,1,Oregon State University
+211440,US,1,1,Carnegie Mellon University
+212054,US,1,1,Drexel University
+213543,US,1,1,Lehigh University
+215062,US,1,1,University of Pennsylvania
+216339,US,1,1,Temple University
+221999,US,1,1,Vanderbilt University
+225511,US,1,1,University of Houston
+227757,US,1,1,Rice University
+228723,US,1,1,Texas A & M University
+228769,US,1,1,University of Texas at Arlington
+232186,US,1,1,George Mason University
+232423,US,1,1,James Madison University
+233921,US,1,1,Virginia Polytechnic Institute and State University
+243744,US,1,1,Stanford University
+243780,US,1,1,Purdue University
+9000001,AU,1,1,Curtin University
+9000002,AU,1,1,Griffith University
+9000003,AU,1,1,University of Sydney
+9000004,AU,1,1,University of Wollongong
+9000005,CA,1,1,McMaster University
+9000006,CA,1,1,Queen's University
+9000007,CA,1,1,Toronto Metropolitan University
+9000008,CA,1,1,University of British Columbia
+9000009,CA,1,1,University of Guelph
+9000010,CA,1,1,University of Manitoba
+9000011,CA,1,1,University of Toronto
+9000012,CA,1,1,University of Waterloo
+9000013,CA,1,1,University of Windsor
+9000014,UK,1,1,Imperial College London
+9000015,UK,1,1,University College London
+9000016,UK,1,1,University of Cambridge
+9000017,UK,1,1,University of Edinburgh
+9000018,UK,1,1,University of Oxford
+9000019,UK,1,1,University of St Andrews
+9000020,UK,1,1,University of Manchester
+9000024,UK,1,1,University of Bristol
+9000026,UK,1,1,University of Birmingham
+9000028,UK,1,1,University of Nottingham
+9000031,UK,1,1,Cardiff University
+9000045,AU,1,1,University of Melbourne
+9000046,AU,1,1,University of Queensland
+9000050,CA,1,1,University of Calgary
+9000051,CA,1,1,Western University
+9000052,CA,1,1,University of Ottawa
+9000053,CA,1,1,Simon Fraser University
+9000054,AU,1,1,University of Adelaide
+9000055,AU,1,1,Australian National University
+9000056,UK,1,1,University of Glasgow
+9000057,UK,1,1,Durham University
+9000058,UK,1,1,University of Southampton
+9000061,AU,1,1,Macquarie University
+9000063,AU,1,1,Queensland University of Technology
+9000064,AU,1,1,RMIT University
+9000070,AU,1,1,Flinders University
+9000079,UK,1,1,Newcastle University
+9000081,UK,1,1,University of York
+9000085,UK,1,1,Queen's University Belfast
+9000090,CA,1,1,University of Saskatchewan
+9000091,CA,1,1,York University
+9000092,CA,1,1,Carleton University
+9000093,CA,1,1,University of Victoria
+9000094,CA,1,1,Concordia University
+9000095,CA,1,1,Memorial University of Newfoundland
+9000097,CA,1,1,Lakehead University
+9000098,CA,1,1,University of Regina
+9000099,CA,1,1,Brock University
+9000100,AU,1,1,Monash University
+9000101,AU,1,1,La Trobe University
+9000102,AU,1,1,Swinburne University of Technology
+9000103,AU,1,1,University of Newcastle
+9000104,AU,1,1,University of Tasmania
+9000106,AU,1,1,Western Sydney University
+9000108,AU,1,1,University of South Australia

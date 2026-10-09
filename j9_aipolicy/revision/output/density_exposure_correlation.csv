@@ -1,0 +1,8 @@
+system,density,n,pearson_r,pearson_p,spearman_rho,spearman_p,ols_slope_log1p_density_on_share
+US,density_all,32,0.274,0.13,0.162,0.376,1.046
+US,density_mid,32,0.277,0.125,0.153,0.402,1.084
+US,density_all vs total_enroll,32,,,-0.013,0.944,
+UK,density_all,17,-0.116,0.657,-0.108,0.68,-0.664
+UK,density_mid,17,-0.143,0.583,-0.176,0.5,-0.772
+AU,density_all,19,0.267,0.269,0.388,0.101,1.238
+AU,density_mid,19,0.251,0.301,0.358,0.132,1.465

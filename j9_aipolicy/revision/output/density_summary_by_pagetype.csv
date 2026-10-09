@@ -1,0 +1,9 @@
+system,page_type,mean_captures,median_captures,share_zero
+AU,ai,0.652,0.0,0.667
+AU,integrity,1.756,1.0,0.409
+CA,ai,0.655,0.0,0.609
+CA,integrity,2.166,1.0,0.367
+UK,ai,0.466,0.0,0.67
+UK,integrity,1.149,0.0,0.519
+US,ai,0.427,0.0,0.874
+US,integrity,1.573,0.0,0.548

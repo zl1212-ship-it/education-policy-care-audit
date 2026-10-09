@@ -1,0 +1,4 @@
+rule,system,n,ai_addressed,prohibition,detector_surveillance,misconduct_framing,sanction,permitted_use,disclosure,appeal,l2_protection,restrictive_idx,procedural_idx
+US by page source: both,US,11,1.0,0.45454545454545453,0.18181818181818182,0.6363636363636364,0.09090909090909091,0.5454545454545454,0.2727272727272727,0.09090909090909091,0.0,1.3636363636363635,0.9090909090909091
+US by page source: curated only,US,20,0.45,0.15,0.15,0.25,0.0,0.2,0.2,0.0,0.05,0.55,0.45
+US by page source: screened only,US,4,0.5,0.25,0.0,0.25,0.0,0.25,0.25,0.0,0.0,0.5,0.5
