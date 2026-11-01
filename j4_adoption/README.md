@@ -48,7 +48,7 @@ Every adoption record carries its source (URL / FOIA reference / contract ID) in
 `source_url` / `source_quote` columns. If coverage proves insufficient for credible DiD,
 the design pivots to an allocation-audit framing.
 
-## Revision additions (2026-11)
+## Additional analyses (2026-11)
 
 Run after the base pipeline; each script reads the cached pulls and writes to `data/`:
 
@@ -61,6 +61,11 @@ Run after the base pipeline; each script reads the cached pulls and writes to `d
 - `gsu_admissions.py`: Georgia State admissions profile 2001-2015 (IPEDS admissions endpoints).
 - `pre2012_rise_donors.py`: change in six-year graduation rates over the paper's year labels for
   Georgia State, the donor pool, and the synthetic unit.
+- `scm_csu_ret_ext.py`: CSU retention synthetic control without the four campuses with earlier EAB
+  use, and on a series extended to 2024 (base and drop-four versions).
+- `scm_gsu_window.py`: placebo inference for the Georgia State graduation synthetic control over the
+  2017-2020 labels alone, from the saved base outputs.
+- `gsu_race_series.py`: Georgia State six-year graduation rate by race, labels 2000-2023.
 
 Urban's fall-retention rows for 2021 onward carry negative missing codes; the extension scripts
 treat negative values as missing.
