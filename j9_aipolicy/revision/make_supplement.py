@@ -3,7 +3,8 @@ Sections: S1 boilerplate (shares + audited pages); S2 normalization audit + full
 design (pages, US page sources, prevalence by rule, with PDFs and PDF capture dates, window and
 vocabulary sensitivity, US curated vs screened); S4 convergence (endpoint tests with length
 equalization and Commonwealth-only columns, per-system gaps, pair matrices overall and by page
-type, placebos, balanced pool); S5 crawl density and adoption; S6 exposure robustness."""
+type, placebos, balanced pool, and the pair structure checked for the small British pool and for
+text length); S5 crawl density and adoption; S6 exposure robustness."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
@@ -14,6 +15,7 @@ from pathlib import Path
 import re
 import numpy as np, pandas as pd
 OUT = AN / "supplement_tables.tex"
+AN2 = AN   # pair-structure checks (pair_structure_checks.py) write here too
 SYS = ["US", "UK", "AU", "CA"]; SYSN = {"US": "United States", "UK": "United Kingdom", "AU": "Australia", "CA": "Canada"}
 PROV = ["prohibition", "detector_surveillance", "misconduct_framing", "sanction", "permitted_use", "disclosure", "appeal", "l2_protection"]
 PN = {"prohibition": "Prohibition", "detector_surveillance": "Detector", "misconduct_framing": "Misconduct", "sanction": "Sanction", "permitted_use": "Permitted", "disclosure": "Disclosure", "appeal": "Appeal", "l2_protection": "Multilingual"}
@@ -21,6 +23,7 @@ def tex(s): return str(s).replace("\\", "").replace("_", "\\_").replace("&", "\\
 def f2(x): return "" if pd.isna(x) else f"{x:.2f}"
 def f3(x): return "" if pd.isna(x) else f"{x:.3f}"
 def sg(x): return "" if pd.isna(x) else f"{x:+.3f}"
+def nw(k): return ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][k] if 0 <= k < 10 else str(k)
 def table(cols, rows, caption, spec=None):
     spec = spec or ("l" + "r" * (len(cols) - 1))
     wide = len(cols) >= 12; size = r"\footnotesize" if len(cols) >= 9 else r"\small"
@@ -48,8 +51,8 @@ sp = pd.read_csv(AN / "spelling_changes.csv"); tr = pd.read_csv(AN / "term_remov
 parts.append(r"\section*{S2. Normalization of the AI-scoped text}" + "\n")
 parts.append(table(["System", "Conversions (count)"], [[tex(SYSN[s]), tex(", ".join(f"{a} to {b} ({n})" for a, b, n in zip(sp[sp.system == s].head(10)["from"], sp[sp.system == s].head(10)["to"], sp[sp.system == s].head(10)["n"])))] for s in SYS], "S2a. Most frequent spelling conversions (British to American) by system.", "p{1.1in}p{5.2in}"))
 parts.append(table(["Step", "System", "Terms (count)"], [[step, tex(SYSN[s]), tex(", ".join(f"{t} ({n})" for t, n in zip(tr[(tr.rung == step) & (tr.system == s)].head(12).term, tr[(tr.rung == step) & (tr.system == s)].head(12).n)))] for step in ("L3", "L4") for s in SYS], "S2b. Most frequently removed terms: roles, bodies and regulators (L3); names, places and administrative vocabulary (L4).", "p{0.5in}p{0.9in}p{4.9in}"))
-if (AN / "seed_top_terms.csv").exists():
-    tt = pd.read_csv(AN / "seed_top_terms.csv")
+if (AN2 / "seed_top_terms.csv").exists():
+    tt = pd.read_csv(AN2 / "seed_top_terms.csv")
     for rung in ("S7", "S7x"):
         if (tt.rung == rung).any():
             parts.append(table(["System", "Terms with the highest mean TF-IDF relative to the other systems (rank 1 to 30)"], [[tex(SYSN[s]), tex(", ".join(tt[(tt.rung == rung) & (tt.system == s)].sort_values("rank").term.head(30)))] for s in SYS], f"S2{'c' if rung == 'S7' else 'd'}. Discriminating terms at the endpoint, variant {rung} ({'strict AI vocabulary' if rung == 'S7' else 'strict vocabulary with the AI-naming words removed'}).", "p{1.1in}p{5.2in}"))
@@ -114,9 +117,9 @@ if (AN / "second_coder_r1.csv").exists():
     s2 = pd.read_csv(AN / "second_coder_r1.csv")
     parts.append(table(["Provision", "$n$", "Prevalence (primary)", "Raw agreement", "Cohen's kappa", "Gwet's AC1"], [[tex(r.provision), int(r.n), f3(r.prevalence_primary), f3(r.raw_agreement), f3(r.cohen_kappa), f3(r.gwet_ac1)] for r in s2.itertuples(index=False)], "S3h. Agreement between the primary lexicon and an independently specified rule set on 80 random cleaned snapshots carrying strict AI text."))
 # ---------------- S4
-parts.append(r"\section*{S4. Convergence}" + "\n" + "Variants: S1 navigation removed; S4 fully normalized (spelling, roles and bodies, names and places, administrative vocabulary); S7 normalized with the strict AI vocabulary (the manuscript's Figure 1); S7x additionally removes the AI-naming words themselves. Endpoint tests are computed on the last-quarter documents of the same TF-IDF fit as Figure 1; the 300-word cuts (Tables S4a to S4c) and the 600-word placebo texts (Table S4h) refit the vectorizer on the truncated documents. $p$ values are from 2,000 label permutations.\n")
-if (AN / "seed_convergence_endpoint.csv").exists():
-    e = pd.read_csv(AN / "seed_convergence_endpoint.csv"); e0 = e[e.get("gap").notna()] if "gap" in e.columns else e
+parts.append(r"\section*{S4. Convergence}" + "\n" + "Variants: S1 navigation removed; S4 fully normalized (spelling, roles and bodies, names and places, administrative vocabulary); S7 normalized with the strict AI vocabulary (the manuscript's Figure 1); S7x additionally removes the AI-naming words themselves. Endpoint tests on all pages are computed on the last-quarter documents of the same TF-IDF fit as Figure 1; the page-type tests (the full-text columns of Tables S4b and S4c, the :integrity and :ai rows of Table S4d, and Tables S4f and S4g) refit the vectorizer on all quarterly documents of that page type and use its last-quarter rows; the 300-word cuts (Tables S4a to S4c) and the 600-word placebo texts (Table S4h) refit the vectorizer on the truncated documents. Tables S4j to S4m check the pair structure of Table S4e for the small British pool and for text length; their 300- and 600-word cuts refit the vectorizer in the same way. $p$ values are from 2,000 label permutations.\n")
+if (AN2 / "seed_convergence_endpoint.csv").exists():
+    e = pd.read_csv(AN2 / "seed_convergence_endpoint.csv"); e0 = e[e.get("gap").notna()] if "gap" in e.columns else e
     rows = []
     for r in e0.itertuples(index=False):
         rows.append([r.rung, int(r.n), int(r.n_us), f3(r.within), f3(r.cross), sg(r.gap), f3(r.p), sg(getattr(r, "gap_t300", np.nan)), f3(getattr(r, "p_t300", np.nan)), sg(getattr(r, "cw_gap", np.nan)), f3(getattr(r, "cw_p", np.nan)), sg(getattr(r, "cw_gap_t300", np.nan)), f3(getattr(r, "cw_p_t300", np.nan)), sg(getattr(r, "usrest", np.nan)), f3(getattr(r, "usrest_p", np.nan)), sg(getattr(r, "usrest_t300", np.nan)), f3(getattr(r, "usrest_p_t300", np.nan))])
@@ -125,22 +128,45 @@ if (AN / "seed_convergence_endpoint.csv").exists():
         rr = [r for r in e.itertuples(index=False) if not pd.isna(getattr(r, f"{lab}_gap", np.nan))]
         if rr:
             parts.append(table(["Variant", "$n$", "US", "Within", "Cross", "Gap", "$p$", "Gap, 300 w", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, int(getattr(r, f"{lab}_n")), int(getattr(r, f"{lab}_n_us")), f3(getattr(r, f"{lab}_within")), f3(getattr(r, f"{lab}_cross")), sg(getattr(r, f"{lab}_gap")), f3(getattr(r, f"{lab}_p")), sg(getattr(r, f"{lab}_gap_t300")), f3(getattr(r, f"{lab}_p_t300")), sg(getattr(r, f"{lab}_cw_gap", np.nan)), f3(getattr(r, f"{lab}_cw_p", np.nan)), sg(getattr(r, f"{lab}_usrest")), f3(getattr(r, f"{lab}_usrest_p"))] for r in rr], f"S4{'b' if lab == 'integrity' else 'c'}. Endpoint tests on {('AI guidance' if lab == 'ai' else 'integrity')} pages only.", "lrrrrrrrrrrrr"))
-if (AN / "seed_per_system_gap.csv").exists():
-    ps2 = pd.read_csv(AN / "seed_per_system_gap.csv")
-    parts.append(table(["Variant", "System", "$n$", "Same-country pairs", "Cross pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[tex(r.rung), r.system, int(r.n_inst), int(r.same_pairs), int(r.cross_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in ps2.itertuples(index=False)], "S4d. Per-system decomposition at the endpoint: mean similarity among pairs within the system minus pairs between that system and the others, with a permutation $p$. Rows suffixed :integrity and :ai restrict the pool to that page type; a system appears only where it has at least three same-system pairs.", "llrrrrrrr"))
-if (AN / "seed_system_pair_matrix.csv").exists():
-    mx = pd.read_csv(AN / "seed_system_pair_matrix.csv")
+if (AN2 / "seed_per_system_gap.csv").exists():
+    ps2 = pd.read_csv(AN2 / "seed_per_system_gap.csv")
+    parts.append(table(["Variant", "System", "$n$", "Same-country pairs", "Cross pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[tex(r.rung), r.system, int(r.n_inst), int(r.same_pairs), int(r.cross_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in ps2.itertuples(index=False)], "S4d. Per-system decomposition at the endpoint: mean similarity among pairs within the system minus pairs between that system and the others, with a permutation $p$. Rows suffixed :integrity and :ai restrict the pool to that page type; a system appears only where it has at least three same-system pairs. The United States rows repeat the US-vs-rest contrasts of Tables S4a to S4c with a separate draw of 2,000 permutations, so their $p$ values differ slightly.", "llrrrrrrr"))
+if (AN2 / "seed_system_pair_matrix.csv").exists():
+    mx = pd.read_csv(AN2 / "seed_system_pair_matrix.csv")
     for pages_lab in ("all", "integrity", "ai"):
         m = mx[(mx.rung == "S7") & (mx.pages == pages_lab)]
         if len(m):
             small = {a: int(float(n)) for a, b, n in zip(m.sys_a, m.sys_b, m.n_pairs) if a == b and int(float(n)) <= 3} if "n_pairs" in m.columns else {}
+            npairs = m.pivot(index="sys_a", columns="sys_b", values="n_pairs").reindex(index=SYS, columns=SYS)
             m = m.pivot(index="sys_a", columns="sys_b", values="mean_cos").reindex(index=SYS, columns=SYS)
-            parts.append(table([""] + SYS, [[a] + [f3(m.loc[a, b]) for b in SYS] for a in SYS], "S4" + {'all': 'e', 'integrity': 'f', 'ai': 'g'}.get(pages_lab, 'e') + f". Mean pairwise cosine similarity by system pair at the endpoint, variant S7, {('AI guidance pages' if pages_lab == 'ai' else ('integrity pages' if pages_lab == 'integrity' else 'all pages'))}." + (" Diagonal cells for " + ", ".join(f"{k} ({v} pair{'s' if v != 1 else ''})" for k, v in small.items()) + " rest on three pairs or fewer." if small else ""), "lrrrr"))
-if (AN / "seed_placebo_text.csv").exists():
-    pl = pd.read_csv(AN / "seed_placebo_text.csv")
+            note = ""
+            if pages_lab == "all" and (AN2 / "seed_endpoint_composition.csv").exists():
+                comp = pd.read_csv(AN2 / "seed_endpoint_composition.csv"); comp = comp[comp.rung == "S7"].set_index("system").n_inst_end
+                note = (" Institutions carrying AI text at the endpoint: " + ", ".join(f"{SYSN[k]} {int(comp[k])}" for k in SYS)
+                        + f"; the British diagonal cell therefore rests on {int(npairs.loc['UK', 'UK'])} pairs among {nw(int(comp['UK']))} institutions (Table S4m leaves each out in turn).")
+            parts.append(table([""] + SYS, [[a] + [f3(m.loc[a, b]) for b in SYS] for a in SYS], "S4" + {'all': 'e', 'integrity': 'f', 'ai': 'g'}.get(pages_lab, 'e') + f". Mean pairwise cosine similarity by system pair at the endpoint, variant S7, {('AI guidance pages' if pages_lab == 'ai' else ('integrity pages' if pages_lab == 'integrity' else 'all pages'))}." + (" Diagonal cells for " + ", ".join(f"{k} ({v} pair{'s' if v != 1 else ''})" for k, v in small.items()) + " rest on three pairs or fewer." if small else "") + note, "lrrrr"))
+if (AN2 / "seed_placebo_text.csv").exists():
+    pl = pd.read_csv(AN2 / "seed_placebo_text.csv")
     parts.append(table(["Variant", "Text", "$n$", "Gap", "$p$", "Cw. gap", "$p$", "US-vs-rest", "$p$"], [[r.rung, tex(r.text), int(r.n_inst), sg(r.gap), f3(r.p), sg(getattr(r, "cw_gap", np.nan)), f3(getattr(r, "cw_p", np.nan)), sg(getattr(r, "usrest", np.nan)), f3(getattr(r, "usrest_p", np.nan))] for r in pl.itertuples(index=False)], "S4h. Placebo texts on the sample institutions, each cut to 600 words: the AI-scoped text, the non-AI text of the same endpoint pages, the pre-shock page text, and the paired difference (AI minus non-AI) for the same institution pairs.", "llrrrrrrr"))
 if (AN.parent / "draft" / "fig_convergence_balanced_r1.pdf").exists():
     parts.append(r"\begin{figure}[H]\centering\includegraphics[width=0.85\textwidth]{fig_convergence_balanced_r1.pdf}\caption{S4i. Convergence by pair type on a balanced pool: institutions carrying AI text in every quarter from the fifth quarter after the shock to the end of the window.}\end{figure}" + "\n")
+if (AN2 / "pair_matrix_by_length.csv").exists():
+    TX = {"full": "Full text", "cut 300": "Cut to 300 words", "cut 600": "Cut to 600 words", "pre-shock page text, cut 600": "Pre-shock page text, 600 words"}
+    pm0 = pd.read_csv(AN2 / "pair_matrix_by_length.csv"); rows_j = []
+    for cut, lab in (("cut 300", "300 words"), ("cut 600", "600 words")):
+        pm = pm0[pm0.text == cut].pivot(index="sys_a", columns="sys_b", values="mean_cos").reindex(index=SYS, columns=SYS)
+        rows_j += [[lab if a == SYS[0] else "", a] + [f3(pm.loc[a, b]) for b in SYS] for a in SYS]
+    parts.append(table(["Text cut to", ""] + SYS, rows_j, "S4j. Mean pairwise cosine similarity by system pair at the endpoint, variant S7, all pages, with every institution's text cut to its first 300 or 600 words (the full-text version is Table S4e).", "llrrrr"))
+    pg = pd.read_csv(AN2 / "pair_groups_by_length.csv").rename(columns={"US-US mean": "us", "Cw same country mean": "cw_same", "Cw cross country mean": "cw_cross", "US-Cw mean": "us_cw", "Cw cross minus US-Cw": "block"})
+    parts.append(table(["Text", "$n$", "US pairs", "Cw. same-country", "Cw. cross-country", "US-Cw.", "Cw. cross minus US-Cw.", "$p$"], [[TX[r.text], int(r.n_inst), f3(r.us), f3(r.cw_same), f3(r.cw_cross), f3(r.us_cw), sg(r.block), f3(r.p)] for r in pg.itertuples(index=False)], "S4k. Pair groups at the endpoint (variant S7, all pages), by text length, and on the pre-shock page text of all sample institutions, cut to 600 words: mean similarity of United States pairs, Commonwealth (Cw.) pairs in the same country, Commonwealth pairs in different countries, and pairs of a United States and a Commonwealth institution. The last two columns ask whether the Commonwealth systems group together apart from the United States: Commonwealth cross-country minus United States-Commonwealth similarity, with a permutation $p$ (system labels shuffled over all institutions).", "lrrrrrrr"))
+    pz = pd.read_csv(AN2 / "per_system_gap_by_length.csv")
+    parts.append(table(["Text", "System", "$n$", "Same-country pairs", "Same mean", "Cross mean", "Gap", "$p$"], [[TX[r.text], r.system, int(r.n_inst), int(r.same_pairs), f3(r.same_mean), f3(r.cross_mean), sg(r.gap), f3(r.p)] for r in pz.itertuples(index=False)], "S4l. Per-system decomposition as in Table S4d (variant S7, all pages), by text length, and on the pre-shock page text of all sample institutions, cut to 600 words. The United States rows on full text, at 300 words, and on the pre-shock text repeat the US-vs-rest contrasts of Tables S4a and S4h with a separate draw of 2,000 permutations, so their $p$ values differ slightly.", "llrrrrrr"))
+    lo = pd.read_csv(AN2 / "british_row_leave_one_out.csv"); bc = pd.read_csv(AN2 / "british_us_contrast.csv").iloc[0]
+    pi = pd.read_csv(AN2 / "pair_per_institution.csv"); pu = pi[pi.system == "UK"].copy()
+    closer = set(pu[pu.to_US > pu[["to_AU", "to_CA"]].mean(axis=1)].institution); longest = set(pu.nlargest(len(closer), "words").institution)
+    tail = (f" the {nw(len(closer))} British institutions closer to American than to Australian and Canadian text are the {nw(len(closer))} with the longest AI text." if closer == longest
+            else f" {nw(len(closer))} of the {nw(len(pu))} British institutions are closer to American than to Australian and Canadian text.")
+    parts.append(table(["Left out", "Words", "UK-UK", "UK-US", "UK-AU", "UK-CA"], [[("none" if r.left_out == "none" else tex(r.left_out)), ("" if pd.isna(r.words_left_out) else int(r.words_left_out)), f3(r.UK_UK), f3(r.UK_US), f3(r.UK_AU), f3(r.UK_CA)] for r in lo.itertuples(index=False)], f"S4m. The British row of Table S4e with each of the six British institutions left out in turn (variant S7, all pages, full text), with the length in words of the left-out institution's AI text. On full text, British-American pairs exceed British-Australian and British-Canadian pairs by {bc.value:+.3f} ($p$ = {bc.p:.2f}, system labels shuffled among the non-British institutions), and" + tail, "lrrrrr"))
 # ---------------- S5
 if (AN / "density_summary.csv").exists():
     ds = pd.read_csv(AN / "density_summary.csv")

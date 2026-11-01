@@ -1,0 +1,49 @@
+text,sys_a,sys_b,mean_cos,n_pairs
+cut 300,US,US,0.1548,231
+cut 300,US,UK,0.1171,132
+cut 300,US,AU,0.13,264
+cut 300,US,CA,0.1108,176
+cut 300,UK,US,0.1171,132
+cut 300,UK,UK,0.1673,15
+cut 300,UK,AU,0.148,72
+cut 300,UK,CA,0.1225,48
+cut 300,AU,US,0.13,264
+cut 300,AU,UK,0.148,72
+cut 300,AU,AU,0.1897,66
+cut 300,AU,CA,0.1466,96
+cut 300,CA,US,0.1108,176
+cut 300,CA,UK,0.1225,48
+cut 300,CA,AU,0.1466,96
+cut 300,CA,CA,0.1237,28
+cut 600,US,US,0.1637,231
+cut 600,US,UK,0.1287,132
+cut 600,US,AU,0.1289,264
+cut 600,US,CA,0.1319,176
+cut 600,UK,US,0.1287,132
+cut 600,UK,UK,0.1572,15
+cut 600,UK,AU,0.1425,72
+cut 600,UK,CA,0.1226,48
+cut 600,AU,US,0.1289,264
+cut 600,AU,UK,0.1425,72
+cut 600,AU,AU,0.1863,66
+cut 600,AU,CA,0.1575,96
+cut 600,CA,US,0.1319,176
+cut 600,CA,UK,0.1226,48
+cut 600,CA,AU,0.1575,96
+cut 600,CA,CA,0.149,28
+"pre-shock page text, cut 600",US,US,0.1236,595
+"pre-shock page text, cut 600",US,UK,0.0879,595
+"pre-shock page text, cut 600",US,AU,0.1347,665
+"pre-shock page text, cut 600",US,CA,0.1239,770
+"pre-shock page text, cut 600",UK,US,0.0879,595
+"pre-shock page text, cut 600",UK,UK,0.122,136
+"pre-shock page text, cut 600",UK,AU,0.1278,323
+"pre-shock page text, cut 600",UK,CA,0.1073,374
+"pre-shock page text, cut 600",AU,US,0.1347,665
+"pre-shock page text, cut 600",AU,UK,0.1278,323
+"pre-shock page text, cut 600",AU,AU,0.2256,171
+"pre-shock page text, cut 600",AU,CA,0.1882,418
+"pre-shock page text, cut 600",CA,US,0.1239,770
+"pre-shock page text, cut 600",CA,UK,0.1073,374
+"pre-shock page text, cut 600",CA,AU,0.1882,418
+"pre-shock page text, cut 600",CA,CA,0.1769,231

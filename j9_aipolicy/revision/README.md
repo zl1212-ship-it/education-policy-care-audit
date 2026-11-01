@@ -30,7 +30,10 @@ fetchers below); the assembled CSV products are.
    last-quarter documents (full text, cut to 300 and 600 words, Commonwealth-only, United States
    contrast), per-system and page-type decompositions, placebo texts.
    `convergence_ladder.py` and `paired_matched.py` run the same normalization ladder on the
-   automatically discovered pages (robustness).
+   automatically discovered pages (robustness). `pair_structure_checks.py` breaks the endpoint
+   pair matrix down by institution (the British row with each British institution left out) and
+   repeats the pair matrix, pair groups, and per-system gaps with every text cut to 300 and 600
+   words and on the pre-shock page text.
 7. `fetch_cdx.py` and `crawl_density.py`: captures per page and quarter, density against
    exposure, interval-censored adoption dates and a Turnbull estimate.
 8. `exposure_robustness.py`, `validation_r1.py`, `rebuild_panel_clean.py`: exposure robustness,

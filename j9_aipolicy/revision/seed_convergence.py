@@ -7,7 +7,8 @@ LAST-QUARTER documents of the same series fit (so levels match Figure 1): pooled
 gap, Commonwealth-only gap, US-vs-rest contrast, each on full text and on text cut to 300 and 600
 words; per-system same-minus-cross decomposition with permutation p; pair matrices overall and by
 page type (integrity pages only; AI pages only); top terms; placebos on the sample (AI text,
-non-AI text, pre-shock text, paired excess), overall and by group."""
+non-AI text, pre-shock text, paired excess), overall and by group. In the page-type split the
+last-quarter rows of the page-type matrix are selected by position (np.flatnonzero)."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
@@ -193,9 +194,9 @@ def main():
             dp = build_docs(snaps, variant, ptypes=pts)
             if len(dp) and dp.event_q.max() >= 10:
                 Xp = TfidfVectorizer(ngram_range=(1, 2), min_df=3, stop_words="english", max_features=5000).fit_transform(dp["doc"])
-                kp = int(dp.event_q.max()); dqp = dp[dp.event_q == kp].reset_index(drop=True)
+                kp = int(dp.event_q.max()); rows_kp = np.flatnonzero((dp.event_q == kp).to_numpy()); dqp = dp.iloc[rows_kp].reset_index(drop=True)
                 if dqp.uid.nunique() >= 8:
-                    Sp = cosine_similarity(Xp[dqp.index.to_numpy()]); mp = C.system_matrix(Sp, dqp["sys"].to_numpy()); mp.insert(0, "rung", variant); mp["pages"] = lab; mat_rows.append(mp)
+                    Sp = cosine_similarity(Xp[rows_kp]); mp = C.system_matrix(Sp, dqp["sys"].to_numpy()); mp.insert(0, "rung", variant); mp["pages"] = lab; mat_rows.append(mp)
                     evp = endpoint_tests(dqp, Sp, prefix=f"{lab}_"); evp.update({"rung": variant, "end_quarter": kp}); end_rows.append(evp)
                     for r in per_system(Sp, dqp["sys"].to_numpy()): persys_rows.append({"rung": variant + ":" + lab, **r})
         term_rows.append(C.top_terms(vec, X, docs, k_end, variant, ntop=30))
