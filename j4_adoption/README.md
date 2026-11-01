@@ -47,3 +47,20 @@ when**, assembled from sourced public records (see `adoption_sources.md`):
 Every adoption record carries its source (URL / FOIA reference / contract ID) in the
 `source_url` / `source_quote` columns. If coverage proves insufficient for credible DiD,
 the design pivots to an allocation-audit framing.
+
+## Revision additions (2026-11)
+
+Run after the base pipeline; each script reads the cached pulls and writes to `data/`:
+
+- `extend_gsu_series.py`: Georgia State six-year series and its synthetic counterpart extended
+  to the 2023 label with the base weights; Georgia State full-time retention to 2024.
+- `scm_csu_grad.py`: synthetic control for the CSU system on the pooled six-year graduation rate
+  (pre-period 2004-2017; first fully exposed cohort at the 2023 label), with variants.
+- `extended_window.py`: retention panel extended to 2024 and the difference-in-differences
+  estimates re-run on the longer window (original window recomputed as a check).
+- `gsu_admissions.py`: Georgia State admissions profile 2001-2015 (IPEDS admissions endpoints).
+- `pre2012_rise_donors.py`: change in six-year graduation rates over the paper's year labels for
+  Georgia State, the donor pool, and the synthetic unit.
+
+Urban's fall-retention rows for 2021 onward carry negative missing codes; the extension scripts
+treat negative values as missing.

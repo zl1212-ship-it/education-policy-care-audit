@@ -1,0 +1,25 @@
+estimator,sample,window,variant,maine_rule,att_pp,ci_lo,ci_hi,se_pp,p_state_wcr,n_treated,n_control
+Callaway-Sant'Anna overall post ATT,full panel (737),2009-2024,all post years,keep,0.297,-0.703,1.306,0.526,,29,708
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2024,all post years,keep,0.835,-0.171,1.787,0.522,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 38 states)",2009-2024,all post years,keep,0.657,-0.491,1.804,0.652,0.457,27,111
+Callaway-Sant'Anna overall post ATT,full panel (737),2009-2024,post excl. 2020-2022,keep,0.004,-0.999,1.036,0.528,,29,708
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2024,post excl. 2020-2022,keep,0.691,-0.341,1.692,0.531,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 38 states)",2009-2024,post excl. 2020-2022,keep,0.55,-0.65,1.749,0.639,0.483,27,111
+Callaway-Sant'Anna overall post ATT,full panel (737),2009-2024,post t+0..t+2,keep,0.594,-0.275,1.429,0.453,,29,708
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2024,post t+0..t+2,keep,0.794,-0.336,1.829,0.517,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 38 states)",2009-2024,post t+0..t+2,keep,0.636,-0.416,1.689,0.619,0.451,27,111
+Callaway-Sant'Anna overall post ATT,full panel (736),2009-2020,all post years (reproduction),keep,0.651,-0.293,1.576,0.468,,29,707
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2020,all post years (reproduction),keep,1.014,0.033,2.056,0.488,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 38 states)",2009-2020,all post years (reproduction),keep,0.825,-0.286,1.936,0.565,0.327,27,111
+Callaway-Sant'Anna overall post ATT,full panel (730),2009-2024,all post years,drop,0.334,-0.787,1.477,0.584,,29,701
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2024,all post years,drop,0.826,-0.139,1.781,0.502,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 37 states)",2009-2024,all post years,drop,0.619,-0.531,1.77,0.664,0.482,27,111
+Callaway-Sant'Anna overall post ATT,full panel (730),2009-2024,post excl. 2020-2022,drop,0.042,-1.005,1.155,0.559,,29,701
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2024,post excl. 2020-2022,drop,0.691,-0.269,1.586,0.512,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 37 states)",2009-2024,post excl. 2020-2022,drop,0.522,-0.681,1.725,0.652,0.514,27,111
+Callaway-Sant'Anna overall post ATT,full panel (730),2009-2024,post t+0..t+2,drop,0.613,-0.291,1.6,0.489,,29,701
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2024,post t+0..t+2,drop,0.783,-0.327,1.689,0.519,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 37 states)",2009-2024,post t+0..t+2,drop,0.598,-0.456,1.652,0.627,0.495,27,111
+Callaway-Sant'Anna overall post ATT,full panel (729),2009-2020,all post years (reproduction),drop,0.665,-0.252,1.603,0.479,,29,700
+Callaway-Sant'Anna overall post ATT,matched (27 + 111),2009-2020,all post years (reproduction),drop,1.004,-0.037,1.901,0.494,,27,111
+TWFE static (state WCR bootstrap),"matched (27 + 111, 37 states)",2009-2020,all post years (reproduction),drop,0.787,-0.326,1.901,0.574,0.368,27,111

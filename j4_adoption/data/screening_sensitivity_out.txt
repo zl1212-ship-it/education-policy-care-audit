@@ -1,0 +1,18 @@
+
+GSU Black graduation rate (full pool 107 donors):
+   K pre-RMSPE(pp)  avg post gap(pp)  placebo p
+  20          1.22              5.49      0.429
+  25          1.22              5.34      0.462
+  30          1.07              4.72      0.400
+  40          0.84             -0.01      0.425
+  60          0.80              3.00      0.400
+
+GSU first-year retention (full pool 111 donors):
+   K pre-RMSPE(pp)  avg post gap(pp)  placebo p
+  20          0.05             -3.87      0.048
+  25          0.05             -3.87      0.038
+  30          0.05             -3.85      0.032
+  40          0.03             -3.24      0.024
+  60          0.00             -3.84      0.016
+
+(stable sign across K = robust to the screening choice)
