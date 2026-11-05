@@ -1,0 +1,11 @@
+outcome,without_unitid,without_institution,n_inst,coef,se_cluster,ci_lo,ci_hi,p,n_inst_flagged_endpoint
+prohibition_present,,,34,0.073168,0.066729,-0.05762,0.203956,0.27286,9.0
+detector_surveillance_present,,,34,0.010655,0.039926,-0.0676,0.08891,0.789569,5.0
+misconduct_framing_present,,,34,0.080966,0.062393,-0.041324,0.203256,0.194396,13.0
+sanction_present,,,34,-0.030507,0.030386,-0.090064,0.029049,0.315386,1.0
+permitted_use_present,,,34,0.07956,0.059208,-0.036488,0.195608,0.179033,11.0
+disclosure_present,,,34,0.073694,0.044466,-0.013459,0.160848,0.097456,8.0
+appeal_present,,,34,-0.010187,0.010931,-0.031612,0.011239,0.351393,1.0
+l2_protection_present,,,34,0.068166,0.058789,-0.04706,0.183393,0.24625,1.0
+permitted_plus_disclosure,,,34,0.153255,0.088458,-0.020124,0.326633,0.083183,
+procedural_idx,211440,Carnegie Mellon University,33,0.118579,0.108161,-0.093418,0.330575,0.272943,

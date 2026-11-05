@@ -2,7 +2,7 @@
 Figure 1: convergence over event time (rung S7: boilerplate-stripped, normalized, strict AI terms),
 within- and cross-system, from the first post-shock quarter with documents, n per quarter annotated.
 Figure 2: US differential-exposure event study on the seed panel (clean strict scores).
-Figure 3: mean AI-governance intensity by quarter and exposure tercile (seed panel)."""
+Figure 3: mean governance intensity by quarter and exposure tercile (seed panel)."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
@@ -68,7 +68,7 @@ fig, ax = plt.subplots(figsize=(6.4, 4.0))
 for col, c in zip(g.columns, ["#7f7f7f", "#c55a11", "#1f4e79"]):
     ax.plot(g.index, g[col], "-o", ms=3.5, label=str(col), color=c)
 ax.axvline(0, color="0.6", lw=1, ls="--")
-ax.set_xlabel("Quarters from the ChatGPT shock (2022Q4 = 0)"); ax.set_ylabel("Mean AI-governance intensity (0 to 8)")
+ax.set_xlabel("Quarters from the ChatGPT shock (2022Q4 = 0)"); ax.set_ylabel("Mean governance intensity (0 to 8)")
 ax.legend(frameon=False, fontsize=9, loc="upper left"); ax.spines[["top", "right"]].set_visible(False)
 fig.tight_layout(); fig.savefig(OUT / "fig_trend_r1.pdf"); fig.savefig(OUT / "fig_trend_r1.png", dpi=200)
 print("figures written to", OUT)

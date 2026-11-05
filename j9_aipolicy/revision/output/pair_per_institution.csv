@@ -1,49 +1,50 @@
 unitid,institution,system,words,pages_with_ai_text,to_US,to_UK,to_AU,to_CA
-9000004,University of Wollongong,AU,4605,ai,0.0995,0.0694,0.0941,0.1239
-9000003,University of Sydney,AU,3202,ai,0.2648,0.2264,0.1691,0.1536
-9000102,Swinburne University of Technology,AU,1244,integrity,0.1334,0.1079,0.1506,0.1524
-9000100,Monash University,AU,1078,integrity,0.0872,0.0913,0.106,0.0795
-9000103,University of Newcastle,AU,1011,integrity,0.1045,0.1014,0.1497,0.1209
-9000064,RMIT University,AU,628,integrity,0.1557,0.1179,0.1268,0.1159
-9000070,Flinders University,AU,481,integrity,0.0901,0.0951,0.0907,0.0728
-9000002,Griffith University,AU,360,ai,0.1138,0.1154,0.1177,0.1023
-9000108,University of South Australia,AU,302,integrity,0.0697,0.1109,0.0948,0.0907
-9000046,University of Queensland,AU,296,integrity,0.1128,0.1168,0.1146,0.094
-9000054,University of Adelaide,AU,119,integrity,0.0496,0.0495,0.0584,0.0575
-9000045,University of Melbourne,AU,87,integrity,0.0453,0.0985,0.058,0.0471
-9000012,University of Waterloo,CA,3410,integrity+ai,0.1866,0.1414,0.1628,0.1424
-9000090,University of Saskatchewan,CA,2230,integrity,0.1173,0.0909,0.1257,0.1004
-9000050,University of Calgary,CA,1474,integrity,0.0897,0.0683,0.0719,0.0891
-9000007,Toronto Metropolitan University,CA,1431,ai,0.16,0.1279,0.1242,0.1119
-9000011,University of Toronto,CA,1242,ai,0.1081,0.0887,0.0674,0.0587
-9000008,University of British Columbia,CA,970,ai,0.083,0.0676,0.0695,0.0865
-9000052,University of Ottawa,CA,628,integrity,0.1091,0.0934,0.1088,0.1024
-9000091,York University,CA,90,integrity,0.0712,0.0621,0.0769,0.0797
-9000079,Newcastle University,UK,1122,integrity+ai,0.2013,0.1986,0.1552,0.1285
-9000057,Durham University,UK,872,integrity,0.1749,0.1776,0.1386,0.109
-9000026,University of Birmingham,UK,671,integrity,0.119,0.1309,0.0932,0.0735
-9000014,Imperial College London,UK,480,ai,0.1457,0.1128,0.1012,0.0887
-9000081,University of York,UK,96,integrity,0.0626,0.1095,0.0805,0.0813
-9000020,University of Manchester,UK,87,integrity,0.0743,0.1267,0.0817,0.0742
-190415,Cornell University,US,5567,ai,0.244,0.1542,0.1367,0.1537
-190150,Columbia University,US,5401,ai,0.2712,0.2053,0.1608,0.1366
-211440,Carnegie Mellon University,US,4700,ai,0.264,0.1753,0.1753,0.1832
-179867,Washington University in St Louis,US,4655,integrity+ai,0.2052,0.1076,0.1349,0.163
-216339,Temple University,US,4186,ai,0.2712,0.1946,0.1662,0.1486
-110680,University of California-San Diego,US,3093,ai,0.1744,0.1007,0.1483,0.1847
-166027,Harvard University,US,2892,ai,0.1875,0.1415,0.1173,0.1208
-104151,Arizona State University,US,2749,ai,0.2166,0.1368,0.11,0.1256
-198419,Duke University,US,2711,ai,0.2244,0.1633,0.1282,0.1309
-243744,Stanford University,US,1452,ai,0.1767,0.1105,0.0987,0.1152
-152080,University of Notre Dame,US,1211,ai,0.1859,0.1399,0.1231,0.1143
-227757,Rice University,US,994,ai,0.0863,0.0651,0.0549,0.0563
-123961,University of Southern California,US,886,ai,0.2159,0.1948,0.1306,0.1295
-228723,Texas A & M University,US,856,ai,0.1796,0.1203,0.1053,0.1157
-221999,Vanderbilt University,US,795,ai,0.175,0.1246,0.0751,0.0799
-110653,University of California-Irvine,US,664,ai,0.1806,0.1034,0.1006,0.1068
-232186,George Mason University,US,571,ai,0.16,0.1141,0.0875,0.0862
-171100,Michigan State University,US,521,ai,0.1477,0.1571,0.1094,0.0946
-196097,Stony Brook University,US,353,integrity+ai,0.1647,0.1413,0.0951,0.0901
-110662,University of California-Los Angeles,US,271,ai,0.1289,0.0715,0.0731,0.0963
-164988,Boston University,US,181,integrity,0.039,0.0806,0.0593,0.0483
-144050,University of Chicago,US,87,ai,0.0829,0.0495,0.0414,0.0633
+9000004,University of Wollongong,AU,1207,ai,0.101826,0.11231,0.099875,0.125718
+9000003,University of Sydney,AU,793,ai,0.28335,0.220184,0.189936,0.191513
+9000102,Swinburne University of Technology,AU,508,integrity,0.135967,0.132129,0.160458,0.162616
+9000103,University of Newcastle,AU,505,integrity,0.119891,0.106326,0.166752,0.146725
+9000002,Griffith University,AU,482,integrity,0.143011,0.175206,0.167142,0.170424
+9000100,Monash University,AU,288,integrity,0.076343,0.080025,0.094653,0.074171
+9000064,RMIT University,AU,273,integrity,0.16583,0.125111,0.133279,0.127917
+9000070,Flinders University,AU,219,integrity,0.082445,0.081661,0.089837,0.073443
+9000046,University of Queensland,AU,205,integrity,0.09793,0.084404,0.100546,0.085669
+9000108,University of South Australia,AU,165,integrity,0.101583,0.124442,0.131723,0.129833
+9000045,University of Melbourne,AU,87,integrity,0.03052,0.072567,0.046008,0.037521
+9000054,University of Adelaide,AU,61,integrity,0.053869,0.041729,0.066231,0.069702
+9000012,University of Waterloo,CA,1146,ai,0.247913,0.191259,0.194134,0.17131
+9000007,Toronto Metropolitan University,CA,898,integrity+ai,0.188778,0.137724,0.134791,0.132348
+9000090,University of Saskatchewan,CA,872,integrity,0.126696,0.126292,0.132292,0.111995
+9000008,University of British Columbia,CA,536,ai,0.100949,0.077503,0.080393,0.100235
+9000011,University of Toronto,CA,472,ai,0.106924,0.088924,0.065984,0.066036
+9000052,University of Ottawa,CA,362,integrity,0.111922,0.094608,0.123171,0.120732
+9000050,University of Calgary,CA,245,integrity,0.139928,0.117556,0.120103,0.138979
+9000006,Queen's University,CA,98,integrity,0.081849,0.093111,0.118933,0.109718
+9000091,York University,CA,90,integrity,0.069502,0.055944,0.076637,0.086429
+9000079,Newcastle University,UK,591,integrity+ai,0.2274,0.17977,0.16522,0.151089
+9000057,Durham University,UK,547,integrity,0.168982,0.171768,0.133898,0.114623
+9000014,Imperial College London,UK,422,ai,0.217421,0.127815,0.131024,0.144644
+9000026,University of Birmingham,UK,171,integrity,0.157391,0.163935,0.119439,0.102778
+9000081,University of York,UK,96,integrity,0.067886,0.102317,0.087927,0.105402
+9000020,University of Manchester,UK,87,integrity,0.036159,0.058413,0.04054,0.036745
+211440,Carnegie Mellon University,US,2775,ai,0.264409,0.178822,0.16612,0.177676
+190150,Columbia University,US,2169,ai,0.280375,0.205281,0.156044,0.150327
+216339,Temple University,US,2099,ai,0.309863,0.217135,0.170431,0.173406
+179867,Washington University in St Louis,US,1965,integrity+ai,0.263385,0.177032,0.155182,0.191248
+190415,Cornell University,US,1516,ai,0.293682,0.210883,0.151291,0.181431
+198419,Duke University,US,1496,ai,0.287914,0.198622,0.150533,0.162591
+166027,Harvard University,US,1230,ai,0.204244,0.141502,0.118258,0.133205
+104151,Arizona State University,US,1096,ai,0.241677,0.148356,0.113565,0.142222
+110680,University of California-San Diego,US,984,ai,0.232571,0.167679,0.162252,0.188694
+243744,Stanford University,US,721,ai,0.207702,0.133654,0.103827,0.123181
+152080,University of Notre Dame,US,688,ai,0.198224,0.1416,0.121534,0.131121
+228723,Texas A & M University,US,545,ai,0.215417,0.128199,0.111516,0.122974
+227757,Rice University,US,474,ai,0.148529,0.103046,0.094889,0.105228
+110653,University of California-Irvine,US,424,ai,0.215494,0.12731,0.107307,0.119758
+123961,University of Southern California,US,383,ai,0.217121,0.170776,0.127462,0.138895
+232186,George Mason University,US,345,ai,0.167778,0.114093,0.086137,0.092585
+171100,Michigan State University,US,254,ai,0.160737,0.152918,0.106231,0.113263
+221999,Vanderbilt University,US,198,ai,0.223732,0.155778,0.086938,0.108386
+164988,Boston University,US,181,integrity,0.041966,0.082884,0.061593,0.050447
+110662,University of California-Los Angeles,US,180,ai,0.123339,0.068327,0.05838,0.088193
+196097,Stony Brook University,US,175,integrity+ai,0.155582,0.13343,0.099546,0.105542
+144050,University of Chicago,US,87,ai,0.091962,0.051882,0.043998,0.07053

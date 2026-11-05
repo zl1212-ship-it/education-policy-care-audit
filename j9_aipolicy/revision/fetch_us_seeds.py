@@ -1,14 +1,16 @@
 """Fetch the CURATED US seed pages (integrity_url + guidance_url from PIPE/data/sample_frame.csv)
+from the Wayback Machine, exactly as the cross-national pipeline did (patient_round.py logic):
+one CDX capture listing per page (daily-collapsed, status 200), earliest capture per distinct
+digest, at most 16 versions evenly spaced (the five pages fetched first on 2026-10-08, before the cap
+was lowered from 20, keep 20; the resume rule treats them as done), raw id_ HTML downloaded into
+output/seed_snapshots_raw/. Polite: 8 s between CDX calls, 2.5 s between downloads, long backoff on
+errors; resumable."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
 XN = PIPE / "crossnational"
 AN = REV / "output"; AN.mkdir(exist_ok=True)    # all outputs of the revision analyses
 WS = REV; RP = AN; OUT = AN
-from the Wayback Machine, exactly as the cross-national pipeline did (patient_round.py logic):
-one CDX capture listing per page (daily-collapsed, status 200), earliest capture per distinct
-digest, at most 20 versions, raw id_ HTML downloaded into WS/analysis/seed_snapshots_raw/.
-Polite: 12 s between CDX calls, 4 s between downloads, long backoff on errors; resumable."""
 import csv, json, re, sys, time, urllib.error, urllib.parse, urllib.request, datetime as dt
 from pathlib import Path
 import pandas as pd

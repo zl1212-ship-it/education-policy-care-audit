@@ -1,0 +1,220 @@
+system,unitid,institution,page_type,page_key,query_url,timestamp,statuscode,digest
+US,110662,University of California-Los Angeles,ai,teaching_ucla_edu_ai_workshops,https://teaching.ucla.edu/ai-workshops/,20260219055356,200,BFJOK4AWKJ2QEIPMTIVSY6FBUL66BG3W
+US,110662,University of California-Los Angeles,ai,teaching_ucla_edu_ai_workshops,https://teaching.ucla.edu/ai-workshops/,20260503010940,200,YSIAJ6B7PYF6LJOUZSCFLVGNVJJOOD3J
+US,110662,University of California-Los Angeles,ai,teaching_ucla_edu_ai_workshops,https://teaching.ucla.edu/ai-workshops/,20260615103925,200,OXJ4T4DWI3DELHCEQXI2U3TBIAKESKRW
+US,110680,University of California-San Diego,ai,academicintegrity_ucsd_edu_choose_integrity_gen_ai,https://academicintegrity.ucsd.edu/choose-integrity/gen-ai/,20250923171156,200,R5YKVS6VDWVA757TVAU7GULALWDEKLL6
+US,110680,University of California-San Diego,ai,academicintegrity_ucsd_edu_choose_integrity_gen_ai,https://academicintegrity.ucsd.edu/choose-integrity/gen-ai/,20251117200433,200,DLR5ADPPINIQBDCUOID7E52ORZF7WNAZ
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20210420080916,200,XX7GUPRNEWYJAYWY3EBQHREIPH2K77LE
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20220127015150,200,HZKYPNKZ7D3WQSOABMXVQPC4T5XKAECZ
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20220809040851,200,YO4NRHMWZQRJQ326MQXD5YRCFKJBQTHV
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20240715203222,200,7AQM44AP6FOT3XEX2HBHA5BFSUHYCDPX
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20240722163026,200,7AQM44AP6FOT3XEX2HBHA5BFSUHYCDPX
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20241204053117,200,VXDDCNCCLGBYRGCEUOPPNHIENQOX7UZC
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20250418000014,200,CR4CDYULFQSSWUQJLVDNB2PXCICCGH4M
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20250808040622,200,DFPS5TWLRBOE4ERCXODNEVYGSMKPQXRY
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20260214010216,200,GJAX6UARPVIVELLEUGSS3GWBTMG2NY4X
+US,122931,Santa Clara University,integrity,www_scu_edu_academic_integrity_about_the_pledge,https://www.scu.edu/academic-integrity/about-the-pledge/,20260617002824,200,J7ZHQ3LGUEG4SDZKRTFP4MKJMAG3DLLN
+US,123961,University of Southern California,ai,academicintegrity_usc_edu_faculty_resources_addressing_generative_ai,https://academicintegrity.usc.edu/faculty-resources/addressing-generative-ai/,20251209052645,200,3WISEVYJVW75PLXXOWHR3CDGFHI3GV2R
+US,123961,University of Southern California,ai,academicintegrity_usc_edu_faculty_resources_addressing_generative_ai,https://academicintegrity.usc.edu/faculty-resources/addressing-generative-ai/,20260228052308,200,EY7LJVLSBSBPLPO3Y37QF52OADZCZAU7
+US,123961,University of Southern California,ai,academicintegrity_usc_edu_faculty_resources_addressing_generative_ai,https://academicintegrity.usc.edu/faculty-resources/addressing-generative-ai/,20260307002626,200,DQDGBMYCV2625FT7QBWJ22QSM3LGQFP5
+US,123961,University of Southern California,ai,academicintegrity_usc_edu_faculty_resources_addressing_generative_ai,https://academicintegrity.usc.edu/faculty-resources/addressing-generative-ai/,20260613160458,200,DAUBLOBW2ORJZZ443BYZECGA3DNZTD34
+US,144050,University of Chicago,ai,teaching_uchicago_edu_resources_programming_and_resources_ai,https://teaching.uchicago.edu/resources/programming-and-resources-ai,20251220182629,200,SVT2WREWDUW5PMIP34IFGLQDKV6YSDDN
+US,144050,University of Chicago,ai,teaching_uchicago_edu_resources_programming_and_resources_ai,https://teaching.uchicago.edu/resources/programming-and-resources-ai,20260522191418,200,TAWGP5AQ6CPHAB6A3KN6LKXL2Q4ODDEP
+US,144050,University of Chicago,ai,teaching_uchicago_edu_resources_programming_and_resources_ai,https://teaching.uchicago.edu/resources/programming-and-resources-ai,20260624145056,200,M6NORFDDWX44WRTWSHT22P3T67ZJW6JW
+US,152080,University of Notre Dame,ai,honorcode_nd_edu_ai_recommendations_for_instructors,https://honorcode.nd.edu/ai-recommendations-for-instructors/,20240623085355,200,VVVTBDIO4IRSPMYNXAARE6PFIY5HO42P
+US,152080,University of Notre Dame,ai,honorcode_nd_edu_ai_recommendations_for_instructors,https://honorcode.nd.edu/ai-recommendations-for-instructors/,20240708134445,200,UBVDBXKJL5POE724IOT2TLU4XRGHAD2A
+US,152080,University of Notre Dame,ai,honorcode_nd_edu_ai_recommendations_for_instructors,https://honorcode.nd.edu/ai-recommendations-for-instructors/,20240910054105,200,EZ4UMH6GI5O4VLLL3DTMCBYAQATHYAZM
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20231129161118,200,BVVSJ56W5LOI3JNIGD44DUDMDUKBDTWW
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240121134121,200,PXFGIZ4UIJXXZ7KD3ZCIYUXJ7CTRI7LC
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240221135319,200,3ZOGZTCJ5RDANTOHSFZ2QAPUCQCG4CGD
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240321135646,200,IGSMM5TYFGP2FI6IZDMAQHZ64CW7M6NK
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240421140811,200,PEX4UNDH6TEL3TAGLP52V2FGALX7LZZT
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240521135030,200,NGQTQC2M4CBO2PTZFCSCYE3ENXGYG32Y
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240530134523,200,DV3SDIC7YKTO5ZNCEQAUH3RQRLZIKDRM
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240621141248,200,VFSTRQDFXUS7CMHENMROWBLNG2JVYDT5
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240721140334,200,A2Z4NS22GZGNN7RFK3CMMRIVGKVDSC4T
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240822002524,200,P5TJVIHIRTPUMZPNVC3WHGRF2CH6ZTTD
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20240922035529,200,S6622G3T6MF4ZNVMZ2ILYQSUGLPYEK4D
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20241013112301,200,SDUQY76YACMHOWKGDGTOIAJ7JMPPNJBV
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20241022182909,200,L6JE3ZKBI7YZPYEHVLSYDHX4QKRL372I
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20241122085313,200,6S3R6SJHD2IH2MBE7PG5BI35WB45ORHV
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-ai-20230926,20241222155331,200,OXV42MZK5JFL4EHPYBRHFFR6TWRCLWLL
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-ai-20230926,20250121161608,200,J6U5F7GLPIJZRSRV76F5BG3N7N6ZUUSP
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20250210105712,200,IRKE5MVNAJLQUKIHAWRXOECBXYBVGP2B
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20250522004029,200,DOZDQADR62SPLKVFSPAXZQKLCD6Q5CLS
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-AI-20230926,20250808205700,200,Q3BK45VFDWXSWNVXXTBCJ7E3NASBQLGX
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-ai-20230926,20250913101023,200,XGPA4QJESNEHWPDGI2PTPD77QZNLA7YM
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-ai-20230926,20251213105044,200,RY2K6Q5OYBUCVIBTZFDXOJAB5JABNQG6
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-ai-20230926,20260307234023,200,BCWIRKES37PYU64OHF54YSVD25KPKNOE
+US,171100,Michigan State University,ai,provost_msu_edu_news_and_updates_2023_student_ai_20230926,https://provost.msu.edu/news-and-updates/2023-student-ai-20230926,20260609080743,200,54MBU4T7J724YD7GVCRIRZTTKXSQXLAN
+US,171100,Michigan State University,integrity,www_deanofstudents_msu_edu_academic_integrity,https://www.deanofstudents.msu.edu/academic-integrity,20210112142040,200,KVEKO4K2LKR4LRN6DBDF7DDWVRCHPI5Q
+US,171100,Michigan State University,integrity,www_deanofstudents_msu_edu_academic_integrity,https://deanofstudents.msu.edu/academic-integrity,20210120075903,200,PDMB3RV3NQS3ZKG2IWLUQGNUFMEZLVWY
+US,171100,Michigan State University,integrity,www_deanofstudents_msu_edu_academic_integrity,https://www.deanofstudents.msu.edu/academic-integrity,20210413225217,200,KVEKO4K2LKR4LRN6DBDF7DDWVRCHPI5Q
+US,171100,Michigan State University,integrity,www_deanofstudents_msu_edu_academic_integrity,https://www.deanofstudents.msu.edu/academic-integrity,20210621102244,200,KVEKO4K2LKR4LRN6DBDF7DDWVRCHPI5Q
+US,171100,Michigan State University,integrity,www_deanofstudents_msu_edu_academic_integrity,https://www.deanofstudents.msu.edu/academic-integrity,20210901174856,200,KVEKO4K2LKR4LRN6DBDF7DDWVRCHPI5Q
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20240201174419,200,PUTHAYWPIBJMXVPVHAHHOAUQJB6HZFFZ
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20240608063754,200,P5VNKBSENIUNJB7O3IL7VSKGVZVOORNA
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20240718162638,200,OHZTOOGJ7GYYDYIWRC42M5KT6UWNX42U
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20240809180443,200,B5EJ6SZMC72KR3TRAEUERIDMD63EQFHO
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20241109061052,200,N3UQRH2I6S7KLMKKJGTW2NG2C353JUWH
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20241211230511,200,HXGNGOLVT6PFU2DLPBRFDQ7GIF5ITTOY
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20241212142559,200,KGANCQ3BI23PCFKRJIZFU5XHWYERXPPF
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20241218140744,200,QHSDC6DHCTL3Y6UF5GKN2ALZOPMPZDKR
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250101093038,200,TVC4GXOJNDJ2WJ5A4XZWVFR4ARYTKSGR
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250214004753,200,3PJZX7UBCRFZOYSGW66NP6MQPNI3AV6A
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250404234415,200,M5DUVF3AJEMZRXVMCQKWRQWOFGXNK45T
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250427191340,200,G6PSXKA6MCVUO2RDQEAHDXNTCW6VOSMJ
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250503050312,200,ININCQDFAT2CJUBAZHBYCZ5BAGC2R2WI
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250505174027,200,MA5T3XLSCPNOGQ3BXTE5K3SLL6EJN467
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250514164533,200,SDBUAAOJQAAVY3E3NXKX5JKO26XJG7MY
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250605003807,200,ESYENMCCTJX2BX2UYSRF4C35IXDPR26B
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250704234724,200,DZBMXW6WJKJLF4YXJ5B2SFUBZNCODXH6
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250707165501,200,3CMJHMWXDZE4BC4U3OO6K3BHAQGR6IDH
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250723144536,200,CGA5ZRCXWD2MTHWJWNU3M6EBXTUCL4RI
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250815210957,200,U5QWH5V7RBAIFNTSQLN45MEHGXS342E5
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20250927103555,200,XIVPPXBILSVITPTFIUV2KRA7EMZ6ACA3
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20251211222947,200,T6AYW7DM4BUZV6TAHPDZ54XYHSZIYRYF
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20251212022924,200,YNAF3PX36ZJZGMOSVB4L7JG3JJYOEWQ5
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20260218063555,200,R3GRG7GHFW6AXHZFF32M7BG7JDH6FSDF
+US,190150,Columbia University,ai,provost_columbia_edu_content_office_senior_vice_provost_ai_policy,https://provost.columbia.edu/content/office-senior-vice-provost/ai-policy,20260506203736,200,SRELN6AWCMD34OG3WNYE2BJPXWNULDFF
+US,190415,Cornell University,integrity,teaching_cornell_edu_promoting_academic_integrity_online_teaching,https://teaching.cornell.edu/promoting-academic-integrity-online-teaching,20220114225447,200,DOVH4RIMLSQCLFXCUWE6ZFGTX4LMQ6CE
+US,190415,Cornell University,integrity,teaching_cornell_edu_promoting_academic_integrity_online_teaching,https://teaching.cornell.edu/promoting-academic-integrity-online-teaching,20220302145612,200,PIMKFZZ2SLY63BKELW5FBMAIYJ56IL2C
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://hamilton.edu/academic-integrity,20210324075519,200,P4HZWWXAAG5FOF4OSW6746G6DVZQYWQD
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://hamilton.edu/academic-integrity,20210524110946,200,ZNQ6F3ESFVJNFFAVZGU3ZO3QG4PA2WLS
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20210526124648,200,ZNQ6F3ESFVJNFFAVZGU3ZO3QG4PA2WLS
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20210604095703,200,ZQWAHYKXMRBUNTUGJ3DHSOW54MXE6S4S
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://hamilton.edu/academic-integrity,20210624210627,200,ZQWAHYKXMRBUNTUGJ3DHSOW54MXE6S4S
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20210701161515,200,ZQWAHYKXMRBUNTUGJ3DHSOW54MXE6S4S
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20210723150616,200,ZNQ6F3ESFVJNFFAVZGU3ZO3QG4PA2WLS
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://hamilton.edu/academic-integrity,20210924172625,200,5E37VICAEOWE3JYF6OQP5UK24XICACHO
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20211026040842,200,5E37VICAEOWE3JYF6OQP5UK24XICACHO
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220417152159,200,XA4F2TREQVXCDFE2TBAO6EOJNWKZB2EG
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220601104040,200,7FVWT6ZLCTQDAQOLS26HW6LP3ZWKCOKQ
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220624161317,200,UZOERXRXZSMRE44PMKKJVLFO4XEDT3GQ
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220626203618,200,UZOERXRXZSMRE44PMKKJVLFO4XEDT3GQ
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220704022856,200,RXR6VCS5CJWYC46QTSMBWSS2WT2VBK2R
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220726010558,200,TIVNHAZ55F4YAATOFL77LB5XGSUSOT4G
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220824172915,200,CC3RX6EGNI47RXEVJVDGPBWLXEJ4OASA
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20220924182615,200,S7WQTC25PMMEC2KX3HZXPITSJ4XJKBUD
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20221024110700,200,FQHE3FRQZYOFJJXNBKF7D3IP7CZLEP4R
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20221124183040,200,3F5KB4NT5E7RUH3NME6WWJUSANJ6V6UK
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230127124709,200,F63FB4IMA6F2CBPV5V73YENZIKPD4VUT
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230226160606,200,F63FB4IMA6F2CBPV5V73YENZIKPD4VUT
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230329101804,200,X23UNGYFYM7RHWJV5Z4VDT4D3ZSFOX6I
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230330113736,200,X23UNGYFYM7RHWJV5Z4VDT4D3ZSFOX6I
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230424205135,200,BAHBYSG3PHN4E65SILFNHPGWWUU3W3N3
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230529121718,200,Z75CBHN63CJLVT5AMUSUV4DQXDXEPHUQ
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230617012424,200,SNI6W4RMAAZAZMUQNHKYOISAKDPRXXSS
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230626161902,200,KWCISBSLUYII3LVF2DGKHCKJTQHBZ7O7
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230726044345,200,KWCISBSLUYII3LVF2DGKHCKJTQHBZ7O7
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230826142201,200,UWILHDWMM6FCLPIVO2UUOP2RDCJJXNEC
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20230930202315,200,2FT3FDV2TCXFEMUL7HMTX26C4DB5NKUT
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20231026170652,200,JB5AJ6EZNFUOK7MA75K4DCW3NRFKGS6G
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20231210010248,200,BZ73ECH4G27XSDVRDOY4KWE7TB2UJWJO
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20231228110509,200,BZ73ECH4G27XSDVRDOY4KWE7TB2UJWJO
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240129024628,200,2VHWSGGSK5EJTVCJLNYJGNMXOHFLUZCP
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240216081552,200,2VHWSGGSK5EJTVCJLNYJGNMXOHFLUZCP
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240326093243,200,W7Y7ASZXAUAWVBDCW4C4RDGRXAI2TNRR
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240425154818,200,NLUVTOAQVR6PNQ7BY2VQETVTVNEAAECO
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240620104319,200,REX47E3KOQTOUKPRM6DJW262NZMA4CXH
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240625085235,200,REX47E3KOQTOUKPRM6DJW262NZMA4CXH
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240726152144,200,REX47E3KOQTOUKPRM6DJW262NZMA4CXH
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240829125908,200,EZMBWANZJLKRVKWTTMT3JLKR5CEAA6KP
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240911155723,200,NXUZBGTO3XNJ2ARPGYNT7BPKXVK34DWN
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20240927222610,200,IEHBAV6BQ5OLPFCCKPAIJ26J4ETELYH7
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20241228042057,200,LOKZSNEFDQQH7NK6LUGQYOGYT7GIE5PQ
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20250128041627,200,7MQUTPIODQEU3YJ7INCDEMXV7C23FPVD
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20250211151452,200,7MQUTPIODQEU3YJ7INCDEMXV7C23FPVD
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20250216132512,200,7MQUTPIODQEU3YJ7INCDEMXV7C23FPVD
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20250622214430,200,NV4YXKXRRI4ZW6TBLPJ6HMKS7WWYVFGB
+US,191515,Hamilton College,integrity,hamilton_edu_academic_integrity,https://www.hamilton.edu/academic-integrity,20251017075622,200,MQYQL5426FEO2GNPXSJ7CZCBHTZYEKGM
+US,196097,Stony Brook University,ai,www_stonybrook_edu_commcms_academic_integrity_generative_ai_index_php_accordion_,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,20240922220938,200,WJIPKYU3IAYX2P7HUIUIS33M6EWG5VZ7
+US,196097,Stony Brook University,ai,www_stonybrook_edu_commcms_academic_integrity_generative_ai_index_php_accordion_,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,20250508083204,200,RJO35W4R2BBLS62AEVUK2N63TDF7OHS5
+US,196097,Stony Brook University,ai,www_stonybrook_edu_commcms_academic_integrity_generative_ai_index_php_accordion_,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,20250727120731,200,PPCLEURI354653SI2KVXHHQWSGB2JOF3
+US,196097,Stony Brook University,ai,www_stonybrook_edu_commcms_academic_integrity_generative_ai_index_php_accordion_,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,20250909234252,200,RJO35W4R2BBLS62AEVUK2N63TDF7OHS5
+US,196097,Stony Brook University,ai,www_stonybrook_edu_commcms_academic_integrity_generative_ai_index_php_accordion_,https://www.stonybrook.edu/commcms/academic_integrity/generative-ai/index.php?accordion=content-d19e272,20260616155936,200,RJO35W4R2BBLS62AEVUK2N63TDF7OHS5
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20210505232320,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20210804034208,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220120230449,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220123225643,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220201201328,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220225210310,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220302222117,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220308032825,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220418010856,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220624220908,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220628204033,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20220812181529,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20221003215745,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20221013110044,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20230627145211,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20230712020529,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,198419,Duke University,integrity,integrity_duke_edu,https://integrity.duke.edu/,20230803055306,200,EMN4FGMFSIFMZ6KUEDSEI2JF2XOYXIOZ
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20231211152940,200,2JDMA3RE35YYN3BRI354HX7TTT5LNCLN
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20240908093547,200,HEIOXJHPY23TJ3WI32SAERPCNNUYAEH3
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20241106060429,200,O24GZIJ5MI4FVCHYYADOTZ72NXCQF6UQ
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20241227015622,200,OPACB3WQEXLYIXSXG3SW4QHYQSQA2H42
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20250125202248,200,XZ23V2HRWDZZ364IQWZT5CMECG7YUKQO
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20250324013043,200,Q7HCFLUJIHZSWS6VMUGEZWWRNXDTDMWH
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20250328133044,200,W75C7KI4DVVEUNZZUTH5Q4MY7IZXVM43
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20251210132427,200,QZRW25TNWX44LHV2V54D2RPURPONYQWQ
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20251217030630,200,SFA2SG3G7DA5455TPJMXHAGTEJHVKI6S
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20251219062608,200,F6JCBH6CFRDPM7AZQNFECLM7WRRLT3M4
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20260304200822,200,DQY7Q6I7LFT3CYJKNBD42IK2AXN7P6YQ
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20260411060243,200,7XNEPK6DN4YVUWUH653AFNON3IG5S4K5
+US,216339,Temple University,ai,teaching_temple_edu_faculty_guide_ai,https://teaching.temple.edu/faculty-guide-ai,20260607054632,200,WVSKKBZJKMQGPBVPLS7N2OVOJOSHIG5E
+US,227757,Rice University,ai,provost_rice_edu_communications_faculty_guidance_generative_ai,https://provost.rice.edu/communications/faculty-guidance-generative-ai,20231204155232,200,26FAQQKUTYGWQPHZHLFYTI665ZWWVL7G
+US,227757,Rice University,ai,provost_rice_edu_communications_faculty_guidance_generative_ai,https://provost.rice.edu/communications/faculty-guidance-generative-ai,20240621134058,200,K3WP7BVFCHIJ3X7AFU6D2VCUY5LQIWCU
+US,227757,Rice University,ai,provost_rice_edu_communications_faculty_guidance_generative_ai,https://provost.rice.edu/communications/faculty-guidance-generative-ai,20241105154712,200,HMJLCESDSXD46WRYJ5ENRXMXV57LKKFC
+US,227757,Rice University,ai,provost_rice_edu_communications_faculty_guidance_generative_ai,https://provost.rice.edu/communications/faculty-guidance-generative-ai,20250911084133,200,HEA7P5Y4ZGU75KGYJMDKG5RL4TLD33JO
+US,227757,Rice University,ai,provost_rice_edu_communications_faculty_guidance_generative_ai,https://provost.rice.edu/communications/faculty-guidance-generative-ai,20260610120351,200,KQ63ARHT2FUXYAESUVYMZPRCTUSAJEUB
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20240617173220,200,VTFOITLNGXAZLSOUOZKR5UTFSV5TGPQK
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20240818014542,200,LJXIVN2M2I2TT4LWQPPGGEXBTRB577F6
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20241012131257,200,P7AVTEOP36KJMGWOQ2BW3DYKD2FIECBP
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20250322191921,200,W7WAGIRSDI3CSRRRBWGIITKERGZM3O4X
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20250815125120,200,BRRJNOCCUCHR2QTRP5HIPWA3OLZDAU65
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20251208135755,200,BTM5E3P4ADOYTSVAPTOHVL7BX5DG5FFY
+US,232186,George Mason University,ai,provost_gmu_edu_news_2023_11_stearns_center_offers_guidance_generative_ai_tools,https://provost.gmu.edu/news/2023-11/stearns-center-offers-guidance-generative-ai-tools,20260411023422,200,7OX5NO467TH3OHFBHBVXIVJ4IMUZVTRJ
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20210227074843,200,IBVBWL4Y5F7YKUNULVH7TPWJUDKX2YIS
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20210422234224,200,V5U2N2MNIJ6YGN55IGWT3RGAZ2NLUINV
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20211216022110,200,SE6ZQSWGPV2GAKPKIDYYKX2T2TTMZYBV
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220121091040,200,DAX2FTIUVF6VKER7X66FOJCFSSNIE7JO
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220122011630,200,25OQMACLZAORRYADS7IUXS4HAKHH3UKE
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220125180243,200,7VW7D2DBFMLVJIOM7D6CBBFZS5TBQOV2
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220418015103,200,JZVLTYDC326KLG4OODRCK7XF5SGQNK5N
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220425160244,200,EVZC535NNFXN5S53RP2OGQWBTGFL6VL3
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220604215345,200,V4RGLQDZ7QBVRWDNINNNQ6CLWAO3N2P5
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220708030054,200,SEM4HQBG256G6WNYVMAX4DLU74ATD3ZG
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20220728001652,200,HNPTUEKR3EPAWOE2LAU35PD62CTPOHPO
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20221006203712,200,QFI4AXZEXSOJFLAIU76OUATYHE5U6ENW
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20221225110944,200,NKGPWPKA3ON5ND62SLG6B2SDW6TMPLSC
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20230405065514,200,LS2Q6ZLSAFCJAQHPC6AOF4J5JIMWT53C
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20230518102957,200,SWPCISSHLJI2LEVOV3WVTTE3VO5FFN5W
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20230603003457,200,IPOZTPSJBDR52KGBI4P34OWRDABCIA66
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20230630190249,200,SKEAYRCYRUYFF3T4OH4JCVFE723T5UCP
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20230810220834,200,6MZYK4KD7I2ERFQ3WY34V2YAM6BKD2H4
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20230929171827,200,D3K7KTHW4CZ5GV3LI7M3QG34N6VO2R5D
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20231104170202,200,Q53IWY7J3SICNG4SFN4PHNTFFPUSK364
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20231215225621,200,Q23F6MPEQ4UAZLR6MJ4WQ6EZN3VQBT4W
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240330230149,200,BSYI5QZTL3WSPV6HDRIOATHD3MC37YEH
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240404000935,200,6LAIZHVEAUR7SSPDBRA6X33TBYABFDVI
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240514224406,200,XFNCRHQBI575BBJHY7N5KFQLK4V3NXLH
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240628082451,200,HKTTRJMQEZE4THR45OCZ2HF4E7ONUM3J
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240714035544,200,YFPTTZLCLESLTQQMAHBVXH4C5N6MZCQY
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240726090952,200,VHE3BO33UAQRZE26V6R6T4WLVRXQ5ILT
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240801185222,200,RIOVOT576YTUDLB3YTF7HWSDAFVVULMZ
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20240927222228,200,RFN7TRMGN77GHK3IAYVMSH7FJIRGGMPL
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20241011054557,200,NG2CAJGSZ5PW5LDMVKPXL7DZB3TGIDF7
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20241205071259,200,I25CJIOJSMF7FPXVWF26QAGYVFLRJVJD
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250207114622,200,3EOTPSIKWJS2W6E7UY4IZQW2CFDF5FUP
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250306184447,200,7JSXAARCACBOTCMPZXCDEF36RDIZLKDW
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250328042158,200,32BEWRBC6KRZJVZGXUKH6NADNM5WPMDA
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250409084053,200,LORWHQFF625T75Z4OK545CPCH3UI2VM4
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250522195015,200,SWYZR762UEPAD5NLY4B7D4YMAZXAR7OG
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250613021901,200,EJC7SNRUMVAF4Z2UO7VNGSFAYT5WEKJ7
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250808134217,200,WMCZXAFQM5DQ7ZQQ72ZYZ5JKJT27VKCR
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20250905155042,200,LS7FLNWUK3TQEHWNSWP23LPZLXIR2NIZ
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20251217055224,200,DJAGDCWLAKYLXICYI7SMDCAWIFBBHJF5
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20260114234435,200,GFR67XDOXNK7OMVW64W7YQWZ6FMHK64R
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20260311062959,200,WJO4QDSDWTCXYV5WTHODBCIPRBCVOMI2
+US,232186,George Mason University,integrity,studentconduct_gmu_edu,https://studentconduct.gmu.edu/,20260610032614,200,FLC6Q7MW52AVFWMTCJ5KLFQVL7YWVFCU

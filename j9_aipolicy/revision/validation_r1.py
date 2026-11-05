@@ -23,6 +23,7 @@ import second_coder as SC  # the pipeline's alternative rule set
 STRICT = re.compile(r"artificial intelligence|generative a\.?i\.?|gen(?:erative)?\s?ai|chat\s?gpt|large language model|\bllms?\b|\bgpt\b", re.I)
 PROV = list(B.PROVISIONS.keys())
 seed = pd.read_csv(AN / "scored_seed.csv", dtype={"unitid": str, "timestamp": str}); seed["base"] = str(AN)
+seed["page_key"] = seed.local_path.apply(lambda p: Path(p).stem.rsplit("__", 1)[0])  # as for the other pipelines, so no seed page drops out of a groupby
 allsc = pd.read_csv(AN / "scored_raw_vs_clean.csv", dtype={"unitid": str, "timestamp": str}); allsc["page_key"] = allsc.local_path.apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
 xn = allsc[allsc.pipeline == "XN"].copy(); xn["base"] = str(XN)
 bf = set(map(tuple, pd.read_csv(AN / "seed_backfill_pages.csv", dtype=str).values)) if (AN / "seed_backfill_pages.csv").exists() else set()
@@ -50,11 +51,14 @@ A, Bc = np.array(A), np.array(Bc)
 rows = []
 for j, p in enumerate(PROV):
     a, b = A[:, j], Bc[:, j]
-    rows.append({"provision": p, "n": len(a), "prevalence_primary": round(a.mean(), 3), "raw_agreement": round(float(np.mean(a == b)), 3), "cohen_kappa": round(SC.cohen_kappa(a, b), 3), "gwet_ac1": round(SC.gwet_ac1(a, b), 3)})
-rows.append({"provision": "pooled", "n": A.size, "prevalence_primary": round(A.mean(), 3), "raw_agreement": round(float(np.mean(A == Bc)), 3), "cohen_kappa": round(SC.cohen_kappa(A.ravel(), Bc.ravel()), 3), "gwet_ac1": round(SC.gwet_ac1(A.ravel(), Bc.ravel()), 3)})
+    rows.append({"provision": p, "n": len(a), "prevalence_primary": float(a.mean()), "raw_agreement": float(np.mean(a == b)), "cohen_kappa": float(SC.cohen_kappa(a, b)), "gwet_ac1": float(SC.gwet_ac1(a, b))})
+rows.append({"provision": "pooled", "n": A.size, "prevalence_primary": float(A.mean()), "raw_agreement": float(np.mean(A == Bc)), "cohen_kappa": float(SC.cohen_kappa(A.ravel(), Bc.ravel())), "gwet_ac1": float(SC.gwet_ac1(A.ravel(), Bc.ravel()))})
 sc_df = pd.DataFrame(rows); sc_df.to_csv(AN / "second_coder_r1.csv", index=False); print("=== second coder (cleaned, strict, 80 AI-addressing snapshots) ===\n", sc_df.to_string(index=False))
 # (b) unscoped remedy language on AI-addressing endpoint pages
-ep = snaps[snaps.ts <= "2026-03-31"].sort_values("ts").groupby(["unitid", "page_key" if "page_key" in snaps.columns else "local_path"]).tail(1)
+qv = pd.read_csv(AN / "scored_quarter_versions.csv", dtype={"unitid": str, "timestamp": str}) if (AN / "scored_quarter_versions.csv").exists() else seed.iloc[:0].copy()
+qv["base"] = str(AN); qv["page_key"] = qv.local_path.apply(lambda p: Path(p).stem.rsplit("__", 1)[0])  # quarter-end versions the original retrieval missed
+snaps_b = pd.concat([snaps, qv[qv.unitid.isin(sample)]], ignore_index=True); snaps_b["ts"] = pd.to_datetime(snaps_b.timestamp, format="%Y%m%d%H%M%S")
+ep = snaps_b[snaps_b.ts <= "2026-03-31 23:59:59"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
 ep = ep[ep.ai_addressed_clean_strict.astype(int) == 1]
 ss = pd.read_csv(AN / "seed_samples.csv", dtype=str); sysmap = dict(zip(ss.unitid, ss.system))
 urows = []
@@ -64,7 +68,7 @@ for r in ep.itertuples(index=False):
                   "appeal_anywhere": int(bool(B.PROVISIONS["appeal"].search(t))), "l2_anywhere": int(bool(B.PROVISIONS["l2_protection"].search(t))),
                   "appeal_scoped": int(r.appeal_present_clean_strict), "l2_scoped": int(r.l2_protection_present_clean_strict)})
 u = pd.DataFrame(urows); inst = u.groupby(["system", "unitid"])[["appeal_anywhere", "l2_anywhere", "appeal_scoped", "l2_scoped"]].max().reset_index()
-summ = inst.groupby("system")[["appeal_anywhere", "l2_anywhere", "appeal_scoped", "l2_scoped"]].mean().round(2); summ["n_inst_addressing_ai"] = inst.groupby("system").size()
+summ = inst.groupby("system")[["appeal_anywhere", "l2_anywhere", "appeal_scoped", "l2_scoped"]].mean(); summ["n_inst_addressing_ai"] = inst.groupby("system").size()
 summ.to_csv(AN / "unscoped_remedies.csv"); print("\n=== remedy language anywhere on the AI-addressing endpoint pages vs within the AI window ===\n", summ.to_string())
 # (c) audit sample of 40 flagged passages (strict, window 400) with the matched provision and the passage
 rng = np.random.default_rng(40); arows = []

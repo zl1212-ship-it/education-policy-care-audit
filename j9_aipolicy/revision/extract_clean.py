@@ -13,7 +13,9 @@ extract_text_clean(path) -> same decoding, then: (1) drop structural boilerplate
                             link lists go while paragraphs with inline links stay.
 Returns single-space-collapsed text exactly like build_panel.extract_text so that
 build_panel.score_text can be applied unchanged. extract_clean_info(path) also returns which
-rule selected the content region.
+rule selected the content region. Some archived responses are stored compressed: gzip, which
+build_panel.extract_text already undoes, and deflate, which is undone here for both extractors.
+Both extractors read a PDF with pypdf and give no text for a binary file.
 """
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
@@ -32,6 +34,58 @@ from lxml import etree
 if str(XN) not in sys.path:
     sys.path.insert(0, str(XN))
 import build_panel as B  # noqa: E402
+import zlib
+
+
+def _looks_like_document(b):
+    return b[:5] == b"%PDF-" or b.lstrip(b"\xef\xbb\xbf \t\r\n")[:1] == b"<"
+
+
+def _decode(raw):
+    """Undo the content encoding an archived response is stored with: gzip (magic bytes) or deflate
+    (zlib-wrapped or raw; no magic bytes, so tried only when the bytes are not markup or a PDF, and
+    kept only when the result is)."""
+    if raw[:2] == b"\x1f\x8b":
+        try:
+            return gzip.decompress(raw)
+        except Exception:
+            return raw
+    if _looks_like_document(raw):
+        return raw
+    for wbits in (15, -15):
+        try:
+            out = zlib.decompress(raw, wbits)
+        except Exception:
+            continue
+        if _looks_like_document(out):
+            return out
+    return raw
+
+
+def _raw_text(path):
+    """build_panel.extract_text on the decoded bytes (it undoes gzip only). A PDF is read with the PDF
+    text extractor and a binary file (an image stored as a page) gives no text, as in the clean
+    extractor, so that neither arm parses a binary stream as markup."""
+    raw = _decode(Path(path).read_bytes())
+    if raw[:5] == b"%PDF-":
+        return _text_from_string(_pdf_text(raw))
+    if _looks_binary(raw):
+        return ""
+    for enc in ("utf-8", "latin-1"):
+        try:
+            html = raw.decode(enc)
+            break
+        except UnicodeDecodeError:
+            html = raw.decode("utf-8", "ignore")
+    p = B._Text()
+    try:
+        p.feed(html)
+    except Exception:
+        pass
+    return " ".join("".join(p.parts).split())
+
+
+B.extract_text = _raw_text  # every revision script reads raw text through build_panel.extract_text
 
 BOILER_TAGS = {"script", "style", "noscript", "head", "title", "nav", "header", "footer",
                "aside", "form", "button", "select", "option", "iframe", "svg", "template",
@@ -75,13 +129,7 @@ MENU_ANCHOR_WORDS = 10  # a link-dense block whose links average 10+ words each 
 
 
 def _read_bytes(path):
-    raw = Path(path).read_bytes()
-    if raw[:2] == b"\x1f\x8b":
-        try:
-            raw = gzip.decompress(raw)
-        except Exception:
-            pass
-    return raw
+    return _decode(Path(path).read_bytes())
 
 
 def _parse(raw):
@@ -251,7 +299,7 @@ def _text(el):
 
 
 def _pdf_text(raw):
-    """Text of a PDF stored by the fetcher as if it were HTML (two curated seeds are PDFs)."""
+    """Text of a PDF stored by the fetcher as if it were HTML (three cross-national curated pages are PDFs)."""
     import io
     try:
         from pypdf import PdfReader

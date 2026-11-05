@@ -26,7 +26,7 @@ cov = pd.read_csv(PIPE / "data/coverage.csv", dtype={"unitid": str}); cov = cov[
 cov["first_ts"] = pd.to_datetime(cov["first_capture"].astype(str), format="%Y%m%d%H%M%S", errors="coerce")
 cov["last_ts"] = pd.to_datetime(cov["last_capture"].astype(str), format="%Y%m%d%H%M%S", errors="coerce")
 inst_first = cov.groupby("unitid")["first_ts"].min(); inst_last = cov.groupby("unitid")["last_ts"].max(); inst_haspost = cov.groupby("unitid")["has_post"].max()
-QENDS = pd.period_range("2021Q1", "2026Q1", freq="Q").to_timestamp(how="end").normalize()
+QENDS = pd.period_range("2021Q1", "2026Q1", freq="Q").to_timestamp(how="end")
 matched = set(map(tuple, pd.read_csv(AN / "matched_pages_us.csv", dtype=str).values))
 junk = set(map(tuple, pd.read_csv(AN / "junk_pages.csv", dtype=str).values))
 policy = set(map(tuple, pd.read_csv(AN / "policy_pages.csv", dtype=str).values))
@@ -73,10 +73,7 @@ variants = {
     "clean_strict_policy_pages": (sc[[(u, k) in policy for u, k in zip(sc.unitid, sc.page_key)]], "_clean_strict", "ai_addressed_clean_strict", "n_ai_terms_clean_strict", "words_clean", UIDS_FIXED),
     "clean_strict_policy_matched": (sc[[(u, k) in matched_policy for u, k in zip(sc.unitid, sc.page_key)]], "_clean_strict", "ai_addressed_clean_strict", "n_ai_terms_clean_strict", "words_clean", UIDS_FIXED),
 }
-# a patched copy of the pipeline's event-study script that takes the panel path from argv
-src = (PIPE / "analyze_event_study.py").read_text()
-src = src.replace('PANEL = HERE / "data" / "panel.csv"', 'PANEL = Path(sys.argv[1])').replace('OUT = HERE / "data" / "results_event_study.csv"', 'OUT = Path(sys.argv[2])')
-(AN / "event_study_runner.py").write_text(src)
+# event_study_runner.py is the pipeline's event-study script taking the panel path from argv
 summary = []
 for name, (snaps, suf, aa, nai, ln, uids) in variants.items():
     panel = build(snaps, suf, aa, nai, ln, uids)
@@ -87,7 +84,9 @@ for name, (snaps, suf, aa, nai, ln, uids) in variants.items():
         diffs = {c: int((m[f"{c}_c"] != m[f"{c}_n"]).sum()) for c in ["ai_addressed", "restrictive_idx", "procedural_idx", "net_restrictiveness"]}
         print(f"raw replication vs committed panel.csv: rows committed {len(comm)}, rebuilt {len(panel)}, merged {len(m)}, mismatches {diffs}", flush=True)
     res = AN / f"results_event_study_{name}.csv"
-    r = subprocess.run(["/usr/bin/python3", str(AN / "event_study_runner.py"), str(out), str(res)], capture_output=True, text=True, cwd=str(PIPE))
+    if res.exists(): res.unlink()  # never fall back on an earlier run's results
+    r = subprocess.run(["/usr/bin/python3", str(REV / "event_study_runner.py"), str(out), str(res)], capture_output=True, text=True, cwd=str(PIPE))
+    if r.returncode != 0 or not res.exists(): sys.exit(f"event study failed ({name}):\n{r.stderr.strip()[-800:]}")
     print(f"--- {name}: {panel.unitid.nunique()} institutions, {len(panel)} rows\n{r.stdout.strip()[:1500]}\n{r.stderr.strip()[-600:]}", flush=True)
     if res.exists():
         d = pd.read_csv(res)

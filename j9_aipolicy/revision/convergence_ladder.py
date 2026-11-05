@@ -1,7 +1,7 @@
-"""Convergence analysis with a normalization ladder (reviewer points 1 and 2).
+"""Convergence analysis with a normalization ladder.
 
 Rungs (cumulative):
-  L0  replicate the submitted analysis exactly (raw extractor, AI windows of +-300 chars)
+  L0  the submitted settings (raw extractor, which now also reads PDF pages and deflate-compressed captures; AI windows of +-300 chars; quarters cut at the start of their last day)
   L1  boilerplate-stripped text (extract_clean.extract_text_clean)
   L2  + British-to-American spelling normalization
   L3  + removal of role nouns, governance bodies, regulators, regulatory instruments
@@ -43,7 +43,7 @@ _ISE_EXCEPT = set("""advertise advise apprise arise chastise comprise compromise
 devise disguise enterprise excise exercise expertise franchise improvise incise merchandise otherwise
 likewise clockwise anticlockwise counterclockwise wise paradise poise noise praise raise precise premise
 promise reprise revise supervise surmise surprise televise treatise turquoise anise cruise bruise guise
-rise sunrise moonrise appraise mortise valise""".split())
+rise sunrise moonrise appraise mortise valise liaise""".split())
 _OUR_STEMS = ["behavi", "col", "fav", "flav", "hon", "hum", "lab", "neighb", "od", "rig", "rum", "sav",
               "splend", "val", "vap", "vig", "cand", "harb", "arm", "clam", "demean", "endeav", "ferv",
               "succ", "tum", "parl", "ard", "disc"]  # discolour
@@ -53,7 +53,7 @@ _RE_WORDS = {"centre": "center", "centres": "centers", "centred": "centered", "c
              "calibre": "caliber", "sombre": "somber", "spectre": "specter", "lustre": "luster",
              "manoeuvre": "maneuver", "manoeuvres": "maneuvers"}
 _OGUE = {"catalogue": "catalog", "catalogues": "catalogs", "catalogued": "cataloged",
-         "cataloguing": "cataloging", "dialogue": "dialog", "dialogues": "dialogs",
+         "cataloguing": "cataloging", 
          "analogue": "analog", "analogues": "analogs", "monologue": "monolog", "epilogue": "epilog",
          "prologue": "prolog"}
 _ENCE = {"defence": "defense", "defences": "defenses", "offence": "offense", "offences": "offenses",
@@ -328,9 +328,17 @@ l4_counter = {"US": Counter(), "UK": Counter(), "AU": Counter(), "CA": Counter()
 
 
 def windows(t, pat=None):
+    """AI-scoped text: the passages within AIWIN characters of an AI term, overlapping passages
+    merged (as in complement()) so that no stretch of text enters twice."""
     pat = pat or B.AI_TERMS
-    sp = [(m.start(), m.end()) for m in pat.finditer(t)]
-    return " ".join(t[max(0, s - AIWIN):e + AIWIN] for s, e in sp).lower()
+    sp = []
+    for m in pat.finditer(t):
+        s, e = max(0, m.start() - AIWIN), m.end() + AIWIN
+        if sp and s <= sp[-1][1]:
+            sp[-1][1] = max(sp[-1][1], e)
+        else:
+            sp.append([s, e])
+    return " ".join(t[s:e] for s, e in sp).lower()
 
 
 def complement(t, maxwords=3000):
@@ -453,8 +461,8 @@ def quarterly_series(X, docs):
         S = cosine_similarity(X[idx])
         sysv = sub["sys"].to_numpy()
         w, c, a = pair_means(S, sysv)
-        rows.append({"event_q": k, "n_inst": sub["uid"].nunique(), "within_cos": round(w, 4),
-                     "cross_cos": round(c, 4), "all_cos": round(a, 4)})
+        rows.append({"event_q": k, "n_inst": sub["uid"].nunique(), "within_cos": round(w, 6),
+                     "cross_cos": round(c, 6), "all_cos": round(a, 6)})
         mats[k] = (S, sysv, sub["uid"].to_numpy())
     return pd.DataFrame(rows), mats
 

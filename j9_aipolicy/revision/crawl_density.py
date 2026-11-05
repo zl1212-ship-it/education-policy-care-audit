@@ -1,6 +1,14 @@
-"""Wayback crawl density and interval-censored adoption (reviewer point 4), from cdx_captures.csv.
-Writes captures_per_page_quarter.csv, density_summary.csv, density_vs_exposure.csv,
-adoption_intervals.csv, adoption_summary.csv, adoption_turnbull.csv, cdx_completeness.csv."""
+"""Wayback crawl density and interval-censored adoption, from the capture listings (cdx_captures.csv,
+seed_cdx_captures.csv, screened_cdx_captures.csv). Density is computed on the sample's tracked pages
+(seed_pages.csv), over every quarter from 2021Q1 to 2026Q2 and, separately, from each page's first
+listed capture on (quarters before a page first appears in the archive, such as those of an AI page
+created after the shock, are then not counted as missing captures). Adoption timing covers the
+institutions whose tracked pages first carry AI text after the shock; an institution whose pages
+already carried it before the shock has no adoption date and is counted separately. Shares and
+estimates are stored unrounded. Writes captures_per_page_quarter.csv, density_summary.csv,
+density_summary_by_pagetype.csv, density_overall.csv, density_vs_exposure.csv,
+density_exposure_correlation.csv, adoption_intervals.csv, adoption_summary.csv, adoption_turnbull.csv,
+cdx_completeness.csv."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
@@ -44,10 +52,14 @@ if len(missing):
     if rows:
         seed_list = pd.concat([seed_list, pd.DataFrame(rows)], ignore_index=True); seed_list.to_csv(AN / "seed_cdx_captures.csv", index=False)
 cdx = pd.concat([cdx, seed_list[cdx.columns.intersection(seed_list.columns)]], ignore_index=True)
+scr = pd.read_csv(AN / "screened_cdx_captures.csv", dtype=str) if (AN / "screened_cdx_captures.csv").exists() else pd.DataFrame(columns=cdx.columns)  # screened US pages
+cdx = pd.concat([cdx, scr[cdx.columns.intersection(scr.columns)]], ignore_index=True)
 # daily collapse for every system (the seed listings are already daily-collapsed)
 cdx["day"] = cdx["timestamp"].str[:8]; cdx = cdx.drop_duplicates(["page_key", "day"])
 done = pd.concat([done, seed_cov.rename(columns={"url": "query_url"}).assign(system="US")[["system", "unitid", "page_type", "page_key", "query_url"]]], ignore_index=True)
 urlset = pd.concat([urlset, seed_cov.rename(columns={"url": "query_url"}).assign(system="US")[["system", "unitid", "page_type", "page_key", "query_url"]]], ignore_index=True)
+scr_pages = scr[["system", "unitid", "page_type", "page_key", "query_url"]].drop_duplicates("page_key")
+done = pd.concat([done, scr_pages], ignore_index=True); urlset = pd.concat([urlset, scr_pages], ignore_index=True)
 cdx["ts"] = pd.to_datetime(cdx["timestamp"], format="%Y%m%d%H%M%S", errors="coerce")
 cdx = cdx.dropna(subset=["ts"])
 cdx = cdx[(cdx.ts >= "2021-01-01") & (cdx.ts < "2026-07-01")]
@@ -61,6 +73,10 @@ comp.to_csv(AN / "cdx_completeness.csv"); print("=== CDX completeness ===\n", co
 
 # (a) captures per page per quarter
 pages = done[["system", "unitid", "page_type", "page_key"]].drop_duplicates()
+# the sample's tracked pages only, with the page types of seed_pages.csv (the screened US pages have no CDX listing here)
+tracked = pd.read_csv(AN / "seed_pages.csv", dtype=str); tracked = tracked[tracked.in_sample == "1"][["system", "unitid", "page_type", "page_key"]]
+pages = pages.drop(columns="page_type").drop_duplicates().merge(tracked, on=["system", "unitid", "page_key"])
+print("tracked pages in the density grid:", pages.groupby("system").size().reindex(SYSTEMS).to_dict(), "of", tracked.groupby("system").size().reindex(SYSTEMS).to_dict())
 quarters = pd.period_range("2021Q1", "2026Q2", freq="Q")
 grid = pages.merge(pd.DataFrame({"quarter": quarters}), how="cross")
 cnt = cdx.groupby(["page_key", "quarter"]).agg(n_captures=("timestamp", "size"), n_digests=("digest", "nunique")).reset_index()
@@ -70,18 +86,27 @@ def period(q):
     if q <= pd.Period("2024Q4", freq="Q"): return "shock-to-plateau 2022Q4-2024Q4"
     return "late 2025Q1-2026Q2"
 pq["period"] = pq["quarter"].apply(period)
+first_q = cdx.groupby("page_key")["quarter"].min()  # each page's first listed capture
+pq["from_first"] = [int(k in first_q.index and q >= first_q[k]) for k, q in zip(pq.page_key, pq.quarter)]
 pq.to_csv(AN / "captures_per_page_quarter.csv", index=False)
 # gaps between successive captures per page
-cdx_s = cdx.sort_values(["page_key", "ts"])
+cdx_s = cdx.merge(pages[["system", "unitid", "page_key"]], on=["system", "unitid", "page_key"]).sort_values(["page_key", "ts"])  # tracked pages, as the grid
 cdx_s["gap_days"] = cdx_s.groupby("page_key")["ts"].diff().dt.days
 cdx_s["period"] = cdx_s["quarter"].apply(period)
 gap = cdx_s.groupby(["system", "period"])["gap_days"].median().rename("median_gap_days")
+def zero_from_first(g): return float((g.loc[g.from_first == 1, "n_captures"] == 0).mean()) if (g.from_first == 1).any() else np.nan
 summ = pq.groupby(["system", "period"]).agg(page_quarters=("n_captures", "size"), mean_captures=("n_captures", "mean"),
                                            median_captures=("n_captures", "median"), share_zero=("n_captures", lambda s: (s == 0).mean()),
                                            mean_digests=("n_digests", "mean")).join(gap)
+summ["share_zero_from_first"] = pq.groupby(["system", "period"]).apply(zero_from_first)
 summ_pt = pq.groupby(["system", "page_type"]).agg(mean_captures=("n_captures", "mean"), median_captures=("n_captures", "median"),
                                                    share_zero=("n_captures", lambda s: (s == 0).mean()))
-summ.round(3).to_csv(AN / "density_summary.csv"); summ_pt.round(3).to_csv(AN / "density_summary_by_pagetype.csv")
+summ_pt["share_zero_from_first"] = pq.groupby(["system", "page_type"]).apply(zero_from_first)
+overall = pq.groupby("system").agg(pages=("page_key", "nunique"), page_quarters=("n_captures", "size"), share_zero=("n_captures", lambda s: (s == 0).mean()),
+                                   page_quarters_from_first=("from_first", "sum")).reindex(SYSTEMS)
+overall["share_zero_from_first"] = pq.groupby("system").apply(zero_from_first)
+summ.to_csv(AN / "density_summary.csv"); summ_pt.to_csv(AN / "density_summary_by_pagetype.csv"); overall.to_csv(AN / "density_overall.csv")
+print("\n=== share of page-quarters with no capture, all quarters and from each page's first capture ===\n", overall.round(3).to_string())
 print("\n=== captures per page-quarter by system and period ===\n", summ.round(2).to_string())
 print("\n=== by page type ===\n", summ_pt.round(2).to_string())
 
@@ -104,13 +129,13 @@ for s in SYSTEMS:
         if len(dd) >= 5:
             pr = st.pearsonr(dd.intl_share, dd[col]); sp = st.spearmanr(dd.intl_share, dd[col])
             slope = np.polyfit(dd.intl_share, np.log1p(dd[col]), 1)[0]
-            rows.append({"system": s, "density": col, "n": len(dd), "pearson_r": round(pr[0], 3), "pearson_p": round(pr[1], 3),
-                         "spearman_rho": round(sp[0], 3), "spearman_p": round(sp[1], 3), "ols_slope_log1p_density_on_share": round(slope, 3)})
+            rows.append({"system": s, "density": col, "n": len(dd), "pearson_r": round(pr[0], 6), "pearson_p": round(pr[1], 6),
+                         "spearman_rho": round(sp[0], 6), "spearman_p": round(sp[1], 6), "ols_slope_log1p_density_on_share": round(slope, 6)})
     d2 = inst[(inst.system == s)].dropna(subset=["total_enroll", "density_all"])
     if len(d2) >= 5:
         sp = st.spearmanr(d2.total_enroll, d2.density_all)
         rows.append({"system": s, "density": "density_all vs total_enroll", "n": len(d2), "pearson_r": np.nan, "pearson_p": np.nan,
-                     "spearman_rho": round(sp[0], 3), "spearman_p": round(sp[1], 3), "ols_slope_log1p_density_on_share": np.nan})
+                     "spearman_rho": round(sp[0], 6), "spearman_p": round(sp[1], 6), "ols_slope_log1p_density_on_share": np.nan})
 corr = pd.DataFrame(rows); corr.to_csv(AN / "density_exposure_correlation.csv", index=False)
 print("\n=== crawl density vs exposure ===\n", corr.to_string(index=False))
 
@@ -125,6 +150,9 @@ if (AN / "seed_backfill_pages.csv").exists():  # US institutions observed on a s
     keep = set(map(tuple, pd.read_csv(AN / "seed_backfill_pages.csv", dtype=str).values))
     back = allsc[(allsc.pipeline == "US") & [(u, k) in keep for u, k in zip(allsc.unitid, allsc.page_key)]]
     sc = pd.concat([sc, back], ignore_index=True)
+if (AN / "scored_quarter_versions.csv").exists():  # versions in force at quarter ends that the original retrieval missed
+    qv = pd.read_csv(AN / "scored_quarter_versions.csv", dtype={"unitid": str, "timestamp": str}); qv["page_key"] = qv["local_path"].apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
+    sc = pd.concat([sc, qv], ignore_index=True)
 sc["ts"] = pd.to_datetime(sc["timestamp"], format="%Y%m%d%H%M%S")
 panel_uids = sorted(set(pd.read_csv(AN / "seed_samples.csv", dtype=str).unitid)) if (AN / "seed_samples.csv").exists() else sorted(set(sc.unitid))
 def eq(ts):
@@ -155,29 +183,31 @@ for flagcol, lab in (("ai_addressed_raw", "raw"), ("ai_addressed_clean", "clean"
 ad = pd.DataFrame(rows); ad.to_csv(AN / "adoption_intervals.csv", index=False)
 summ_rows = []
 for lab in ("raw", "clean", "clean_strict"):
-    a = ad[(ad.flag == lab) & (ad.adopted == 1)].copy()
+    a = ad[(ad.flag == lab) & (ad.adopted == 1) & (ad.pre_shock_positive == 0)].copy()  # AI text before the shock: no adoption date
     for s in SYSTEMS + ["ALL"]:
         d = a if s == "ALL" else a[a.system == s]
         if len(d) == 0:
             continue
-        r = {"flag": lab, "system": s, "n_adopters": len(d), "n_pre_shock_positive": int(d.pre_shock_positive.sum()),
+        pos = ad[(ad.flag == lab) & (ad.pre_shock_positive == 1) & ((ad.system == s) if s != "ALL" else True)]
+        r = {"flag": lab, "system": s, "n_adopters": len(d), "n_pre_shock_positive_excluded": len(pos),
              "width_days_median": d.width_days.median(), "width_days_q25": d.width_days.quantile(.25), "width_days_q75": d.width_days.quantile(.75),
              "left_censored": int(d.L_left_censored.sum()), "exceeds_cap": int(d.exceeds_download_cap.sum())}
         for conv in ("q_R", "q_mid", "q_L"):
             q = d[conv].dropna().clip(lower=0)
-            r[f"lag_mean_{conv}"] = round(q.mean(), 2); r[f"lag_median_{conv}"] = q.median(); r[f"share_within2q_{conv}"] = round((q <= 2).mean(), 2)
+            r[f"lag_mean_{conv}"] = q.mean(); r[f"lag_median_{conv}"] = q.median(); r[f"share_within2q_{conv}"] = (q <= 2).mean()
         r["n_quarter_changes_mid_vs_R"] = int((d.q_mid.notna() & (d.q_mid != d.q_R)).sum())
         summ_rows.append(r)
 asum = pd.DataFrame(summ_rows); asum.to_csv(AN / "adoption_summary.csv", index=False)
 print("\n=== adoption timing under R (forward-fill), midpoint, L ===\n", asum.to_string(index=False))
 
-# (d) Turnbull-style EM on quarter bins for the clean-strict adopters (intervals (q_L, q_R], clipped at 0);
-# left-censored adopters (page created after the shock, no earlier capture) get the interval [0, q_R]
+# (d) Turnbull-style EM on quarter bins for the clean-strict adopters (intervals [q_L, q_R], clipped at 0: the
+# change follows the capture L but can fall in L's own quarter; an earlier capture before the shock is set to
+# quarter 0); left-censored adopters (no earlier capture of the page) get the interval [0, q_R]
 tb_rows = []
 for subset in ("all", "not_left_censored"):
-    a = ad[(ad.flag == "clean_strict") & (ad.adopted == 1)].copy()
+    a = ad[(ad.flag == "clean_strict") & (ad.adopted == 1) & (ad.pre_shock_positive == 0)].copy()
     if subset == "not_left_censored": a = a[a.L_left_censored == 0]
-    a["lo"] = a["q_L"].fillna(-8).clip(lower=-1).astype(int) + 1
+    a["lo"] = a["q_L"].fillna(-8).clip(lower=0).astype(int)
     a["hi"] = a["q_R"].astype(int); a.loc[a.lo > a.hi, "lo"] = a.hi
     if len(a) < 5: continue
     bins = list(range(int(a.lo.min()), int(a.hi.max()) + 1)); pm = np.ones(len(bins)) / len(bins)
@@ -189,7 +219,7 @@ for subset in ("all", "not_left_censored"):
         pm = num / num.sum()
     ff = a["hi"].value_counts(normalize=True).reindex(bins).fillna(0).values
     for b_, tm, tc, fm, fc in zip(bins, pm, np.cumsum(pm), ff, np.cumsum(ff)):
-        tb_rows.append({"subset": subset, "n_adopters": len(a), "event_q": b_, "turnbull_mass": round(tm, 4), "turnbull_cdf": round(tc, 4), "forward_fill_mass": round(fm, 4), "forward_fill_cdf": round(fc, 4)})
+        tb_rows.append({"subset": subset, "n_adopters": len(a), "event_q": b_, "turnbull_mass": tm, "turnbull_cdf": tc, "forward_fill_mass": fm, "forward_fill_cdf": fc})
 tb = pd.DataFrame(tb_rows); tb.to_csv(AN / "adoption_turnbull.csv", index=False)
 print("\n=== adoption-time distribution: Turnbull vs forward-fill (clean-strict adopters) ===\n", tb[tb.event_q <= 6].to_string(index=False))
 print("done")

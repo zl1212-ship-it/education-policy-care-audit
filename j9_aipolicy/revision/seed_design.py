@@ -2,7 +2,12 @@
 exists) one curated AI guidance page. US pages come from seed_snapshot_index.csv (fetch_us_seeds.py),
 cross-national pages from the committed pipeline. Scores the seed snapshots (clean + strict), builds
 the institution-by-quarter panels, the endpoint prevalence table (with and without linked policy
-PDFs), and the US event-study panel. Outputs: scored_seed.csv, seed_panel_<variant>.csv,
+PDFs), and the US event-study panel. The versions in force at quarter ends that the original
+retrieval missed (fetch_quarter_versions.py) are scored and merged with the retrieved versions. The
+corrections in sample_corrections.py (one institution left out, three page types corrected) are
+applied before the sample is drawn. seed_samples.csv
+also flags (page_rule) the institutions that meet the entry rule page by page, and the prevalence
+table adds that sample as a robustness row. Outputs: scored_seed.csv, seed_panel_<variant>.csv,
 seed_prevalence.csv, seed_samples.csv, seed_pages.csv."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
@@ -15,6 +20,7 @@ from pathlib import Path
 import numpy as np, pandas as pd
 sys.path.insert(0, str(REV))
 import extract_clean as E
+import sample_corrections as SCOR
 B = E.B
 SHOCK = pd.Timestamp("2022-11-30"); ENDPOINT = pd.Timestamp("2026-03-31")
 PROV = list(B.PROVISIONS.keys()); RESTR, PROC = B.RESTRICTIVE, B.PROCEDURAL; SYSTEMS = ["US", "UK", "AU", "CA"]
@@ -26,9 +32,9 @@ def score_strict(text, window=400):
     try: return B.score_text(text, window)
     finally: B.AI_TERMS = keep
 
-# ---------------------------------------------------------------- 1. score the seed snapshots
-def score_seed():
-    idx = pd.read_csv(AN / "seed_snapshot_index.csv", dtype={"unitid": str, "timestamp": str})
+# ---------------------------------------------------------------- 1. score the seed snapshots and the quarter-end versions
+def score_index(idx_file, pipeline, out_file):
+    idx = pd.read_csv(AN / idx_file, dtype={"unitid": str, "timestamp": str})
     idx["bytes"] = pd.to_numeric(idx["bytes"], errors="coerce").fillna(0); idx = idx[idx["bytes"] > 0]
     idx = idx.drop_duplicates(["unitid", "local_path"])
     rows = []
@@ -41,7 +47,7 @@ def score_seed():
         except Exception as e: clean, rule = "", f"error:{type(e).__name__}"
         sr, sc, ss = B.score_text(raw, 400), B.score_text(clean, 400), score_strict(clean, 400)
         s2, s8 = score_strict(clean, 200), score_strict(clean, 800)
-        row = {"pipeline": "USSEED", "system": "US", "institution": r.institution, "unitid": r.unitid, "page_type": r.page_type,
+        row = {"pipeline": pipeline, "system": getattr(r, "system", "US"), "institution": r.institution, "unitid": r.unitid, "page_type": r.page_type,
                "original_url": r.original_url, "local_path": r.local_path, "timestamp": r.timestamp, "words_raw": len(raw.split()),
                "words_clean": len(clean.split()), "rule_fired": rule, "ai_addressed_raw": sr["ai_addressed"], "n_ai_terms_raw": sr["n_ai_terms"],
                "ai_addressed_clean": sc["ai_addressed"], "n_ai_terms_clean": sc["n_ai_terms"], "ai_addressed_clean_strict": ss["ai_addressed"],
@@ -52,7 +58,10 @@ def score_seed():
             row[f"{p}_present_clean_strict_w200"] = s2[p + "_present"]; row[f"{p}_present_clean_strict_w800"] = s8[p + "_present"]
         rows.append(row)
         if i % 200 == 0: print(f"  scored {i}/{len(idx)}", flush=True)
-    d = pd.DataFrame(rows); d.to_csv(AN / "scored_seed.csv", index=False); return d
+    d = pd.DataFrame(rows); d.to_csv(AN / out_file, index=False); return d
+
+def score_seed(): return score_index("seed_snapshot_index.csv", "USSEED", "scored_seed.csv")
+def score_quarter_versions(): return score_index("quarter_versions_index.csv", "QV", "scored_quarter_versions.csv")
 
 # ---------------------------------------------------------------- 2. assemble the symmetric snapshot table
 BACKFILL = "--backfill" in sys.argv  # US institutions whose curated page was never archived: use the best policy page found by discovery
@@ -79,6 +88,8 @@ def assemble():
         print(f"backfill: {back.groupby(['unitid']).size().shape[0]} US institutions get {len(keep)} discovered policy pages for types the curated page did not cover", flush=True)
         pd.DataFrame(keep, columns=["unitid", "page_key"]).to_csv(AN / "seed_backfill_pages.csv", index=False)
         parts.append(back[cols])
+    if (AN / "scored_quarter_versions.csv").exists():  # versions in force at quarter ends that the original retrieval missed
+        parts.append(pd.read_csv(AN / "scored_quarter_versions.csv", dtype={"unitid": str, "timestamp": str})[cols])
     sc = pd.concat(parts, ignore_index=True)
     sc["ts"] = pd.to_datetime(sc["timestamp"], format="%Y%m%d%H%M%S")
     sc["page_key"] = sc["local_path"].apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
@@ -97,6 +108,26 @@ def feasibility(sc):
                 uid = str(uid).replace(".0", ""); haspost[uid] = max(haspost.get(uid, 0), int(hp))
     uids = [u for u in sc.unitid.unique() if n_pre.get(u, 0) >= 1 and haspost.get(u, 0) == 1]
     return sorted(uids)
+
+def page_rule(sc):
+    """The entry rule applied page by page (robustness): institutions with one tracked page captured
+    before the shock and still captured on or after it, by a downloaded capture or a capture listing
+    (curated and cross-national pages: the coverage files, matched by institution and recorded page
+    type; screened pages: their listing in screened_cdx_captures.csv, matched by page key)."""
+    listed = set()
+    for f in (AN / "seed_coverage.csv", XN / "data/coverage.csv"):
+        if f.exists():
+            c = pd.read_csv(f, dtype={"unitid": str}); c = c[(c.n_captures > 0) & (c.has_post == 1)]
+            listed |= {(str(u).replace(".0", ""), t) for u, t in zip(c.unitid, c.page_type)}
+    listed_keys = set()
+    if (AN / "screened_cdx_captures.csv").exists():
+        l = pd.read_csv(AN / "screened_cdx_captures.csv", dtype=str)
+        listed_keys = set(l[pd.to_datetime(l.timestamp, format="%Y%m%d%H%M%S", errors="coerce") >= SHOCK].page_key)
+    ok = set()
+    for (u, k), g in sc.groupby(["unitid", "page_key"]):
+        alive = (g.ts >= SHOCK).any() or (g.pipeline.iloc[0] == "USBACKFILL" and k in listed_keys) or (g.pipeline.iloc[0] != "USBACKFILL" and (u, g.page_type.iloc[0]) in listed)
+        if (g.ts < SHOCK).any() and alive: ok.add(u)
+    return ok
 
 def build_panel(sc, uids, suffix, meta):
     pres = [f"{p}_present{suffix}" for p in PROV]
@@ -126,15 +157,32 @@ def main():
     t0 = time.time()
     if not (AN / "scored_seed.csv").exists() or "--rescore" in sys.argv:
         score_seed()
+    if (AN / "quarter_versions_index.csv").exists() and (not (AN / "scored_quarter_versions.csv").exists() or "--rescore" in sys.argv):
+        score_quarter_versions()
     sc = assemble()
     frame = pd.concat([pd.read_csv(PIPE / "data/sample_frame.csv", dtype=str), pd.read_csv(XN / "data/sample_frame.csv", dtype=str)], ignore_index=True)
     frame["unitid"] = frame["unitid"].astype(str)
     meta = frame[["institution", "state", "control", "carnegie", "unitid", "intl_share", "total_enroll"]].drop_duplicates("unitid")
     meta.loc[meta.unitid.astype(float) < 9000000, "state"] = meta.loc[meta.unitid.astype(float) < 9000000, "state"]  # US state kept
     sysmap = sc.groupby("unitid")["system"].first().to_dict()
-    uids = feasibility(sc)
+    same_page = page_rule(sc)  # on the recorded page types, which the coverage files use
+    sc["page_type"] = [SCOR.page_type(u, k, t) for u, k, t in zip(sc.unitid, sc.page_key, sc.page_type)]
+    uids = [u for u in feasibility(sc) if u not in SCOR.EXCLUDE]
+    for u, why in SCOR.EXCLUDE.items(): print("left out:", u, why)
     samples = pd.DataFrame({"unitid": uids}); samples["system"] = samples.unitid.map(sysmap); samples["institution"] = samples.unitid.map(sc.groupby("unitid")["institution"].first().to_dict())
+    samples["page_rule"] = samples.unitid.isin(same_page).astype(int)
+    print("entry rule page by page: fails for", samples[samples.page_rule == 0][["system", "institution"]].values.tolist())
     samples.to_csv(AN / "seed_samples.csv", index=False)
+    # staleness of the endpoint: the latest capture of any tracked page on or before the endpoint, from the capture
+    # listings where they exist and from the retrieved versions otherwise
+    lst = pd.concat([pd.read_csv(AN / f, dtype=str)[["page_key", "timestamp"]] for f in ("cdx_captures.csv", "seed_cdx_captures.csv", "screened_cdx_captures.csv") if (AN / f).exists()])
+    lst["ts"] = pd.to_datetime(lst.timestamp, format="%Y%m%d%H%M%S", errors="coerce")
+    tracked = sc[sc.unitid.isin(uids)][["unitid", "page_key"]].drop_duplicates()
+    caps = pd.concat([sc[["unitid", "page_key", "ts"]], tracked.merge(lst[["page_key", "ts"]], on="page_key")], ignore_index=True)
+    lastcap = caps[caps.ts <= QENDS[-1]].groupby("unitid").ts.max()
+    st = samples.assign(last_capture=samples.unitid.map(lastcap)); st["stale_before_2025"] = (st.last_capture < "2025-01-01").astype(int)
+    st.to_csv(AN / "seed_staleness.csv", index=False)
+    print("latest capture before 2025:", st.groupby("system").stale_before_2025.agg(["sum", "size"]).reindex(SYSTEMS).to_dict("index"))
     pages = sc.groupby(["system", "unitid", "institution", "page_type", "page_key"]).agg(n_caps=("ts", "size"), first=("ts", "min"), last=("ts", "max"), any_ai_strict=("ai_addressed_clean_strict", "max")).reset_index()
     pages["in_sample"] = pages.unitid.isin(uids).astype(int); pages.to_csv(AN / "seed_pages.csv", index=False)
     print("=== symmetric design: sample by system ===\n", samples.groupby("system").size().reindex(SYSTEMS).to_string())
@@ -166,7 +214,12 @@ def main():
             out = merged.groupby("system").agg(n=("ai_addressed", "size"), ai_addressed=("ai_addressed", "mean"), **{p: (f"{p}_present", "mean") for p in PROV},
                                                restrictive_idx=("restrictive_idx", "mean"), procedural_idx=("procedural_idx", "mean")).reindex(SYSTEMS)
             out.insert(0, "rule", f"seed design + linked policy PDFs, {label}"); results.append(out.reset_index())
-        cov = ps.groupby("system")["unitid"].nunique().reindex(SYSTEMS); print("institutions with >=1 retrieved policy PDF:", cov.to_dict())
+        cov = ps[ps.unitid.isin(set(uids))].groupby("system")["unitid"].nunique().reindex(SYSTEMS); print("sample institutions with >=1 retrieved policy PDF:", cov.to_dict())
+    # robustness: only the institutions that meet the entry rule page by page
+    last = panels["clean_strict"].sort_values("event_q").groupby("unitid").tail(1); last = last[last.unitid.isin(same_page)].copy(); last["system"] = last.unitid.map(sysmap)
+    out = last.groupby("system").agg(n=("unitid", "size"), ai_addressed=("ai_addressed", "mean"), **{p: (f"{p}_present", "mean") for p in PROV},
+                                     restrictive_idx=("restrictive_idx", "mean"), procedural_idx=("procedural_idx", "mean")).reindex(SYSTEMS)
+    out.insert(0, "rule", "seed design, entry on one page, clean_strict"); results.append(out.reset_index())
     prev = pd.concat(results, ignore_index=True); prev.to_csv(AN / "seed_prevalence.csv", index=False)
     pd.set_option("display.width", 250); print("\n=== endpoint prevalence, symmetric design ===\n", prev.round(3).to_string(index=False))
     # US event study on the seed panels
@@ -176,7 +229,9 @@ def main():
         us = us[us.intl_share.notna()]
         pth = AN / f"seed_panel_us_{label}.csv"; us.to_csv(pth, index=False)
         res = AN / f"results_event_study_seed_{label}.csv"
-        r = subprocess.run(["/usr/bin/python3", str(AN / "event_study_runner.py"), str(pth), str(res)], capture_output=True, text=True, cwd=str(PIPE))
+        if res.exists(): res.unlink()  # never fall back on an earlier run's results
+        r = subprocess.run(["/usr/bin/python3", str(REV / "event_study_runner.py"), str(pth), str(res)], capture_output=True, text=True, cwd=str(PIPE))
+        if r.returncode != 0 or not res.exists(): sys.exit(f"event study failed ({label}):\n{r.stderr.strip()[-800:]}")
         print(f"--- event study (seed, {label}): {us.unitid.nunique()} institutions\n{r.stdout.strip()[-900:]}\n{r.stderr.strip()[-300:]}")
         if res.exists():
             d = pd.read_csv(res)

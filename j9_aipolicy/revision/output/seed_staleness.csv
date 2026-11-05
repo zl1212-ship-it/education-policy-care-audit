@@ -1,0 +1,93 @@
+unitid,system,institution,page_rule,last_capture,stale_before_2025
+104151,US,Arizona State University,1,2026-02-16 14:37:59,0
+110644,US,University of California-Davis,1,2025-04-04 20:17:11,0
+110653,US,University of California-Irvine,1,2026-01-30 15:05:59,0
+110662,US,University of California-Los Angeles,1,2026-02-19 05:53:56,0
+110680,US,University of California-San Diego,1,2026-02-22 03:40:47,0
+122931,US,Santa Clara University,1,2026-02-14 01:02:16,0
+123961,US,University of Southern California,0,2026-03-07 00:26:26,0
+134097,US,Florida State University,1,2026-02-11 12:37:20,0
+144050,US,University of Chicago,0,2025-12-20 18:26:29,0
+147767,US,Northwestern University,1,2023-03-14 21:34:01,1
+152080,US,University of Notre Dame,1,2026-01-10 03:45:31,0
+162928,US,Johns Hopkins University,1,2025-11-21 14:39:13,0
+164988,US,Boston University,1,2026-03-31 02:37:19,0
+166027,US,Harvard University,1,2025-07-01 11:23:45,0
+166683,US,Massachusetts Institute of Technology,1,2026-03-11 17:57:22,0
+171100,US,Michigan State University,0,2026-03-07 23:40:23,0
+179867,US,Washington University in St Louis,1,2026-03-11 23:54:32,0
+190150,US,Columbia University,1,2026-03-14 14:01:28,0
+190415,US,Cornell University,0,2026-03-08 18:02:52,0
+191515,US,Hamilton College,1,2025-10-17 07:56:22,0
+193900,US,New York University,1,2026-02-23 04:16:13,0
+196097,US,Stony Brook University,1,2026-03-01 05:55:25,0
+198385,US,Davidson College,1,2024-03-03 08:19:53,1
+198419,US,Duke University,1,2024-06-12 21:36:09,1
+211440,US,Carnegie Mellon University,1,2025-12-24 04:41:54,0
+215062,US,University of Pennsylvania,1,2026-02-04 16:56:29,0
+216339,US,Temple University,1,2026-03-04 20:08:22,0
+221999,US,Vanderbilt University,1,2026-03-12 00:07:20,0
+227757,US,Rice University,1,2026-02-14 15:50:24,0
+228723,US,Texas A & M University,1,2026-03-31 17:44:41,0
+232186,US,George Mason University,1,2026-03-11 06:29:59,0
+233921,US,Virginia Polytechnic Institute and State University,1,2026-02-13 09:38:31,0
+243744,US,Stanford University,0,2026-03-12 06:54:38,0
+243780,US,Purdue University,1,2025-04-27 07:16:36,0
+9000001,AU,Curtin University,1,2026-03-01 09:31:49,0
+9000002,AU,Griffith University,1,2026-01-21 15:17:30,0
+9000003,AU,University of Sydney,1,2026-03-09 12:20:13,0
+9000004,AU,University of Wollongong,1,2026-01-18 17:53:25,0
+9000005,CA,McMaster University,1,2025-06-26 18:42:55,0
+9000006,CA,Queen's University,1,2026-03-08 23:20:07,0
+9000007,CA,Toronto Metropolitan University,1,2026-03-09 20:51:55,0
+9000008,CA,University of British Columbia,1,2026-03-10 06:12:52,0
+9000009,CA,University of Guelph,1,2023-05-26 13:43:35,1
+9000010,CA,University of Manitoba,1,2024-03-27 07:21:03,1
+9000011,CA,University of Toronto,1,2026-03-14 05:32:00,0
+9000012,CA,University of Waterloo,1,2026-03-10 21:54:35,0
+9000013,CA,University of Windsor,1,2026-03-12 22:08:55,0
+9000014,UK,Imperial College London,1,2026-03-09 00:23:39,0
+9000015,UK,University College London,1,2025-04-26 08:19:46,0
+9000016,UK,University of Cambridge,1,2025-08-10 22:50:16,0
+9000017,UK,University of Edinburgh,1,2025-12-16 15:21:36,0
+9000018,UK,University of Oxford,1,2026-02-06 09:58:04,0
+9000019,UK,University of St Andrews,1,2023-08-08 10:57:08,1
+9000020,UK,University of Manchester,1,2026-01-24 09:05:05,0
+9000024,UK,University of Bristol,1,2025-10-08 06:01:57,0
+9000026,UK,University of Birmingham,1,2026-03-07 05:26:12,0
+9000028,UK,University of Nottingham,1,2022-12-08 03:22:20,1
+9000031,UK,Cardiff University,1,2025-09-05 22:01:58,0
+9000045,AU,University of Melbourne,1,2025-12-06 06:57:47,0
+9000046,AU,University of Queensland,1,2025-11-28 15:42:59,0
+9000050,CA,University of Calgary,1,2026-02-18 23:52:40,0
+9000051,CA,Western University,1,2025-09-20 17:50:09,0
+9000052,CA,University of Ottawa,1,2025-02-14 12:02:27,0
+9000053,CA,Simon Fraser University,1,2024-01-17 01:08:56,1
+9000054,AU,University of Adelaide,1,2026-03-07 05:00:17,0
+9000055,AU,Australian National University,1,2025-07-25 01:51:13,0
+9000056,UK,University of Glasgow,1,2026-02-15 14:23:07,0
+9000057,UK,Durham University,1,2025-07-27 17:27:55,0
+9000058,UK,University of Southampton,1,2026-01-13 05:44:45,0
+9000061,AU,Macquarie University,1,2026-03-11 16:32:49,0
+9000063,AU,Queensland University of Technology,1,2023-12-04 06:07:16,1
+9000064,AU,RMIT University,1,2026-02-13 21:51:22,0
+9000070,AU,Flinders University,1,2026-03-18 23:32:20,0
+9000079,UK,Newcastle University,1,2026-03-05 13:44:27,0
+9000081,UK,University of York,1,2026-03-14 23:48:00,0
+9000085,UK,Queen's University Belfast,1,2025-12-17 02:39:27,0
+9000090,CA,University of Saskatchewan,1,2025-11-05 05:40:42,0
+9000091,CA,York University,1,2026-03-31 17:18:20,0
+9000092,CA,Carleton University,1,2026-02-10 18:18:31,0
+9000093,CA,University of Victoria,1,2026-03-12 00:54:56,0
+9000094,CA,Concordia University,1,2026-03-10 03:24:18,0
+9000095,CA,Memorial University of Newfoundland,1,2026-03-12 16:08:24,0
+9000097,CA,Lakehead University,1,2026-03-09 05:59:43,0
+9000098,CA,University of Regina,1,2026-03-16 21:14:41,0
+9000099,CA,Brock University,1,2026-02-10 13:49:49,0
+9000100,AU,Monash University,1,2026-02-09 15:34:24,0
+9000101,AU,La Trobe University,1,2026-02-14 01:01:03,0
+9000102,AU,Swinburne University of Technology,1,2026-03-22 07:56:14,0
+9000103,AU,University of Newcastle,1,2025-11-30 05:35:13,0
+9000104,AU,University of Tasmania,1,2025-12-09 23:09:24,0
+9000106,AU,Western Sydney University,1,2026-01-20 09:00:28,0
+9000108,AU,University of South Australia,1,2026-03-10 18:41:23,0

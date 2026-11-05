@@ -349,7 +349,7 @@ Link-dense blocks removed (7):
 ## AU | Monash University | integrity | 20260521033322
 
 URL: https://publicpolicydms.monash.edu/Monash/documents/1935748  
-raw words 5028, clean words 1425, content rule `pdf`
+raw words 1425, clean words 1425, content rule `pdf`
 
 
 Clean text (first 400 chars): Assessment and Academic Integrity Policy | 1 SCOPE This policy applies to all Monash University: • staff; • students; • coursework courses and units; and • teaching locations. POLICY STATEMENT This policy describes the principles of assessment at Monash University to maintain academic standards of student achievement, support students in their academic development and uphold standards of academic 

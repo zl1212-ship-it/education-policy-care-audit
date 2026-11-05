@@ -32,6 +32,7 @@ j4_adoption/data/quarantine_raw_grad_*.csv
 paper/
 j9_aipolicy/revision/output/seed_snapshots_raw/
 j9_aipolicy/revision/output/policy_pdfs/
+j9_aipolicy/revision/output/quarter_versions_raw/
 j9_aipolicy/revision/output/figures/
 j9_aipolicy/revision/output/*.log
 j9_aipolicy/revision/output/*.stdout

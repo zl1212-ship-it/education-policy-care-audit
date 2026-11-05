@@ -1,6 +1,9 @@
 """Fetch the policy-relevant PDFs linked from each institution's endpoint pages (cross-national
 curated pages + US curated seed pages) from the Wayback Machine, nearest capture on or before
-2026-03-31, and score their text on the provision lexicon. Polite and resumable.
+2026-03-31, and score their text on the provision lexicon. A page's endpoint version is its latest
+capture on or before 2026-03-31, the versions in force at quarter ends (fetch_quarter_versions.py)
+included. Polite and resumable: links attempted in an earlier run are not fetched again, and the
+index keeps only the links found on the current endpoint versions.
 Outputs: policy_pdf_index.csv (one row per PDF link attempted), policy_pdfs/<unitid>/<slug>__<ts>.pdf,
 policy_pdf_scores.csv (clean + strict scores per retrieved PDF)."""
 from pathlib import Path as _P
@@ -59,21 +62,22 @@ def parse_cdx_body(raw):
 
 
 def endpoint_pages():
-    """(system, unitid, institution, page_key, real_url, local_path) of the latest capture per page."""
-    rows = []
-    sc = pd.read_csv(AN / "scored_raw_vs_clean.csv", dtype={"unitid": str, "timestamp": str})
-    sc = sc[sc.pipeline == "XN"]; sc["ts"] = pd.to_datetime(sc["timestamp"], format="%Y%m%d%H%M%S")
-    sc["page_key"] = sc["local_path"].apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
-    for r in sc[sc.ts <= "2026-03-31"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1).itertuples(index=False):
-        rows.append((r.system, r.unitid, r.institution, r.page_key, r.original_url, str(XN / r.local_path)))
+    """(system, unitid, institution, page_key, real_url, local_path) of the latest capture per page on or
+    before the endpoint, among the retrieved versions and the versions in force at quarter ends."""
+    sc = pd.read_csv(AN / "scored_raw_vs_clean.csv", dtype={"unitid": str, "timestamp": str}); sc = sc[sc.pipeline == "XN"]
+    parts = [sc.assign(path=[str(XN / lp) for lp in sc.local_path])[["system", "unitid", "institution", "original_url", "local_path", "timestamp", "path"]]]
     seed = AN / "seed_snapshot_index.csv"
     if seed.exists():
-        si = pd.read_csv(seed, dtype={"unitid": str, "timestamp": str})
-        si = si[si["bytes"].fillna(0) > 0]; si["ts"] = pd.to_datetime(si["timestamp"], format="%Y%m%d%H%M%S")
-        si["page_key"] = si["local_path"].apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
-        for r in si[si.ts <= "2026-03-31"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1).itertuples(index=False):
-            rows.append(("US", r.unitid, r.institution, r.page_key, r.original_url, str(AN / r.local_path)))
-    return rows
+        si = pd.read_csv(seed, dtype={"unitid": str, "timestamp": str}); si = si[si["bytes"].fillna(0) > 0]
+        parts.append(si.assign(system="US", path=[str(AN / lp) for lp in si.local_path])[["system", "unitid", "institution", "original_url", "local_path", "timestamp", "path"]])
+    d = pd.concat(parts, ignore_index=True); d["page_key"] = d["local_path"].apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
+    qv = AN / "quarter_versions_index.csv"
+    if qv.exists():  # only pages of the two corpora above (curated pages), not the screened United States pages
+        q = pd.read_csv(qv, dtype={"unitid": str, "timestamp": str}); q = q[(q["bytes"].fillna(0) > 0) & q.page_key.isin(set(d.page_key))]
+        d = pd.concat([d, q.assign(path=[str(AN / lp) for lp in q.local_path])[["system", "unitid", "institution", "original_url", "local_path", "timestamp", "path", "page_key"]]], ignore_index=True)
+    d = d[[Path(x).exists() for x in d.path]]; d["ts"] = pd.to_datetime(d["timestamp"], format="%Y%m%d%H%M%S")
+    last = d[d.ts <= "2026-03-31 23:59:59"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
+    return [(r.system, r.unitid, r.institution, r.page_key, r.original_url, r.path) for r in last.itertuples(index=False)]
 
 def pdf_links(path, base_url):
     try: root = E._parse(E._read_bytes(Path(path)))
@@ -96,17 +100,16 @@ def pdf_links(path, base_url):
 def main():
     OUTDIR.mkdir(exist_ok=True)
     cols = ["system", "unitid", "institution", "page_key", "pdf_url", "anchor", "priority", "status", "timestamp", "local_path", "bytes"]
-    done = set()
-    if INDEX.exists():
-        done = set(zip(pd.read_csv(INDEX, dtype=str).unitid, pd.read_csv(INDEX, dtype=str).pdf_url))
-    else:
-        with open(INDEX, "w", newline="") as f: csv.DictWriter(f, fieldnames=cols).writeheader()
+    prior = {}
+    if INDEX.exists():  # links attempted in an earlier run: reuse the result
+        for r in pd.read_csv(INDEX, dtype=str).fillna("").to_dict("records"): prior[(r["unitid"], r["pdf_url"])] = r
+    with open(INDEX, "w", newline="") as f: csv.DictWriter(f, fieldnames=cols).writeheader()
     pages = endpoint_pages()
     panel = set(pd.read_csv(PIPE / "data/panel.csv", dtype=str).unitid) | set(pd.read_csv(XN / "data/panel.csv", dtype=str).unitid)
     if (AN / "seed_samples.csv").exists():
         panel |= set(pd.read_csv(AN / "seed_samples.csv", dtype=str).unitid)
     pages = [pg for pg in pages if pg[1] in panel]
-    log(f"=== fetch_policy_pdfs start: {len(pages)} endpoint pages, {len(done)} PDFs already attempted ===")
+    log(f"=== fetch_policy_pdfs start: {len(pages)} endpoint pages, {len(prior)} PDFs attempted in an earlier run ===")
     per_inst = {}
     for system, uid, inst, pk, url, path in pages:
         for full, anchor, prio in pdf_links(path, url):
@@ -121,7 +124,10 @@ def main():
         todo += [(uid,) + k for k in kept]
     log(f"{len(todo)} PDF links across {len(per_inst)} institutions (cap {MAX_PER_INST} per institution)")
     for uid, system, inst, pk, full, anchor, prio in todo:
-        if (uid, full) in done: continue
+        if (uid, full) in prior and prior[(uid, full)]["status"] in ("ok", "not_pdf", "not_archived", "download_error:HTTPError", "download_error:InvalidURL"):  # settled, not a transient error
+            row = {**prior[(uid, full)], "system": system, "institution": inst, "page_key": pk, "anchor": anchor, "priority": prio}
+            with open(INDEX, "a", newline="") as f: csv.DictWriter(f, fieldnames=cols).writerow({c: row.get(c, "") for c in cols})
+            continue
         row = {"system": system, "unitid": uid, "institution": inst, "page_key": pk, "pdf_url": full, "anchor": anchor, "priority": prio,
                "status": "", "timestamp": "", "local_path": "", "bytes": 0}
         try:

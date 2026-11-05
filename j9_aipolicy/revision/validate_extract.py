@@ -1,6 +1,6 @@
 """Document the clean extractor on 16 endpoint pages (4 per system, seed 0): raw vs clean words,
 the content rule, and the text of every removed block (first 160 chars), so the removal can be
-audited by eye. Writes reports/validate_extract.md."""
+audited by eye. Writes output/validate_extract.md."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy

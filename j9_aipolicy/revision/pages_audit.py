@@ -1,6 +1,6 @@
 """Pages per institution, junk / duplicate / policy-like classification, endpoint prevalence under
 alternative page rules (with the corrected feasibility filter), linked policy PDFs, and the
-max-over-pages note (reviewer points 5b, 5c). Reads scored_raw_vs_clean.csv and the committed
+max-over-pages note. Reads scored_raw_vs_clean.csv and the committed
 pipeline files. Writes pages_per_institution.csv, pages_summary.csv, prevalence_by_pagerule.csv,
 panel_samples.csv, matched_policy_pages_us.csv, policy_pages.csv, junk_pages.csv, matched_pages_us.csv,
 pdf_links.csv, pdf_links_summary.csv, maxpages_note.csv, staleness.csv."""
@@ -212,14 +212,14 @@ print("\nmatched-page attrition (US institutions lacking a page of the type): ru
       "| rule k AI pages missing for:", sorted({sysmap.get(u, '') + ':' + str(u) for u, t in attr_k if t == 'ai'})[:60])
 
 # ----------------------------------------------------------------------------- staleness of the forward-filled endpoint (point 4)
-last_cap = sc[sc.ts <= "2026-03-31"].groupby("unitid")["ts"].max().rename("last_capture")
+last_cap = sc[sc.ts <= "2026-03-31 23:59:59"].groupby("unitid")["ts"].max().rename("last_capture")
 st = samples.merge(last_cap, on="unitid", how="left"); st["stale_before_2025"] = (st.last_capture < "2025-01-01").astype(int)
 st_s = st[st.in_corrected_filter == 1].groupby("system").agg(n=("unitid", "size"), last_capture_median=("last_capture", "median"), stale_before_2025=("stale_before_2025", "sum")).reindex(SYSTEMS)
 st.to_csv(AN / "staleness.csv", index=False); print("\n=== endpoint staleness (last downloaded capture per institution) ===\n" + st_s.to_string())
 
 # ----------------------------------------------------------------------------- (4) max-over-pages note
 note = []
-endpoint_pages = sc[sc.ts <= "2026-03-31"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
+endpoint_pages = sc[sc.ts <= "2026-03-31 23:59:59"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
 endpoint_pages = endpoint_pages[endpoint_pages.unitid.isin(uids_fixed)]
 for p in PROV + ["ai_addressed"]:
     col = f"{p}_present_clean" if p != "ai_addressed" else "ai_addressed_clean"
@@ -239,7 +239,7 @@ print("\n=== US endpoint flags (rule b) lost under the policy-like matched desig
 # ----------------------------------------------------------------------------- (3) linked PDFs
 POLICY = re.compile(r"integrity|misconduct|conduct|plagiar|honest|cheat|\bai\b|artificial|generative|chatgpt|policy|policies|procedure|regulation|code|guideline|guidance|rule|statute|ordinance|handbook|assessment|discipline", re.I)
 rows = []
-ep = sc[sc.ts <= "2026-03-31"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
+ep = sc[sc.ts <= "2026-03-31 23:59:59"].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
 for r in ep.itertuples(index=False):
     base = PIPE if r.pipeline == "US" else XN
     try: root = E._parse(E._read_bytes(base / r.local_path))

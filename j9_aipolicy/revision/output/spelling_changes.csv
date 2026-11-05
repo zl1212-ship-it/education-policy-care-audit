@@ -2,7 +2,6 @@ system,from,to,n
 US,theatre,theater,267
 US,acknowledgement,acknowledgment,227
 US,towards,toward,206
-US,dialogue,dialog,171
 US,acknowledgements,acknowledgments,18
 US,judgement,judgment,14
 US,dreiser,dreizer,12
@@ -13,7 +12,6 @@ US,backwards,backward,9
 US,denise,denize,6
 US,afterwards,afterward,5
 US,orthopaedic,orthopedic,5
-US,dialogues,dialogs,5
 US,travelled,traveled,3
 US,cancelled,canceled,2
 US,spectre,specter,2
@@ -34,7 +32,6 @@ UK,acknowledgement,acknowledgment,83
 UK,practise,practice,75
 UK,judgement,judgment,72
 UK,favour,favor,70
-UK,liaise,liaize,62
 UK,defence,defense,52
 UK,familiarise,familiarize,46
 UK,plagiarised,plagiarized,45
@@ -155,9 +152,7 @@ CA,plagiarising,plagiarizing,11
 CA,summarising,summarizing,11
 CA,whilst,while,11
 CA,acknowledgements,acknowledgments,8
-CA,dialogue,dialog,6
 CA,towards,toward,4
-CA,dialogues,dialogs,3
 CA,endeavour,endeavor,3
 CA,honours,honors,2
 CA,afterwards,afterward,2

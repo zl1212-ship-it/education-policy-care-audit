@@ -1,6 +1,9 @@
 """How much of the provision coding came from navigation boilerplate: raw vs clean flags per
-snapshot, by system and provision; endpoint-only subset; and worked examples of the reviewer's
-case (an appeal or misconduct hit that sits in a removed menu)."""
+snapshot, by system and provision, over every archived snapshot of the study (the original
+retrieval: automatically discovered United States pages and the cross-national pages; the curated
+United States pages; the versions in force at quarter ends), each capture counted once; an
+endpoint-only subset; and worked examples (an appeal or misconduct hit that sits in a removed menu).
+Shares are stored unrounded, with the number of flags before removal and the flags removal adds."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
@@ -15,11 +18,12 @@ import extract_clean as E
 B = E.B
 PROV = list(B.PROVISIONS.keys())
 SYSTEMS = ["US", "UK", "AU", "CA"]
-sc = pd.read_csv(AN / "scored_raw_vs_clean.csv", dtype={"unitid": str, "timestamp": str})
+sc = pd.concat([pd.read_csv(AN / f, dtype={"unitid": str, "timestamp": str}) for f in ("scored_raw_vs_clean.csv", "scored_seed.csv", "scored_quarter_versions.csv") if (AN / f).exists()], ignore_index=True)
 sc["ts"] = pd.to_datetime(sc["timestamp"], format="%Y%m%d%H%M%S")
 sc["page_key"] = sc["local_path"].apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
+sc = sc.drop_duplicates(["unitid", "page_key", "timestamp"]).reset_index(drop=True)  # a capture held in two corpora counts once
 panel_uids = set(pd.read_csv(PIPE / "data/panel.csv", dtype=str).unitid) | set(pd.read_csv(XN / "data/panel.csv", dtype=str).unitid)
-ep = sc[(sc.ts <= "2026-03-31") & (sc.unitid.isin(panel_uids))].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
+ep = sc[(sc.ts <= "2026-03-31 23:59:59") & (sc.unitid.isin(panel_uids))].sort_values("ts").groupby(["unitid", "page_key"]).tail(1)
 rows = []
 for label, d in (("all snapshots", sc), ("endpoint pages of panel institutions (as of 2026Q1)", ep)):
     for s in SYSTEMS:
@@ -29,22 +33,22 @@ for label, d in (("all snapshots", sc), ("endpoint pages of panel institutions (
              "ai_addressed_lost": int(((ds.ai_addressed_raw == 1) & (ds.ai_addressed_clean == 0)).sum()),
              "ai_addressed_gained": int(((ds.ai_addressed_raw == 0) & (ds.ai_addressed_clean == 1)).sum()),
              "words_raw_mean": round(ds.words_raw.mean()), "words_clean_mean": round(ds.words_clean.mean()),
-             "words_kept_share": round(ds.words_clean.sum() / max(1, ds.words_raw.sum()), 3)}
+             "words_kept_share": ds.words_clean.sum() / max(1, ds.words_raw.sum())}
         for p in PROV:
             raw1 = ds[f"{p}_present_raw"] == 1; cl1 = ds[f"{p}_present_clean"] == 1
             r[f"{p}_raw_n"] = int(raw1.sum()); r[f"{p}_lost"] = int((raw1 & ~cl1).sum()); r[f"{p}_gained"] = int((~raw1 & cl1).sum())
-            r[f"{p}_lost_share"] = round((raw1 & ~cl1).sum() / max(1, raw1.sum()), 3)
+            r[f"{p}_lost_share"] = (raw1 & ~cl1).sum() / max(1, raw1.sum())
             r[f"{p}_hits_raw"] = int(ds[f"{p}_raw"].sum()); r[f"{p}_hits_clean"] = int(ds[f"{p}_clean"].sum())
-            r[f"{p}_hits_vanished_share"] = round(1 - ds[f"{p}_clean"].sum() / max(1, ds[f"{p}_raw"].sum()), 3)
+            r[f"{p}_hits_vanished_share"] = 1 - ds[f"{p}_clean"].sum() / max(1, ds[f"{p}_raw"].sum())
         rows.append(r)
 out = pd.DataFrame(rows); out.to_csv(AN / "contamination_summary.csv", index=False)
 pd.set_option("display.width", 250)
 cols = ["subset", "system", "n_snapshots", "n_ai_raw", "ai_addressed_lost", "words_kept_share"] + [f"{p}_lost_share" for p in PROV]
 print("=== share of raw presence flags that vanish under the clean extractor ===")
-print(out[cols].to_string(index=False))
+print(out[cols].round(3).to_string(index=False))
 cols2 = ["subset", "system"] + [f"{p}_hits_vanished_share" for p in PROV]
 print("\n=== share of raw regex hits (counts) that vanish ===")
-print(out[cols2].to_string(index=False))
+print(out[cols2].round(3).to_string(index=False))
 print("\n=== rule fired ===")
 print(sc.groupby("system")["rule_fired"].value_counts().groupby(level=0).head(4).to_string())
 
@@ -64,7 +68,7 @@ ex_rows = []
 for prov in ("appeal", "misconduct_framing", "detector_surveillance", "l2_protection"):
     cand = ep[(ep[f"{prov}_present_raw"] == 1) & (ep[f"{prov}_present_clean"] == 0)]
     for r in cand.sample(min(4, len(cand)), random_state=0).itertuples(index=False):
-        base = PIPE if r.pipeline == "US" else XN
+        base = {"US": PIPE, "XN": XN}.get(r.pipeline, AN)
         raw = B.extract_text(base / r.local_path)
         for ptxt in passages(raw, prov)[:1]:
             ex_rows.append({"provision": prov, "system": r.system, "institution": r.institution, "page_type": r.page_type,

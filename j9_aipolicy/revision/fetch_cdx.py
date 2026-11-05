@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Wayback CDX capture lists for every tracked page (reviewer point 4, crawl density).
+"""Wayback CDX capture lists for every tracked page (crawl density).
 
 CDX API only (http://web.archive.org/cdx/search/cdx). Never fetches page HTML.
 One request at a time, 1.5 s between requests, exponential backoff (60 s .. 15 min)
 on HTTP 429/503/5xx or connection errors. Resumable: per-URL rows are appended to
-analysis/cdx_captures.csv and a done-list (analysis/cdx_done.csv) lets a rerun skip
+output/cdx_captures.csv and a done-list (output/cdx_done.csv) lets a rerun skip
 finished URLs. Writes only inside the revision workspace.
 
 Stages

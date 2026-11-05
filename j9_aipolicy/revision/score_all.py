@@ -1,6 +1,7 @@
 """Re-score every archived snapshot (US + cross-national) on the provision lexicon under the
 raw extractor and the boilerplate-stripped extractor, at proximity windows 400 (main), 200 and
-800. One row per index row with bytes > 0 whose file exists. Writes scored_raw_vs_clean.csv."""
+800, under the full and the strict AI vocabulary. One row per index row with bytes > 0 whose file
+exists. Writes scored_raw_vs_clean.csv."""
 from pathlib import Path as _P
 REV = _P(__file__).resolve().parent            # j9_aipolicy/revision
 PIPE = REV.parent                               # j9_aipolicy
@@ -46,7 +47,8 @@ cols = ["pipeline", "system", "institution", "unitid", "page_type", "original_ur
         "ai_addressed_clean_strict", "n_ai_terms_clean_strict"]
 for p in PROV:
     cols += [f"{p}_raw", f"{p}_present_raw", f"{p}_clean", f"{p}_present_clean",
-             f"{p}_present_clean_w200", f"{p}_present_clean_w800", f"{p}_present_clean_strict"]
+             f"{p}_present_clean_w200", f"{p}_present_clean_w800", f"{p}_present_clean_strict",
+             f"{p}_present_clean_strict_w200", f"{p}_present_clean_strict_w800"]
 t0 = time.time()
 with open(OUT, "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=cols)
@@ -66,6 +68,7 @@ with open(OUT, "w", newline="", encoding="utf-8") as f:
         s2 = B.score_text(clean, 200)
         s8 = B.score_text(clean, 800)
         ss = score_strict(clean, 400)
+        ss2, ss8 = score_strict(clean, 200), score_strict(clean, 800)
         row = {"pipeline": r.pipeline, "system": r.system, "institution": r.institution,
                "unitid": r.unitid, "page_type": r.page_type, "original_url": r.original_url,
                "local_path": r.local_path, "timestamp": r.timestamp,
@@ -79,6 +82,7 @@ with open(OUT, "w", newline="", encoding="utf-8") as f:
             row[f"{p}_present_clean_w200"] = s2[p + "_present"]
             row[f"{p}_present_clean_w800"] = s8[p + "_present"]
             row[f"{p}_present_clean_strict"] = ss[p + "_present"]
+            row[f"{p}_present_clean_strict_w200"] = ss2[p + "_present"]; row[f"{p}_present_clean_strict_w800"] = ss8[p + "_present"]
         w.writerow(row)
         if i % 200 == 0 or i == len(idx):
             print(f"  {i}/{len(idx)}  {time.time()-t0:.0f}s", flush=True)

@@ -1,8 +1,8 @@
-"""Print every number the revised manuscript quotes, from the CSVs, so a data refresh can be
-checked line by line against the text (draft/main-r1.tex) and the response letter."""
+"""Print every number the analysis reports, from the CSVs, so a data refresh can be checked line by
+line against the text."""
 from pathlib import Path
 import numpy as np, pandas as pd
-AN = Path(__file__).parent
+AN = Path(__file__).resolve().parent / "output"
 def f(x, d=2): return "" if pd.isna(x) else f"{x:.{d}f}"
 ss = pd.read_csv(AN / "seed_samples.csv", dtype=str); pg = pd.read_csv(AN / "seed_pages.csv", dtype=str); pg = pg[pg.in_sample == "1"]
 sc = pd.read_csv(AN / "scored_seed.csv", dtype=str); sc["page_key"] = sc.local_path.apply(lambda p: Path(p).stem.rsplit("__", 1)[0])
@@ -44,8 +44,10 @@ p = pd.read_csv(AN / "seed_panel_clean_strict.csv", dtype={"unitid": str}); p["s
 last = p.sort_values("event_q").groupby("unitid").tail(1)
 for s in ("UK", "AU"):
     d = last[(last.system == s) & last.intl_share.notna()]; print(f"ENDPOINT CORR {s} n {len(d)}: r(intl,restrictive) {np.corrcoef(d.intl_share.astype(float), d.restrictive_idx)[0,1]:+.2f} r(intl,procedural) {np.corrcoef(d.intl_share.astype(float), d.procedural_idx)[0,1]:+.2f}")
-ad = p[(p.ai_addressed == 1) & (p.event_q >= 0)].groupby("unitid").event_q.min(); print("ADOPTION (forward-fill, strict): adopters", len(ad), "median q", ad.median(), "share<=2q", f((ad <= 2).mean()), "| pre-shock positives", int(p[p.event_q < 0].groupby("unitid").ai_addressed.max().sum()))
-inst = p.drop_duplicates("unitid")[["unitid", "intl_share"]].dropna(); inst["terc"] = pd.qcut(inst.intl_share.astype(float), 3, labels=["low", "mid", "high"]); pp = p.merge(inst[["unitid", "terc"]], on="unitid")
+prepos = set(p[(p.event_q < 0) & (p.ai_addressed == 1)].unitid)
+ad = p[(p.ai_addressed == 1) & (p.event_q >= 0) & ~p.unitid.isin(prepos)].groupby("unitid").event_q.min(); print("ADOPTION (forward-fill, strict, excluding pre-shock positives): adopters", len(ad), "median q", ad.median(), "share<=2q", f((ad <= 2).mean()), "| pre-shock positives", len(prepos), "| ever post-shock", p[(p.ai_addressed == 1) & (p.event_q >= 0)].unitid.nunique(), "| at endpoint", int(last.ai_addressed.sum()))
+pu = pd.read_csv(AN / "seed_panel_us_clean_strict.csv", dtype={"unitid": str})  # US only: the other systems measure exposure differently
+inst = pu.drop_duplicates("unitid")[["unitid", "intl_share"]].dropna(); inst["terc"] = pd.qcut(inst.intl_share.astype(float), 3, labels=["low", "mid", "high"]); pp = pu.merge(inst[["unitid", "terc"]], on="unitid")
 print("TERCILE endpoint intensity:", pp[pp.event_q == 13].groupby("terc", observed=True).ai_governance_intensity.mean().round(2).to_dict())
 if (AN / "adoption_summary.csv").exists():
     a = pd.read_csv(AN / "adoption_summary.csv"); a = a[(a.flag == "clean_strict")]
@@ -54,14 +56,19 @@ if (AN / "adoption_summary.csv").exists():
     for sub in tb.subset.unique():
         t = tb[tb.subset == sub]; print(f"TURNBULL {sub} n {int(t.n_adopters.iloc[0])}: cdf q2 {f(t[t.event_q == 2].turnbull_cdf.iloc[0])} q4 {f(t[t.event_q == 4].turnbull_cdf.iloc[0])} | forward-fill cdf q2 {f(t[t.event_q == 2].forward_fill_cdf.iloc[0])} q4 {f(t[t.event_q == 4].forward_fill_cdf.iloc[0])}")
     ds = pd.read_csv(AN / "density_summary.csv"); print("DENSITY share_zero by system/period:\n", ds.pivot(index="system", columns="period", values="share_zero").round(2).to_string())
+    if (AN / "density_overall.csv").exists(): print("DENSITY overall (all quarters / from first capture):\n", pd.read_csv(AN / "density_overall.csv").round(3).to_string(index=False))
     print("DENSITY median captures by system (pooled periods):", ds.groupby("system").median_captures.median().to_dict())
     dc = pd.read_csv(AN / "density_exposure_correlation.csv"); print("DENSITY vs exposure (sample):", dc[dc.density == "density_all"][["system", "n", "pearson_r", "pearson_p"]].to_string(index=False))
 if (AN / "policy_pdf_scores.csv").exists():
     ps = pd.read_csv(AN / "policy_pdf_scores.csv", dtype={"unitid": str}); idx = pd.read_csv(AN / "policy_pdf_index.csv", dtype=str)
+    ps = ps[ps.unitid.isin(set(ss.unitid))]; idx = idx[idx.unitid.isin(set(ss.unitid))]  # sample institutions only
     print("PDFS: attempted", len(idx), "ok", int((idx.status == "ok").sum()), "institutions with a PDF", ps.unitid.nunique(), "| by system", ps.groupby("system").unitid.nunique().to_dict())
+    print("PDF LINKS: institutions whose endpoint pages link a policy PDF, by system", idx.groupby("system").unitid.nunique().to_dict(), "| documents retrieved", int((idx.status == "ok").sum()), "| post-shock captures", int(ps.post_shock_capture.sum()) if "post_shock_capture" in ps else "", "| US institutions with curated pages", len(us & set(sc.unitid)))
 
 if (AN / "exposure_robustness.csv").exists():
     er = pd.read_csv(AN / "exposure_robustness.csv"); print("EXPOSURE ROBUSTNESS:\n", er.to_string(index=False))
+    if (AN / "exposure_by_provision.csv").exists(): print("EXPOSURE BY PROVISION:\n", pd.read_csv(AN / "exposure_by_provision.csv").to_string(index=False))
+    if (AN / "exposure_page_rule.csv").exists(): print("EXPOSURE PAGE RULE:\n", pd.read_csv(AN / "exposure_page_rule.csv").to_string(index=False))
     print("US TERCILES:\n", pd.read_csv(AN / "exposure_terciles.csv").to_string(index=False)); print("CORR:\n", pd.read_csv(AN / "exposure_corr.csv").to_string(index=False))
 if (AN / "second_coder_r1.csv").exists(): print("SECOND CODER:\n", pd.read_csv(AN / "second_coder_r1.csv").to_string(index=False))
 if (AN / "unscoped_remedies.csv").exists(): print("UNSCOPED:\n", pd.read_csv(AN / "unscoped_remedies.csv").to_string(index=False))
